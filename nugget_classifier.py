@@ -1,9 +1,13 @@
 from corpus_reader import  CorpusReader
+from simple_feature_builder import SimpleFeatureBuilder
 import gensim
-from nltk import word_tokenize
-from nltk import sent_tokenize
 import pandas as pd
 from pprint import pprint
+from nltk import word_tokenize
+from nltk import sent_tokenize
+
+import keras
+from keras.layers import Embedding, LSTM, Dense, Dropout
 
 class Nugget_Classifier():
     '''
@@ -29,26 +33,11 @@ class Nugget_Classifier():
         # self.word2vec =  gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
         # self.true_nuggets = reader.nuggets
 
-    def get_potential_nuggets(self, paragraph, max_len=8):
-        nugget_candidates = []
-        for sent in sent_tokenize(paragraph):
-            words = word_tokenize(sent)
-            #add all combinations
-            for i0, word in enumerate(words):
-                max_i = min(max_len + i0, len(words))
-                for i1 in range(i0, max_i):
-                    nugget_candidates.append(words[i0: i1])
-        pprint(nugget_candidates[:20])
-        # return pd.DataFrame(nugget_candidates, columns=['nugget_candidate'])
-        return nugget_candidates
-
 #TODO: 'I&#65533;&#65533;m???
-# Use generator instead?
-# Use hierarchical pandas index and preallocate
 
 if __name__ == '__main__':
     r = CorpusReader()
-    n = Nugget_Classifier(r)
-    print(n.get_potential_nuggets(list(r.paragraphs.values())[0][0], max_len=3))
-
+    feature_builder = SimpleFeatureBuilder(r, batch_size= 64, limit_embeddings=50000)
+    gen = feature_builder.generate_sequence_word_embeddings(max_len=3, seed=1)
+    print(next(gen))
 

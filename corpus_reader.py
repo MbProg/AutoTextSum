@@ -56,9 +56,16 @@ class CorpusReader:
             nuggets[file_name[:4]] = df2.to_dict()
         self.nuggets = nuggets
 
-    def get_paragraph_nugget_pairs(self, text_id):
+    def get_paragraph_nugget_pairs(self, text_id, tokenize_before_hash = False):
         ''' Returns a list of tuples of paragraphs and a dictionary with the corresponding nuggets as keys
         and the amount of workers that chose that nugget as value.
+
+        Args:
+            tokenize_before_hash: either have the resulting dict like this without tokenization before:
+                {hash('hello world'): 123}
+                or
+                {hash(str(['hello', 'world']): 123}
+            I needed the second one to get labels of nuggets AFTER tokenizing them
         '''
         paragraphs = self.paragraphs[text_id]
         # get a count of each nugget
@@ -68,8 +75,12 @@ class CorpusReader:
             paragraph_nuggets = {}
             for nugget in nuggets.keys():
                 try:
-                    if nugget in paragraph:
-                        paragraph_nuggets[nugget] = nuggets[nugget]
+                    if tokenize_before_hash:
+                        if nugget in paragraph:
+                            paragraph_nuggets[repr(word_tokenize(nugget))] = nuggets[nugget]
+                    else:
+                        if nugget in paragraph:
+                            paragraph_nuggets[nugget] = nuggets[nugget]
                 except:
                     1
                     #print(nugget)
