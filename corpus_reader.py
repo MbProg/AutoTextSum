@@ -11,14 +11,17 @@ class CorpusReader:
     def __init__(self,
                  nugget_path=os.getcwd() +'/Corpus/AMTAllNuggets/',
                  paragraph_path=os.getcwd() + '/Corpus/SourceDocuments/',
-                 topics_path=os.getcwd() +'/Corpus/SourceDocuments/' + 'Topics.txt'):
+                 topics_path=os.getcwd() +'/Corpus/SourceDocuments/' + 'Topics.txt',
+                 approach='word'):
         '''Initializes the corpus reader. Saves the corresponding topics for each text, a dictionary of paragraphs with a list of
         paragraphs for each text_id and a nugget dictionary that for each text saves a dictionary of all workers and their chosen nuggets.
         '''
         self.build_paragraphs(paragraph_path)
         self.build_nuggets(nugget_path)
         self.topics = pd.read_csv(topics_path,sep='\t', names=['text_id', 'topic'])
-        self.build_paragraph_word_scores()
+        self.devset_topics = [x for x in range(len(self.topics))][-2:]
+        if approach=='word':
+            self.build_paragraph_word_scores()
         # Vocabulary takes too long right now and is not necessary yet for only word embedding features
         #self.build_vocabulary()
 
@@ -67,6 +70,7 @@ class CorpusReader:
                 {hash(str(['hello', 'world']): 123}
             I needed the second one to get labels of nuggets AFTER tokenizing them
         '''
+        text_id = str(text_id)
         paragraphs = self.paragraphs[text_id]
         # get a count of each nugget
         nuggets = Counter(reduce(lambda x,y: x+y, self.nuggets[text_id].values()))
@@ -80,10 +84,14 @@ class CorpusReader:
                             paragraph_nuggets[repr(word_tokenize(nugget))] = nuggets[nugget]
                     else:
                         if nugget in paragraph:
+                            nugget = ' '.join([w for w in word_tokenize(nugget)])
                             paragraph_nuggets[nugget] = nuggets[nugget]
                 except:
-                    1
+                    pass
                     #print(nugget)
+            # make sure puncuation is surrounded by whitespace
+            paragraph = re.sub('\.', ' . ', paragraph)
+            paragraph = re.sub(',', ' , ', paragraph)
             paragraph_nugget_tuples.append((paragraph, paragraph_nuggets))
         return paragraph_nugget_tuples
 
@@ -92,15 +100,20 @@ class CorpusReader:
         that represents how many workers had chosen the word to be part of a nugget.
         '''
         # iterating through all topics
-        data = []
+        train_set = []
+        dev_set = []
         max_occurrence = 0
+        total_words = 0
         for i in range(len(self.topics)):
             text_id, topic = self.topics.ix[i].text_id, self.topics.ix[i].topic
             paragraph_nugget_pairs = self.get_paragraph_nugget_pairs(str(text_id))
             for paragraph, nuggets in paragraph_nugget_pairs:
                 paragraphs = []
                 for sent in sent_tokenize(paragraph):
-                    sentence_words = word_tokenize(paragraph)
+                    sentence_words = word_tokenize(sent)
+                    # count how many words we have in total
+                    if not i in self.devset_topics:
+                        total_words += len(sentence_words)
                     sentence_word_occurrences = [[word,0] for word in sentence_words]
                     # iterating over all nuggets for that paragraph
                     for nugget in nuggets:
@@ -114,6 +127,12 @@ class CorpusReader:
                                         max_occurrence = sentence_word_occurrences[k][1]
                                 break
                     paragraphs.append(sentence_word_occurrences)
-                data.append((i, paragraphs))
+                if i in self.devset_topics:
+                    dev_set.append((i, paragraphs))
+                else:
+                    train_set.append((i, paragraphs))
+        print(max_occurrence, len(train_set), len(dev_set))
         self.max_occurrence = max_occurrence
-        self.data = data
+        self.train_set = train_set
+        self.dev_set = dev_set
+        self.total_words = total_words
