@@ -40,7 +40,7 @@ class SimpleNuggetDetector:
                     try:
                         self.model.partial_fit(X_batch, y_batch)
                     except:
-                batch_count += 1
+                        batch_count += 1
                 if batch_count == 200:
                     break
         else:
