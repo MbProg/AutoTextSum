@@ -7,6 +7,7 @@ class evaluate:
     def __init__(self,nugget_prediction, nugget_gold):
         self.nugget_prediction = nugget_prediction
         self.nugget_gold = nugget_gold
+        self.metric = self.set_conf_matrix_values()
 
 
     def set_conf_matrix_values(self):
@@ -19,9 +20,9 @@ class evaluate:
         false_pos = 0
         false_neg = 0
 
-        predicted_nugget_list=[nugget for nugget in self.nugget_prediction]
+        # predicted_nugget_list=[nugget for nugget in self.nugget_prediction]
         for nugget_label_turple in self.nugget_gold:
-            if nugget_label_turple[0] in predicted_nugget_list:
+            if nugget_label_turple[0] in self.nugget_prediction:
                 if nugget_label_turple[1] == 1:
                     true_pos +=1
                 else:
@@ -46,8 +47,7 @@ class evaluate:
         :return:Accuracy
         '''
 
-        metric = self.set_conf_matrix_values()
-        return (metric.true_pos+metric.true_neg)/len(self.nugget_gold)
+        return float(self.metric.true_pos+self.metric.true_neg)/len(self.nugget_gold)
 
     def precision(self):
         '''
@@ -55,16 +55,14 @@ class evaluate:
         :return:precision
         '''
 
-        metric = self.set_conf_matrix_values()
-        return(metric.true_pos/(metric.true_pos+ metric.false_pos))
+        return(self.metric.true_pos/(self.metric.true_pos+ self.metric.false_pos))
 
     def recall(self):
         '''
         computes recall
         :return:Recall
         '''
-        metric = self.set_conf_matrix_values()
-        return(metric.true_pos/metric.true_pos + metric.false_neg)
+        return(self.metric.true_pos/(self.metric.true_pos + self.metric.false_neg))
 
     def F1_score(self):
         '''
