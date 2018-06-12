@@ -5,9 +5,13 @@ import pandas as pd
 from pprint import pprint
 from nltk import word_tokenize
 from nltk import sent_tokenize
+import numpy as np
+import os
+import pickle
+from itertools import chain
 
 import keras
-from keras.layers import Embedding, LSTM, Dense, Dropout
+from keras.layers import Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
 
 class Nugget_Classifier():
     '''
@@ -33,11 +37,78 @@ class Nugget_Classifier():
         # self.word2vec =  gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
         # self.true_nuggets = reader.nuggets
 
-#TODO: 'I&#65533;&#65533;m???
+    def preprocess(self, batch_size = 64, num_batches = np.inf):
+
+        r = CorpusReader()
+        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=10000)
+        gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
+        # preprocess word and sentence embeddings
+        if not os.path.exists('Data/Xtrain'):
+            Xtrain, Ytrain, sent_embeddings_train = [], [], []
+            while True:
+                if len(Xtrain) > num_batches:
+                    break
+                # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
+                try:
+                    x, y, nugget_candidates = next(gen)
+                except StopIteration as e:
+                    print('Iteration ended')
+                    break
+                sentence_embeddings = feature_builder.generate_sentence_embeddings(nugget_candidates, tokenized=True)
+                assert sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+                                                                       'for Embeddings of {}'.format(sentence_embeddings.shape, nugget_candidates)
+
+                # append to each example
+                # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
+                Xtrain.append(x)
+                Ytrain.append(y)
+                sent_embeddings_train.append(sentence_embeddings)
+                print(len(Xtrain))
+            with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, open('Data/SentEmbeddings',
+                                                                                        'wb') as fs:
+                pickle.dump(Xtrain, fx)
+                pickle.dump(Ytrain, fy)
+                pickle.dump(sent_embeddings_train, fs)
+
+    # def train(self, ):
+#TODO: Was ist 'I&#65533;&#65533;m???
 
 if __name__ == '__main__':
-    r = CorpusReader()
-    feature_builder = SimpleFeatureBuilder(r, batch_size= 64, limit_embeddings=50000)
-    gen = feature_builder.generate_sequence_word_embeddings(max_len=3, seed=1)
-    print(next(gen))
+    batch_size = 64
+    # n = Nugget_Classifier()
+    # n.preprocess(64, 7)
+    #train
+    with open('Data/Xtrain', 'rb') as fx, open('Data/Ytrain', 'rb') as fy, open('Data/SentEmbeddings', 'rb') as fs:
+        Xtrain = pickle.load(fx)
+        Ytrain = pickle.load(fy)
+        sentence_embeddings = pickle.load(fs)
 
+    # model_words = keras.Sequential()
+    # model_words.add(LSTM(100, input_shape=(None, )))
+    # model_words.add(Dense(100))
+    # model_words.add(Dense(1))
+    #
+    # model_words.compile(keras.optimizers.Adam(),
+    #                     keras.losses.mean_squared_error(),
+    #                     ['accuracy'])
+    # model_words.fit(Xtrain, Ytrain, batch_size=64, verbose=1)
+    # print(model_words)
+
+    model_sent = keras.Sequential()
+    depth, width = 2, 40
+    test_cutoff = 2
+    model_sent.add(Dense(width, input_shape=(512,)))
+    # model_sent.add(Flatten())
+    for i in range(1, depth):
+        model_sent.add(Dense(width))
+    model_sent.add(Dense(1))
+
+    model_sent.summary()
+    model_sent.compile('rmsprop',
+                       'mean_squared_error',
+                       ['accuracy'])
+    for sent_batch, y_batch in zip(sentence_embeddings[test_cutoff:], Ytrain[test_cutoff:]):
+        model_sent.train_on_batch(sent_batch, y_batch)
+    res = model_sent.evaluate(np.array(list(chain(*sentence_embeddings[:test_cutoff]))), np.array(list(chain(*Ytrain[:test_cutoff]))))
+    names = model_sent.metrics_names
+    print('Result: {} {}'.format(names, res))
