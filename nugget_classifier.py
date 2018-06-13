@@ -37,6 +37,14 @@ class Nugget_Classifier():
         # self.word2vec =  gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
         # self.true_nuggets = reader.nuggets
 
+    def pickle_generator(self, pathx = 'Data\Xtrain', pathy='Data/Ytrain', path_sent='Data/SentEmbeddings'):
+        while True:
+            try:
+                with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, open('Data/SentEmbeddings', 'wb') as fs:
+                    yield pickle.load(fx), pickle.load(fy), pickle.load(fs)
+            except EOFError:
+                raise StopIteration
+
     def preprocess(self, batch_size = 64, num_batches = np.inf):
 
         r = CorpusReader()
@@ -44,7 +52,8 @@ class Nugget_Classifier():
         gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
         # preprocess word and sentence embeddings
         if not os.path.exists('Data/Xtrain'):
-            Xtrain, Ytrain, sent_embeddings_train = [], [], []
+            #todo
+            Xtrain, Ytrain, sent_embeddings_train, nuggets = [], [], [], []
             while True:
                 if len(Xtrain) > num_batches:
                     break
@@ -64,35 +73,36 @@ class Nugget_Classifier():
                 Ytrain.append(y)
                 sent_embeddings_train.append(sentence_embeddings)
                 print(len(Xtrain))
-            with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, open('Data/SentEmbeddings',
-                                                                                        'wb') as fs:
+            with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, \
+                    open('Data/SentEmbeddings', 'wb') as fs:
                 pickle.dump(Xtrain, fx)
                 pickle.dump(Ytrain, fy)
                 pickle.dump(sent_embeddings_train, fs)
 
     # def train(self, ):
 #TODO: Was ist 'I&#65533;&#65533;m???
+#todo query abspeichern
 
 if __name__ == '__main__':
     batch_size = 64
-    # n = Nugget_Classifier()
-    # n.preprocess(64, 7)
+    n = Nugget_Classifier()
+    n.preprocess(64, 7)
     #train
-    with open('Data/Xtrain', 'rb') as fx, open('Data/Ytrain', 'rb') as fy, open('Data/SentEmbeddings', 'rb') as fs:
-        Xtrain = pickle.load(fx)
-        Ytrain = pickle.load(fy)
-        sentence_embeddings = pickle.load(fs)
 
-    # model_words = keras.Sequential()
-    # model_words.add(LSTM(100, input_shape=(None, )))
+    batch_generator = n.pickle_generator()
+    batch_words, batch_y, batch_sent = next(batch_generator)
+
+    model_words = keras.Sequential()
+    model_words.add(LSTM(100, input_shape=(None, 300)))
     # model_words.add(Dense(100))
-    # model_words.add(Dense(1))
-    #
-    # model_words.compile(keras.optimizers.Adam(),
-    #                     keras.losses.mean_squared_error(),
-    #                     ['accuracy'])
-    # model_words.fit(Xtrain, Ytrain, batch_size=64, verbose=1)
-    # print(model_words)
+    model_words.add(Dense(1))
+
+    model_words.compile('rmsprop',
+                        'mean_squared_error',
+                        ['accuracy'])
+    model_words.train_on_batch(batch_words, batch_y)
+    model_words.summary()
+    print(model_words)
 
     model_sent = keras.Sequential()
     depth, width = 2, 40
@@ -107,8 +117,9 @@ if __name__ == '__main__':
     model_sent.compile('rmsprop',
                        'mean_squared_error',
                        ['accuracy'])
-    for sent_batch, y_batch in zip(sentence_embeddings[test_cutoff:], Ytrain[test_cutoff:]):
+    for _, y_batch, sent_batch in batch_generator:
         model_sent.train_on_batch(sent_batch, y_batch)
-    res = model_sent.evaluate(np.array(list(chain(*sentence_embeddings[:test_cutoff]))), np.array(list(chain(*Ytrain[:test_cutoff]))))
+    # res = model_sent.evaluate(np.array(list(chain(*sentence_embeddings[:test_cutoff]))), np.array(list(chain(*Ytrain[:test_cutoff]))))
     names = model_sent.metrics_names
-    print('Result: {} {}'.format(names, res))
+    # print('Result: {} {}'.format(names, res))
+    # print(model_sent.predict(sentence_embeddings[0]), '\nTrue: {}'.format(Ytrain[0]))
