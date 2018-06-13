@@ -11,7 +11,8 @@ import pickle
 from itertools import chain
 
 import keras
-from keras.layers import Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
+from keras.layers import Input, Dense, GRU, Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
+from keras.models import Model
 
 class Nugget_Classifier():
     '''
@@ -34,8 +35,40 @@ class Nugget_Classifier():
             self.reader = CorpusReader()
         else:
             self.reader = reader
+        self.model = self.build_network()
         # self.word2vec =  gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
         # self.true_nuggets = reader.nuggets
+
+    def build_network(self, hidden_dim=256, GRU_dim=256):
+        word_embedding_dim = 300
+        sentence_embedding_dim = 500
+        hidden_dim = hidden_dim
+        GRU_dim = GRU_dim
+        words_shape = (None, word_embedding_dim)
+        query_shape = (None, word_embedding_dim)
+
+
+        word_sequence = Input(shape=words_shape)
+        query = Input(shape=query_shape)
+        sentence_embedding = Input(shape=(sentence_embedding_dim,))
+        # process the sentence embedding
+        x1 = Dense(hidden_dim, activation='relu')(sentence_embedding)
+        # weights for query and word sequence are shared
+        gru_shared = GRU(GRU_dim, activation='relu')
+        # process the word sequence
+        x2 = gru_shared(word_sequence)
+        # process the query
+        x3 = gru_shared(query)
+
+        merged_outputs = keras.layers.concatenate([x1, x2, x3], axis=-1)
+        x1 = Dense(hidden_dim, activation='relu')(merged_outputs)
+        # regression
+        output = Dense(1, activation='linear')(x1)
+        model = Model(inputs=[word_sequence, query, sentence_embedding], outputs=output)
+        model.compile(optimizer='adam',
+                  loss='mean_squared_error',
+                  metrics=['mae'])
+        return model
 
     def pickle_generator(self, pathx = 'Data\Xtrain', pathy='Data/Ytrain', path_sent='Data/SentEmbeddings'):
         while True:
@@ -123,3 +156,11 @@ if __name__ == '__main__':
     names = model_sent.metrics_names
     # print('Result: {} {}'.format(names, res))
     # print(model_sent.predict(sentence_embeddings[0]), '\nTrue: {}'.format(Ytrain[0]))
+    ### Testing the combined model with random Data
+    test_sentences = np.random.randn(64, 15, 300)
+    test_query = np.random.randn(64, 4, 300)
+    sentence_embedding = np.random.randn(64, 500)
+    test_labels = np.random.randn(64)
+    X = [test_sentences, test_query, sentence_embedding]
+    n.model.train_on_batch(X, test_labels)
+    print(n.model.predict(X))
