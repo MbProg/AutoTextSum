@@ -16,9 +16,13 @@ class CorpusReader:
         '''Initializes the corpus reader. Saves the corresponding topics for each text, a dictionary of paragraphs with a list of
         paragraphs for each text_id and a nugget dictionary that for each text saves a dictionary of all workers and their chosen nuggets.
         '''
+        if topics_path:
+            self.topics = pd.read_csv(topics_path,sep='\t', names=['text_id', 'topic'])
+            self.topics_path_exists = True
+        else:
+            self.topics_path_exists = False
         self.build_paragraphs(paragraph_path)
         self.build_nuggets(nugget_path)
-        self.topics = pd.read_csv(topics_path,sep='\t', names=['text_id', 'topic'])
         self.devset_topics = [x for x in range(len(self.topics))][-2:]
         if approach=='word':
             self.build_paragraph_word_scores()
@@ -38,6 +42,7 @@ class CorpusReader:
         # filter out all files other than the paragraph files
         source_documents = [f for f in os.listdir(paragraph_path) if '1' in f]
         paragraphs = {}
+        queries = {}
         for file_name in source_documents:
             print(file_name)
             # document id is the last 4 characters, initialize a list for each id
@@ -46,7 +51,14 @@ class CorpusReader:
                 paragraph_text = re.findall('<paragraph.*?</paragraph>',txt)
                 # removing the paragraph tags
                 paragraphs[file_name[-8:-4]] = [re.sub('<paragraph.*?>|</paragraph>','',paragraph) for paragraph in paragraph_text]
+                if not self.topics_path_exists:
+                    query = re.findall('<query>.*?</query>',txt)[0][7:-8]
+                    queries[file_name[-8:-4]] = query
         self.paragraphs = paragraphs
+        if not self.topics_path_exists:
+            self.topics = pd.DataFrame.from_dict(queries, orient='index', columns=['topic']).rename(columns={0:'text_id'})
+            self.topics['text_id'] = self.topics.index
+            self.topics.reset_index(inplace=True, drop=True)
 
     def build_nuggets(self, nugget_path):
         nugget_files = [f for f in os.listdir(nugget_path)]
