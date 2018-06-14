@@ -1,0 +1,74 @@
+Joseph W. Kennedy 
+Born 	May 30, 1916
+Nacogdoches, Texas
+Died 	May 5, 1957 (aged 40)
+St. Louis, Missouri
+Nationality 	American
+Fields 	Chemistry
+Institutions 	Los Alamos National Laboratory
+Washington University in St. Louis
+Alma mater 	University of California, Berkeley
+Thesis 	Studies of nuclear isomerism in tellurium, element 43, and zinc (1939)
+Doctoral advisor 	George Ernest Gibson
+Known for 	First Isolation of Plutonium
+Notable awards 	Medal for Merit (1946)
+
+Joseph William Kennedy (May 30, 1916 â€“ May 5, 1957) was an American chemist who was a co-discoverer of plutonium, along with Glenn T. Seaborg, Edwin McMillan and Arthur Wahl. During World War II he was head of the CM (Chemistry and Metallurgy) Division at the Manhattan Project's Los Alamos laboratory, where he oversaw research onto the chemistry and metallurgy of uranium and plutonium. After the war, he was recruited as a professor at Washington University in St. Louis, where he is credited with transforming a university primarily concerned with undergraduate teaching into one that also boasts strong graduate and research programs. He died of cancer of the stomach at the age of 40.
+
+Contents
+
+    1 Early life
+    2 Plutonium
+    3 Manhattan Project
+    4 Post war
+    5 Notes
+    6 References
+    7 External links
+
+Early life
+
+Joseph William Kennedy was born in Nacogdoches, Texas on May 30, 1916, the son of Joseph and Mattie Kennedy. He attended Stephen F. Austin State Teachers College, from which he received a Bachelor of Arts (BA) degree, and the University of Kansas, which awarded him a Master of Arts (MA) degree. He then entered the University of California, Berkeley,[1] where he earned his Doctor of Philosophy (PhD) degree, writing his thesis on "Studies of nuclear isomerism in tellurium, element 43, and zinc",[2] under the supervision of George Ernest Gibson.[3]
+Plutonium
+
+In February 1940, Glenn Seaborg and Edwin McMillan produced plutonium-239 through the bombardment of uranium. In their experiments bombarding uranium with deuterons, they observed the creation of neptunium, element 93, which then underwent beta-decay to form a new element, plutonium, with 94 protons.[4] Kennedy built a series of detectors and counters to verify the presence of plutonium. He used mica sliced razor thin to produce a window to count alpha particle emissions, and ionization chamber with a magnetic field to separate the beta particles from the neptunium from alpha particles from the plutonium.[5]
+
+On March 28, 1941, Seaborg, physicist Emilio SegrÃ¨ and Kennedy were able to demonstrate not only the presence of plutonium, but that was fissile, an important distinction that was crucial to the decisions made in directing Manhattan Project research. Arthur Wahl then began exploring the chemistry of the newly discovered element.[5] In 1966, Room 307 of Gilman Hall on the campus at the Berkeley, where they did this work, was declared a U.S. National Historic Landmark.[6]
+Manhattan Project
+
+Kennedy was one of the early recruits to Manhattan Project's Los Alamos National Laboratory, arriving in March 1943.[1] He became acting head of the Chemistry and Metallurgy (CM) Division. There was concern amongst the project leadership about Kennedy, as he was only 26 years old at the time. An approach was therefore made to Charles Thomas from Monsanto. Thomas agreed to co-ordinate the Chemistry efforts of the different Manhattan Project laboratories, but he did not wish to move to New Mexico.[7] Despite his youth, Kennedy officially became CM Division leader in April 1944.[8]
+
+The CM Division was responsible for the purification and fabrication of materials for the bomb, including the core, tamper and initiator.[8] The chemistry and metallurgy of uranium was fairly well known, although it did yield a few surprises, but that of plutonium was almost completely unknown. The element had only been discovered a short time before, and existed only in microgram amounts. Educated guesses about its chemistry tended to be wrong, and as research progressed it was found to have unusual properties, including no less than six allotropes. There was rivalry between its discoverers, with Wahl and Kennedy's group at Los Alamos competing with Seaborg's in Chicago to produce the best process for purifying the metal. This competition ended abruptly when SegrÃ¨'s group at Los Alamos discovered that high levels of a hitherto undiscovered plutonium-240 isotope in reactor-produced plutonium meant that an implosion-type nuclear weapon was required, and a high degree of purity was therefore unnecessary.[9]
+
+Kennedy's chemists were able to reduce uranium hydride to uranium-235 metal with 99.96% efficiency, and the metallurgists worked out how to cast and press it into the required shapes.[10] While the chemists worked out how to purify plutonium, the metallurgists had to figure out how to cast it into a solid sphere. Eric Jette's CM-8 (Uranium and Plutonium Metallurgy) group found that they could stabilise plutonium in its malleable Î´ phase by alloying it with gallium.[11] For his services, he was awarded the Medal for Merit by the President Harry S. Truman in 1946.[12]
+Post war
+
+In 1945, Kennedy was recruited as a professor at Washington University in St. Louis, and was installed as Chairman of the Department of Chemistry in 1946, a role he continued in until his death.[1][12] Kennedy brought with him Wahl, Lindsay Helmholz, David Lipkin, Herbert Potratz, and Samuel Weissman, who all served on the faculty at Washington University.[13] Up to this time, Washington University was primarily concerned with undergraduate teaching. Kennedy is credited with transforming it into a university that also has boasts strong graduate and research programs.[12]
+
+Along with Seaborg, McMillan and Wahl, Kennedy received $400,000 dollars from the Atomic Energy Commission in compensation for their scientific work.[1] He died on May 5, 1957 at the age of 40 after a battle with cancer of the stomach. The Kennedy Lecture series is named in his honor. It is given every year in Washington University.[12]
+Notes
+
+    ^ a b c d "Staff Biographies â€“ Joseph W. Kennedy". Los Alamos National Laboratory. Archived from the original on July 3, 2012.
+    ^ Kennedy, Joseph William. "Studies of nuclear isomerism in tellurium, element 43, and zinc". University of California, Berkeley. Retrieved February 22, 2014.
+    ^ "Chemistry Tree â€“ Joseph W. Kennedy Family Tree". Academic Tree.org. Retrieved February 22, 2014.
+    ^ Farmer, Delphine (2001). "An Elementary Problem". Berkeley Science Review 1 (1): 32â€“37. ISSN 1538-6449.
+    ^ a b Seaborg & Seaborg 2001, pp. 75â€“77.
+    ^ Seaborg, Glenn T. "Nuclear Milestones: 307 Gilman Hall". Lawrence Berkeley Laboratory. Retrieved June 16, 2013.
+    ^ Hewlett & Anderson 1962, p. 237.
+    ^ a b Hawkins 1961, p. 148.
+    ^ Hoddeson et al. 1993, p. 206.
+    ^ Hoddeson et al. 1993, p. 264.
+    ^ Hoddeson et al. 1993, pp. 329â€“331.
+    ^ a b c d "The Kennedy Lecture Series". Washington University in St. Louis. Retrieved February 22, 2014.
+    ^ "Wahl, professor who discovered plutonium; 89". Washington University Record 30 (31). Retrieved July 9, 2009.
+
+References
+
+    Hawkins, David (1961). Manhattan District history, Project Y, the Los Alamos story: Volume I â€“ Inception until August 1945 (PDF). Los Angeles: Los Alamos National laboratory. ISBN 978-0-938228-08-0. Retrieved 20 February 2014.
+    Hewlett, Richard G.; Anderson, Oscar E. (1962). The New World, 1939â€“1946 (PDF). University Park: Pennsylvania State University Press. ISBN 0-520-07186-7. OCLC 637004643. Retrieved 26 March 2013.
+    Hoddeson, Lillian; Henriksen, Paul W.; Meade, Roger A.; Westfall, Catherine L. (1993). Critical Assembly: A Technical History of Los Alamos During the Oppenheimer Years, 1943â€“1945. New York: Cambridge University Press. ISBN 0-521-44132-3. OCLC 26764320.
+    Seaborg, G. T.; Seaborg, E. (2001). Adventures in the Atomic Age: From Watts to Washington. Farrar, Straus and Giroux. ISBN 0-374-29991-9.
+
+External links
+
+    2013 Video Interview with Adrienne Lowry, widow of Joseph W. Kennedy Voices of the Manhattan Project
+    McCarthy, Leslie Gibson (January 28, 2013). "Guggenheim film chronicles life at Washington University in early 1950s". Washington University in St. Louis. Retrieved February 22, 2014.

@@ -1,0 +1,129 @@
+JAN
+MAR
+APR
+20
+2015
+2016
+2017
+22 captures
+2 Feb 06 - 14 May 16
+Close Help
+ 
+National Science Foundation Office of Polar Programs U.S. Antarctic Program
+YOUR STAY AT AMUNDSEN-SCOTT SOUTH POLE STATION
+1994
+Prepared by...
+Antarctic Support Associates
+61 Inverness Dr. East, Suite 300
+Englewood, CO 80112
+(303)790-8606
+Foreword
+This booklet will assist you in your stay at Amundsen-Scott South Pole          Station. It briefly covers facilities, procedures, services, and safety          hints that will help you while at South Pole. Feel free to consult the          Station Manager or the Station Science Leader for additional information.
+LIST OF CONTENTS
+History
+Station Facilities
+Station Mission
+Safety
+Environment
+Berthing
+Meals
+Housekeeping
+"House Mouse"
+Recreation
+Station Store
+Mail
+Medical Care
+Water
+Laundry
+Vehicle Use
+Fire
+Accidents and Injuries
+Communications
+Restricted Areas
+Telephone
+Work Space
+Supplies
+Cargo
+Computer Facilities
+Redeployment
+HISTORY
+Attainment of the geographic South Pole was a primary concern of early          20th century explorers. Tentative forays into the antarctic region had          been undertaken by several expeditions during the 19th century, but it          was not until the early 1900s that the Pole itself was considered to be          a realistic goal.
+Two British expeditions, the "Discovery" expedition of 1902 and the          "Nimrod" expedition of 1908, were the first to depart for the continent          with conquest of the Pole an expressed purpose. Robert F. Scott's "Discovery"          expedition established an initial "furthest south" record, but competing          expedition priorities prevented further progress. In 1908, Ernest Shackleton,          a member of Scott's "furthest south" party, returned to the Antarctic          as leader of the "Nimrod" expedition. In a remarkable feat of endurance,          Shackleton and several others came to within 97 miles of the Pole before          returning to their base at McMurdo Sound and an eventual hero's welcome          in England.
+Victory, it seemed, would come to the next expedition. Such, in fact,          proved to be the case, but it came to a Norwegian expedition, led by the          ascetic Roald Amundsen. Amundsen, perhaps the ultimate polar technician,          had developed an interest in reaching the South Pole concurrent with the          formation of Robert Scott's second or "Terra Nova" expedition. When Scott          sailed for the Antarctic, Amundsen was not far behind and by intent or          coincidence, a race began.
+The race ended on 14 December 1911, when Amundsen and four others arrived          at the South Pole after a generally uneventful and carefully managed overland          journey. Their return was equally uneventful.
+Amundsen's almost lighthearted success contrasted starkly with the fate          of the Scott party. Scott and four companions reach the Pole a month after          Amundsen, on 17 January 1912. Beset with problems from the outset and          mortally weakened by the rigors of the return journey, Scott and his companions          perished.
+The South Pole was not visited again until 31 October 1956. On that          date, a ski-equipped R-4D aircraft landed at the Pole. On board were Admiral          George Dufek and several other personnel of the United States Navy. Their          purpose was to survey the site in preparation for the establishment of          a research station, one of many planned for the International Geophysical          Year (IGY). Construction of the original South Pole Station began the          following month and by February 1957, the station was complete. An eighteen-man          Navy support and civilian scientific crew, led by John Tuck and Paul Siple          remained for the winter, the first of the winter-over parties which have          continuously occupied what became know as Amundsen-Scott South Pole Station.
+The original station was modified and expended over the years, but by          1967 it was becoming increasingly apparent that a new station would be          needed. Construction of the new South Pole Station began during the 1970-71          austral summer. Erection of the dome, arches and interior modules took          place over the next three summers. Finishing work was concluded during          the 1974-75 season, and in January 1975, the station was formally dedicated.          The old station was abandoned, and winter operations commenced at the          new facility the following month.
+The South Pole Station is situated at 90 degrees South on the Polar          Plateau. The station was originally constructed 400 meters from the geographic          South Pole; however, ice movement, at the rate of 10 meters per year,          will eventually carry the station over the actual Pole.
+The site is at an elevation of approximately 2850 meters (9300 ft),          most of which is measured in ice thickness. The very low atmospheric temperatures          produce an effective average pressure altitude of approximately 3230 meters          (10,600 ft). The mean annual temperature is -49.3 degrees C (-56.7 F).          The lowest recorded temperature is -82.8 degrees C (-117.0 F) and the          highest temperature is -13.6 C (+7.5 F).
+An extremely arid environment limits annual snowfall; however, a relatively          constant wind speed of 5-15 knots compounds the accumulation and accounts          for the heavy snow drifting common to inland antarctic stations. The surrounding          terrain is completely flat, featureless snow.
+STATION FACILITIES
+The central area of the station is located beneath an aluminum geodesic          dome, 50 meters (165 ft) in diameter at the base and approximately 17          meters high (55 ft) at its apex. The dome houses three two-story structures          which contain living, dining, communications, recreation, laboratory,          and meeting facilities. The station can accommodate a crew of 27 during          the winter period and a crew of up to 27 during the summer in the dome          itself, with additional people accommodated in Summer Camp 150 meters          (500 ft) grid southwest of the station which is also the emergency facility          for the winter crew.
+A series of steel arches run perpendicular to the axis of the dome's          main entryway and houses the garage complex, gymnasium, carpenter shop,          power plant, biomedical facility, and main fuel storage. The fuel arch          contains nine 25,000 gallon bladders, giving the station a maximum capacity          of 950,000 liters or 225,000 gallons of JP-8 fuel. The four story Skylab          and the balloon inflation tower adjoin the main station and are accessible          through covered archways. The Clean Air Facility for atmospheric chemistry          lies 100 meters upwind of the station. Other research modules are located          at various distances from the station. Primary station power is provided          by one of three 359 kW diesel generators. Waste heat is utilized for station          heating via a glycol circulation system that conducts the heated coolant          through the various station structures. Another glycol loop supplies heat          to the snow melter for the station's water supply. These systems, as well          as water, sewage, phone, computer, and electric lines are routed through          a series of sub-surface steel utility corridors, called utilidors.
+STATION MISSION
+The purpose of the South Pole Station is to provide a year-round facility          for scientific projects. Current on-going programs include:
+The upper atmospheric physics program which includes auroral observations,            magnetospheric and ionospheric studies, dynamics of the mesosphere and            lower thermosphere, and the study of cosmic ray intensity variations            which are caused by solar activity. South Pole is one of the best equipped            upper atmosphere observatories on Earth, housing 10 entirely different            projects, several of which consist of more than one experiment;
+Astrophysics which include solar astronomy, neutrino and gamma ray            astronomy and cosmology;
+Meteorology;
+Atmospheric studies which include a Clear Air Facility (CAF) for            the monitoring of minor gas species which are important in global climatic            change (e.g. ozone and carbon dioxide) and the sampling of airborne            particulates. The South Pole CAF is one of NOAA's four baseline Clean            Air Facilities which are operated by the Climate Monitoring and Diagnostics            Laboratory (CMDL). The others are in Alaska, Hawaii, and American Samoa.            The site is, of course, central for the studies on the "Antarctic Ozone            Hole."
+SAFETY
+Safety is of utmost concern at South Pole Station. All personnel should          be aware of all safety measures practiced including "off limits" areas          throughout the station. Particular emphasis is given in and around all          work environments. Emergency response procedures are provided to all personnel          on station. Each person is required to know these procedures. Make note          of all exits throughout the facilities. Be aware of extinguisher placement          and usage. Please report observed hazards to the Station Manager. Remember,          prevention is of highest priority to ensure a safe living and working          environment.
+ENVIRONMENT
+All personnel at South Pole Station are responsible to know and follow          the proper procedures for the disposal of waste products. All waste will          be separated for retrograde in accordance with established procedures.          Information regarding the separation of waste will be made available at          South Pole Station.
+An awareness of issues concerning environmental impact and acceptable          practices is crucial to the preservation of the pristine antarctic environment.
+BERTHING
+Berthing space at South Pole Station is very limited. Your berthing          assignment, either under the dome or in the summer camp, will be given          to you by a station representative upon your arrival.
+If you are assigned to the summer camp, please be considerate of people          sleeping in your Jamesway. Lavatory facilities are available. Personnel          assigned to the summer camp should use the shower and laundry there. Linen          for both the main station and the summer camp will be distributed by station          personnel. You are requested to turn in your linen before departing.
+MEALS
+Meal schedules will be posted in the dining area. Normally, everyone          can be accommodated in the main station dining area, however, seating          - particularly during lunch and dinner - is limited. During meal time,          please eat promptly and vacate your seat if others are waiting. Please          clean your table when leaving and dispose of all trash and deposit silverware          and plates in the appropriate place. It takes effort by everyone to keep          the dining room clean and sanitary with an enjoyable dining atmosphere.          The cooks make every effort to provide the best meals possible.
+HOUSEKEEPING
+Everyone on station is requested to assist in keeping the station clean.          Please help by keeping your own living and working areas neat and clean.          Items you wish to discard, including boxes, should be placed in the appropriate          bin located inside the dome. If you wish to save boxes, please ask about          appropriate storage areas where they should be neatly stacked. Your living          and working areas are your own responsibility.
+"HOUSE MOUSE"
+You may be asked to participate in "house mouse" duties on Sundays during          your stay. These duties, which primarily consist of cleaning up the dining          hall or other common use areas, are rotated among the entire station population.          The "house mouse" schedule will be posted in the dining area. If your          scheduled duty and your scientific duties conflict, special arrangements          can be made. Any changes to the schedule should be discussed with the          Station Science Leader or the Station Manager.
+RECREATION
+Recreation facilities include a game room, a library, a small gymnasium,          a weight-lifting room, and a bar. Video tapes may be borrowed from the          station store for use on the VCRs on station. After dining hours, the          dining hall may be used for table games.
+STATION STORE
+A station store is available to serve the personal needs of individuals          assigned to the station. It is stocked with sundries (toiletries and tobacco),          tourist items, postage stamps, and nonalcoholic and alcoholic beverages.          Items are in very limited supply, and you are cautioned not to be dependent          on the station store for any items other than beverages. The station store          also lends Beta and VHS format video movies. Station store operating hours          will be posted.
+The station store will not handle purchases of special items from the          Navy Exchange at McMurdo. All such transactions will be between the Navy          Exchange and the individual concerned.
+MAIL
+Incoming mail is sorted and distributed as soon as it arrives. Outgoing          mail may be left in the mail bag hanging outside the station store. If          you wish to mail parcels, consult the Postmaster for information on postage,          insurance, and customs.
+MEDICAL CARE
+Medical care is available year-round. An appointment with the Station          Physician should be made for routine problems. There is no dentist at          South Pole, but the Physician can advise you on proper course of action          for dental problems.
+WATER
+Water for the main station is produced in a large snow melter filled          by a front-end loader. Enough water is available for everyone's use. However,          strict water discipline must be practiced, especially during summer peak          population periods. During times of normal operations, showers should          be taken no more than twice a week. Showers are not to exceed two minutes          use of running water. Water faucets must not be left running while you          are washing hands or brushing teeth. You will be expected to practice          water conservation throughout your stay at South Pole.
+LAUNDRY
+Washers and dryers are available. Only one load of laundry per person          per week is allowed under normal circumstances. To conserve water, washers          should be operated only with a full load.
+VEHICLE USE
+Vehicles available are tracked personnel carriers, Caterpillar 955 and          953 forklifts, and Caterpillar D-6 and D-7 Dozers. Scientific programs          requiring vehicles should contact the O&M Coordinator. Since there are          heavy demands on the small vehicle fleet, vehicle use will not be authorized          for recreational or non-official use. The Sprytes are equipped with radios.          Turn the radio on and conduct a check with communications when departing          the station. All vehicles left outside must be kept running or be plugged          into the proper electrical system.
+You must be checked out and approved to operate each type of vehicle.          This is an annual requirement. The ASA O&M Coordinator or Heavy Equipment          Mechanic will instruct you on how to use the vehicles. Make it a practice          to check fuel, anti-freeze, and engine oil levels, and always consult          the proper authority when adding such substances. Supplies are available          in the garage. Be sure the engine is warm before use. The Sprytes are          equipped with radios. Turn the radio on and conduct a check with communications          when departing the station. All vehicles left outside must be kept running          or be plugged in to the proper electrical system.
+Please report any defects, however slight, to the O&M Coordinator or          Heavy Equipment Mechanic when returning the vehicle. Maintenance at an          early stage keeps the vehicles from undergoing costly, time-consuming,          and major repairs.
+FIRE
+South Pole Station has designated fire teams specifically trained to          respond to emergencies at the station. If you hear an alarm, report to          the designated muster areas immediately, assisting fire teams only if          requested to do so.
+The danger of fire is always present and is always great. Be careful          about smoking and smoke only in permitted areas. Do not smoke in bed!          Check the ashtrays and waste baskets before leaving common-use areas for          the night. Cigarettes are to be extinguished completely, only in ashtrays.          Heat regulation throughout the facilities should be done by those individuals          instructed in such procedures. If you see a fire, try to extinguish it          quickly. Dry chemical, CO2, or water extinguishers are available inside          each building. If you are not familiar with the operation of these extinguishers          be sure to request instruction on their use. Sound the alarm by pulling          one of the fire alarm boxes. If you hear a fire alarm, report immediately          to the muster area so that you can be accounted for. Your assistance in          fighting the fire will be requested only if needed.
+ACCIDENTS AND INJURIES
+Even with the best of safety precautions, accidents and injuries may          occur. Use common sense in providing first aid or moving an injured person.          After your initial action to assist the individual involved, report the          accident, no matter how slight, to the Physician and the Station Manager.          The Station Manager will coordinate documentation and reporting of accidents          and injuries.
+COMMUNICATIONS
+Communications systems of various types are available. If you wish to          utilize electronic mail, contact the Station Manager, the Station Science          Leader, or the Information Systems Coordinator for guidance. Sideband          (voice) communications with the NSF Representative or the Senior ASA Manager          at McMurdo may be made by coordinating with the Station Manager. HAM patches          may be made by signing up on the list located outside the HAM shack in          the communications building. Telephone calls utilizing the ATS-3 satellite          system may be made on Sundays and Mondays when official business matters          are complete. This service is a privilege which will be terminated if          abused. A sign up list for these services is posted in the Communications          Center. Handheld radios are available in the Communications Facility if          required. Please do not loiter in the communications building if you do          not have official business there. Communications personnel are usually          busy with airplane operations and message rely traffic. Report any problems          with any of the equipment to the Information Systems Coordinator.
+RESTRICTED AREAS
+Certain station areas are restricted, either for your own safety or          for the sake of efficient science. If you wish to enter the instrument          areas grid north of the station, please do not disturb the sensors or          move upwind of them without consulting the Science Support Coordinator.          The power plant, fuel arch, antenna field, and garage should not be entered          without good reason. If you intend to travel more then 2,000 feet from          the station, advise the communications operator on duty of your departure          and make sure you have appropriate clothing. This is for your own safety.          No one will be allowed on the skiway one-half hour prior to the arrival          of all air traffic. Flight schedule information is made available by the          Communications Operator. Remember, weather conditions in the antarctic          can change unexpectedly. Handheld radios are available from the communications          staff. Wherever possible, distant travel should be in pairs using the          buddy system for maximum safety. The Old Pole Station area is unsafe and          has been declared strictly OFF LIMITS.
+TELEPHONE
+The station telephone system connects most station facilities. A directory          is posted by each telephone.
+WORK SPACE
+Work spaces are limited. Those spaces that have not been allocated to          specific projects will be assigned on a first-come, first- serve basis.          If you require more space, consult the Science Support Coordinator. Work          facilities such as shelves, tables, and benches may be available, but          resourcefulness is encouraged. All non-authorized personnel requiring          the use of trade work areas, i.e., the garage or carpenter shop, must          do so only with the supervision of those responsible for each work shop.
+SUPPLIES
+If you need general supplies, consult the Supervisor, Logistics, who          may be able to save you the trouble of requesting items from your institution.          Electronic and scientific supplies may be available through the Science          Support Coordinator. Please do not take items off the shelves without          first asking the materials personnel, as all materials are inventoried.          Inadvertent use of project-specific materials can have devastating effects          on those projects.
+CARGO
+Cargo movements and inventories are managed by the Supervisor, Logistics.          To inquire about the status of your cargo or to request support requirements          consult this person. Science personnel can also contact the Science Coordinator          for these types of assistance. If you require to send cargo to the United          States (retrograde), advise materials personnel promptly. They will advise          you of proper documentation to be completed and packaging requirements          to ensure that your cargo is shipped.
+The Supervisor, Logistics, controls cargo and supplies. If you want          to know about your cargo, see this person. Science personnel can also          contact the Science Coordinator for cargo information. If you need to          send things to the United States (retrograde), advise materials personnel          promptly. They will advise you of packing and marking requirements and          ensure that your cargo is shipped.
+You are cautioned to prepare retrograde cargo as early as possible since          the cargo ship leaves McMurdo the end of January. Air cargo space is very          limited, thus permission and prioritization from the NSF Representative,          Antarctica, for all air shipments back to the United States will be necessary.
+COMPUTER FACILITIES
+Two DEC VAX computer systems are available for data acquisition and          on-site reduction and analysis. Several general-purpose PCs are also available,          as well as a Sun Unix Workstation. Personnel from Antarctic Support Associates          operate and service these general- purpose systems and help scientists          program and interface their experiments to the systems. Consult the Computer          Technician or Science Support Coordinator for information concerning computer          capabilities and availability if you have a need.
+REDEPLOYMENT
+When you arrive at McMurdo Station on your way to the South Pole, the          Administrative Coordinator at the NSF Chalet will request you provide          the dates on which you wish to redeploy to Christchurch, New Zealand,          and to the United States. Confirmation or revision to plans should be          provided to the South Pole Station Manager at least two weeks in advance          of departure so that the Chalet may be informed and your departure scheduled.
+It is good practice to advise the Station Administrative Coordinator          as early as possible of your departure date from South Pole. Note, however,          that flights are never scheduled more than four days in advance. During          the austral summer there are usually several flights weekly to the South          Pole, providing ample opportunities for your departure. Because of the          nature of antarctic operations, flights are subject to various delays.          Decisions to fly are often given on very short notice and flight times          may be advanced or delayed several hours. In general, when a flight for          South Pole departs from McMurdo, its Estimated Time of Arrival (ETA) is          announced over the South Pole Intercom. This provides about three hours          before arrival at South Pole. The Station Administrative Coordinator will          provide the point-of- contact for passenger movement from South Pole Station.
+When your plane arrives, be ready to board as soon as cargo off- load          is complete, and the loadmaster gives the okay. The airplane does not          wait for passengers. Please be very careful in boarding as the engines          normally will remain running during ground operations. Approach the aircraft          only from the nose or tail direction (not parallel to the wings and engines)          and only when directed by the air crew or ground personnel.
+ 
+ 
+ 
+ 
+ 

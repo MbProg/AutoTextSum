@@ -1,0 +1,828 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=286;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <link rel="dns-prefetch" href="//cdnc.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads0.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads1.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads2.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads3.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads4.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads5.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads6.wikiart.org">
+    <link rel="dns-prefetch" href="//uploads7.wikiart.org">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c602447f6c","applicationID":"2097060","transactionName":"MQADZEECX0dRV00MXQhKIGNjTFJBQ0BWCEQPABZDHBNQXV5AUAtVSRMIVURNUEdATA==","queueTime":15,"applicationTime":58,"ttGuid":"DEF8DC404B471A31","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-892.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+<meta name="google-site-verification" content="EJmVmZ7vGy66saYNJxyFDVdDqesA5ZZFVjpvKD44Yos" />
+<meta name="apple-itunes-app" content="app-id=532863922" />
+
+<meta http-equiv="content-language" content="en" />
+
+<title>The Annunciation - Hans Memling - WikiPaintings.org</title>
+<link href="http://www.wikiart.org/en/hans-memling/the-annunciation" rel="canonical" />
+<link type="image/x-icon" rel="icon" href="http://cdnc.wikiart.org/zur/Global/Images/favicon.ico" /> 
+<link type="image/x-icon" rel="shortcut icon" href="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/favicon.ico" />
+<link href="/web/20160314145438cs_/http://uploads.wikiart.org/_cache/2688/Default.Css" rel="stylesheet" type="text/css" />
+<!--Technology by www.socialtalents.com, 2011-2016-->
+
+
+
+
+
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/web/20160314145438/http://cdnc.wikiart.org/zur/Global/CSS/all-ie.css" /><![endif]-->
+
+<script type="text/javascript" src="/web/20160314145438js_/http://artlas.gamarkable.com/ipad/banner/artlasBanner.min.js"></script>
+<script type="text/javascript" src="/web/20160314145438js_/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function()
+{
+	Topics.init('/', 'False', 'True', 'wikiart.org');
+	Topics.UrlToLoginPopUp = '/en/PopUp/LogOn';
+	Topics.UrlPopUpWithOutAction = '/en/PopUp';
+	Topics.ErrorAjaxText = 'Error occurred when handling your requests. Please reload page.';
+
+	$.extend($.validator.messages,
+	{
+		required: 'please fill in',
+		email: 'email is incorrect',
+		ValidationUserName: 'username is incorrect',
+		remote: 'please fill in',
+		url: 'url is incorrect',
+		date: 'Please enter a valid date.',
+		number: 'Please enter a valid number.',
+		digits: 'Please enter only digits',
+		equalTo: 'Please enter the same value again.',
+		maxlength: $.validator.format('Please enter no more than {0} characters.'),
+		minlength: $.validator.format('Please enter at least {0} characters.'),
+		range: $.validator.format('Please enter a value between {0} and {1}.'),
+		min: $.validator.format('Please enter a value greater than or equal to {0}.')
+	});
+});
+
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20329506-1', 'auto');
+    ga('create', 'UA-20329506-3', 'auto', { 'name': 'main' });
+
+    ga('send', 'pageview');
+    ga('main.send', 'pageview');
+  
+
+//]]>
+</script>
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.wikiart.org/en/hans-memling/the-annunciation";
+
+var firstYear = 1996;
+var displayDay = "14";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.wikiart.org/en/hans-memling/the-annunciation" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160314145438" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Feb
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 14:54:38 Mar 14, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Apr
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 14:54:38 Mar 14, 2016">14</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 14:54:38 Mar 14, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160314145438*/http://www.wikiart.org/en/hans-memling/the-annunciation" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">14 Mar 16 - 14 Mar 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:2:001000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+<div class="wp_wrapper">
+
+
+<div class="wp_wrapper_b90px">
+
+
+<div class="wp_menu">
+
+
+	<div class="pl18 pb20">
+	
+		<table class="t2c mt25"><tr class="vat">
+		<td class="r2c wHalf ar"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/1x1.gif" width="23" height="1" alt="" /></td>
+		
+	    <td class="l2c pl3 pr3"><a href="/web/20160314145438/http://www.wikiart.org/en/giovanni-bellini/leonardo-loredan-1501-1"><img src="/web/20160314145438im_/http://uploads.wikipaintings.org/_logo/165portr.jpg" width="46" height="46" alt="Leonardo Loredan - Giovanni Bellini" title="Leonardo Loredan - Giovanni Bellini" /></a></td>
+		
+		<td class="r2c wHalf al">&nbsp;</td>
+		</tr></table>
+		<div class="ac pt10"><a class="logo" href="/web/20160314145438/http://www.wikiart.org/" title="Visit the main page"></a></div>
+	
+	</div>
+	
+
+	<ul class="top">
+	<li><s></s><a href="#">Interaction</a>
+		<div>
+		<ul>
+	        <li><a href="/web/20160314145438/http://www.wikiart.org/en/About">about</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/How-to-Contribute">how to contribute</a></li>
+			<li><a href="/web/20160314145438/http://wikiart.uservoice.com/">feedback</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/Account/RequestInvite">request an invite</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/Donation/Donate">donate</a></li>
+		</ul>
+		</div>
+	</li>
+	<li><s></s><a href="#">Artists</a>
+		<div id="topArtists">
+		<ul>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/alphabet">by alphabet</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/artists-by-art-movement">by art movement</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/artists-by-painting-school">by school or group</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/artists-by-genre">by genre</a></li>
+			
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/artists-by-nation">by nationality</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/artists-by-century">by century</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/Popular-Artists/recent">popular</a></li>
+	    
+		</ul>
+		</div>
+	</li>
+	<li><s></s><a href="#">Artworks</a>
+		<div>
+		<ul>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-style">by style</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-genre">by genre</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-technique">by technique</a></li>
+			
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/Popular-Paintings/recent">popular</a></li>
+			<li><a href="/web/20160314145438/http://www.wikiart.org/en/random">random artwork</a></li>
+		</ul>
+		</div>
+	</li>
+	
+	</ul>
+	                                       
+	
+
+</div>
+
+
+<div class="wp_base">
+
+
+<div class="wp_content">
+
+
+	
+	<div class="SearchLanguagesBox"><div class="in">
+		<div class="fl nowrap">
+		
+		<form id="searchForm" method="post" action="/web/20160314145438/http://www.wikiart.org/en/search">
+		<dl class="SearchBox">
+	        <dt><input id="SearchTextinputEditText" name="SearchTextinputEditText" type="text" value="Enter keyword to search" /></dt>
+	        
+	        <dd><s id="SearchFormIcon" title="Search"></s></dd>
+        </dl>
+        <input type="submit" class="off" />
+        <input id="SearchTextDefault" name="SearchTextDefault" type="hidden" value="Enter keyword to search" />
+		<input id="SearchTextUrl" name="SearchTextUrl" type="hidden" value="/en/search" />
+		
+		</form>
+		
+		
+		</div>
+		<div class="fl nowrap">
+		
+		<table class="t2c auto"><tr>
+		<td class="l2c pl10 pt1">
+		
+        <!-- begin: Languages Box -->
+        <div id="idLanguageMenu" class="LanguageBox">
+	        <div class="tlOut">
+		        <div class="tlTL"><div class="tlTR">
+		        <div class="tlBL"><div class="tlBR">
+			        <div class="tlInner">
+				        <a href="javascript://"><span>English</span><s></s></a>
+			        </div>
+		        </div></div>
+		        </div></div>
+	        </div>
+	        <div class="hdLPanel">
+		        <ul>
+		        
+			        <li><a href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/the-annunciation" onfocus="blur()">English</a></li>
+			        
+			        <li><a href="/web/20160314145438/http://www.wikiart.org/es/hans-memling/the-annunciation" onfocus="blur()">Español</a></li>
+			        
+			        <li><a href="/web/20160314145438/http://www.wikiart.org/pt/hans-memling/the-annunciation" onfocus="blur()">Português</a></li>
+			        
+			        <li><a href="/web/20160314145438/http://www.wikiart.org/ru/hans-memling/the-annunciation" onfocus="blur()">Русский</a></li>
+			        
+			        <li><a href="/web/20160314145438/http://www.wikiart.org/uk/hans-memling/the-annunciation" onfocus="blur()">Українська</a></li>
+			        
+		        </ul>
+		        
+	        </div>
+        </div>
+        <!-- end: Languages Box -->
+        </td>
+		
+		<td class="r2c SignInBox">
+		
+	    
+        <span class="signIn"><a href="javascript://" onclick="TopicsModal.ShowPopUp('/en/PopUp/Logon', 'True');" onfocus="blur()">Sign in</a></span
+        >			
+		
+		</td>
+		</tr></table>
+		
+		</div><div class="line"><!-- --></div>
+	</div></div>
+	
+	
+	
+	
+    <div class="breadcrumbs">
+    <h6><ins class="breadcrumbs-width">
+    <span><a href="/web/20160314145438/http://www.wikiart.org/">Homepage</a></span><ins class="pl5"><!-- --></ins><span><a href="/web/20160314145438/http://www.wikiart.org/en/hans-memling">Hans Memling</a></span><ins class="pl5"><!-- --></ins><span>The Annunciation</span></ins></h6></div>
+    <div class="line"><!-- --></div>
+	
+	
+	
+<div itemscope itemtype="http://schema.org/Painting">
+<div class="tt30 pb8" style="overflow:hidden;">
+	<h1><span>The Annunciation</span>
+        <span class="paintingSwitch">
+            <a href="/web/20160314145438/http://www.wikiart.org/en/App/Painting/PrevPainting?artistContentId=210667&amp;chronologicalSortOrder=80" >◄ <span style="font-size: 14px;">Prev</span></a>
+             <a href="/web/20160314145438/http://www.wikiart.org/en/App/Painting/NextPainting?artistContentId=210667&amp;chronologicalSortOrder=80"><span style="font-size: 14px;">Next</span> ►</a> 
+    </span>
+	</h1>
+   
+        
+</div>
+
+<div class="hr mb12"><hr /></div>
+
+
+
+<div class="ArtistInfo">
+<!-- begin: ArtistInfo -->
+
+<div class="ImageProfileBox">
+	<div class="pozRel">
+		
+		<ul class="Enlarge"><li><b>
+		<span><a id="enlargeText" href="/web/20160314145438/http://uploads8.wikiart.org/images/hans-memling/the-annunciation.jpg" title="enlarge">enlarge</a></span>
+		<span class="icon"><a id="enlargeIcon" href="/web/20160314145438/http://uploads8.wikiart.org/images/hans-memling/the-annunciation.jpg" title="enlarge"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/Global/icon-Enlarge-23x23.png" width="23" height="23" alt="enlarge" /></a></span>
+		</b></li></ul>
+		<a id="paintingImage" href="/web/20160314145438/http://uploads8.wikiart.org/images/hans-memling/the-annunciation.jpg" title="The Annunciation - Hans Memling">
+		<img itemprop="image" src="/web/20160314145438im_/http://uploads8.wikiart.org/images/hans-memling/the-annunciation.jpg!Blog.jpg" class=''
+			alt="The Annunciation - Hans Memling"
+			title="The Annunciation - Hans Memling" />
+		</a>
+	</div>
+    
+    
+	<ul class="handmade-order">
+		<li><a href="/web/20160314145438/http://www.bestpriceart.com/the-annunciation-850886.html?acc=c20ad4d76fe97759aa27a0c99bff6710?ref=wikiart" rel="nofollow">Order handmade reproduction on bestpriceart.com</a></li>
+		<li class="ads-notice"><a href="/web/20160314145438/http://www.wikiart.org/en/why-ads">This is advertisement why do we display it?</a></li>
+	</ul>
+    
+</div>
+
+    
+<div class="DataProfileBox">
+
+<p class="pt10 b0">
+	<b>Artist:</b>
+	<a href="/web/20160314145438/http://www.wikiart.org/en/hans-memling" itemprop="author">Hans Memling</a>
+	
+</p>
+
+<p class="pt10 b0"><b>Completion Date:</b> <span itemprop="dateCreated">c.1482</span></p>
+
+<p class="pt10 b0">
+	<b>Style:</b>
+	<a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-style/northern-renaissance?firstArtist=hans-memling#artist-hans-memling"><span itemprop="style">Northern Renaissance</span></a>
+</p>
+
+<p class="pt10 b0">
+	<b>Genre:</b>
+	<a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-genre/religious-painting?firstArtist=hans-memling#artist-hans-memling"><span itemprop="genre">religious painting</span></a>
+</p>
+
+<p class="pt10 b0">
+	<b>Technique:</b>
+	<a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-technique/oil?firstArtist=hans-memling#artist-hans-memling"><span itemprop="technique">oil</span></a>, <a href="/web/20160314145438/http://www.wikiart.org/en/paintings-by-technique/wood?firstArtist=hans-memling#artist-hans-memling"><span itemprop="technique">wood</span></a>
+</p>
+
+<p class="pt10 b0"><b>Dimensions:</b> 79 x 55 cm</p>
+
+<p class="pt10 b0">
+	<b>Gallery:</b>
+	Metropolitan Museum of Art, New York City
+</p>
+
+<p class="pt10 b0">
+	<b>Tags:</b>
+	<span itemprop="keywords">
+	<a href="/web/20160314145438/http://www.wikiart.org/en/tag/annunciation">Annunciation</a></span>
+</p>
+
+<ul class="share-box">
+	<li class="title"><b>Share:</b></li>
+	<li class="facebook"><a href="javascript://" onclick="window.open(&quot;/web/20160314145438/http://www.facebook.com\/sharer.php?u=http%3a%2f%2fwww.wikiart.org%2fen%2fhans-memling%2fthe-annunciation&amp;v=112?fref=The+Annunciation+-+Hans+Memlingheight=440,width=620,scrollbars=true&quot;);return false;" title="Share on Facebook">Share on Facebook</a></li>
+	
+	<li class="tumblr"><a href="/web/20160314145438/http://www.tumblr.com/share/photo?source=http%3a%2f%2fuploads8.wikiart.org%2fimages%2fhans-memling%2fthe-annunciation.jpg!Blog.jpg&amp;caption=The+Annunciation+-+Hans+Memling&amp;clickthru=http%3a%2f%2fwww.wikiart.org%2fen%2fhans-memling%2fthe-annunciation" target="_blank" title="Share on Tumblr">Share on Tumblr</a></li>
+	
+	<li class="twitter"><a target="_blank" href="/web/20160314145438/http://twitter.com/intent/tweet?text=The+Annunciation+-+Hans+Memling+%23wikiart&amp;url=http%3a%2f%2fwww.wikiart.org%2fen%2fhans-memling%2fthe-annunciation" title="Share on Twitter">Share on Twitter</a></li>
+	<li class="pinterest"><a href="/web/20160314145438/http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.wikiart.org%2fen%2fhans-memling%2fthe-annunciation&amp;media=http%3a%2f%2fuploads8.wikiart.org%2fimages%2fhans-memling%2fthe-annunciation.jpg!Blog.jpg&amp;description=The+Annunciation+-+Hans+Memling" class="pin-it-button" count-layout="none"><img border="0" src="/web/20160314145438im_/http://assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+	<li class="google"><g:plusone size="small" href="http://www.wikiart.org/en/hans-memling/the-annunciation"></g:plusone></li>
+	<li class="like"><iframe src="/web/20160314145438if_/http://www.facebook.com/plugins/like.php?app_id=129611640459657&amp;href=http%3a%2f%2fwww.wikiart.org%2fen%2fhans-memling%2fthe-annunciation&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none;overflow:hidden;width:140px;height:21px;margin-top:-2px;" allowTransparency="true"></iframe></li>
+</ul>
+
+
+<div class="h10px"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/1x1.gif" width="1" height="10" alt="" /></div>
+
+</div>
+<!-- end: ArtistInfo -->
+</div>
+
+<div class="line"><!-- --></div>
+
+
+<div class="sized-placeholder-link">Image dimenstions 350x500px, <a href="javascript://" onclick="return PaintingShowSizes(210777);" class="arrow">View All Sizes</a></div>
+<div class="sized-placeholder-data" style="display:none;"><img src="/web/20160314145438im_/http://www.wikiart.org/Content/zur/Global/Images/Global/ajax-loader.gif" width="32" height="32" alt="" /></div>
+
+    <div class="pb15">
+	    <span class="iconNoCopy">This artwork is in the public domain.
+	    <a href="javascript://" onclick="TopicsModal.ShowPopUp('/en/App/Wiki/Message/CopyPublicDomain', false)" class="ad">Why?</a></span>
+    </div>
+    
+<table class="mt10">
+<tr><td class="fa11">File Source</td></tr>
+<tr><td class="fa11"><a href="/web/20160314145438/http://commons.wikimedia.org/wiki/Category:Hans_Memling">http://commons.wikimedia.org/wiki/Category:Hans_Memling</a></td></tr>
+</table>
+
+<div class="line h10px"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/1x1.gif" width="1" height="10" alt="" /></div>
+
+
+<div class="line h30px"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/1x1.gif" width="1" height="30" alt="" /></div>
+
+
+<div class="tt18 pb10">
+	<h2>
+		<span class="mr20">All Hans Memling Artworks Sorted by Year</span>
+	</h2>
+</div>
+
+<div class="search-row mr-20">
+	<div class="jcarousel-skin-tango jcarousel-selectable"><ul class="carousel" id="artistPaintings">
+		<li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/the-presentation-in-the-temple-1463" title="The Presentation in the Temple - Hans Memling"><img src='/web/20160314145438im_/http://uploads0.wikiart.org/images/hans-memling/the-presentation-in-the-temple-1463.jpg!xlSmall.jpg' alt="The Presentation in the Temple - Hans Memling" title="The Presentation in the Temple - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/the-presentation-in-the-temple-1463">The Presentation in the Temple - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/annunciation-1467" title="Annunciation - Hans Memling"><img src='/web/20160314145438im_/http://uploads0.wikiart.org/images/hans-memling/annunciation-1467.jpg!xlSmall.jpg' alt="Annunciation - Hans Memling" title="Annunciation - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/annunciation-1467">Annunciation - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/virgin-and-child-enthroned-with-two-musical-angels-1467" title="Virgin and Child Enthroned with two Musical Angels - Hans Memling"><img src='/web/20160314145438im_/http://uploads2.wikiart.org/images/hans-memling/virgin-and-child-enthroned-with-two-musical-angels-1467.jpg!xlSmall.jpg' alt="Virgin and Child Enthroned with two Musical Angels - Hans Memling" title="Virgin and Child Enthroned with two Musical Angels - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/virgin-and-child-enthroned-with-two-musical-angels-1467">Virgin and Child Enthroned with two Musical Angels - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/the-donne-triptych-right-wing" title="The Donne Triptych right wing - Hans Memling"><img src='/web/20160314145438im_/http://uploads3.wikiart.org/images/hans-memling/the-donne-triptych-right-wing.jpg!xlSmall.jpg' alt="The Donne Triptych right wing - Hans Memling" title="The Donne Triptych right wing - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/the-donne-triptych-right-wing">The Donne Triptych right wing - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/adoration-of-the-magi-whole-triptych" title="Adoration of the Magi: Whole Triptych - Hans Memling"><img src='/web/20160314145438im_/http://uploads1.wikiart.org/images/hans-memling/adoration-of-the-magi-whole-triptych.jpg!xlSmall.jpg' alt="Adoration of the Magi: Whole Triptych - Hans Memling" title="Adoration of the Magi: Whole Triptych - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/adoration-of-the-magi-whole-triptych">Adoration of the Magi: Whole Triptych - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/christ-crowned-with-thorns" title="Christ crowned with thorns - Hans Memling"><img src='/web/20160314145438im_/http://uploads0.wikiart.org/images/hans-memling/christ-crowned-with-thorns.jpg!xlSmall.jpg' alt="Christ crowned with thorns - Hans Memling" title="Christ crowned with thorns - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/christ-crowned-with-thorns">Christ crowned with thorns - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/crucifixion" title="Crucifixion - Hans Memling"><img src='/web/20160314145438im_/http://uploads3.wikiart.org/images/hans-memling/crucifixion.jpg!xlSmall.jpg' alt="Crucifixion - Hans Memling" title="Crucifixion - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/crucifixion">Crucifixion - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/diptych-of-john-the-baptist-and-st-veronica-st-john-the-baptist-the-left-wing" title="Diptych of John the Baptist and St. Veronica, St. John the Baptist, the left wing - Hans Memling"><img src='/web/20160314145438im_/http://uploads6.wikiart.org/images/hans-memling/diptych-of-john-the-baptist-and-st-veronica-st-john-the-baptist-the-left-wing.jpg!xlSmall.jpg' alt="Diptych of John the Baptist and St. Veronica, St. John the Baptist, the left wing - Hans Memling" title="Diptych of John the Baptist and St. Veronica, St. John the Baptist, the left wing - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/diptych-of-john-the-baptist-and-st-veronica-st-john-the-baptist-the-left-wing">Diptych of John the Baptist and St. Veronica, St. John the Baptist, the left wing - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/nativity-1" title="Nativity - Hans Memling"><img src='/web/20160314145438im_/http://uploads2.wikiart.org/images/hans-memling/nativity-1.jpg!xlSmall.jpg' alt="Nativity - Hans Memling" title="Nativity - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/nativity-1">Nativity - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-an-old-man" title="Portrait of an Old Man - Hans Memling"><img src='/web/20160314145438im_/http://uploads5.wikiart.org/images/hans-memling/portrait-of-an-old-man.jpg!xlSmall.jpg' alt="Portrait of an Old Man - Hans Memling" title="Portrait of an Old Man - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-an-old-man">Portrait of an Old Man - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-an-old-woman-1470" title="Portrait of an Old Woman - Hans Memling"><img src='/web/20160314145438im_/http://uploads3.wikiart.org/images/hans-memling/portrait-of-an-old-woman-1470.jpg!xlSmall.jpg' alt="Portrait of an Old Woman - Hans Memling" title="Portrait of an Old Woman - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-an-old-woman-1470">Portrait of an Old Woman - Hans Memling </a>
+	</p>
+	
+</div></li><li class="search-item inline ie7_zoom w150px"><div class="fl pozRel">
+	<div class="pb5"><a class="rimage" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-anthony-of-burgundy-1470" title="Portrait of Anthony of Burgundy - Hans Memling"><img src='/web/20160314145438im_/http://uploads1.wikiart.org/images/hans-memling/portrait-of-anthony-of-burgundy-1470.jpg!xlSmall.jpg' alt="Portrait of Anthony of Burgundy - Hans Memling" title="Portrait of Anthony of Burgundy - Hans Memling" /></a></div>
+	
+	<p class="pr20">
+		<a style="cursor:pointer;" class="jCrop paintingRef" href="/web/20160314145438/http://www.wikiart.org/en/hans-memling/portrait-of-anthony-of-burgundy-1470">Portrait of Anthony of Burgundy - Hans Memling </a>
+	</p>
+	
+</div></li>
+	</ul></div>
+</div>
+
+
+<div id="supersized_f11" style="display:none;">Use Full screen browser mode for best experience</div>
+<div id="supersized_tools" style="display:none;">
+	<div class="fr"><table class="t2c auto"><tr class="vam">
+	<td class="l2c"><a id="closeLink" href="javascript://" onclick="return false;" onfocus="blur()" title="Close">close</a></td>
+	<td class="r2c pt2"><a id="closeIcon" href="javascript://" onclick="return false;" onfocus="blur()" title="Close"><img src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Scripts/jquery.supersized-3.1.1/img/close-info.gif" width="15" height="15" alt="Close" /></a></td>
+	</tr></table></div>
+	<div class="fl ml8"><a id="infoLink" href="javascript://" onclick="return false;" onfocus="blur()" title="Show details">Show details</a></div>
+	<div class="fl"><ins>|</ins></div>
+	<div class="fl"><a id="artworkLink" class="active" href="javascript://" target="_blank" onfocus="blur()" title="Artwork Page">Artwork Page</a></div>
+	<div id="copyrightRestricted" style="displaye:none">
+	    <div class="fl"><ins>|</ins></div>
+	    <div class="fl"><span>Due to copyright law restrictions this image is not available for your country</span></div>
+	</div>
+	<div class="line"><!-- --></div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+function paintingHtml(index, value) {
+    return Wiki_PaintingCarouselItemSupersized(index, value, 'artistPaintings', '!xlSmall.jpg', 'en');
+}
+$(document).ready(function()
+{
+    Wiki_RegisterJsonLoader('artistPaintings',
+        '/en/App/Painting/PaintingsByArtist?artistUrl=hans-memling',
+        'Hans Memling - All works chronologically' );
+
+	supersizedAssignOnClick($('.search-item .rimage'), 'artistPaintings', 0);
+    supersizedInit('/en/App/Painting/ImageData/');
+	
+	$('#paintingImage').click(function() {
+        supersized_start_contentId = 210777;
+        supersizedStart('artistPaintings', 0);
+        return false;
+    });
+    $('#enlargeText').click(function() {
+        supersized_start_contentId = 210777;
+        supersizedStart('artistPaintings', 0);
+        return false;
+    });
+    $('#enlargeIcon').click(function() {
+        supersized_start_contentId = 210777;
+        supersizedStart('artistPaintings', 0);
+        return false;
+    });
+
+	var carouselStart = 1;
+	
+    $('#artistPaintings img').each(function (index, value) {
+        if ($(value).attr('src').indexOf('images/hans-memling/the-annunciation.jpg') > 0)
+        {
+            $(value).parent().parent().parent().parent().addClass('selected');
+            carouselStart = index;
+        }
+    });
+    
+	
+	var total = 164;
+	if ($('.search-row').width() < (total * 160) - 36){ //
+        jQuery('#artistPaintings').jcarousel(
+        {
+            itemFallbackDimension: 150,
+            id: 'artistPaintings',
+            jsonName: 'artistPaintings',
+            start: carouselStart,
+            size: total,
+            liClass: 'search-item inline ie7_zoom w140px',
+            itemLoadCallback: { onBeforeAnimation: Carousel_LoadJsonHandler },
+            itemHtmlCallback: paintingHtml
+        });
+    }
+});
+//]]>
+</script>
+
+</div>
+	
+    
+	<div class="line"></div>
+
+</div>
+	
+	<div class="line"></div>
+
+</div>
+
+	<div class="line"></div>
+
+
+</div></div>
+
+<style type="text/css">
+img.grayscale {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); /* For Webkit browsers */
+	filter: gray; /* For IE 6 - 9 */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	opacity:.6;
+}
+
+img.grayscale:hover {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	opacity:1;
+}
+</style>
+
+<div class="wp_footer">
+
+<table class="t2c"><tr>
+<td class="r2c pb5">
+	<ul style="margin-left:33px;">
+		<li><s></s><a href="/web/20160314145438/http://www.wikiart.org/">home</a></li>
+		<li><s></s><a href="/web/20160314145438/http://www.wikiart.org/en/About">about</a></li>
+		<li><s></s><a href="javascript://" class="feedback">feedback</a></li>
+		<li><s></s><a href="/web/20160314145438/http://www.wikiart.org/en/Donation/Donate">donate</a></li>
+        
+    </ul>
+</td>
+<td class="r2c ar vat pt25">WikiArt (WikiPaintings) on <a href="/web/20160314145438/http://twitter.com/wikipaintings">Twitter</a> and <a href="/web/20160314145438/http://www.facebook.com/wikiart.org" title="WikiArt on facebook" target="_blank">Facebook</a></td>
+<td class="vat" style="padding-top:21px;"><div class="w140px ml5"></div><ins class="rel ml5" style="top:4px;"><span id="facebookFooter" /></ins></td>
+<td class="vat pt15 pl10"><a href="/web/20160314145438/https://itunes.apple.com/us/app/wikipaintings-encyclopedia/id532863922"><img class="grayscale" src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/Global/download-AppStore.png" width="135" height="40" alt="Download Wikipaintings on the App Store" title="Download Wikipaintings on the App Store" /></a></td>
+<td class="vat pt15 pl20 pr20"><a href="/web/20160314145438/https://play.google.com/store/apps/details?id=com.ilit.wikipaintings"><img class="grayscale" src="/web/20160314145438im_/http://cdnc.wikiart.org/zur/Global/Images/Global/download-GooglePlay.png" width="115" height="40" alt="Download Wikipaintings on the Google Play" title="Download Wikipaintings on the Google Play" /></a></td>
+</tr></table>
+
+
+<script type="text/javascript">
+UserVoice = window.UserVoice || [];
+UserVoice.push(['showTab', 'classic_widget', {
+  mode: 'full',
+  primary_color: '#cc6d00',
+  link_color: '#007dbf',
+  default_mode: 'support',
+  forum_id: 103349,
+  tab_label: 'Feedback & Support',
+  tab_color: '#cc6d00',
+  tab_position: 'bottom-left',
+  tab_inverted: false
+}]);
+</script>
+</div>
+
+<div id="divPopUp" class="jqmWindow"></div>
+<script src="/web/20160314145438js_/http://www.wikiart.org/cache/cachecontent/JavascriptAdditionalCache/-26980/javascript" type="text/javascript"></script>
+
+
+   <script type="text/javascript" src="/web/20160314145438js_/http://assets.pinterest.com/js/pinit.js"></script>
+    <!--    ARTLAS  -->
+    <script type="text/javascript"
+    src="/web/20160314145438js_/http://artlas.gamarkable.com/ipad/banner/artlasBanner.min.js"></script>
+    <!--    ARTLAS  -->
+</body>
+</html>
+<!-- 00.0000s : Log Started 
+00.0002s : TopicsApplication_BeginRequest done 
+00.0008s : TopicsApplication_AuthorizeRequest done 
+00.0189s : TopicsApplication_PreRequestHandlerExecute enter 
+00.0189s : TopicsApplication_PreRequestHandlerExecute done 
+00.0191s : enter process request 
+00.0192s : exit process request 
+00.0193s : ExecuteCore start 
+00.0196s : Execution of controller action start 
+00.0274s : Painting.View start real  
+00.0279s : Painting.View views added 
+00.0293s : Painting.View Artist paintings readed 
+00.0295s : Painting.View Artist Title ready 
+00.0300s : Painting.View done 
+00.0307s : master page start 
+00.0308s : theme.master start 
+00.0317s : body start 
+00.0318s : Skin.master line 12 
+00.0335s : logo done 
+00.0336s : menu done 
+00.0342s : top search done 
+00.0353s : languages done 
+00.0353s : before content 
+00.0511s : View paintings details done 
+00.0560s : after content 
+00.0566s : Render Finished 
+ -->

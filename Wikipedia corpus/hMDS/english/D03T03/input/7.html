@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app8.us.archive.org";archive_analytics.values.server_ms=416;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>The Siberia Bill - Operation Clambake Message Board</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - Operation Clambake Message Board" href="http://ocmb.xenu.net/ocmb/feed.php">	<link rel="alternate" type="application/atom+xml" title="Feed - News" href="http://ocmb.xenu.net/ocmb/feed.php?mode=news">		<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="http://ocmb.xenu.net/ocmb/feed.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Opinions &amp; Debate" href="http://ocmb.xenu.net/ocmb/feed.php?f=9">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - The Siberia Bill" href="http://ocmb.xenu.net/ocmb/feed.php?f=9&amp;t=29937">	
+	<link rel="canonical" href="http://ocmb.xenu.net/ocmb/viewtopic.php?t=29937">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( /web/20160314114527/http://www.subblue.com/ )
+	Modified by:
+-->
+
+<link href="/web/20160314114527cs_/http://ocmb.xenu.net/ocmb/styles/prosilver/theme/stylesheet.css?assets_version=40" rel="stylesheet">
+<link href="/web/20160314114527cs_/http://ocmb.xenu.net/ocmb/styles/prosilver/theme/en/stylesheet.css?assets_version=40" rel="stylesheet">
+<link href="/web/20160314114527cs_/http://ocmb.xenu.net/ocmb/styles/prosilver/theme/responsive.css?assets_version=40" rel="stylesheet" media="all and (max-width: 700px), all and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=40" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://ocmb.xenu.net/ocmb/viewtopic.php?t=29937";
+
+var firstYear = 1996;
+var displayDay = "14";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://ocmb.xenu.net/ocmb/viewtopic.php?t=29937" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160314114527" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Feb
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:45:27 Mar 14, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Apr
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:45:27 Mar 14, 2016">14</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:45:27 Mar 14, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160314114527*/http://ocmb.xenu.net/ocmb/viewtopic.php?t=29937" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">14 Mar 16 - 14 Mar 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:2:001000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="/web/20160314114527/http://www.xenu.net/" title="Operation Clambake"><span class="imageset site_logo"></span></a>
+				<h1>Operation Clambake Message Board</h1>
+				<p>The Fight Against the Church of Scientology on the 'Net</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					<input type="hidden" name="sid" value="943cea5b4462827c5b28bbd8cba573f2" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?search_id=unanswered&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?search_id=active_topics&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=team&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/faq.php?sid=943cea5b4462827c5b28bbd8cba573f2" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside"  data-skip-responsive="true"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/ucp.php?mode=login&amp;sid=943cea5b4462827c5b28bbd8cba573f2" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/ucp.php?mode=register&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="/web/20160314114527/http://www.xenu.net/" data-navbar-reference="home" itemprop="url"><span itemprop="title">Operation Clambake</span></a></span>						<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/index.php?sid=943cea5b4462827c5b28bbd8cba573f2" accesskey="h" data-navbar-reference="index" itemprop="url"><span itemprop="title">The fight against Church of Scientology on the 'Net.</span></a></span>
+											<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="104"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=104&amp;sid=943cea5b4462827c5b28bbd8cba573f2" itemprop="url"><span itemprop="title">General Topics</span></a></span>
+															<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="9"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=9&amp;sid=943cea5b4462827c5b28bbd8cba573f2" itemprop="url"><span itemprop="title">Opinions &amp; Debate</span></a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?f=9&amp;t=29937&amp;sid=943cea5b4462827c5b28bbd8cba573f2">The Siberia Bill</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">A place to post and debate the Church of Scientology.<br /></div>
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=reply&amp;f=9&amp;t=29937&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?sid=943cea5b4462827c5b28bbd8cba573f2" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="29937" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="943cea5b4462827c5b28bbd8cba573f2" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			4 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p352517" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile352517">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=17568&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="avatar"><img class="avatar" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/download/file.php?avatar=17568.gif" width="96" height="96" alt="User avatar" /></a>														</div>
+								<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=17568&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">SeeYaBye</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?author_id=17568&amp;sr=posts&amp;sid=943cea5b4462827c5b28bbd8cba573f2">850</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Mar 13, 2008 7:15 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content352517">
+
+			<h3 class="first"><a href="#p352517">The Siberia Bill</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=quote&amp;f=9&amp;p=352517&amp;sid=943cea5b4462827c5b28bbd8cba573f2" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?p=352517&amp;sid=943cea5b4462827c5b28bbd8cba573f2#p352517"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=17568&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">SeeYaBye</a></strong> &raquo; </span>Thu Jan 15, 2009 4:49 pm </p>
+			
+			
+			
+			<div class="content">The Alaska Mental Health Enabling Act (aka: The Siberia Bill) was talked about by David Miscavige in his intervview with Ted Koppel on Nightline some years ago. That interview can be found on Youtube. I was curious about this bill that was before Congress in 1956. This has some pretty interesting facts about the Bill and $cientology's crazy stance on it: 
+<br />
+<br /><!-- m --><a class="postlink" href="/web/20160314114527/http://en.wikipedia.org/wiki/Alaska_Mental_Health_Enabling_Act">http://en.wikipedia.org/wiki/Alaska_Men ... abling_Act</a><!-- m -->
+<br />
+<br />I still find it hard to believe that I once considered myself a member of this ridiculous nut-job "church" and believed that everything that the great LRH said was the gospel truth.</div>
+
+			
+									
+									<div id="sig352517" class="signature">"The truth is the kindest thing we can give folks in the end."  - Harriet Beecher Stowe</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p352527" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile352527">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=1960&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="avatar"><img class="avatar" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/download/file.php?avatar=1960.gif" width="100" height="91" alt="User avatar" /></a>														</div>
+								<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=1960&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">RealityWillTell</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?author_id=1960&amp;sr=posts&amp;sid=943cea5b4462827c5b28bbd8cba573f2">3103</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 10, 2006 6:05 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content352527">
+
+			<h3 ><a href="#p352527"></a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=quote&amp;f=9&amp;p=352527&amp;sid=943cea5b4462827c5b28bbd8cba573f2" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?p=352527&amp;sid=943cea5b4462827c5b28bbd8cba573f2#p352527"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=1960&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">RealityWillTell</a></strong> &raquo; </span>Thu Jan 15, 2009 6:58 pm </p>
+			
+			
+			
+			<div class="content">Of course scientology had a paranoid fear of imagined psychiatric American gulags (which would have never happened), it would have stood as competition to their own scientology ones to come! (namely the RPF!) <img class="smilies" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/images/smilies/icon_rolleyes.gif" alt=":roll:" title="Rolling Eyes" />  <img class="smilies" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/images/smilies/icon_lol.gif" alt=":lol:" title="Laughing" /> 
+<br />
+<br />
+<br />Here also is just another instance of the church (sic) of $cientology not only bending the truth because the bill still did pass (albeit slightly amended but essentially the same bill) but also flat out lying about their presence in trying to stop the bill (other groups but not scientology are mentioned in senate hearings). <img class="smilies" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/images/smilies/icon_rolleyes.gif" alt=":roll:" title="Rolling Eyes" /></div>
+
+			
+									
+									<div id="sig352527" class="signature"><img src="/web/20160314114527im_/http://i69.photobucket.com/albums/i80/tannerin1/Hubbard/HubConV2smC.gif" class="postimage" alt="Image" /><br /><span style="color: #FF8040"><a href="/web/20160314114527/http://vimeo.com/2356742" class="postlink">.</a></span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p352548" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile352548">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=846&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="avatar"><img class="avatar" src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/download/file.php?avatar=846.jpg" width="75" height="81" alt="User avatar" /></a>														</div>
+								<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=846&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">J. Swift</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?author_id=846&amp;sr=posts&amp;sid=943cea5b4462827c5b28bbd8cba573f2">10212</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Apr 28, 2005 10:09 pm</dd>		
+		
+																<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Los Feliz, California</dd>
+							
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger"><span class="imageset icon_contact" title="Contact J. Swift">Contact J. Swift</span></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="/web/20160314114527/http://scientologymoneyproject.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content352548">
+
+			<h3 ><a href="#p352548"></a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=quote&amp;f=9&amp;p=352548&amp;sid=943cea5b4462827c5b28bbd8cba573f2" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?p=352548&amp;sid=943cea5b4462827c5b28bbd8cba573f2#p352548"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=846&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">J. Swift</a></strong> &raquo; </span>Fri Jan 16, 2009 12:04 am </p>
+			
+			
+			
+			<div class="content">This bill was an early attempt to establish a mental health care system in Alaska when it was still a US Territory ( Alaska became a State on January 3, 1959). The intent of the bill was to use forestry and mining monies derived from US-owned land in Alaska to self-fund a mental health care system in Alaska. Read the Wiki article and you will see that fringe groups got involved. They feared the polio vaccine, fluoridated water, and psychiatry. The following line spoken in 1956 sure sounds familiar:
+<br />
+<br /><blockquote class="uncited"><div><span style="font-weight: bold">Mrs. Ernest W. Howard of the Women's Patriotic Committee on National Defense castigated the slackness of Congress for not picking up on the bill's perceived dangers: "Those of us who have been in the study and research work of the United Nations, we feel that we are experts in this . . .</span></div></blockquote><br />ref: <!-- m --><a class="postlink" href="/web/20160314114527/http://en.wikipedia.org/wiki/Alaska_Mental_Health_Enabling_Act">http://en.wikipedia.org/wiki/Alaska_Men ... abling_Act</a><!-- m --><br /><br />"We are the experts. We are the authorities. We don't need permission...." These are the lines spoken by Cultists of the world who want to tell the rest of us what is best for us -- and what is dangerous to their pocketbooks, bigotries, and poisonous ideologies:<br /><br /><blockquote class="uncited"><div><span style="font-weight: bold">John Kaspar, a White Citizens' Council organizer who had achieved notoriety for starting a race riot in Clinton, Tennessee, declared that "almost one hundred percent of all psychiatric therapy is Jewish and about eighty percent of psychiatrists are Jewish . . . one particular race is administering this particular thing." He argued that Jews were nationalists of another country who were attempting to "usurp American nationality."</span></div></blockquote>
+<br />ref: ibid.
+<br />
+<br />*****
+<br /><img src="/web/20160314114527im_/http://i69.photobucket.com/albums/i68/sadhu77/Unholy_three.png" class="postimage" alt="Image" />
+<br />
+<br />/////</div>
+
+			
+									
+									<div id="sig352548" class="signature"><img src="/web/20160314114527im_/http://i17.photobucket.com/albums/b80/kent77/SR71.png" class="postimage" alt="Image" /><br /><br />http://www.youtube.com/user/SurvivingScientology<br />http://www.survivingscientologyradio.com/<br />http://scientologymoneyproject.com/<br />contact: scienowriter@gmail.com</div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p352638" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile352638">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=2136&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">Jeff Jacobsen</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/search.php?author_id=2136&amp;sr=posts&amp;sid=943cea5b4462827c5b28bbd8cba573f2">76</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 08, 2006 6:31 pm</dd>		
+		
+																<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Phoenix AZ</dd>
+							
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger"><span class="imageset icon_contact" title="Contact Jeff Jacobsen">Contact Jeff Jacobsen</span></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="/web/20160314114527/http://jeffjacobsen.org/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content352638">
+
+			<h3 ><a href="#p352638"></a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=quote&amp;f=9&amp;p=352638&amp;sid=943cea5b4462827c5b28bbd8cba573f2" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?p=352638&amp;sid=943cea5b4462827c5b28bbd8cba573f2#p352638"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=viewprofile&amp;u=2136&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="username">Jeff Jacobsen</a></strong> &raquo; </span>Sat Jan 17, 2009 5:21 pm </p>
+			
+			
+			
+			<div class="content">Here's the bill:
+<br />
+<br /><!-- m --><a class="postlink" href="/web/20160314114527/http://www.lisamcpherson.org/siberia_bill.htm">http://www.lisamcpherson.org/siberia_bill.htm</a><!-- m --></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<form id="viewtopic" method="post" action="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewtopic.php?f=9&amp;t=29937&amp;sid=943cea5b4462827c5b28bbd8cba573f2">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2" />
+			</fieldset>
+	</form>
+	<hr />
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/posting.php?mode=reply&amp;f=9&amp;t=29937&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+	
+		
+	
+			<div class="pagination">
+			4 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=9&amp;sid=943cea5b4462827c5b28bbd8cba573f2" class="left-box arrow-left" accesskey="r">Return to “Opinions &amp; Debate”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=107&amp;sid=943cea5b4462827c5b28bbd8cba573f2">General Admin</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=108&amp;sid=943cea5b4462827c5b28bbd8cba573f2">OCMB Announcements</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=127&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Guest Book</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=128&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Operation Clambake - the main site</a></li>
+																<li><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=104&amp;sid=943cea5b4462827c5b28bbd8cba573f2">General Topics</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=9&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Opinions &amp; Debate</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=3&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Your story from inside Scientology</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=11&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Media Reports</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=105&amp;sid=943cea5b4462827c5b28bbd8cba573f2">International Picket Central</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=130&amp;sid=943cea5b4462827c5b28bbd8cba573f2">About the International Picket Central</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=5&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Australia &amp; New Zealand</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=110&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Africa</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=111&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Asia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=112&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Central &amp; South America</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=152&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Belize</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=132&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Bolivia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=133&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Brazil</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=134&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Chile</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=135&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Colombia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=147&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Costa Rica</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=136&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ecuador</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=150&amp;sid=943cea5b4462827c5b28bbd8cba573f2">El Salvador</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=137&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Falkland Islands</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=138&amp;sid=943cea5b4462827c5b28bbd8cba573f2">French Guiana</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=131&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Argentina</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=6&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Europe</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=254&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Austria</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=255&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Belgium</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=245&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Croatia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=124&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Denmark</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=228&amp;sid=943cea5b4462827c5b28bbd8cba573f2">France</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=256&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Germany</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=240&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ireland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=260&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Netherlands</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=122&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Norway</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=123&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Sweden</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=125&amp;sid=943cea5b4462827c5b28bbd8cba573f2">United Kingdom</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=126&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ukraine</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=4&amp;sid=943cea5b4462827c5b28bbd8cba573f2">North America</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=166&amp;sid=943cea5b4462827c5b28bbd8cba573f2">INTERNATIONAL PICKETS</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=7&amp;sid=943cea5b4462827c5b28bbd8cba573f2">PICKET REPORTS</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=275&amp;sid=943cea5b4462827c5b28bbd8cba573f2">FLYERS &amp; LEAFLETS</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=276&amp;sid=943cea5b4462827c5b28bbd8cba573f2">PICKET SIGNS</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=109&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Org Patrol</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=209&amp;sid=943cea5b4462827c5b28bbd8cba573f2">About Org Patrol</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=16&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Org Addresses</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=113&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Africa</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=114&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Asia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=199&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Afghanistan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=186&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Georgia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=72&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Hong Kong</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=74&amp;sid=943cea5b4462827c5b28bbd8cba573f2">India</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=101&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Israel</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=78&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Japan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=90&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Kazakhstan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=85&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Kyrgyzstan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=89&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Nepal</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=92&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Pakistan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=207&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Russia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=99&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Taiwan (ROC)</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=100&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Thailand</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=202&amp;sid=943cea5b4462827c5b28bbd8cba573f2">United Arab Emirates</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=117&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Europe</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=56&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Austria</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=57&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Belarus</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=67&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Belgium</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=212&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Bosnia and Herzegovina</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=63&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Croatia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=64&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Czech Republic</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=40&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Denmark</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=66&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Finland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=54&amp;sid=943cea5b4462827c5b28bbd8cba573f2">France</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=68&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Germany</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=70&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Greece</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=73&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Hungary</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=76&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ireland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=77&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Italy</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=86&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Lithuania</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=87&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Macedonia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=88&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Moldova</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=83&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Netherlands</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=75&amp;sid=943cea5b4462827c5b28bbd8cba573f2">North Ireland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=41&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Norway</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=266&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Poland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=84&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Portugal</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=102&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Romania</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=94&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Russia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=96&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Slovenia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=97&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Slovakia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=98&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Spain</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=79&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Switzerland</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=42&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Sweden</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=95&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ukraine</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=43&amp;sid=943cea5b4462827c5b28bbd8cba573f2">United Kingdom</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=115&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Australia &amp; New Zealand</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=17&amp;sid=943cea5b4462827c5b28bbd8cba573f2">New Zealand org addresses</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=116&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Central &amp; South America</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=80&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Argentina</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=58&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Brazil</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=60&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Chile</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=61&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Colombia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=62&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Costa Rica</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=93&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Dominican Republic</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=65&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ecuador</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=71&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Guatemala</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=91&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Nicaragua</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=82&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Venezuela</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=55&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Albania</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=118&amp;sid=943cea5b4462827c5b28bbd8cba573f2">North America</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=44&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Alaska</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=18&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Arizona</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=19&amp;sid=943cea5b4462827c5b28bbd8cba573f2">California</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=59&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Canada</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=20&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Colorado</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=21&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Connecticut</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=45&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Delaware</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=103&amp;sid=943cea5b4462827c5b28bbd8cba573f2">District of Columbia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=22&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Florida</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=23&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Georgia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=24&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Hawaii</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=219&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Idaho</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=25&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Illinois</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=46&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Indiana</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=47&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Kansas</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=48&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Louisiana</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=49&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Maine</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=26&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Massachusetts</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=27&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Michigan</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=28&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Minnesota</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=29&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Missouri</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=220&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Montana</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=30&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Nevada</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=50&amp;sid=943cea5b4462827c5b28bbd8cba573f2">New Hampshire</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=51&amp;sid=943cea5b4462827c5b28bbd8cba573f2">New Jersey</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=31&amp;sid=943cea5b4462827c5b28bbd8cba573f2">New Mexico</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=32&amp;sid=943cea5b4462827c5b28bbd8cba573f2">New York</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=33&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Ohio</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=34&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Oregon</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=35&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Pennsylvania</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=81&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Puerto Rico</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=36&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Tennessee</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=37&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Texas</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=38&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Utah</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=52&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Virginia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=39&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Washington</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=53&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Wisconsin</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=282&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Freewinds</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=129&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Good Quotes</a></li>
+																<li><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=106&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Special Topics</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=12&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Narconon Exposed</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=221&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Scientology Business Consultants Exposed</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=224&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Exelect</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=225&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Jobperformer</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=223&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Performia</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=222&amp;sid=943cea5b4462827c5b28bbd8cba573f2">U-Man</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=14&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Study Technology</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=274&amp;sid=943cea5b4462827c5b28bbd8cba573f2">L Ron Hubbard: The Movie</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=281&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Improving &amp; Developing Operation Clambake</a></li>
+																<li><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=119&amp;sid=943cea5b4462827c5b28bbd8cba573f2">System</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=15&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Dustbin</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=2&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Feedback &amp; Help</a></li>
+																<li>&nbsp; &nbsp;<a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/viewforum.php?f=120&amp;sid=943cea5b4462827c5b28bbd8cba573f2">Testing</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 7 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="/web/20160314114527/http://www.xenu.net/" data-navbar-reference="home">Operation Clambake</a></span>						<span class="crumb"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/index.php?sid=943cea5b4462827c5b28bbd8cba573f2" data-navbar-reference="index">The fight against Church of Scientology on the 'Net.</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/ucp.php?mode=delete_cookies&amp;sid=943cea5b4462827c5b28bbd8cba573f2" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=team&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="/web/20160314114527/http://ocmb.xenu.net/ocmb/memberlist.php?mode=contactadmin&amp;sid=943cea5b4462827c5b28bbd8cba573f2" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				Powered by <a href="/web/20160314114527/https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+									</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/web/20160314114527im_/http://ocmb.xenu.net/ocmb/cron.php?cron_type=cron.task.core.queue&amp;sid=943cea5b4462827c5b28bbd8cba573f2" width="1" height="1" alt="cron" /></div>
+
+<script type="text/javascript" src="/web/20160314114527js_/http://ocmb.xenu.net/ocmb/assets/javascript/jquery.min.js?assets_version=40"></script>
+<script type="text/javascript" src="/web/20160314114527js_/http://ocmb.xenu.net/ocmb/assets/javascript/core.js?assets_version=40"></script>
+
+
+<script type="text/javascript" src="/web/20160314114527js_/http://ocmb.xenu.net/ocmb/styles/prosilver/template/forum_fn.js?assets_version=40"></script>
+
+<script type="text/javascript" src="/web/20160314114527js_/http://ocmb.xenu.net/ocmb/styles/prosilver/template/ajax.js?assets_version=40"></script>
+
+
+
+
+</body>
+</html>

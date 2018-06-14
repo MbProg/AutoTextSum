@@ -1,0 +1,185 @@
+NOV
+APR
+JUL
+10
+2015
+2016
+2017
+27 captures
+10 Mar 14 - 4 Jul 16
+Close Help
+Restricted Data
+The Nuclear Secrecy Blog
+Redactions
+Conant on the Role of the British in the Manhattan Project
+by Alex Wellerstein, published March 21st, 2012
+The Manhattan Project was a joint effort to build the atomic bomb between the United States, the United Kingdom, and Canada. In practice, most of the labor, expense, and manpower came from the United States, and the degree to which the UK and Canada should be equal partners with the US in the bomb project was a controversial subject.
+The British were instrumental in prodding the US into serious action with the MAUD report, and the Canadians had uranium. But should that be it? This was the question in late 1942, when the US program was undergoing a massive transformation. Prior to 1942, the American effort was primarily a research program, trying to answer the question of whether atomic bombs could be built in a reasonable amount of time. From late 1942 onward, the effort shifted to a production program, an all-out effort to try and produce an actual bomb for use in the war. Would the British be let in on this later phase? Did the United States need the British?
+Not really, thought James B. Conant, President of Harvard, chairman of the National Defense Research Committee 1 , and close friend of Vannevar Bush (director of the Office of Scientific Research and Development, which was the civilian side of the Manhattan Project). This week’s document is a letter from Conant to Bush from December 1942, outlining the many reasons he thought that the US should essentially abandon the British at that point in the work: 2
+Click image to view full PDF.
+Conant implored Bush to clarify the matter of UK participation before the full-scale bomb project, run by the U.S. Army Corps of Engineers, got under way, “for it will be clearly difficult to continue to have complete scientific interchange on the one hand and restricted development interchange on the other unless the arrangement is carefully spelled out, for the line between research and development is nebulous, and the same people are often involved in both.”
+For Conant, the decision had to be completely pragmatically. The was “presumably one one reason” to share secret military information between Allied nations, “namely, to further the prosecution of the war in which both are engaged.” The question was, would sharing all information with the British do this? He thought not. The British were not producing fissile material, for example, so “our passing our knowledge to them [in that subject] will not assist the British in any way in the present war effort.” So under this scheme, the British would only get to participate in the parts that they themselves were working on which would actually get them closer to making an atomic bomb during World War II. Which is to say, bomb design, reactors, and plutonium would be left out of the story for the British. (“If there be any national rights in this whole area ’49’ [code for plutonium] may be said to be a strictly U.S. invention.”)
+Would there be complications? Conant acknowledged that if they cut the UK out at this point, Canada might deny them heavy water. That would be annoying, but not a deal-breaker. They might also deny them uranium ore, which would be a somewhat more dicey procedure until the US was sure of its access to domestic supplies. (They had a considerable amount of high-value ore from the Belgian Congo, but this was insufficient for the entire project.) The British, of course, would “certainly be displeased,” but Conant concludes that “there would be no unfairness to the British in this procedure.”
+What would be the advantage to the US in doing this? Conant says simply that it would help with secrecy:
+The advantages of restricting all further information to the United States is obvious. Secrecy could be more easily controlled. We are not just reaching the point where the advances are military secrets of the first order of importance.
+Conant and Bush were also worried that the British interest in participating in the bomb project had nothing to do with the current war, but with an eye towards scientific and commercial prestige in the postwar period. Conant does not mention this here, though.
+There would be many more salvos on this front as Conant and Bush frantically tried to persuade Roosevelt not to let the British into the full, new Manhattan Project. At one point, Bush thought he had convinced FDR of the soundness of this measure.
+But however persuasive Vannevar Bush could be, he couldn’t match up to Winston Churchill. By mid-1943, Churchill had convinced Roosevelt that full cooperation was the only true path, and the Quebec Agreement was (secretly) entered into. Not only would the British get access to American research, and send a delegation of scientists to Los Alamos, but they would get to have equal say on whether the bombs themselves were used, and whether the US could share the information with any other countries. In practice, though, the British were nearly completely kept out of Hanford (James Chadwick visited it once), though they learned much about plutonium through their work at Los Alamos. The Canadians founded labs at Montreal and Chalk River, but were more or less excluded from American information by General Groves.
+Conant would eventually embrace the Quebec Agreement as well. But his initial reason for wanting to keep the British out — because of the difficulty of controlling secrecy — proved exactly correct. It was, after all, Klaus Fuchs, a member of the British delegation to Los Alamos, who proved to be the most significant of the wartime atomic spies. Of course, he was wrong the British had nothing to contribute: the British delegation (including Fuchs) made major contributions towards the practical realization of the bomb while at Los Alamos. So maybe it all evens out.
+Notes
+Note that at this point, Office of Scientific Research and Development had taken over most of the responsibilities of the original NDRC. The NDRC became the “NDRC of the OSRD” at this point, which meant that it was merely an advisory body of the OSRD. [ ↩ ]
+Citation: James B. Conant to Vannevar Bush, “US-British Relations on S-1 Project” (14 December 1942), in Bush-Conant File Relating the Development of the Atomic Bomb, 1940-1945, Records of the Office of Scientific Research and Development, RG 227, microfilm publication M1392, National Archives and Records Administration, Washington, D.C., n.d. (ca. 1990), Roll 2, Target 4, Folder 9, “S-1 British Relations Prior to Interim Committee, [Fldr.] No. 1 [1942].” [ ↩ ]
+Tweet
+Tags: 1940s , Canada , Klaus Fuchs , Leslie Groves , Los Alamos , Manhattan Project , United Kingdom , Vannevar Bush
+This entry was posted             on Wednesday, March 21st, 2012 at 11:01 am      and is filed under Redactions .       You can follow any responses to this entry through the RSS 2.0 feed.               Both comments and pings are currently closed.
+Citation: Alex Wellerstein, "Conant on the Role of the British in the Manhattan Project," Restricted Data: The Nuclear Secrecy Blog, March 21, 2012, accessed April 9, 2016, http://blog.nuclearsecrecy.com/2012/03/21/weekly-document-conant-on-the-role-of-the-british-in-the-manhattan-project/ .
+   
+PREVIOUS POST
+« Classification In-Jokes
+NEXT POST
+   
+Friday Image: Uncle Sam says Shush »
+3 Responses to “Conant on the Role of the British in the Manhattan Project”
+Robert Norris
+says:
+March 23, 2012 at 9:42 am
+If you wanted someone to limit British participation in the Manhattan Project you could not do better that General Leslie Groves.  Anglophobia was in his DNA and as late as the early 20th century there were still strong feelings against the British among sectors of the American public.
+Upon getting the assignment to head the project in September 1942 Groves effectively limited any British participation or exchange of information.  Even when forced to implement decisions reached in the Quebec Agreement of 19 August 1943 he controlled the process.  It is easiest to quote a few paragraphs from Racing for the Bomb (pp. 328-29).
+“If the British thought that they were going to have a free interchange of information on a full range of topics, they were about to learn otherwise. Key passages in the agreement itself provided just the kind of language Groves needed to withhold certain kinds of information from them. For example, the agreement distinguished between two kinds of information:
+In the field of scientific research and development there shall be full and effective interchange of information and ideas between those in the two countries engaged in the same sections of the field.
+But when it came to the technical know-how, the nuts and bolts engineering that transformed scientific theory into the actual fissile material, there was another procedure, one that could be effectively controlled by Groves:
+In the field of design, construction and operation of large-scale plants, interchange of information and ideas shall be regulated by such ad hoc arrangements as may, in each section of the field, appear to be necessary or desirable if the project is to be brought to fruition at the earliest moment. [Emphasis in original.]
+Needless to say, Groves had “such ad hoc arrangements” at the ready to serve his purposes. One of his first steps was to share with the British a progress report he had just submitted to President Roosevelt. The British were staggered at the progress that had been made by the Americans and the scale of the effort. The condescending British attitude toward the American program between 1940 and 1942 suffered a rude shock. The British had naively believed their project to be superior in those early years. With the Manhattan locomotive gaining full speed it was evident to everyone that there was really no need for British help at all. This was not going to be a partnership of equals; still, to uphold good Allied relations committees were formed and scientific teams sent.”
+Alex Wellerstein
+says:
+March 23, 2012 at 9:46 am
+Thanks, Stan! Though, again, one can see why Groves later felt vindicated in his suspicions.
+Canageek
+says:
+March 29, 2014 at 9:57 pm
+Nice to see Chalk River mentioned; I was there as a high school student in 2005, and then again as a summer researcher in 2010. It is a very cool place, and it is too bad they cut off public access and tours after 2001.
+About this blog
+Restricted Data is a blog about nuclear secrecy, past and present, run by Alex Wellerstein, a historian of science at the Stevens Institute of Technology.
+Follow @wellerstein on Twitter
+Follow me on Google Plus
+RSS feed
+Search
+Search for:
+Pages
+About me
+About the blog
+Visualizations
+Post archives
+Document list
+Articles of mine
+Resources for Teachers, Students, and Researchers
+Calendars, gifts, tchotchkes
+2016 Calendar
+NEW: Nuclear Testing 2016 Calendar , $18.99
+Visualizations
+NUKEMAP
+NUKEMAP3D
+Faces of Project Y
+Firebombs USA
+Recent posts
+Maintaining the bomb
+My conversation on secrecy with a Super Spook
+Historical thoughts on Michael Frayn’s Copenhagen
+Solzhenitsyn and the Smyth Report
+Nuclear history bibliography, 2015
+Rumbles from North Korea
+The curious death of Oppenheimer’s mistress
+Why spy?
+Women, minorities, and the Manhattan Project
+Here be dragons
+Categories
+Meditations (73)
+Redactions (99)
+Visions (80)
+News and Notes (24)
+Post tags
+1950s (71)
+1960s (29)
+1980s (9)
+1990s (5)
+2010s (38)
+Accidents (7)
+Archives (15)
+Atomic Energy Commission (29)
+Bad ideas (25)
+Bomb design (28)
+Books (22)
+Business and industry (9)
+Civil Defense (11)
+David E. Lilienthal (7)
+Declassification (11)
+Edward Teller (11)
+Espionage (22)
+Fat Man (18)
+FBI (10)
+Firebombing (7)
+Germany (7)
+Graphic design (31)
+H-bomb (29)
+Hanford (9)
+Harry S. Truman (6)
+Hiroshima (38)
+Historiography (22)
+J. Robert Oppenheimer (49)
+Japan (7)
+John Coster-Mullen (5)
+Joint Committee on Atomic Energy (11)
+Klaus Fuchs (17)
+Leaks (10)
+Leo Szilard (7)
+Leslie Groves (46)
+Little Boy (6)
+Livermore (5)
+Los Alamos (39)
+Manhattan (show) (8)
+Musings (26)
+Nagasaki (25)
+Nuclear fallout (5)
+Nuclear power (10)
+Nuclear testing (31)
+NUKEMAP (16)
+Oak Ridge (12)
+plutonium (6)
+Proliferation (8)
+Resources (12)
+Smyth Report (15)
+Soviet Union (25)
+Speculation (29)
+Tinian (10)
+Trinity (21)
+Vannevar Bush (10)
+William L. Laurence (7)
+Interesting links
+Arms Control Wonk
+Atomic City Underground
+Center for Strategic and International Studies Blog
+CONELRAD Adjacent
+Daisy Alliance
+Danger Room
+Etherwave Propaganda
+FAS Strategic Security Blog
+Leaping Robot
+Medieval Robots
+Minds in a Groove
+National Security Archive (GWU)
+Nuclear Diner
+Nuclear Proliferation International History Project
+Nukes of Hazard Blog
+Physics Today: The Day Side
+Restless Device
+Schneier on Security
+Secrecy News
+The FOIA blog
+The Nuclear Vault (National Security Archive)
+The Nuclear Weapons Archive
+Unredacted: The National Security Archive Blog
+Tchotchkes
+Meta
+Contact information
+RSS feed
+All text copyright (©) 2011-2016 by Alex Wellerstein, unless otherwise specified.

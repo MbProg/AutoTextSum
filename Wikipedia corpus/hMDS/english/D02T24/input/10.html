@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      prefix="og: http://opengraphprotocol.org/schema/ fb: http://www.facebook.com/2010/fbml d: http://dictionary.com/2011/dml">
+    <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=301;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <base href="/web/20160419204527/http://www.dictionary.com/">
+        <title>Forty-niner | Define Forty-niner at Dictionary.com</title>
+        <script type="text/javascript">
+    var cookiesManager = function (){
+        'use strict';
+
+        var persistentValues = [];
+
+        return {
+            getCookieValue : function(name) {
+                var value = null,
+                    cookies = document.cookie,
+                    searchedCookie = cookies.indexOf(" " + name + "=");
+
+                // it's worth to check, if cookie is not first cookie
+                if (searchedCookie === -1) {
+                    var checkFirstCookie = cookies.indexOf(name + "=");
+                    searchedCookie = checkFirstCookie == 0 ? 0 : -1;
+                }
+
+                if (searchedCookie > -1) {
+                    var startPositionOfValue = cookies.indexOf("=", searchedCookie) + 1,
+                        endPositionOfValue = cookies.indexOf(";", searchedCookie);
+
+                    if (endPositionOfValue === -1) {
+                        endPositionOfValue = searchedCookie.length;
+                    }
+
+                    value = cookies.substring(startPositionOfValue,endPositionOfValue);
+                }
+
+                return value;
+            },
+
+            setCookie: function(name, value, hours, domain) {
+                var expires = '',
+                    domain  = domain || UrlHelper.getCurrentDomain();
+
+                if(hours !== undefined) {
+                    var now     = new Date(),
+                        time    = now.getTime();
+
+                    time += (3600 * hours) * 1000;
+                    now.setTime(time);
+
+                    expires = ';expires=' + now.toGMTString();
+                }
+
+                document.cookie =
+                    name + '=' + value +
+                        expires +
+                        ';path=/' +
+                        ';domain=' + domain;
+            },
+
+            /*
+            * This method ensures, that everywhere on the page value of cookie will be the same.
+            * It's important in case of cookie, which value can change across the page.
+            */
+            getPersistentCookieValue: function(name) {
+                if (typeof persistentValues[name] === 'undefined') {
+                    persistentValues[name] = this.getCookieValue(name);
+                    // after reading value, cookie has to be removed
+                    this.setCookie(name, null, -1);
+                }
+
+                return persistentValues[name];
+            }
+        }
+    }();
+</script><script type="text/javascript">
+    /*jslint browser: true */
+
+    var UrlHelper = function() {
+        var COOKIE_DOMAIN_THESAURUS     = '.thesaurus.com';
+        var COOKIE_DOMAIN_DICTIONARY    = '.dictionary.com';
+        var COOKIE_DOMAIN_REFERENCE     = '.reference.com';
+
+        var domain = null;
+        var currentURL = null;
+        var spanidsUrl = null;
+
+        function getSpanidsUrl(bid, sid, currentDomain) {
+            var url     = 'http://';
+            var source  = '';
+
+            if(currentDomain == COOKIE_DOMAIN_DICTIONARY) {
+                url += 'spanids.reference.com/?';
+                source = 'd';
+            } else if (currentDomain == COOKIE_DOMAIN_REFERENCE){
+                url += 'spanids.dictionary.com/?';
+                source = 'r';
+            } else {
+                url += 'spanids.dictionary.com/?';
+                source = 't';
+            }
+
+            url += 'bid=' + bid + '&asid=' + sid + '&bidnew=1&asidnew=1&source=' + source + '&site=app';
+
+
+            return url;
+        }
+
+        function getCurrentDomain() {
+            var host = window.location.host;
+            var value = "";
+            if(host.indexOf(COOKIE_DOMAIN_THESAURUS) > -1) {
+                value = COOKIE_DOMAIN_THESAURUS;
+            } else if(host.indexOf(COOKIE_DOMAIN_DICTIONARY) > -1) {
+                value = COOKIE_DOMAIN_DICTIONARY;
+            } else if(host.indexOf(COOKIE_DOMAIN_REFERENCE) > -1){
+                value = COOKIE_DOMAIN_REFERENCE;
+            }
+
+            return value;
+        }
+
+        return {
+            getCurrentDomain : function() {
+                if(domain === null) {
+                    domain = getCurrentDomain();
+                }
+                return domain;
+            },
+
+            getCurrentDomainFromRequest : function() {
+                return window.location.host;
+            },
+
+            getCurrentUrl : function() {
+                if(currentURL === null) {
+                    currentURL = window.location.protocol + "//" + window.location.host + "" + window.location.pathname;
+                }
+                return currentURL;
+            },
+
+            getSpanidsUrl : function(bid, sid, domain) {
+                if(spanidsUrl === null) {
+                    spanidsUrl = getSpanidsUrl(bid, sid, domain);
+                }
+
+                return spanidsUrl;
+            }
+        }
+    }();
+</script><script type="text/javascript">
+    var BidSidGenerator = (function () {
+        'use strict';
+        var COOKIE_NAME_BID = 'bid',
+            COOKIE_NAME_SID = 'sid',
+            COOKIE_NAME_SPANIDS = 'spanids',
+            COOKIE_BID_EXPIRES = 17520, //two years
+            COOKIE_SID_EXPIRES = 0.5, //half an hour
+            bidCookieValue = null,
+            sidCookieValue = null,
+            bidCookieCreated = false,
+            sidCookieCreated = false,
+            spanIdsCookiePresent = false;
+
+        // generates value of bid/sid cookie
+        function generateCookieValue() {
+            var max = 999999,
+                min = 100000,
+                rand = Math.floor(Math.random() * (max - min)) + min,
+                time = new Date().getTime();
+
+            return rand + "-" + time;
+        }
+
+        // sets value of spanIdsCookiePresent attribute to true and delete spanids cookie,
+        // if cookie exist and have appropriate value
+        function processSpanIdsCookie() {
+            var spanIdsValue = cookiesManager.getCookieValue(COOKIE_NAME_SPANIDS);
+
+            if(spanIdsValue === '1') {
+                cookiesManager.setCookie(COOKIE_NAME_SPANIDS, 0, -1); //removes spanids cookie
+                spanIdsCookiePresent = true;
+            }
+
+            return false;
+        }
+
+        return {
+            init: function () {
+                bidCookieValue  = cookiesManager.getCookieValue(COOKIE_NAME_BID);
+                sidCookieValue  = cookiesManager.getCookieValue(COOKIE_NAME_SID);
+
+                if (bidCookieValue == null || bidCookieValue.length == 0) {
+                    bidCookieValue = generateCookieValue();
+                    cookiesManager.setCookie(COOKIE_NAME_BID, bidCookieValue, COOKIE_BID_EXPIRES);
+                    bidCookieCreated = true;
+                }
+
+                if (sidCookieValue == null || sidCookieValue.length == 0) {
+                    sidCookieValue = generateCookieValue();
+                    sidCookieCreated = true;
+                }
+
+                processSpanIdsCookie();
+                cookiesManager.setCookie(COOKIE_NAME_SID, sidCookieValue, COOKIE_SID_EXPIRES);
+            },
+            propagateCookies: function() {
+                if (bidCookieCreated || sidCookieCreated || spanIdsCookiePresent) {
+                    var url = UrlHelper.getSpanidsUrl(bidCookieValue, sidCookieValue, UrlHelper.getCurrentDomain()),
+                        iFrame = '<iframe id="spanids" style="width:1px;height:1px;margin-left:-1;position:absolute;border:none;" src="' + url + '"></iframe>';
+                    document.write(iFrame);
+                }
+            },
+            touchSidCookie: function () {
+                sidCookieValue  = cookiesManager.getCookieValue(COOKIE_NAME_SID);
+                if (sidCookieValue == null || sidCookieValue.length == 0) {
+                    sidCookieValue = generateCookieValue();
+                    sidCookieCreated = true;
+                }
+
+                cookiesManager.setCookie(COOKIE_NAME_SID, sidCookieValue, COOKIE_SID_EXPIRES);
+            },
+            isSidCookieCreated: function () {
+                return sidCookieCreated;
+            },
+            isSpanIdsCookiePresent: function () {
+                return spanIdsCookiePresent;
+            }
+        };
+    }());
+
+    BidSidGenerator.init();
+    BidSidGenerator.propagateCookies();
+</script>
+<script type="text/javascript">
+    /*
+    This partial is used only on DCOM SERP. It's responsible for read "searchOrgQuery" cookie, which is set during redirection
+    for Index Divorce project and only then. After read this cookie, cookie is deleted, but value is still accessible via SOQR api.
+     */
+    var DARCI = DARCI || {};
+
+    DARCI.OQR = (function(){
+        'use strict';
+
+        var COOKIE_NAME = 'OriginalQuery',
+            value = -1;
+
+        function setValue() {
+            value = cookiesManager.getCookieValue(COOKIE_NAME);
+
+            if (value !== null) {
+                value = decodeURIComponent(value);
+            }
+        }
+
+        function deleteCookie() {
+            cookiesManager.setCookie(COOKIE_NAME, null, -1);
+        }
+
+        function init() {
+            setValue();
+            deleteCookie();
+        }
+
+        return {
+            getValue: function() {
+                if (value === -1) {
+                    init();
+                }
+
+                return value;
+            }
+        }
+    })();
+</script><script>
+    var DARCI = DARCI || {},
+        u = "/web/20160419204527/http://track.dictionary.com/main.gif?ev=ps&qr=%25%25QUERY%25%25&rf_qr=%25%25REFQUERY%25%25&pn=dic&st=dict&ab=&dc=desktop",
+        s = location.search.match(new RegExp('[\?\&]s=([^\&]*)(\&?)', 'i')),
+        ms = (typeof ms === 'undefined') ? cookiesManager.getCookieValue('mseg') || "" : ms,
+
+        /**
+         * Because this file is added only in case when CSL is enabled,
+         * we can be sure cookieManager will be available.
+         */
+        refQuery = cookiesManager.getPersistentCookieValue('ReferrerQuery'),
+        query, orgQuery;
+
+    DARCI.SearchBoxClickLinkId = '59wn52';
+
+            orgQuery = typeof DARCI.OQR !== 'undefined' ? DARCI.OQR.getValue() : null;
+        query =  orgQuery !== null ? orgQuery : "forty-niner";
+
+        u = u.replace('%25%25QUERY%25%25', query);
+    
+
+    if (s != null && s[1]) {
+        if (s[1] == 't' || s[1] == 'ts' || s[1] == 'tn') {
+            var ev = u.indexOf('ev=');
+            if (ev !== -1) {
+                ev = ev + 3;
+                u = u.slice(0, ev) + 'c' + u.slice(ev) + '&cl=59wn52&sc=1';
+                u = u.replace('%25%25REFQUERY%25%25', refQuery);
+            }
+        }
+    }
+
+    new Image().src = u + "&ms=" + ms + "&rf=" + encodeURIComponent(document.referrer) + "&cb=" + Math.floor((Math.random() * 899999999) + 100000000);
+</script>
+<link rel="dns-prefetch" href="//static.sfdict.com" /><link rel="dns-prefetch" href="//pixel.quantserve.com" /><link rel="dns-prefetch" href="//partner.googleadservices.com" /><link rel="dns-prefetch" href="//pubads.g.doubleclick.net" /><link rel="dns-prefetch" href="//pagead2.googlesyndication.com" /><link rel="dns-prefetch" href="//pr.ybp.yahoo.com" /><link rel="dns-prefetch" href="//ads.yahoo.com" /><link rel="dns-prefetch" href="//u.openx.net" /><link rel="dns-prefetch" href="//ib.adnxs.com" /><link rel="dns-prefetch" href="//ox-d.bstk.servedbyopenx.com" /><link rel="dns-prefetch" href="https://ad.doubleclick.net" /><script>
+    /**
+     * The module is responsible for setting/incrementing the value of sc cookie which contains "sessionCount,pageviewCount" values.
+     *
+     * init: sets the cookie with default values or increments; actions performed are based on condition whether the
+     *          sid cookie was created or already existed. The default expiration time for sc cookie is 0.5 year
+     *
+     * global BidSidGenerator
+     * global cookiesManager
+     * global UrlHelper
+     */
+    var SCCookie = function () {
+        var COOKIE_NAME_SC = "sc",
+            DELIMITER = ",",
+            sessionCountValue = 0,
+            pageviewCountValue  = 0,
+            cookieExpiration  = 180 * 24; // half a year
+
+        /**
+         * Reads "sc" cookie and parses the value into appropriate variables.
+         * @returns {boolean} Was the cookie present?
+         */
+        function readCookie()
+        {
+            var cookieValue = cookiesManager.getCookieValue(COOKIE_NAME_SC),
+                cookieValuesArray,
+                cookieSessionCountValue,
+                cookiePageviewCountValue;
+
+            if (cookieValue == null) {
+                return false;
+            }
+
+            cookieValuesArray = cookieValue.split(DELIMITER);
+            cookieSessionCountValue = parseInt(cookieValuesArray[0], 10);
+            cookiePageviewCountValue = parseInt(cookieValuesArray[1], 10);
+
+            if (cookieSessionCountValue > 0) {
+                sessionCountValue = cookieSessionCountValue;
+            }
+
+            if (cookiePageviewCountValue > 0) {
+                pageviewCountValue = cookiePageviewCountValue;
+            }
+
+            return true;
+        }
+
+        /**
+         * Writes current variable values into the "sc" cookie.
+         */
+        function writeCookie()
+        {
+            cookiesManager.setCookie(COOKIE_NAME_SC, sessionCountValue + DELIMITER + pageviewCountValue, cookieExpiration, UrlHelper.getCurrentDomainFromRequest());
+        }
+
+        return {
+            init: function () {
+                if (typeof BidSidGenerator !== 'undefined') {
+                    var cookiePresent = readCookie();
+
+                    if (!cookiePresent) {
+                        sessionCountValue = 1;
+                        pageviewCountValue = 1;
+                    } else {
+                        if (BidSidGenerator.isSidCookieCreated() || BidSidGenerator.isSpanIdsCookiePresent()) {
+                            pageviewCountValue = 1;
+                            sessionCountValue++;
+                        } else {
+                            pageviewCountValue++;
+                        }
+                    }
+
+                    writeCookie();
+                }
+            },
+
+            getPageViewCount: function () {
+                return pageviewCountValue;
+            },
+
+            getSessionCount: function () {
+                return sessionCountValue;
+            }
+        }
+
+    }();
+
+    SCCookie.init();
+</script>
+<script type="text/javascript">
+    var src = null;
+                        var retina = window.devicePixelRatio > 1;
+            if(retina) {
+                new Image().src = '/web/20160419204527/http://www.dictionary.com/drc/img/responsive/serp-highdpi-3146e.png';
+            } else {
+                new Image().src = '/web/20160419204527/http://www.dictionary.com/drc/img/responsive/serp-lowdpi-6c95e.png';
+            }
+            </script><meta property="fb:admins" content="100000304287730;109125464873" /><meta property="og:site_name" content="Dictionary.com" /><meta property="og:image" content="http://static.sfdict.com/dcom/img/social_logo-b8e2f.png" /><meta property="fb:app_id" content="127444090629600" /><meta name="msvalidate.01" content="DF5542D7723770377E9ABFF59AC1DC97" /><meta http-equiv="imagetoolbar" content="no" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="keywords" content="forty-niner, online dictionary, English dictionary, forty-niner definition, define forty-niner, definition of forty-niner,
+        forty-niner pronunciation, forty-niner meaning, forty-niner origin, forty-niner examples" /><meta property="og:title" content="the definition of forty-niner" /><meta name="description" content="Forty-niner definition, a person, especially a prospector, who went to California in 1849 during the gold rush. See more." /><meta property="og:url" content="http://www.dictionary.com/browse/forty-niner" /><link rel="shortcut icon" href="/web/20160419204527im_/http://static.sfdict.com/dcom/favicon.ico" /><link rel="search" type="application/opensearchdescription+xml" href="http://www.dictionary.com/opensearch_desc.xml" title="Dictionary.com" /><link rel="publisher" href="https://plus.google.com/117428481782081853923" /><link rel="canonical" href="http://www.dictionary.com/browse/forty-niner" /><link rel="stylesheet" href="/web/20160419204527cs_/http://www.dictionary.com/drc/css/combinedSerp-f11e4.css" type="text/css" media="all" /><script type="text/javascript">
+    var searchURL = "/web/20160419204527/http://www.dictionary.com/browse/%40%40queryText%40%40?s=t";var pageName = "dic";</script>
+<script type="text/javascript">
+    var UserController = function() {
+        var USER_STATUS_LOGGED_IN = 'L';
+        var USER_STATUS_NOT_LOGGED = 'N';
+
+        var USER_UNDER_13 = 'Y';
+        var USER_OVER_13 = 'N';
+
+        var COOKIE_NAME_SESS = 'sess';
+        var COOKIE_NAME_FAV = 'fav';
+        var COOKIE_NAME_SUPERSESS = 'ss';
+
+        var PREMIUM_STATUS_VALUE = 9;
+        var FAV_COOKIE_PREMIUM_STATUS_KEY = 0;
+        var FAV_COOKIE_FAV_COUNT_KEY = 1;
+        var FAV_COOKIE_USER_UNDER_13_KEY = 2;
+
+        var isLoggedIn = null;
+        var isPremium = null;
+        var isSuperSess = null;
+        var favNumber = null;
+        var isUnder13 = null;
+        var displayAds = null;
+
+        /**
+         * Checking if user is under 13 using value from fav cookie
+         * @returns {boolean}
+         */
+        function checkIsUserUnder13() {
+            if (isLoggedIn !== true) {
+                return false;
+            }
+
+            var isUnder13 = USER_OVER_13;
+            var favCookieValue = cookiesManager.getCookieValue(COOKIE_NAME_FAV);
+
+            if(favCookieValue != null) {
+                favCookieValue = decodeURIComponent(favCookieValue);
+                isUnder13 = favCookieValue.split('|')[FAV_COOKIE_USER_UNDER_13_KEY];
+            }
+
+            return isUnder13 === USER_UNDER_13;
+        }
+
+        function checkIsUserLoggedIn() {
+            var userStatus = USER_STATUS_NOT_LOGGED;
+            var sessCookieValue = cookiesManager.getCookieValue(COOKIE_NAME_SESS);
+
+            if(sessCookieValue != null) {
+                userStatus = sessCookieValue.charAt(0);
+            }
+
+            return userStatus === USER_STATUS_LOGGED_IN;
+        }
+
+        function checkIfUserIsPremium() {
+            var premiumStatus = null;
+            var favCookieValue = cookiesManager.getCookieValue(COOKIE_NAME_FAV);
+
+            if(favCookieValue != null) {
+                favCookieValue = decodeURIComponent(favCookieValue);
+                premiumStatus = favCookieValue.split('|')[FAV_COOKIE_PREMIUM_STATUS_KEY];
+            }
+
+            return premiumStatus == PREMIUM_STATUS_VALUE;
+        }
+
+        function getFavNum() {
+            var count = 0;
+            var favCookieValue = cookiesManager.getCookieValue(COOKIE_NAME_FAV);
+
+            if(favCookieValue != null) {
+                favCookieValue = decodeURIComponent(favCookieValue);
+                count = favCookieValue.split('|')[FAV_COOKIE_FAV_COUNT_KEY];
+            }
+
+            return count;
+        }
+
+
+        /**
+         * Checking super session cookie and calling ajax endpoint if cookie exists
+         * @returns {boolean}
+         */
+        function checkIfUserHasSuperSession() {
+            // get ss cookie value
+            var superSessionCookieValue = cookiesManager.getCookieValue(COOKIE_NAME_SUPERSESS);
+
+            // if there is ss cookie then make ajax (cors) call to check ss cookie and get response on callback
+            if(superSessionCookieValue !== null){
+
+                var xhr = createCORSRequest('GET', '/web/20160419204527/http://app.dictionary.com/supersession/check/' + superSessionCookieValue);
+
+                if (xhr){
+                    // Define a callback function
+                    xhr.onload = function(){
+                        var responseData = xhr.responseText;
+                        var data = JSON.parse(responseData);
+                        // process the response.
+
+                        // if response is null then do nothing
+                        if(data == null) {
+                            // do nothing
+                        } else {
+                            // otherwise set the session cookie
+                            cookiesManager.setCookie("sess", data['sessionCookie']);
+
+                            // change header appropriately
+                            changeBodyClassNameForUser();
+                        }
+                    };
+
+                    // Send request
+                    xhr.send();
+                }
+
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        /**
+         * A method to create cors request
+         * @param method
+         * @param url
+         * @returns {XMLHttpRequest}
+         */
+        function createCORSRequest(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+
+                // Check if the XMLHttpRequest object has a "withCredentials" property.
+                // "withCredentials" only exists on XMLHTTPRequest2 objects.
+                xhr.open(method, url, true);
+
+            } else if (typeof XDomainRequest != "undefined") {
+
+                // Otherwise, check if XDomainRequest.
+                // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+
+            } else {
+
+                // Otherwise, CORS is not supported by the browser.
+                xhr = null;
+
+            }
+
+            return xhr;
+        }
+
+        /**
+         * Checking user status and setting correct body className for user
+         */
+        function changeBodyClassNameForUser() {
+            if(isPremium)
+                document.body.className+=' premium';
+            if(isLoggedIn)
+                document.body.className+=' loggedin';
+            if(isUnder13)
+                document.body.className+=' isUnder13';
+        }
+
+        return {
+
+            initHead: function() {
+                isLoggedIn = checkIsUserLoggedIn();
+                isPremium = checkIfUserIsPremium();
+                isUnder13 = checkIsUserUnder13();
+            },
+
+            initBody: function(){
+                // on initialization check user status and change append body class name accordingly
+                changeBodyClassNameForUser();
+
+                // if the user is not logged in then check to see if the user has an ss cookie
+                if(isLoggedIn !== true) {
+                    // call function responsible for checking ss cookie and calling ajax endpoint
+                    isSuperSess = checkIfUserHasSuperSession();
+                }
+            },
+
+            isLoggedIn : function() {
+                return isLoggedIn;
+            },
+
+            isPremium : function() {
+                return isPremium
+            },
+
+            getFavNumber : function() {
+                if(favNumber === null) {
+                    favNumber = getFavNum();
+                }
+                return favNumber;
+            },
+
+            isUnder13 : function() {
+                return isUnder13;
+            },
+
+            shouldDisplayAds: function() {
+                if(displayAds === null) {
+                    displayAds = !isPremium && !checkIsUserUnder13();
+                }
+                return displayAds;
+            }
+        }
+
+
+    }();
+    UserController.initHead();
+</script>
+<script type="text/javascript">
+    "use strict";
+
+    var adStart = Date.now(),
+        OX_dfp_ads = [["/23219321/iac.dict.dictry.dw/results/serp_short/content",["728x90","970x90","970x250"],"dcomSERPLeaderBoard-728x90",{'pos':'top','pos2':'728x90_1',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["300x250","300x600"],"dcomSERPTop-300x250",{'pos':'top','pos2':'300x250_1',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["300x250"],"dcomSERPMid-300x250",{'pos':'mid','pos2':'300x250_2',}],["/23219321/iac.dict.dictry.dw/results/serp_short/content",["728x90"],"dcomSERPBottomLeaderBoard-728x90",{'pos':'bot','pos2':'728x90_2',}],],
+        attachScriptAsync, targetingComplete ,oxDone,
+        gptCallIntiated = false,
+        completedTargeting = {},
+        gptApp = gptApp || {},
+        googletag = googletag || {},
+        targetingEvtResponseTime = [];
+
+    gptApp.ads = gptApp.ads || [];
+    googletag.cmd = googletag.cmd || [];
+
+    attachScriptAsync = function(scriptInfo) {
+
+        /* Method to inject script dynamically to have async support */
+
+        var tag = document.createElement("script"),
+            p, node = document.getElementsByTagName("script")[0];
+
+        tag.async = true;
+
+        for (p in scriptInfo) {
+            if (scriptInfo.hasOwnProperty(p) && p != "src") {
+                tag[p] = scriptInfo[p];
+            }
+        }
+        tag.src = scriptInfo.src;
+        node.parentNode.insertBefore(tag, node);
+    };
+
+    gptApp.renderAds = function() {
+
+        /* Render ad slot display after all targeting setup Adslots are pushed into gptApp array  */
+        var len = gptApp.ads.length;
+        for (var i = 0 ; i < len ; i++) {
+            gptApp.ads[i]();
+        }
+
+        gptApp.ads.push = function(fn) {
+            if ("function" === typeof fn) {
+                setTimeout(fn, 0);
+            }
+        };
+    };
+
+    targetingComplete = function(event) {
+        // enable and render ads for GPT services call that now all targeting finished
+        completedTargeting[event] = true;
+
+        if(!gptCallIntiated ) {
+            // Measuring Each traget event time to calculate timeout
+            targetingEvtResponseTime.push(event+"|"+(Date.now() - adStart));
+
+            if ((completedTargeting.lot && completedTargeting.amz && completedTargeting.ox) || event == "fallback") {
+                gptCallIntiated = true;
+                googletag.cmd.push(function(){
+                    googletag.enableServices();
+                    googletag.pubads().setTargeting("perf", targetingEvtResponseTime);
+                });
+                gptApp.renderAds();
+            }
+        }
+    };
+
+    oxDone = function(events) {
+        /* Global Callback Function invoked by OpenX to inform price support */
+        googletag.cmd.push(function() {
+            //OPEN X GPT targeting Params
+            try {
+                OX.dfp_bidder.setOxTargeting(googletag.pubads().getSlots());
+            } catch (e) {}
+        });
+        targetingComplete("ox");
+    };
+
+    // Google Publisher Tag
+    attachScriptAsync({ src: "//www.googletagservices.com/tag/js/gpt.js"  });
+
+    // AMAZON Bidder Tag
+    attachScriptAsync({
+        src: "//c.amazon-adsystem.com/aax2/amzn_ads.js",
+        onload : function () {
+            try {
+                amznads.getAdsCallback('3067', function(){
+                    googletag.cmd.push(function() {
+                        // Amazon GPT targeting Params
+                        amznads.setTargetingForGPTAsync('yip4');
+                    });
+                    targetingComplete("amz");
+                }, 1000);
+            } catch (e) { /* ignore */ }
+        }
+    });
+
+    // LOTAME Measurement Tag For Dictionary.com
+    attachScriptAsync({
+        id: "LOTCC_4845",
+        src: "//tags.crwdcntrl.net/c/4845/cc.js?ns=_cc4845",
+        onload: function() {
+            try {
+                _cc4845.add("ctax", "Sites^Dictionary^Desktop Sites^dict^PageName^dic^^dic");
+                _cc4845.bcp();
+            } catch (e) {}
+        }
+    });
+
+    // Lotame Audience Tag for IAC Network
+    attachScriptAsync({
+        src: "//ad.crwdcntrl.net/5/c=4736/pe=y/var=ccauds",
+        onload :function() {
+            googletag.cmd.push(function() {
+                // Lotame GPT targeting Params
+                var dartCC, lpid, ltpid, cci, audience;
+                if (typeof(ccauds) != 'undefined' && ccauds.Profile) {
+                    dartCC = [];
+                    lpid = (typeof(ccauds.Profile.pid) != 'undefined') ? ccauds.Profile.pid : "";
+                    ltpid = (typeof(ccauds.Profile.tpid) != 'undefined') ? ccauds.Profile.tpid : "";
+                    audience = ((ccauds.Profile.Audiences || {})
+                        .Audience) || [];
+                    for (cci = 0; cci < audience.length; cci++) {
+                        dartCC.push(audience[cci].abbr);
+                    }
+                    googletag.pubads().setTargeting("lpid", lpid).setTargeting("ltpid", ltpid).setTargeting("lseg", dartCC);
+                }
+            });
+            targetingComplete("lot");
+        }
+    });
+
+    // OPEN X Bidder Tag
+    attachScriptAsync({
+        src: "//ox-d.ask.servedbyopenx.com/w/1.0/jstag?nc=23219321-dictionary",
+        onload: function() {
+            setTimeout(function() {
+                if (!('OX' in window)) {
+                    targetingComplete("ox");
+                }
+            }, 500);
+        }
+    });
+
+    // Fallback Method to invoke ad after 1000 miliseconds irrespective of targeting scripts
+
+    setTimeout(function() {
+        targetingComplete("fallback");
+    }, 1500);
+
+</script>
+
+<script>
+    function getRefValue(referrer) {
+        if(referrer.indexOf('dictionary.com') == -1 && referrer.indexOf('thesaurus.com') == -1 && referrer.indexOf('reference.com') == -1) {
+            return 'organic';
+        }
+        return 'direct';
+    }
+    function getRPV() {
+        return Math.floor((Math.random()*100)+1).toString();
+    }
+    function getDCRefValue() {
+        return encodeURIComponent(window.location.href);
+    }
+    function getDayofWeek() {
+        return new Date().getDay().toString();
+    }
+        function getSPV() {
+        var pv;
+        if (typeof SCCookie !== 'undefined') {
+            pv = SCCookie.getPageViewCount() + '';
+        }
+
+        return pv;
+    }
+    
+    googletag.slots = {};
+    googletag.slotsCount = 4;
+    googletag.renderedAdsCount = 0;
+    /** Store spot data that has been already rendered **/
+    googletag.adsRenderedInfo = (function () {
+        var renderedAds = [];
+        return {
+            set: function(name, size) {
+                renderedAds[name] = {
+                    size: size
+                };
+            },
+            get: function(name) {
+                return renderedAds[name];
+            }
+        }
+    }());
+    googletag.cmd.push(function() {
+
+        googletag.slots["dcomSERPLeaderBoard-728x90"] = googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content", [[728,90],[970,90],[970,250]], "dcomSERPLeaderBoard-728x90").addService(googletag.pubads()).setTargeting("pos", "top").setTargeting("pos2", "728x90_1").setTargeting("tx1", "results").setTargeting("tx2", "serp_short").setTargeting("ptype", "content");googletag.slots["dcomSERPTop-300x250"] = googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content", [[300,250],[300,600]], "dcomSERPTop-300x250").addService(googletag.pubads()).setTargeting("pos", "top").setTargeting("pos2", "300x250_1").setTargeting("tx1", "results").setTargeting("tx2", "serp_short").setTargeting("ptype", "content");googletag.slots["dcomSERPMid-300x250"] = googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content", [300,250], "dcomSERPMid-300x250").addService(googletag.pubads()).setTargeting("pos", "mid").setTargeting("pos2", "300x250_2").setTargeting("tx1", "results").setTargeting("tx2", "serp_short").setTargeting("ptype", "content");googletag.slots["dcomSERPBottomLeaderBoard-728x90"] = googletag.defineSlot("/23219321/iac.dict.dictry.dw/results/serp_short/content", [728,90], "dcomSERPBottomLeaderBoard-728x90").addService(googletag.pubads()).setTargeting("pos", "bot").setTargeting("pos2", "728x90_2").setTargeting("tx1", "results").setTargeting("tx2", "serp_short").setTargeting("ptype", "content");
+        googletag.pubads().setTargeting("ref", getRefValue(document.referrer)).setTargeting("lang","en").setTargeting("rpv", getRPV()).setTargeting("dc_ref", getDCRefValue()).setTargeting("loc", "US").setTargeting("ld", "0").setTargeting("dow", getDayofWeek());
+
+        var get_request_identifier = (function () {
+                return Math.random().toString(36).substr(2)
+            })(),
+            get_modified_page_url = (function () {
+                sep = window.location.search.length >= 0 && window.location.href.indexOf("?") !== -1 ? "&" : "?";
+                return window.location.href + sep + "rquid=" + get_request_identifier
+            })();
+
+        googletag.pubads().setTargeting("rquid",get_request_identifier);
+        googletag.pubads().setTargeting("page_url",get_modified_page_url);
+
+                googletag.pubads().setTargeting("pv", getSPV());
+        
+                googletag.pubads().setTargeting("kw","forty-niner");
+                var adtest = location.search.match(new RegExp("[\?\&]adtest=([^\&]*)(\&?)","i"));
+        if(adtest != null && adtest[1] != "" ){
+            googletag.pubads().setTargeting("adtest",adtest[1]);
+        }
+
+                googletag.pubads().enableSingleRequest();
+                        googletag.pubads().enableAsyncRendering();
+                
+        googletag.adsLoaded = function () {
+            return googletag.renderedAdsCount >= googletag.slotsCount;
+        };
+        googletag.pubads().addEventListener('slotRenderEnded', function(data) {
+
+            var slotKey;
+
+            for (slotKey in googletag.slots) {
+                if(googletag.slots[slotKey] == data.slot) {
+                    break;
+                }
+            }
+
+            googletag.adsRenderedInfo.set(slotKey, data.size);
+
+            googletag.renderedAdsCount += 1;
+                            if(googletag.adsLoaded()) {
+                    if (document.createEvent) {
+                        var event = new CustomEvent('gptAdsLoaded');
+                        document.dispatchEvent(event);
+                    } else {
+                        var event = document.createEventObject();
+                        event.eventType = "gptAdsLoaded";
+                        document.fireEvent("ongptAdsLoaded", event);
+                    }
+                }
+                    });
+    });
+</script>
+<script type='text/javascript'>
+    window.dataLayer = window.dataLayer || [];
+
+    dataLayer.push({
+        'event': 'pageview',
+        'device': 'Desktop',
+        'pageName': 'dic',
+        'LDid': '0',
+        'mseg': cookiesManager.getCookieValue("mseg"),
+        'sessionId': cookiesManager.getCookieValue("sid"),
+        'browserId': cookiesManager.getCookieValue("bid")    });
+</script><!-- Begin Quantcast Tag, part 1 -->
+<script type="text/javascript"> 
+  
+  var _qevents = _qevents || [];
+
+  (function() {
+   var elem = document.createElement('script');
+
+   elem.src = (document.location.protocol == "https:" ? "/web/20160419204527/https://secure" : "/web/20160419204527/http://edge") + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);  
+  })();
+</script>
+<!-- End Quantcast Tag, part 1 -->
+<!-- Begin comScore Tag -->
+<script>
+if(typeof UserController === "undefined" || !UserController.isUnder13()) {
+    var _comscore = _comscore || [];
+    _comscore.push({c1: "2", c2: "6034776", c3: "", c4: (new String(window.location)).replace(/\?.*$/, "")});
+    (function () {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "/web/20160419204527/https://sb" : "/web/20160419204527/http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+}
+</script>
+<noscript>
+    <img src="/web/20160419204527im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=6034776&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+<script type="application/ld+json">
+{
+    "@context": "/web/20160419204527/http://schema.org",
+    "@type": "WebPage",
+    "@id": "/web/20160419204527/http://www.dictionary.com/browse/forty-niner",
+    "potentialAction":
+    { "@type": "ViewAction", "target": "android-app://com.dictionary/http/dictionary.com/search?word=forty-niner" }
+}
+</script>    </head>
+    <body >
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.dictionary.com/browse/forty-niner";
+
+var firstYear = 1996;
+var displayDay = "19";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.dictionary.com/browse/forty-niner" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160419204527" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Mar
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:45:27 Apr 19, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160414204948/http://www.dictionary.com/browse/forty-niner" title="20:49:48 Apr 14, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:45:27 Apr 19, 2016">19</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160419204609/http://www.dictionary.com/browse/forty-niner" title="20:46:09 Apr 19, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:45:27 Apr 19, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160419204527*/http://www.dictionary.com/browse/forty-niner" title="See a list of every capture for this URL">4 captures</a>
+           <div class="r" title="Timespan for captures of this URL">14 Apr 16 - 19 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:3:000400000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+            <script>
+    document.body.className += ' js-on';
+</script><!-- Google Tag Manager -->
+<noscript>
+    <iframe src="/web/20160419204527if_/http://www.googletagmanager.com/ns.html?id=GTM-TXC5GP" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+        j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j, f);
+    })(window,document,'script','dataLayer','GTM-TXC5GP');
+</script>
+<!-- End Google Tag Manager -->                <div id="fb-root"></div>
+            <script type="text/javascript">
+    UserController.initBody();
+</script>
+<script type="text/javascript">
+        /**
+     * Redirects user to address from parameter
+     *
+     * @param url
+     * @returns {boolean}
+     */
+    function submitForm(url) {
+        var queryText = document.getElementById('q').value || 'search';
+
+        queryText = encodeURIComponent(queryText);
+
+        url = url.replace('%40%40queryText%40%40', queryText);
+
+                location.href = url;
+        return false;
+    }
+
+    function prepareSearchBox(el) {
+        var dataTerm = el.getAttribute('data-term');
+        var value = el.value;
+        if (!(/(iPad|iPhone|iPod)/g.test(navigator.userAgent))) {
+            el.focus();
+            if (dataTerm == value) {
+                el.select();
+            }
+        }
+    }
+</script>
+<nav class="ham-nav dictionary-nav">
+    <ul>
+        <li class="ham-main-menu"><a href="/web/20160419204527/http://www.dictionary.com/" data-linkid="lxabec" >Dictionary.com</a></li>
+        <li>
+            <ul class="ham-submenu">
+                <li><a href="/web/20160419204527/http://www.dictionary.com/wordoftheday/" data-linkid="1498ik" >Word <i class="wotd-italic">of the</i>  Day</a></li>
+                <li><a href="/web/20160419204527/http://translate.reference.com/" data-linkid="au3zd1" >Translate</a></li>
+                <li><a href="/web/20160419204527/http://www.dictionary.com/fun" data-linkid="yp2k17" >Games</a></li>
+                <li><a href="/web/20160419204527/http://blog.dictionary.com/" data-linkid="t6ehki" >Blog</a></li>
+            </ul>
+        </li>
+                    <li class="ham-main-menu"><a href="/web/20160419204527/http://www.thesaurus.com/" data-linkid="c1drjk" >Thesaurus.com</a></li>
+                <li class="ham-main-menu">
+            <a href="/web/20160419204527/http://www.dictionary.com/apps" data-linkid="jmrau8" >Apps
+            <span class="dicticon-header-apple"></span>
+            <span class="dicticon-header-android"></span>
+            </a>
+        </li>
+        <li class="ham-main-menu">
+            <a href="/web/20160419204527/http://app.dictionary.com/favorites">Favorites
+                <span class="dicticon-header-favourites-star"></span>
+                <span class="ham-favourites-number"></span>
+            </a>
+        </li>
+                    <li class="ham-main-menu user-logged-in"><a href="/web/20160419204527/http://app.dictionary.com/logout?logindest=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner">Log Out</a></li>
+            <li class="ham-main-menu user-logged-out"><a href="/web/20160419204527/http://app.dictionary.com/login?source=header_core&amp;logindest=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner">Log In</a></li>
+            </ul>
+            <div class="social-links">
+            <span class="dicticon-header-social-facebook"></span>
+            <span class="dicticon-header-social-twitter"></span>
+            <span class="dicticon-header-social-instagram"></span>
+            <span class="dicticon-header-social-googleplus"></span>
+        </div>
+        <div class="social-follow">
+            <p>follow Dictionary.com</p>
+        </div>
+    </nav>
+<button class="dicticon-hamburger-menu slide-element"></button>
+<header class="js-header dictionary-header">
+    <div class="header-nav-row">
+        <ul class="header-main-nav">
+                            <li class="nav-active">
+                    <a href="/web/20160419204527/http://www.dictionary.com/" data-linkid="tqks0v" >Dictionary.com</a>
+                </li>
+                            <li >
+                    <a href="/web/20160419204527/http://www.thesaurus.com/" data-linkid="qxnxzj" >Thesaurus.com</a>
+                </li>
+                    </ul>
+        <ul class="header-login-nav">
+                            <li class="user-logged-in account"><a href="/web/20160419204527/http://app.dictionary.com/users/settings">My Account</a></li>
+                <li class="user-logged-in"><a href="/web/20160419204527/http://app.dictionary.com/logout?logindest=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner">Log Out</a></li>
+                <li class="user-logged-out"><a rel="nofollow" href="/web/20160419204527/http://app.dictionary.com/login?source=header_core&amp;logindest=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner">Log In</a></li>
+                    </ul>
+
+            <div class="header-social-links">
+            <span class="dicticon-header-social-facebook"></span>
+            <span class="dicticon-header-social-twitter"></span>
+            <span class="dicticon-header-social-instagram"></span>
+            <span class="dicticon-header-social-googleplus"></span>
+        </div>
+        <a href="/web/20160419204527/http://www.dictionary.com/apps"  class="header-apps-links" data-linkid="dbvvdc" >        <span class="dicticon-header-app-android"></span>
+        <span class="dicticon-header-app-ios"></span>
+        Try Our Apps
+        </a>
+    </div>
+            <div class="header-subnav-row">
+            <div class="header-wrapper-row">
+                <ul class="header-subnav">
+                                            <li >
+                            <a href="/web/20160419204527/http://www.dictionary.com/wordoftheday/" data-linkid="tgrpzq" >Word <i class="wotd-italic">of the</i>  Day</a>
+                        </li>
+                                            <li >
+                            <a href="/web/20160419204527/http://translate.reference.com/" data-linkid="s6ljc3" >Translate</a>
+                        </li>
+                                            <li >
+                            <a href="/web/20160419204527/http://www.dictionary.com/fun" data-linkid="9hf893" >Games</a>
+                        </li>
+                                            <li >
+                            <a href="/web/20160419204527/http://blog.dictionary.com/" data-linkid="prrhwm" >Blog</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    
+    <div class="header-search-row">
+        <div class="header-wrapper-row">
+            <a href="/web/20160419204527/http://www.dictionary.com/" data-linkid="yg487x" >            <img src="/web/20160419204527im_/http://www.dictionary.com/drc/img/responsive/dcom-logo-8f31c.png" alt='Dictionary.com'/>
+            </a>
+            <form id="main_search" class="header-search-form" action="/web/20160419204527/http://www.dictionary.com/dic">
+                <div class="header-search-wrapper">
+                    <div class="search-filter-nav">
+                        <span class="dicticon-filter"></span>
+                        <span class="filter-item-active" data-filter-action="http://www.dictionary.com/browse/%40%40queryText%40%40">definitions</span>
+                    </div>
+                    <input type="text"
+                           value="forty-niner"
+                           autoComplete="off"
+                           autocapitalize="off"
+                           autocorrect="off"
+                           name="q"
+                           class="search-input transparent-text"
+                           id="q"
+                           data-term="forty-niner">
+                    <script>
+    (function() {
+        var searchInput = document.getElementById('q');
+        if (searchInput !== null) {
+            if (DARCI.OQR.getValue() !== null) {
+                searchInput.value = DARCI.OQR.getValue();
+                searchInput.select();
+            }
+            searchInput.className = searchInput.className.replace('transparent-text', '');
+        }
+    })();
+</script>                    <input type="hidden" name="s" value="t"/>
+                    <button type="submit" id="search-submit" class="dicticon-search-submit" value=""></button>
+                    <ul class="filter-list filter-hidden">
+                                                    <li class="filter-hidden" data-filter="http://www.dictionary.com/browse/%40%40queryText%40%40">definitions</li>
+                                                    <li class="" data-filter="http://www.thesaurus.com/browse/%40%40queryText%40%40">synonyms</li>
+                                                    <li class="" data-filter="http://translate.reference.com/?query=%40%40queryText%40%40">translations</li>
+                                            </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="social-follow-module">
+    <ul class="social-follow-btns">
+        <li>
+            <div class="fb-like-wrapper">
+                <div class="fb-like" data-href="https://www.facebook.com/dictionarycom" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+            </div>
+        </li>
+        <li>
+            <a class="twitter-follow-button" href="/web/20160419204527/https://twitter.com/dictionarycom" data-show-screen-name="false">Follow @dictionarycom</a>
+        </li>
+        <li>
+            <span class="ig-follow" data-id="17031a6e93" data-handle="igfbdotcom" data-count="true" data-size="medium" data-username="false"></span>
+        </li>
+        <li>
+            <div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/117428481782081853923" data-rel="publisher"></div>
+        </li>
+    </ul>
+    <p>follow Dictionary.com</p>
+</div></header>
+<script type="text/javascript">
+    var DARCI = DARCI || {};
+    DARCI.searchedTerm = typeof DARCI.OQR !== 'undefined' ? DARCI.OQR.getValue() : null;
+    DARCI.searchedTerm = DARCI.searchedTerm !== null ? DARCI.searchedTerm : 'forty-niner';
+
+    document.getElementById('main_search').onsubmit = function(e, url) {
+        // if url parameter wasn't passed submitFrom() is called with default parameter, which is searchURL
+        // searchURL is defined and added as a global js option in controller
+        return submitForm(url || searchURL);
+    }
+
+    prepareSearchBox(document.getElementById('q'));
+
+    cookiesManager.setCookie('ReferrerQuery', DARCI.searchedTerm);
+</script>    <div id="header-leaderboard">
+        <div class="leaderboard-ad">
+            <div id="dcomSERPLeaderBoard-728x90"><script type="text/javascript">if(typeof UserController !== "undefined" && !UserController.shouldDisplayAds()){document.getElementById("dcomSERPLeaderBoard-728x90").parentNode.removeChild(document.getElementById("dcomSERPLeaderBoard-728x90"));}else{gptApp.ads.push( function() {googletag.cmd.push(function() { googletag.display("dcomSERPLeaderBoard-728x90"); });});}</script></div>        </div>
+    </div>
+    <div id="fly-out" class="fly-out fly-out-desktop" style="">
+        <a href="/web/20160419204527/http://blog.dictionary.com/acronym-or-abbreviation/"  style="display:block;" data-linkid="y9bpwj" >            <div class="text">
+                Acronym v. Abbreviation            </div>
+        </a>
+        <button type="button" class="fly-out-close-icon"></button>
+    </div>
+<div class="content-container main-area">
+    <div class="row">
+        <div class="left-rail-container">
+            
+<div class="left-nav-sticky">
+    <div class="left-nav-wrapper">
+        <ul>
+            <li class="left-nav-fav">
+                <button class="favorite-button">Favorite Button</button>
+            </li>
+            <li class="left-nav-cite">
+                <a href="/web/20160419204527/http://www.dictionary.com/#"  id="cite-source-link"  rel="nofollow" data-linkid="dr8lp1" >CITE</a>
+            </li>
+            <li class="left-nav-trans">
+                <a href="/web/20160419204527/http://translate.reference.com/translate?query=forty-niner" data-linkid="qnmgro" >Translate</a>
+            </li>
+            <li class="social-share-facebook">
+                <a id="left-nav-button-fb">Facebook</a>
+                <div class="share">Share</div>
+            </li>
+            <li class="social-share-twitter">
+                <a id="left-nav-button-twitter" href="/web/20160419204527/https://twitter.com/share?url=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner&amp;text=Forty-niner%20definition,%20a%20person,%20especially%20a%20prospector,%20who%20went%20to%20California%20in%201849%20...&amp;via=dictionarycom" target="_blank">Twitter</a>
+                <div class="share">Tweet</div>
+            </li>
+            <li class="social-share-google">
+                <a id="left-nav-button-gp" href="/web/20160419204527/https://plus.google.com/share?url=http%3A%2F%2Fwww.dictionary.com%2Fbrowse%2Fforty-niner"
+                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">Google+</a>
+                <div class="share">Share</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+        <div class="center-well-container"  data-linkid='nn1ov4' data-cts='{"linkId":"nn1ov4","infix":"","domain":"dictionary.com","clkpage":"dic","clkmod":"1clk","clksite":"dict","clkld":0}' data-href='http://www.dictionary.com/browse/'>
+
+            <section id="source-luna" data-pm-btn-target=".source-box, .source-meta" class="source-wrapper source-luna is-pm-btn-show pm-btn-spot">
+            <div class="source-box oneClick-area">
+            <section class="luna-box">
+    <header class="main-header oneClick-disabled cts-disabled head-big">
+    <div  class="waypoint-wrapper header-row header-first-row" data-href="source-luna">
+                    <h1 class="head-entry"><span class="me" data-syllable="for·ty-nin·er">forty-niner</span></h1>
+        
+        <div class="audio-wrapper cts-disabled"> <audio> <source src="http://static.sfdict.com/staticrep/dictaudio/lunawav/F03/F0315000.ogg" type="audio/ogg"> <source src="http://static.sfdict.com/staticrep/dictaudio/F03/F0315000.mp3" type="audio/mpeg"> </audio> <a class="speaker" href="/web/20160419204527/http://static.sfdict.com/staticrep/dictaudio/F03/F0315000.mp3"></a></div>            <h3 class="head-entry-variants"></h3>
+            </div>
+
+
+    
+    <div class="header-row header-extras pronounce pronset">
+    <div>
+                    <span class="pron spellpron">[fawr-tee-<span class="dbox-bold">nahy</span>-ner] </span>
+            <span class="pron ipapron">/ˌfɔr tiˈnaɪ nər/ </span>
+                            <span class="pre-def-data"> </span>
+            </div>
+            <div>
+            <button class="prontoggle pronounce-button pronounce-Spell-button">Spell</button>
+            <button class="syllable-button syllable-button-off" data-header="1">Syllables</button>
+        </div>
+    </div>
+        <div class="header-row">
+        <ul class="headword-bar-list">
+                            <li>
+                    <a data-navigation-href="source-word-origin">
+                        Word Origin                    </a>
+                </li>
+                    </ul>
+    </div>
+
+</header>
+
+
+<div class="deep-link-synonyms">
+    <a href="/web/20160419204527/http://www.thesaurus.com/browse/forty-niner" data-linkid="oowy0r" >See more synonyms on Thesaurus.com</a>
+</div>
+    <div class="source-data">
+        <div class="def-list">
+                                        <section class="def-pbk ce-spot" data-collapse-expand='{"target": ".def-set", "type": "def"}'>
+                    <header class="luna-data-header">
+                        <span class="dbox-pg">noun</span>                    </header>
+
+                                            
+<div class="def-set">
+    <span class="def-number">1.</span>
+    <div class="def-content">
+        a person, especially a prospector, who went to California in 1849 during the gold rush.    </div>
+</div>
+                                    </section>
+                    </div>
+
+        <div class="tail-wrapper">
+
+    
+<div class="tail-box tail-type-origin pm-btn-spot" data-pm-btn-target=".tail-content" >
+    <div class="tail-header waypoint-wrapper oneClick-disabled" id="source-word-origin">
+        Origin of <span class="me" data-syllable="for·ty-nin·er">forty-niner</span>        <button class="button-source" type="button">Expand</button>
+    </div>
+    
+        <div class="tail-content "
+         >
+                     <div class="tail-elements">
+                
+    <div class="timeline oneClick-disabled">
+
+        <div class="span" style="left:88.401697312588% ; width:0.35360678925035% ;">
+
+            
+                <span class="date start-date"  style="left:-68px;" >1850-1855</span>
+
+            
+        </div>
+
+    </div>
+
+<span class="dbox-roman">1850-55,</span> Americanism            </div>
+        
+    </div>
+</div>
+    </div>
+    </div>
+</section>
+        </div>
+            <div class="source-meta">
+            Dictionary.com Unabridged<br />Based on the Random House Dictionary, © Random House, Inc. 2016.<br/>
+            <a href="/web/20160419204527/http://www.dictionary.com/cite.html?qh=forty-niner&amp;ia=luna" class="source-cite" rel="nofollow">Cite This Source</a>
+        </div>
+    </section>
+
+<section id="source-example-sentences" class="source-wrapper source-example-sentences is-pm-btn-show pm-btn-spot" data-pm-btn-target=".source-box">
+    <div class="source-title">
+        Examples from the Web for <span class="u-headword">forty-niner</span>
+        <button class="js-button-source button-source" type="button">Expand</button>
+    </div>
+    <div class="sent-wrap ce-spot" data-collapse-expand='{"target": ".source-box", "type": "sentences_list"}'>
+            <div class="source-box oneClick-area" data-cts='{"linkId":"ixxth0","infix":"","domain":"dictionary.com","clkpage":"dic","clkmod":"1clkesp","clksite":"dict","clkld":0}' data-href='http://www.dictionary.com/browse/' data-imp="ixxth0">
+                            <div class="source-subtitle oneClick-disabled">Historical Examples</div>
+                        <ul>
+                                    <li>
+                        <p class="partner-example-text">
+                            There was missing old “<em>forty-niner</em>,” commonly the dominant fifth of this odd quintet, but nobody wondered much at that.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/33853/33853-h/33853-h.htm" target="_blank" rel="nofollow">Jessica Trent: Her Life on a Ranch</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Evelyn Raymond                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            The government agent was an old friend of mine, a California <em>forty-niner</em>, and a most companionable fellow.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/25677/25677-h/25677-h.htm" target="_blank" rel="nofollow">The History of Minnesota and Tales of the Frontier</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Charles E. Flandrau                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            Then, since ‘<em>forty-niner</em>’ got home only he has slept here, and he generally ‘bunks’ on the lounge in this very office.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/30074/30074-h/30074-h.htm" target="_blank" rel="nofollow">Jessica, the Heiress</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Evelyn Raymond                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            He had made a fortune in California, for he was a <em>forty-niner</em>, and returned East to enjoy it.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/40731/40731-h/40731-h.htm" target="_blank" rel="nofollow">Tenting on the Plains</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Elizabeth B. Custer                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            Father, he was a <em>forty-niner</em> himself, an' he was a rough un if anything got in his way.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/32322/32322-h/32322-h.htm" target="_blank" rel="nofollow">The Boy With the U.S. Miners</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Francis Rolt-Wheeler                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            It had been the home of a "<em>forty-niner</em>," and he was dead and forgotten, his dust as easily accounted for as his winged gold.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/21903/21903-h/21903-h.htm" target="_blank" rel="nofollow">The Californians</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Gertrude Franklin Horn Atherton                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            At the very bottom, when all was said and done, Magnus remained the <em>forty-niner</em>.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/268/268-h/268-h.htm" target="_blank" rel="nofollow">The Octopus</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Frank Norris                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            I well remember,” writes a <em>forty-niner</em>, “the loneliness and dreariness amid all the excitement of the time.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/34940/34940-h/34940-h.htm" target="_blank" rel="nofollow">The Life of Bret Harte</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Henry Childs Merwin                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            Dr. Robinson was a prominent "<em>forty-niner</em>," and the leader of the California squatters in the war against the Sutter land claims.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/35558/35558-h/35558-h.htm" target="_blank" rel="nofollow">The Middle Period 1817-1858</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            John William Burgess                        </span>
+                        </div>
+                    </li>
+                                    <li>
+                        <p class="partner-example-text">
+                            A '<em>forty-niner</em>' ain't apt to be lazy on the shoot, an' Father's gun spit first.                        </p>
+                        <div class="partner-example-credentials"  data-linkid='sl8bq9'>
+                        <span>
+                            <a href="/web/20160419204527/http://www.gutenberg.org/files/32322/32322-h/32322-h.htm" target="_blank" rel="nofollow">The Boy With the U.S. Miners</a>
+                        </span>
+                        <span class="oneClick-disabled">
+                            Francis Rolt-Wheeler                        </span>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </section><section id="source-ced2" data-pm-btn-target=".source-box, .source-meta" class="source-wrapper source-ced2 is-pm-btn-show pm-btn-spot">
+            <div class="source-title">
+            British Dictionary definitions for <span class="u-headword">forty-niner</span>            <button class="button-source" type="button">Expand</button>
+        </div>
+
+            <div class="source-box oneClick-area">
+            
+<header class="main-header oneClick-disabled cts-disabled head-big">
+    <div class="header-row header-first-row">
+                    <h2 class="head-entry"><span class="me">forty-niner</span></h2>
+                    </div>
+
+
+    
+    </header>
+<div class="source-data ce-spot"
+                        data-collapse-expand='{"target": ".def-coll", "type": "collins"}'>
+    <div class="def-coll">
+        
+
+<div class="def-list">
+            <div class="def-pbk">
+            <span class="dbox-pg">noun</span>                            <div class="def-set">
+                    <span class="def-number">1.</span>
+                    <div class="def-content">
+                        (<span class="dbox-bold">sometimes capital</span>) (<span class="dbox-bold">US</span>, <span class="dbox-bold">history</span>) a prospector who took part in the California gold rush of 1849                    </div>
+                </div>
+                                            <div class="def-set">
+                    <span class="def-number">2.</span>
+                    <div class="def-content">
+                        <span class="dbox-bold">49er. </span>a type of dinghy, designed to be crewed by two people                    </div>
+                </div>
+                                    </div>
+    </div>
+        
+<div class="tail-wrapper">
+    </div>    </div>
+</div>        </div>
+            <div class="source-meta">
+            Collins English Dictionary - Complete & Unabridged 2012 Digital Edition<br /> © William Collins Sons & Co. Ltd. 1979, 1986 © HarperCollins<br />Publishers 1998, 2000, 2003, 2005, 2006, 2007, 2009, 2012<br/>
+            <a href="/web/20160419204527/http://www.dictionary.com/cite.html?qh=forty-niner&amp;ia=ced2" class="source-cite" rel="nofollow">Cite This Source</a>
+        </div>
+    </section>
+                            <div class="hidden-xs">
+                    <div class="slideshows short-serp-slideshow"
+         data-imp="nqdc8q" data-linkid='nqdc8q' >
+    <h3>Discover our greatest slideshows</h3>
+    <ul class="carousel">
+                        <li class="slide">
+                    <a href="/web/20160419204527/http://www.dictionary.com/slideshows/horoscope">
+                        <img width="130" height="140" id="slideImg1" src="/web/20160419204527im_/http://static.sfdict.com/assets/6236-8849822-32.jpg" >
+                    </a>
+                    <div class="title-wrapper">
+                        <h3>
+                            <a class="title-link" href="/web/20160419204527/http://www.dictionary.com/slideshows/horoscope">What's Your Sign? 14 Astrological...</a>
+                        </h3>
+                    </div>
+                </li>                <li class="slide">
+                    <a href="/web/20160419204527/http://www.dictionary.com/slideshows/money">
+                        <img width="130" height="140" id="slideImg2" src="/web/20160419204527im_/http://static.sfdict.com/assets/2095-2710145-36.jpg" >
+                    </a>
+                    <div class="title-wrapper">
+                        <h3>
+                            <a class="title-link" href="/web/20160419204527/http://www.dictionary.com/slideshows/money">Dough, Clams, and Greenbacks:...</a>
+                        </h3>
+                    </div>
+                </li>                    <div class="u-clear"></div>                <li class="slide">
+                    <a href="/web/20160419204527/http://www.dictionary.com/slideshows/baby-animals">
+                        <img width="130" height="140" id="slideImg3" src="/web/20160419204527im_/http://static.sfdict.com/assets/1174-9757434-13.png" >
+                    </a>
+                    <div class="title-wrapper">
+                        <h3>
+                            <a class="title-link" href="/web/20160419204527/http://www.dictionary.com/slideshows/baby-animals">12 Strange Names of These Baby...</a>
+                        </h3>
+                    </div>
+                </li>                <li class="slide">
+                    <a href="/web/20160419204527/http://www.dictionary.com/slideshows/egg-expressions">
+                        <img width="130" height="140" id="slideImg4" src="/web/20160419204527im_/http://static.sfdict.com/assets/4082-6785285-18.jpg" >
+                    </a>
+                    <div class="title-wrapper">
+                        <h3>
+                            <a class="title-link" href="/web/20160419204527/http://www.dictionary.com/slideshows/egg-expressions">All in One Basket: 8 Eggcentric...</a>
+                        </h3>
+                    </div>
+                </li>                    <div class="u-clear"></div>    </ul>
+</div>
+                    <div class="blog-container"  data-linkid='mzyvyk'  data-imp="mzyvyk">
+    <h3>Browse more topics on our blog</h3>
+    <ul>
+                    <li>
+                <a href="/web/20160419204527/http://blog.dictionary.com/discreet-and-discrete">What Is the Difference Between Discreet and Discrete?</a>
+                <div class="text">Learn the correct uses of these two commonly confused homophones.</div>
+            </li>
+                    <li>
+                <a href="/web/20160419204527/http://blog.dictionary.com/ampersand">What Character Was Removed from the Alphabet?</a>
+                <div class="text">What mistaken pronunciation gave this character its name? </div>
+            </li>
+                    <li>
+                <a href="/web/20160419204527/http://blog.dictionary.com/apostrophes-101">Apostrophes 101</a>
+                <div class="text">This small mark has two primary uses: to signify possession or omitted letters.</div>
+            </li>
+                    <li>
+                <a href="/web/20160419204527/http://blog.dictionary.com/getting-words-into-dictionaries">How Do I Get a Word into the Dictionary?</a>
+                <div class="text">People invent new words all the time, but which ones actually make it?</div>
+            </li>
+            </ul>
+</div>
+                </div>
+                    </div>
+        <div class="right-rail-container">
+            <div class="constant-content">
+            <section id="wotd-text" class="wotd-module">
+    <header>
+        <h3 class="title icon-wotd">Word of the Day</h3>
+    </header>
+    <div class="content">
+            </div>
+</section><div id="dcomSERPTop-300x250"><script type="text/javascript">if(typeof UserController !== "undefined" && !UserController.shouldDisplayAds()){document.getElementById("dcomSERPTop-300x250").parentNode.removeChild(document.getElementById("dcomSERPTop-300x250"));}else{gptApp.ads.push( function() {googletag.cmd.push(function() { googletag.display("dcomSERPTop-300x250"); });});}</script></div>
+
+<section id="difficulty-box" data-difficulty="77"  data-imp="6ta766">
+    <header>
+        <h3 class="title icon-glasses">Difficulty index for <span class="u-headword">forty-niner</span></h3>
+    </header>
+    <div class="content">
+        <div class="difficulty-bar">
+            <div class="difficulty-indicator"></div>
+        </div>
+    </div>  
+    
+        <span class="subtext">Few English speakers likely know this word</span>
+    
+</section><section id="tile-value-box">
+    <header>
+        <h3 class="title icon-cup">Word Value for <span class="u-headword">forty</span></h3>
+    </header>
+    <div class="content">
+        <div class="row">
+            <div class="game-scrabble"><span>11</span></div>
+            <div class="game-wwf"><span>10</span></div>
+            
+        </div>
+        <div class="row">
+            <span class="descr_scrabble">Scrabble</span>
+            <span class="descr_wwf">Words With Friends</span>            
+        </div>
+    </div>  
+</section>            </div>
+                            <div class="right-rail-sticky-box">
+                    <div class="rightRailMiddleAd"><div id="dcomSERPMid-300x250"><script type="text/javascript">if(typeof UserController !== "undefined" && !UserController.shouldDisplayAds()){document.getElementById("dcomSERPMid-300x250").parentNode.removeChild(document.getElementById("dcomSERPMid-300x250"));}else{gptApp.ads.push( function() {googletag.cmd.push(function() { googletag.display("dcomSERPMid-300x250"); });});}</script></div></div>
+                </div>
+                <section class="right-rail-nearby-words">
+    <h3 class="title">Nearby words for forty-niner</h3>
+    <div class="nearby-words-outer-box">
+        <button type="button" class="nearby-move-button nearby-prev"></button>
+        <div class="nearby-words-inner-box"  data-linkid='lno2pu' data-ordinal='1' data-item='1'>
+            <ul class="list-vertical">
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortunately">fortunately</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortunatus">fortunatus</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune">fortune</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune-cookie">fortune cookie</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune-five-hundred">fortune five hundred</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune--hunter">fortune hunter</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune-hunter">fortune-hunter</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortune-teller">fortune-teller</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortuneteller">fortuneteller</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortunetelling">fortunetelling</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty">forty</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-hours">forty hours</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-ways-to-sunday">forty ways to sunday</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-winks">forty winks</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty--leven">forty-'leven</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-deuce">forty-deuce</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-eight">forty-eight</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-eighth">forty-eighth</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-eightmo">forty-eightmo</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-fifth">forty-fifth</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-first">forty-first</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-five">forty-five</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-four">forty-four</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-fourth">forty-fourth</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-nine">forty-nine</a>
+                </li>
+                                <li class="visible query-word">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-niner">forty-niner</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-niners">forty-niners</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-ninth">forty-ninth</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-ninth-parallel">forty-ninth parallel</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-one">forty-one</a>
+                </li>
+                                <li class="visible">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-second">forty-second</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-seven">forty-seven</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-seventh">forty-seventh</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-six">forty-six</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-sixth">forty-sixth</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-third">forty-third</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-three">forty-three</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forty-two">forty-two</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortyish">fortyish</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortypenny">fortypenny</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/fortysomething">fortysomething</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forum">forum</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward">forward</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-analysis">forward analysis</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-bias">forward bias</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-chaining">forward chaining</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-compatibility">forward compatibility</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-compatible">forward compatible</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-delivery">forward delivery</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-delta">forward delta</a>
+                </li>
+                                <li class="">
+                    <a href="/web/20160419204527/http://www.dictionary.com/browse/forward-dive">forward dive</a>
+                </li>
+                            </ul>
+        </div>
+        <button type="button" class="nearby-move-button nearby-next"></button>
+    </div>
+</section>
+                <div class="rightRailBottomAd"></div>
+                    </div>
+            </div>
+    <div class="row">
+        <div id="dcomSERPBottomLeaderBoard-728x90"><script type="text/javascript">if(typeof UserController !== "undefined" && !UserController.shouldDisplayAds()){document.getElementById("dcomSERPBottomLeaderBoard-728x90").parentNode.removeChild(document.getElementById("dcomSERPBottomLeaderBoard-728x90"));}else{gptApp.ads.push( function() {googletag.cmd.push(function() { googletag.display("dcomSERPBottomLeaderBoard-728x90"); });});}</script></div>    </div>
+</div>
+
+<footer class="footer-thin">
+    <div class="footer-container"  data-linkid='gy27eg'>
+        <div>
+            <ul class="footer-navbar">
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://content.dictionary.com/">About</a>
+                </li>
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://www.dictionary.com/terms">Terms</a>
+                </li>
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://www.dictionary.com/privacy">Privacy</a>
+                </li>
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://content.dictionary.com/about/careers">Careers</a>
+                </li>
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://www.dictionary.com/apps">Apps</a>
+                </li>
+                <li class="footer-navbar-list">
+                    <a href="/web/20160419204527/http://content.dictionary.com/about/contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="footer-copyright">
+                &copy;&nbsp;2016 Dictionary.com, LLC.
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="/web/20160419204527js_/http://static.sfdict.com/app/js/jquery-1.11.3.min-6ea01.js" ></script><script type="text/javascript" src="/web/20160419204527js_/http://app.dictionary.com/js/advertisement.js"></script>
+<script>
+    if (typeof window.canRunAds === 'undefined') {
+        var img = new Image(),
+        url = '/web/20160419204527/http://track.dictionary.com/main.gif?ev=a&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=dic&st=dict&ab=&dc=desktop';
+
+        url = url.replace('%40%40REFERRER%40%40', encodeURIComponent(document.referrer))
+            .replace('%40%40CACHEBUSTER%40%40', Math.floor((Math.random() * 899999999) + 100000000))
+            .replace('%40%40MSEG%40%40', (cookiesManager.getCookieValue('mseg') || ''));
+        img.src = url;
+    }
+</script>
+<!-- Begin Quantcast Tag, part 2 -->
+<script type="text/javascript">
+if (typeof UserController === "undefined" || !UserController.isUnder13()) {
+    _qevents.push({qacct: "p-51zXP5Cc9sxvQ"});
+}
+</script>
+<noscript>
+<div style="display: none;"><img src="/web/20160419204527im_/http://pixel.quantserve.com/pixel/p-51zXP5Cc9sxvQ.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+<!-- End Quantcast Tag, part 2 --><script>
+    /*jsLint browser: true */
+    /*global $, pageName */
+    var BCT = (function () {
+        'use strict';
+
+        var webTrackURL = '/web/20160419204527/http://track.dictionary.com/main.gif?ev=c&cl=%40%40LINKIDS%40%40&ci=%40%40ITEM%40%40&co=%40%40ORDINAL%40%40&ms=%40%40MSEG%40%40&ds=%40%40DESTINATION%40%40&qr=%25%25QUERY%25%25&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop',
+            query, originalQuery;
+
+                    originalQuery = typeof DARCI.OQR !== 'undefined' ? DARCI.OQR.getValue() : null;
+            query =  originalQuery !== null ? originalQuery : "forty-niner";
+
+            webTrackURL = webTrackURL.replace('%25%25QUERY%25%25', query);
+        
+        /**
+         * Returns data, which will be logged.
+         *
+         * NOTE:
+         * Possible, that empty array will be returned.
+         */
+        function getData($target) {
+            var ctsData,
+                $closestLinkIDElement,
+                data = {};
+
+            if ($target.data('cts') !== undefined) {
+                ctsData = $target.data('cts');
+                data.linkId = ctsData.linkId;
+                data.item = "";
+                data.ordinal = ctsData.ordinal;
+            } else {
+                $closestLinkIDElement = $target.closest('[data-linkid]');
+
+                if (1 === $closestLinkIDElement.length && 0 === $target.closest('[data-type]').length) {
+                    data.linkId = $closestLinkIDElement.data('linkid');
+                    data.item = getItem($target);
+                    data.ordinal = getOrdinal($target, $closestLinkIDElement);
+                }
+            }
+            return data;
+        }
+
+        function getItem($target) {
+            var $closestWithItem = $target.closest('[data-item]'),
+                item = '';
+
+            if (1 === $closestWithItem.length) {
+                item = $target.text().trim();
+            }
+
+            return item;
+        }
+
+        function getOrdinal($target, $dataItem) {
+            var $closestWithOrdinal,
+                value = '';
+
+            if ($dataItem !== $target) { // if element with linkid is not the anchor itself we are going deeper
+                $closestWithOrdinal = $target.closest('[data-ordinal]');
+
+                if (0 !== $closestWithOrdinal.length) {
+                    value = 1;
+                    $closestWithOrdinal.find('a').each(function (index, element) {
+                        if ($target[0] === element) { //if we've reached clicked element
+                            return false; //exit the loop
+                        }
+
+                        value += 1;
+                    });
+                }
+            }
+
+            return value;
+        }
+
+        /**
+         * Returns data, which are generated always in the same way
+         */
+        function getCommonData(destination) {
+            var data = {};
+            data.cacheBuster = Math.floor((Math.random() * 899999999) + 100000000);
+            data.pageName = pageName;
+            data.mseg = getMsegValue();
+            data.destination = encodeURIComponent(destination);
+
+            return data;
+        }
+
+        /**
+         * Redirects user to destination
+         */
+        function redirectToDest(location) {
+            window.location = location;
+        }
+
+        /**
+         * Returns value of cookie based on name
+         */
+        function getCookieByName(name) {
+            var value = null,
+                cookies = document.cookie,
+                searchedCookie = cookies.indexOf(" " + name + "=");
+
+            // it's worth to check, if cookie is not first cookie
+            if (searchedCookie === -1) {
+                var checkFirstCookie = cookies.indexOf(name + "=");
+                searchedCookie = checkFirstCookie === 0 ? 0 : -1;
+            }
+
+            if (searchedCookie > -1) {
+                var startPositionOfValue = cookies.indexOf("=", searchedCookie) + 1,
+                    endPositionOfValue = cookies.indexOf(";", searchedCookie);
+
+                if (endPositionOfValue === -1) {
+                    endPositionOfValue = searchedCookie.length;
+                }
+
+                value = cookies.substring(startPositionOfValue,endPositionOfValue);
+            }
+
+            return value;
+        }
+
+        /**
+         * Returns value of mseg cookie
+         */
+        function getMsegValue() {
+            var msegVal;
+            if (typeof cookiesManager !== "undefined") {
+                msegVal = cookiesManager.getCookieValue("mseg");
+            } else {
+                msegVal = getCookieByName("mseg");
+            }
+
+            return msegVal || "";
+        }
+
+        /**
+         * Renders WebTrack URL
+         */
+        function renderWebTrackURL(data, destination) {
+            var commonData = getCommonData(destination);
+            return webTrackURL.replace('%40%40REFERRER%40%40', encodeURIComponent(document.referrer))
+                .replace('%40%40LINKIDS%40%40', data.linkId || "")
+                .replace('%40%40ITEM%40%40', data.item || "")
+                .replace('%40%40ORDINAL%40%40', data.ordinal || "")
+                .replace('%40%40CACHEBUSTER%40%40', commonData.cacheBuster || "")
+                .replace('%40%40PAGENAME%40%40',  commonData.pageName || "")
+                .replace('%40%40MSEG%40%40', commonData.mseg || "")
+                .replace('%40%40DESTINATION%40%40', commonData.destination || "");
+        }
+
+        function logAndRedirect(data, destination) {
+            var logURL = renderWebTrackURL(data, destination),
+                image = new Image();
+
+            var timeout = setTimeout(
+                function(){
+                    redirectToDest(destination);
+                },
+                2000
+            );
+
+            image.onload = image.onerror = function () {
+                clearTimeout(timeout);
+                redirectToDest(destination);
+            };
+
+            image.src = logURL;
+
+            return false;
+        }
+
+        /**
+         * Registers click event handler to body so it receives every click on anchor.
+         */
+        function attachHandler() {
+            $('body').on('click.bct', 'a', function (event) {
+                var $target = $(event.target).closest('a'),
+                    destination = $target.attr('href'),
+                    dataToLog;
+
+                if (typeof destination === "undefined") {
+                    return true;
+                }
+                // check if BCT is enabled for this element (closest parent enables or disables cts?)
+                if ($target.closest('.cts-disabled').parents().length > $target.closest('.cts-enabled').parents().length) {
+                    return true;
+                }
+
+                dataToLog = getData($target);
+
+                // if array is empty it means that link shouldn't be tracked - follow the link
+                if (typeof dataToLog.linkId === "undefined") {
+                    return true;
+                }
+
+                event.preventDefault();
+
+                // if CTS request is already pending - block the link
+                if ($target.hasClass('cts-clicked')) {
+                    return false;
+                }
+
+                // mark this link as already clicked
+                $target.addClass('cts-clicked');
+
+                return logAndRedirect(dataToLog, destination);
+            });
+        }
+
+        return {
+            attachHandler: function () {
+                attachHandler();
+            },
+            /**
+             * ::redirect() method is method used by oneClick module
+             */
+            redirect: function (ctsData, destinationHref, item) {
+                var data = {};
+                data.linkId = ctsData.linkId || ctsData.linkid; //sometimes we push object and sometimes data-* attributes
+                data.item = item;
+                data.ordinal = '';
+                return logAndRedirect(data, destinationHref);
+            }
+        };
+    }());
+
+    /** Do the initial attachment to <body> links */
+    BCT.attachHandler();
+
+    /** Triggering event for all related actions */
+    $(document).trigger('bctready');
+</script>
+<script type="text/javascript" src="/web/20160419204527js_/http://static.sfdict.com/app/js/require-37278.js"></script>
+<script type="text/javascript">
+    requirejs.config({
+            baseUrl: "/web/20160419204527/http://static.sfdict.com/dcom/js",
+            paths: {"appcore":"/web/20160419204527/http://static.sfdict.com\/app\/js","options":"/web/20160419204527/http://static.sfdict.com\/app\/js\/options-b826f","facebook":"/web/20160419204527/http://connect.facebook.net\/en_US\/all","twitter":"/web/20160419204527/https://platform.twitter.com\/widgets","instagram":"/web/20160419204527/https://x.instagramfollowbutton.com\/follow","google-plus":"/web/20160419204527/https://apis.google.com\/js\/platform","page\/serp\/main":"page\/serp\/main-c3385"},
+            shim: {"facebook":{"exports":"FB"},"twitter":{"exports":"twttr"},"instagram":[],"google-plus":{"exports":"googleplus"}}        });
+            define('jquery', [], function() { return window.jQuery; });
+        define("runtime-options", function() {
+        return {"shortSerp":true,"definitionsLimit":5,"definitionsDisplayed":3,"wotdLink":"<a href=\"/web/20160419204527/http://www.dictionary.com\/wordoftheday\/\"  class=\"word\"  id=\"wotd\" data-linkid=\"rpilnc\" >$$word$$<\/a>","flashAudioPlayerPath":"/web/20160419204527/http://static.sfdict.com\/app\/flash\/player-d6fab.swf","isFavoriteURL":"/web/20160419204527/http://app.dictionary.com\/favorites\/api\/getfavorites","addFavoriteURL":"/web/20160419204527/http://app.dictionary.com\/favorites\/api\/addword","searchTerm":"forty-niner","loginPageURL":"/web/20160419204527/http://app.dictionary.com\/login\/core","clientPlatform":"Desktop","interstitialDashRenderApi":"/web/20160419204527/http://app.dictionary.com\/api\/dash\/render\/ipadInterstitial\/dict_serp_ipadInterstitial","canonicalURL":"/web/20160419204527/http://www.dictionary.com\/browse\/forty-niner","pageName":"","wotdApiUrl":"/web/20160419204527/http://restapi.dictionary.com\/api\/wordoftheday","pageType":"serp-short","variant":false,"collapseExpandSettings":{"luna":{"container":"#source-luna","types":{"def":{"name":"luna definitions","type":0,"desktop":{"visibleEntries":7,"condition":7},"mobile":{"visibleEntries":2,"condition":2}},"supEntry":{"name":"supplementary notes - entry-based elements","type":0,"desktop":{"visibleEntries":5,"condition":5},"mobile":{"visibleEntries":2,"condition":2}},"supText":{"name":"supplementary notes - textual elements","type":1,"desktop":{"visibleLines":5,"condition":5},"mobile":{"visibleLines":5,"condition":5}},"usgAlert":{"name":"usage alert - textual elements","type":1,"desktop":{"visibleLines":3,"condition":3},"mobile":{"visibleLines":3,"condition":3}}},"specCase":{"name":"special collapse expand for Luna Mobile","type":0,"mobile":{"visibleEntries":1,"condition":1}}},"idioms":{"container":"#source-ahdi2","types":{"cols":{"name":"idioms dictionary 2 cols list and text","type":3,"desktop":{"visibleLines":5,"condition":7}},"list":{"name":"idioms dictionary ordered list","type":4,"desktop":{"visibleLines":5,"condition":7}}}},"slang":{"container":"#source-das","types":{"def":{"name":"slang dictionary text based","type":5,"desktop":{"visibleLines":5,"condition":7}}}},"21century":{"container":"#source-dict21db","types":{"cent21_entry":{"name":"21st Century entry text","type":6,"desktop":{"visibleLines":5,"condition":7}}}},"abbreviations":{"container":"#source-ahabb2","types":{"abrreviations_entry":{"name":"abbreviations unordered list","type":7,"desktop":{"visibleEntries":3,"condition":5}}}},"collins":{"container":"#source-ced2","types":{"collins":{"name":"collins definitions","type":2,"desktop":{"entries":{"visibleEntries":3,"condition":5},"lines":{"visibleLines":10,"condition":12}}}}},"sentences":{"container":"#source-example-sentences","types":{"sentences_list":{"name":"example sentences list","type":8,"desktop":{"visibleList":3,"condition":4},"mobile":{"visibleList":3,"condition":4}}}}},"collapseExpandToggles":{"luna_entry":0,"luna_text":1,"idioms_cols":3,"idioms_list":4,"slang_text":5,"cent21_entry":6,"col_number":2,"ahabb2_list":7,"sentences_list":8},"CTSParams":{"infix":"","clkpage":"dic","clksite":"dict","clkld":0},"webTrack":{"clickInner":"/web/20160419204527/http://track.dictionary.com\/main.gif?ev=n&tg=%40%40TARGET%40%40&ar=%40%40ADREFRESH%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","impressions":"/web/20160419204527/http://track.dictionary.com\/main.gif?ev=i&lk=%40%40IMPRESSIONLINKIDS%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","pageview":"/web/20160419204527/http://track.dictionary.com\/main.gif?ev=p&ct=%40%40CONTENTTITLE%40%40&ms=%40%40MSEG%40%40&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop","click":"/web/20160419204527/http://track.dictionary.com\/main.gif?ev=c&cl=%40%40LINKIDS%40%40&ci=%40%40ITEM%40%40&co=%40%40ORDINAL%40%40&ms=%40%40MSEG%40%40&ds=%40%40DESTINATION%40%40&qr=%25%25QUERY%25%25&rf=%40%40REFERRER%40%40&cb=%40%40CACHEBUSTER%40%40&pn=%40%40PAGENAME%40%40&st=dict&ab=&dc=desktop"},"socialEvent":"{\"basePath\":\"http:\\\/\\\/track.dictionary.com\\\/track\\\/social\",\"attributes\":{\"site\":\"dict\",\"pageName\":\"dic\",\"ldid\":0}}"};
+    });
+    require(["page\/serp\/main"])
+</script>
+<script>
+    (function (factory) {
+        if (typeof require === 'function') {
+            require(['jquery'], factory);
+        } else {
+            factory($);
+        }
+    }(function($) {
+        var impressionLinkIds = {};
+        $('[data-imp]').each(function () {
+            if ($(this).is(':visible')) {
+                var imp = $(this).data('imp').toString().split('|', 2);
+                if (impressionLinkIds[imp[0]] === undefined) {
+                    impressionLinkIds[imp[0]] = 0;
+                }
+                if (imp[1] !== undefined) {
+                    impressionLinkIds[imp[0]] += parseInt(imp[1]);
+                } else {
+                    impressionLinkIds[imp[0]] += 1;
+                }
+            }
+        });
+
+        var lkValue = '';
+        for (var linkId in impressionLinkIds) {
+            lkValue += linkId + (impressionLinkIds[linkId] > 1 ? '|' + impressionLinkIds[linkId] : '') + ','
+        }
+        if (lkValue.slice(-1) === ',') {
+            lkValue = lkValue.slice(0, -1);
+        }
+        if (lkValue != '') {
+            var ms = (typeof ms === 'undefined') ? cookiesManager.getCookieValue('mseg') || "" : ms;
+            new Image().src = "/web/20160419204527/http://track.dictionary.com/main.gif?ev=i&pn=dic&st=dict&ab=&dc=desktop&lk=" + lkValue + "&ms=" + ms + "&rf=" + encodeURIComponent(document.referrer) + "&cb=" + Math.floor((Math.random()*899999999)+100000000);
+        }
+    }));
+</script>
+    </body>
+    </html>

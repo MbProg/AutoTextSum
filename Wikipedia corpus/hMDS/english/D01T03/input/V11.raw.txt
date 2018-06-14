@@ -1,0 +1,186 @@
+JAN
+MAR
+Apr
+10
+2015
+2016
+2017
+4 captures
+1 Oct 14 - 10 Mar 16
+Close Help
+Monash University Publishing | Contacts Page
+Old Myths and New Approaches: Interpreting Ancient Religious Sites in Southeast Asia
+ 
+Alexandra Haendel (editor)
+Download this book
+First page
+Cover
+Title Page
+Copyright
+Contents
+Contributors
+Introduction Marika Vicziany
+PART ONE: NATURE AND HUMANS: ADAPTING TO THE ENVIRONMENT
+Introduction to Part One
+Chapter 1: General archaeological aspects and speculations concerning the red soil region east of the Mekong River in Kampong Cham Province, Cambodia
+Chapter 2: Beyond the temples
+Angkor and its territory
+→ Chapter 3: Mysteries of Angkor revealed
+Hydrology and the siting of Angkor
+Chapter 4: The dynamics of Angkor and its landscape
+Issues of scale, non-correspondence and outcome
+Chapter 5: Religious architecture and irrigation in the plain of Phan Rang
+Chapter 6: Connecting the dots
+Investigating transportation between the temple complexes of the medieval Khmer (9th–14th centuries CE)
+Chapter 7: Journeys and landscapes
+Some preliminary remarks on ancient Javanese perceptions of the environment
+PART TWO: SITES AND GROUPS OF BUILDINGS
+PART THREE: LIVING THE SITES: THE COMMUNITIES AROUND
+Bibliography
+Back Cover
+← previous
+next →
+Chapter 3
+Mysteries of Angkor revealed
+Hydrology and the siting of Angkor
+Bob Acker
+Lecturer, Department of Geography, University of California at Berkeley
+The theoretical setting
+Introduction
+Angkor was the first, largest and richest empire in medieval mainland Southeast Asia. Founded early in the ninth century around the Great Lake on the north Cambodian plain, it ruled an area that by the end of the tenth century comprised most of modern Cambodia, southern Laos, and northeastern and central Thailand; in the twelfth century, it created one of the wonders of the world, the gigantic temple complex of Angkor Wat. The fundamental question in Angkorian studies is to determine what factors enabled Angkor to become so large and so rich so early.
+The first comprehensive theory of Angkor’s greatness claimed that Angkor grew powerful through intensive rice irrigation based on gigantic, rectilinear water-holding devices known as baray, which permitted rice crops to be grown in the dry season as well as the wet, and so fed the army that supported its empire and the workforce that built its temples. In the second half of the ninth century, the first baray, the Indratatāka, was built just north of the first capital, Hariharālaya, on the north shore of the Great Lake. The Indratatāka measured about three kilometres along its east–west axis and 750 metres along its north–south axis; given a water depth of three metres, it could have held almost seven million cubic metres of water.
+Toward the end of the ninth century, the capital moved from Hariharālaya to a new site on the banks of the Siem Reap River, about 18 kilometres northwest of Hariharālaya and 12 kilometres north of the shore of the Great Lake. The new capital, Yaśodharapura, was built around an elevation called the Bakheng, on which the state temple was constructed. A new and much larger baray, the Yaśodharatatāka, was built at around the same time, just to the east of the new capital. It measured 7.5 kilometres along its east–west axis and 1.8 kilometres along its north-south axis; with a depth of three metres, it could have held 40 million cubic metres of water. About 150 years later, in the middle of the eleventh century, the largest baray of all, the West Baray, was built just west of the capital district. With an east–west axis extending for eight kilometres and a north–south axis two kilometres in length, and a probable water depth of five metres, the West Baray was capable of holding around 80 million cubic metres of water. 1
+In short, these early capitals were from their very beginning associated with mammoth baray. For several decades beginning around 1960, the dominant explanation for Angkor’s early rise to power and prosperity was based on irrigation and water control made possible by the baray. This was the so-called hydraulic thesis, chiefly promulgated by Bernard-Philippe Groslier of the École française d’Extrême-Orient (EFEO). Groslier hypothesised that water retained in the baray enabled a dry-season rice crop to be grown on the land down-slope from the baray, and also permitted a full wet-season crop to be grown even during years of abnormally scanty rainfall, in turn supporting Angkor’s army and urban workforce. In short, the hydraulic thesis went far beyond agronomy, attributing every aspect of Angkorian society—its economic base, labour organisation, supposedly centralised politics, in fact its entire historical trajectory—to baray irrigation (Groslier 1966, 1979).
+The hydraulic hypothesis, however, was never quantified or tested. Beginning in 1980, criticisms began to accumulate. The hydrologist van Liere published two papers, whose main thrust was that Khmer engineering could not provide the outtake structures needed to distribute water from the baray, and that in point of fact no trace of distributary canals could be found downslope from the baray (van Liere 1980, 1982). In 1992, Stott restated van Liere’s critiques and added criticisms of his own, first that there are no textual references in the very extensive Angkorian corpus to any irrigation works of any kind, and second, that the labour force that built the baray must have pre-dated them, and could not have owed its sustenance to irrigation from them (Stott 1992). Several years ago, I undertook quantitative tests of the hydraulic thesis and these indicated that the baray could not have irrigated more than a small fraction of the land downslope from the baray but above the northern shore of the Great Lake, and that the rice that could have been grown on the land thus irrigated could have fed only a minuscule fraction of Angkor’s population. Thus, baray irrigation, even if it existed, cannot have been responsible for Angkor’s rise to greatness. I suggested that the baray were part of the urban architecture of Angkor, and that Angkorian agriculture may have been based on another aspect of Angkor’s geography, the very high water-table underlying most of the north shore of the Great Lake.
+Recent research
+Christophe Pottier of EFEO, in the course of an extensive exploration of the area down-slope from the baray, has discovered a network of canals near the southwest corner of the West Baray (Pottier 2001a); but, while these canals suggest the existence of some sort of hydraulic system related to the baray, they nonetheless surround no more than 600 hectares, an area utterly insufficient to have supported Angkor’s labour force or to have played a decisive role in the Angkorian economy. In addition, remote sensing techniques used by Roland Fletcher of the University of Sydney have discovered canals to the north of the capital district (Fletcher 2000), but these very long canals, which have few distributaries, apparently served to connect the capital district with the northwestern spur of the Phnom Kulen range of hills, and so may well have been built for purposes of transportation rather than irrigation. In sum, these discoveries point to an extensive and well-engineered water system for the capital district, but, if anything, seem to argue against the hypothesis that irrigation was the main purpose of the water retention devices around Angkor, or that the baray played a decisive role in Angkorian agronomy.
+Another discovery, having to do with the specific siting of Angkor, may contain a clue bearing on the basis of Angkorian agricultural wealth. While it was originally believed that the Khmer moved their capital from Hariharālaya, located near the small Roluos River, to take advantage of the larger Siem Reap River at Yaśodharapura, this has been recently disproved. Excavations carried out by Pottier have demonstrated that the Siem Reap River is not a natural river but a diversion from the Puok River at a point around ten kilometres north of the capital district; further work by the hydrologist Terry Lustig of the Greater Angkor Project of the University of Sydney has shown that the diversionary works were built at the end of the ninth century, at the same time the capital moved from Hariharālaya to Yaśodharapura. But if the Siem Reap River is a diversion created at the same time as the capital, it follows that the capital cannot have been relocated to take advantage of the river. To the contrary, the capital was moved from a riverside location to one of the few places on the north Cambodian plain that had no river, and a river was then brought to it. Thus, some other factor made the new location attractive, so attractive that even the mammoth job of diverting a river to that location was justified.
+The present chapter proposes and tests the hypothesis that the decisive factor in the relocation of the Angkorian capital was the high water-table surrounding Yaśodharapura. Specifically, it is posited that the new capital was relocated to that part of the north Cambodian plain where the ground-water resources were the most plentiful, and that these water resources underlie the prosperity and greatness of Angkor.
+The high water-table hypothesis
+Basic hydrology and agronomy
+The high water-table beneath the north Cambodian plain is caused by the combination of the plain’s geology and climate. A substrate of ancient and largely impermeable sandstone is overlaid by a relatively thin layer of highly permeable Quaternary sedimentation; meanwhile, the region’s average annual rainfall is about 1,400 millimetres (Rasmussen and Bradford 1977). Rainwater infiltrates into the permeable alluvium quite easily, but cannot infiltrate farther because of the impermeable sandstone just beneath it, so that ground-water, supported by the sandstone layer, is found close to the surface of the plain.
+Contemporary Cambodian farmers make good use of the high water-table to supplement rainfall for their rice crops during the rainy season and to water their domestic animals during the dry season. Small tanks—artificial ponds dug into the water-table—are found next to almost every house in rural Cambodia (Garami and Kertai 1993), and farm villages are sited next to somewhat larger tanks (van Liere 1982). The historical record shows that this is no recent practice. Chinese travellers of the fifth century noted the presence of village tanks (Pelliot 1903), and Cambodian rural settlements of the eighth century were similarly located around natural and artificial ponds (Vickery 1986).
+The combined water-holding capacity of large numbers of small and medium-sized tanks is enormous. According to Stargardt (1983), who studied the ancient agronomy of Satingpra, an area on the Tenasserim peninsula with a water-table similar to that of Cambodia, the average village tank contained 6,000 cubic metres of water during the wet season and 3,000 cubic metres during the dry season. These figures may seem insignificant compared with the large baray at Angkor, whose capacity was measured in tens of millions of cubic metres. But while the large baray were built by embankments resting on the land surface, tanks are dug into the water-table and so refill automatically. Thus, their annual capacity is much greater than their volume; an estimate of 500,000 cubic metres per year per tank is not implausible. If there were 800 such tanks in the vicinity of the capital district, to adopt a figure found in Higham (1989), the tanks in the capital district have had a combined annual capacity of 400 million cubic metres, much greater than the capacity of all the great baray combined.
+Prior research on Cambodia’s ground-water resources
+Some early research on ground-water resources in Cambodia has demonstrated a correlation between high water-tables and the locations of Khmer settlements dating from the earliest times. In 1961, Rasmussen collected data on the level of the water-table in much of Cambodia, based on measurements of the water levels in tube wells, ordinary wells about a metre in diameter, bored into the earth and usually lined with concrete. Rasmussen’s data demonstrates two things relevant to this inquiry. First, nearly all of central Cambodia has a high water-table, with water almost always within five or six metres of the surface. Second, four Cambodian provinces, Kompong Thom, Siem Reap, Svey Rieng, and Takeo, have even higher water-tables, with water found one, two or three metres below ground. Takeo is the home of Angkor Borei, the earliest seat of Khmer civilisation, Kompong Thom is the home of Sambor Prei Kuk, the capital of the Khmer kingdom in the seventh century, and Siem Reap is the home of the successive Khmer capitals between 802 and 1431, Hariharālaya, Yaśodharapura, and Angkor. Only Svey Rieng, located in the borderland between the Khmer and Cham kingdoms, was not the home of an early Khmer capital.
+But, while Rasmussen’s data thus contains clues to the importance of high water-tables in forming Khmer settlement patterns, his data is not detailed. 2 The number of data points in each province varies from fewer than a dozen to a few dozen, the data points are apparently closely grouped within most provinces rather than distributed across the provinces, and specific locations of the data points are not provided. Before reliable conclusions can be drawn correlating the height of the water-table and the location of Angkorian settlement centres, greater quantities of more widely distributed and specifically located data points, with precise information concerning water levels, are necessary.
+Hypothesis testing
+Consequently, between January and March 2005, I measured the subsurface water levels in 830 tube wells around Siem Reap province. Although I measured water-table levels in the middle of the dry season, the important consideration was how the water-table affected rice farming during the rainy season. To determine this, I interviewed farmers, virtually all of whom reported that the water level in their wells rises by two metres between the middle of the dry season and the end of the rainy season; these reports were verified by checking the water marks on the inside of the wells.
+The data I collected are displayed on Plate 3.1, on which the locations and water-table levels of the measured wells are depicted. The levels are classified as ‘very high’, ‘high’, ‘mid-level’ or ‘low’. These are classified as follows:
+Very high water-tables (blue dots) are those within 1.5 metres of the surface when measured halfway through the dry season. With the typical two-metre rise by the end of the rainy season, the water here will rise to the surface halfway through the rainy season and inundate the land.
+High water-tables (green dots) are those more than 1.5 but less than 2.5 metres below the surface when measured halfway through the dry season. With the typical two-metre rise by the end of the rainy season, the water here will nearly or fully inundate the land by the end of the rainy season.
+Mid-level water-tables (yellow dots) are those more than 2.5 and less than 3.5 metres below the surface when measured halfway through the dry season. By the end of the rainy season, the water here will be approximately a metre beneath the surface by the end of the rainy season.
+Low water-tables (red dots) are those more than 3.5 metres below the surface when measured halfway through the dry season. Water here will remain well below the surface throughout the rainy season.
+Plate 3.1 Locations and water-table levels of measured wells in the southern Siem Reap province.
+This map, prepared by Cameron Reed, University of California at Berkeley, depicts most of Siem Reap province. The location of the first capital, Hariharalaya, is shown by a capital H, and the location of the second capital, Yasodharapura, is shown by a capital Y. The ninth-century East Baray and the eleventh-century West Baray are the two rectangles to the east and west of Yasodharapura. The Great Lake is shown at its smallest, dry-season extent.
+ 
+ 
+The data contained in Plate 3.1 is also presented in tabular form. Table 3.1 shows the measured water-table levels within a seven-kilometre radius of the Bakong temple at the centre of Hariharālaya; Table 3.2 shows the measured water-table levels within a 15-kilometre radius of the Bakheng temple-mountain at the centre of Yaśodharapura; Table 3.3 shows the measured water-table levels in the eastern part of Siem Reap province, east of the Roluos River; and Table 3.4 shows the measured water-table levels in the western part of Siem Reap province and more than 15 kilometres west of the Bakheng.
+Data Tables
+Water-table level
+Number of data points
+Percentage of total
+Very high
+14
+19.4
+High
+42
+58.3
+Mid-level
+14
+19.4
+Low
+2
+2.8
+Table 3.1 Measured water-table levels within a seven-kilometre radius of the Bakong; n=72
+ 
+Water-table level
+Number of data points
+Percentage of total
+Very high
+118
+47.2
+high
+119
+47.6
+Mid-level
+13
+5.2
+Low
+0
+0.0
+Table 3.2 Measured water-table levels within 15-kilometre radius of the Bakheng; n=250
+ 
+Water-table level
+Number of data points
+Percentage of total
+Very high
+25
+10.0
+High
+101
+40.4
+Mid-level
+62
+24.8
+Low
+62
+24.8
+Table 3.3 Measured water-table levels in eastern Siem Reap province; n=250
+ 
+Water-table level
+Number of data points
+Percentage of total
+Very high
+16
+14.3
+High
+40
+35.7
+Mid-level
+24
+28.6
+Low
+32
+21.4
+Table 3.4 Measured water-table levels in western Siem Reap province; n=112
+Groundwater resources and settlement locations
+A comparison between the groundwater resources around Hariharālaya, the first capital, and those around the new capital at Yaśodharapura shows that:
+The water-table is on average significantly lower around Hariharālaya. There are 72 data points located within seven kilometres of the Bakong, the temple at the centre of Hariharālaya, of which 42 (58.3%) are high, 14 (19.4%) are very high, a further 14 (19.4%) are mid-level, and the remaining two, comprising 2.9% of the total, are low. 3 Across this area, approximately 154 square kilometres in extent, the average depth of the water-table is slightly greater than two metres below the ground surface halfway through the dry season, so that this area, on average, would not be inundated during the average rainy season. 4
+By way of contrast, the new capital of Yaśodharapura was situated in the centre of an almost perfect circle, approximately 30 kilometres in diameter, 5 within which ground-water resources are close to the surface. Of the 250 data points within this 30-kilometre circle, 118 are very high, 119 are high, and 13 are mid-level; none are low. The average depth of the water-table within this area is slightly greater than 1.5 metres below the ground surface in the middle of the dry season, so that virtually the entire region would have been inundated during the rainy season. 6
+There is less variation in water-table levels around Yaśodharapura than around Hariharālaya. As noted, water-table levels around Hariharālaya varied widely, with as many mid-level data points as very high points. By way of contrast, almost all the data points around Yaśodharapura were high or very high, and the high and very high points were practically equal in number. In short, the average variance from the mean water-table depth was twice as great around Hariharālaya as around Yaśodharapura.
+The region of high and very high water-tables around Yaśodharapura was much larger than the corresponding region around Hariharālaya. The area of the 30-kilometre circle of high and very high subsurface water around Yaśodharapura measures approximately 700 square kilometres, over four times larger than the significantly lower region within seven kilometres of Hariharālaya, and around thirty times larger than the slightly lower water-table in the region immediately around Hariharālaya.
+Moreover, a comparison between the area around Yaśodharapura and the far eastern and far western parts of Siem Reap province, where no capital was ever sited, shows much starker contrasts in water-table levels:
+The eastern part of the province has a much lower water-table than the regions around either Yaśodharapura or Hariharālaya. Specifically, while only 5.2% of the data points around Yaśodharapura, and 22.3% of the data points around Hariharālaya, reflected a mid-level or low water-table, 49.6% of the data points east of the Roluos River were mid- or low-level. Moreover, the concentration of low-and mid-level data points increases the farther east one proceeds. Between the east bank of the Roluos river and the road connecting Beng Mealea with the shore of the Great Lake, 53% of the data points (73 of 138) are very high or high; but between the road and the eastern border of Siem Reap province, 53% of the data points (59 of 112) are mid-level or low.
+The water-table in the western part of Siem Reap province is also much lower than around the capital, with especially low water-tables found in the area closest to the Great Lake. In all, 50% (56 of 112) of the data points in the area between the 30-kilometre circle around Yaśodharapura and the western boundary of the province show a mid-level or low water-table. In the area between National Route 6 and the Great Lake, 34 of 48 data points, or 70.8%, are mid-level or low. Meanwhile, there are 64 data points in western Siem Reap province to the north of NR 6, of which 22, or 34.3%, show a mid-level or low water-table.
+Moreover, while there are regions with very high water-tables in the western part of the province, practically all of them are found in two clusters. One of these is just northwest of the West Baray and so is on the verge of the capital district, while the other, in the far western part of the province, is suggestively located around a cluster of Angkorian sites, 7 and so was apparently a secondary settlement cluster to the west of Angkor.
+High water-tables and Angkorian settlement patterns
+The data presented here strongly confirms the hypothesis that Angkorian capitals were sited in the middle of regions characterised by high subsurface water-tables. The water-table around Hariharālaya is significantly higher than the water-table found further to the east in the area closer to the older Khmer centres. The new capital district at Yaśodharapura was in a large region of very high subsurface water, far surpassing the location of Hariharālaya in size, consistency, and, most importantly, proximity to subsurface water. More striking still, Yaśodharapura was in virtually the centre of that region. Finally, what may be the largest cluster of Angkorian sites outside the capital districts is found in the middle of the only region outside the capital district with very high subsurface water levels.
+Why the capital was placed in the middle of the region with the highest water-table
+This very strong spatial correlation raises the question of why regions with high water-tables were preferred centres of settlement. I will argue, first, that high subsurface water levels increase agricultural productivity in several ways, and second, that the labour requirements of Khmer urban development were most easily met when urban sites were placed in the middle of regions of high agricultural productivity.
+The uses of high water-tables
+Observation of contemporary farming practices indicates that high water-tables make three distinct contributions to Cambodian agronomy. First, high water-tables make rice culture more productive, especially in a region of poor, sandy soils such as central Cambodia. These poor soils can supply only modest amounts of nutrients to the rice plants. But rice, originally a swamp plant, can obtain nutrients dissolved in ambient water as well as from soil (Grist 1955). Rice farmers surround their fields with low dikes to prevent runoff, thus keeping water and the nutrients it contains in the rice field. But while dikes can prevent rainwater from running off horizontally, they cannot prevent it from infiltrating vertically, down into the soil. During weeks of steady rain, when the amount of rainfall is greater than the amount of water that sinks into the soil, water remains in the rice field and the rice plants can receive nourishment. When the rain is intermittent, however, water sinks into the soil faster than it is replenished, and the field dries out; the rice plants can no longer receive nutrients from ambient surface water. Infiltration is particularly severe in Cambodia, with its highly permeable sandy soils.
+Infiltration ceases to be a problem, however, if the water-table is close to the surface even before the rainy season begins. In this case, the soil between the water-table and the surface is quickly filled by infiltrating rain water; in other words, the water-table rises to the surface as the rainy season proceeds. Once this happens, the rice field becomes inundated and remains so throughout the rest of the rainy season, and even for some weeks after its end, so that ambient water continuously supplies nourishment to the rice plants. Moreover, the higher the water-table is to begin with, the sooner the rice field is inundated, the longer the inundation lasts, and the more nutrients the rice plants receive over the course of the growing season.
+There are two additional ways in which regions with high water-tables are more productive than regions with lower water-tables. High water-tables enable domestic animals to survive the dry season more easily. As the dry season continues and many surface water features dry up, stored rainwater may allow human beings to survive, but their livestock need groundwater. Naturally, the closer the groundwater is to the surface, the easier it is to dig down to, especially with the few and poor tools available to traditional farmers. In addition, high water-tables make the cultivation of fruit trees and vegetables more productive. A high water-table means that more moisture reaches the roots of trees, leading to higher yields, and a very high water-table may enable farmers to plant a crop of vegetables in the still-wet soil after the rice harvest has been completed.
+In short, relocating the capital from Hariharālaya to Yaśodharapura at the end of the ninth century moved the Khmer centre of settlement from a smaller, less agriculturally productive area to a larger, more productive one.
+Agricultural productivity and urban location
+The movement of the capital from Hariharālaya to Yaśodharapura required not only the construction of an entirely new city but also the diversion of a river, and creation of the gigantic, 15-square kilometre East Baray, all at roughly the same time. An enormous labour force was needed to build these gigantic works. Where did this labour force come from?
+At one time, it was believed that the ancient Khmer used irrigation from the great baray to grow a dry-season rice crop that supported a large permanent urban workforce; but the baray, for all their huge area, were not very deep, and could not have provided the water to grow enough dry season rice to support tens of thousands of urban workers and their families (Acker 1998). Turning away from the idea of a permanent urban workforce, we see at once that, as elsewhere in mainland Southeast Asia, an available workforce could be assembled from rice farmers and other agricultural workers in the countryside, once the farmers had completed their rice harvest after the end of the rainy season. This rural-based workforce would have been available annually for the six months from December through June.
+As was almost universally the case in traditional mainland Southeast Asia, the labour force that built the temples and baray of Angkor was likely divided into two halves, with one half put to work during the days of the waxing moon and the other half during the days of the waning moon; and, during the half-month when they were not employed on public construction projects, the workers in all likelihood returned to their home villages. This system of bi-weekly labour rotation would have worked efficiently only if the workers lived within one or, at most, two days’ travel from their urban work place, not dozens or hundreds of kilometres away. In other words, the system worked best if the urban worksite were situated in the midst of a large, thickly settled agricultural zone. The relocation from Hariharālaya to Yaśodharapura was a move from a smaller, less productive and, therefore, less populated region to a larger, more productive and more thickly settled region—to a region, in other words, where the large labour force needed for the urban works of Yaśodharapura and, later, of Angkor was readily available.
+Conclusion
+This research, corroborating the work of earlier scholars, demonstrates a strong correlation between high water-tables and the locations of medieval Khmer centres of settlement, reflecting in turn the more productive agriculture found in areas of more abundant ground-water resources. This was the Khmer response to the problems posed by the nutrient-poor, permeable sandy soil characteristic of the Cambodian plain.
+The peoples of mainland Southeast Asia each developed agricultural adaptations best suited to their environments. The Dai peoples in the hill country developed the weir and canal system. The Mon, in the meandering river valleys of the lower Chaophraya and the Khorat, developed moated sites around those river bends. The present research demonstrates that the Khmer, on the broad but relatively infertile Cambodian plain, developed their own characteristic form of agriculture, one that could take advantage of the strengths and counteract the weaknesses of their environment.
+Acknowledgements
+I would like to thank Dr Alexandra Haendel for giving me the opportunity to present these research results. I must also thank Dr Hang Peou and Mr Bun Sonnaroath of the Department of Water and Forestry of the APSARA Authority in Siem Reap, without whose help and co-operation none of this research could have been carried out. I also want to express my gratitude for the generous support of the Fulbright research program of the United States State Department, which made this research program possible.
+1 In an earlier paper (Acker 1998), I estimated the depth of the West Baray at around nine metres, with a proportionately greater water-holding capacity. But, while the titanic walls of the West Baray would have permitted it to hold nine or more metres of water, such a water depth would have submerged the West Mebon, the island-temple in the centre of the West Baray. I am indebted to Christophe Pottier, head of the Siem Reap office of the EFEO, for this observation.
+2 Rasmussen’s survey of subsurface water resources, the first of its kind, was of course intended to create the groundwork for water-use policies in the present and not to conduct historical research in any sense.
+3 It is true that the water-table immediately around Hariharālaya is almost as high as the area around Yaśodharapura. There are 25 data points located within three kilometres of the Bakong, the main temple at Hariharālaya, of which 10 (40%) are very high, another 40% are high and the remaining 20% are mid-level. But the area of high or very high water-tables around Hariharālaya does not extend far. To the southwest, south and southeast, the Great Lake approaches to within three or four kilometres of the city during the rainy season; to the east and northeast, the very high water-table around the city gives way to a mixed region of high and mid-level water-tables within three kilometres. The only directions in which the water-table remains high are to the west and northwest, toward the new capital of Yaśodharapura.
+4 This assertion obviously rests on the assumption that the amount of rainfall during Angkorian times closely approximates contemporary rainfall totals. Indirect evidence supports this point. The work of Kummu (2004) suggests that little, if any, sediment has been deposited in the Great Lake in the past 5,000 years; meanwhile, the locations of Angkorian and contemporary settlements along the shore of the Great Lake suggest that the shoreline has barely moved since Angkorian times. But the volume of water in the Great Lake is a function of precipitation and drainage in the Tonle Sap basin, on the one hand, and the volume of water stored in the Lake during the time of reversed flow of the Tonle Sap River from the Mekong mainstream in the second half of the rainy season on the other (Fisher 1963). If the surface area and the depth of the Great Lake, that is, the volume of water in it, have not changed significantly since Angkorian times, this must mean that the amount of precipitation over the Mekong drainage basin as a whole and over the Tonle Sap basin have not changed significantly since then.
+5 Measured from the Bakheng, the temple mountain at the centre of Yaśodharapura.
+6 The very highest water-table in Siem Reap province is in the area once occupied by the East Baray. Even in the middle of the dry season, the water-table is less than a metre below the surface of the ground. It is probable that this area was under water for much of the year even before the Angkorian capital was re-sited just to the west, and that only minor dredging and circumvallation was needed to convert this semiannual swamp into a baray.
+7 Prasat Don Ok, Prasat Loeuk Prey, Prasat Don Tuk and Prasat Laongieng. This is perhaps the densest cluster of Angkorian settlements outside the capital district.
+← previous
+next →
+ 
+Old Myths and New Approaches: Interpreting Ancient Religious Sites in Southeast Asia
+   by Alexandra Haendel (editor)

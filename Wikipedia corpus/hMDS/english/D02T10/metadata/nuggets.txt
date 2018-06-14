@@ -1,0 +1,15 @@
+1:civilization
+2:Northeastern Africa
+3:Nile River
+4:3150 BC
+5:unification
+6:Narmer
+7:Intermediate Periods
+8:Old Kingdom
+9:Middle Kingdom
+10:New Kingdom
+11:Ramesside period
+12:Third Intermediate Period
+13:Late Period of Egypt
+14:Ptolemy Soter
+15:Roman province

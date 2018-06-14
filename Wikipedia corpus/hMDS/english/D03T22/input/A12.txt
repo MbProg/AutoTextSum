@@ -1,0 +1,88 @@
+The Supreme Court's changing stance on tribal sovereignty
+BY PHILIP J. PRYGOSKI
+Philip J. Prygoski is a professor of law at the Thomas M. Cooley Law School in Lansing, Michigan, where he teaches constitutional law and federal Indian law.
+From the era of Chief Justice John Marshall through the time of Justice Thurgood Marshall, the Supreme Court has struggled to define the doctrine of American Indian tribal sovereignty.
+Tribal sovereignty is not simply an abstract legal concept; it is part of the military, social, and economic development of our country.
+The following is a look at how the decisions of the Court for the past 170 years have defined, defended, and ultimately diminished that sovereignty.
+The role of the Supreme Court in affecting Indian sovereignty is best understood in relation to the powers of Congress and the President.
+Under the Constitution, Congress has the power to regulate commerce with the Indian tribes.
+The Indian Commerce Clause (Article I, 8, clause 3) is the main source of federal power over Indian tribes and has been the primary vehicle used by Congress to recognize and define tribal sovereignty.
+In addition, the Court has ruled that Congress, as the legislative body of the nation, has an intrinsic power to deal with the Indian nations that reside within the borders of the United States.
+Presidential power over the Indian tribes is centered on the ability to enter into treaties, a power that was used in the early years of federal Indian law to secure tribal acquiescence to the demands of the encroaching waves of European settlers.
+(In 1871, Congress passed legislation that ended the practice of the United States entering into treaties with Indian tribes.)
+It has been the Supreme Court's role to interpret the actions of the President and Congress, and to strike a balance between the rights of the Indian nations and the interests of the European conquerors.
+Tribal sovereignty was, and continues to be, a primary issue for the Court.
+A Matter of Perspective
+There are two competing theories of tribal sovereignty: first, the tribes have inherent powers of sovereignty that predate the "discovery" of America by Columbus; and second, the tribes have only those attributes of sovereignty that Congress gives them.
+Over the years, the Court has relied on one or the other of these theories in deciding tribal sovereignty cases.
+It is important to note that whichever theory the Court has favored in a given case has determined to a large extent what powers the tribes have and what protections they receive against federal and state government encroachment.
+In what is known as the "Marshall trilogy," the Supreme Court established the doctrinal basis for interpreting federal Indian law and defining tribal sovereignty.
+In the first of these cases, Johnson v. McIntosh (21 U.S. (8 Wheat.)
+543 (1823)), Chief Justice Marshall ruled for the Court that Indian tribes could not convey land to private parties without the consent of the federal government.
+The Court reasoned that, after conquest by the Europeans and the establishment of the United States, the rights of the tribes to complete sovereignty were diminished, and the tribes' power to dispose of their land was denied.
+In Cherokee Nation v. Georgia (30 U.S. (5 Pet.)
+1 (1831)), the Court addressed the question of whether the Cherokee Nation was a "foreign state" and, therefore, could sue the State of Georgia in federal court under diversity jurisdiction.
+Chief Justice Marshall ruled that federal courts had no jurisdiction over such a case because Indian tribes were merely "domestic dependent nations" existing "in a state of pupilage.
+Their relation to the United States resembles that of a ward to his guardian."
+The statements by the Court in Cherokee Nation established the premise that Indian nations do not possess all of the attributes of sovereignty that the word "nation" normally implies.
+Indian nations are not "foreign," but rather exist within the geographical boundaries of the United States, which necessarily limits their sovereignty.
+It would be unacceptable for an Indian nation located within the United States to enter into treaties with other countries, or to cede Indian land to foreign countries (to have a French or German enclave in the middle of Montana, for example.)
+The Court's characterization of the tribes as "dependent nations" is the basis for what has been called the trust relationship between the United States and the Indian tribes, through which the federal government protects the tribes from interference and intrusion by state governments and state citizens.
+Inherent in the concept of a "trust" relationship is the implication that the tribes are incompetent to handle their own affairs.
+This presumption has served as the justification for many actions by the federal government that have intruded on and diminished tribal sovereignty.
+In the last case of the Marshall trilogy, Worcester v. Georgia (31 U.S. (6 Pet.)
+515 (1832)), the Court addressed the issue of whether the state of Georgia could impose criminal penalties on a number of missionaries who were residing in Cherokee territory, without having obtained licenses from the governor of Georgia.
+Ruling that the laws of Georgia could have no effect in Cherokee territory, the Court said, "[t]he Cherokee nation...is a distinct community, occupying its own territory, with boundaries accurately described, in which the laws of Georgia can have no force, and which the citizens of Georgia have no right to enter, but with the assent of the Cherokees themselves, or in conformity with treaties, and with the acts of Congress...." In Worcester, the Court established the principle that states are excluded from exercising their regulatory or taxing jurisdiction in Indian country.
+The collective effect of the Marshall trilogy on the development of federal Indian law has been described as follows:
+Three bedrock principles thus underlie Worcester and the earlier decisions: (1) by virtue of aboriginal political and territorial status, Indian tribes possessed certain incidents of preexisting sovereignty; (2) such sovereignty was subject to diminution or elimination by the United States, but not by the individual states; and (3) the tribes' limited inherent sovereignty and their corresponding dependency on the United States for protection imposed on the latter a trust responsibility.
+(American Indian Law Deskbook.
+(University Press of Colorado, 1993).)
+These principles have continued to guide the Court in its interpretation of the respective rights of the federal government, the states, and the tribes.
+In Ex Parte Crow Dog (109 U.S. 556 (1883)), the Court overturned the conviction in federal court of an Indian who had murdered another Indian in Indian country.
+The Court reasoned that the ability of the tribe to deal with such an offense was an attribute of tribal sovereignty that had not been specifically abrogated by an act of Congress.
+The Court's reaffirmation of tribal sovereignty in Crow Dog was in large measure responsible for passage of the Major Crimes Act by Congress in 1885 (18 U.S.C. 1153).
+Under the act, seven major crimes--if committed by an Indian in Indian country--were placed within federal jurisdiction, regardless of whether the victim of the crime was an Indian.
+The Major Crimes Act was a great intrusion into the internal sovereignty of the tribes in that it deprived the tribes of the ability to try and to punish serious offenders in Indian country.
+The theory underlying it was that Indian tribes were not competent to deal with serious issues of crime and punishment.
+A year later, the Court upheld the constitutionality of the Major Crimes Act in U.S. v. Kagama (118 U.S. 375 (1886)), a case in which two Indians were prosecuted for killing another Indian on a reservation.
+The Indians argued that Congress did not have the constitutional authority to pass the Major Crimes Act.
+The Court agreed that the prosecution of major crimes did not fall within Congress's power to regulate commerce with the Indian tribes, but it ruled that the trust relationship between the federal government and the tribes conferred on Congress both the duty and the power to regulate tribal affairs.
+The ruling implied that because Indian tribes are wards of the United States, Congress has the power to regulate the tribes, even to the point of interfering with their essential sovereign power to deal with criminal offenders within Indian country.
+The trust relationship was again the basis for a Court decision that favored Congress in Lone Wolf v. Hitchcock (187 U.S. 553 (1903)).
+In Lone Wolf, the Court ruled that the trust relationship served as a source of power for Congress to take action on tribal land held under the terms of a treaty: The Court held that Congress could, by statute, abrogate the provisions of an Indian treaty.
+It went on to say that the status of the Indians who entered into the treaty and their relationship of dependency to the United States were such that Congress had a plenary power over the government's relations with the tribes.
+The power of Congress in these matter was so complete, the Court reasoned, that it would not even consider the merits of the argument regarding Congress's inability to abrogate an Indian treaty by statute--it said that any complaints about congressional action must be taken to Congress for redress.
+Justifying Instruction
+The scope of the trust relationship, and its concomitant grant of power to Congress, was illustrated in U.S. v. Sandoval (231 U.S. 28 (1913)), in which the Court upheld the application of a federal liquor-control law to the New Mexico Pueblos, even though the Pueblo lands had never been designated by the federal government as reservation land.
+The Court ruled that an unbroken line of federal legislative, executive, and judicial actions had "...attributed to the United States as a superior and civilized nation the power and the duty of exercising a fostering care and protection over all dependent Indian communities within its borders...." Moreover, the Court said that once Congress had begun to act in a guardian role toward the tribes, it was up to Congress, not the courts, to determine when the state of wardship should end.
+Sandoval is one more example of how the trust relationship was used to justify federal intrusion into the internal affairs of Indian communities.
+Clearly, the trust doctrine not only protected tribes and other Indian communities from encroachment by state governments, it also provided the justification for extremely intrusive actions by Congress.
+In more recent cases, the Court has upheld the principle of tribal sovereignty first articulated in Worcester.
+For example, in Williams v. Lee (358 U.S. 217 (1959)), the Court ruled that Arizona state courts did not have jurisdiction in a civil case that involved a non-Indian who sued two reservation Indians for an alleged breach of contract that happened on the reservation.
+The Court concluded that allowing state jurisdiction in such a case would undermine the authority of tribal courts to decide matters that arise on the reservation--a clear infringement of the right of Indian self-government.
+Discussing the issue of tribal sovereignty, the Court asserted that "...[A]bsent governing Acts of Congress, the question has always been whether the state action infringed on the right of reservation Indians to make their own laws and be ruled by them."
+The import of this principle is that when Congress has not by statute or treaty determined that a state may assert jurisdiction over specific activities in Indian country, a state is disabled from taking any action that would interfere with a tribal government's power to regulate the internal affairs of the tribe.
+Accordingly, it is up to federal courts to determine whether any given state action has interfered too greatly with the internal sovereignty of a tribe.
+However, a different situation exists when Congress has addressed the relative spheres of power of state and tribal governments.
+Further Erosion
+In McClanahan v. Arizona State Tax Commission (411 U.S. 164 (1973), the Court, through Justice Thurgood Marshall, ruled that a state cannot tax the income of an Indian earned on a reservation.
+Although in McClanahan the Court reaffirmed the principle of tribal sovereignty over internal tribal affairs, it emphasized a different basis for tribal freedom from intrusions by a state:
+[T]he trend has been away from the idea of inherent Indian sovereignty as a bar to state jurisdiction and toward reliance on federal pre-emption.... The modern cases thus tend to avoid reliance on platonic notions of Indian sovereignty and to look instead to the applicable treaties and statutes which define the limits of state power...
+Tribal sovereignty was further diminished by the Court in Brendale v. Confederated Tribes & Bands of the Yakima Indian Nations (492 U.S. 408 (1989)).
+The Court ruled that the Yakima Indian Nation did not have the power to apply its zoning laws to property owned by non-Indians in areas of the reservation that had lost their Indian character--the population in the disputed areas was largely white.
+The Yakima Nation could, however, apply its zoning laws to those areas of the reservation that retained their essentially Indian character.
+Although there was no majority opinion in Brendale, the result of the Court's rulings was to eliminate the power of tribes to exercise civil jurisdiction over the activities of non-Indians on the reservation, even where those activities implicate an important tribal interest.
+Brendale is significant because the Court took upon itself the power to determine when demographics would change the scope of tribal sovereignty in matters of land-use regulation.
+The Court's willingness to assume the power to define tribal sovereignty, even in internal matters, continued in a case handed down a year after Brendale.
+In Duro v. Reina (495 U.S. 696 (1990), the Court held that Indian tribes do not have criminal jurisdiction over non-member Indians who commit crimes on the reservation.
+The Court asserted that "...the retained sovereignty of the tribe as a political and social organization to govern its own affairs does not include the authority to impose criminal sanctions against a citizen outside its own membership."
+The majority concluded that the retained sovereignty of a tribe was only broad enough to encompass the power of tribal courts to impose criminal penalties on tribal members, and that non-Indians and nontribal Indians were not within the criminal jurisdiction of a tribe (see Oliphant v. Suquamish Indian Tribe (435 U.S. 191 (1978)).
+(In 1991, Congress in effect overturned Duro by passing a statute that reaffirmed tribal power to exercise criminal jurisdiction over all Indians on the reservation, regardless of whether they are tribal members (see 25 U.S.C. 1301 (4)).)
+The Court's theory in Duro was that the dependent status of the tribes implicitly divested them of the power to impose criminal sanctions on nontribal Indians.
+The Court said that tribes are "...prohibited from exercising both those powers of autonomous states that are expressly terminated by Congress and those powers inconsistent with their status."
+The danger of such an approach is that it allows the Supreme Court, at its own discretion, to determine which attributes of internal tribal sovereignty are inconsistent with the tribes' status as "domestic dependent nations."
+The assumption of this role by the Court not only changes the usual division of power in the federal government (where Congress has the primary power to deal with Indian tribes), but also enhances the power of the Court to diminish the scope of tribal sovereignty.
+The Direction Is Clear
+At least two troubling aspects of the Court's treatment of the sovereign rights and powers of Indian tribes emerge from a look at the development of the doctrine of tribal sovereignty.
+First, the Court has moved away from the concept of intrinsic tribal sovereignty that predated the coming of the European conquerors, and has adopted the view that tribal sovereignty, and the concomitant freedom of the tribes from encroachments by the states, exists solely because Congress has chosen to confer some protections on the tribes.
+Second, whatever the doctrinal underpinnings of tribal sovereignty may be, it is clear that the sovereignty of American Indian tribes has been progressively and systematically diminished by the actions of the federal government, including the Supreme Court.

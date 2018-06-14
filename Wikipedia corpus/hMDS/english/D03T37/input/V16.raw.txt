@@ -1,0 +1,86 @@
+SEP
+MAY
+Jun
+26
+2013
+2016
+2017
+95 captures
+12 May 09 - 26 May 16
+Close Help
+Loading
+Follow @civilrightsorg
+The Leadership Conference on Civil and Human Rights
+The Nation's Premier Civil and Human Rights Coalition
+About             Us
+Coalition Members
+Our                 History
+Contact                 Us
+Staff                 List
+Careers
+Internships
+Press Room
+Sign Up
+Take             Action
+Donate             Now
+Home  >  Civil Rights Monitor  >  Winter 2004 >  Supreme Court Addresses Affirmative Action in Higher Education
+Civil Rights Monitor
+The CIVIL RIGHTS MONITOR is a quarterly publication that reports on civil rights issues pending before the three branches of government. The Monitor also provides a historical context within which to assess current civil rights issues. Back issues of the Monitor are available through this site. Browse or search the archives
+Winter 2004
+Supreme Court Addresses Affirmative Action in Higher Education
+Grutter v. Bollinger, No. 02-241 and Gratz v. Bollinger, No. 02-516
+ 
+On June 23, 2003, the Supreme Court ruled in two split decisions that institutions of higher education may use race as a factor in admissions provided they give individualized consideration to each application.  Notably, the Court ruled that student body diversity is a compelling state interest that will be sustained as long as the plan is carefully drawn to meet the objective.  Justice Sandra Day O'Connor, often a pivotal decision-maker on the Rehnquist court, was the deciding justice in both cases.  The widely anticipated decisions came in cases involving two affirmative action programs in effect at the University of Michigan (Gratz v. Bollinger) and its law school (Grutter v. Bollinger).  In the undergraduate admissions case, the admissions policy was struck down by a 6-3 vote because it employed a point system that favored minorities. In the law school case, the admissions policy was upheld 5-4.
+Although the decision was limited to affirmative action in admissions at state universities, it is expected that the ruling will guide affirmative action policies at all institutions of higher learning, as well as for businesses and governments.    
+Background
+The Michigan cases were the long awaited sequel to the Court's highly fractured decision in Regents of the University of California v. Bakke (1978).  There, a divided court held that reserving a set number of spaces for minorities at the medical school at the University of California at Davis was unconstitutional. The Court reversed the lower court's judgment prohibiting the school from taking race into account as a factor in admissions decisions.  College admissions programs developed during the ensuing 25 years have been predicated on Justice Powell's separate opinion in the Bakke decision. The Powell opinion suggested that diversity was a compelling interest that would justify a race-conscious admissions program. Since Bakke, the high court has not since revisited the issue of affirmative action in education, though it addressed affirmative action in government contracting in the 1995 case Adarand Constructors v. Pena
+Recent lower court opinions in higher education built up the need for the Supreme Court to address the issue again. The Fifth Circuit in Hopwood v. Texas (1996) ruled that the affirmative action program at the University of Texas School of Law was unconstitutional, with the majority opinion suggesting that Bakke was no longer good law. The Eleventh Circuit ruled in Johnson v. Board of Regents (2001) that the affirmative action program at the University of Georgia was not sufficiently narrowly tailored, and the Ninth Circuit ruled in Smith v. University of Washington Law School (2000) that educational diversity is a compelling governmental interest that meets the demands of strict scrutiny of race-conscious measures.  The Court decided to review the two Michigan cases last year, and heard oral argument on April 1, 2003. The undergraduate program at issue granted 20 points out of a total of 150 points to underrepresented minorities. Under the law school program, race was part of a "holistic" review designed to enable the school to achieve a "critical mass" of such students.  The two actions were litigated separately in the lower courts, with the existing undergraduate program being sustained by the District Court and the law school program being sustained in the Sixth Circuit.  
+Opinions
+The Supreme Court issued two separate opinions on June 23, 2003.  The law school opinion was written by Justice O'Connor, who was joined by Justices Stevens, Souter, Ginsburg and Breyer.  That five-justice majority concluded that the law school's admissions policy met the Court's strict scrutiny standard of review under the 14th Amendment.  Because race was not a predominant factor in the admissions calculus, and because the program was narrowly tailored to meet a compelling state interest in educational diversity, the law school program was sustained.
+Justice O'Connor began her constitutional discussion by noting that while the Powell opinion in Bakke did not represent the court's holding, it was the "touchstone for constitutional analysis of race-conscious admissions policies."  Though the lower courts had struggled to decide whether Justice Powell's belief -- that student diversity was a compelling state interest -- was the law of that case, Justice O'Connor declined to interpret the decision, instead declaring that the Court now endorses the view that diversity is a sufficient justification for race-conscious admissions policies.  
+In support of the Court's holding that the law school had a compelling interest in attaining a diverse student body, Justice O'Connor's majority opinion made a number of important points.  First, it granted deference to what it termed the university's "academic decisions" in a complex area it considered "primarily within the expertise of the university."  Second, it laid out an expansive view of the benefits of educational diversity, ranging from livelier classroom discussion to better-prepared professionals.  On this latter point, the opinion relied heavily on friend of court briefs filed by businesses and the military.  Finally, the Court tied access to quality higher education to the future of the nation.  Education is critical to citizenship, wrote the Court, and therefore openness in public institutions is a "paramount government objective."  Moreover, because the nation's elite universities and law schools are a training ground for the nation's leaders, it is imperative that those institutions be perceived by the citizenry as open to individuals of every race and ethnicity.  Finally, on the issue of diversity as a compelling state interest, the Court acknowledged that "race unfortunately still matters."
+Having decided that the benefits of diversity justify the law school's affirmative action policies, the Court examined whether the means utilized by the law school were sufficiently narrowly tailored to achieve those benefits.  Concluding that the law school used "truly individualized consideration," the Court held that the policy's flexible, nonmechanical methods met the constitutional narrow tailoring requirement.  Noting the range of minority students in recent classes - from 13.5 to 20.1 percent - the Court concluded that there was no impermissible quota in use.
+Also important was the evidence that other bases for diversity admissions were permitted, such as language fluency or overcoming personal adversity, not just race.  The Court ruled that the law school need not exhaust every conceivable race-neutral alternative to meet the narrow tailoring requirement, nor must it lower its academic standards to permit larger numbers of minorities, as suggested by Justice Scalia at oral argument.
+The Court also brushed aside the Bush administration's suggestion that a percentage plan (which grants admission to the top percentage of every high school in a state) should have been considered by the law school as a race-neutral alternative, both because the United States did not explain how such a plan could work for graduate school and because such plans eschew the individualized assessments necessary to ensure that the student body is not just racially diverse but "diverse along all the qualities valued by the university."  
+Finally, the Court acknowledged that race-conscious policies must be limited in time and urged universities using them to draw on the most promising aspects of race-neutral policies currently in use.  The Court expressed an expectation that the use of affirmative action will no longer be necessary in 25 years.
+Notably, Justice Kennedy, although dissenting from the result, expressed support for the idea that race may be considered in this setting.  Because he believed the Court failed to properly apply strict scrutiny to the racial classification at issue, however, he dissented from the ruling.
+The most scathing of the three remaining dissenting opinions in the law school case was that of Justice Thomas.  His dissent, which was joined in large part by Justice Scalia, centered on three themes: his objection to the declaration of student body diversity as a compelling state interest, his belief that affirmative action policies actually harm minorities, and his challenge to elite universities to abandon general admissions policies that knowingly produce minimal minority admissions.  On the first point, Justice Thomas disputed the idea that educational diversity was the true goal of the Michigan policy; rather, he said the school sought to achieve the educational benefits it believed would come from having certain classroom "aesthetic" while preserving its elite status.  Given his belief that the state has no compelling interest in having a public law school (because the vast majority of the lawyers trained there do not practice in Michigan), let alone an elite one, marginal improvements in the legal education being offered is not an interest sufficient to justify classifications based on race.
+Second, Justice Thomas attacked the Court's deference to the school's "academic decisions," instead contending that social science proves the harm to racial minorities from affirmative action. He contended that the law school "tantalizes unprepared students with the promise of a University of Michigan degree," enticing these students to "take the bait, only to find that they cannot succeed in the cauldron of competition."  In addition, the stigma of being admitted because of racial discrimination stamps minorities with a badge of inferiority and tars all black students, even those admitted without preferences, as "undeserving."  
+Justice Thomas' final theme was that the law school's decision to use admissions standards - including the LSAT -- which it knows will produce racially skewed results comes with constitutional burdens that the law school must accept.  The answer, according to Justice Thomas, is not to practice racial discrimination to "correct" for black underperformance on the LSAT, but to abandon an imperfect admissions regime.      
+Justice Scalia's dissent ridiculed the Court's reasoning and asserted that the "cross-racial understanding" that the Court upheld as a beneficial byproduct of educational diversity was more appropriately learned by "people three feet shorter and twenty years younger than the full-grown adults at the University of Michigan Law School, in institutions" such as the Boy Scouts.  Unmentioned was Justice Scalia's concurrence in the Court's decision three years ago to sustain the ability of the Boy Scouts to ban unwanted persons under the First Amendment's freedom of association if the presence of such persons undermines the group's ability to advocate public or private viewpoints.  
+The undergraduate opinion was written by Chief Justice Rehnquist, who was joined by Justices O' Connor, Scalia, Kennedy and Thomas. The Court began its analysis by following Justice Powell's opinion in Bakke, noting that under his rationale, race does not automatically ensure a specific contribution to a university's diversity.  Because the undergraduate program automatically grants members of a racial minority 20 points, and because other types of diversity (e.g., extraordinary artistic talent) are granted fewer points, the Court held that the school's system does not offer the requisite individualized selection process.  According to the Court, the fact that providing such individualized consideration "might present administrative challenges does not render constitutional an otherwise problematic system."
+Justice Breyer concurred in the Court's result but did not join the opinion.  Instead, he joined a dissenting opinion by Justice Ginsburg, asserting that benign racial classifications need not be subject to the same scrutiny as invidious ones. Justice Stevens dissented on standing grounds, and Justice Souter dissented on standing as well as on the merits.
+Implications
+While the inability to use point systems complicates the task of large universities, most expressed the belief that they could meet the challenge.  The University of Michigan amended its process to delete the point system for September 2003.  
+In Texas, Florida and California, where lower courts or statewide referenda had invalidated race-conscious programs, university and state officials were faced with the issue of whether to reinstate affirmative action measures.  The president of the University of Texas said after the ruling that the school would reexamine reviving race-conscious admissions as early as next year.
+Reactions varied to the Court's stated "expectation" that affirmative action programs can safely be sunset in 25 years.  Most view Justice O'Connor's language as hortatory rather than a command to sunset the program. Some believe that it may prove a useful device to prod policymakers to offer greater opportunities for minorities at the K-12 level.
+Reaction of the Civil Rights Community
+"By upholding the principle of affirmative action and the permissible use of race-conscious admissions policies of the University of Michigan's law school, the Supreme Court's decision today is a great victory for all Americans," declared Wade Henderson, executive director of the Leadership Conference on Civil Rights, which filed an amicus brief in support of the university.
+The Mexican American Legal Defense and Educational Fund (MALDEF), which filed an amicus brief on behalf of major Latino organizations, applauded the U.S. Supreme Court's decision upholding the use of affirmative action at the University of Michigan. "The court made the right decision because diversity is critical to all higher education students; inclusion of Latinos, as nation's largest minority group, in universities is essential to our country's future," said MALDEF's Vice President of Public Policy Vibiana Andrade.
+The NAACP Legal Defense & Educational Fund, which represented student-intervenors in the undergraduate case, Gratz v. Bollinger, stated with respect to Grutter: "The message in the Court's ruling is that race still matters, not necessarily because it should, but because it does. The decision also leaves open the possibility that race can still continue to be used in other sectors, including in corporate diversity policies, as well as in recruitment and orientation programs targeted at under-represented African-American, Latino, and Asian students."  
+ 
+Home
+About Us
+Sign Up
+Take Action
+Donate Now
+Get Informed
+Issues
+Publications
+Civil Rights History
+Resources
+Calendar
+Career Center
+Press Room
+Advocacy
+News Feeds
+Our Coalition
+Coalition Members
+Board of Directors
+Member Resources
+Our Members
+nonprofit software
+Home About The Leadership Conference Blog Contact Us Careers Disclaimer Privacy Policy Terms and Conditions
+CivilRights.org is a project of The Leadership Conference on Civil and Human Rights & The Leadership Conference Education Fund.
+Copyright © 
+The Leadership Conference on Civil and Human Rights/The Leadership Conference Education Fund. All rights reserved.

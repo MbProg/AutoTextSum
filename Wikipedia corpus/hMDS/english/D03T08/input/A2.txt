@@ -1,0 +1,87 @@
+Australia: ACCC V Baxter Healthcare - Derivative Crown Immunity Confined
+Last Updated: 31 August 2007
+DLA Piper Australia
+Yesterday, the High Court handed down its decision in the case of Australian Competition and Consumer Commission v Baxter Healthcare Pty Limited & Others [2007] HCA 38.
+The decision is of particular interest to departments and agencies engaged in procurement, and businesses dealing with government.
+It is a timely reminder about the value of competitive procurement processes.
+This special Alert discusses the implications that arise for government and business as a consequence of the Court’s decision to qualify the doctrine of derivative Crown immunity and apply Part IV of the Trade Practices Act 1974 (Cth).
+On 29 August 2007, the High Court held that Baxter Healthcare Pty Limited (Baxter) was bound by sections 46 and 47 of the Trade Practices Act - even when dealing with government entities which were not bound by the Act.
+As a result, the question of breach has been remitted to the Full Federal Court.
+In reaching its conclusion the High Court held that an earlier decision of Bradken Consolidated Ltd v Broken Hill Co Ltd (1979) CLR 107 (Bradken) was no longer authoritative law on the doctrine of derivative Crown immunity.
+Factual background
+At first instance it was held that Baxter would have breached sections 46 (misuse of market power) and 47 (exclusive dealing) of the Trade Practices Act had it not been protected by the doctrine of derivative Crown immunity.
+The appeal did not require the Court to decide whether contracts between Baxter and the relevant government authorities were enforceable.
+At the time of the alleged breaches Baxter was, for all practical purposes, the sole supplier of high volume, low value, sterile fluids in Australia.
+These fluids are an essential item for every hospital in Australia.
+Baxter also supplied low volume, high value products with very specialised uses (such as peritoneal dialysis) - but there were rival companies seeking to supply competing products.
+Between 1998 and 2001, Baxter responded to a series of tenders called by State and Territory health purchasing authorities, typically offering to supply its products on the following alternate bases.
+Either:
+Monopoly products and competitive products available and priced as separate line items (separate line offer).
+Monopoly products and competitive products bundled together, offered on an exclusive basis and deeply discounted (exclusive bundled offer).
+On all but one occasion the relevant tenders invited separate line offers as well as bundled offers.
+One tender required Baxter to submit a separate line offer but Baxter made a separate line offer and a non conforming exclusive bundled offer.
+The relevant authority then asked Baxter to reduce the prices set out in the separate line offer to match its bundled offer price.
+Baxter refused to change its pricing policy.
+ACCC submissions
+Importantly the ACCC had accepted that the tender and procurement of sterile fluid products by the purchasing authorities did amount to carrying on a business.
+This meant that the purchasing authorities themselves were not bound by the Trade Practices Act.
+The ACCC argued that Baxter negotiated, contracted and supplied the purchasing authorities on the basis that they could either purchase separate line items and incur a substantial financial penalty, or contract on a long-term bundled exclusive basis and enjoy a substantial cost saving.
+The ACCC contended that by linking competitive products to monopoly products, Baxter was able to supply both products on a non-competitive basis.
+Federal Court finding - anti-competitive conduct
+The trial judge determined that if the Trade Practices Act applied, Baxter’s conduct contravened the Act in the following respects:
+Section 46 (misuse of market power) - Baxter had refused to amend its pricing in response to a direct request that the separate line offer match the bundled price.
+Allsop J found Baxter had taken advantage of its market power for the purpose of harming its competitors or preventing competition in the competitive product market.
+Section 47 (exclusive dealing) - By making its exclusive bundled offer, Baxter had ensured that the bids of rivals to supply the competitive products would be unacceptable and thereby had brought about a substantial lessening of competition in the market for the competitive products.
+Importantly the trial judge’s findings of contraventions concerned conduct that occurred before Baxter entered into any contract with the purchasing authorities.
+Derivative Crown immunity - at trial and on appeal
+Baxter had contended that the principle of derivative Crown immunity applied and that the Trade Practices Act could not bind Baxter in connection with the offer to supply sterile fluid products as it would damage the freedom of the Crown to enter into contracts of its choosing.
+A number of states intervened in support of Baxter.
+The trial judge and the Full Court of the Federal Court considered the circumstances in Baxter sufficiently similar to the 1979 High Court decision of Bradken Consolidated Ltd v Broken Hill Co Ltd to be bound by the earlier ruling.
+The Bradken decision
+In Bradken the majority of the High Court determined that unless a statute expressly or by implication binds the Crown, the Crown is immune from the operation of the Act (that is, Crown immunity), and the Act does not apply to corporations with which the Crown deals, where the application would interfere with the proprietary, contractual and/or other legal interests of the Crown (that is, derivative Crown immunity).
+The facts in Bradken concerned the application of sections 45 and 47 of the Act to the Commissioner of Railways (C of R) in Queensland, in circumstances where the performance of a contract between the C of R and corporations would otherwise contravene the Trade Practices Act.
+At the time the appeal was initiated the appellant had asked the Court to make orders preventing the C of R from engaging in certain conduct.
+It was conceded on appeal that the Act did not apply to the C of R in connection with the performance of the contract, as a consequence of the doctrine of Crown immunity.
+The Court made statements of general principle that the Act could not apply to corporations if the Act impaired Crown legal interests.
+In his reasons Chief Justice Gibbs made the comment that the Trade Practices Act, assuming it applied, would render contracts containing provisions offending competition laws automatically illegal and unenforceable, and that this would impinge upon the Crown’s freedom to enter contracts of its own choosing.
+Bradken
+did not require the High Court to decide whether the Act applied to the corporations who were party to the contract with the C of R.
+High Court ruling
+In Baxter the High Court substantially qualified the circumstances where a corporation will be immune from liability under the Trade Practices Act in its dealings with government departments and agencies.
+In a joint judgment of five members of the Court, it was agreed that sections 46 and 47 of the Trade Practices Act applied to Baxter and that Baxter would be liable for penalties, injunctions and other sanctions (assuming the trial judge’s findings of anti-competitive conduct are not overturned by the Full Court when those issues are dealt with on remittal).
+Justice Kirby reached the same conclusion although by alternate means.
+Justice Callinan did not agree with the majority.
+The key findings of the joint judgment are:
+The Bradken decision overstated the doctrine of derivative Crown immunity.
+The question of whether the legal interests of the Crown are derogated by the application of legislation must be determined in the context of the Act and its purpose.
+A contract may be enforceable, even where performance of the contract contravenes the Act, and a corporation is liable for sanctions.
+The Baxter contraventions concerned conduct that occurred before Baxter entered in to contracts with government purchasing authorities, that is conduct related to the making of exclusive bundled offers.
+The Bradken decision did not compel the Federal Court and the Full Court of the Federal Court to reach their decision in the way they had.
+Significantly the remedies available in connection with the pre contractual contraventions did not impinge upon the interests of government.
+In reaching its conclusions the joint members considered it significant that:
+The Act was intended to enhance the welfare of all Australians by facilitating an environment of competition and fair trading, and this included the welfare of government departments and agencies whose interests were served by competition.
+The Act made provision for the Commonwealth, State and Territory governments to specifically enact laws and regulations to exempt particular contracts from the effects of the legislation where necessary.
+The Act provided that where a term of a contract offends the legislation and that term can be excised from the contract, then the Act does not affect the enforceability of the contract except in relation to the offending term.
+It is irrelevant that the application of the Act to businesses engaging in procurement activities constrains government freedom of contract.
+Something more is required to demonstrate that the legal interests of government are detrimentally affected.
+The joint judgment makes it clear that Bradken was not binding authority for the proposition that where the performance of a contract contravenes the Act, the contract is automatically void.
+Issues of enforceability must be determined by reference to the severance provisions contained in the legislation and by consideration of common law rules concerning illegality.
+Justice Kirby went substantially further than the joint judgment finding that the concept of Crown immunity was out of date and did not apply to government institutions created under the umbrella of the Commonwealth Constitution.
+Justice Kirby gave some indication that a form of government immunity exists under the Constitution and that the proper approach required Courts to examine the purpose of the legislation and determine whether there was any scope for the operation of governmental immunity.
+In his minority decision, Justice Callinan held that any restriction on the Crown’s freedom to contract fell within rule set out in Bradken and that the lower Court had properly applied the doctrine of derivative Crown immunity.
+Justice Callinan also highlighted some Constitutional issues concerning Commonwealth power to regulate the health industry.
+Implications
+The High Court ruling introduces a further level of complexity to government procurement.
+Following Baxter, Commonwealth, State and Territory departments and agencies will have to carefully analyse the competitive effects of requests for tenders, contract offers, negotiations and terms.
+Equally, businesses dealing with government should pay careful attention to the competition implications of tendering for government contracts and the implications of offering discounts for the supply of products on exclusive terms.
+Unfortunately, Baxter does not clarify the consequences of a contravention of Part IV on the enforceability of government contracts.
+This is a matter requiring further judicial consideration.
+In the interim, all parties concerned should consider seeking appropriate advice on the competition effects of significant tenders.
+Contractual provisions that contravene the Trade Practices Act are liable to be held invalid and severed from the balance of the contract - with potentially profound implications.
+Phillips Fox has changed its name to DLA Phillips Fox because the firm entered into an exclusive alliance with DLA Piper, one of the largest legal services organisations in the world.
+We will retain our offices in every major commercial centre in Australia and New Zealand, with no operational change to your relationship with the firm.
+DLA Phillips Fox can now take your business one step further − by connecting you to a global network of legal experience, talent and knowledge.
+This publication is intended as a first point of reference and should not be relied on as a substitute for professional advice.
+Specialist legal advice should always be sought in relation to any particular circumstances and no liability will be accepted for any losses incurred by those relying solely on this publication.
+To print this article, all you need is to be registered on Mondaq.com.
+Click to Login as an existing user or Register so you can print this article.

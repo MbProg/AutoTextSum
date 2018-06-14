@@ -1,0 +1,469 @@
+Feb
+MAR
+Apr
+17
+2015
+2016
+2017
+1 captures
+17 Mar 16 - 17 Mar 16
+Close Help
+We use cookies to give you the best online experience.
+By using our website you agree to our use of cookies in accordance with our cookie policy.
+Learn more here .
+Close Me
+Home > Australia > Government, Public Sector
+Australia: ACCC V Baxter Healthcare - Derivative Crown Immunity Confined
+Last Updated: 31 August 2007
+DLA Piper Australia
+Yesterday, the High Court handed down its decision in the case of Australian Competition and Consumer Commission v Baxter Healthcare Pty Limited & Others [2007] HCA 38.
+The decision is of particular interest to departments and agencies engaged in procurement, and businesses dealing with government.
+It is a timely reminder about the value of competitive procurement processes.
+This special Alert discusses the implications that arise for government and business as a consequence of the Court’s decision to qualify the doctrine of derivative Crown immunity and apply Part IV of the Trade Practices Act 1974 (Cth).
+On 29 August 2007, the High Court held that Baxter Healthcare Pty Limited (Baxter) was bound by sections 46 and 47 of the Trade Practices Act - even when dealing with government entities which were not bound by the Act.
+As a result, the question of breach has been remitted to the Full Federal Court.
+In reaching its conclusion the High Court held that an earlier decision of Bradken Consolidated Ltd v Broken Hill Co Ltd (1979) CLR 107 (Bradken) was no longer authoritative law on the doctrine of derivative Crown immunity.
+Factual background
+At first instance it was held that Baxter would have breached sections 46 (misuse of market power) and 47 (exclusive dealing) of the Trade Practices Act had it not been protected by the doctrine of derivative Crown immunity.
+The appeal did not require the Court to decide whether contracts between Baxter and the relevant government authorities were enforceable.
+At the time of the alleged breaches Baxter was, for all practical purposes, the sole supplier of high volume, low value, sterile fluids in Australia.
+These fluids are an essential item for every hospital in Australia.
+Baxter also supplied low volume, high value products with very specialised uses (such as peritoneal dialysis) - but there were rival companies seeking to supply competing products.
+Between 1998 and 2001, Baxter responded to a series of tenders called by State and Territory health purchasing authorities, typically offering to supply its products on the following alternate bases.
+Either:
+Monopoly products and competitive products available and priced as separate line items (separate line offer).
+Monopoly products and competitive products bundled together, offered on an exclusive basis and deeply discounted (exclusive bundled offer).
+On all but one occasion the relevant tenders invited separate line offers as well as bundled offers.
+One tender required Baxter to submit a separate line offer but Baxter made a separate line offer and a non conforming exclusive bundled offer.
+The relevant authority then asked Baxter to reduce the prices set out in the separate line offer to match its bundled offer price.
+Baxter refused to change its pricing policy.
+ACCC submissions
+Importantly the ACCC had accepted that the tender and procurement of sterile fluid products by the purchasing authorities did amount to carrying on a business.
+This meant that the purchasing authorities themselves were not bound by the Trade Practices Act.
+The ACCC argued that Baxter negotiated, contracted and supplied the purchasing authorities on the basis that they could either purchase separate line items and incur a substantial financial penalty, or contract on a long-term bundled exclusive basis and enjoy a substantial cost saving.
+The ACCC contended that by linking competitive products to monopoly products, Baxter was able to supply both products on a non-competitive basis.
+Federal Court finding - anti-competitive conduct
+The trial judge determined that if the Trade Practices Act applied, Baxter’s conduct contravened the Act in the following respects:
+Section 46 (misuse of market power) - Baxter had refused to amend its pricing in response to a direct request that the separate line offer match the bundled price.
+Allsop J found Baxter had taken advantage of its market power for the purpose of harming its competitors or preventing competition in the competitive product market.
+Section 47 (exclusive dealing) - By making its exclusive bundled offer, Baxter had ensured that the bids of rivals to supply the competitive products would be unacceptable and thereby had brought about a substantial lessening of competition in the market for the competitive products.
+Importantly the trial judge’s findings of contraventions concerned conduct that occurred before Baxter entered into any contract with the purchasing authorities.
+Derivative Crown immunity - at trial and on appeal
+Baxter had contended that the principle of derivative Crown immunity applied and that the Trade Practices Act could not bind Baxter in connection with the offer to supply sterile fluid products as it would damage the freedom of the Crown to enter into contracts of its choosing.
+A number of states intervened in support of Baxter.
+The trial judge and the Full Court of the Federal Court considered the circumstances in Baxter sufficiently similar to the 1979 High Court decision of Bradken Consolidated Ltd v Broken Hill Co Ltd to be bound by the earlier ruling.
+The Bradken decision
+In Bradken the majority of the High Court determined that unless a statute expressly or by implication binds the Crown, the Crown is immune from the operation of the Act (that is, Crown immunity), and the Act does not apply to corporations with which the Crown deals, where the application would interfere with the proprietary, contractual and/or other legal interests of the Crown (that is, derivative Crown immunity).
+The facts in Bradken concerned the application of sections 45 and 47 of the Act to the Commissioner of Railways (C of R) in Queensland, in circumstances where the performance of a contract between the C of R and corporations would otherwise contravene the Trade Practices Act.
+At the time the appeal was initiated the appellant had asked the Court to make orders preventing the C of R from engaging in certain conduct.
+It was conceded on appeal that the Act did not apply to the C of R in connection with the performance of the contract, as a consequence of the doctrine of Crown immunity.
+The Court made statements of general principle that the Act could not apply to corporations if the Act impaired Crown legal interests.
+In his reasons Chief Justice Gibbs made the comment that the Trade Practices Act, assuming it applied, would render contracts containing provisions offending competition laws automatically illegal and unenforceable, and that this would impinge upon the Crown’s freedom to enter contracts of its own choosing.
+Bradken
+did not require the High Court to decide whether the Act applied to the corporations who were party to the contract with the C of R.
+High Court ruling
+In Baxter the High Court substantially qualified the circumstances where a corporation will be immune from liability under the Trade Practices Act in its dealings with government departments and agencies.
+In a joint judgment of five members of the Court, it was agreed that sections 46 and 47 of the Trade Practices Act applied to Baxter and that Baxter would be liable for penalties, injunctions and other sanctions (assuming the trial judge’s findings of anti-competitive conduct are not overturned by the Full Court when those issues are dealt with on remittal).
+Justice Kirby reached the same conclusion although by alternate means.
+Justice Callinan did not agree with the majority.
+The key findings of the joint judgment are:
+The Bradken decision overstated the doctrine of derivative Crown immunity.
+The question of whether the legal interests of the Crown are derogated by the application of legislation must be determined in the context of the Act and its purpose.
+A contract may be enforceable, even where performance of the contract contravenes the Act, and a corporation is liable for sanctions.
+The Baxter contraventions concerned conduct that occurred before Baxter entered in to contracts with government purchasing authorities, that is conduct related to the making of exclusive bundled offers.
+The Bradken decision did not compel the Federal Court and the Full Court of the Federal Court to reach their decision in the way they had.
+Significantly the remedies available in connection with the pre contractual contraventions did not impinge upon the interests of government.
+In reaching its conclusions the joint members considered it significant that:
+The Act was intended to enhance the welfare of all Australians by facilitating an environment of competition and fair trading, and this included the welfare of government departments and agencies whose interests were served by competition.
+The Act made provision for the Commonwealth, State and Territory governments to specifically enact laws and regulations to exempt particular contracts from the effects of the legislation where necessary.
+The Act provided that where a term of a contract offends the legislation and that term can be excised from the contract, then the Act does not affect the enforceability of the contract except in relation to the offending term.
+It is irrelevant that the application of the Act to businesses engaging in procurement activities constrains government freedom of contract.
+Something more is required to demonstrate that the legal interests of government are detrimentally affected.
+The joint judgment makes it clear that Bradken was not binding authority for the proposition that where the performance of a contract contravenes the Act, the contract is automatically void.
+Issues of enforceability must be determined by reference to the severance provisions contained in the legislation and by consideration of common law rules concerning illegality.
+Justice Kirby went substantially further than the joint judgment finding that the concept of Crown immunity was out of date and did not apply to government institutions created under the umbrella of the Commonwealth Constitution.
+Justice Kirby gave some indication that a form of government immunity exists under the Constitution and that the proper approach required Courts to examine the purpose of the legislation and determine whether there was any scope for the operation of governmental immunity.
+In his minority decision, Justice Callinan held that any restriction on the Crown’s freedom to contract fell within rule set out in Bradken and that the lower Court had properly applied the doctrine of derivative Crown immunity.
+Justice Callinan also highlighted some Constitutional issues concerning Commonwealth power to regulate the health industry.
+Implications
+The High Court ruling introduces a further level of complexity to government procurement.
+Following Baxter, Commonwealth, State and Territory departments and agencies will have to carefully analyse the competitive effects of requests for tenders, contract offers, negotiations and terms.
+Equally, businesses dealing with government should pay careful attention to the competition implications of tendering for government contracts and the implications of offering discounts for the supply of products on exclusive terms.
+Unfortunately, Baxter does not clarify the consequences of a contravention of Part IV on the enforceability of government contracts.
+This is a matter requiring further judicial consideration.
+In the interim, all parties concerned should consider seeking appropriate advice on the competition effects of significant tenders.
+Contractual provisions that contravene the Trade Practices Act are liable to be held invalid and severed from the balance of the contract - with potentially profound implications.
+Phillips Fox has changed its name to DLA Phillips Fox because the firm entered into an exclusive alliance with DLA Piper, one of the largest legal services organisations in the world.
+We will retain our offices in every major commercial centre in Australia and New Zealand, with no operational change to your relationship with the firm.
+DLA Phillips Fox can now take your business one step further − by connecting you to a global network of legal experience, talent and knowledge.
+This publication is intended as a first point of reference and should not be relied on as a substitute for professional advice.
+Specialist legal advice should always be sought in relation to any particular circumstances and no liability will be accepted for any losses incurred by those relying solely on this publication.
+To print this article, all you need is to be registered on Mondaq.com.
+Click to Login as an existing user or Register so you can print this article.
+Do you have a Question or Comment?
+Click here to email the Author
+Interested in the next Webinar on this Topic?
+Click here to register your Interest
+Contributor
+DLA Piper Australia
+Email Firm
+Events from this Firm
+More from this Firm
+News About this Firm
+More Popular Related Articles on Government, Public Sector from Australia
+Reservations please - The importance of reserving rights in a procurement process
+Sparke Helmore Lawyers
+You should include sufficient rights in your request document, so that you could act if the circumstances require it.
+New Taxation Conditions To Be Imposed On Investors As Australia's Foreign Investment Law Overhaul Continues
+Jones Day
+There has been considerable recent media and political commentary in relation to perceived tax minimisation practices by foreign-based multinational companies operating in Australia.
+Local councils, recreational facilities and obvious risk in Queensland
+Colin Biggers & Paisley
+Local councils should perform regular risk assessments and observe ongoing public use of their recreational facilities.
+Church sanctuary - does it exist under Australian law?
+Stacks Law Firm
+While sanctuary doesn't exist under our law, it wouldn't be a good look to storm a church to drag out asylum seekers.
+Queensland Government Bulletin - 17 February 2016
+Holding Redlich
+This bulletin includes links to media releases, reports, cases and legislation of interest to Qld government lawyers.
+Foreign investment in Australia: Trends and insights from the Treasury
+Clayton Utz
+The Treasury Department working paper, "Foreign Investment into Australia", sets out key findings and trends for 2016.
+Changes to foreign investment rules have commenced
+Kaden Boriss
+These changes impact on builders and developers who sell and market to foreign buyers, who now pay a fee to the FIRB.
+Innovation agenda and SIV program: new benefits for Venture Capital Limited Partnerships
+Clayton Utz
+The Innovation Statement announced enhancements to make the partnerships more attractive to investors and fund managers.
+Some comments from our readers…
+“The articles are extremely timely and highly applicable”
+“I often find critical information not available elsewhere”
+“As in-house counsel, Mondaq’s service is of great value”
+Free Personalized News Alert: Sign-up/Edit
+Mondaq Advice Centre (MACs)
+Investment Immigration
+More Advice Centers
+Related Topics
+Similar Topics
+Government, Public Sector
+Government Contracts, Procurement & PPP
+Food, Drugs, Healthcare, Life Sciences
+Healthcare
+Litigation, Mediation & Arbitration
+Government, Public Sector
+Constitutional & Administrative Law
+Fiscal & Monetary Policy
+Human Rights
+Indigenous Peoples
+Inward/ Foreign Investment
+Terrorism, Homeland Security & Defence
+Related Articles
+Recently Viewed
+Construction & infrastructure
+Holding Redlich
+Watch this space: High Court challenge to validity of Government contract
+Clayton Utz
+New property guidelines for Commonwealth leases: ensuring your next property procurement complies
+Clayton Utz
+Commonwealth Contracting Suite must be used for procurements under $200,000
+Sparke Helmore Lawyers
+Decisions, Decisions, Decisions: A Guide To Effective Procurement Contracting In Australia
+Jones Day
+Commonwealth Contracting Suite (CCS)  must be used for procurements under $200,000
+Sparke Helmore Lawyers
+Can PPPs work for procuring front line assets?
+Corrs Chambers Westgarth
+Conflicts and tendering processes for government contracts: Why inaction can be fatal
+Sparke Helmore Lawyers
+How does the CIPP affect your procurement process?
+Sparke Helmore Lawyers
+Indigenous Procurement Policy: Are you IPP ready?
+Clayton Utz
+Recently viewed items tracks each article you read and gives you a quick link back to that article if you need to review it again.
+To activate recently viewed, you just need to login or register with us above.
+Up-coming Events Search
+Show More Filters
+GO
+Tools
+Print
+Font Size:
+Translation
+Channels
+Mondaq on Twitter
+Free News Alert
+Custom RSS Feed
+Download on
+iPhone & Android
+Contact Us
+|
+Your Privacy
+|
+Feedback
+© Mondaq® Ltd 1994 - 2016
+All Rights Reserved
+News Alert | Login | Register
+Login / Register
+Free News Alert
+Privacy/ Cookies
+Terms & Conditions
+About Mondaq
+Unsubsribe
+TOPICS |
+REGIONS |
+CONTRIBUTORS |
+ADVICE CENTRE |
+OUR SERVICES
+Employment | Real Estate | Commercial | Finance | Family | Government | IP | Litigation | Insurance | Media & IT | Tax | Privacy | More
+All Regions | USA | Canada | UK | Europe | Offshore | Asia Pacific | Australia | Latin America | Middle East & Africa | India | More
+Contributors A-Z | Most Popular Contributors | Most Popular Authors | Author League | Award Winners | Become a Contributor
+About Mondaq | Become a Contributor | Become a Partner | What's New | Contact Us
+Become a MAC Partner
+Select Advice Centre |
+Mondaq Advice Centre - About |
+Belgium
+Bermuda
+Brazil
+British Virgin Islands
+Cayman Islands
+China
+Cyprus
+France
+Germany
+Guernsey
+Hong Kong
+India
+Indonesia
+Ireland
+Italy
+Jersey
+Luxembourg
+Malta
+Mexico
+Netherlands
+New Zealand
+Nigeria
+Russian Federation
+Singapore
+South Africa
+Switzerland
+Turkey
+Ukraine
+United Arab Emirates
+Accounting
+Anti-trust
+Consumer
+Criminal
+Energy
+Environment
+Healthcare
+Immigration
+Insolvency
+International
+Law Performance
+Law Practice
+Strategy
+Technology
+Transport
+Wealth Mgt
+Accounting and Audit
+Anti-trust/Competition Law
+Consumer Protection
+Corporate/Commercial Law
+Criminal Law
+Employment and HR
+Energy and Natural Resources
+Environment
+Family and Matrimonial
+Finance and Banking
+Food, Drugs, Healthcare, Life Sciences
+Government, Public Sector
+Immigration
+Insolvency/Bankruptcy, Re-structuring
+Insurance
+Intellectual Property
+International Law
+Law Department Performance
+Law Practice Management
+Litigation, Mediation & Arbitration
+Media, Telecoms, IT, Entertainment
+Privacy
+Real Estate and Construction
+Strategy
+Tax
+Technology
+Transport
+Wealth Management
+All Regions
+USA
+Canada
+UK
+Europe
+Offshore
+Asia Pacific
+Australia
+Latin America
+Middle East & Africa
+Other Countries
+Belgium
+Bermuda
+Brazil
+British Virgin Islands
+Cayman Islands
+China
+Cyprus
+France
+Germany
+Guernsey
+Hong Kong
+India
+Indonesia
+Ireland
+Italy
+Jersey
+Luxembourg
+Malta
+Mexico
+Netherlands
+New Zealand
+Nigeria
+Russian Federation
+Singapore
+South Africa
+Switzerland
+Turkey
+Ukraine
+United Arab Emirates
+Register for Access and our Free Biweekly Alert
+Close Me
+Email Address
+Company Name
+Password
+Confirm Password
+Mondaq Topics -- Select your Interests
+Accounting and Audit
+Anti-trust/Competition Law
+Consumer Protection
+Corporate/Commercial Law
+Criminal Law
+Employment and HR
+Energy and Natural Resources
+Environment
+Family and Matrimonial
+Finance and Banking
+Food, Drugs, Healthcare, Life Sciences
+Government, Public Sector
+Immigration
+Insolvency/Bankruptcy, Re-structuring
+Insurance
+Intellectual Property
+International Law
+Law Department Performance
+Law Practice Management
+Litigation, Mediation & Arbitration
+Media, Telecoms, IT, Entertainment
+Privacy
+Real Estate and Construction
+Strategy
+Tax
+Technology
+Transport
+Wealth Management
+Regions
+Africa
+Asia
+Asia Pacific
+Australasia
+Canada
+Caribbean
+Europe
+European Union
+Latin America
+Middle East
+U.K.
+United States
+Worldwide Updates
+Check
+to state you have read and agree to our Terms and Conditions
+Terms & Conditions and Privacy Statement
+Mondaq.com (the Website) is owned and managed by Mondaq Ltd and as a user you  are granted a non-exclusive, revocable license to access the Website under its  terms and conditions of use.
+Your use of the Website constitutes your agreement  to the following terms and conditions of use.
+Mondaq Ltd may terminate your use  of the Website if you are in breach of these terms and conditions or if Mondaq  Ltd decides to terminate your license of use for whatever reason.
+Use of www.mondaq.com
+You may use the Website but are required to register as a user if you wish to  read the full text of the content and articles available (the Content).
+You may  not modify, publish, transmit, transfer or sell, reproduce, create derivative  works from, distribute, perform, link, display, or in any way exploit any of the  Content, in whole or in part, except as expressly permitted in these terms & conditions or with the prior written consent of Mondaq Ltd.
+You may not use  electronic or other means to extract details or information about Mondaq.com’s  content, users or contributors in order to offer them any services or products  which compete directly or indirectly with Mondaq Ltd’s services and products.
+Disclaimer
+Mondaq Ltd and/or its respective suppliers make no representations about the  suitability of the information contained in the documents and related graphics  published on this server for any purpose.
+All such documents and related  graphics are provided "as is" without warranty of any kind.
+Mondaq Ltd and/or  its respective suppliers hereby disclaim all warranties and conditions with  regard to this information, including all implied warranties and conditions of  merchantability, fitness for a particular purpose, title and non-infringement.
+In no event shall Mondaq Ltd and/or its respective suppliers be liable for any  special, indirect or consequential damages or any damages whatsoever resulting  from loss of use, data or profits, whether in an action of contract, negligence  or other tortious action, arising out of or in connection with the use or  performance of information available from this server.
+The documents and related graphics published on this server could include  technical inaccuracies or typographical errors.
+Changes are periodically added  to the information herein.
+Mondaq Ltd and/or its respective suppliers may make  improvements and/or changes in the product(s) and/or the program(s) described  herein at any time.
+Registration
+Mondaq Ltd requires you to register and provide information that personally  identifies you, including what sort of information you are interested in, for  three primary purposes:
+To allow you to personalize the Mondaq websites you are visiting.
+To enable features such as password reminder, newsletter alerts, email a    colleague, and linking from Mondaq (and its affiliate sites) to your website.
+To produce demographic feedback for our information providers who provide    information free for your use.
+Mondaq (and its affiliate sites) do not sell or provide your details to third  parties other than information providers.
+The reason we provide our information  providers with this information is so that they can measure the response their  articles are receiving and provide you with information about their products and  services.
+If you do not want us to provide your name and email address you may opt out  by clicking here
+.
+If you do not wish to receive any future announcements of products and  services offered by Mondaq by clicking here
+.
+Information Collection and Use
+We require site users to register with Mondaq (and its affiliate sites) to  view the free information on the site.
+We also collect information from our  users at several different points on the websites: this is so that we can  customise the sites according to individual usage, provide 'session-aware'  functionality, and ensure that content is acquired and developed appropriately.
+This gives us an overall picture of our user profiles, which in turn shows to  our Editorial Contributors the type of person they are reaching by posting  articles on Mondaq (and its affiliate sites) – meaning more free content for  registered users.
+We are only able to provide the material on the Mondaq (and its affiliate  sites) site free to site visitors because we can pass on information about the  pages that users are viewing and the personal information users provide to us  (e.g. email addresses) to reputable contributing firms such as law firms who  author those pages.
+We do not sell or rent information to anyone else other than  the authors of those pages, who may change from time to time.
+Should you wish us  not to disclose your details to any of these parties, please tick the box above  or tick the box marked "Opt out of Registration Information Disclosure" on the  Your Profile page.
+We and our author organisations may only contact you via  email or other means if you allow us to do so.
+Users can opt out of contact when  they register on the site, or send an email to unsubscribe@mondaq.com with “no  disclosure” in the subject heading
+Mondaq News Alerts
+In order to receive Mondaq News Alerts, users have to complete a separate  registration form.
+This is a personalised service where users choose regions and  topics of interest and we send it only to those users who have requested it.
+Users can stop receiving these Alerts by going to the Mondaq News Alerts page  and deselecting all interest areas.
+In the same way users can amend their  personal preferences to add or remove subject areas.
+Cookies
+A cookie is a small text file written to a user’s hard drive that contains an  identifying user number.
+The cookies do not contain any personal information  about users.
+We use the cookie so users do not have to log in every time they  use the service and the cookie will automatically expire if you do not visit the  Mondaq website (or its affiliate sites) for 12 months.
+We also use the cookie to  personalise a user's experience of the site (for example to show information  specific to a user's region).
+As the Mondaq sites are fully personalised and  cookies are essential to its core technology the site will function  unpredictably with browsers that do not support cookies - or where cookies are  disabled (in these circumstances we advise you to attempt to locate the  information you require elsewhere on the web).
+However if you are concerned  about the presence of a Mondaq cookie on your machine you can also choose to  expire the cookie immediately (remove it) by selecting the 'Log Off' menu option  as the last thing you do when you use the site.
+Some of our business partners may use cookies on our site (for example,  advertisers).
+However, we have no access to or control over these cookies and we  are not aware of any at present that do so.
+Log Files
+We use IP addresses to analyse trends, administer the site, track movement,  and gather broad demographic information for aggregate use.
+IP addresses are not  linked to personally identifiable information.
+Links
+This web site contains links to other sites.
+Please be aware that Mondaq (or  its affiliate sites) are not responsible for the privacy practices of such other  sites.
+We encourage our users to be aware when they leave our site and to read  the privacy statements of these third party sites.
+This privacy statement  applies solely to information collected by this Web site.
+Surveys & Contests
+From time-to-time our site requests information from users via surveys or  contests.
+Participation in these surveys or contests is completely voluntary and  the user therefore has a choice whether or not to disclose any information  requested.
+Information requested may include contact information (such as name  and delivery address), and demographic information (such as postcode, age  level).
+Contact information will be used to notify the winners and award prizes.
+Survey information will be used for purposes of monitoring or improving the  functionality of the site.
+Mail-A-Friend
+If a user elects to use our referral service for informing a friend about our  site, we ask them for the friend’s name and email address.
+Mondaq stores this  information and may contact the friend to invite them to register with Mondaq,  but they will not be contacted more than once.
+The friend may contact Mondaq to  request the removal of this information from our database.
+Security
+This website takes every reasonable precaution to protect our users’  information.
+When users submit sensitive information via the website, your  information is protected using firewalls and other security technology.
+If you  have any questions about the security at our website, you can send an email to webmaster@mondaq.com .
+Correcting/Updating Personal Information
+If a user’s personally identifiable information changes (such as postcode),  or if a user no longer desires our service, we will endeavour to provide a way  to correct, update or remove that user’s personal data provided to us.
+This can  usually be done at the “Your Profile” page or by sending an email to EditorialAdvisor@mondaq.com .
+Notification of Changes
+If we decide to change our Terms & Conditions or Privacy Policy, we will  post those changes on our site so our users are always aware of what information  we collect, how we use it, and under what circumstances, if any, we disclose it.
+If at any point we decide to use personally identifiable information in a manner  different from that stated at the time it was collected, we will notify users by  way of an email.
+Users will have a choice as to whether or not we use their  information in this different manner.
+We will use information in accordance with  the privacy policy under which the information was collected.
+How to contact Mondaq
+You can contact us with comments or queries at enquiries@mondaq.com .
+If for some reason you believe Mondaq Ltd. has not adhered to these  principles, please notify us by e-mail at problems@mondaq.com and we will use  commercially reasonable efforts to determine and correct the problem promptly.

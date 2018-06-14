@@ -1,0 +1,789 @@
+<!DOCTYPE html><html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# afarmedia: http://ogp.me/ns/fb/afarmedia#">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=477;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta content="130866636933594" property="fb:app_id" /><meta content="text/html; charset=utf-8" http-equiv="Content-type" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6f014b43c0","applicationID":"12767558","transactionName":"IlpbFkMMVV5dERlEWABWUBEeEFFdTw==","queueTime":1,"applicationTime":851,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQ8DVV5ACQEHUlZXAgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;d>r;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||10>p)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;d>a;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(15),a=t(16);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-952.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script><meta content="app-id=496426792, app-argument=afar:///places/cloud-gate-chicago-2?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265" name="apple-itunes-app" /><link href="http://www.afar.com/places/cloud-gate-chicago-2" rel="canonical" /><title>Cloud Gate - Chicago, Illinois | AFAR.com </title><link href="/feeds/wayfarer.rss" rel="alternate" title="AFAR.com | The Wayfarer" type="application/rss+xml" /><link href="/web/20160613093051im_/http://www.afar.com/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" /><link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" /><link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" /><link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" /><link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" /><link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" /><link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" /><link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" /><link href="/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png" /><link href="/favicon-160x160.png" rel="icon" sizes="160x160" type="image/png" /><link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" /><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /><meta content="#da532c" name="msapplication-TileColor" /><meta content="/mstile-144x144.png" name="msapplication-TileImage" /><link href="/web/20160613093051cs_/http://media.afar.com/assets/application-8e64ac218ae58cb3f738e50001fe915a.css" media="screen" rel="stylesheet" /><meta content="http:&#47;&#47;media.afar.com&#47;uploads&#47;images&#47;post_images&#47;images&#47;oXESvasUkj&#47;post_display_open-uri20130918-18567-9er7ul?1383825765" name="sailthru.image.full" /><meta content="http:&#47;&#47;media.afar.com&#47;uploads&#47;images&#47;post_images&#47;images&#47;oXESvasUkj&#47;small_thumb_open-uri20130918-18567-9er7ul?1383825765" name="sailthru.image.thumb" /><meta content="United States" name="sailthru.title" /><meta content="Visitors take their best Chicago photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as..." name="sailthru.description" /><meta content="41.882668,-87.62330400000002" name="sailthru.location" /><meta content="Kaitlyn Barrett" name="sailthru.author" /><meta content="Chicago" name="sailthru.city" /><meta content="Illinois" name="sailthru.region" /><meta content="United States" name="sailthru.country" /><meta content="photo" name="twitter:card" /><meta content="Chicago Skyline and The Bean" name="twitter:title" /><meta content="Visitors take their best Chicago photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as “The Bean.” 
+
+Designed by Anish Kapoor and constr..." name="twitter:description" /><meta content="http:&#47;&#47;media.afar.com&#47;uploads&#47;images&#47;post_images&#47;images&#47;oXESvasUkj&#47;large_open-uri20130918-18567-9er7ul?1383825765" name="twitter:image:src" /><meta content="600" name="twitter:image:width" /><meta content="600" name="twitter:image:height" /><meta content="@AFARmedia" name="twitter:site" /><meta content="http:&#47;&#47;www.afar.com&#47;places&#47;cloud-gate-chicago-2" name="twitter:url" />
+  <meta property="og:type" content="place" />
+  <meta property="og:url" content="http://www.afar.com/places/cloud-gate-chicago-2" />
+  <meta property="og:title" content="Chicago Skyline and The Bean" />
+  <meta property="og:image" content="http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/large_open-uri20130918-18567-9er7ul?1383825765" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="315" />
+  <meta property="og:description" content="Visitors take their best Chicago photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as “The Bean.” 
+
+Designed by Anish Kapoor and constructed from 168 stainless steel plates with no visible seams, the polished surfaces of this 33ft tall sculpture..." />
+    <meta property="place:location:latitude" content="41.882668" />
+    <meta property="place:location:longitude" content="-87.62330400000002" />
+  <meta property="og:site_name" content="AFAR Media" />
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', "UA-7111038-3", 'auto');
+ga (function(tracker){
+  if (window.AFAR == null || window.AFAR == undefined) {
+    window.AFAR = {}
+  }
+  AFAR.ga = tracker;
+})
+</script>
+<!-- End Google Analytics -->
+
+  <script>
+//<![CDATA[
+ga('set',
+      'dimension6', 'Not Logged In')
+//]]>
+</script>
+<script src="/web/20160613093051js_/http://dc8xl0ndzn2cb.cloudfront.net/js/afar/v0/keywee.min.js" type="text/javascript" async></script> <script>
+//<![CDATA[
+
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+
+//]]>
+</script>
+
+<script>var om_load_jquery = false;var om568ee7736b5e5,om568ee7736b5e5_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){om568ee7736b5e5_poll(function(){if(window['om_loaded']){if(!om568ee7736b5e5){om568ee7736b5e5=new OptinMonsterApp();return om568ee7736b5e5.init({"s":"14417.568ee7736b5e5","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;om568ee7736b5e5=new OptinMonsterApp();om568ee7736b5e5.init({"s":"14417.568ee7736b5e5","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><script type="text/javascript">
+(function(n,a,t,i,v,e,ai){n['NativeAIObject']=v;n[v]=n[v]||function(){
+(n[v].q=n[v].q||[]).push(arguments)},n[v].l=1*new
+Date();e=a.createElement(t),
+ai=a.getElementsByTagName(t)[0];e.async=1;e.src=i+"?"+parseInt(n[v].l/604800000);
+ai.parentNode.insertBefore(e,ai)})
+(window,document,'script','/web/20160613093051/https://api.native.ai/js/current/nativeai.js','nativeAI');
+nativeAI('create','31955817-4f1d-4c34-b7fd-1a6c9f756457');
+</script><meta content="authenticity_token" name="csrf-param" />
+<meta content="QFZ2MhTk6L7lw+oQeFNRocgVzHw3BzXudiNlYKc55go=" name="csrf-token" /></head><body class="places places-show signed-out standard-width-layout" google-page-category="Place Page">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265";
+
+var firstYear = 1996;
+var displayDay = "13";
+var displayMonth = "Jun";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160613093051" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    May
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:30:51 Jun 13, 2016">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jul
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:30:51 Jun 13, 2016">13</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:30:51 Jun 13, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160613093051*/http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">13 Jun 16 - 13 Jun 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:5:000001000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="wrap"><div class="topbar"><div data-react-class="PostSigninApp" data-react-props="{}"></div><div class="modal hide fade" id="login-signup-modal" role="dialog" tabindex="-1"><div class="modal-body"></div><button aria-hidden="true" class="modal-close" data-dismiss="modal">X</button></div><div class="js-main-nav-logo-zone-header leaderboard-is-visible  sticky-top" id="main-nav-logo-zone-header"><div class="row sticky-box-leaderboard-row js-sticky-box-leaderboard-row"><div class="header-ad"><a class="mini-logo-link" data-google-action="Clicked main nav logo" data-google-category="Place Page" data-google-label="AFAR Logo" href="/web/20160613093051/http://www.afar.com/" title="AFAR: The Experiential Travel Guide"><img alt="AFAR: The Experiential Travel Guide" height="34" src="/web/20160613093051im_/http://media.afar.com/assets/afar_experiential_logo-b8a5fb2cfff972ec11527ada44e93425.png" title="AFAR: The Experiential Travel Guide" width="106" /></a><div class="sticky-box-leaderboard js-sticky-box-leaderboard"><div class="ad-box"><div id='div-gpt-ad-gjr77v42-728-90_header' class='size-728-90'>
+  <script>
+//<![CDATA[
+
+    googletag.cmd.push(function() {
+      // setup DoubleClick object
+      var slot = googletag.defineSlot("/7698369/Promo_728x90_header", [728,90], 'div-gpt-ad-gjr77v42-728-90_header').addService(googletag.pubads());
+      googletag.pubads().collapseEmptyDivs(true);
+
+      if(typeof AFAR !== 'undefined' && typeof AFAR.ga !== 'undefined') {
+        slot.setTargeting('afar-ga-referrer', AFAR.ga.get('referrer'))
+        slot.setTargeting('afar-ga-page-type', AFAR.ga.get('dimension8'))
+      }
+        slot.setTargeting("ad-user", "kaitlyn-barrett");
+        slot.setTargeting("page-type", "highlight");
+        slot.setTargeting("ad-tags", "");
+        slot.setTargeting("ad-slug", "cloud-gate-chicago-2");
+        slot.setTargeting("ad-uid", "39261");
+        slot.setTargeting("ad-passion", "");
+        slot.setTargeting("ad-country", "united states");
+        slot.setTargeting("ad-region", "illinois");
+        slot.setTargeting("ad-city", "chicago");
+        slot.setTargeting("continent", "north america");
+        slot.setTargeting("ad-edit-re", "");
+      googletag.enableServices();
+      googletag.pubads().set("Promo_728x90_header", slot);
+
+      // utils
+      var updateTargeting = function(slot, newTargetHash) {
+        if (newTargetHash == null) {
+          var newTargetHash = JSON.parse('{\"ad-user\":\"kaitlyn-barrett\",\"page-type\":\"highlight\",\"ad-tags\":null,\"ad-slug\":\"cloud-gate-chicago-2\",\"ad-uid\":39261,\"ad-passion\":\"\",\"ad-country\":\"united states\",\"ad-region\":\"illinois\",\"ad-city\":\"chicago\",\"continent\":\"north america\",\"ad-edit-re\":null}');
+        } else {
+          var newTargetHash = newTargetHash;
+        }
+        slot.clearTargeting();
+        Object.keys(newTargetHash).forEach(function (targeting_var) {
+          slot.setTargeting(targeting_var, newTargetHash[targeting_var]);
+        });
+        // AFAR.AdSlots['div-gpt-ad-gjr77v42-728-90_header'][0] = slot;
+        return slot;
+      };
+
+      var refreshAd = function(newSlot) {
+        if (newSlot == null) {
+          var newSlot = slot
+        }
+        googletag.pubads().refresh([newSlot]);
+        return newSlot;
+      }
+
+      // make accessible to the page view outside of this ad partial
+      if (typeof AFAR === 'undefined') {
+        AFAR = {};
+      }
+      if (typeof AFAR.AdSlots === 'undefined') {
+        AFAR.AdSlots = {};
+      }
+      AFAR.AdSlots['div-gpt-ad-gjr77v42-728-90_header'] = [slot, updateTargeting, false, refreshAd];
+
+      var AFAR_offset = function(el) {
+        var offset = {};
+        var rect = el.getBoundingClientRect();
+        if (rect != undefined && rect != null) {
+          offset['top'] = rect.top + document.body.scrollTop;
+          offset['left'] = rect.left + document.body.scrollLeft;
+        }
+        return offset;
+      };
+
+      var isOnOrInside = function(subject_dimensions, anchor_dimensions, thresh) {
+        offset = (subject_dimensions['bottom'] - subject_dimensions['top']) * thresh * 0.01;
+        return ((subject_dimensions['bottom'] - anchor_dimensions['top']) >= offset) && ((anchor_dimensions['bottom'] - subject_dimensions['top']) >= offset);
+      };
+
+
+      // detect scroll visibility based on parent node (OR supplied element) and display ad when applicable
+      var loadWhenVisibleTimer = 0;
+      var loadWhenVisible = function() {
+        if (!AFAR.AdSlots['div-gpt-ad-gjr77v42-728-90_header'][2]) {
+            var $this_ad = document.getElementById(slot.getSlotElementId()).parentNode;
+          var this_ad_top = AFAR_offset($this_ad).top
+          var this_ad_bottom = this_ad_top + $this_ad.offsetHeight;
+          var windowTop = document.body.scrollTop;
+          var windowBottom = windowTop + window.innerHeight
+
+          // easier to read
+          var ad_dimensions = {
+            top: this_ad_top,
+            bottom: this_ad_bottom
+          }
+          var window_dimensions = {
+            top: windowTop,
+            bottom: windowBottom
+          }
+
+          if (isOnOrInside(ad_dimensions, window_dimensions, 0)) {
+            googletag.display('div-gpt-ad-gjr77v42-728-90_header');
+            AFAR.AdSlots['div-gpt-ad-gjr77v42-728-90_header'][2] = true;
+            // stop all manual visibility calculations from this callback
+            window.clearInterval(loadWhenVisibleTimer);
+          }
+        }
+      };
+      loadWhenVisibleTimer = window.setInterval(loadWhenVisible, 1000);
+    });
+
+//]]>
+</script></div></div></div></div></div><div class="container"><div class="row logo-zone"><div class="minified-sticky-menu-container"><a class="mini-logo-link" data-google-action="Clicked Main Nav Logo" data-google-category="Place Page" data-google-label="AFAR Logo" href="/web/20160613093051/http://www.afar.com/" title="AFAR: The Experiential Travel Guide"><img alt="AFAR: The Experiential Travel Guide" height="34" src="/web/20160613093051im_/http://media.afar.com/assets/afar_experiential_logo-b8a5fb2cfff972ec11527ada44e93425.png" title="AFAR: The Experiential Travel Guide" width="106" /></a><div class="menu"><ul class="navigation-list"><li><div class="component afar-dropdown-container subscription-dropdown js-afar-dropdown-container"><a class="subscription-link js-afar-dropdown-trigger" data-google-action="Clicked Subscribe" data-google-category="Place Page" data-google-label="Subscribe" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=174528">Subscribe</a><div class="afar-dropdown-menu js-afar-dropdown-menu"><div class="afar-dropdown-panel js-afar-dropdown-panel"><ul class="subscribe-menu arrow-up"><li><a data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Subscribe to our print magazine" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=174528">Subscribe to our print magazine</a></li><li><a data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Get a free trial issue" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=174467">Get a free trial issue</a></li><li><a class="js-show-newsletter-form-trigger" data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Receive our free newsletters" href="/web/20160613093051/http://www.afar.com/newsletters?NavDropDown">Receive our free newsletters</a></li><li><a data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Give the gift of AFAR" href="/web/20160613093051/https://w1.buysub.com/servlet/GiftsGateway?cds_mag_code=AFA&amp;cds_page_id=174529">Give the gift of AFAR</a></li><li><a data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Subscribe to our digital edition" href="/web/20160613093051/https://geo.itunes.apple.com/us/app/afar-magazine-where-travel/id920482772?mt=8&amp;uo=6&amp;at=1l3vsrU&amp;pt=353104&amp;ct=Website%20Navigation%20Dropdown">Subscribe to our digital edition</a></li><li><a data-google-action="Clicked Event Subscribe" data-google-category="Top Navigation" data-google-label="Magazine Customer service" href="/web/20160613093051/https://w1.buysub.com/servlet/CSGateway?cds_mag_code=AFA&amp;cds_page_id=63692">Magazine Customer service</a></li></ul></div></div></div></li><li><a class="destinations-link" data-google-action="Clicked Destinations" data-google-category="Top Navigation" data-google-label="Destinations" href="/web/20160613093051/http://www.afar.com/travel-guides">Destinations</a></li><li><a class="interests-link" data-google-action="Clicked Interests" data-google-category="Top Navigation" data-google-label="Interests" href="/web/20160613093051/http://www.afar.com/interests">Interests</a></li><li><a class="hotels-link" data-google-action="Clicked Hotels" data-google-category="Top Navigation" data-google-label="Hotels" href="/web/20160613093051/http://www.afar.com/hotels">Hotels</a></li><li><a class="journeys-link" data-google-action="Clicked Journeys" data-google-category="Top Navigation" data-google-label="Journeys" href="/web/20160613093051/http://www.afar.com/journeys">Journeys</a></li><li><a class="magazine-link" data-google-action="Clicked Magazine" data-google-category="Top Navigation" data-google-label="Magazine" href="/web/20160613093051/http://www.afar.com/magazine">Magazine</a></li></ul><ul class="search-list hide"><li class="header-search-container"><div class="header-search"><form accept-charset="UTF-8" action="/web/20160613093051/http://www.afar.com/search" id="global_nav_search_form" method="get" onsubmit="AFAR.Google.trackEvent(&#39;Place Page&#39;, &#39;Clicked Search Go&#39;, &#39;Search Go Button&#39;)"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div><input id="search_category" name="search_category" type="hidden" value="header" /><i class="icon-search"></i><input class="place_autocomplete_search" data-autocomplete-path="null" id="q" name="q" placeholder="Location" type="text" /><input id="keyword_text" name="keyword_text" placeholder="looking for (optional)" type="text" /><input class="btn discover" type="submit" value="Go" /></form></div></li></ul><ul class="search-trigger-list"><li><a class="search-link" data-body-google-category="Place Page"><i class="icon-search"></i><div class="afaricons afaricons-close-x hide"></div></a></li></ul></div><div class="profile mini-header-profile-section"><ul class="sign-in-links"><li><a class="header-login" data-google-action="Clicked Login Link" data-google-category="Top Navigation" data-google-label="Login" data-wantsto="login" href="/web/20160613093051/http://www.afar.com/users/sign_in?wantsto=login" login-signup-modal="login" rel="nofollow">Log in</a></li><li class="vertical-mini-spacer"></li><li><a class="header-signup" data-google-action="Clicked Join AFAR" data-google-category="Top Navigation" data-google-label="Join AFAR" data-wantsto="signup" href="/web/20160613093051/http://www.afar.com/users/new?wantsto=signup" login-signup-modal="signup" rel="nofollow">Join AFAR</a></li></ul><div class="plan-a-trip"><a class="btn btn-primary trip-planning-btn plan-a-trip-link" data-wantsto="login" href="/web/20160613093051/http://www.afar.com/users/sign_in?wantsto=plan+a+trip" login-signup-modal="login" rel="nofollow"><span class="glyphicon icon-afar place-icon-white"></span><span>Plan Your Trip</span></a></div></div></div></div></div><div class="sweet-breadcrumbs-container js-sweet-breadcrumbs-container leaderboard-is-visible sticky-top"><div class="container"><div class="breadcrumbs"><ul><li><a data-google-action="Clicked Breadcrumb" data-google-category="Place Page" data-google-label="Home Page" href="/web/20160613093051/http://www.afar.com/"><span>Home</span></a></li><li><a data-google-action="Clicked Breadcrumb" data-google-category="Place Page" data-google-label="Destination Index Page" href="/web/20160613093051/http://www.afar.com/travel-guides"><i class="chevron"></i><span>Travel Guides</span></a></li><li><a data-google-action="Clicked Breadcrumb" data-google-category="Place Page" data-google-label="United States" href="/web/20160613093051/http://www.afar.com/travel-guides/united-states/guide"><i class="chevron"></i><span>United States</span></a></li><li><a data-google-action="Clicked Breadcrumb" data-google-category="Place Page" data-google-label="Illinois" href="/web/20160613093051/http://www.afar.com/travel-guides/united-states/illinois/guide"><i class="chevron"></i><span>Illinois</span></a></li><li><a data-google-action="Clicked Breadcrumb" data-google-category="Place Page" data-google-label="Chicago" href="/web/20160613093051/http://www.afar.com/travel-guides/united-states/illinois/chicago/guide"><i class="chevron"></i><span>Chicago</span></a></li><li><i class="chevron"></i><span>Cloud Gate</span></li></ul></div></div></div></div><div class="newsletter-popup modal hide fade"></div><div class="newsletter-popup modal hide fade"><div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">x</button></div><div class="modal-body"><div class="form-title">Receive our free newsletters</div><form accept-charset="UTF-8" action="/web/20160613093051/http://www.afar.com/newsletter/sign_up" class="newsletter-signup-form" format="json" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QFZ2MhTk6L7lw+oQeFNRocgVzHw3BzXudiNlYKc55go=" /></div><div class="input-container"><input class="signupfield has_placeholder email-address" id="signup_email" name="signup_email" placeholder="Your email address" type="email" value="" /><button class="submit-btn" type="submit">submit</button></div><div class="error-box"></div><div class="spinner hide"><img alt="Animated dots" src="/web/20160613093051im_/http://media.afar.com/assets/animated-dots-97656852abb70b74c011bde785a692a5.gif" /></div><div class="checkboxes input-container"><input checked="checked" class="weekly-wander" id="afar_announcements" name="afar_announcements" type="checkbox" value="1" /><label for="weekly-wander">Weekly Wander Newsletters</label><input checked="checked" class="products-services" id="third_party_partners" name="third_party_partners" type="checkbox" value="1" /><label for="products-services">Third party travel products and services</label></div></form></div></div></div><div class="js-main leaderboard-is-visible " id="main"><script>
+//<![CDATA[
+ga('set',
+      'dimension1', 'Chicago|Illinois|United States')
+//]]>
+</script><script>
+//<![CDATA[
+ga('set',
+      'dimension3', 'Kaitlyn Barrett|AFAR Local Expert|2013-09-18|HL')
+//]]>
+</script>
+<div id="current_place_highlight_experiences">
+  <script type='application/json' %>
+    {"experiencesJson": {"title":"Cloud Gate","slug":"cloud-gate-chicago-2","primary_image":{"id":77314,"experience_id":39259,"url_medium":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/medium_open-uri20130918-18567-9er7ul?1383825765","url_cropped":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/post_display_cropped_open-uri20130918-18567-9er7ul?1383825765","url_640":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/image_640x640_open-uri20130918-18567-9er7ul?1383825765","url_original":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/original_open-uri20130918-18567-9er7ul?1383825765","caption":null,"attribution":null,"attribution_url":null,"attribution_type":null,"experience_user_id":18722},"images":[],"experiences":[{"user":{"full_name":"Kaitlyn Barrett","display_title":"AFAR Local Expert","avatar_url":"/web/20160613093051/http://media.afar.com/uploads/images/profile_images/images/YG76rRQUqY/mobile_large_thumb_986d7b1d5f5adef15f07d77afdb3e4cf?1383771945","profile_url":"/travelers/kaitlyn-barrett"},"images":[{"id":77314,"url_medium":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/medium_open-uri20130918-18567-9er7ul?1383825765","url_cropped":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/post_display_cropped_open-uri20130918-18567-9er7ul?1383825765","url_640":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/image_640x640_open-uri20130918-18567-9er7ul?1383825765","url_original":"/web/20160613093051/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/original_open-uri20130918-18567-9er7ul?1383825765","position":1,"all_position":1,"shown":false,"caption":null,"attribution":null,"attribution_url":null,"attribution_type":null,"experience_user_full_name":"\"\\u003Ca data-google-action=\\\"Clicked Author\\u0026#39;s Profile\\\" data-google-category=\\\"Place Page\\\" data-google-label=\\\"Kaitlyn Barrett\\\" href=\\\"/travelers/kaitlyn-barrett\\\"\\u003EKaitlyn Barrett\\u003C/a\\u003E\"","experience_slug":"chicago-skyline-and-the-bean","experience_title":"Chicago Skyline and The Bean","experience_user_id":18722}],"id":39259,"i_own_it":false,"slug":"chicago-skyline-and-the-bean","title":"Chicago Skyline and The Bean","description":"Visitors take their best <a href=\"/travel-guides/united-states/illinois/chicago/guide\">Chicago</a> photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as “The Bean.” \n\nDesigned by Anish Kapoor and constructed from 168 stainless steel plates with no visible seams, the polished surfaces of this 33ft tall sculpture reflect infinite variations of the Chicago skyline.\n","position":1200,"primary_experience":true,"is_holland_america":false,"is_westin":false,"is_chase":false,"is_texas":false,"is_leading_hotels":false}]}
+    }
+  </script>
+</div>
+<div class="container"><div id="new-social-tools"><ul class="social-share-tools js-social-share-tools"><li><a class="facebook post_to_feed" data-fb-caption="AFAR.com" data-fb-description="Visitors take their best Chicago photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as “The Bean.” 
+
+Designed by Anish Kapoor and constructed from 168 stainless steel plates with no visible seams, the polished surfaces of this 33ft tall sculpture reflect infinite variations of the Chicago skyline.
+" data-fb-link="http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide%26context_id=%26utm_campaign=ss_fb" data-fb-name="Cloud Gate by Kaitlyn Barrett" data-fb-picture="http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/post_display_open-uri20130918-18567-9er7ul?1383825765" data-fb-shareable-id="39261" data-fb-shareable-type="Highlight" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="Facebook" href="" title="Share on Facebook"><i class='afaricons afaricons-facebook'></i><span class='social-text-label'>Facebook</span></a></li><li><a class="twitter" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="Twitter" data-shareable-id="39261" data-shareable-type="Highlight" href="/web/20160613093051/http://twitter.com/intent/tweet?text=AFAR.com%20Place:%20Cloud%20Gate%20by%20Kaitlyn%20Barrett&amp;via=AFARMedia&amp;url=http://www.afar.com/places/cloud-gate-chicago-2?utm_campaign=ss_tw%26context=travel-guide" title="Share on Twitter"><i class='afaricons afaricons-twitter'></i><span class='social-text-label'>Twitter</span></a></li><li><a class="pinterest trigger" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="Pinterest" href="/web/20160613093051/http://pinterest.com/pin/create/button/?url=http://www.afar.com/places/cloud-gate-chicago-2&amp;media=http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/original_open-uri20130918-18567-9er7ul?1383825765&amp;description=AFAR.com%20Place:%20Cloud%20Gate%20by%20Kaitlyn%20Barrett" onclick="return !window.open(this.href, 'Pinterest', 'width=750,height=650', 'scrollbars=no', 'resizable=yes')" title="Share on Pinterest"><i class='afaricons afaricons-pinterest'></i><span class='social-text-label'>Pinterest</span></a></li><li><a class="stumble-share-link" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="StumbleUpon" href="/web/20160613093051/http://www.stumbleupon.com/submit?url=http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide%26utm_campaign=ss_su" target="_blank"><i class='afaricons afaricons-stumble'></i><span class='social-text-label'>Stumble Upon</span></a></li><li><a class="reddit-share-link" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="Reddit" href="/web/20160613093051/http://www.reddit.com/submit?url=http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide%26utm_campaign=ss_rd&amp;title=Cloud%20Gate" target="_blank"><i class='afaricons afaricons-reddit'></i><span class='social-text-label'>Reddit</span></a></li><li><a class="unauthenticated_email_share" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="Email" href="mailto:?body=Check%20out%20this%20post%20on%20AFAR%20-%20http%3A%2F%2Fwww.afar.com%2Fplaces%2Fcloud-gate-chicago-2%3Futm_campaign%3Dss_em%26context%3Dtravel-guide%0A%0AAFAR.com%0AWhere%20travel%20can%20take%20you%0AFollow%20us%20on%20Twitter%3A%20http%3A%2F%2Ftwitter.com%2Fafarmedia%0AFollow%20us%20on%20Facebook%3A%20http%3A%2F%2Fwww.facebook.com%2FAfarMedia&amp;subject=AFAR%3A%20Cloud%20Gate" title="Share by Email"><i class='afaricons afaricons-email'></i><span class='social-text-label'>Email</span></a></li><li><a class="gplus-share-link" data-google-action="Clicked Social Share Button" data-google-category="Place Page" data-google-label="GPlus" href="/web/20160613093051/https://plus.google.com/share?url=http://www.afar.com/places/cloud-gate-chicago-2?context=travel-guide%26utm_campaign=ss_gp" target="_blank"><i class='afaricons afaricons-google-plus'></i><span class='social-text-label'>GPlus</span></a></li></ul></div><nav class="place-next-previous-navigation-bar no-title"><div class="span12 old-navigation-arrows"><a class="previous control-set" data-highlight-id="39246" data-title="Piedmont Park&#39;s Original Watering Hole" href="/web/20160613093051/http://www.afar.com/places/park-tavern-atlanta?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265"><span class="glyphicon icon-afar-places chevron-left-black"></span><span class="place-title">Piedmont Park's Original Watering Hole</span></a></div><div class="span12 old-navigation-arrows"><a class="next control-set" data-highlight-id="39265" data-title="Chicago, The Blues Capital of the World" href="/web/20160613093051/http://www.afar.com/places/millennium-park-chicago-8?context=travel-guide&amp;country=united-states&amp;next_page=%2Ftravel-guides%2Funited-states%2Fguide%3Faction%3Dshow%26controller%3Ddestinations%26country%3Dunited-states%26object_type%3Dguide%26page%3D9&amp;similar=38971%2C38973%2C38995%2C38997%2C39004%2C39017%2C39019%2C39020%2C39021%2C39043%2C39045%2C39051%2C39062%2C39067%2C39146%2C39148%2C39150%2C39152%2C39154%2C39157%2C39160%2C39161%2C39163%2C39242%2C39243%2C39246%2C39261%2C39265"><span class="place-title">Chicago, The Blues Capital of the World</span><span class="glyphicon icon-afar-places chevron-right-black"></span></a></div></nav><div class="flash-message-unmerge unmerge-highlight-39259"></div><article class="row detail-container" id="detail-place"><div class="span16"><div class="main-slideshow"><div class="super-slick-container"><div class="current-version"><div id="primary-experience-photo-app"><div data-react-class="PlacePagesSlideshowOverlay" data-react-props="{&quot;current_user_id&quot;:null}"></div></div></div><div class="first-load initial-load"><img alt="Post display cropped open uri20130918 18567 9er7ul?1383825765" src="/web/20160613093051im_/http://media.afar.com/uploads/images/post_images/images/oXESvasUkj/post_display_cropped_open-uri20130918-18567-9er7ul?1383825765" /></div></div><div id="slideshow-navigation"><div data-react-class="PlacePagesSlideshowNavigation" data-react-props="{&quot;current_user_id&quot;:null}"></div></div><div class="tooltip-wrapper"><span class="dots-tooltip"></span></div></div><div class="place-description"><div class="place-intro-header"><h1 class="place-title">Chicago Skyline and The Bean</h1></div><div class="content-block-expansion-block"></div><div class="current-version-arrows"><div class="large-arrow-left"><a data-google-action="Click Place Big Arrow Prev" data-google-category="Place Page" href="/web/20160613093051/http://www.afar.com/places/park-tavern-atlanta?context=travel-guide"><img alt="Large arrow left" src="/web/20160613093051im_/http://media.afar.com/assets/place/large_arrow_left-13c4397a0c1d2cd8f6f933f63f5ee2c7.svg" /></a></div></div><div class="current-version"><div class="place-content-text "><p>Visitors take their best <a href="/web/20160613093051/http://www.afar.com/travel-guides/united-states/illinois/chicago/guide">Chicago</a> photographs in front of the iconic Millennium Park sculpture called Cloud Gate and known colloquially as “The Bean.” </p>
+
+<p>Designed by Anish Kapoor and constructed from 168 stainless steel plates with no visible seams, the polished surfaces of this 33ft tall sculpture reflect infinite variations of the Chicago skyline.
+</p></div></div><div class="current-version-arrows"><div class="large-arrow-right"><a data-google-action="Click Place Big Arrow Next" data-google-category="Place Page" href="/web/20160613093051/http://www.afar.com/places/millennium-park-chicago-8?context=travel-guide"><img alt="Large arrow right" src="/web/20160613093051im_/http://media.afar.com/assets/place/large_arrow_right-aa0595471d64ea2c5b6878969bf2dabb.svg" /></a></div></div><a class="content-block-expansion-link condensed hide"><span class="text-label more">read more</span><span class="text-label less">read less</span><span class="link-icon-chevron">></span></a></div><div class="js-audience-development-place"></div><div id='div-gpt-ad-1x1' style="height: 0px;line-height: 0px;">
+  <script>
+//<![CDATA[
+
+    googletag.cmd.push(function() {
+      var slot = googletag.defineSlot('/7698369/Promo_1x1-collection', [1, 1], 'div-gpt-ad-1x1').addService(googletag.pubads());
+      googletag.pubads().collapseEmptyDivs(true);
+          slot.setTargeting("ad-user", "kaitlyn-barrett");
+          slot.setTargeting("page-type", "highlight");
+          slot.setTargeting("ad-tags", "");
+          slot.setTargeting("ad-slug", "cloud-gate-chicago-2");
+          slot.setTargeting("ad-uid", "39261");
+          slot.setTargeting("ad-passion", "");
+          slot.setTargeting("ad-country", "united states");
+          slot.setTargeting("ad-region", "illinois");
+          slot.setTargeting("ad-city", "chicago");
+          slot.setTargeting("continent", "north america");
+          slot.setTargeting("ad-edit-re", "");
+       googletag.enableServices();
+      googletag.display('div-gpt-ad-1x1');
+    });
+
+//]]>
+</script></div><div class="actions-block"><div class="current-version"><div class="place-actions-widget"><div class="place-author-block"><div class="author-avatar"><a class="user-icon" href="/web/20160613093051/http://www.afar.com/travelers/kaitlyn-barrett" onclick=""><img alt="Thumb 986d7b1d5f5adef15f07d77afdb3e4cf?1383771945" height="30" src="/web/20160613093051im_/http://media.afar.com/uploads/images/profile_images/images/YG76rRQUqY/thumb_986d7b1d5f5adef15f07d77afdb3e4cf?1383771945" width="30" /></a></div><div class="author-full-name">by <a data-google-action="Clicked Author&#39;s Profile" data-google-category="Place Page" data-google-label="Kaitlyn Barrett" href="/web/20160613093051/http://www.afar.com/travelers/kaitlyn-barrett">Kaitlyn Barrett</a><div class="author-display-title-and-location">AFAR Local Expert</div><div class="gplus-link"><a data-google-action="Clicked Author&#39;s GPlus Link" data-google-label="" href="/web/20160613093051/https://plus.google.com/u/0/108314815582987354802/posts?rel=author" id="gplus" rel="publisher" target="_blank"><img alt="G plus" src="/web/20160613093051im_/http://media.afar.com/assets/social/g-plus-bfb87cb247f3312e24f669b6dc5f31d3.png" /></a></div></div></div><div class="action-control-block"><div class="button-row"><a class="visit-btn grey btn" data-google-action="Clicked I&#39;ve Been Here Button" data-google-category="Place Page" data-google-label="User Visited" data-wantsto="visit" href="/web/20160613093051/http://www.afar.com/users/sign_in?wantsto=visit" id="visit-button-39261" login-signup-modal="login"><div class="afaricons afaricons-circle-checked"></div><div class="text-label">I've been here</div></a><a class="recommend-btn grey btn" data-google-action="Clicked Recommended Button" data-google-category="Place Page" data-google-label="User Recommended" data-wantsto="recommend" href="/web/20160613093051/http://www.afar.com/users/sign_in?wantsto=recommend" id="recommend-button-39261" login-signup-modal="login"><div class="afaricons afaricons-star"></div><div class="text-label">Recommend</div></a><div class="count-row"><div class="encourage-votes">No one has been here. Be the first.</div></div><div class="recommend-thanks"></div></div><div class="user-correction-feedback-block"><div class="placement-box-icon"><div class="afaricons afaricons-bang"></div></div><div class="placement-box-text"><div class="question-prompt">Does this place need a closer look by our editors? Let us know.</div><div class="user-correction-feedback-controls-toggle js-user-correction-feedback-controls-toggle"><a data-google-action="Clicked Let us know what&#39;s wrong" data-google-category="Place Page" data-google-label="Let us know what&#39;s wrong" data-wantsto="Give feedback" href="/web/20160613093051/http://www.afar.com/users/sign_in?wantsto=Give+feedback" login-signup-modal="login"><span class="text-label">Let us know what's wrong!</span></a><span class="link-icon-chevron">></span></div></div></div></div></div></div></div><div class="suggestions"><div class="other-guides-selection"><h3 class="header-text">related lists you may like</h3><ul><li><a class="content-title" data-google-action="Clicked Related List Module" data-google-category="Place Page" data-google-label="AFAR&#39;s Picks for Where to Eat, Drink, Stay, and Shop in Chicago" href="/web/20160613093051/http://www.afar.com/travel-tips/afars-picks-for-where-to-eat-drink-stay-and-shop-in-chicago"><img alt="Small open uri20120801 29557 v7vesa?1438655219" height="100" src="/web/20160613093051im_/http://media.afar.com/uploads/images/post_images/images/nNdmejMWjY/small_open-uri20120801-29557-v7vesa?1438655219" width="100" /><div class="not-sponsored-block"><div class="text-label">AFAR's Picks for Where to Eat, Drink, Stay, and Shop in Chicago</div></div></a></li><li><a class="content-title" data-google-action="Clicked Related List Module" data-google-category="Place Page" data-google-label="A Weekend in Chicago " href="/web/20160613093051/http://www.afar.com/travel-tips/a-weekend-in-chicago"><img alt="Small open uri20130202 16068 kxlq48?1438365671" height="100" src="/web/20160613093051im_/http://media.afar.com/uploads/images/post_images/images/5elAxXLinM/small_open-uri20130202-16068-kxlq48?1438365671" width="100" /><div class="not-sponsored-block"><div class="text-label">A Weekend in Chicago </div></div></a></li><li><a class="content-title" data-google-action="Clicked Related List Module" data-google-category="Place Page" data-google-label="Insider&#39;s Chicago" href="/web/20160613093051/http://www.afar.com/travel-tips/insiders-chicago"><img alt="Small 230d4b7c5799f112d6756fe4393d0b85?1383789340" height="100" src="/web/20160613093051im_/http://media.afar.com/uploads/images/post_images/images/tTB9QfQqGG/small_230d4b7c5799f112d6756fe4393d0b85?1383789340" width="100" /><div class="not-sponsored-block"><div class="text-label">Insider's Chicago</div></div></a></li><li><div class="sponsored-other-list-item"><div id='div-gpt-ad-qoq0l5h1-0' class="size-265-100">
+  <script>
+//<![CDATA[
+
+    googletag.cmd.push(function() {
+      var slot = googletag.defineSlot('/7698369/Native_265x100XX', [265, 100], 'div-gpt-ad-qoq0l5h1-0').addService(googletag.pubads());
+
+      googletag.pubads().collapseEmptyDivs(true);
+        slot.setTargeting("ad-user", "kaitlyn-barrett");
+        slot.setTargeting("page-type", "highlight");
+        slot.setTargeting("ad-tags", "");
+        slot.setTargeting("ad-slug", "cloud-gate-chicago-2");
+        slot.setTargeting("ad-uid", "39261");
+        slot.setTargeting("ad-passion", "");
+        slot.setTargeting("ad-country", "united states");
+        slot.setTargeting("ad-region", "illinois");
+        slot.setTargeting("ad-city", "chicago");
+        slot.setTargeting("continent", "north america");
+        slot.setTargeting("ad-edit-re", "");
+
+      googletag.enableServices();
+      googletag.display('div-gpt-ad-qoq0l5h1-0');
+
+      googletag.pubads().set('Native_265x100XX', slot);
+    });
+
+//]]>
+</script></div>
+</div></li></ul></div></div><div class="place-experiences-section"><div class="experience-uploader-container"><a name="create-experience-app"></a><div id="create-experience-app"><div data-react-class="PlacePagesExperiences" data-react-props="{&quot;current_user_id&quot;:null}"></div></div></div></div></div><div class="span8 place-data-sidebar"><div class="meta-data-sidebar hotel-place"><header class="place-title-block"><div class="place-title">Cloud Gate</div></header><div class="trip-planner-buttons"><div data-react-class="AddToTripButton" data-react-props="{&quot;place&quot;:{&quot;id&quot;:39261,&quot;user_id&quot;:18722,&quot;slug&quot;:&quot;cloud-gate-chicago-2&quot;,&quot;created_at&quot;:&quot;2013-09-18T13:42:18.000-07:00&quot;,&quot;updated_at&quot;:&quot;2015-12-01T11:39:08.000-08:00&quot;,&quot;post_to_fb&quot;:null,&quot;comments_count&quot;:0,&quot;use_locations&quot;:true,&quot;likes_count&quot;:2,&quot;featured&quot;:null,&quot;shares_count&quot;:0,&quot;upload_method&quot;:&quot;web&quot;,&quot;quality_score&quot;:146.0,&quot;wanderlist_count&quot;:73,&quot;legacy_id&quot;:null,&quot;external_url&quot;:&quot;http://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park_-artarchitecture.html&quot;,&quot;state&quot;:&quot;public&quot;,&quot;card_cache_key&quot;:&quot;c836cafcfc85f1a58f27e4c8bc6acbde&quot;,&quot;locality_id&quot;:22,&quot;country_id&quot;:2,&quot;for_chase&quot;:false,&quot;hotel_id&quot;:null,&quot;ad_tag&quot;:null,&quot;primary_experience_id&quot;:39259,&quot;primary_image_id&quot;:77314,&quot;recommends_count&quot;:0,&quot;visits_count&quot;:0,&quot;primary_image_admin_id&quot;:null,&quot;experiences_count&quot;:1,&quot;place_city_id&quot;:785,&quot;place_country_id&quot;:2,&quot;place_region_id&quot;:6,&quot;included_in_guide&quot;:true,&quot;included_in_newsletter&quot;:false,&quot;owned_by_expert&quot;:true,&quot;owned_by_sponsor&quot;:false,&quot;also_included_in_geo&quot;:null,&quot;booking_link&quot;:null,&quot;booking_com_id&quot;:null},&quot;current_user_trip_plan&quot;:null,&quot;current_user_anonymous&quot;:true,&quot;current_user_wishlist_id&quot;:null,&quot;wanderlists&quot;:[],&quot;current_place_in_wishlist&quot;:null,&quot;current_place_in_any_wanderlists&quot;:false,&quot;current_user_wishlist_path&quot;:null}"></div><h2 class="location-name">Chicago, Illinois</h2></div><div class="recommended-place-links line-divider"></div><aside class="advertising-block"><div class="size-300-250"><div id='div-gpt-ad-zqwc1jsd-1' class='size-300-250'>
+  <script>
+//<![CDATA[
+
+    googletag.cmd.push(function() {
+      // setup DoubleClick object
+      var slot = googletag.defineSlot("/7698369/Promo_1", [300,250], 'div-gpt-ad-zqwc1jsd-1').addService(googletag.pubads());
+      googletag.pubads().collapseEmptyDivs(true);
+
+      if(typeof AFAR !== 'undefined' && typeof AFAR.ga !== 'undefined') {
+        slot.setTargeting('afar-ga-referrer', AFAR.ga.get('referrer'))
+        slot.setTargeting('afar-ga-page-type', AFAR.ga.get('dimension8'))
+      }
+        slot.setTargeting("ad-user", "kaitlyn-barrett");
+        slot.setTargeting("page-type", "highlight");
+        slot.setTargeting("ad-tags", "");
+        slot.setTargeting("ad-slug", "cloud-gate-chicago-2");
+        slot.setTargeting("ad-uid", "39261");
+        slot.setTargeting("ad-passion", "");
+        slot.setTargeting("ad-country", "united states");
+        slot.setTargeting("ad-region", "illinois");
+        slot.setTargeting("ad-city", "chicago");
+        slot.setTargeting("continent", "north america");
+        slot.setTargeting("ad-edit-re", "");
+      googletag.enableServices();
+      googletag.pubads().set("Promo_1", slot);
+
+      // utils
+      var updateTargeting = function(slot, newTargetHash) {
+        if (newTargetHash == null) {
+          var newTargetHash = JSON.parse('{\"ad-user\":\"kaitlyn-barrett\",\"page-type\":\"highlight\",\"ad-tags\":null,\"ad-slug\":\"cloud-gate-chicago-2\",\"ad-uid\":39261,\"ad-passion\":\"\",\"ad-country\":\"united states\",\"ad-region\":\"illinois\",\"ad-city\":\"chicago\",\"continent\":\"north america\",\"ad-edit-re\":null}');
+        } else {
+          var newTargetHash = newTargetHash;
+        }
+        slot.clearTargeting();
+        Object.keys(newTargetHash).forEach(function (targeting_var) {
+          slot.setTargeting(targeting_var, newTargetHash[targeting_var]);
+        });
+        // AFAR.AdSlots['div-gpt-ad-zqwc1jsd-1'][0] = slot;
+        return slot;
+      };
+
+      var refreshAd = function(newSlot) {
+        if (newSlot == null) {
+          var newSlot = slot
+        }
+        googletag.pubads().refresh([newSlot]);
+        return newSlot;
+      }
+
+      // make accessible to the page view outside of this ad partial
+      if (typeof AFAR === 'undefined') {
+        AFAR = {};
+      }
+      if (typeof AFAR.AdSlots === 'undefined') {
+        AFAR.AdSlots = {};
+      }
+      AFAR.AdSlots['div-gpt-ad-zqwc1jsd-1'] = [slot, updateTargeting, false, refreshAd];
+
+      var AFAR_offset = function(el) {
+        var offset = {};
+        var rect = el.getBoundingClientRect();
+        if (rect != undefined && rect != null) {
+          offset['top'] = rect.top + document.body.scrollTop;
+          offset['left'] = rect.left + document.body.scrollLeft;
+        }
+        return offset;
+      };
+
+      var isOnOrInside = function(subject_dimensions, anchor_dimensions, thresh) {
+        offset = (subject_dimensions['bottom'] - subject_dimensions['top']) * thresh * 0.01;
+        return ((subject_dimensions['bottom'] - anchor_dimensions['top']) >= offset) && ((anchor_dimensions['bottom'] - subject_dimensions['top']) >= offset);
+      };
+
+
+      // detect scroll visibility based on parent node (OR supplied element) and display ad when applicable
+      var loadWhenVisibleTimer = 0;
+      var loadWhenVisible = function() {
+        if (!AFAR.AdSlots['div-gpt-ad-zqwc1jsd-1'][2]) {
+            var $this_ad = document.getElementById(slot.getSlotElementId()).parentNode;
+          var this_ad_top = AFAR_offset($this_ad).top
+          var this_ad_bottom = this_ad_top + $this_ad.offsetHeight;
+          var windowTop = document.body.scrollTop;
+          var windowBottom = windowTop + window.innerHeight
+
+          // easier to read
+          var ad_dimensions = {
+            top: this_ad_top,
+            bottom: this_ad_bottom
+          }
+          var window_dimensions = {
+            top: windowTop,
+            bottom: windowBottom
+          }
+
+          if (isOnOrInside(ad_dimensions, window_dimensions, 100)) {
+            googletag.display('div-gpt-ad-zqwc1jsd-1');
+            AFAR.AdSlots['div-gpt-ad-zqwc1jsd-1'][2] = true;
+            // stop all manual visibility calculations from this callback
+            window.clearInterval(loadWhenVisibleTimer);
+          }
+        }
+      };
+      loadWhenVisibleTimer = window.setInterval(loadWhenVisible, 1000);
+    });
+
+//]]>
+</script></div></div></aside><div class="more-information-right-rail"><div class="content-box closed"><ul class="meta-data-list"><li><div class="map-directions-container line-divider"><div class="collapsable"><div class="collapsable-control header"><div class="primary-row"><div class="glyphicon icon-afar-places map-arrow-grey"></div><h4 class="text-label">map and directions</h4><div class="glyphicon icon-afar-places"></div></div><div class="place-address place-address-version-a box-padding">Chicago<br/> IL 60601, USA</div></div><div class="content-box"><div class="map map-version-a"><a data-google-action="Click Map Thumbnail" data-google-category="Place Detail Page" data-google-label="" href="/web/20160613093051/http://www.google.com/maps?source=uds&amp;q=41.882668,-87.62330400000002" target="_blank"><img alt="Staticmap?key=aizasycfr xpzmln9k22jlspjbt0xbwg3gq2qi0&amp;center=41.882668,  87.62330400000002&amp;size=312x200&amp;sensor=false&amp;markers=size: small|color:red|41.882668,  87" class="google-map-highlight_detail" src="/web/20160613093051im_/http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCfR-xPZmlN9K22jLspjBt0xbWG3gq2QI0&amp;center=41.882668,%20-87.62330400000002&amp;size=312x200&amp;sensor=false&amp;markers=size:%20small|color:red|41.882668,%20-87.62330400000002&amp;zoom=13" /></a><div class="map-details map-details-version-a"><ul class="map-links unstyled"><li><a data-google-action="Click View Larger Map" data-google-category="Place Page" data-google-label="" href="/web/20160613093051/http://www.google.com/maps?source=uds&amp;q=41.882668,-87.62330400000002" rel="nofollow" target="_blank">View Larger Map</a></li><li class="separator">|</li><li><a data-google-action="Click Get Directions" data-google-category="Place Page" data-google-label="" href="/web/20160613093051/http://www.google.com/maps?saddr=&amp;daddr=201%20E.%20Randolph%20St,%20Chicago,%20Illinois" rel="nofollow" target="_blank">Directions</a></li></ul></div></div></div></div></div></li><li><div class="header closed"><div class="primary-row"><div class="glyphicon icon-afar-places chain-link-grey"></div><div class="text-label"><a class="external-url" data-google-action="Clicked external URL" data-google-category="Place Detail Page" data-google-label="http://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park_-artarchitecture.html" href="/web/20160613093051/http://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park_-artarchitecture.html" rel="nofollow" target="new">http://www.cityofchicago.or...</a></div></div></div></li><li><a class="pad"><span class="glyphicon icon-afar-places bookmark-sash"></span><span class="text-label">* * * * </span></a></li><li><div class="pad"><span class="glyphicon icon-afar-places clock"></span><table class="opening-hours"><tr><th>Mon</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Tue</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Wed</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Thur</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Fri</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Sat</th><td class="printed_hours">6am - 11pm</td></tr><tr><th>Sun</th><td class="printed_hours">6am - 11pm</td></tr></table></div></li></ul></div></div><div class="js-recommendations-places"></div><aside class="advertising-block"><div class="size-300-600"><div id='div-gpt-ad-nq659y19-0' class="size-300-600">
+  <script>
+//<![CDATA[
+
+    googletag.cmd.push(function() {
+      var slot = googletag.defineSlot('/7698369/Promo_300x600', [300, 600], 'div-gpt-ad-nq659y19-0').addService(googletag.pubads());
+
+      googletag.pubads().collapseEmptyDivs(true);
+        slot.setTargeting("ad-user", "kaitlyn-barrett");
+        slot.setTargeting("page-type", "highlight");
+        slot.setTargeting("ad-tags", "");
+        slot.setTargeting("ad-slug", "cloud-gate-chicago-2");
+        slot.setTargeting("ad-uid", "39261");
+        slot.setTargeting("ad-passion", "");
+        slot.setTargeting("ad-country", "united states");
+        slot.setTargeting("ad-region", "illinois");
+        slot.setTargeting("ad-city", "chicago");
+        slot.setTargeting("continent", "north america");
+        slot.setTargeting("ad-edit-re", "");
+
+      googletag.enableServices();
+      googletag.pubads().set('Promo_300x600', slot);
+
+
+      var updateTargeting =  function(slot, newTargetHash) {
+        slot.clearTargeting()
+        Object.keys(newTargetHash).forEach(function (targeting_var) {
+          slot.setTargeting(targeting_var, newTargetHash[targeting_var]);
+        })
+        return slot;
+      };
+
+      if (typeof AFAR === 'undefined') {
+        AFAR = {};
+      }
+      if (typeof AFAR.AdSlots === 'undefined') {
+        AFAR.AdSlots = {};
+      }
+
+      // make accessible to the page view outside of this ad partial
+      AFAR.AdSlots['div-gpt-ad-nq659y19-0'] = [slot, updateTargeting];
+
+      var AFAR_offset = function(el) {
+        var offset = {};
+        var rect = el.getBoundingClientRect();
+        if (rect != undefined && rect != null) {
+          offset['top'] = rect.top + document.body.scrollTop;
+          offset['left'] = rect.left + document.body.scrollLeft;
+        }
+        return  offset;
+      }
+
+
+        googletag.display('div-gpt-ad-nq659y19-0');
+    });
+
+//]]>
+</script></div>
+</div></aside><aside class="social-block"><div class="social-widget"><div class="social-icon-row"><div class="title">Follow AFAR</div><div class="social-icons"><ul><li><a class="glyphicon icon-afar-places social med facebook" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="Facebook" href="/web/20160613093051/http://www.facebook.com/AfarMedia" target="_blank"></a></li><li><a class="glyphicon icon-afar-places social med twitter" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="Twitter" href="/web/20160613093051/http://twitter.com/#!/AFARmedia" target="_blank"></a></li><li><a class="glyphicon icon-afar-places social med instagram" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="Instagram" href="/web/20160613093051/http://instagram.com/afarmedia" target="_blank"></a></li><li><a class="glyphicon icon-afar-places social med pinterest" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="Pinterest" href="/web/20160613093051/http://pinterest.com/afarmedia/" target="_blank"></a></li><li><a class="glyphicon icon-afar-places social med google-plus" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="Google Plus" href="/web/20160613093051/https://plus.google.com/114128560017159720747/" target="_blank"></a></li><li><a class="glyphicon icon-afar-places social med rss" data-google-action="Clicked Follow AFAR Social Buttons" data-google-label="RSS" href="/web/20160613093051/http://feeds.feedburner.com/AfarMagazine" target="_blank"></a></li><li><a class="unauthenticated_email_share" data-google-action="Clicked Follow AFAR Social Buttons" data-google-category="Place Page" data-google-label="Email" href="mailto:?body=Check%20out%20this%20post%20on%20AFAR%20-%20http%3A%2F%2Fwww.afar.com%2Fplaces%2Fcloud-gate-chicago-2%3Futm_campaign%3Dss_em%26context%3Dtravel-guide%0A%0AAFAR.com%0AWhere%20travel%20can%20take%20you%0AFollow%20us%20on%20Twitter%3A%20http%3A%2F%2Ftwitter.com%2Fafarmedia%0AFollow%20us%20on%20Facebook%3A%20http%3A%2F%2Fwww.facebook.com%2FAfarMedia&amp;subject=AFAR%3A%20Cloud%20Gate" title="Share By Email"><i class='glyphicon icon-afar-places social med email'></i><span class='social-text-label'></span></a></li></ul></div></div><div class="call-to-action-links"><div class="print-magazine"><a data-google-action="Subscribe" data-google-label="{:target=&gt;&quot;_blank&quot;}" href="/web/20160613093051/https://w1.buysub.com/pubs/AF/AFA/AFA_subform_US2012_SubSave_nav.jsp?cds_page_id=165259"><span class="glyphicon icon-afar-places magazine"></span><span class="text-label">get the magazine</span></a><span class="link-icon-chevron">></span></div><div class="mobile-app"><a data-google-action="Mobile" data-google-label="{:target=&gt;&quot;_blank&quot;}" href="/web/20160613093051/http://itunes.apple.com/us/app/afar-mobile-app/id496426792?mt=8&amp;uo=6&amp;at=1l3vsrU&amp;pt=353104"><span class="glyphicon icon-afar-places smartphone"></span><span class="text-label">get the mobile app</span></a><span class="link-icon-chevron">></span></div></div><div class="newsletter-form-container"><form accept-charset="UTF-8" action="/web/20160613093051/http://www.afar.com/newsletter/sign_up" class="newsletter-signup-form" format="json" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QFZ2MhTk6L7lw+oQeFNRocgVzHw3BzXudiNlYKc55go=" /></div><div class="input-container"><input class="signupfield has_placeholder email-address" id="signup_email" name="signup_email" placeholder="Your email address" type="email" value="" /><button class="submit-btn" type="submit">submit</button></div><div class="error-box"></div><div class="spinner hide"><img alt="Animated dots" src="/web/20160613093051im_/http://media.afar.com/assets/animated-dots-97656852abb70b74c011bde785a692a5.gif" /></div><div class="checkboxes input-container"><input checked="checked" class="weekly-wander" id="afar_announcements" name="afar_announcements" type="checkbox" value="1" /><label for="weekly-wander">Weekly Wander Newsletters</label><input checked="checked" class="products-services" id="third_party_partners" name="third_party_partners" type="checkbox" value="1" /><label for="products-services">Third party travel products and services</label></div></form></div></div></aside></div></div></article></div><div class="modal hide fade" id="larger-image-modal" tabindex="-1"><button aria-hidden="true" class="modal-close" data-dismiss="modal">x</button></div></div></div><div id="foot"><div class="container"><div class="free-trial-issue-container"><a data-google-action="Clicked Get Magazine" data-google-category="Footer" data-google-label="Magazine Trial" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=139792"><img alt="Afar mag cover" height="92" src="/web/20160613093051im_/http://media.afar.com/assets/afar_mag_cover-0384ab661427269734ff5c195d1be84b.jpg" width="72" /><div class="free-trial-issue">Get a FREE trial issue of AFAR magazine.</div></a><form action="/web/20160613093051/https://w1.buysub.com/servlet/PrePopGateway?cds_mag_code=AFA&amp;cds_page_id=138378" method="post"><input id="cds_name" name="cds_name" onblur="if(value=='') value = 'Full Name'" onfocus="if(this.value=='Full Name')this.value='';" placeholder="Full Name" style="width:159px; margin-bottom: 5px; padding: 3px; padding-left: 7px;" type="text" value="Full Name" /><input id="cds_address_1" name="cds_address_1" onblur="if(value=='') value = 'Address'" onfocus="if(this.value=='Address')this.value='';" placeholder="Address" style="width:70px; margin-right: 5px; margin-bottom: 5px; padding: 3px; padding-left: 7px;" type="text" value="Address" /><input id="cds_city" name="cds_city" onblur="if(value=='') value = 'City'" onfocus="if(this.value=='City')this.value='';" placeholder="City" style="width:70px; margin-bottom: 5px; padding: 3px; padding-left: 7px;" type="text" value="City" /><select id="cds_state" name="cds_state"><option value="">State</option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option></select><input class="zip" id="cds_zip" name="cds_zip" onblur="if(value=='') value = 'ZIP Code'" onfocus="if(this.value=='ZIP Code')this.value='';" placeholder="ZIP Code" style="width:62px;margin-right:5px; margin-bottom: 5px; padding: 3px; padding-left: 7px;" type="text" value="ZIP Code" /><input class="btn" name="Submit" type="submit" value="GO!" /></form></div><div class="stay-connected"><a class="image" data-google-action="Clicked Social Stay Connected Links" data-google-category="Footer" data-google-label="Facebook" href="/web/20160613093051/http://www.facebook.com/AfarMedia" id="facebook" target="_blank"> Follow us on Facebook</a><a class="image" data-google-action="Clicked Social Stay Connected Links" data-google-category="Footer" data-google-label="Twitter" href="/web/20160613093051/http://twitter.com/#!/AFARmedia" id="twitter" target="_blank">Follow us on Twitter</a><a class="image" data-google-action="Clicked Social Stay Connected Links" data-google-category="Footer" data-google-label="Pinterest" href="/web/20160613093051/http://pinterest.com/afarmedia/" id="pinterest" target="_blank">Follow us on Pinterest</a><a class="image" data-google-action="Clicked Social Stay Connected Links" data-google-category="Footer" data-google-label="Google+" href="/web/20160613093051/https://plus.google.com/114128560017159720747/" id="gplus" rel="publisher" target="_blank">Find us on Google+</a><a class="image" data-google-action="Clicked Social Stay Connected Links" data-google-category="Footer" href="/web/20160613093051/http://afarhighlights.tumblr.com/" id="tumblr" target="_blank">Follow us on Tumblr</a><a class="image" data-action="Clicked Footer" data-label="RSS" href="/web/20160613093051/http://feeds.feedburner.com/AfarMagazine" id="rss" target="_blank">Follow our RSS Feed</a><h4>Stay connected</h4></div><div class="mobile"><a data-google-action="Clicked Get App" data-google-category="Footer" data-google-label="Mobile App" href="/web/20160613093051/http://www.afar.com/mobile-app"><img alt="Phones promo" height="100" src="/web/20160613093051im_/http://media.afar.com/assets/promo/phones_promo-34b2776a2f4bd8a5019dd44a90705617.png" width="86" /><div class="mobile-links"><div>Get the AFAR mobile app</div><span>for iPhone and Android</span></div></a></div><div id="lower"><ul><li><a data-google-action="Clicked Guidelines" data-google-category="Footer" data-google-label="Guidelines" href="/web/20160613093051/http://about.afar.com/about/guidelines-and-terms/community-guidelines/">Guidelines</a></li><li><a class="faq-link" data-google-action="Clicked FAQ" data-google-category="Footer" data-google-label="FAQ" href="/web/20160613093051/http://about.afar.com/about/faq/">FAQ</a></li><li><a data-google-action="Clicked Advertise" data-google-category="Footer" data-google-label="Advertise" href="/web/20160613093051/http://about.afar.com/about/advertise/afar-at-a-glance">Advertise</a></li><li><a data-google-action="Clicked Jobs" data-google-category="Footer" data-google-label="Jobs" href="/web/20160613093051/http://about.afar.com/about/jobs/">Jobs</a></li><li><a data-google-action="Clicked Press" data-google-category="Footer" data-google-label="Press" href="/web/20160613093051/http://about.afar.com/about/press/afar-in-the-news/">Press</a></li><li><a data-google-action="Clicked About Us" data-google-category="Footer" data-google-label="About Us" href="/web/20160613093051/http://about.afar.com/about/afar/mission/">About Us</a></li><li><a data-google-action="Clicked Local Experts" data-google-category="Footer" data-google-label="Local Experts" href="/web/20160613093051/http://www.afar.com/local_experts">Local Experts</a></li><li><a data-google-action="Clicked Ambassadors" data-google-category="Footer" data-google-label="Ambassadors" href="/web/20160613093051/http://www.afar.com/ambassadors">Ambassadors</a></li><li><a data-google-action="Clicked TAC" data-google-category="Footer" data-google-label="TAC" href="/web/20160613093051/http://about.afar.com/about/tac/">TAC</a></li></ul><ul class="afar-experiences-foundation"><li><a class="afar-experiences" data-google-action="Clicked AFAR Experiences" data-google-category="Footer" data-google-label="AFAR Expereiences" href="/web/20160613093051/http://afarexperiences.com/?utm_source=header&amp;utm_medium=link&amp;utm_campaign=experiences">AFAR EXPERIENCES</a></li><li><a class="afar-foundation" data-google-action="Clicked AFAR Foundation" data-google-category="Footer" data-google-label="AFAR Foundation" href="/web/20160613093051/http://afarfoundation.org/">AFAR FOUNDATION</a></li></ul><ul class="magazine-customer-service"><li>Magazine Customer Service:</li><li><a data-google-action="Clicked Subscribe" data-google-category="Footer" data-google-label="Subscribe" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=138919">Subscribe</a></li><li><a data-google-action="Clicked Give a Gift" data-google-category="Footer" data-google-label="Give a Gift" href="/web/20160613093051/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=AFA&amp;cds_page_id=138920">Give a Gift</a></li><li><a data-google-action="Clicked Customer Service FAQ" data-google-category="Footer" data-google-label="Customer Service FAQ" href="/web/20160613093051/http://about.afar.com/about/faq/subscriptions/">Customer Service FAQ</a></li><li><a data-google-action="Clicked Access Your Subscription" data-google-category="Footer" data-google-label="Access Your Subscription" href="/web/20160613093051/https://w1.buysub.com/pubs/AF/AFA/login.jsp?cds_page_id=63692">Access Your Subscription</a></li></ul></div><p class="mark">&copy; 2016 AFAR Media</p></div></div><div class="subscription-form version-d modal hide" tabindex="-1"><div class="header-row"><button aria-hidden="true" class="modal-close" data-dismiss="modal">x</button></div><form action="/web/20160613093051/https://w1.buysub.com/servlet/PrePopGateway?cds_mag_code=AFA&amp;cds_page_id=188732" method="post"><div class="form-field-container"><div class="header"><div class="plain-text">Get a &nbsp;</div><span class="highlight-text">free trial issue &nbsp;</span><div class="plain-text">of AFAR magazine!</div></div><div class="form-fields"><input id="cds_name" name="cds_name" onblur="if(value=='') value = 'Full Name'" onfocus="if(this.value=='Full Name')this.value='';" placeholder="Full Name" type="text" value="Full Name" /><input id="cds_address_1" name="cds_address_1" onblur="if(value=='') value = 'Address'" onfocus="if(this.value=='Address')this.value='';" placeholder="Address" type="text" value="Address" /><input id="cds_address_2" name="cds_address_2" onblur="if(value=='') value = 'Address 2'" onfocus="if(this.value=='Address 2')this.value='';" placeholder="Address 2" type="text" value="Address 2" /><input id="cds_city" name="cds_city" onblur="if(value=='') value = 'City'" onfocus="if(this.value=='City')this.value='';" placeholder="City" type="text" value="City" /><select id="cds_state" name="cds_state"><option value="">State</option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option></select><input class="zip" id="cds_zip" name="cds_zip" onblur="if(value=='') value = 'ZIP Code'" onfocus="if(this.value=='ZIP Code')this.value='';" placeholder="ZIP Code" type="text" value="ZIP Code" /><div class="submit-btn-container"><input class="btn submit-btn" name="Submit" type="submit" value="Submit Order" /></div></div></div><div class="magazine-cover-container"><img alt="Subscription popup cover 2016" class="magazine-cover" src="/web/20160613093051im_/http://media.afar.com/assets/subscription-popup-cover-2016-1c3794df2621aa0ee69048ec4c12dbca.jpg" /><div class="promo-blurb">Yes! Send me a FREE TRIAL issue of AFAR. If I like it I'll pay only $20 for one year (6 issues in all).</div></div></form></div><script type="text/javascript">// add Moat Analytics JS
+(function(document){
+  var moatUrl = (function(){
+    if(false == true && false == true){
+      return "/web/20160613093051/http://s.moatads.com/afar330sVwK91/moatcontent.js#moatClientLevel1=User&moatClientLevel2=AFAR&zMoatPageType=PLACE"
+    } else if(true == true){
+      return "/web/20160613093051/http://s.moatads.com/afar330sVwK91/moatcontent.js#moatClientLevel1=AFAR+Local+Expert&moatClientLevel2=kaitlyn-barrett&zMoatPageType=PLACE&zMoatAdCity=Chicago%2C+Illinois"
+    } else if(false == true){
+      return "/web/20160613093051/http://s.moatads.com/afar330sVwK91/moatcontent.js#moatClientLevel1=User&moatClientLevel2=AFAR&zMoatPageType=PLACE"
+    } else if(false == true){
+      return "/web/20160613093051/http://s.moatads.com/afar330sVwK91/moatcontent.js#zMoatPageType=PLACE&zMoatAdCity="
+    } else {
+     return "/web/20160613093051/http://s.moatads.com/afar330sVwK91/moatcontent.js#zMoatPageType=PLACE"
+    }
+  })();
+  var a = document
+  var b = a.createElement("script")
+  a = a.getElementsByTagName("script")[0]
+  b.type = "text/javascript"
+  b.async = !0
+  b.src = moatUrl
+  a.parentNode.insertBefore(b, a)
+})(document);</script><script type="text/javascript" src="/web/20160613093051js_/http://tag.yieldoptimizer.com/ps/ps?t=s&amp;p=2440&amp;sg=y&amp;pg=ot&amp;"></script><script>
+  (function() {
+    var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+    s.type='text/javascript';
+    s.async=true;
+    s.src=sc+'s.dpmsrv.com/dpm_f47aea8bdcbd1179a1f3d91e6afeeb259488f2d1.min.js';
+    h.appendChild(s);
+  })();
+</script>
+
+<script src="/web/20160613093051js_/http://media.afar.com/assets/application-dc0b5233baa4006430ec66f64bff7562.js"></script>
+
+  <div id="fb-root"></div>
+  <script>
+    $(document).ready(function () {
+      window.facebookIsLoaded = false;
+      window.fbAsyncInit = function () {
+        // In order to interact with the FB API, it must first be loaded
+        // unforunately, there are no load events, or callbacks. But,
+        // fortunately, the xfbml render event always fires as the page
+        //  is parsed, therefore, we can infer that FB.api is ready.
+        FB.Event.subscribe('xfbml.render', function (response) {
+          window.facebookIsLoaded = true;
+        });
+        FB.init({
+          appId: '130866636933594',
+          version: 'v2.0',
+          status: true,
+          cookie: true,
+          xfbml: true,
+          oauth: true
+        });
+      };
+
+
+
+      var e = document.createElement('script'); e.async = true;
+      e.src = document.location.protocol + '//connect.facebook.com/en_US/sdk.js';
+      document.getElementById('fb-root').appendChild(e);
+
+
+
+      var gplusScript = document.createElement('script');
+      gplusScript.async = true;
+      gplusScript.src = document.location.protocol + '//apis.google.com/js/plusone.js?onload=null';
+      document.body.appendChild(gplusScript);
+
+
+
+      window.twttr = (function (d, s, id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = {
+                  _e: [], ready: function (f) {
+                    t._e.push(f)
+                  }
+                });
+      }(document, "script", "twitter-wjs"));
+    });
+  </script>
+
+
+
+<script>
+  $(document).ready(function () {
+    if(false) {
+      $('.js-sticky-box-leaderboard-row').AfarStickyTimer(12000, 0);
+    }
+  });
+</script>
+
+<script type="text/javascript">$(function(){
+  $('#new-social-tools-sticky ul').AfarSticky({paddingTop: 157, paddingBottom: 0});
+  AFAR.Places.init(39261);
+  context = "travel-guide"
+  contextId = ""
+  userLoggedIn = false
+  admin = false
+  hollandAdmin = false
+  chaseAdmin = false
+  westinAdmin = false
+  texasAdmin = false
+  leadingHotelsAdmin = false
+  videoUrl = ''
+})</script>
+
+<script type="text/javascript">window.AFAR === undefined ? window.AFAR = {} : null;
+window.AFAR.subscription === undefined ? window.AFAR.subscription = {} : null;
+
+AFAR.subscription.chooseDisplaySubscribePopup = function(selector) {
+  var canShowPopup = function() {
+    return (free_referral &&
+      (typeof disable_popup === 'undefined' || disable_popup != true) &&
+      (now < blackoutStart || now > blackoutEnd) &&
+      ($.cookie('subscription_pop_up') ===  "1"))
+  };
+  var $window, now, ref, free_referral, blackoutStart, blackoutEnd;
+  var $selector = selector;
+  if ($selector == null) {
+    $selector = '#subscription-modal'
+  }
+  $window = $(window);
+  var subscriptionModal = $($selector);
+  free_referral = true;
+  ref = document.referrer;
+  if(ref.match("http://(paid\.|www\.)?outbrain.com(/)?") || ref.match("http://(api\.|www\.|trc\.|.*\.trc\.)?taboola.com(/)?")) {
+    free_referral = false;
+  }
+  now = new Date();
+  blackoutStart = new Date(1416200400000); // '2014-11-17 00:00:00 EST' in seconds
+  blackoutEnd = new Date(1420092000000); // '2015-01-01 01:00:00 EST' in seconds
+  if(canShowPopup.call(this)) {
+    if($window < subscriptionModal.outerHeight()) {
+      var style = { top: $window.scrollTop() + 20}
+    } else {
+      var style = { top: $window.scrollTop() + ($window.height() / 2) - (subscriptionModal.outerHeight() / 2) }
+    }
+
+    subscriptionModal.modal("show").css(style).css({
+      'margin-left': -(subscriptionModal.outerWidth() / 2)
+    }).on('hidden', function() {
+      $.get('/close_cookie_tooltip/subscription_pop_up');
+    });
+  } else {
+    console.log("scrubbing...")
+    subscriptionModal.children().remove();
+  }
+};
+
+
+(function(window) {
+  AFAR.subscription.chooseDisplaySubscribePopup('.subscription-form.version-d');
+})(window);</script>
+<!-- DEPENDENCIES: jQuery, Google Analytics -->
+<script>
+(function($) {
+  setTimeout(function(){
+    if ($('div[id^=google_ads_iframe_] iframe:visible').length === 0) {
+      $.ajax({
+        url: '/track',
+        method: 'PUT',
+        data: {
+          authenticity_token: $('[name="csrf-token"]').attr('content'),
+          tracking_event_type: 'ad_block_enabled_via_server',
+          body_google_category: 'Place Page'
+        }
+      })
+
+      if (typeof AFAR !== 'undefined' && typeof AFAR.ga !== 'undefined') {
+        AFAR.ga.set('dimension9', 'Ad Blocker Detected', '3');
+        AFAR.ga.send('event', 'Place Page', 'ad_block_enabled_via_client');
+      }
+    }
+  }, 5000)
+})(jQuery);
+</script></body></html>

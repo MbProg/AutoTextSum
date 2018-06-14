@@ -1,0 +1,72 @@
+Regents of Univ. of California v. Bakke
+438 U.S. 265 (1978)
+U.S. Supreme Court
+Regents of Univ. of California v. Bakke, 438 U.S. 265 (1978)
+Regents of the University of California v. Bakke
+No. 7811
+Argued October 12, 1977
+Decided June 28, 1978
+438 U.S. 265
+Syllabus
+The Medical School of the University of California at Davis (hereinafter Davis) had two admissions programs for the entering class of 100 students -- the regular admissions program and the special admissions program.
+Under the regular procedure, candidates whose overall undergraduate grade point averages fell below 2.5 on a scale of 4.0 were summarily rejected.
+About one out of six applicants was then given an interview, following which he was rated on a scale of 1 to 100 by each of the committee members (five in 1973 and six in 1974), his rating being based on the interviewers' summaries, his overall grade point average, his science courses grade point average, his Medical College Admissions Test (MCAT) scores, letters of recommendation, extracurricular activities, and other biographical data, all of which resulted in a total "benchmark score."
+The full admissions committee then made offers of admission on the basis of their review of the applicant's file and his score, considering and acting upon applications as they were received.
+The committee chairman was responsible for placing names on the waiting list and had discretion to include persons with "special skills."
+A separate committee, a majority of whom were members of minority groups, operated the special admissions program.
+The 1973 and 1974 application forms, respectively, asked candidates whether they wished to be considered as "economically and/or educationally disadvantaged" applicants and members of a "minority group" (blacks, Chicanos, Asians, American Indians).
+If an applicant of a minority group was found to be "disadvantaged," he would be rated in a manner similar to the one employed by the general admissions committee.
+Special candidates, however, did not have to meet the 2.5 grade point cutoff and were not ranked against candidates in the general admissions process.
+About one-fifth of the special applicants were invited for interviews in 1973 and 1974, following which they were given benchmark scores, and the top choices were then given to the general admissions committee, which could reject special candidates for failure to meet course requirements or other specific deficiencies.
+The special committee continued to recommend candidates until 16 special admission selections had been made.
+During a four-year period, 63 minority
+Page 438 U. S. 266
+students were admitted to Davis under the special program and 44 under the general program.
+No disadvantaged whites were admitted under the special program, though many applied.
+Respondent, a white male, applied to Davis in 1973 and 1974, in both years being considered only under the general admissions program.
+Though he had a 468 out of 500 score in 1973, he was rejected, since no general applicants with scores less than 470 were being accepted after respondent's application, which was filed late in the year, had been processed and completed.
+At that time, four special admission slots were still unfilled.
+In 1974 respondent applied early, and though he had a total score of 549 out of 600, he was again rejected.
+In neither year was his name placed on the discretionary waiting list.
+In both years, special applicants were admitted with significantly lower scores than respondent's.
+After his second rejection, respondent filed this action in state court for mandatory, injunctive, and declaratory relief to compel his admission to Davis, alleging that the special admissions program operated to exclude him on the basis of his race in violation of the Equal Protection Clause of the Fourteenth Amendment, a provision of the California Constitution, and § 601 of Title VI of the Civil Rights Act of 1964, which provides, inter alia, that no person shall on the ground of race or color be excluded from participating in any program receiving federal financial assistance.
+Petitioner cross-claimed for a declaration that its special admissions program was lawful.
+The trial court found that the special program operated as a racial quota, because minority applicants in that program were rated only against one another, and 16 places in the class of 100 were reserved for them.
+Declaring that petitioner could not take race into account in making admissions decisions, the program was held to violate the Federal and State Constitutions and Title VI.
+Respondent's admission was not ordered, however, for lack of proof that he would have been admitted but for the special program.
+The California Supreme Court, applying a strict scrutiny standard, concluded that the special admissions program was not the least intrusive means of achieving the goals of the admittedly compelling state interests of integrating the medical profession and increasing the number of doctors willing to serve minority patients.
+Without passing on the state constitutional or federal statutory grounds, the court held that petitioner's special admissions program violated the Equal Protection Clause.
+Since petitioner could not satisfy its burden of demonstrating that respondent, absent the special program, would not have been admitted, the court ordered his admission to Davis.
+Held: The judgment below is affirmed insofar as it orders respondent's admission to Davis and invalidates petitioner's special admissions program,
+Page 438 U. S. 267
+but is reversed insofar as it prohibits petitioner from taking race into account as a factor in its future admissions decisions.
+18 Cal.3d 34, 553 P.2d 1152, affirmed in part and reversed in part.
+MR. JUSTICE POWELL concluded:
+1.
+Title VI proscribes only those racial classifications that would violate the Equal Protection Clause if employed by a State or its agencies.
+Pp. 438 U. S. 281-287.
+2.
+Racial and ethnic classifications of any sort are inherently suspect and call for the most exacting judicial scrutiny.
+While the goal of achieving a diverse student body is sufficiently compelling to justify consideration of race in admissions decisions under some circumstances, petitioner's special admissions program, which forecloses consideration to persons like respondent, is unnecessary to the achievement of this compelling goal, and therefore invalid under the Equal Protection Clause.
+Pp. 438 U. S. 287-320.
+3.
+Since petitioner could not satisfy its burden of proving that respondent would not have been admitted even if there had been no special admissions program, he must be admitted.
+P. 438 U. S. 320.
+MR. JUSTICE BRENNAN, MR. JUSTICE WHITE, MR. JUSTICE MARSHALL, and MR. JUSTICE BLACKMUN concluded:
+1.
+Title VI proscribes only those racial classifications that would violate the Equal Protection Clause if employed by a State or its agencies.
+Pp. 438 U. S. 328-355.
+2.
+Racial classifications call for strict judicial scrutiny.
+Nonetheless, the purpose of overcoming substantial, chronic minority underrepresentation in the medical profession is sufficiently important to justify petitioner's remedial use of race.
+Thus, the judgment below must be reversed in that it prohibits race from being used as a factor in university admissions.
+Pp. 438 U. S. 355-379.
+MR. JUSTICE STEVENS, joined by THE CHIEF JUSTICE, MR. JUSTICE STEWART, and MR. JUSTICE REHNQUIST, being of the view that whether race can ever be a factor in an admissions policy is not an issue here; that Title VI applies; and that respondent was excluded from Davis in violation of Title VI, concurs in the Court's judgment insofar as it affirms the judgment of the court below ordering respondent admitted to Davis.
+Pp. 438 U. S. 408-421.
+POWELL, J., announced the Court's judgment and filed an opinion expressing his views of the case, in Parts I, III-A, and V-C of which WHITE, J., joined; and in Parts I and V-C of which BRENNAN, MARSHALL, and BLACKMUN, JJ., joined.
+BRENNAN, WHITE, MARSHALL, and BLACKMUN,
+Page 438 U. S. 268
+JJ., filed an opinion concurring in the judgment in part and dissenting in part, post, p. 438 U. S. 324.
+WHITE, J., post, p. 438 U. S. 379, MARSHALL, J., post, p. 438 U. S. 387, and BLACKMUN, J., post, p. 438 U. S. 402, filed separate opinions.
+STEVENS, J., filed an opinion concurring in the judgment in part and dissenting in part, in which BURGER, C.J., and STEWART and REHNQUIST, JJ., joined, post, p. 438 U. S. 408.
+Page 438 U. S. 269

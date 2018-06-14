@@ -1,0 +1,79 @@
+Supermarkets and Fuel Discounts: Should Australia Err on the Side of Caution?
+By Maja Cvjetanovic
+Maja Cvjetanovic is a senior at the University of Queensland in Australia studying law.
+Coles and Woolworths—the major Australian supermarket chains—have teamed up with certain gasoline outlets to offer their customers discounts on gasoline.
+The discount scheme is not uncommon amongst other jurisdictions, including the United States and various European countries [1].
+Several US states in particular have responded to the initiative with the so-called ‘sales-below-cost’ laws [2].
+The discount works after a customer spends a "minimum" (typically $30) on their grocery shopping at a supermarket chain.
+The customer then presents the receipt to the relevant gasoline station in order to receive a discount of 8 cents per liter, for example.
+Academic literature defines this conduct as "bundling," which occurs when one firm offers a discount to its customers, conditional upon the purchase of another product or a particular volume of another product [3].
+The conduct can be contrasted to its close counterpart, "tying," in the sense that the latter practice occurs when the two products are tied together, giving the customer no choice but to purchases both items [4].
+This practice is widespread among many different industries; some commonly cited examples include the bundling of hotel packages at discounted rates and home telecommunication plans [5].
+A seemingly innocuous, if not beneficial, exercise has given rise to much controversy.
+Most market practices engaged in by market leaders are seen through a special lens of skepticism [6].
+In the context of product bundling, the principal concerns include the foreclosure of markets, which is said to occur where the dominant firm diminishes pre-existing competition in the field it seeks to bundles.
+This could occur if the market was foreclosed in the fuel or grocery sector, for example.
+Another concern is heightened barriers to entry, which occur to deter new market entrants from gaining a competitive edge over the incumbent [7].
+The government agency responsible for investigating anti-competitive conduct, the Australian Competition and Consumer Commission (ACCC) is principally concerned with the long-term effects of such discount programs, having received many complaints from rival supermarket and gasoline outlet chains [8].
+Australasian Convenience and Petroleum Marketers Association Chief Executive cites the more generous discounts of 45 cents per liter as adding stress to the harsh economic situation facing independent gasoline retailers [9].
+Without reaching a definitive conclusion on whether the discounts are anti-competitive under the current law, the ACCC has entered into an " undertaking " with the supermarket chains.
+Notably, the two supermarket retailers have agreed not to exceed a 4 cents per liter discount offered to supermarket customers.
+All additional discounts offered had to be funded through the fuel retailing operations, including their associated convenience stores [10].
+Although the undertaking commenced in January 2014, Woolworths and Coles increased discounts: Woolworths offered an eight cent per liter discount that came from and was cross-subsidized by supermarket purchases while Coles offered a 14 cents per liter discount to customers who had made a "qualifying" supermarket purchase [11].
+That is, Coles customers were given an additional 10 cent per liter discount when they spent around $20 on grocery purchases at the relevant gasoline station convenience store.
+Earlier this April, the Federal Court of Australia found that Woolworths had breached its undertaking to the regulator, while Coles’ scheme did not fall foul of the restrictions imposed.
+Many commentators and customers are left dumbfounded by this outcome.
+To many, the recent court decisions present a state-sanctioned cartel regime, whereby the regulator has allowed the two conglomerates to refrain from competing by deliberately fixing the prices they are permitted to offer customers [12].
+Furthermore, there is little empirical evidence to support the conclusion that the practices will have the long anti-competitive effects of market foreclosure or increased barriers to entry [13].
+While the little empirical evidence conducted shows largely competition "neutral" results, it is not altogether obvious that a court challenge on the legality of the discounting regime would yield better or at least more equivocal results [14].
+The current practice can be challenged through two principal avenues.
+Firstly, the discount could be characterized as a form of exclusive dealing.
+Though, this is unlikely given the discount is a mere benefit or rebate, rather than a "condition" upon which a sale is made [15].
+Another potential avenue is characterizing the conduct as a " misuse of market power " [16].
+The two conglomerate firms would certainly qualify as having market power, however, whether or not the power was "misused" would depend upon whether a firm of smaller capacity would engage in similar conduct, or whether the conduct was "materially facilitated" by the market power, rather than being a mere business judgment [17].
+A central hindrance to waging a successful "misuse of market power" action lies in the need to establish an anti-competitive purpose [18].
+An evident possibility, on the present facts, includes the purpose of price predation.
+In Australia, to prove price predation, the court must be satisfied that: (i) that the product was sold below variable cost, (ii) where the predatory firm intended to drive out competition and (iii) where the conduct is economically irrational, but for the target of recouping losses at supracompetitive levels [19].
+Much like the concerns cited above, determining price predation is a speculative exercise.
+For example, could it be said that the supermarket chains incrementally recoup their losses flowing from the discounts from their grocery businesses [20]?
+Further, it is not altogether clear whether the fuel is priced at "below variable cost."
+It would appear that neither product is priced at below cost.
+But this measure is particularly notorious because it fails to account for the bundled nature of the products sold and the resulting advantage.
+The Australian competition law is governed by the Competition and Consumer Act 2010 (Cth) .
+The object of the Act is defined as "enhance the welfare of Australians through the promotion of competition and fair trading and provision for consumer protection" [21].
+This objective is carried out in the Act and in case law through legal tests, which bear a scientific flavor and offer an undeniable sense of precision in a field of complexity.
+The recent "Shopper Dockets" debacle has revealed the inherent tensions in many competition law cases and paints competition as a mere social science and value-laden exercise incapable of much precision [22].
+The speculative nature of harmful effects is not uncommon in competition law, but it certainly raises questions about short and long term preferences.
+Many commentators argue that the existence of ex post regulation and divestiture laws would render erring on the side of caution (or as in this case, speculation) irrational [23, 24].
+Currently, the ACCC has decided to err on the side of caution by seeking to prevent speculative forms of harm.
+However, in doing so, it is not clear whose welfare the regulator is increasing.
+It should perhaps be emphasized that the concern of competition law is the protection of "competition, not competitors" [25].
+[1] Zhongmin Wang, ‘Supermarket Gasoline: An Empirical Study Of Bundled Discount’ Department of Economics, Northwestern University Oct (2010) 1, 1.
+[2] See for example: Parish Oil Co v Dillon Companies Inc 2006 WL 26332566 (D Colo, 2006).
+[3] For a definition, see for example: Daniel A Crane, ‘Multiproduct Discounting: A Myth of Non-Price Predation’ 72 (2005) University of Chicago Law Review 27, 28.
+[4] Daniel A Crane, ‘Multiproduct Discounting: A Myth of Non-Price Predation’ 72 (2005) University of Chicago Law Review 27, 44.
+[5] Mitchell Landrigan, ‘Bundling – A Telecommunications Perspective’ 11 (2004) Competition and Consumer Law Journal 1.
+[6] Eastman Kodak Co v Image Technical Services, Inc 504 US 451, 488 (1992).
+[7] Rhonda Smith and David Round, ‘Temporal considerations and entry: Sunk costs, scale economies and strategic behaviour’ (2009) 17 Competition and Consumer Law Journal 177, 178.
+[8] Australian Competition and Consumer Commission, Coles and Woolworths Undertake to Cease Supermarket Subsidised Fuel Discounts (6 December 2013) Australian Competition and Consumer Commission http://www.accc.gov.au/media-release/coles-and-woolworths-undertake-to-cease-supermarket-subsidised-fuel-discounts .
+[9] Australian Financial Review, Seniors Disadvantaged by Fuel Docket Limit  (11 December 2013) Australian Financial Review http://www.afr.com/p/national/seniors_disadvantaged_by_fuel_docket_div9qy7PseB7TKJifFA3QN .
+[10] Australian Competition and Consumer Commission, Coles and Woolworths Undertake to Cease Supermarket Subsidised Fuel Discounts (6 December 2013) Australian Competition and Consumer Commission http://www.accc.gov.au/media-release/coles-and-woolworths-undertake-to-cease-supermarket-subsidised-fuel-discounts .
+[11] Australian Competition and Consumer Commission, ACCC Takes Action Against Coles and Woolworths for Allegedly Breaching Fuel Shopper Docket Undertakings (15 February 2014) Australian Competition and Consumer Commission http://www.accc.gov.au/media-release/accc-takes-action-against-cole...oolworths-for-allegedly-breaching-fuel-shopper-docket-undertakings .
+[12] Stephen Dawson, The ACCC's 2014 Resolution to End Fuel Discounts (1 January 2014) The Drum http://www.abc.net.au/news/2014-01-01/dawson-the-acccs-resolution-to-end-fuel-discounts/5181104 .
+[13] Hass-Wilson, Deborah, ‘Tying Requirements in Markets with Many Sellers: The Contact Lens Industry’ 69(1) (1987) Review of Economics and Statistics 170-175; Jerry Hausman, and J Gregory Sidak ‘Did Mandatory Unbundling Achieve its Purpose?
+Empirical Evidence from Five Countries’ 1(1) (2005) Journal of Competition Law and Economics 173-245.
+[14] Zhongmin Wang, ‘Supermarket Gasoline: An Empirical Study Of Bundled Discount’ Department of Economics, Northwestern University Oct (2010) 1, 3.
+[15] Competition and Consumer Act 2010 (Cth) s 47; SWB Family Credit Union Pty Ltd v Parramatta Tourist Services Pty Ltd (1980) ATPR ¶ 40-180; Monroe Topple & Associates Pty Ltd v Institute of Chartered Accountants in Australia [2002] FCAFC 197.
+Cf. Australian Competition and Consumer Competition v Baxter Healthcare Pty Ltd (No 2) [2008] FCAFC 141.
+[16] Competition and Consumer Act 2010 (Cth) s 46.
+[17] Competition and Consumer Act 2010 (Cth) s 46(6A)(a).
+[18] Competition and Consumer Act 2010 (Cth) s 46(1AA).
+[19] Boral Besser Masonry Ltd (Now Boral Masonry Ltd) v Australian Competition and Consumer Commission (2003) 195 ALR 609 [128].
+[20] David Reitman, ‘When Standards Collide: Bundled Discounts Under Different Conduct Standards’ 15 (2007) Competition and Consumer Law Journal 1, 12.
+[21] Competition and Consumer Act 2010 (Cth) s 2.
+[22] Ian Wylie, ‘When is bundling illegal in Australia under s 46 or s 47 of the Trade Practices Act 1974 (Cth)?’
+33 (2005) Australian Business Law Review 190, 204.
+[23] Joshua Gans and Steohen King, ‘Potential Anti-competitive Effects of Bundling’ 33 (2005) Australian Business Law Review 30, 35.
+[24] Michael Terceiro, ACCC’s investigation of Woolworths and Coles: A Blueprint for Action (19 May 2012) Consumer and Competition Protection Law http://competitionandconsumerprotectionlaw.blogspot.com.au/2012/05/acccs-investigation-of-woolworths-and.html .
+[25] Brown Shoe Co v United States 370 US 294 (1962) 320; Brooke Group Ltd v Brown & Williamson Tobacco Corp 509 US 209 (1993) 224.
+Quoted in: Boral Besser Masonry Ltd (Now Boral Masonry Ltd) v Australian Competition and Consumer Commission (2003) 195 ALR 609 [160].

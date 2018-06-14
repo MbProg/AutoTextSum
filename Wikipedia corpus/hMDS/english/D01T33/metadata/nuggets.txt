@@ -1,0 +1,18 @@
+1:public sculpture
+2:British artist
+3:Anish Kapoor
+4:AT&T Plaza
+5:Millennium Park
+6:Loop community area
+7:Chicago
+8:Illinois
+9:Park Grill
+10:Chase Promenade
+11:McCormick Tribune Plaza & Ice Rink
+12:Constructed between 2004 and 2006
+13:The Bean
+14:168 stainless steel plates
+15:highly polished
+16:no visible seams
+17:33 by 66 by 42 feet
+18:110 short tons

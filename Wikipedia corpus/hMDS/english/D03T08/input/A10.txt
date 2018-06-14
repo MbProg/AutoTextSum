@@ -1,0 +1,266 @@
+Duke, A --- "The Need to Close the 'Take Advantage' Gap in the Regulation of Unilateral Anti-Competitive Conduct" [2008] UMelbLRS 11
+Last Updated: 23 November 2009
+THE NEED TO CLOSE THE ‘TAKE ADVANTAGE’ GAP IN THE REGULATION OF UNILATERAL ANTI-COMPETITIVE CONDUCT
+Arlen Duke*
+INTRODUCTION
+Unilateral anti-competitive conduct is regulated by section 46 of the Trade Practices Act 1974 (Cth) (TPA).
+Section 46 prohibits a corporation with ‘market power’ from ‘taking advantage’ of that market power for a ‘proscribed anti-competitive purpose’.
+The very low success rate of actions brought under section 46 [1] has led many to argue that these elements are too difficult to prove and, in turn, that section 46 needs to be amended if businesses with a small share of the market are to be appropriately protected from anti-competitive conduct engaged in by their larger rivals.
+The Senate Economics References Committee (Senate Committee) shared this view and recommended that amendments be made to the ‘market power’ and ‘take advantage’ requirements in section 46.
+[2]
+Section 46 was recently amended by the Trade Practices Legislation Amendment Act (No. 1) 2007 (Cth) (Amendment Act) in a manner largely consistent with the Government’s response to the Senate Committee’s report.
+The changes to section 46 introduced by the Amendment Act relate mainly to the market power requirement and are mostly declaratory in nature.
+Provisions dealing specifically with the issue of predatory pricing have also been added.
+Despite the recommendations of the Senate Economics References Committee, none of the changes made by the Amendment Act relate to the substantive operation of the ‘take advantage’ requirement.
+[3] The Government dismissed such amendments as unnecessary on the basis that the case law provides a clear and consistent interpretation of the term that does not hamper the operation of section 46.
+[4]
+This article argues that the Government’s decision to reject the amendments proposed by the Senate Committee should be revisited.
+The first part of the article examines the findings of the two most recent reviews of the TPA and outlines the changes introduced by the Amendment Act.
+The second part of the article begins with an explanation of the two main tests employed by the courts to determine whether a business has taken advantage of its market power and notes that prior to the High Court’s decision in Rural Press Ltd v ACCC [2003] HCA 75 ; (2003) 216 CLR 53 (Rural Press), the courts had not drawn a clear distinction between these two tests.
+The third part of the article examines the reasoning that led the majority in Rural Press to employ the narrower of the two tests.
+Part four of the article considers section 46’s legislative history and concludes that the approach adopted by the majority is legally correct.
+The article concludes with the observation that, as the legally correct interpretation of the ‘take advantage’ requirement causes a gap in the coverage of section 46, the Government’s decision to reject the need to amend the operation of the ‘take advantage’ requirement should be revisited.
+This is especially the case as the gap could be closed without introducing an unacceptable level of uncertainty and without running the risk that the provision will inadvertently catch competitive conduct (which is more than can be said for some of the provisions of the Amendment Act).
+I RECENT REVIEWS OF THE TRADE PRACTICES ACT 1974 (CTH)
+A Dawson Committee recommendation
+The ability of section 46 to effectively regulate unilateral anti-competitive conduct has been considered in two relatively recent reviews of the TPA.
+The first of these was the Review of the Competition Provisions of the Trade Practices Act (Dawson Committee), which was released in January 2003.
+The Dawson Committee clearly identified the purpose requirement as its main focus.
+This is most likely because of the number of submissions (including a detailed submission by the Australian Competition and Consumer Commission (ACCC)) relating to the possible introduction of an effects test designed to overcome difficulties believed to be associated with establishing that a business had acted for a proscribed anti-competitive purpose.
+The introduction of an ‘effects test’ would involve adding the words ‘or with the effect or likely effect’ after the words ‘for the purpose’ in section 46(1).
+Under such a test, the scope of section 46 would be extended as contravention of section 46 would occur not only when a corporation takes advantage of its market power for one of the purposes proscribed in paragraphs (a) – (c) of s 46(1) , but also when its conduct has such an effect.
+The ‘market power’ and ‘take advantage’ requirements were all but overlooked by the Dawson Committee.
+The Dawson Committee Report does not mention the ‘market power’ requirement other than in passing and although the ‘take advantage’ requirement is mentioned, it is only discussed in the context of the requirement’s ability to safeguard against potential overreach of the effects test which the ACCC was so strongly in favour of.
+[5]
+The Dawson Committee ultimately concluded that section 46 did not require amendment.
+In reaching this conclusion, the Committee appears to have been most influenced by its finding that the difficulties claimed to be associated with proving purpose were overstated [6] and that the proposed effects test would not be able to appropriately distinguish between legitimate (competitive) and illegitimate (anti-competitive) behaviour.
+However two High Court decisions handed down after the Dawson Committee submitted its report suggest that the ‘market power’ (Boral) [7] and ‘take advantage’ (Rural Press) [8] requirements pose a greater threat to the ability of section 46 to effectively regulate unilateral anti-competitive conduct.
+In March 2003, the Dawson Committee reconsidered its findings in light of the Boral decision and decided that there was still no need to amend section 46.
+At the same time, the Dawson Committee noted that its recommendation may need to be revisited after a number of other cases before the courts at that time were decided.
+[9] Rural Press, in which a majority of the High Court interpreted the ‘take advantage’ requirement quite narrowly, was one such case.
+B Senate Committee – market power requirement
+In June 2003, less than six months after the Dawson Committee delivered its report, the Senate Economics References Committee (Senate Committee) was asked to specifically consider whether the TPA adequately protected small businesses from anti-competitive conduct and unfair practices.
+[10] When examining the ability of section 46 to provide such protection, the Senate Committee focussed on the limitations imposed by the ‘market power’ and ‘take advantage’ requirements.
+The Senate Committee delivered its report in March 2004.
+Most of the amendments to the operation of the ‘market power’ requirement proposed by the Senate Committee were declaratory in nature, made no change to the existing law and are unlikely to encourage the courts to conduct a section 46 analysis any differently.
+[11] Nevertheless, they were given effect to by the Amendment Act.
+As a result, section 46 now contains further direction as to how to determine whether a business has market power [12] and also expressly provides that the courts are permitted to have regard to sustained periods of below cost pricing and the reasons for such pricing when determining whether section 46 has been breached.
+[13] In addition, section 46 now expressly prohibits the misuse of market power in both the market in which the power is held as well as any other market.
+[14] Amendments that would have changed the law in a manner that made it easier to establish that a business has market power (such as the recommendation that the court be allowed to have regard to a business’s financial strength when assessing the business’s market power) were rejected by the Government.
+As this paper deals with gaps in the coverage of section 46 caused by the ‘take advantage’ requirement, the appropriateness of the Government’s response to the recommendations relating to the ‘market power’ requirement will not be further explored.
+Rather, the Government’s decision not to amend the ‘take advantage’ requirement will be the focus of analysis.
+C Senate Committee – take advantage requirement
+When considering the need to amend the ‘take advantage’ requirement, the Senate Committee dealt with the repercussions of the definition given to the ‘take advantage’ requirement in Rural Press, which is discussed in detail in the second part of this paper.
+The Senate Committee noted that in Rural Press the High Court narrowed the definition of the ‘take advantage’ requirement by holding that it is not enough to show that the firm would not have been likely to act as it did if it did not possess market power.
+Rather, a firm will only be held to have ‘taken advantage’ of its market power if it could not have acted as it did if it did not have market power.
+To overcome this narrowing of what constitutes a ‘taking advantage’ of market power, the Senate Committee recommended that a declaratory provision be added to section 46 that directs the court to consider a range of factors when assessing whether the impugned conduct involves a ‘taking advantage’ of market power.
+Specifically, the court would be directed to consider whether:
+(a) the conduct of the corporation was materially facilitated by its substantial market power;
+(b) the corporation engages in the conduct in reliance upon its substantial market power;
+(c) the corporation in question would have been likely to engage in the conduct if it lacked a substantial degree of market power; or
+(d) the conduct of the corporation is otherwise related to its substantial degree of market power.
+The declaratory provision recommended by the Senate Committee is itself ambiguous and may not reverse the narrowing of the ‘take advantage’ requirement in Rural Press.
+This is because in some circumstances the factors may send conflicting signals as to whether the conduct involves a taking advantage of market power.
+For example, it is not clear what happens where a firm engages in conduct that it could have engaged in without the market power (which factors (a) and (b) suggest does not involve a taking advantage of market power) but that it would not have been likely to engage in if it lacked a substantial degree of market power (which factor (c) suggests involves a taking advantage of market power).
+The Government Senators who were members of the Senate Committee were of the opinion that the current interpretation of the ‘take advantage’ requirement was not ambiguous and did not hinder the operation of section 46.
+[15] As a result, the Amendment Act did not contain the declaratory provision recommended by the Senate Committee.
+The sections of this paper that follow develop an argument that whilst the declaratory provision recommended for inclusion in section 46 by the Senate Committee may be flawed, there is nonetheless a need to introduce amendments that change the way in which a ‘taking advantage’ of market power can be proven.
+C The ‘Birdsville Amendment’ – subsections 46(1AA) & 46(1AB)
+The Amendment Act also introduced provisions designed to deal specifically with the issue of predatory pricing.
+Section 46 now prohibits a corporation with a ‘substantial share of the market’ from pricing its goods or services below ‘the relevant cost’ for a ‘sustained period’ for the purpose of damaging a competitor.
+[16] This amendment does not stem from the reports of the Dawson Committee, the Senate Committee or for that matter the recommendations of ACCC or Industry Groups.
+Rather, they were drafted by a single member of the Senate (Senator Barnaby Joyce) in the Birdsville Pub (it is for this reason that they amendments have been dubbed the ‘Birdsville Amendments’).
+[17]
+Unlike the market power amendments discussed above, the Birdsville Amendments change the operation of section 46 in a significant way.
+For this reason, the author feels provide compelled to comment briefly upon concerns raised by these amendments.
+The Birdsville Amendments introduce considerable uncertainty into the law by introducing the concepts of ‘substantial market share’, ‘sustained period’ and ‘relevant cost’.
+Until the meanings of these terms have been determined by the courts, this uncertainty has the potential to discourage discounting for fear of being caught by the provision.
+In addition, the predatory pricing prohibition introduced by the Birdsville Amendments will apply more broadly than other parts of section 46 because it applies to firms with a substantial share of the market rather than firms with substantial market power.
+It has been long recognised that market share is but one factor relevant when determining whether a firm has market power, and in turn the ability to manipulate the market.
+Furthermore the market share enquiry does not require the courts to consider the most important indicator of firm’s to manipulate the competitive process, namely barriers to entry.
+[18] Predatory conduct is only rational where the firm believes it will be able to recoup the associated losses (and more) in the future.
+[19] As barriers to entry are of prime importance to determining the likelihood that the alleged predator will be able to recoup losses made during the period of predation, [20] their exclusion from the analysis is cause for concern.
+Finally, the Birdsville Amendments render the newly-introduced sub-section 46(4A) redundant.
+[21] Sub-section 46(4A) provides that when determining whether the a firm has taken advantage of its market power, the court is permitted to consider whether the firm has priced the goods or services in question below cost for a sustained period of time.
+A party seeking to challenge predatory pricing would be foolish to attempt to prove that the alleged predator has taken advantage of its market power when they could avoid the difficulties associated with establishing ‘market power’ and a ‘taking advantage’ of that power by bringing their claim under the provisions introduced by the Birdsville Amendments.
+The points made in the previous paragraph provide just a snapshot of the problems raised by the Birdsville Amendments.
+Those interested in a more detailed critique of the Birdsville Amendments should read the Australian Law Council’s well argued submission to the Treasurer.
+[22] The following sections return to the central theme of the paper, namely then need to amend the ‘take advantage’ requirement.
+II TAKE ADVANTAGE: ESTABLISHING THE CAUSAL CONNECTION BETWEEN MARKET POWER AND CONDUCT
+A Take advantage: two possible tests
+The ‘take advantage’ requirement is included to ensure that only conduct that is causally connected to market power is caught by section 46.
+However, the courts have been less than consistent in characterising the type of causal relationship required (largely because other issues, such as whether or not the firm in question had substantial market power, have been more determinative).
+Two main views have surfaced as to what constitutes a ‘taking advantage’ of market power.
+[23] Under what will be described in this paper as the Ability Test, a firm will only be held to be ‘taking advantage’ of its market power if it engages in conduct that it could not engage in without the market power.
+Alternatively, under what will be described as the Motivation Test, a ‘taking advantage’ of market power occurs if the business engages in conduct which it would not be likely to engage in if it did not have market power.
+Conduct that is caught by the Ability Test will generally be caught by the Motivation Test.
+However, the reverse is not true.
+The Ability Test is narrower in operation than the Motivation Test because conduct that could equally be engaged in by a corporation without market power is not caught by the Ability Test even though such conduct may lack a commercial rationale in the absence of the market power.
+B Take advantage: the case law
+A simple version of the Ability Test was adopted in early court decisions.
+For example, in Williams v Papersave [24] the Full Federal Court quickly dismissed the allegation that Papersave had taken advantage of its market power by taking a lease secured by a competitor on the basis that such conduct ‘could as easily have been committed by a company having little market power.’
+[25]
+When the issue came before the High Court for the first time in Queensland Wire, [26] the High Court held that ‘taking advantage’ of market power involved ‘use’ of that power and stressed that the words did not have moral overtones.
+[27] However, rather than simply asking whether BHP’s market power gave it the ability to refuse supply, all judges except for Deane J employed a counterfactual test to determine whether BHP had used its power.
+This involved considering how BHP might have acted if it operated in a more competitive environment and comparing this to the manner in which BHP actually conducted itself.
+All judges concluded that by refusing to supply Queensland Wire, BHP had ‘taken advantage’ of its market power.
+However, the judges reached this conclusion in slightly different ways.
+Mason CJ and Wilson J concluded that BHP had ‘taken advantage’ of its market power because it was only by virtue of its control of the market that BHP could, in a commercial sense, afford to withhold supply.
+[28] Mason CJ and Wilson J also noted that if BHP operated in a competitive environment, it was highly unlikely that it would refuse supply as this would simply result in its competitors securing additional sales.
+[29] Mason CJ and Wilson J’s judgment can be viewed as endorsing both the tests outlined above.
+The first observation made by Mason CJ and Wilson J appears to be an application of the Ability Test whereas their second observation uses the language of the Motivation Test.
+Similarly, Toohey J appears also to have been influenced by the fact that BHP’s market power gave it both the motivation [30] and the ability [31] to refuse supply.
+The approaches adopted by Dawson J and Deane J are closer to the Ability Test.
+Dawson J applied a counterfactual version of the Ability Test.
+His Honour found that BHP had taken advantage of its market power because it could not have acted in the manner in which it did if it did not possess market power.
+[32] Deane J, on the other hand, did not think it necessary to think in terms of the counterfactual.
+Rather, in coming to the conclusion that BHP had ‘taken advantage’ of its market power, Deane J reasoned that as BHP’s purpose of preventing QWI from competing could only be achieved by virtue of BHP’s substantial market power, its refusal to supply must have constituted a ‘taking advantage’ of market power.
+[33] Deane J’s approach is similar to the simple version of the Ability Test adopted by the Full Federal Court in the Papersave.
+One thing is clear from the above discussion of the various judgments in Queensland Wire; neither the Ability Test nor the Motivation Test was explicitly adopted as the appropriate test for establishing the ‘take advantage’ requirement.
+[34] However, the decision was largely interpreted by commentators as endorsing the Motivation Test.
+O’Bryan asserted that the question asked in Queensland Wire was ‘what would BHP have done in a competitive market?’
+.
+[35] The edition of Duns and Davison’s competition law case book released after Queensland Wire stated that that the High Court’s test for ‘taking advantage’ asks ‘whether the conduct in question would have occurred in a competitive market?’
+.
+[36] Corones’ competition law textbook makes similar observations.
+[37] Similarly, the judiciary also started to focus on whether the business would be likely to act in the same manner in a more competitive environment.
+[38]
+The next two section 46 cases to reach the High Court also failed to draw a clear distinction between the Ability Test and the Motivation Test.
+The joint judgment in Melway states that a majority of the court in Queensland Wire considered that the way to test for a ‘taking advantage’ of market power was to ask how the business would have been likely to behave in a competitive market (in other words, by applying the Motivation Test).
+[39] However, in the very next paragraph, the joint judgment says that the majority in Queensland Wire held that BHP took advantage of market power because it could not have refused supply in a more competitive market.
+[40] Later, the joint judgment states that whether Melway could have maintained its distributorship system without its market power is the real question that needs to be resolved.
+[41] Then only paragraphs later, Melway’s argument that what it would have done in a more competitive environment was irrelevant was dismissed on the basis that it was contrary to the approach adopted by four of the five judges in Queensland Wire.
+[42]
+Once again, the High Court in Melway did not draw a clear distinction between the Ability Test and the Motivation Test.
+This is most likely explained by the fact that it did not matter which test applied because, on the majority’s view of the facts, even if Melway had been operating in a more competitive environment it still would have had both the ability and motivation to maintain its exclusive distributor arrangements.
+In the second case, Boral, the High Court’s obiter statements about the ‘take advantage’ requirement did not indicate whether the Ability Test or the Motivation Test should be used to determine whether or not conduct involved a ‘taking advantage’ of market power.
+This is not surprising because the contentious issue in Boral was whether Boral had market power.
+It seems fair to suggest that no clear and consistent interpretation emerges from the abovementioned decisions.
+However the Rural Press decision, in which the court was forced to carefully consider whether to apply the Ability Test or the Motivation Test, arguably provides such clarity.
+This decision is discussed in detail in the next section of this paper.
+III RURAL PRESS
+A Factual background and outcome
+The Rural Press case arose from attempts by Rural Press to protect the readership of the Murray Valley Standard (Standard), a newspaper distributed by one of Rural Press’ subsidiaries in the Murray Bridge district, which included the township of Mannum.
+The Standard’s readership was threatened when, as a result of the restructuring of local district council boundaries, Waikerie Printing (Waikerie) decided to include Mannum in the prime circulation area of its newspaper, the River News.
+Waikerie’s decision disrupted the status quo.
+With one other exception, only one regional newspaper was published in each geographic area.
+[43] It was accepted that this resulted from the historical development of the markets, rather than any express agreement between industry participants.
+[44]
+Rural Press [45] repeatedly expressed its dissatisfaction with Waikerie supplying the Mannum area, and threatened that unless Waikerie stopped doing so, Rural Press would react by distributing a rival newspaper in the Riverland area (possibly at no charge).
+Eventually Wairkerie acceded to Rural Press’ threats, [46] and withdrew from the Mannum area.
+The Australian Competition and Consumer Commission (ACCC) commenced proceedings and was able to successfully prove that Rural Press and Waikerie had breached section 45 of the TPA by reaching an agreement that had an anti-competitive purpose and effect [47] and contained an exclusionary provision.
+[48] However, the ACCC was unsuccessful in its claim that Rural Press’ threats also constituted a misuse of market power, in breach of section 46 of the TPA.
+This paper will focus on the section 46 allegation and, although the author believes that the findings on ‘market definition’ [49] and ‘market power’ [50] are also open to criticism, the interpretation given to the ‘take advantage’ requirement is the focus of the analysis.
+B Take advantage: Ability Test
+Trial Judge and Full Federal Court
+From the outset, it is worth noting that the Ability Test was employed by the trial judge, the Court of Appeal and the High Court (except for Kirby J).
+At trial, Mansfield J held that Rural Press could not have acted as it did if it did not have market power (which Mansfield J held to include Rural Press’ ability to immediately publish a rival newspaper as well as Rural Press’ financial and physical resources).
+[51] However, the fact that Mansfield J also made comments about the relevance of what would be possible in a more competitive market suggests that his Honour did not accept the Ability Test as the sole way of determining whether a business had ‘taken advantage’ of its market power.
+[52]
+Despite stating that this issue is resolved by asking how the business ‘would have been likely to behave’ in a competitive market [53] , the Full Federal Court (FFC) also employed the Ability Test.
+According to the FFC, Rural Press relied on its financial strength (which the FFC held was not a form of market power) to make its threats credible.
+[54] As Rural Press could have acted in precisely same way in a more competitive market the FFC concluded that the ‘take advantage’ requirement had not been satisfied.
+[55] The FFC also noted that the fact that Rural Press may have lacked the motivation to make the threat in the absence of its market power was not enough to establish that it had ‘taken advantage’ of that power.
+[56] This appears to be a pretty clear endorsement of the Ability Test over the Motivation Test.
+2.
+High Court - majority
+A majority of the High Court upheld the decision of the FFC.
+In reaching this conclusion, the majority noted that ‘the words “take advantage” do not extend to any kind of connection at all between market power and the (prohibited purposes)’ [57] and that ‘the conduct of ‘taking advantage’ of a thing is not identical with the conduct of protecting that thing’.
+[58] The majority stated that to reason as the ACCC did, namely that Rural Press ‘took advantage’ of its market power because its conduct had no commercial rationale in the absence of such power, was to confound the ‘take advantage’ and ‘purpose’ requirements.
+Rather, the High Court concluded that as Rural Press had chosen to protect its market power by a method not dependent on the existence of that power, it had not breached section 46.
+Put simply, a majority of the High Court endorsed the FFC’s use of the Ability Test.
+3.
+Kirby J (dissenting)
+Kirby J dissented and was highly critical of the approach adopted by the majority.
+He criticised the majority for resolving the issue on such a ‘narrow, formalistic and substantially verbal ground’.
+[59] His Honour also asserted that the conclusion reached by the majority was commercially unrealistic [60] and ‘cripple[d] the effectiveness of s 46.’
+[61]
+Kirby J described the suggestion that Rural Press’ market power was causally irrelevant to Waikeree’s decision to withdraw from Mannum as ‘fanciful’.
+[62] Whilst Kirby J did not dispute that the ‘take advantage’ requirement requires there to be a causal connection between the market power and the conduct in question, he rejected the idea that the Ability Test was the sole means of establishing such a connection.
+Rather, Kirby J held that such a connection could also be proven by establishing that in the absence of the market power Rural Press had no commercial reason to engage in the conduct (in other words, by applying the Motivation Test) [63] or by showing a temporal concurrence of power and outcome (in other words, by adopting the approach adopted by Deane J in Queensland Wire).
+[64]
+C Take advantage: clear and consistent meaning?
+The Rural Press majority’s endorsement of the Ability Test and rejection of the Motivation Test gives the phrase ‘take advantage’ a more certain meaning.
+However, some uncertainty about the operation of the ‘take advantage’ requirement remains.
+Firstly, the exclusive use of the Ability Test is inconsistent with the earlier case law.
+Second, the Rural Press majority did not overrule or call into question the approaches adopted in earlier cases, thus limiting the extent to which the decision brings clarity.
+Third, some maintain that even after the Rural Press decision, a taking advantage of market power can be proven by establishing that either the market power gives rise to particular conduct (Ability Test) or that the conduct would not be reasonably engaged in by a business lacking market power (Motivation Test).
+[65] Finally in NT Power, a decision delivered two years after Rural Press, a majority of the High Court asked a composite question to determine whether the Power Authority had taken advantage of its market power, and required the applicant to prove that the requirements of the Ability Test and the Motivation Test had been satisfied.
+[66] Whilst this approach appears to be appropriate, it was not foreshadowed in the Rural Press decision.
+Because of the residual uncertainty discussed in the preceding paragraph, and because of Kirby J’s strongly expressed view that the issue of whether or not a firm had ‘taken advantage’ of its market power could be resolved by applying the Motivation Test, the following section considers section 46’s legislative history with a view to determining whether the approach adopted by the majority in Rural Press is legally correct and sufficiently certain.
+IV WHAT IS THE TRUE MEANING OF THE TAKE ADVANTAGE REQUIREMENT: LEGISLATIVE HISTORY
+A The legislative history of section 46
+Given the lack of clarity about the meaning of the phrase ‘take advantage’, it is surprising that no section 46 case to date has considered the provision’s legislative history.
+This is unfortunate, as section 46’s legislative history provides significant insights into the intended operation of the ‘take advantage’ requirement.
+In September 1973, the Government introduced the Trade Practices Bill 1973 (Cth) (1973 Bill).
+Clause 46 of the 1973 Bill contained a prohibition against ‘monopolization’ that went further than the prohibition ultimately enacted in 1974.
+The 1973 Bill proposed to regulate businesses ‘in a position substantially to control a market’ in two ways.
+First, such firms were prohibited from engaging in conduct directed to achieving specified anti-competitive outcomes [67] in the market in which the business was dominant.
+This prohibition could be breached even if the conduct in question was not directly connected to or made possible by the business’s dominant position.
+Secondly, businesses in a dominant position were also prohibited from taking advantage of their dominant position to achieve specified anti-competitive outcomes in another market.
+Thus, under the 1973 Bill, it was only necessary that anti-competitive conduct was made possible by the market power if it was alleged that market power was being leveraged into another market.
+The Coalition Opposition resisted the introduction of such a clause.
+The Parliamentary Debates illustrate the Coalition Opposition’s residual uneasiness with the concept of regulating unilateral conduct and general desire not to unduly hamper big business.
+[68] This uneasiness is evident in the Coalition’s unsuccessful attempts to require the offence to be made out beyond a reasonable doubt before pecuniary penalties could be imposed [69] and its attempts to ensure that section 46 would only be breached where the business in question wilfully took advantage of its market power.
+[70]
+While the amendments sought by the Coalition were rejected by the Government on the basis that they imposed unnecessary limitations on the ‘behaviour that is sought to be made accountable’, [71] the Coalition did manage to cause the scope of the ‘monopolization’ provision to be narrowed in another way.
+In July 1974, when the Trade Practices Bill was re-introduced into Parliament (1974 Bill), it included a re-drafted version of clause 46.
+Clause 46 was amended so that, irrespective of the market affected by the conduct, the provision would not be breached unless the conduct in question constituted a ‘taking advantage’ of market power (or, to put it another way, was made possible by the firm’s market power).
+The following extract from the Explanatory Memorandum accompanying the introduction of the Trade Practices Revision Bill 1986 lends further support to the argument that the High Court’s narrow interpretation of the phrase is mandated by the legislative wording:
+‘The corporation having the requisite degree of market power is not prohibited from engaging in any conduct directed to one or other of the objectives set out in paras 46(1)(a), (b) and (c).
+Such a prohibition would unduly inhibit competitive activity in the market place...
+The term take advantage in this context indicates that the corporation is able, by reason of its market power, to engage more readily and effectively in conduct directed to one or other of the objectives in paragraphs (a), (b) and (c).
+It is better able, by reason of its market power, to engage in that conduct.
+Its market power gives it leverage which it is able exploit and this power is deployed so as to ‘take advantage of’ the relative weaknesses of other participants or potential participants in the market.’
+[72]
+B Rural Press reconsidered
+The above discussion suggests that the legislature made a conscious decision to include the take advantage requirement to limit the scope of section 46 in precisely the manner recognised by the High Court majority.
+[73] However, as some believe that the majority’s interpretation of the ‘take advantage’ requirement involves a ‘failure to do justice to the parliamentary intention behind section 46’ [74] and because Kirby J believed that his interpretation of the ‘take advantage’ requirement results from a permitted form of purposive statutory interpretation, [75] it is necessary to give further consideration to the approach adopted by Kirby J.
+Kirby J’s interpretation of the taking advantage requirement is open to two main criticisms.
+First, that the words ‘take advantage’ have a clear meaning, negating the need for reference to policy considerations.
+[76] Secondly, even if there is a need for such methods of legislative interpretation, his Honour incorrectly identified the policies underpinning section 46.
+The first criticism can be disposed of quickly.
+It is based on observations, such as those made by Gleeson CJ and Callinan J in Rural Press, albeit in the context of the section 4D claim, that presumed policy intentions ‘cannot be permitted to divert attention from the text’.
+[77] Whilst it is arguable that as the provision expressly provides that ‘the corporation shall not take advantage of that power’ there is no ambiguity about the type of causal connection required, [78] the legislative direction to have regard to the purpose or object underlying the Act [79] coupled with the increased judicial tolerance of departing from the literal meaning of the words where they do not appear to conform with the intention of the legislature, [80] suggests that Kirby J was right to consider the underlying policy.
+The second criticism however is more valid.
+Whilst purposive construction appears appropriate in the circumstances, Kirby J defines the policy underpinnings of section 46 by reference to the very general statement of purpose contained in section 2 of the TPA [81] and previous judicial comments that the object of section 46 was to protect and advance competition.
+[82] However, as the above discussion of the parliamentary debates [83] and Explanatory Memorandum [84] demonstrates, the legislature consciously excluded certain types of anti-competitive conduct from the scope of section 46.
+Motherhood statements, such as those contained in section 2 of the TPA, should not be permitted to override this conscious legislative decision.
+By doing so, Kirby J has arguably given section 46 an operation which does not accord with the intention of the legislature, despite his statements to the contrary.
+[85]
+C Sub-section 46(5)
+While the legislative history of the provision suggests that the Ability Test is appropriate, the inclusion of section 46(5), which provides that a corporation does not breach section 46 by reason only that it acquires plant or equipment, lends support to an argument that the Motivation Test is appropriate.
+This is because whilst the commercial rationale of such conduct may only be explained by reference to a desire to protect or create market power, the acquisition of plant and equipment is something that any business with sufficient financial resources could do.
+[86] It is therefore arguable that the Motivation Test is appropriate because the Ability Test would render section 46(5) redundant.
+However, as the bulk of section 46’s legislative history indicates that the Ability Test was intended by the legislature, section 46(5) is probably better viewed as being included to avoid any doubt that the potential anti-competitive effects of mergers or acquisitions are exclusively regulated by section 50, rather than impliedly suggesting that such conduct might fall within the section.
+[87]
+CONCLUSION
+The examination of section 46’s legislative history strongly suggests that, as recognised by the majority in Rural Press, the Ability Test must be satisfied before a firm will be held to have ‘taken advantage’ of its market power.
+Although recent case law and section 46’s legislative history resolve, to a large extent, the ambiguity about what constitutes a ‘taking advantage’ of market power, they also demonstrate that the ‘take advantage requirement, correctly interpreted, creates a gap in section 46’s ability to appropriately regulate unilateral anti-competitive conduct.
+Unilateral anti-competitive conduct engaged in by a corporation with market power is beyond the reach of section 46 unless that conduct was made possible, or at least materially facilitated, by that market power (in other words, unless the Ability Test is satisfied).
+As a result, conduct that could equally be engaged in by a corporation without market power is not caught by section 46, even though such conduct may lack a commercial rationale in the absence of the market power.
+This is of concern because it allows businesses with market power to protect or strengthen that market power in ways that would be ineffective in the absence of market power so long as they engage in forms of anti-competitive conduct that could be engaged in by someone without market power.
+Given this gap in the coverage of section 46, it seems quite odd that the Government dismissed the Senate Committee’s recommendation to amend the ‘take advantage’ requirement in section 46.
+The Government does not appear to fully appreciate the extent to which the interpretation of the ‘take advantage’ requirement recognised in Rural Press limits the coverage of section 46.
+[88] For example, the Government’s Response to the Senate Committee’s report does not consider, let alone justify, why it was appropriate that Rural Press escape liability under section 46 even though all members of the High Court were clearly of the opinion that its conduct was inherently anti-competitive and motivated by its market power.
+Furthermore, the narrow interpretation given to the ‘take advantage’ requirement by the majority in Rural Press is legally correct.
+Kirby J’s approach, whilst preferable, is simply not open on the current wording of section 46.
+Legislative change is necessary in order to ensure the take advantage requirement does not restrict section 46’s ability to effectively regulate unilateral anti-competitive conduct.
+To ensure section 46 effectively regulates unilateral anti-competitive conduct engaged in by a firm with market power, the Government should reconsider its decision to reject the Senate Committee’s recommendation to amend the ‘take advantage’ requirement.
+Whilst the declaratory provision recommended by the Senate Committee is unlikely to resolve this issue, section 46 should be amended to ensure that a firm ‘takes advantage’ of its market power if its market power gives it either the motivation or the ability to engage in the impugned conduct.
+In other words, section 46 should be amended so that it a ‘taking advantage’ of market power can be established by proving that either the Motivation Test or the Ability Test has been satisfied.
+Such an amendment overcomes the gap in coverage in a manner that is simple, clear, intuitive and likely to be easily understood (especially as it employs the test that many believed was mandated by the legislation prior to the Rural Press decision).
+Furthermore, the allowing parties to prove a ‘taking advantage’ by establishing that the Motivation Test has been satisfied is unlikely to result in competitive conduct being caught by section 46 because the focus remains squarely on whether the business would behave in the same way in a more competitive environment.
+* Lecturer, Law Faculty, The University of Melbourne.
+I am grateful to Dr Rhonda Smith, Ms Rachel Trindade and an anonymous referee for their helpful comments on earlier drafts of this paper.
+I would also like to thank Paul Williamson for assisting with proof reading.
+Any errors, of course, remain mine.
+1 Alexandra Merrett, ‘The court speaks for itself: What Australian decisions say about assessing market power for the purposes of s 46 of the TPA’ (2004) 11 Competition & Consumer Law Journal 330 (see Annexure 1).
+[2] Senate Economics References Committee, The effectiveness of the Trade Practices Act 1974 in protecting small business (2004) (Senate Committee Report).
+[3] If the Amendment Bill passes, section 46 will be amended so that there is no doubt that the provision will be contravened if there is a taking advantage of market power for a proscribed purpose in either the market in which market power is held or any other market.
+This amendment was introduced to overcome concerns raised by the Full Federal Court’s judgment in Rural Press Ltd v Australian Competition and Consumer Commission [2002] FCAFC 213 ; (2002) 118 FCR 236.
+However, a strong argument can be made that the FFC’s approach was inconsistent with earlier case law and that the amendment was not necessary (see eg Toohey J’s judgment in Queensland Wire Industries Pty Ltd v Broken Hill Proprietary Co Ltd [1989] HCA 6 ; (1989) 167 CLR 177 , 208).
+[4] Australian Government Response to the Senate Inquiry into the Effectiveness of the Trade Practices Act 1974 in Protecting Small Business (Government Response), 6.
+[5] Dawson Committee, Review of the Competition Provisions of the Trade Practices Act (2003) (Dawson Committee Report), 85.
+[6] Ibid 78 (Box 3.1).
+[7] Boral Besser Masonry Limited v Australian Competition and Consumer Commission (2003) 215 CLR 324 (Boral (HC))

@@ -1,0 +1,11 @@
+1:7 World Trade Center
+2:World Trade Center complex
+3:New York
+4:1987
+5:September 11 attacks
+6:completed in 2006
+7:Larry Silverstein
+8:was 47 stories tall
+9:Salomon Brothers became main tenants of the building
+10:collapsed at 5
+11:collapsed due to fire

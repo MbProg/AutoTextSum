@@ -1,0 +1,358 @@
+May
+JUN
+Jul
+6
+2015
+2016
+2017
+1 captures
+6 Jun 16 - 6 Jun 16
+Close Help
+NCBI
+Skip to main                         content
+Skip to                         navigation
+Resources
+All Resources
+Chemicals & Bioassays
+BioSystems
+PubChem BioAssay
+PubChem Compound
+PubChem Structure Search
+PubChem Substance
+All Chemicals & Bioassays Resources...
+DNA & RNA
+BLAST (Basic Local Alignment Search Tool)
+BLAST (Stand-alone)
+E-Utilities
+GenBank
+GenBank: BankIt
+GenBank: Sequin
+GenBank: tbl2asn
+Genome Workbench
+Influenza Virus
+Nucleotide Database
+PopSet
+Primer-BLAST
+ProSplign
+Reference Sequence (RefSeq)
+RefSeqGene
+Sequence Read Archive (SRA)
+Splign
+Trace Archive
+UniGene
+All DNA & RNA Resources...
+Data & Software
+BLAST (Basic Local Alignment Search Tool)
+BLAST (Stand-alone)
+Cn3D
+Conserved Domain Search Service (CD Search)
+E-Utilities
+GenBank: BankIt
+GenBank: Sequin
+GenBank: tbl2asn
+Genome ProtMap
+Genome Workbench
+Primer-BLAST
+ProSplign
+PubChem Structure Search
+SNP Submission Tool
+Splign
+Vector Alignment Search Tool (VAST)
+All Data & Software Resources...
+Domains & Structures
+BioSystems
+Cn3D
+Conserved Domain Database (CDD)
+Conserved Domain Search Service (CD Search)
+Structure (Molecular Modeling Database)
+Vector Alignment Search Tool (VAST)
+All Domains & Structures Resources...
+Genes & Expression
+BioSystems
+Database of Genotypes and Phenotypes (dbGaP)
+E-Utilities
+Gene
+Gene Expression Omnibus (GEO) Database
+Gene Expression Omnibus (GEO) Datasets
+Gene Expression Omnibus (GEO) Profiles
+Genome Workbench
+HomoloGene
+Map Viewer
+Online Mendelian Inheritance in Man (OMIM)
+RefSeqGene
+UniGene
+All Genes & Expression Resources...
+Genetics & Medicine
+Bookshelf
+Database of Genotypes and Phenotypes (dbGaP)
+Genetic Testing Registry
+Influenza Virus
+Map Viewer
+Online Mendelian Inheritance in Man (OMIM)
+PubMed
+PubMed Central (PMC)
+PubMed Clinical Queries
+RefSeqGene
+All Genetics & Medicine Resources...
+Genomes & Maps
+Database of Genomic Structural Variation (dbVar)
+GenBank: tbl2asn
+Genome
+Genome Project
+Genome ProtMap
+Genome Workbench
+Influenza Virus
+Map Viewer
+Nucleotide Database
+PopSet
+ProSplign
+Sequence Read Archive (SRA)
+Splign
+Trace Archive
+All Genomes & Maps Resources...
+Homology
+BLAST (Basic Local Alignment Search Tool)
+BLAST (Stand-alone)
+BLAST Link (BLink)
+Conserved Domain Database (CDD)
+Conserved Domain Search Service (CD Search)
+Genome ProtMap
+HomoloGene
+Protein Clusters
+All Homology Resources...
+Literature
+Bookshelf
+E-Utilities
+Journals in NCBI Databases
+MeSH Database
+NCBI Handbook
+NCBI Help Manual
+NCBI News
+PubMed
+PubMed Central (PMC)
+PubMed Clinical Queries
+PubMed Health
+All Literature Resources...
+Proteins
+BioSystems
+BLAST (Basic Local Alignment Search Tool)
+BLAST (Stand-alone)
+BLAST Link (BLink)
+Conserved Domain Database (CDD)
+Conserved Domain Search Service (CD Search)
+E-Utilities
+ProSplign
+Protein Clusters
+Protein Database
+Reference Sequence (RefSeq)
+All Proteins Resources...
+Sequence Analysis
+BLAST (Basic Local Alignment Search Tool)
+BLAST (Stand-alone)
+BLAST Link (BLink)
+Conserved Domain Search Service (CD Search)
+Genome ProtMap
+Genome Workbench
+Influenza Virus
+Primer-BLAST
+ProSplign
+Splign
+All Sequence Analysis Resources...
+Taxonomy
+Taxonomy
+Taxonomy Browser
+Taxonomy Common Tree
+All Taxonomy Resources...
+Training & Tutorials
+NCBI Education Page
+NCBI Handbook
+NCBI Help Manual
+NCBI News
+All Training & Tutorials Resources...
+Variation
+Database of Genomic Structural Variation (dbVar)
+Database of Genotypes and Phenotypes (dbGaP)
+Database of Single Nucleotide Polymorphisms (dbSNP)
+SNP Submission Tool
+All Variation Resources...
+How To
+All How To
+Chemicals & Bioassays
+DNA & RNA
+Data & Software
+Domains & Structures
+Genes & Expression
+Genetics & Medicine
+Genomes & Maps
+Homology
+Literature
+Proteins
+Sequence Analysis
+Taxonomy
+Training & Tutorials
+Variation
+About NCBI Accesskeys
+My NCBI Sign in to NCBI Sign Out
+PubMed
+US National Library of Medicine National Institutes of Health
+Search database
+Search term
+Search
+Advanced
+Help
+Result Filters
+Abstract
+Format
+Summary
+Summary (text)
+Abstract
+Abstract (text)
+MEDLINE
+XML
+PMID List
+Apply
+Send to:
+Choose Destination
+File
+Clipboard
+Collections
+E-mail
+Order
+My Bibliography
+Citation manager
+Format
+Create File
+1 selected item: 24585117
+Format
+MeSH and Other Data
+E-mail
+Subject
+Additional text
+E-mail
+Didn't get the message?
+Find out why...
+Add to Clipboard
+Add to Collections
+Order articles
+Add to My Bibliography
+Generate a file for use with external citation management software.
+Create File
+See comment in PubMed Commons below
+Urologe A. 2014 Mar;53(3):375-8.
+doi: 10.1007/s00120-013-3380-5.
+[Hypospadia and infertility of Henry II of France (1519-1559)].
+[Article in German]
+Hatzinger M 1, Al-Shajlawi S , Sohn M .
+Author information
+1Urologische Klinik, FDK-Markus-Krankenhaus, Wilhelm-Epstein-Straße 4, 60431, Frankfurt am Main, Deutschland, martin.hatzinger@fdk.info.
+Abstract
+Henry II (1519-1559) of France was the second son of Francis I (1494-1547) and Claude de France (1498-1524) born in 1519 in St. Germain-en-Laye.
+After his older brother's and his father's death in 1547, he was anointed the French king in Reims.
+In 1533 already, as a 14-year-old boy, for reasons of state, he was married to the same aged Catherine de Medici (1519-1589), as her uncle was Pope Clement VII (1478-1534).
+The marriage remained childless for 11 years since Henry, due to a distinct hypospadia and a completely sexually inexperienced wife was unable to conceive children with her.
+His existing liaison to Diane de Poitiers (1499-1566) - a 19-year-older maid of honor of his father Francis I from 1537 until his death - influenced his sexual life immensely.The blame for the childless marriage was placed primarily on his wife, as Henry had become father of an illegitimate daughter with a mistress.
+Catherine then underwent all possible medical and alchemical procedures to finally give birth to the hoped Dauphin.
+Ironically, her rival for the favor of her husband, Diane de Poitiers was one of her greatest allies.
+She made clear that the cause lay with Henry and not with his wife.
+This was confirmed by the added solid physician Jean Fernel (1497-1558).
+His treatment of Henry and the simultaneous training of the unexperienced Catherine by Diane de Poitiers led to success.The result was the birth of Francis II (1544-1560) in 1544, the first of 10 children in 12 years.
+Thus, the dynasty was saved.
+After the death of Henry in a tragic tournament accident in 1559, three of his sons became kings of France.
+But the line of Valois remained without further descendants and was continued by Henry IV, the first Bourbon king in 1589.
+PMID:
+24585117
+[PubMed - indexed for MEDLINE]
+Share
+Publication Types, MeSH Terms, Personal Name as Subject
+Publication Types
+Biography
+English Abstract
+Historical Article
+Portraits
+MeSH Terms
+Famous Persons*
+France
+History, 16th Century
+Humans
+Hypospadias/history*
+Infertility, Male/history*
+Male
+Urology/history*
+Personal Name as Subject
+Henry II
+LinkOut - more resources
+Full Text Sources
+Springer
+Medical
+infertility - Genetic Alliance
+Male Infertility - MedlinePlus Health Information
+PubMed Commons home
+PubMed Commons
+0 comments
+How to join PubMed Commons
+How to cite this comment:
+Supplemental Content
+Full text links
+You are here: NCBI > Literature > PubMed
+Write to the Help Desk
+Simple NCBI Directory
+Getting Started
+NCBI Education
+NCBI Help Manual
+NCBI Handbook
+Training & Tutorials
+Submit Data
+Resources
+Chemicals & Bioassays
+Data & Software
+DNA & RNA
+Domains & Structures
+Genes & Expression
+Genetics & Medicine
+Genomes & Maps
+Homology
+Literature
+Proteins
+Sequence Analysis
+Taxonomy
+Variation
+Popular
+PubMed
+Bookshelf
+PubMed Central
+PubMed Health
+BLAST
+Nucleotide
+Genome
+SNP
+Gene
+Protein
+PubChem
+Featured
+Genetic Testing Registry
+PubMed Health
+GenBank
+Reference Sequences
+Gene Expression Omnibus
+Map Viewer
+Human Genome
+Mouse Genome
+Influenza Virus
+Primer-BLAST
+Sequence Read Archive
+NCBI Information
+About NCBI
+Research at NCBI
+NCBI News
+NCBI FTP Site
+NCBI on Facebook
+NCBI on Twitter
+NCBI on YouTube
+External link.
+Please review our privacy policy .
+NLM
+NIH
+DHHS
+USA.gov
+National Center for                         Biotechnology Information , U.S. National Library of Medicine 8600 Rockville Pike, Bethesda MD, 20894 USA
+Policies and Guidelines | Contact

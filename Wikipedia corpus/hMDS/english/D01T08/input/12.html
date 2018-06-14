@@ -1,0 +1,932 @@
+<html>
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=748;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<style type="text/css">
+<!--
+
+.bodycopy {  font-family: Helvetica,Arial; font-size: 10pt; color: #000000; line-height: 120%;}
+ 
+.smallcopy {  font-family: Helvetica,Arial; font-size: 8pt; color: #000000; line-height: 120%;}
+ 
+ 
+ .brithead {  font-family: Times,Roman,Serif; font-size: 42pt; line-height: 100%;  color: #FFFFFF; text-decoration: none;}
+ 
+ .sansub {  font-family: Helvetica,Arial; font-size: 10.5pt; line-height: 120%;  color: #999999; text-decoration: none;}
+
+.news {  font-family: Times,Roman; font-size: 12pt; text-decoration: none;}
+ 
+.caption {  font-family: Arial; font-size: 8.5pt; color: #000000;  text-decoration: none;}
+.factoidcaption {  font-family: Arial; font-size: 8.5pt; color: #666600;  text-decoration: none;}
+.footertext {  font-family: Arial; font-size: 7pt; letter-spacing:0.1em }
+
+.head { font-family: Helvetica,Arial; font-size: 20pt; color: #870d04; line-height: 120%;}
+
+.subhead { font-family: Helvetica,Arial; font-size: 12pt; color: #870d04; line-height: 120%;}
+.subhead2 { font-family: Helvetica,Arial; font-size: 12pt; font-weight:bold; color: #870d04; line-height: 120%;}
+
+.navbar {  font-family: Arial; font-size: 8pt; color: #FFFFFF; text-decoration: none; }
+
+.insidenav {  font-family: Helvetica; font-size: 8pt; color: #000000; text-decoration: none; }
+.mainnav {  font-family: Helvetica,Arial; font-size: 11pt; color: #FFFFFF; text-decoration: none; }
+.subnav {  font-family: Helvetica,Arial; font-size: 10pt; color: #FFFFFF; text-decoration: none; }
+
+.navbar2 {  font-family: Arial; font-size: 7.5pt; color: #FFFFFF; line-height: 160%; text-decoration: none; }
+
+a:link    {text-decoration: none;  color: #ffffff;}
+a:active  {text-decoration: none;  color: #ffffff;}
+a:visited {text-decoration: none;   color: #ffffff;}
+a:hover   {color:#ff0000; font-style:none; text-decoration:none; text-transform:none;  } 
+ 
+a.special:link    {text-decoration: none; border-bottom: 1px dotted; color: #0000cc}
+a.special:active  {text-decoration: none; border-bottom: 1px dotted; color: #0000cc;}
+a.special:visited {text-decoration: none; border-bottom: 1px dotted; color: #0000cc; }
+a.special:hover   {color:#003399; font-weight:bold; font-style:none; text-decoration:none; text-transform:none; } 
+
+ 
+ //-->
+</style>
+
+
+<head>
+
+<script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51):  Dynamic Drive (/web/20160319112457/http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit /web/20160319112457/http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["banners/barrymoser-banner.jpg", "calendar_events.html", ""] //image with link syntax 
+fadeimages[1]=["banners/studiotour-banner.jpg", "wyeth-gallery.html", ""] //image with link syntax 
+fadeimages[2]=["banners/farmtour-banner.jpg", "kuerner.html", ""] //image with link syntax  
+ 
+ 
+ 
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=50 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+<style type="text/css">
+
+#dropmenudiv{
+position:absolute;
+border:1px solid ffffff;
+border-bottom-width: 0;
+font:normal 8pt Arial;
+line-height:14pt;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 2px;
+border-bottom: 1px solid ffffff;
+padding: 1px 0;
+text-decoration: none;
+font-weight: normal;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: ffffff;
+font-weight: normal;
+}
+.style9 {font-style: italic}
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu-  Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit /web/20160319112457/http://www.dynamicdrive.com/ for full source code
+***********************************************/
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="giving.html">Annual Giving</a>'
+menu1[1]='<a href=" /web/20160319112457/http://www.legacy.vg/brandywineconservancy">Planned Giving</a>'
+menu1[2]='<a href="volunteer.html">Volunteer</a>'  
+ 
+
+//Contents for menu 2, and so on
+var menu2=new Array()
+menu2[0]='<a href="mapdir.html">Hours, Admission &amp; Directions</a>'
+menu2[1]='<a href="espanol.html">Informaci&#243;n en Espanol</a>'
+menu2[2]='<a href="calendar_events.html">Museum Tours &amp; Events</a>'
+menu2[3]='<a href="ncstudio.html">N.C. Wyeth House &amp; Studio Tour</a>'
+menu2[4]='<a href="kuerner.html">Kuerner Farm Tour</a>'
+menu2[5]='<a href="tour.html">Group Tours</a>'
+menu2[6]='<a href="audiotours.html">Audio Tours</a>'
+menu2[7]='<a href="facilitiesuse.html">Facility Use</a>'
+menu2[8]='<a href="restaurant.html">Restaurant</a>'
+menu2[9]='<a href="shop.html">Museum Shop</a>'
+ 
+//Contents for menu 3, and so on
+var menu3=new Array()
+menu3[0]='<a href="">Tour Wales Homepage</a>'
+menu3[1]='<a href="../../tours/wales/">The Six Regions of Wales</a>'
+menu3[2]='<a href="../../tours/welshcastles/">Touring Welsh Castles</a>'
+menu3[3]='<a href="sacred/">Sacred Places</a>'
+menu3[4]='<a href="../../wales/7wonders/wonderintro.html">Tour the Castles of Wales</a>'
+menu3[5]='<a href="../../wales/7wonders/wonderintro.html">Seven Wonders of Wales</a>'
+menu3[6]='<a href="../../wales/culture1.html">Cultural Traditions of Wales</a>'
+menu3[7]='<a href="../../wales/whist.html">History of Wales</a>'
+menu3[8]='<a href="facts/">Facts about Wales</a>'
+menu3[9]='<a href="eighthwonder/wonder1.html">The Eighth Wonder</a>'
+
+//Contents for menu 4, and so on
+var menu4=new Array()
+menu4[0]='<a href="magical">Magical History Tour</a>'
+menu4[1]='<a href="../../tours/winchester/city.html">Explore Winchester</a>'
+menu4[2]='<a href="../../tours/bmrbgal/">British Museum Romano-British Gallery</a>'
+menu4[3]='<a href="../../tours/westcountry">West Country</a>'
+menu4[4]='<a href="../../tours/westpubs">West Country Pubs</a>'
+menu4[5]='<a href="../../tours/ssxchurch">Sussex Churches</a>'
+menu4[6]='<a href="../../tours/york">Ancient York</a>'
+menu4[7]='<a href="../../tours/coquetdale">Travel to Coquetdale</a>'
+menu4[8]='<a href="../../tours/berks">Berkshire Towns</a>'
+menu4[9]='<a href="../../tours/lincs">Country Houses around S.W. Lincolnshire</a>'
+menu4[10]='<a href="/travel/tours/glstour1.html">Tour Gloucester</a>'
+menu4[11]='<a href="../../tours/hadrianswall">Tour Hadrians Wall</a>'
+menu4[12]='<a href="../../tours/batnorthumb">Northumberland Battlefields</a>'
+menu4[13]='<a href="../../tours/wales">Six Regions of Wales</a>'
+menu4[14]='<a href="../../tours/welshcastles/">Touring Welsh Castle</a>'
+menu4[15]='<a href="../../britcastles/">Touring British Castle</a>'
+menu4[16]='<a href="../../tours/yorksmon">Monasteries - Yorkshire Dales & Moors</a>'
+menu4[17]='<a href="../../tours/fdrake">In Search of Sir Francis Drake</a>'
+menu4[18]='<a href="../../tours/fdrake/part3.html">Sir Francis Drakes Home </a>'
+menu4[19]='<a href="../../tours/rhood/rhnotts.html">Robin Hoods Nottinghamshire</a>'
+menu4[20]='<a href="../../tours/rhood/rhyorks.html" >Robin Hoods Yorkshire</a>' 
+menu4[21]='<a href="../../tours/dome">Tour the Millennium Dome</a>' 
+ 
+//Contents for menu 5, and so on
+var menu5=new Array()
+menu5[0]='<a href="UKfastsearch.html">Hotel Reservations</a>'
+menu5[1]='<a href="special-offers.html">Hotel Specials</a>'
+menu5[2]='<a href="/web/20160319112457/http://www.taxireservations.co.uk/SelectSourcePoint.action?lang=en&usercode=offtl1&showhome=no">Airport Transfers</a>'
+menu5[3]='<a href="../PriorityTravel/travel_resources.html">Resources Quick Links</a>' 
+menu5[4]='<a href="theater-packages.html">Theatre Breaks</a>'  
+menu5[5]='<a href="Market/index.html">Travel Market</a>' 
+ 
+  
+ //Contents for menu 6, and so on
+var menu6=new Array()
+menu6[0]='<a href="../../travel/ukhotels.html">Hotels & B&Bs</a>'
+menu6[1]='<a href="../../travel/cottages.html">Self Catering Cottages</a>'
+menu6[2]='<a href="../../travel/studenttravel.html">Student Travel</a>'
+menu6[3]='<a href="../../travel/touristboards.html">Tourist Boards</a>'
+menu6[4]='<a href="../../travel/guides.html">UK County Guides</a>'
+menu6[5]='<a href="../../travel/city/index.html">City Pages</a>'
+menu6[6]='<a href="../../travel/golfing.html">Golfing in the UK</a>'
+menu6[7]='<a href="../../travel/canal_boating.html">Boating Vacations</a>'
+menu6[8]='<a href="../../travel/a_z_museums.html">UK Museums</a>'
+menu6[9]='<a href="../../travel/natlparks.html">UK National Parks</a>'
+menu6[10]='<a href=../../travel/festivals_list.html">UK Festivals</a>'
+menu6[11]='<a href="../../educat/uniframe.html">Colleges & Universities</a>'
+menu6[12]='<a href="../../travel/pubs.html">Pub Guides</a>'
+ 
+ 
+ 
+ //Contents for menu 7, and so on
+var menu7=new Array()
+menu7[0]='<a href="../../awards">Awards</a>'
+menu7[1]='<a href="../../privacy.html">Privacy Statement</a>'
+  menu7[2]='<a href="../../advertising">Advertise on Britannia</a>'
+  menu7[3]='<a href="../../faq.html">FAQs</a>'
+  menu7[4]='<a href="../../staff.html">Contributors</a>'
+  menu7[5]='<a href="../../contact.html">Contact Us</a>'
+  
+  //Contents for menu 8, and so on
+var menu8=new Array()
+menu8[0]='<a href="../../travel/UK-london-tours.html">UK & London Tours</a>'
+menu8[1]='<a href="../../travel/luxury-tours.html">Guided Luxury Tours</a>'
+menu8[2]='<a href="/web/20160319112457/http://www.offtolondon.com/about_tours.html">Driver/Guide Private Tours</a>'
+ 
+  
+ 
+var menuwidth='190px' //default menu width
+var menubgcolor='9a1106'  //menu bgcolor
+var disappeardelay=300  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=-10
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+
+<TITLE>Touring Southwest Lincolnshire Country Houses on Britannia: Belton House</TITLE>
+	
+<META NAME="keywords" CONTENT="Belton House, South-West Lincolnshire, England, Great Britain, British History, English, UK, United Kingdom, hall, court, mansion, stately home, country house, manor, big house, palace, architecture">
+
+<META NAME="description" CONTENT="Britannia's tours of country houses in the South West of Lincolnshire.">
+
+<META NAME="rating" CONTENT="General">
+
+</head>
+ 
+ <body topmargin=0 marginheight=0 marginwidth=0 bgcolor="#ffffff">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.britannia.com/tours/lincs/swlinc36.html";
+
+var firstYear = 1996;
+var displayDay = "19";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.britannia.com/tours/lincs/swlinc36.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160319112457" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150910022817/http://www.britannia.com/tours/lincs/swlinc36.html" title="10 Sep 2015">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:24:57 Mar 19, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20160820135748/http://www.britannia.com/tours/lincs/swlinc36.html" title="20 Aug 2016"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150910022817/http://www.britannia.com/tours/lincs/swlinc36.html" title="2:28:17 Sep 10, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:24:57 Mar 19, 2016">19</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160820135748/http://www.britannia.com/tours/lincs/swlinc36.html" title="13:57:48 Aug 20, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20140911105948/http://britannia.com/tours/lincs/swlinc36.html" title="11 Sep 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:24:57 Mar 19, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160319112457*/http://www.britannia.com/tours/lincs/swlinc36.html" title="See a list of every capture for this URL">62 captures</a>
+           <div class="r" title="Timespan for captures of this URL">5 Dec 00 - 20 Aug 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000001_2001:-1:010100010011_2002:-1:010000001101_2003:-1:010101010101_2004:-1:010101110101_2005:-1:010000000000_2006:-1:101001010111_2007:-1:010100000101_2008:-1:000101001000_2009:-1:000000100100_2010:-1:100000000000_2011:-1:000000000000_2012:-1:000001000001_2013:-1:211111111100_2014:-1:000100101000_2015:-1:001010001000_2016:2:001000010000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+ 
+ <script language="javascript">
+
+
+
+ <!--//
+
+
+
+ function popup(url)
+
+
+
+ {
+
+
+
+ window.open(url, "Popup", "Popup","width=500,height=357,directories=no,toolbar=no,resizable=no,menubar=no,scrollbars=yes");
+
+
+
+ }
+
+
+
+ //-->
+
+
+
+</script>
+<center><table cellpadding=0 cellspacing=0 border=0 width=1080><tr ><td width=23 bgcolor="#ffffff" >&nbsp;</td><td width=300 bgcolor="#ffffff">&nbsp;</td><td bgcolor="#ffffff" width=728><table width=728 cellpadding=0 cellspacing=0 border=0><tr>
+<td valign=top bgcolor="#121212" >
+<script type="text/javascript"><!--
+google_ad_client = "pub-6120450523731115";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_text = "000000";
+google_color_url = "0066CC";
+//--></script>
+<script type="text/javascript"
+  src="/web/20160319112457js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td></tr></table></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=1080><tr ><td width=43 bgcolor="#121212" >&nbsp;</td><td bgcolor="#121212"><img src="/web/20160319112457im_/http://www.britannia.com/images2011/boudica.jpg" width="85" height="83" hspace="2" vspace="10" border="0"></td><td bgcolor="#121212" class="brithead" align=left width=600>BRITANNIA<div class="sansub">America's Gateway to the British Isles since 1996</div></td><td bgcolor="#121212" align=right width=440><br><br><table border="0"  cellspacing=0 cellpadding=0 ><tr ><td align=center class="navbar" valign=middle>SEARCH&nbsp;&nbsp;</td><td valign=middle><form method="get" action="/web/20160319112457/http://www.google.com/custom" target="google_window"> <input type="hidden" name="domains" value="www.britannia.com"></input>
+<input type="text" name="q" size="20" maxlength="255" value=""></input>
+</td><td nowrap="nowrap" valign=middle align=center class="navbar"><input type="radio" name="sitesearch" value="" ></input>
+Web&nbsp;&nbsp;</td><td class="navbar" valign=middle> <input type="radio" name="sitesearch" value="www.britannia.com" checked="checked"></input>
+Britannia&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<input type="submit" name="sa" value="Google Search"></input>
+<input type="hidden" name="client" value="pub-6120450523731115"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="ISO-8859-1"></input>
+<input type="hidden" name="oe" value="ISO-8859-1"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></form></tr></table></td><td width=23 bgcolor="#121212" >&nbsp;</td></tr></table>
+<table cellpadding=5 cellspacing=0 border=0 width=1080 height=42><tr ><td width=43 bgcolor="#333333" >&nbsp;</td><td valign=middle bgcolor="#333333" class="mainnav"  align=center><a href="/web/20160319112457/http://www.britannia.com/tours/index.html">HOME</a></td><td valign=middle bgcolor="#333333"  align=center class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/history">BRITISH HISTORY</a></td><td valign=middle bgcolor="#333333" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/history/h12.html">KING ARTHUR</a></td><td valign=middle  align=center bgcolor="#333333" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/history/h6.html">MONARCHS</a></td><td valign=middle  align=center bgcolor="#870d04" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/travel">TRAVEL</a></td><td valign=middle  align=center bgcolor="#333333" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/bios">BIOGRAPHIES</a></td><td valign=middle  align=center bgcolor="#333333"   align=center class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/panorama">PANORAMA</a></td><td valign=middle  align=center bgcolor="#333333" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/blogs">BLOGS</a></td><td valign=middle  align=center bgcolor="#333333" class="mainnav"><a href="/web/20160319112457/http://www.britannia.com/shop">SHOP</a></td><td valign=middle bgcolor="#333333" width=120 class="mainnav">&nbsp;</td></tr></table><table cellpadding=0 cellspacing=0 border=0 width=1080 ><tr><td width=23 bgcolor="#333333">&nbsp;</td><td bgcolor="#870d04" ><center>
+<table cellpadding=5 cellspacing=3 border=0  height=42><tr><td bgcolor="#870d04" ><td valign=middle bgcolor="#870d04" class="subnav"  align=center> <a href="/web/20160319112457/http://www.britannia.com/tours/london">London</a></td><td valign=middle bgcolor="#870d04"  align=center class="subnav"><a href="/web/20160319112457/http://www.britannia.com/tours/scotland">Scotland</a></td><td valign=middle bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu3, '165px')" onMouseout="delayhidemenu()">Wales</a></td><td valign=middle  align=center bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu4, '210px')" onMouseout="delayhidemenu()">History Tours</a></td><td valign=middle  align=center bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu8, '165px')" onMouseout="delayhidemenu()">UK Guided Tours</a></td><td valign=middle  align=center bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu5, '165px')" onMouseout="delayhidemenu()">Traveler's Resources</a></td><td valign=subnav  align=center bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu6, '165px')" onMouseout="delayhidemenu()">Travel Directories</a></td><td valign=middle  align=center bgcolor="#870d04" class="subnav"><a href="/web/20160319112457/http://www.britannia.com/Classifieds/">Classifieds</a></td> <td valign=middle  align=center bgcolor="#870d04" class="subnav"><a href="default.htm" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu7, '165px')" onMouseout="delayhidemenu()">About Us</a></td></tr></table> </center><td width=23 bgcolor="#333333">&nbsp;</td></tr></table>
+
+<table cellpadding=0 cellspacing=0 border=0 width=1080><tr><td width=23 bgcolor="#e0dede">&nbsp;</td><td bgcolor="#ffffff" valign=top><center>
+<table cellpadding=5 cellspacing=0 border=0 width=146><tr><td bgcolor="#ffffff" valign=top> 
+<table cellpadding=3 cellspacing=0 border=0 width=136><tr><td bgcolor="#ffffff" class="insidenav" valign=top><b>UK Directories</b></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/ukhotels.html" class="special">Hotels & B&Bs</a></td> </tr>
+ 
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/cottages.html" class="special">Self Catering Cottages</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/studenttravel.html" class="special">Student Travel</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/hosteling.html" class="special">UK Hostels</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/touristboards.html" class="special">Tourist Boards</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/guides.html" class="special">UK County Guides</td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/city/index.html" class="special">City Pages</td> </tr>
+ 
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/golfing.html" class="special">Golfing in the UK</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/canal_boating.html" class="special">Boating Vacations</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/a_z_museums.html" class="special">UK Museums</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/natlparks.html" class="special">UK National Parks</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/festivals_list.html" class="special">UK Festivals</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/educat/uniframe.html" class="special">Colleges & Universities</a></td> </tr>
+<tr><td bgcolor="#ffffff" class="insidenav" ><a href="/web/20160319112457/http://www.britannia.com/travel/pubs.html" class="special">Pub Guide</a></td> </tr>
+ </table></td> </tr>  </table>
+
+
+
+
+
+</td>
+<td valign="top" bgcolor="#ffffff" width=524>
+<table cellpadding=10 cellspacing=0 border=0 width=524>
+<tr><td valign=top class="bodycopy">
+
+
+<A HREF="/web/20160319112457/http://www.britannia.com/tours" class="special"><b>Tours</b></a>&nbsp;>&nbsp;&nbsp;>&nbsp;<A HREF="/web/20160319112457/http://www.britannia.com/tours/lincs/" class="special">Southwest Lincolnshire</a>&nbsp;>&nbsp;Belton House<p>
+
+<IMG SRC="images/michaelicon.jpg" ALT="Michael Ford, History Editor" WIDTH="50" HEIGHT="50" ALIGN="left" border=1><div class="subhead">Southwest Lincolnshire Country Houses</div> 
+by Michael Ford, Country House Editor
+<br><br><br> <br>
+
+
+<A HREF="javascript:popup('images/areamap.jpg')"><IMG SRC="images/mapball.jpg" ALT="" WIDTH="30" HEIGHT="25" BORDER="0" VSPACE="4" ALIGN="right"></a><div class="head"><font color=000066><b>Belton House</b></font></div><font size=3 color="#cc0000">Day 7 -  We then moved on to Belton in the northern outskirts of Grantham.</font><br><br>
+
+<IMG SRC="images/belton.jpg" ALT="Belton House" HSPACE="6" BORDER="0" ALIGN="right">Belton House is a beautiful classic restoration masterpiece built between 1685 and 1688 for Sir John Brownlow, the 3rd Baron of Great Humby.  He had inherited a fortune from his father who was a lawyer. The house has an eleven bay front with the centre three being pedimented. The whole facade is symmetrical and is crowned by a large cupola. The 3rd Earl Brownlow restored the house in the 1870s. Through marriage the property pass into the hands of the Cust family. John Cust was created Earl Brownlow and Viscount Alford in 1815. The 7th Baron Brownlow gave Belton to The National Trust in 1984.
+<p>The entrance leads into the Marble Hall, which has a chequer-board floor and beautiful woodcarvings on the wall panelling. The Saloon likewise is wood panelled with intricate carvings but also has a magnificent plastered ceiling. The Chapel has a quite extraordinary and overpowering reredos. There are exquisite beds in the bedrooms with the one in the Blue Bedroom being over 16ft high. The Staircase Hall has a fine decorated staircase and here hangs perhaps the best known picture in the house of Adelaide, Countess Brownlow by Frederick Leighton. Other rooms of note are the Library with its delightfully figured marble fireplace, the Tapestry Room with early 18th century tapestries depicting the story of Diogenes, the Hondecoeter Room and the Red Drawing Room. There are many family pictures throughout the house along with lovely furnishings and decor.
+<p>The stable block is of classic country house proportions and looks very solid.  The gardens are formal and there is an orangery in the Italian garden. The park stretches to over 1000 acres with an avenue leading the eye to Bellmount Tower which was built in 1749 and stands on a nearby hillside. It is said that seven counties may be seen from the top of the tower.
+<p>The author Edith Wharton was so taken by Belton House that she had a miniature version of it built in Massachusetts.
+<p>Belton has been used as a setting for many television series and dramas including 'Pride and Prejudice', 'Tom Jones', 'The Buccaneers' and 'Bleak House'.
+<p>The church of St. Peter and St. Paul in the grounds dates from about 1200 and is filled with monuments to both the Brownlow and Cust families.
+<br><br>
+
+ 
+
+
+NEXT STOP: <A HREF="swlinc37.html"  class="special"><font size=2>SW Lincolnshire Houses</font></A>
+
+<BR> <BR>
+ 
+ 
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 BGCOLOR="ffffff"><FORM NAME="URLJump"><TR>
+<TD width=500 ALIGN=LEFT><SELECT NAME="URLS" onChange="location = this.options[this.selectedIndex].value">
+<OPTION VALUE="VOID">SW Lincolnshire Tour Shortcuts
+
+<OPTION VALUE="swlinc01.html">Stamford
+
+<OPTION VALUE="swlinc02.html">Burghley House
+
+<OPTION VALUE="swlinc03.html">Tickencote Hall
+
+<OPTION VALUE="swlinc04.html">South Rochford Hall
+
+<OPTION VALUE="swlinc05.html">Harlaxton Manor
+
+<OPTION VALUE="swlinc06.html">Woolsthorpe Hall
+
+<OPTION VALUE="swlinc07.html">Grimsthorpe Castle
+
+<OPTION VALUE="swlinc08.html">The Red Hall at Bourne
+
+<OPTION VALUE="swlinc09.html">Irnham Hall
+
+<OPTION VALUE="swlinc10.html">Boston
+
+<OPTION VALUE="swlinc11.html">Tattershall Castle
+
+<OPTION VALUE="swlinc12.html">Sleaford
+
+<OPTION VALUE="swlinc13.html">Fulbeck Hall
+
+<OPTION VALUE="swlinc14.html">Grantham
+
+<OPTION VALUE="swlinc15.html">Belvoir Castle
+
+<OPTION VALUE="swlinc16.html">Melton Mowbray
+
+<OPTION VALUE="swlinc17.html">Stapleford Park
+
+<OPTION VALUE="swlinc18.html">Oakham Castle
+
+<OPTION VALUE="swlinc19.html">Burley-on-the-Hill
+
+<OPTION VALUE="swlinc20.html">Exton Church
+
+<OPTION VALUE="swlinc21.html">Bassingthorpe Manor House
+
+<OPTION VALUE="swlinc22.html">Temple Bruer Tower
+
+<OPTION VALUE="swlinc23.html">Lincoln
+
+<OPTION VALUE="swlinc24.html">Doddington Hall
+
+<OPTION VALUE="swlinc25.html">Auborn Hall
+
+<OPTION VALUE="swlinc26.html">Norton Disney
+
+<OPTION VALUE="swlinc27.html">Stragglethorpe Hall
+
+<OPTION VALUE="swlinc28.html">Hough-on-the-Hill Church
+
+<OPTION VALUE="swlinc29.html">Marston Hall
+
+<OPTION VALUE="swlinc30.html">Newark
+
+<OPTION VALUE="swlinc31.html">Upton Hall
+
+<OPTION VALUE="swlinc32.html">Southwell Minster
+
+<OPTION VALUE="swlinc33.html">Holme Pierrepont Hall
+
+<OPTION VALUE="swlinc34.html">Ropsley Church
+
+<OPTION VALUE="swlinc35.html">Boothby Pagnell 
+
+<OPTION VALUE="swlinc36.html">Belton House
+
+<OPTION VALUE="swlinc37.html">SW Lincolnshire Houses
+
+<OPTION VALUE="swlinc38.html">Ayscoughfee Hall
+
+<OPTION VALUE="swlinc39.html">Spalding
+
+<OPTION VALUE="swlinc40.html">Crowland
+
+<OPTION VALUE="swlinc41.html">Peckover House
+</SELECT></TD>
+</TR></FORM></TABLE>
+
+ <br> <br> 
+
+</td> </tr>
+
+ 
+ 
+<TR><TD valign=top bgcolor="#ffffff" colspan=2 class="bodycopy">Copyright &copy;2001  Britannia.com, LLC &nbsp;&nbsp;<a href="mailto:publish@britannia.com" class="special">Questions? Comments!</a>    </td> </tr></table> </td>
+
+
+<td valign=top  >
+<table cellpadding=10 cellspacing=0 border=0 >
+<tr bgcolor="#ffffff" align=center> 
+<td valign=top  align=center><script type="text/javascript"><!--
+google_ad_client = "pub-0790917549706695";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "FF0000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="/web/20160319112457js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 >
+<TR><TD valign=top bgcolor="#ffffff" class="bodycopy"><script type="text/javascript"><!--
+google_ad_client = "pub-6120450523731115";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript"
+  src="/web/20160319112457js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></td><td valign=top bgcolor="#ffffff"><script type="text/javascript"><!--
+google_ad_client = "pub-6120450523731115";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript"
+  src="/web/20160319112457js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> </td></tr></table></td> 
+
+  <td width=23 bgcolor="#e0dede">&nbsp;</td> </tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=1080 height=25><tr><td  bgcolor="#e0dede">&nbsp;</td></tr></table></td></tr></table></center>
+
+</body>
+ 
+</html>

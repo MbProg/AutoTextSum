@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app4.us.archive.org";archive_analytics.values.server_ms=340;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<!-- crc:{VAR:crc} -->
+
+<title>Birmingham Demonstrations</title>
+<meta
+    http-equiv="Content-Type"
+    content="text/html; charset=ISO-8859-1" />
+<meta
+    name="description"
+    content="Sitegen Web site generation framework" />
+<meta
+    name="keywords"
+    content="Sitegen web site generation framework" />
+
+<link
+    rel="ICON"
+    href="/images/favicon.gif" />
+
+  <link rel="stylesheet" href="/web/20160405131306cs_/http://dlgmaint.galib.uga.edu/js/dojo-1.3.1/dijit/themes/tundra/tundra.css"/>
+<link rel="stylesheet" href="/web/20160405131306cs_/http://dlgmaint.galib.uga.edu/js/dojo-1.3.1/dojo/resources/dojo.css" />
+
+  <link rel="stylesheet" href="/web/20160405131306cs_/http://crdl.usg.edu/css/sitegen_common.css" />
+<link rel="stylesheet" href="/web/20160405131306cs_/http://crdl.usg.edu/css/sitegen_element_defaults.css" />
+
+  <link rel="stylesheet" href="/web/20160405131306cs_/http://crdl.usg.edu/css/crdl.css" />
+
+  <style type="text/css">
+  #navtop .active a { background: #4F2222 url(/web/20160405131306im_/http://crdl.usg.edu/images/topnav_active.gif) repeat-x scroll left top; padding-top: 9px;}
+</style>
+
+
+<style type="text/css">
+@import "/web/20160405131306cs_/http://crdl.usg.edu/css/collapsing_tree.css";
+</style>
+
+<script type="text/javascript">
+  var page_code = "birmingham_demonstrations";
+  var site_code = "crdl";
+</script>
+<script
+    type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/cookies.js"></script>
+
+<script type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/feature.js"></script>
+
+  <script type="text/javascript" src="/web/20160405131306js_/http://dlgmaint.galib.uga.edu/js/dojo-1.3.1/dojo/dojo.xd.js"
+        djConfig="baseUrl: './', modulePaths: {custom: '/javascript/custom'}, parseOnLoad: true"></script>
+  <script type="text/javascript">
+    dojo.require("dojo.parser");
+    dojo.require("dijit.Dialog");
+    dojo.require("dijit.Tooltip");
+    dojo.require("dijit.form.TextBox");
+    dojo.require("dojox.data.QueryReadStore");
+    dojo.require("dijit.form.FilteringSelect");
+    dojo.require("dijit.form.ComboBox");
+    dojo.require("custom.ComboBoxReadStore");
+    dojo.require("dijit.form.Button");
+    dojo.require("dijit.form.CheckBox");
+    dojo.require("dijit.TitlePane");
+    dojo.require("dijit.form.Textarea");
+    dojo.require("dijit.form.RadioButton");
+    dojo.require("dijit.form.NumberTextBox");
+    dojo.require("dojo.cookie");
+    function changeStore(selectId, storeName){
+        dijit.byId( selectId ).store = dojo.getObject(storeName);
+    }
+
+    dojo.addOnLoad( function() {
+
+      var userid = getCookie( "crdl_site_userid" );
+      var user_menu;
+      if( userid ) {
+        var logout_link = document.getElementById( "wm-loginmenu" );
+        logout_link.innerHTML = "Webadmin: <a href=\"/web/20160405131306/http://crdl.usg.edu/cgi/crdl?dbs=crdl_site&userid="+userid+"&amp;action=logout&amp;confirmation=1\" onclick=\"deleteCookie('crdl_site_userid')\">Logout</a>";
+        dojo.style( 'wm-editmenu', 'display', 'block');
+      }
+     /** var q = dojo.query( 'a[href*="#"]' );
+      if ( page_code == 'places_listing' || ( !(null == q) && q.length > 0 ) ){
+        var sidebar = dojo.byId( 'navleft' );
+        var content = dojo.byId( 'content' );
+        sidebar.style.marginBottom = "0px";
+        sidebar.style.paddingBottom = "10px";
+        content.style.marginBottom = "0px";
+        content.style.paddingBottom = "10px";
+        sidebar.style.minHeight = dojo.byId("content").offsetHeight + "px";
+      }**/
+    } );
+  </script>
+
+<script
+    type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/open_close.js"></script>
+
+<script type="text/javascript" src="/web/20160405131306js_/http://crdl.usg.edu/javascript/openclose.js"></script>
+
+
+<script type="text/javascript">
+  function wm_edit_go(action){
+    edit_menu_go( 'crdl_site', action, getCookie( "crdl_site_userid" ) );
+  }
+
+  function edit_menu_go( dbs, action, userid ){
+    document.location = "/web/20160405131306/http://crdl.usg.edu/cgi/crdl?dbs=" + dbs + "&userid=" + userid + "&amp;" + action;
+  }
+
+  function wm_logout(){
+    logout( 'crdl_site_userid', 'crdl_site', getCookie( "crdl_site_userid" ) );
+  }
+
+  function logout( cookie, dbs, userid ){
+    dojo.addOnUnload( function(){
+      deleteCookie( cookie );
+    });
+    edit_menu_go( dbs, 'action=logout&amp;confirmation=1', userid );
+  }
+
+  var page_code = 'birmingham_demonstrations';
+  var site_code = 'crdl';
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript">
+  function resize() {
+    var currentSize = getViewportSize();
+    if (currentSize[0] != g_prevSize[0] || currentSize[1] != g_prevSize[1]) {
+      g_prevSize = currentSize;
+      setWidthIE6();
+      //g_prevSize = getViewportSize();
+    }//if (currentSize[0] != g_prevSize[0] || currentSize[1] != g_prevSize[1])
+  }//function resize()
+
+
+  function getViewportSize() {
+    var size = [0, 0];
+    if (typeof window.innerWidth != 'undefined') {
+      size = [ window.innerWidth, window.innerHeight ];
+    }//end if (typeof window.innerWidth != 'undefined')
+    else if (typeof document.documentElement != 'undefined' &&
+             typeof document.documentElement.clientWidth != 'undefined' &&
+             document.documentElement.clientWidth != 0) {
+      size = [ document.documentElement.clientWidth, document.documentElement.clientHeight ];
+    }//end else if (typeof document.documentElement != 'undefined' &&
+    else {
+      size = [ document.getElementsByTagName('body')[0].clientWidth,
+              document.getElementsByTagName('body')[0].clientHeight ];
+    }//end else
+
+    return size;
+  }//end function getViewportSize()
+
+  function setWidthIE6() {
+    var width = document.body.clientWidth;
+
+    if ( width < 1150 ) {
+      dojo.style( dojo.byId('container'), 'width', '1150px' );
+      dojo.style( dojo.byId( 'header' ), 'width', '1150px' );
+      dojo.style( dojo.byId( 'navtop' ), 'width', '1150px' );
+      dojo.style( dojo.byId( 'footer' ), 'width', '1150px' );
+    }//end if ( width < 1150 )
+    else if ( width > 1150 ){
+      dojo.style( dojo.byId('container'), 'width', 'auto' );
+      dojo.style( dojo.byId( 'header' ), 'width', 'auto' );
+      dojo.style( dojo.byId( 'navtop' ), 'width', 'auto' );
+      dojo.style( dojo.byId( 'footer' ), 'width', 'auto' );
+    }
+  }//end function setWidthIE6()
+
+  dojo.addOnLoad( function(){
+    setWidthIE6();
+    window.g_prevSize = getViewportSize();
+    setInterval(resize, 100);
+
+  } );
+</script>
+<![endif]-->
+
+
+<script
+    type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/prototype.lite.js"></script>
+<script
+    type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/moo.fx.js"></script>
+<script
+    type="text/javascript"
+    src="/web/20160405131306js_/http://crdl.usg.edu/javascript/custom.js"></script>
+
+</head>
+
+<body class="tundra">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome";
+
+var firstYear = 1996;
+var displayDay = "5";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160405131306" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150907080127/http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome" title="7 Sep 2015">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 13:13:06 Apr 5, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150907080127/http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome" title="8:01:27 Sep 7, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 13:13:06 Apr 5, 2016">5</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20110702131200/http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome" title="2 Jul 2011"><strong>2011</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 13:13:06 Apr 5, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160405131306*/http://crdl.usg.edu/events/birmingham_demonstrations/?Welcome" title="See a list of every capture for this URL">4 captures</a>
+           <div class="r" title="Timespan for captures of this URL">2 Jul 11 - 5 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000100000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000011000_2016:3:000100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+  <div id="header" style="background: #251717 url(/web/20160405131306im_/http://crdl.usg.edu/images/header_bg.jpg) no-repeat scroll right;">
+    <a href="/web/20160405131306/http://crdl.usg.edu/">
+      <img alt="Civil Rights Digital Library" src="/web/20160405131306im_/http://crdl.usg.edu/images/logo_title.gif" />
+    </a>
+  </div>
+  <div id="navtop" style="background:#713535 url(/web/20160405131306im_/http://crdl.usg.edu/images/topnav_bg.gif) repeat-x scroll left top;">
+    <ul><li>
+<a href="/web/20160405131306/http://crdl.usg.edu/" class="first">Home</a>
+</li>
+<li>
+<a href="/web/20160405131306/http://crdl.usg.edu/about">About</a>
+</li>
+<li>
+<a href="/web/20160405131306/http://crdl.usg.edu/help">Help</a>
+</li>
+</ul>
+    <a
+    href="/web/20160405131306/http://www.libs.uga.edu/media"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/wjbma-logo.gif"
+    border="0"
+    alt="Walter J Brown Media Archive" /></a>
+<a
+    href="/web/20160405131306/http://www.newgeorgiaencyclopedia.com/"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/nge-logo.gif"
+    border="0"
+    alt="NGE" /></a>
+<a
+    href="/web/20160405131306/http://www.galileo.usg.edu/"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/logo_galileo.gif"
+    border="0"
+    alt="GALILEO" /></a>
+<a
+    href="/web/20160405131306/http://dlg.galileo.usg.edu/"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/dlg-logo.gif"
+    alt="DLG" /></a>
+<a
+    href="/web/20160405131306/http://www.libs.uga.edu/"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/ugalibs-logo.gif"
+    border="0"
+    alt="UGA Libraries" /></a>
+
+  </div>
+  <div id="container">
+    <div id="navleft" class="column">
+      <div id="basicsearch"><div dojoType="custom.ComboBoxReadStore" jsId="store"
+     url="http://crdl.usg.edu/cgi/autocomplete" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_kw"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=kw" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_sa"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=sa" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_ca"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=ca" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_cs"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=cs" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_ty"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=ty" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_ti"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=ti" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store_co"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=co" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__sa"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_sa" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__sp"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_sp" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__cn"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_cn" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__rn"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_rn" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__cr"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_cr" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__cs"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_cs" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__ty"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_ty" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__ti"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_ti" requestMethod="get"></div>
+<div dojoType="custom.ComboBoxReadStore" jsId="store__co"
+     url="http://crdl.usg.edu/cgi/autocomplete?tag=_co" requestMethod="get"></div>
+<form
+    action="/web/20160405131306/http://crdl.usg.edu/cgi/crdl"
+    method="post"
+    name="basic_search"
+    id="basic_search">
+   <input type="hidden" value="1" id="basic_skip_facets" name="skipfacets"/>
+    <input type="hidden" value="25" id="numrecs" name="numrecs"/>
+<!--<input type="hidden" name="index_b" value="rt"           />
+<input type="hidden" name="term_b"  value="item or coll" />
+<input type="hidden" name="index_c" value="pb"           />
+<input type="hidden" name="term_c"  value="yes"          /> -->
+<input
+    type="hidden"
+    id="basic_action"
+    name="action"
+    value="query" />
+<h2 style="border-bottom: 1px solid black;">
+<a href="/web/20160405131306/http://crdl.usg.edu/help/"
+    class="tips"><img
+    src="/web/20160405131306im_/http://crdl.usg.edu/images/help.gif"
+    border="0"
+    alt="Search Tips"
+    title="Search Tips" /></a>
+BASIC SEARCH
+</h2>
+<p>
+<input
+    name="term_a"
+    id="basic_term_a"
+    dojoType="dijit.form.ComboBox"
+    autoComplete="false"
+    store="store"
+    pageSize="25"
+    class="search_box"
+    trim="true"
+    lowercase="true"
+    style="width: 11.5em;"
+    hasDownArrow="false" /> in
+
+<!-- make enter key submit the form -->
+<script type="text/javascript">
+dojo.addOnLoad( function(){
+    dojo.connect(
+        dijit.byId( 'basic_term_a' ),
+        'onKeyPress',
+        function( evt ){
+            if ( evt.keyCode == dojo.keys.ENTER )
+                dojo.byId( 'basic_search' ).submit();
+        }
+    );
+} );
+</script>
+
+<select dojoType="dijit.form.FilteringSelect" name="index_a" id="basic_index_a" style="width:11.5em;"
+    onchange="changeStore('basic_term_a','store_'+dijit.byId('basic_index_a').attr('value'))">
+<option value="kw">Keywords</option>
+<option value="sa">Subject</option>
+<option value="ca">Creator</option>
+<option value="cs">Location</option>
+<option value="ty">Media Type</option>
+<option value="ti">Title</option>
+<option value="co">Contributor</option>
+<option value="_sa">Subject Phrase</option>
+<option value="_sp">Names phrase</option>
+<option value="_cn">Collection name phrase</option>
+<option value="_rn">Institution name phrase</option>
+<option value="_cr">Creator Phrase</option>
+<option value="_cs">Location Phrase</option>
+<option value="_ty">Media Type Phrase</option>
+<option value="_ti">Title Phrase</option>
+<option value="_co">Contributor Phrase</option>
+
+</select><button
+    type="submit"
+    value="Go">Go</button>
+<a href="/web/20160405131306/http://crdl.usg.edu/search/">
+Advanced Search</a>
+<br /><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?action=results">
+Previous Results</a>
+</p>
+</form>
+</div>
+      <h2 style="border-bottom: 1px solid black;">BROWSE</h2><ul><li class="active"> <a
+    href="/web/20160405131306/http://crdl.usg.edu/events">
+    Events</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/places">
+    Places</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/people/a">
+    People</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/topics">
+    Topics</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/resources">
+    Educator Resources</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/media_types">
+    Media Types</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/institutions">
+    Contributing Institutions</a></li><li> <a
+    href="/web/20160405131306/http://crdl.usg.edu/collections">
+    Collections A-Z</a></li></ul>
+
+      <div id="main-editmenu">
+      </div>
+      <div id="wm-editmenu" class="editmenu">
+        Webadmin:
+        <a href="javascript:wm_edit_go( 'id=birmingham_demonstrations');">Edit (<em>This</em> page)</a>
+        <a href="javascript:wm_edit_go( 'action=workform' );">Workform (New)</a>
+        <a href="javascript:wm_edit_go( 'action=search' );">Search</a>
+        <a href="/web/20160405131306/http://dlgmaint.galib.uga.edu/crdl/webadmin/">Site Map</a>
+        <a href="javascript:wm_logout();">Logout</a>
+      </div>
+    </div>
+    <div id="content"  class="column">
+      <div id="breadcrumbs">
+        <a href="/web/20160405131306/http://crdl.usg.edu/">Home</a>&nbsp;&raquo;
+<a href="/web/20160405131306/http://crdl.usg.edu/events">Events</a>&nbsp;&raquo;
+Birmingham Demonstrations
+      </div>
+      <h2>Birmingham Demonstrations</h2>
+
+<h3>Background:</h3>
+<p style="margin-left:2em">
+Despite energetic organization on the local level, Birmingham, Alabama remained a largely segregated city in the spring of 1963 when Martin Luther King Jr. and his colleagues at the Southern Christian Leadership Conference (SCLC) launched Project C (for confrontation), an ambitious program that wedded economic pressure and large scale direct action protest to undermine the city's rigid system of segregation.  After conducting sit-ins, hosting mass meetings, and waging an economic boycott, the campaign received national media attention on April 7th when Public Safety Commissioner T. Eugene "Bull" Connor loosed police attack dogs on marchers undertaking nonviolent protest. King's decision to disregard a federal court injunction barring further demonstrations resulted in his arrest, along with local leader Fred L. Shuttlesworth, and many others on April 12th.  While imprisoned, King penned "A Letter from Birmingham Jail," his eloquent response to critics of direct action protest.  On May 3rd, Birmingham police used high pressure fire hoses to disrupt a peaceful demonstration composed largely of students, thereby provoking national outrage and prompting federal intervention.  Officials from the Kennedy administration helped negotiate a settlement on May 10th, but rioting ensued the very next day in response to the bombing by Klansmen of the A.G. Gaston Motel and the home of the Reverend A.D. King.  Despite the high cost, events in Birmingham helped galvanize national support for civil rights reform and contributed to the passage of the Civil Rights Act of 1964.
+</p>
+
+
+<p>
+<a href="javascript:ocOpenAll();">Expand all</a> |
+<a href="javascript:ocCloseAll();">Collapse all</a> |
+<a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=pb%3Ayes+rt%3Aitem+(_su%3A+%22Project+C%2C+Birmingham%2C+Ala.%2C+1963%22)">Results view</a>
+</p>
+
+<h3>Archival Collections and Reference Resources</h3><hr />
+    <ul class="clist">
+    <li id="oc_0"><a class="coll_toggle" href="javascript:ocToggle('oc_0');">The Civil Rights Era in the U.S. News & World Report Photographs Collection: Selected Images from the Collections of the Library of Congress <span class="parenthetical">(Library of Congress)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:loc_cre_ppmsca.04293">Bomb-damaged trailers at the Gaston Motel, Birmingham, Alabama <span class="parenthetical">(Black-and-white photographs)</span></a></li>
+    </ul></li>
+    <li id="oc_1"><a class="coll_toggle" href="javascript:ocToggle('oc_1');">Encyclopedia of Alabama <span class="parenthetical">(Encyclopedia of Alabama)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:eoa_eoaa_h-1358">Birmingham Campaign of 1963 <span class="parenthetical">(Articles)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:eoa_eoaa_h-1093">Fred Lee Shuttlesworth <span class="parenthetical">(Articles)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:eoa_eoaa_h-1389">"Letter from Birmingham Jail" <span class="parenthetical">(Articles)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:eoa_eoaa_h-1580">Modern Civil Rights Movement in Alabama <span class="parenthetical">(Articles)</span></a></li>
+    </ul></li>
+    <li id="oc_2"><a class="coll_toggle" href="javascript:ocToggle('oc_2');">Powerful Days in Black and White <span class="parenthetical">(Eastman Kodak Company)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:kodak_powerfuldays_powerfuldays">Powerful days in black and white <span class="parenthetical">(Black-and-white photographs)</span></a></li>
+    </ul></li>
+    <li id="oc_3"><a class="coll_toggle" href="javascript:ocToggle('oc_3');">Robert R. Church Family Papers <span class="parenthetical">(University of Memphis. Special Collections Dept.)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:tnum_rchurch_000237">Letter from Birmingham City Jail <span class="parenthetical">(Text)</span></a></li>
+    </ul></li>
+    <li id="oc_4"><a class="coll_toggle" href="javascript:ocToggle('oc_4');">Voices of Freedom: The Virginia Civil Rights Movement <span class="parenthetical">(Virginia Commonwealth University Libraries)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:loc_voices_ppmsca04293">Bomb-damaged trailers at the Gaston Motel, Birmingham, Alabama <span class="parenthetical">(Black-and-white photographs)</span></a></li>
+    </ul></li>
+    <li id="oc_5"><a class="coll_toggle" href="javascript:ocToggle('oc_5');">WSB-TV Newsfilm Collection <span class="parenthetical">(Walter J. Brown Media Archives and Peabody Awards Collection)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35343">WSB-TV newsfilm clip of attorney general Robert Kennedy reporting on the racial conflict situation in Birmingham, Alabama, 1963 May 13 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_34564">WSB-TV newsfilm clip of Dr. Martin Luther King, Jr. presenting four demands of the civil rights movement in Birmingham, Alabama, 1963 May 5 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_32757">WSB-TV newsfilm clip of Dr. Martin Luther King, Jr. speaking to reporters following the court-ordered reinstatement of over one thousand students suspended from school for participating in civil rights demonstrations, Birmingham, Alabama, 1963 May 23 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35383">WSB-TV newsfilm clip of former heavyweight boxing champion Floyd Patterson speaking to a reporter about the civil rights movement in Birmingham, Alabama, 1963 May 9 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35351">WSB-TV newsfilm clip of George Huddleston, Jr., Alabama congressman, suggesting connections between communists and civil rights workers in Washington, D.C., 1963 May 13 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35335">WSB-TV newsfilm clip of John F. Kennedy speaking at a press conference about civil rights demonstrations and the federal government's support and protection in Birmingham, Alabama, 1963 May 12 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_36514">WSB-TV newsfilm clip of Malcolm X condemning the federal government for not protecting African commenting on violence in Birmingham, Alabama, 1963 May 16 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_33491">WSB-TV newsfilm clip of mayor Albert Boutwell speaking to the city's new biracial committee in Birmingham, Alabama, 1963 July 16 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_33909">WSB-TV newsfilm clip of president John F. Kennedy in a press conference expressing his satisfaction with progress in resolving racial conflicts in Birmingham, Alabama, 1963 May 8 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35336">WSB-TV newsfilm clip of the bombed ruins of the A.G. Gaston Motel and law enforcement patrolling the streets after a series of riots in Birmingham, Alabama, 1963 May 11 <span class="parenthetical">(Moving images)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:ugabma_wsbn_35337">WSB-TV newsfilm clip of three Alabama newspaper editors, including Alabama Press  Association president Herve Charest, speaking to reporters following a meeting with president John F. Kennedy in Washington, D.C., 1963 May 14 <span class="parenthetical">(Moving images)</span></a></li>
+    </ul></li>
+    </ul>
+<h3>Educator Resources</h3><hr />
+    <ul class="clist">
+    <li id="oc_6"><a class="coll_toggle" href="javascript:ocToggle('oc_6');">Amistad Digital Resource for Teaching African American History <span class="parenthetical">(Columbia Center for Digital Research and Scholarship)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:zcu_cdrs_amistad">Amistad Digital Resource for Teaching African American History <span class="parenthetical">(Instructional materials)</span></a></li>
+    </ul></li>
+    <li id="oc_7"><a class="coll_toggle" href="javascript:ocToggle('oc_7');">For Teachers and Students <span class="parenthetical">(Gilder Lehrman Institute of American History)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:gildlehr_glteach_promdem">The Civil Rights movement: The promise of democracy; JFK's radio and television report to the American people on civil rights, June 11, 1963 <span class="parenthetical">(Instructional materials)</span></a></li>
+    </ul></li>
+    <li id="oc_8"><a class="coll_toggle" href="javascript:ocToggle('oc_8');">Teachers' Domain Civil Rights Special Collection <span class="parenthetical">(WGBH Educational Foundation)</span></a>
+    <ul class="items">
+        <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:wgbh_tdcr_015">Burke Marshall <span class="parenthetical">(Instructional materials)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:wgbh_tdcr_047">Miriam McClendon <span class="parenthetical">(Instructional materials)</span></a></li>
+    <li class="item_gray"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:wgbh_tdcr_062">Rev. Fred Shuttlesworth <span class="parenthetical">(Instructional materials)</span></a></li>
+    <li class="item_white"><a href="/web/20160405131306/http://crdl.usg.edu/cgi/crdl?query=id:wgbh_tdcr_078">Washington Booker, III <span class="parenthetical">(Instructional materials)</span></a></li>
+    </ul></li>
+    </ul>
+
+
+
+
+    </div>
+    <div style="clear:both"></div>
+  </div>
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div class="last_modified">
+  <a name="footnote" onclick="javascript:dijit.popup.open( { popup: dijit.byId('lmtt'), around: dojo.byId('lma') });" id="lma" style="color:gray;">
+    Last modified: January 01, 2016
+  </a>
+  <div dojoType="dijit.TooltipDialog" id="lmtt" style="display:none">
+    <div style="float:right;">
+      <a onclick="javascript:dijit.popup.close(dijit.byId('lmtt'));">close</a>
+    </div>
+    <ul class="openclose">
+      <li>
+        Page code: birmingham_demonstrations
+      </li>
+      <li>
+        Page content file: content/events/event.html
+      </li>
+      <li id="wm-loginmenu">
+        Webadmin: <a href="/web/20160405131306/http://dlgmaint.galib.uga.edu/crdl/templates/webadmin/login.html">Login</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div style="width:100%;text-align: center;color:gray;line-height:1.75em;">
+  <a href="/web/20160405131306/http://www.galileo.usg.edu/contact">Contact Us</a> |
+  <a href="/web/20160405131306/http://crdl.usg.edu/sitemap">Site Map</a> |
+  <a href="/web/20160405131306/http://crdl.usg.edu/about">About Us</a> |
+  <a href="/web/20160405131306/http://crdl.usg.edu/help">Help</a><br/>
+  The Digital Library of Georgia is part of the <a href="/web/20160405131306/http://www.galileo.usg.edu/">GALILEO Initiative</a>.<br/>
+  &copy; 2013 Digital Library of Georgia<br/><br/>
+  <span class="emph">The Civil Rights Digital Library receives support from a National Leadership Grant for Libraries awarded by <a href="/web/20160405131306/http://www.imls.gov/">The Institute of Museum and Library Services</a>.</span>
+</div>
+
+    </div>
+  </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20160405131306/https://ssl." : "/web/20160405131306/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2676503-46");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

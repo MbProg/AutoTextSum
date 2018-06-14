@@ -1,0 +1,124 @@
+OCT
+APR
+May
+18
+2015
+2016
+2017
+3 captures
+28 Oct 15 - 18 Apr 16
+Close Help
+Georgetown Environmental Law Review
+Georgetown Environmental Law Review
+Menu
+HOME
+About
+MASTHEAD
+EDITORIAL ADVISORY BOARD
+ALUMNI
+CONTACT
+COPYRIGHT
+IN PRINT
+ONLINE
+SUPPLEMENT
+FEATURES
+ARTICLES
+EDITORIALS
+IN BRIEF
+CULTURE
+SUBMISSIONS
+Syndicate
+SYNDICATE ARTICLES
+SYMPOSIUM
+SPEAKER BIOGRAPHIES
+SYMPOSIUM VIDEOS
+Search for:
+A Dangerous Precedent: Why the Fifth Circuit says “Neigh” to Extra Protection for Horses Georgetown International Environmental Law Review Tara Lewis
+Photo by Randall Saxton
+A Dangerous Precedent: Why the Fifth Circuit says “Neigh” to Extra Protection for Horses
+by Tara Lewis, Staff Contributor
+The purpose of our court system is to give effect to the intent of Congress, who in turn is accountable to the people who elect representatives into office. This separation of powers is intended to balance competing interests and keep power in the hands of the many, rather than in the hands of a few. Administrative agencies are delegated power by statute from Congress to execute the law, and therefore play an integral role in the separation of powers. The decision handed down by the 5th Circuit in Contender Farms, LLP v. U.S. Dept. of Agriculture represents an alarming departure from this modern administrative state and introduces a regime in which the statutory authority of agencies is construed so narrowly that they are unable to give effect to the precise orders of Congress. [1] In preventing the U.S. Department of Agriculture from enforcing the Horse Protection Act (HPA), the 5th Circuit not only allowed inhumane treatment of horses to continue, they also undermine long-settled administrative law with a dangerous new precedent. [2]
+Horse “soring” is the practice of deliberately causing pain to a horse’s limbs in order to artificially exaggerate the leg motion of the horse’s gait. [3] The practice is used to gain an unfair advantage in show competitions such as the Tennessee Walking Horse Celebration held annually in Tennessee. [4] Soring is achieved by applying caustic chemicals including kerosene and diesel fuel to the horse’s lower leg, and then covering with plastic wrap for several days to allow the chemicals to penetrate the skin. [5] Heavy chains are sometimes applied to the scarred tissue to cause additional pain, and trainers often trim the hooves or soles to cause extra sensitivity. [6] The purpose of the practice is to inflict pain in the horse’s lower legs, so that when its hooves strike the ground the horse is forced to lift its legs faster and higher, resulting in the desirable gait known as “the Big Lick”. [7]
+The practice of soring attracted the attention of Congress in 1970, when The Horse Protection Act (HPA) was passed. The act prohibits the showing, sale, auction, exhibition, or transport of sored horses. [8] Congress found that the soring of horses is cruel, inhumane, and creates unfair competition with horses that are trained using humane methods. [9] The United States Department of Agriculture (USDA), through the Animal and Plant Health Inspection Service (APHIS), administers the HPA. [10]
+Although enacted with good intentions, the HPA is notoriously weak in its ability to prevent soring practices. The Act does not give APHIS the authority to oversee horse shows or interfere in any way with their production, but instead gives the managing organizers of horse shows the statutory responsibility to identify sored horses and prevent their participation. [11] Under the statutory scheme, as amended in 1976, certain “designated qualified persons” (DQP’s) are to be appointed and delegated authority by the management of a horse show or sale to detect sored horses. [12] Although the DQP’s must undergo formal training by the USDA, the DQP’s are largely selected and trained by horse industry organizations (HIO’s) and are thus committed to preserving the status quo of the industry. [13]
+The battle to preserve the status quo in the horse industry was recently fought in the 5th Circuit in Texas. In Contender Farms, LLP v. U.S. Dept. of Agriculture, the owner of a horse training farm challenged a USDA regulation promulgated under the HPA which required horse industry organizations to impose mandatory suspensions on participants found to be engaged in horse soring. [14] The Plaintiff, Contender Farms, claimed that the new regulation exceeded the USDA’s rulemaking authority under the scope of the HPA because the USDA is only authorized to prescribe requirements for the appointment of horse inspectors by the management of horse shows. [15] The 5th Circuit agreed with Contender Farms and drastically limited the USDA’s authority to regulate DQP’s. [16] An analysis of the case’s reasoning leads one to believe that in horse competitions where soring is most prevalent, the fox has been charged with the protection of the henhouse.
+In deciding that the regulation exceeded the USDA’s authority under the HPA, the court undertakes a Chevron [17] analysis and first asks if Congress has directly spoken to the precise issue. [18] The 5th Circuit agreed with Contender Farms that the HPA does address this issue and the statute clearly prohibits the regulation, and the case is reversed before the second prong of the Chevron test is ever reached. [19]
+The purpose of the Regulation is to ensure minimum penalties for violations are enforced; in the past, private HIOs assessed penalties inconsistently. Because different inspectors were likely to have differing opinions (and arguably differing allegiances) penalties widely varied, and the USDA argued that it sought to uniformly assess penalties and the Regulation merely clarified an inspection scheme already in place. [20] Under §1823(c), the USDA possesses the duty to regulate “requirements for the appointment by the management of any horse show, horse exhibition, or horse sale or auction of persons qualified to detect and diagnose a horse which is sore or to otherwise inspect horses for the purposes of enforcing this chapter.” [21] In a narrow reading of the statute, the court determined that “requirements” is limited only to “persons” to perform inspections of horses. [22] In other words, the USDA is only allowed to promulgate requirements that relate to whether “persons” are “qualified” to inspect horses for evidence of soring. [23] In fact, the court states that section 1823(c) plainly allows the USDA only to impose those requirements that relate to the certification and inspection process for individual inspectors. [24]
+But is this restricted authority so plain when read in light of the entire statute? The general rulemaking authority under the HPA provides that “[t]he Secretary is authorized to issue such rules and regulations as he deems necessary to carry out the provisions of this chapter.” [25] The court shoots down this argument with little explanation—merely claiming that the statute did not contemplate an “enforcement scheme” but only an “inspection” scheme, and the USDA is not free to “amend” its statutory authority. [26]
+This stripping of agency power to enforce its own regulations has curious implications for its Congressionally defined mission to protect horses from the cruel practice of soring. [27] The court leaves the USDA with the sole power to license DQP’s to inspect horses for violations of the HPA, but the agency is left without any statutory authority to ensure that those appointed individuals actually perform their jobs and effectuate the purpose of the Act. Taken with the knowledge that inspectors are chosen from within the horse industry organizations, which gain revenue from competitions as well as future breeding and training fees from fellow showmen, [28] this statutory scheme is ill suited to meet its goal of relieving suffering in horses. [29]
+This case is not unique, as horse industry organizations have long attempted to curtail the powers of the USDA to regulate the practice of horse soring. [30] The decision in Contender Farms represents a narrow reading of agency authority in order to prevent the USDA from addressing a specific problem outlined by Congress back in 1970. [31] The 5th Circuit has set a dangerous precedent by allowing horse industry organizations to continue to police themselves and constructed a major roadblock to the USDA in performing its Congressionally mandated duty to ensure that horses are not so blatantly mistreated. The Courts have long recognized that Congress does not act superfluously and the legislative intent of the Act is to be considered as a whole; [32] but until the USDA is allowed to step with more stringent regulations horses will continue to be sored, and the statute will remain a dead letter.
+[1] See Contender Farms, LLP v. U.S. Dept. of Agric., 779 F.3d 258, 262 (5th Cir. 2015).
+[2] Horse Protection Act, 15 U.S.C.A. § 1824 (2015).
+[3] The American Veterinary Medical Association, Soring: Unethical and Illegal (May 2013), https://www.avma.org/KB/Resources/Reference/AnimalWelfare/Documents/soring_in_horses_factsheet.pdf .
+[4] Id.
+[5] Id.
+[6] Id.
+[7] The Humane Society, What Is Soring? (April 28, 2015), http://www.humanesociety.org/issues/tenn_walking_horses/facts/what_is_soring.html?referrer=https://www.google.com/ .
+[8] Horse Protection Act, 15 U.S.C.A. § 1824 (2015).
+[9] United States Department of Agriculture, Horse Protection Act and its Administration (Jul. 29 2015), https://www.aphis.usda.gov/wps/portal/aphis/ourfocus/animalwelfare .
+[10] Id.
+[11] Id.
+[12] Id.
+[13] The Humane Society, supra note 5.
+[14] Contender Farms, 779 F.3d at 262.
+[15] Id.
+[16] Id.
+[17] The test articulated in Chevron, states, “When a court reviews an agency’s construction of the statute which is administers, it is confronted with two questions. First, always, is the question whether Congress has directly spoken to the precise question at issue. If the intent of Congress is clear, that is the end of the matter…if however, the court determines Congress has not directly addressed the precise question at issue…the question for the court is whether the agency’s answer is based on a permissible construction of the statute.” Chevron v. Natural Resources Defense Council, 467 U.S. 837, 842-43 (1984).
+[18] See Contender Farms, 779 F.3d at 268 (Because the USDA is statutorily authorized to administer the HPA, we review the merits of the regulation under the well-established principles of Chevron…).
+[19] See id.
+[20] See id. at 271.
+[21] Horse Protection Act, 15 U.S.C.A. § 1823(c) (2015).
+[22] Contender Farms, 779 F.3d at 272.
+[23] See id.
+[24] Id.
+[25] Horse Protection Act § 1828.
+[26] Contender Farms, 779 F.3d at 273.
+[27] Horse Protection Act, § 1822.
+[28] The American Veterinary Medical Association, Soring: Unethical and Illegal (May 2013), https://www.avma.org/KB/Resources/Reference/AnimalWelfare/Documents/soring_in_horses_factsheet.pdf .
+[29] Horse Protection Act § 1821.
+[30] See, e.g.,Lacy v. U.S. Dept. of Agriculture, 278 Fed. Appx 616 (6th Cir. 2008); Derickson v. U.S. Dept. of Agriculture, 546 F.3d 335 (6th Cir. 2008); SHOW v. U.S. Dept. of Agriculture, No. 4:12-CV-429-Y, 2012 WL 2796568 (N.D. Tex. Jul. 10, 2012).
+[31] Horse Protection Act § 1822.
+[32] “The Supreme Court interprets statutes to give meaning to all parts, and avoids rendering portions of the statute superfluous.” 82 C.J.S. Statutes § 433 (2015).
+Like this:
+Like Loading...
+Related
+Posted in ARTICLES and tagged Administrative Law , Agriculture , Animal Rights , Horse Protection Act , horse soring , horses , livestock , Regulation on
+October 27, 2015
+by nft3 . 2 Comments
+Post navigation
+← A Leading Cause of Everything: One Industry That Is Destroying Our Planet and Our Ability to Thrive on It Georgetown Environmental Law Review
+Mars: The New Frontier in Water Regulation Georgetown Environmental Law Review →
+2 comments
+Joy Smith says:
+October 29, 2015 at 9:32 pm
+The author completely overlooks or fails to mention, the USDA is charged with enforcement of the Horse Protection Act, including civil penalties of fines and suspensions as well as the power to pursue felony prosecution for violating the Horse Protection Act.  All HIOs are obligated tof notify the USDA of the shows they will be performing inspections at and follow up post show with turning over evidence collected to the USDA.  The USDA can prosecute based on either evidence collected by themselves at shows they attend or evidence turned over by the HIOs  (see USDA vs Barney Davis, Eastern District of Tennessee).
+Most HIOs do assess fines and suspensions for violation of rules.  Basically, every person who is suspected of abuse is subject to HIO fines and suspensions AND prosecution by the USDA.
+Perhaps holding the USDA accountable for not being transparent would be a good start at ensuring a federal law is equally applied to all breeds and equally enforced, rather than putting the blame on Horse Industry Organizations, especially if you bear in mind it’s the USDA that is responsible for certification of HIOs and the fact they have the power to decertify ineffective or corrupt HIOs.
+Reply
+Amy says:
+November 3, 2015 at 6:56 pm
+Law or No Law  what humans are doing to other species is SICKENING ! What is wrong with you people , the Law should NOT be what is important here ! It is just that simple , we all know right from wrong !
+Reply
+Leave a Reply
+Cancel reply
+Enter your comment here...
+Fill in your details below or click an icon to log in:
+Email (required) (Address never made public)
+Name (required)
+Website
+You are commenting using your WordPress.com account. (  Log Out  /  Change  )
+You are commenting using your Twitter account. (  Log Out  /  Change  )
+You are commenting using your Facebook account. (  Log Out  /  Change  )
+You are commenting using your Google+ account. (  Log Out  /  Change  )
+Cancel
+Connecting to %s
+Notify me of new comments via email.
+Follow Blog via Email
+Enter your email address to follow this blog and receive notifications of new posts by email.
+Blog at WordPress.com. The Suits Theme .
+Follow
+Follow “Georgetown Environmental Law Review”
+Get every new post delivered to your Inbox.
+Join 480 other followers
+Build a website with WordPress.com
+%d bloggers like this:

@@ -1,0 +1,116 @@
+OCT
+JUN
+Jul
+11
+2015
+2016
+2017
+2 captures
+18 Oct 15 - 11 Jun 16
+Close Help
+About
+Using tDAR
+Why tDAR?
+BROWSE
+UPLOAD
+Search
+Browse
+Explore
+Sign Up
+Log In
+You have successfully updated the page that opened this window. What would you like to do now?
+Architecture and Dendrochronology of Chetro Ketl, Chaco Canyon, New Mexico
+Author(s): Jeffery S. Dean ; Peter J. McKenna ; Richard L. Warren ; Florence Hawley Ellis
+Editor(s): Stephen H. Lekson
+Year: 1983
+» Downloads & Basic Metadata
+This Resource is Part of the Following Collections
+Chaco Canyon Project Publications
+Summary
+Chetro Ketl is one of the largest ruins in Chaco Culture National Historical Park, New Mexico. The visible architecture of Chetro Ketl dates from the early eleventh to the early twelfth centuries A. D. The rear wall of the building is about 480' long. The ruins cover almost 3 acres, with almost half of that area consisting of enclosed plaza. Chetro Ketl, at its largest, had between 200 and 225 ground-floor rooms, and a total of 450 to 550 rooms on all stories. Twelve kivas are currently visible, including
+one Great Kiva in the plaza. Chetro Ketl is one of the central group of Chacoan ruins (Figure I: 1), 0.4 miles east of Pueblo Bonito. Low walls may have run between Chetro Ketl and Pueblo Bonito, forming a possible compound. Pueblo Alto is only 0.6 miles north -northwest, and Casa Rinconada (largest of the excavated Great Kivas) 0.4 miles to the southwest.
+Numerous smaller sites and features surround Chetro Retl (Figure I: 1). The rear wall of the ruin is less than 100' from the canyon cliffs. For over 1300', from Talus Unit #1 (just west of Chetro Ketl) to the head of the rincon behind the ruin, this south -facing cliff served as the back wall for numerous structures. Just to the west of, and perhaps contiguous with Chetro Ketl, is a smaller square building, similar in plan to the "McElmo Phase" sites (Vivian and Mathews 1965). Southeast of Chetro Ketl, across a recently rechanneled gully, lies a large oval mound. Originally standing 20' above the surrounding valley bottom (Hawley 1934: 31), it has been greatly obscured by repeated trenchings.
+Cite this Record
+Architecture and Dendrochronology of Chetro Ketl, Chaco Canyon, New Mexico. Jeffery S. Dean, Peter J. McKenna, Richard L. Warren, Florence Hawley Ellis, Stephen H. Lekson. Reports of the Chaco Center ,Number 6. Albuquerque, NM: National Park Service. 1983 ( tDAR id: 178594) ; doi:10.6067/XCV82F7MR6
+Tweet this
+Share on Facebook
+Email a link to a Friend
+Keywords
+Culture
+CHACO
+Material
+Building Materials • Dating Sample
+Site Name
+Chetro Ketl
+Site Type
+Domestic Structure or Architectural Complex • Domestic Structures • Hamlet / village • Kiva / Great Kiva • Settlements
+Investigation Types
+Archaeological Overview • Architectural Documentation • Architectural Survey • Reconnaissance / Survey
+General
+29SJ1928 • Architecture • B:13:3 • Bc246 • Chetro Ketl Site • Dendrochronology • La838 • Na2307 • Special archeology / anthropology study • SWD-GB
+Geographic Keywords
+35045 (Fips Code) • Chaco Canyon Region • New Mexico (State / Territory) • North America (Continent) • San Juan (County) • San Juan Basin • United States of America (Country)
+Temporal Coverage
+Calendar Date: 1000 to                 1499
+Spatial Coverage
+min long: -108,55; min             lat: 35,465 ;             max long: -107,172; max             lat: 36,655 ;
+File Information
+ 
+Name
+Size
+Creation Date
+Date Uploaded
+Access
+lekson_the-architecture-and-dendrochronology-of-chetro-ketl.pdf
+26,86mb
+01.10.2012 10:54:48
+Public
+Downloads 1
+lekson_the-architecture-and-dendrochronology-of-chetro-ketl.pdf
+(26,86mb)
+Request Access, Submit Correction, Comment                          (requires login)
+Basic Information
+Resource Provider
+National Park Service
+Series Name
+Reports of the Chaco Center
+Series Number
+Number 6
+DOI
+doi:10.6067/XCV82F7MR6
+Pages
+426
+Publisher
+National Park Service (Albuquerque, NM)
+Document Type
+book
+Language
+English
+tDAR ID
+178594
+About
+News
+Our Team
+Organization
+Contact Us
+History
+Current Version of tDAR
+Use
+Guides to Good Practice
+Help & Tutorials
+Policies
+Contributing Resources to tDAR
+Pricing
+Compliance
+Contact
+comments@tdar.org
+Follow @DigArcRec on twitter
+Follow tDAR on Facebook
+Start Digging
+Browse
+Start a project & add data
+Log In
+Sign Up
+tDAR is the digital repository of Digital Antiquity , a collaborative organization dedicated to enhancing preservation and         access to the digital records         of archaeological investigations. Hosted by Arizona State University , tDAR is         supported by         grants from the Andrew W. Mellon Foundation , and the National         Science Foundation (0433959         and 0624341), and a grant jointly funded by the National Endowment for the Humanities (PX-50022-09) and         the Higher Education Funding Council for         England of the United Kingdom acting through the Joint Information Systems Committee (JISC). Any         opinions, findings, conclusions         or recommendations expressed in this material are those of the author(s) and do not necessarily reflect those of the National Science Foundation, the         Mellon Foundation, the National Endowment         for the Humanities or the Joint Information Systems Committee.
+Copyright © 2016 Digital Antiquity. Design         Info
+build #: 10323

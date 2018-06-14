@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app10.us.archive.org";archive_analytics.values.server_ms=227;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/web/20160412172618cs_/http://www.tettea.com/assets/981d55a9/jquery.jgrowl.css" />
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/assets/af17709a/jquery.min.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/assets/981d55a9/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/backbone/backbone.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/cookie.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/moment.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/url.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/slick/slick/slick.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+    $(window).bind("beforeunload", function(){
+        document.body.style.WebkitTransition="opacity .1s linear";
+        document.body.style.MozTransition="opacity .1s linear";
+    //document.body.style.opacity=0;
+        });
+
+
+
+/*]]>*/
+</script>
+<title>BRITISH EMPIRE / Tet tea</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+
+
+
+                                
+
+    
+    </head>
+<body data-lang="en" style="background-color: #00001f">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.tettea.com/en/page/britanskaya-imperiya?user_lang";
+
+var firstYear = 1996;
+var displayDay = "12";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.tettea.com/en/page/britanskaya-imperiya?user_lang" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160412172618" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Mar
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:26:18 Apr 12, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160412172518/http://www.tettea.com/en/page/britanskaya-imperiya?user_lang" title="17:25:18 Apr 12, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:26:18 Apr 12, 2016">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:26:18 Apr 12, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160412172618*/http://www.tettea.com/en/page/britanskaya-imperiya?user_lang" title="See a list of every capture for this URL">2 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Apr 16 - 12 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:3:000200000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">
+/*<![CDATA[*/
+       document.body.style.opacity=0;
+    	document.body.style.WebkitTransition="opacity .1s linear";
+    	document.body.style.MozTransition="opacity .1s linear";
+/*]]>*/
+</script>
+
+
+
+
+
+<noscript>
+    <link href="/web/20160412172618cs_/http://www.tettea.com/style/css/nojs.css" type="text/css" rel="stylesheet" />
+</noscript>
+
+
+
+<!---->
+<div class="header" style="background-image: url('/web/20160412172618im_/http://www.tettea.com/files/gallery/172.jpg')">
+    <div class="container-fluid">
+<div class="row-fluid">
+<div class="center-block">
+<div position:absolute="" style="">
+<div id="logo"><span style="font-family:baskerville;"><img src="/web/20160412172618im_/http://www.tettea.com/style/img/logo.png" style="width:auto" /></span></div>
+
+<div id="center_text">
+<p style=" color: rgb(178, 155, 112); font-size: 60px;"><span style="font-size:36px;"><span style="line-height:1;">BRITISH EMPIRE</span></span></p>
+
+<div>
+<p><span style="line-height:2;"><span style="font-size:18px;"><span style="color:#B3B3B3;">BASIC RANGE</span></span></span></p>
+
+<p><span style="font-size:18px;"><span style="line-height:1;"><span style="color:#B3B3B3;">The British Empire is the largest state in the history of humanity.</span><span style="color:#B3B3B3;">At the beginning of the 1930s the Empire covered almost a quarter of the Earth&#39;s total land area.</span><span style="color:#B3B3B3;">The Order of the British Empire is one of major symbols of the British Empire these days. The citizens of other countries along with the citizens of the UK who made a significant contribution to the development of economy, culture and sport of the UK are awarded the Order of the British Empire.</span></span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    <script>
+        window.View=[{"id":"171","gallery_id":"158","rank":"170","name":"","description":"<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">PACKAGING<\/span><\/span><\/h1>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px;\">100g&nbsp;<\/span><\/span><img src=\"\/uploads\/leaf_icon.png\" style=\"color: rgb(179, 179, 179);  font-size: 18px; letter-spacing: 0.600000023841858px; line-height: 18.1818180084229px; width: 44px; height: 18px;\" \/>&nbsp;<span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px; font-size: 18px; line-height: 18.1818180084229px;\">leaf tea&nbsp;<\/span><\/p>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">INGREDIENTS<\/span><\/span><\/h1>\r\n\r\n<div><span style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 18px;\"><span style=\"font-family: baskerville;\">a blend of select Ceylon teas from the Ruhuna region and of high quality Indian&nbsp;<\/span><\/span><\/span><span style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 18px;\"><span style=\"font-family: baskerville;\">teas from the Assam province<\/span><\/span><\/span><\/div>\r\n\r\n<div>\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\">&nbsp;<\/h1>\r\n","file_name":"bl_be_100g_en.png","cat":"pack","master":"<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\" line-height: 36px;\">\r\n<div style=\"font-family: baskerville; color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-size:20px;\"><span style=\"font-family:baskerville;\"><span style=\"color: rgb(178, 155, 112);\">ASTRINGENT TASTE<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size:20px;\"><span style=\"font-family:baskerville;\">BUOYANCY<\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size: 22px;\">A MORNING CUP OF TEA<\/span><\/p>\r\n\r\n<p><span style=\"color: rgb(178, 155, 112);\">RUBY COLOUR OF LIQUEUR<\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\" line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">COLOUR OF LIQUEUR<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">ruby amber<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">AROMA<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">rich<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">TASTE<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">the taste of true English tea<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">AFTERTASTE<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">sweet and malty<\/span><\/span><\/div>\r\n<\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">INGREDIENTS<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">a blend of select Ceylon teas from the Ruhuna region<\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">and of high quality Indian teas from the Assam province<\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:3;\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">IT GOES WELL WITH MILK<\/span><\/span><\/span><\/p>\r\n\r\n<div>&nbsp;<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","updated":"2015-03-24 00:42:22","scale":1,"width":131,"height":240,"big_url":"\/images\/site\/cache\/95\/bb\/95bbcd65f3d4215470d17aa15d2ab2b9.png","image_url":"\/images\/site\/cache\/12\/44\/124418b042234984f9057e255e03c8d1.png"},{"id":"170","gallery_id":"158","rank":"171","name":"","description":"<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">PACKAGING<\/span><\/span><\/h1>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px;\">25 \u0445 2g&nbsp;<\/span><\/span><img src=\"\/uploads\/packet_icon.png\" style=\"line-height: 18.1818180084229px; width: 29px; height: 29px;\" \/>&nbsp;<span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px; font-size: 18px; line-height: 18.1818180084229px;\">tea bags&nbsp;<\/span><\/p>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">INGREDIENTS<\/span><\/span><\/h1>\r\n\r\n<p><span style=\"font-size: 18px; color: rgb(179, 179, 179); line-height: 18.1818180084229px;\">a blend of select high quality Ceylon, Indian and Kenyan teas<\/span><\/p>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\">&nbsp;<\/p>\r\n","file_name":"bl_be_25x2g_en.png","cat":"pack","master":"<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\" line-height: 36px;\">\r\n<div style=\"font-family: baskerville; color: rgb(179, 179, 179);\">\r\n<p><span style=\"color:#B29B70;\">ASTRINGENT TASTE<\/span><\/p>\r\n\r\n<p><span style=\"font-size:22px;\">BUOYANCY<\/span><\/p>\r\n\r\n<p><span style=\"font-size:22px;\">A MORNING CUP OF TEA<\/span><\/p>\r\n\r\n<p><span style=\"color:#B29B70;\">RUBY COLOUR OF LIQUEUR<\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\" line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div>COLOUR OF LIQUEUR<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">ruby amber<\/div>\r\n\r\n<div>AROMA<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">rich<\/div>\r\n\r\n<div>TASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">the taste of true English tea<\/div>\r\n\r\n<div>AFTERTASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">sweet and malty<\/div>\r\n<\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">INGREDIENTS<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>a blend of select high quality Ceylon, Indian and Kenyan teas<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>IT GOES WELL WITH MILK<\/p>\r\n\r\n<div>&nbsp;<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","updated":"2015-03-24 00:42:22","scale":0.9,"width":94,"height":240,"big_url":"\/images\/site\/cache\/f0\/88\/f088b47219b3b1312438b7aed9b10d2b.png","image_url":"\/images\/site\/cache\/26\/7c\/267c85a58e235a339eb14fcee204246d.png"}];
+    </script>
+    <script>
+        window.Master=[{"id":"171","gallery_id":"158","rank":"170","name":"","description":"<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">PACKAGING<\/span><\/span><\/h1>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px;\">100g&nbsp;<\/span><\/span><img src=\"\/uploads\/leaf_icon.png\" style=\"color: rgb(179, 179, 179);  font-size: 18px; letter-spacing: 0.600000023841858px; line-height: 18.1818180084229px; width: 44px; height: 18px;\" \/>&nbsp;<span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px; font-size: 18px; line-height: 18.1818180084229px;\">leaf tea&nbsp;<\/span><\/p>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">INGREDIENTS<\/span><\/span><\/h1>\r\n\r\n<div><span style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 18px;\"><span style=\"font-family: baskerville;\">a blend of select Ceylon teas from the Ruhuna region and of high quality Indian&nbsp;<\/span><\/span><\/span><span style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 18px;\"><span style=\"font-family: baskerville;\">teas from the Assam province<\/span><\/span><\/span><\/div>\r\n\r\n<div>\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\">&nbsp;<\/h1>\r\n","file_name":"bl_be_100g_en.png","cat":"pack","master":"<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\" line-height: 36px;\">\r\n<div style=\"font-family: baskerville; color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-size:20px;\"><span style=\"font-family:baskerville;\"><span style=\"color: rgb(178, 155, 112);\">ASTRINGENT TASTE<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size:20px;\"><span style=\"font-family:baskerville;\">BUOYANCY<\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size: 22px;\">A MORNING CUP OF TEA<\/span><\/p>\r\n\r\n<p><span style=\"color: rgb(178, 155, 112);\">RUBY COLOUR OF LIQUEUR<\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\" line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">COLOUR OF LIQUEUR<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">ruby amber<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">AROMA<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">rich<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">TASTE<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">the taste of true English tea<\/span><\/span><\/div>\r\n\r\n<div><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">AFTERTASTE<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">sweet and malty<\/span><\/span><\/div>\r\n<\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">INGREDIENTS<\/span><\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">a blend of select Ceylon teas from the Ruhuna region<\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">and of high quality Indian teas from the Assam province<\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:3;\"><span style=\"font-family:baskerville;\"><span style=\"font-size:14px;\">IT GOES WELL WITH MILK<\/span><\/span><\/span><\/p>\r\n\r\n<div>&nbsp;<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","updated":"2015-03-24 00:42:22"},{"id":"170","gallery_id":"158","rank":"171","name":"","description":"<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">PACKAGING<\/span><\/span><\/h1>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px;\">25 \u0445 2g&nbsp;<\/span><\/span><img src=\"\/uploads\/packet_icon.png\" style=\"line-height: 18.1818180084229px; width: 29px; height: 29px;\" \/>&nbsp;<span style=\"color: rgb(179, 179, 179);  letter-spacing: 0.6px; font-size: 18px; line-height: 18.1818180084229px;\">tea bags&nbsp;<\/span><\/p>\r\n\r\n<h1 style=\" color: rgb(158, 137, 88); text-transform: uppercase; letter-spacing: 5.2px;\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px; letter-spacing: 0.6px;\">INGREDIENTS<\/span><\/span><\/h1>\r\n\r\n<p><span style=\"font-size: 18px; color: rgb(179, 179, 179); line-height: 18.1818180084229px;\">a blend of select high quality Ceylon, Indian and Kenyan teas<\/span><\/p>\r\n\r\n<p style=\"line-height: 18.1818180084229px;\">&nbsp;<\/p>\r\n","file_name":"bl_be_25x2g_en.png","cat":"pack","master":"<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\" line-height: 36px;\">\r\n<div style=\"font-family: baskerville; color: rgb(179, 179, 179);\">\r\n<p><span style=\"color:#B29B70;\">ASTRINGENT TASTE<\/span><\/p>\r\n\r\n<p><span style=\"font-size:22px;\">BUOYANCY<\/span><\/p>\r\n\r\n<p><span style=\"font-size:22px;\">A MORNING CUP OF TEA<\/span><\/p>\r\n\r\n<p><span style=\"color:#B29B70;\">RUBY COLOUR OF LIQUEUR<\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\" line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\" line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div>COLOUR OF LIQUEUR<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">ruby amber<\/div>\r\n\r\n<div>AROMA<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">rich<\/div>\r\n\r\n<div>TASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">the taste of true English tea<\/div>\r\n\r\n<div>AFTERTASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">sweet and malty<\/div>\r\n<\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">INGREDIENTS<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>a blend of select high quality Ceylon, Indian and Kenyan teas<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>IT GOES WELL WITH MILK<\/p>\r\n\r\n<div>&nbsp;<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","updated":"2015-03-24 00:42:22"}];
+    </script>
+    <script>
+        window.Collection=[{"id":"5","user_id":"1","category_id":"11","url":"/web/20160412172618/http://www.tettea.com\/en\/page\/britanskaya-imperiya","tags":"","created":"2015-02-17 18:43:32","updated":"2015-03-24 07:22:30","publish_date":"2015-02-17 18:41:52","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"BRITISH EMPIRE","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div position:absolute=\"\" style=\"\">\r\n<div id=\"logo\"><span style=\"font-family:baskerville;\"><img src=\"\/style\/img\/logo.png\" style=\"width:auto\" \/><\/span><\/div>\r\n\r\n<div id=\"center_text\">\r\n<p style=\" color: rgb(178, 155, 112); font-size: 60px;\"><span style=\"font-size:36px;\"><span style=\"line-height:1;\">BRITISH EMPIRE<\/span><\/span><\/p>\r\n\r\n<div>\r\n<p><span style=\"line-height:2;\"><span style=\"font-size:18px;\"><span style=\"color:#B3B3B3;\">BASIC RANGE<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size:18px;\"><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\">The British Empire is the largest state in the history of humanity.<\/span><span style=\"color:#B3B3B3;\">At the beginning of the 1930s the Empire covered almost a quarter of the Earth&#39;s total land area.<\/span><span style=\"color:#B3B3B3;\">The Order of the British Empire is one of major symbols of the British Empire these days. The citizens of other countries along with the citizens of the UK who made a significant contribution to the development of economy, culture and sport of the UK are awarded the Order of the British Empire.<\/span><\/span><\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"158","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">BREAKFAST TEA<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/leaf_icon.png\" style=\"line-height: 1.42857143; width: 44px; height: 18px;\" \/>&nbsp;<img src=\"\/uploads\/packet_icon.png\" style=\"width:29px;height:29px\" \/>&nbsp; &nbsp;<\/p>\r\n","master":"<div class=\"col-xs-6\" style=\"width: 470px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"width: 450px; line-height: 36px;\">\r\n<p align=\"right\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);\">\u0422\u0415\u0420\u041f\u041a\u0418\u0419 \u0412\u041a\u0423\u0421<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px;\">\u0411\u041e\u0414\u0420\u041e\u0421\u0422\u042c<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px;\">\u0423\u0422\u0420\u0415\u041d\u041d\u042f\u042f \u0427\u0410\u0428\u041a\u0410 \u0427\u0410\u042f<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);\">\u0420\u0423\u0411\u0418\u041d\u041e\u0412\u042b\u0419 \u0426\u0412\u0415\u0422 \u041d\u0410\u0421\u0422\u041e\u042f<\/span><\/span><\/p>\r\n\r\n<p><\/p>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"width: 470px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"width: 450px; line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\u0426\u0412\u0415\u0422 \u041d\u0410\u0421\u0422\u041e\u042f<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u0440\u0443\u0431\u0438\u043d\u043e\u0432\u043e - \u044f\u043d\u0442\u0430\u0440\u043d\u044b\u0439<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0410\u0420\u041e\u041c\u0410\u0422<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u043d\u0430\u0441\u044b\u0449\u0435\u043d\u043d\u044b\u0439 &nbsp;<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0412\u041a\u0423\u0421<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0433\u043e \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0447\u0430\u044f<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u041f\u041e\u0421\u041b\u0415\u0412\u041a\u0423\u0421\u0418\u0415<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u0441\u043b\u0430\u0434\u043a\u043e-\u0441\u043e\u043b\u043e\u0434\u043e\u0432\u043e\u0435<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0421\u041e\u0421\u0422\u0410\u0412<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>\u043a\u0443\u043f\u0430\u0436 \u043e\u0442\u0431\u043e\u0440\u043d\u044b\u0445 \u0446\u0435\u0439\u043b\u043e\u043d\u0441\u043a\u0438\u0445 \u0447\u0430\u0435\u0432 \u0438\u0437 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 &nbsp;\u0420\u0443\u0445\u0443\u043d\u0430 \u0438 \u0432\u044b\u0441\u043e\u043a\u043e\u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0438\u043d\u0434\u0438\u0439\u0441\u043a\u0438\u0445 \u0447\u0430\u0435\u0432 \u0438\u0437 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 \u0410\u0441\u0441\u0430\u043c<\/p>\r\n\r\n<p><\/p>\r\n\r\n<p>\u041e\u0442\u043b\u0438\u0447\u043d\u043e \u0441\u043e\u0447\u0435\u0442\u0430\u0435\u0442\u0441\u044f \u0441 \u043c\u043e\u043b\u043e\u043a\u043e\u043c&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","slider_name":"BRITISH EMPIRE","width":"350","height":"410px","image_url":"\/images\/site\/cache\/00\/05\/0005a7edb4157c92f6a12f26f973eaf2.png","top_url":"\/files\/gallery\/172.jpg","front_url":"\/files\/gallery\/173.png","news_url":"\/files\/gallery\/171.png"},{"id":"8","user_id":"1","category_id":"11","url":"/web/20160412172618/http://www.tettea.com\/en\/page\/kapitan-vudget","tags":"","created":"2015-02-28 02:43:06","updated":"2015-04-09 06:57:04","publish_date":"2015-02-28 02:41:04","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"CAPTAIN WOODGET","short_description":"","full_description":"<div id=\"logo\" style=\"line-height: 18.1818180084229px;\"><img src=\"\/style\/img\/logo.png\" style=\"width: auto;\" \/><\/div>\r\n\r\n<div id=\"center_text\">\r\n<h1 style=\"line-height: 18.1818180084229px; font-size: 60px; color: rgb(178, 155, 112);\"><span style=\"font-size:36px;\"><span style=\"font-family:baskerville;\">CAPTAIN WOODGET<\/span><\/span><\/h1>\r\n\r\n<div style=\"line-height: 18.1818180084229px;\">\r\n<p style=\" text-transform: uppercase; line-height: 40px; color: rgb(179, 179, 179); letter-spacing: 5.2px; font-size: 21px;\"><span style=\"color:#B3B3B3;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">BASIC RANGE<\/span><\/span><\/span><\/span><\/p>\r\n<\/div>\r\n\r\n<p style=\"\"><span style=\"line-height: 18.1818180084229px; color: rgb(179, 179, 179);\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">At the end of the XIXth&nbsp;among the sailing ships delivering goods from the colonies to England under the&nbsp;command of Captain Woodget. Now the Cutty Sark is one of the most famous&nbsp;ships of the world, the only tea clipped which has been preserved until the present&nbsp;day. In 1957 the Cutty Sark was installed as a museum on <\/span><\/span><\/span><\/span><span style=\"color:#B3B3B3;\"><span style=\"line-height: 18.1818180084229px;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">water. After her&nbsp;restauration, Queen Elizabeth II opened the Cutty Sark clipper ship museum for&nbsp;visitors on <\/span><\/span><\/span><\/span><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\"><span lang=\"EN-US\">25<\/span><span lang=\"EN-US\">th&nbsp;April 2012. <\/span><\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p style=\"\"><span style=\"color:#B3B3B3;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\"><span lang=\"EN-US\">Richard Woodget who had became the symbol of the&nbsp;<\/span>British fleet, settled in a farm and never sailed again after the sale of the clipper in&nbsp;1895.<\/span><\/span><\/span><\/span><\/p>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"157","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">CEYLON TEA<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/images\/leaf_icon.png\" style=\"width: 44px; height: 18px;\" \/>&nbsp;<img src=\"\/uploads\/packet_icon.png\" style=\"line-height: 1.42857143; width: 29px; height: 29px;\" \/><\/p>\r\n","master":"<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"width: 450px; line-height: 36px;\">\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\">\r\n<p><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 28px;\">FRESHNESS<\/span><\/span><\/p>\r\n\r\n<p>AMBER LIQUEUR<\/p>\r\n\r\n<p><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px;\">BRIGHT AROMA<\/span><\/span><\/p>\r\n\r\n<p>PUTTING ONE&rsquo;S THOUGHTS IN ORDER<\/p>\r\n\r\n<p><span style=\"color: rgb(178, 155, 112);\">RESTORING ONE&rsquo;S ENERGIES<\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"width: 450px; line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div>COLOUR OF LIQUEUR<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">amber<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div>AROMA<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">aroma of new-mown hay<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div>TASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">fresh and pronounced<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div>AFTERTASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">with fruity notes<\/div>\r\n<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">INGREDIENTS<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>A blend of Ceylon teas from the Ruhuna region and Sabaragamuwa province.<\/p>\r\n\r\n<div><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","slider_name":"CAPTAIN WOODGET","width":"350","height":"410px","image_url":"\/images\/site\/cache\/95\/d3\/95d33ed71bd89294f9c02440488705e5.png","top_url":"\/files\/gallery\/169.jpg","news_url":"\/files\/gallery\/168.png"},{"id":"31","user_id":"1","category_id":"11","url":"/web/20160412172618/http://www.tettea.com\/en\/page\/lord-griei","tags":"","created":"2015-03-02 08:55:15","updated":"2015-03-21 08:24:34","publish_date":"2015-03-02 08:49:56","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"LORD GREY","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div position:absolute=\"\" style=\"\">\r\n<div id=\"logo\"><span style=\"font-family:baskerville;\"><img src=\"\/style\/img\/logo.png\" style=\"width:auto\" \/><\/span><\/div>\r\n\r\n<div id=\"center_text\">\r\n<h1 style=\" color: rgb(178, 155, 112); font-size: 60px;\"><span style=\"font-size:36px;\"><span style=\"font-family:baskerville;\">LORD GREY<\/span><\/span><\/h1>\r\n\r\n<div>\r\n<p><span style=\"line-height:2;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">BASIC RANGE<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">In the United Kingdom the name of Lord Grey ranges among the names of such outstanding people as Winston Churchill and Queen Victoria.<\/span><\/span><\/span><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">It was Charles Grey who initiated the passage of a law abolishing slavery in Britain and who managed to bring the principle of &quot;one man, one vote&quot; into the British electoral system which transformed the British Parliament into a truly democratic institution.<\/span><\/span><\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"154","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">\r\n<p>BLACK TEA WITH BERGAMOT<\/p>\r\n<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/images\/leaf_icon.png\" style=\"width: 44px; height: 18px;\" \/>&nbsp;<img src=\"\/uploads\/packet_icon.png\" style=\"width: 29px; height: 29px;\" \/><\/p>\r\n","master":"<div><\/div>\r\n\r\n<div>\r\n<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"width: 450px; line-height: 36px;\">\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\"><span style=\"color:#B29B70;\"><span style=\"font-size:28px;\">FRESHNESS<\/span><\/span><\/div>\r\n\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\"><span style=\"font-size:28px;\">BERGAMOT OIL<\/span><\/div>\r\n\r\n<div><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">THE MOST FAMOUS ENGLISH BLEND<\/span><\/span><\/div>\r\n\r\n<div style=\"font-size: 18px; font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(178, 155, 112);\">CITRUS AROMA<\/div>\r\n\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif;\">\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-size:26px;\">RELIEVES FATIGUE<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"width: 450px; line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">COLOUR OF LIQUEUR<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">dark ruby<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">AROMA<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">rich bergamot aroma<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">TASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">full-bodied, astringent and malty<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">AFTERTASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">that of citrus<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">INGREDIENTS<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">Indian black tea from the Assam province and natural bergamot oil.<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","slider_name":"LORD GREY","width":"350","height":"410px","image_url":"\/images\/site\/cache\/c6\/67\/c667856948b5d4a228224ef39fc7724e.png","top_url":"\/files\/gallery\/161.jpg","news_url":"\/files\/gallery\/161.png"},{"id":"32","user_id":"1","category_id":"11","url":"/web/20160412172618/http://www.tettea.com\/en\/page\/imperator-tan","tags":"","created":"2015-03-02 09:08:04","updated":"2015-03-21 08:25:47","publish_date":"2015-03-02 09:05:54","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"EMPEROR TANG","short_description":"","full_description":"<div id=\"logo\" style=\"line-height: 18.1818180084229px;\"><img src=\"\/style\/img\/logo.png\" style=\"width: auto;\" \/><\/div>\r\n\r\n<div id=\"center_text\" style=\"line-height: 18.1818180084229px;\">\r\n<h1 style=\"font-size: 60px;  color: rgb(178, 155, 112);\"><span style=\"font-size:36px;\"><span style=\"font-family:baskerville;\">EMPEROR TANG<\/span><\/span><\/h1>\r\n\r\n<div>\r\n<p style=\" text-transform: uppercase; line-height: 40px; color: rgb(179, 179, 179); letter-spacing: 5.2px; font-size: 21px;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">BASIC RANGE<\/span><\/span><\/span><\/p>\r\n<\/div>\r\n\r\n<p><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">In the history of China the epoch of the Tang Dynasty rule (VII-X centuries A.D.)&nbsp;is known as the golden age of science and culture when numerous world art&nbsp;masterpieces were created.&nbsp;However, the Tang epoch is a period of outstanding conquests. The son of the&nbsp;dynasty&rsquo;s founder, the second Tang emperor conquered more than 70 cities in&nbsp;Central Asia including Bukhara which turned China into the largest empire at that&nbsp;<\/span><\/span><\/span><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">time.&nbsp;The Great Wall of China was significantly expanded and reinforced during the&nbsp;Tang epoch. It became the largest architectural construction in the world and the&nbsp;only man-made object on Earth visible in the photos made from the orbit of the&nbsp;<\/span><\/span><\/span><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">Earth.<\/span><\/span><\/span><\/span><\/p>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"156","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">GREEN TEA WITH BERGAMOT<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/leaf_icon.png\" style=\"line-height: 1.42857143; width: 44px; height: 18px;\" \/>&nbsp;<img src=\"\/uploads\/packet_icon.png\" style=\"width:29px;height:29px\" \/>&nbsp; &nbsp;<\/p>\r\n","master":"<div><\/div>\r\n\r\n<div>\r\n<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"width: 450px; line-height: 36px;\">\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-size:24px;\"><span style=\"color:#B29B70;\">GREEN TEA<\/span><\/span><\/p>\r\n\r\n<p>BERGAMOT OIL<\/p>\r\n\r\n<p><span style=\"font-size:26px;\"><span style=\"color:#B29B70;\">RELIEVES FATIGUE<\/span><\/span><\/p>\r\n\r\n<p>CITRUS AROMA<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"width: 470px; line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"width: 450px; line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">COLOUR OF LIQUEUR<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">light golden<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">AROMA<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">subtle bergamot aroma<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">TASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">fresh with hoppy tints and bergamot oil notes<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">AFTERTASTE<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">freshness and mellowness of high quality green tea<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">INGREDIENTS<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">Chinese green tea and natural bergamot oil.<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","slider_name":"EMPEROR TANG","width":"350","height":"410px","image_url":"\/images\/site\/cache\/c0\/15\/c015f856b4f1ea7aafdc3f9b37564dc9.png","top_url":"\/files\/gallery\/219.jpg","news_url":"\/files\/gallery\/165.png"}];
+    </script>
+
+<div class="container" id="view_section" style="margin-bottom: 0px;margin-top: 45px;overflow: hidden;position: relative;">
+        <div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div class=" col-xs-12 text-center">
+                <div class="image_big" style="padding: 10px;  overflow: hidden;
+
+  display: block;"></div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-12" style="position: relative;">
+        <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="description_text" style="display: inline-block"></div>
+            </div>
+        </div>
+             </div>
+
+
+    </div>
+    <div id="slider" class="view_products_slider">
+        <div id="out_wrapper" class="text-center" style="display: block">
+
+            <div id="wrapper"><div id="viewRegion" class="track" style="left: 0px;right: 0px"> </div>    </div>
+
+        </div>
+
+    </div>
+    </div>
+</div>
+
+<div style="position: relative;background-image: url('/web/20160412172618im_/http://www.tettea.com/style/img/master_bg.jpg');background-position: 0px -63px;">
+    <div class="container">
+
+
+        <div class="col-xs-12">
+            <div class="row text-center">
+                <div id="top_bg" style="margin-bottom:45px;margin-top:45px;height:92px;line-height:36px">
+                    <h1 style="padding:0 25px;border-bottom:1px solid #9e8958;display:inline-block;color:#b29b70">EXCELLENCE</h1>
+
+                    <p style="text-transform:uppercase;line-height:25px;letter-spacing:5.2px;color:#b3b3b3" class="gillfont">CONSISTENCY OF TASTE IN EVERY CUP</p>
+
+                    <div id="center_text"><img src="/web/20160412172618im_/http://www.tettea.com/style/img/bott_bg.png" style="width:auto;height:auto;margin-top:3px;margin-bottom:6px" /></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12">
+            <div class="row text-center">
+
+                <div id="slider" class="master_products_slider" data-lang="en" data-id="5">
+                    <div id="out_wrapper">
+                        <div class="left_arrow"></div>
+                        <div id="wrapper"><div id="masterRegion" class="track" style="left: 0px;right: 0px"> </div>    </div>
+                        <div class="right_arrow"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xs-12" style="
+  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+  ">
+            <div class="row">
+                <div class="paging" style="border-top: 1px solid #9f8958;
+width: 400px;
+margin: auto;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="collections" class="line" style="  padding-bottom: 30px;">
+
+    <div id="top_bg" style="">
+
+
+        <h1>DISCOVER THE WHOLE RANGE</h1>
+
+        <p class="gillfont" style="text-transform:uppercase;line-height:25px;letter-spacing:5.2px" >BASIC RANGE</p>
+        <div id="center_text">
+            <img src="/web/20160412172618im_/http://www.tettea.com/style/img/bottom_img.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="slider" class="collection_products_slider">
+            <div id="out_wrapper">
+                <div class="left_arrow"></div>
+                <div id="wrapper">
+
+                    <div id="sliderRegion" class="track" style="left: 0px;"></div>
+
+
+                </div>
+                <div class="right_arrow"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<div></div>
+<div id="features" style="height: 0px;">
+
+
+
+
+</div>
+
+
+<script>
+    window.Bottom=[{"id":"2","user_id":"1","category_id":"10","url":"\/en\/pages\/ranges\/britanskii-standart","tags":"","created":"2015-02-17 18:26:45","updated":"2016-02-11 13:01:10","publish_date":"2015-02-17 18:26:36","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"COLLECTION CEYLON","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div position:absolute=\"\" style=\"\">\r\n<div id=\"logo\"><img src=\"\/style\/img\/logo.png\" style=\"width:auto\" \/><\/div>\r\n\r\n<div id=\"center_text\">\r\n<h1><span style=\"color:#B29B70;\">COLLECTION CEYLON<\/span><\/h1>\r\n\r\n<p><span style=\"line-height:2;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">BRITISH STANDARD<\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">It can be rightfully described as the best Ceylon tea.<\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">This is an ideal drink to share with your best friends.<\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"line-height:2;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">PRODUCED IN LIMITED QUANTITY<\/span><\/span><\/span><\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"148","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\"><span style=\"letter-spacing: 5.19999980926514px;\">CEYLON<\/span><\/div>\r\n\r\n<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">BLACK TEA<\/div>\r\n\r\n<div class=\"h-15\">&nbsp;<\/div>\r\n\r\n<p><img src=\"\/uploads\/leaf_icon.png\" style=\"width:44px;height:18px\" \/><\/p>\r\n","master":"<div class=\"col-xs-6\" style=\"line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"line-height: 36px;\">\r\n<div>\r\n<div style=\"line-height: 36px; font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 36px;\"><span style=\"color:#B29B70;\">AROMA OF THE <\/span>TROPICAL FORESTS <span style=\"color:#B29B70;\">AFTER THE RAIN<\/span><\/span><\/span><\/div>\r\n\r\n<div style=\"line-height: 36px;\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 31px;\"><strong style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\">A SUBTLE TASTE OF ELITE LIQUEUR<\/strong><\/span><\/span><\/div>\r\n\r\n<div style=\"line-height: 36px; font-size: 18px; font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 27px;\"><span style=\"line-height: 46px;\">SHARE THE TASTE WITH YOUR BEST FRIENDS<\/span><\/span><\/span><\/div>\r\n\r\n<div style=\"line-height: 36px; font-family: BaskervilleCyrLTStd-Upright, sans-serif;\">\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 37px;\">EMPEROR&rsquo;S TEA<\/span><\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif;\">\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 37px;\">SILVER TIPS<\/span><\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\">COLOUR OF LIQUEUR<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\">golden amber<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\">AROMA<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\">fresh and pronounced<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\">\u0412\u041a\u0423\u0421<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\">A rare grade of tea plucked in the best estates of Sri Lanka which fills a cup with a subtle taste of elite liqueur while silver tips mellow and reveal the taste of the best Ceylon tea.<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\">AFTERTASTE<\/span><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\"><span style=\"font-family:baskerville;\">sweet, fresh and slightly astringent floral aftertaste<\/span><\/div>\r\n<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\"><span style=\"font-family:baskerville;\">INGREDIENTS<\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p><span style=\"font-family:baskerville;\">A rare grade of Ceylon black tea with silver tips.<\/span><\/p>\r\n\r\n<p><\/p>\r\n\r\n<p><span style=\"font-family:baskerville;\">\u041e\u0442\u043b\u0438\u0447\u043d\u043e \u0441\u043e\u0447\u0435\u0442\u0430\u0435\u0442\u0441\u044f \u0441 \u043c\u043e\u043b\u043e\u043a\u043e\u043c.<\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","width":254,"category_name":"BRITISH STANDARD","image_url":"\/images\/site\/cache\/b5\/db\/b5db8debea5b085aba32e3c031ce9924.png","cat":"BRITISH STANDARD","descr":"<p style=\"text-align: center;\"><span style=\"font-size:18px;\"><span style=\"line-height: 1;\">British Standard Collection consists of the world&rsquo;s most famous English blends.<\/span><\/span><\/p>\r\n\r\n<p style=\"text-align: center;\"><span style=\"font-size:18px;\"><span style=\"line-height: 1;\">Only select teas of the highest quality&nbsp;from India, Sri Lanka, Kenya and China are used in all TET teas and they are rightfully considered to be the best.<\/span><\/span><\/p>\r\n\r\n<p><\/p>\r\n"},{"id":"5","user_id":"1","category_id":"11","url":"\/en\/pages\/ranges\/bazovaya-lineika","tags":"","created":"2015-02-17 18:43:32","updated":"2015-03-24 07:22:30","publish_date":"2015-02-17 18:41:52","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"BRITISH EMPIRE","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div position:absolute=\"\" style=\"\">\r\n<div id=\"logo\"><span style=\"font-family:baskerville;\"><img src=\"\/style\/img\/logo.png\" style=\"width:auto\" \/><\/span><\/div>\r\n\r\n<div id=\"center_text\">\r\n<p style=\" color: rgb(178, 155, 112); font-size: 60px;\"><span style=\"font-size:36px;\"><span style=\"line-height:1;\">BRITISH EMPIRE<\/span><\/span><\/p>\r\n\r\n<div>\r\n<p><span style=\"line-height:2;\"><span style=\"font-size:18px;\"><span style=\"color:#B3B3B3;\">BASIC RANGE<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size:18px;\"><span style=\"line-height:1;\"><span style=\"color:#B3B3B3;\">The British Empire is the largest state in the history of humanity.<\/span><span style=\"color:#B3B3B3;\">At the beginning of the 1930s the Empire covered almost a quarter of the Earth&#39;s total land area.<\/span><span style=\"color:#B3B3B3;\">The Order of the British Empire is one of major symbols of the British Empire these days. The citizens of other countries along with the citizens of the UK who made a significant contribution to the development of economy, culture and sport of the UK are awarded the Order of the British Empire.<\/span><\/span><\/span><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"158","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">BREAKFAST TEA<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/leaf_icon.png\" style=\"line-height: 1.42857143; width: 44px; height: 18px;\" \/>&nbsp;<img src=\"\/uploads\/packet_icon.png\" style=\"width:29px;height:29px\" \/>&nbsp; &nbsp;<\/p>\r\n","master":"<div class=\"col-xs-6\" style=\"width: 470px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"width: 450px; line-height: 36px;\">\r\n<p align=\"right\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);\">\u0422\u0415\u0420\u041f\u041a\u0418\u0419 \u0412\u041a\u0423\u0421<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px;\">\u0411\u041e\u0414\u0420\u041e\u0421\u0422\u042c<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"color: rgb(178, 155, 112);\"><span style=\"font-size: 24px;\">\u0423\u0422\u0420\u0415\u041d\u041d\u042f\u042f \u0427\u0410\u0428\u041a\u0410 \u0427\u0410\u042f<\/span><\/span><\/p>\r\n\r\n<p align=\"right\"><span style=\"font-size: 18px;\"><span style=\"color: rgb(179, 179, 179);\">\u0420\u0423\u0411\u0418\u041d\u041e\u0412\u042b\u0419 \u0426\u0412\u0415\u0422 \u041d\u0410\u0421\u0422\u041e\u042f<\/span><\/span><\/p>\r\n\r\n<p><\/p>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"width: 470px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"width: 450px; line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\u0426\u0412\u0415\u0422 \u041d\u0410\u0421\u0422\u041e\u042f<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u0440\u0443\u0431\u0438\u043d\u043e\u0432\u043e - \u044f\u043d\u0442\u0430\u0440\u043d\u044b\u0439<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0410\u0420\u041e\u041c\u0410\u0422<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u043d\u0430\u0441\u044b\u0449\u0435\u043d\u043d\u044b\u0439 &nbsp;<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0412\u041a\u0423\u0421<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0433\u043e \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0447\u0430\u044f<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u041f\u041e\u0421\u041b\u0415\u0412\u041a\u0423\u0421\u0418\u0415<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\u0441\u043b\u0430\u0434\u043a\u043e-\u0441\u043e\u043b\u043e\u0434\u043e\u0432\u043e\u0435<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\">\u0421\u041e\u0421\u0422\u0410\u0412<\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>\u043a\u0443\u043f\u0430\u0436 \u043e\u0442\u0431\u043e\u0440\u043d\u044b\u0445 \u0446\u0435\u0439\u043b\u043e\u043d\u0441\u043a\u0438\u0445 \u0447\u0430\u0435\u0432 \u0438\u0437 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 &nbsp;\u0420\u0443\u0445\u0443\u043d\u0430 \u0438 \u0432\u044b\u0441\u043e\u043a\u043e\u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0438\u043d\u0434\u0438\u0439\u0441\u043a\u0438\u0445 \u0447\u0430\u0435\u0432 \u0438\u0437 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 \u0410\u0441\u0441\u0430\u043c<\/p>\r\n\r\n<p><\/p>\r\n\r\n<p>\u041e\u0442\u043b\u0438\u0447\u043d\u043e \u0441\u043e\u0447\u0435\u0442\u0430\u0435\u0442\u0441\u044f \u0441 \u043c\u043e\u043b\u043e\u043a\u043e\u043c&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","width":261,"category_name":"BASIC RANGE","image_url":"\/images\/site\/cache\/31\/78\/3178904d0e781c0545a2b6f52ab2afa2.png","cat":"BASIC RANGE","descr":"<p style=\"text-align: center;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">The basic range consists of five exclusive blends having proper names, represented both as loose teas and tea bag teas of the highest quality originating from Sri Lanka, India, Kenya and China. Owing to the expertise of our tea tasters and to the exquisite quality of teas, the blends combine richness of taste and a unique colourful flavour.&nbsp;<\/span><\/span><\/p>\r\n"},{"id":"4","user_id":"1","category_id":"12","url":"\/en\/pages\/ranges\/nastoyashii-angliiskii-blend","tags":"","created":"2015-02-17 18:41:27","updated":"2015-03-20 12:35:48","publish_date":"2015-02-17 18:37:11","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"\u0422\u0415\u0422 STRONG","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div style=\"position: absolute;\r\nleft: 0;\r\nright: 0;\r\nmargin: auto;\r\nmax-width: 1920px;\">\r\n<div id=\"logo\"><img alt=\"\" src=\"\/style\/img\/logo.png\" style=\"width: auto\" \/><\/div>\r\n\r\n<div id=\"center_text\">\r\n<h1><span style=\"color:#B29B70;\">STRONG<\/span><\/h1>\r\n\r\n<p><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">The strength standard of the English tea.<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">If you wish to warm up &ndash; make it hotter and add more milk.<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">If you have things to ponder over &ndash; add some brandy.<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">If everything is fine &ndash; then simply enjoy it in deep draughts.<\/span><\/span><\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p style=\"text-transform:uppercase;line-height:34px;letter-spacing:.8px\">&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"159","is_new":"0","special":"","master":"","width":382,"category_name":"True English blend","image_url":"\/images\/site\/cache\/ca\/20\/ca206db628856e1992944116e80f4a36.png","cat":"True English blend","descr":"<p dir=\"ltr\" style=\"text-align: center;\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 18px;\">The&nbsp;strength&nbsp;standard of the English tea.<\/span><\/span><\/p>\r\n\r\n<p dir=\"ltr\" style=\"text-align: center;\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 18px;\">If you wish to warm up &ndash; make it hotter and add more milk.<\/span><\/span><\/p>\r\n\r\n<p dir=\"ltr\" style=\"text-align: center;\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 18px;\">If you have things to ponder over &ndash; add some brandy.<\/span><\/span><\/p>\r\n\r\n<p dir=\"ltr\" style=\"text-align: center;\"><span style=\"font-family:baskerville;\"><span style=\"font-size: 18px;\">If everything is fine &ndash; then simply enjoy it in deep draughts.<\/span><\/span><\/p>\r\n"},{"id":"3","user_id":"1","category_id":"13","url":"\/en\/pages\/ranges\/osobaya-kollekciya","tags":"","created":"2015-02-17 18:36:45","updated":"2015-03-20 06:29:37","publish_date":"2015-02-17 18:32:20","status":"published","layout":"","view":"","image_id":null,"views_count":"0","vote_id":null,"title":"ENGLISH BREAKFAST","short_description":"","full_description":"<div class=\"container-fluid\">\r\n<div class=\"row-fluid\">\r\n<div class=\"center-block\">\r\n<div style=\"position: absolute;\r\nleft: 0;\r\nright: 0;\r\nmargin: auto;\r\nmax-width: 1920px;\">\r\n<div id=\"logo\"><img alt=\"\" src=\"\/style\/img\/logo.png\" style=\"width: auto\" \/><\/div>\r\n\r\n<div id=\"center_text\">\r\n<h1><font color=\"#b29b70\">ENGLISH BREAKFAST<\/font><\/h1>\r\n\r\n<p><span style=\"color:#B3B3B3;\"><span style=\"line-height:2;\"><span style=\"font-size:18px;\"><span style=\"font-family:baskerville;\">A RANGE INCLUDING PROMOTION<\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-family:baskerville;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">Traditionally the English drink tea in tagless tea bags, by way of infusing them in a tea pot.<\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-family:baskerville;\"><span style=\"color:#B3B3B3;\"><span style=\"font-size:18px;\">This is the most popular way of brewing tea in the UK due to its ease and convenience.<\/span><\/span><\/span><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","middle_description":"","slogan":"","meta_title":"","meta_description":"","meta_keywords":"","gallery_id":"151","is_new":"0","special":"<div style=\"color:#b3b3b3;font-size:12px;letter-spacing:5.2px;line-height:15px;\">BREAKFAST TEA<\/div>\r\n\r\n<div class=\"h-15\"><\/div>\r\n\r\n<p><img src=\"\/uploads\/images\/packet_no_label.png\" style=\"width: 28px; height: 28px;\" \/><\/p>\r\n","master":"<div class=\"col-xs-6\" style=\"line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-right\" style=\"line-height: 36px;\">\r\n<div>\r\n<div style=\"line-height: 36px; font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\"><span style=\"font-size: 36px;\">STRONG <\/span><\/div>\r\n\r\n<div style=\"line-height: 36px;\"><span style=\"font-size: 31px;\"><strong style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(179, 179, 179);\">BUOYANCY<\/strong><\/span><\/div>\r\n\r\n<div style=\"line-height: 36px; font-size: 18px; font-family: BaskervilleCyrLTStd-Upright, sans-serif; color: rgb(178, 155, 112);\"><span style=\"font-size: 27px;\"><span style=\"line-height: 46px;\">ENERGY <\/span><\/span><\/div>\r\n\r\n<div style=\"line-height: 36px; font-family: BaskervilleCyrLTStd-Upright, sans-serif;\">\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 37px;\">A GOOD SRART OF THE DAY<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div style=\"font-family: BaskervilleCyrLTStd-Upright, sans-serif;\">\r\n<div style=\"color: rgb(179, 179, 179);\"><span style=\"font-size: 37px;\">HOPPY MILDNESS<\/span><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">LINGERING AFTERTASTE<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n<div class=\"col-xs-6\" style=\"line-height: 20.7999992370605px;\">\r\n<div class=\"col-xs-12 text-left\" style=\"line-height: 28px;\">\r\n<div style=\"color: rgb(178, 155, 112);\">\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><strong>COLOUR OF LIQUEUR&nbsp;<\/strong><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\">Ruby-amber<\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><strong>AROMA<\/strong><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\">fresh and pronounced<\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><strong>TASTE<\/strong><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\">A rare grade of tea plucked in the best estates of Sri Lanka which fills a cup with a subtle taste of elite liqueur while silver tips mellow and reveal the taste of the best Ceylon tea.<\/div>\r\n\r\n<div style=\"line-height: 28px;\"><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(178, 155, 112);\"><strong>AFTERTASTE<\/strong><\/div>\r\n\r\n<div style=\"line-height: 28px; color: rgb(179, 179, 179);\">sweet and malty<\/div>\r\n<\/div>\r\n\r\n<div><\/div>\r\n\r\n<div style=\"color: rgb(178, 155, 112);\"><strong>INGREDIENTS<\/strong><\/div>\r\n\r\n<div style=\"color: rgb(179, 179, 179);\">\r\n<p>A blend of strong Kenyan tea and aromatic Ceylon tea.<\/p>\r\n\r\n<p>It goes well with milk.<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","width":319,"category_name":"RANGE INCLUDING PROMOTION","image_url":"\/images\/site\/cache\/41\/33\/4133620280cc060b943849f7a1a42f04.png","cat":"RANGE INCLUDING PROMOTION","descr":"<p><\/p>\r\n\r\n<p style=\"text-align: center;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\">Traditionally the English drink tea in tagless tea bags, by way of infusing them in a tea pot.<\/span><\/span><\/p>\r\n\r\n<p style=\"text-align: center;\"><span style=\"line-height:1;\"><span style=\"font-size:18px;\">This is the most popular way of brewing tea in the UK due to its ease and convenience.<\/span><\/span><\/p>\r\n\r\n<p style=\"text-align: center;\"><\/p>\r\n"}]</script>
+<div class="bottom_bg" style="opacity: 0;display: none">
+    <div class="container">
+        <div class="row">
+        <div id="slider" class="products_slider">
+            <div id="out_wrapper">
+                <div class="left_arrow"></div>
+                <div id="wrapper">
+
+                    <div id="footerRegion" class="track" style="left: 0px;right: 0px"></div>
+
+
+                </div>
+                <div class="right_arrow"></div>
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="mini_logo">
+
+        </div>
+        <div class="bottom_menu">
+            <ul id="bottom_menu">
+                <li><a href="/web/20160412172618/http://www.tettea.com/en/pages/ranges" onmouseover="productsBottomShow(this);" onmouseout="productsBottomDestroy(this);">PRODUCTS  <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="/web/20160412172618/http://www.tettea.com/en/page/tradition">TRADITIONS  <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                <li><a href="/web/20160412172618/http://www.tettea.com/en/page/teapath">WAY OF TEA  <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+<!--                <li><a href="">--><!--  <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>-->
+                <li><a href="/web/20160412172618/http://www.tettea.com/en/page/contacts">CONTACTS  <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <ul id="add_menu">
+        <li class="lang"><span id="lang">uk</span>
+            <ul class="langs">
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+                <li><a href="/web/20160412172618/http://www.tettea.com/ua/page/britanskaya-imperiya?user_lang=?user_lang" class="">ua</a></li>
+                <li><a href="/web/20160412172618/http://www.tettea.com/page/britanskaya-imperiya?user_lang=?user_lang" class="">ru</a></li>
+                <li><a href="/web/20160412172618/http://www.tettea.com/en/page/britanskaya-imperiya?user_lang=?user_lang" class="active">uk</a></li>
+                <li><a href="/web/20160412172618/http://www.tettea.com/pl/page/britanskaya-imperiya?user_lang=?user_lang" class="">pl</a></li>
+            </ul>
+        </li>
+<!--        <li class=""><a href="" class="fb">Follow us >-->
+<!--                <div id="fb">f</div>-->
+<!--            </a></li>-->
+    </ul>
+
+</footer>
+
+    
+
+
+<script id="bottom_products_template" type="text/html">
+
+
+    <div class="blend_item" id="<%= id %>" style="width: <%= width %>px;height: 300px;margin-top: 23px:"  data-url="<%= url %>">
+
+        <div class="description">
+
+            <div  style="height:100%;width:100%;border: 1px solid #9e8958;">
+                <div class="short_text text-center">
+                    <div class="row">
+
+
+                        <p style="font-size:21px; margin-left: 15px;text-transform: uppercase;margin-right: 15px;color:#9e8958;font-family: baskerville, san-serif;line-height: 25px;">
+                            <%= cat %>
+                        </p></div></div>
+
+                <img src="/style/img/bott_bg.png" style="width: auto;height:auto;margin-top: 3px;margin-bottom: 6px;" alt="">
+                <p style="font-family: gillsans;font-weight: 300;font-size: 14px;color:#000000;text-transform: uppercase"> </p>
+            </div></div>
+        <a class="image">
+            <img src="<%= image_url %>" alt=""/>
+        </a>
+
+
+
+
+    </div>
+
+
+
+</script>
+
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/css/bootstrap.css" rel="stylesheet">
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/css/fonts/fonts.css" rel="stylesheet">
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/css/utils.css" rel="stylesheet">
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/css/products.css" rel="stylesheet">
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/js/slick/slick/slick.min.css" rel="stylesheet">
+<link href="/web/20160412172618cs_/http://www.tettea.com/style/js/slick/slick/slick-theme.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/web/20160412172618cs_/http://www.tettea.com/style/font-awesome/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+
+<!--[if lt IE 9]>
+
+<script src="/style/js/ie8-responsive-file-warning.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="/web/20160412172618/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="/web/20160412172618/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/backbone/backbone.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/marionette/lib/backbone.marionette.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/cookie.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/moment.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/url.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/slick/slick/slick.js"></script><script>
+
+
+</script>
+
+
+
+<script id="collection_template" type="text/html">
+
+
+                    <div class="blend_item" id="<%= id %>" style="width: <%= width %>px;" data-url="<%= url %>">
+                        <div class="description">
+                            <div class="short_text">
+                                <p style="margin-left: 15px;margin-right: 15px;margin-top: 15px;font-family: baskerville, san-serif;font-size: 19px;line-height: 22px">
+                                    <%= short_description %>
+
+                                </p>
+                                <div class="col-xs-12">
+                                    <div class="h-25" style="border-bottom: 1px solid #b29b70;"></div>
+                                </div>
+                                <img src="/style/img/bott_bg.png" style="width: auto;" alt="">
+                            </div>
+
+
+
+                            <div class="text-box">
+                                <div style="display:table-row;height:70px;width:100%"><div  class="text-center" style="display:table-cell;vertical-align:middle"><div style="width: <%= width-30 %>px;padding:0 15px;line-height:18px"><%= slider_name %></div></div></div>
+
+                            </div>
+                        </div>
+                        <a class="image">
+                            <img src="<%= image_url %>" alt=""/>
+                        </a>
+
+
+                        <div class="text-box">
+                            <div style="display:table-row;height:70px;width:100%"><div  class="text-center" style="display:table-cell;vertical-align:middle"><div style="width: <%= width-30 %>px;padding:0 15px;line-height:18px"><%= slider_name %></div></div></div>
+
+                        </div>
+
+                    </div>
+
+
+</script>
+
+<script id="collection_products_template" type="text/html">
+
+
+    <div class="blend_item" id="<%= id %>" style="width: <%= width %>px" data-url="<%= url %>">
+        <div class="light"></div>
+        <a class="image">
+            <img src="<%= image_url %>" alt=""/>
+
+        </a>
+
+
+        <div class="text-center box">
+            <p style="text-transform: uppercase;font-family: baskerville;font-weight: 400;font-size: 16px;color:#FEEDB3;letter-spacing:0.6px;line-height:20px;padding-bottom:0px;margin: 5px">
+                <%= slider_name %>
+            </p>
+            <div style="margin: 0 25px;border-top: 1px solid #9e8958;">
+
+            </div>
+            <div style="padding-top: 5px;height:100px">
+                <div class=""><%= special %></div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+</script>
+<script id="master_products_template" type="text/html">
+
+
+    <div class="blend_item" id="<%= id %>" style="" >
+
+        <div class=""><%= master %></div>
+
+
+    </div>
+
+
+</script>
+
+
+
+
+<script id="new_products_template" type="text/html">
+
+
+    <div class="blend_item" id="<%= id %>" style="width: <%= width %>px;height: <%= height %>px;margin-top: 23px:">
+
+        <div class="description">
+            <div  style="height:100%;width:100%;border: 1px solid #9e8958;">
+                <div class="short_text text-center" style="padding-left:242px;padding-right:242px">
+                    <div class="row">
+
+
+                        <p style="font-family: baskerville;font-weight: 300;font-size: 28px;color:#000000;border-bottom: 2px solid #9e8958;letter-spacing:0.6px;line-height:27px;padding-bottom:18px">
+                            <%= title %>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p style="font-family: baskerville;font-weight: 300;font-size: 23px;color:#000000;border-bottom: 2px solid #9e8958;letter-spacing:0.6px;line-height:27px;margin-top:18px;padding-bottom:18px"> <%= middle_description %></p>
+                        <img src="/style/img/bott_bg.png" style="width: auto;height:auto;margin-top: 3px;margin-bottom: 6px;" alt="">
+                    </div>
+                </div>
+
+
+
+            </div></div>
+        <a class="image">
+            <img src="<%= image_url %>" alt=""/>
+        </a>
+
+
+
+
+    </div>
+
+
+</script>
+
+
+<script id="slider_template" type="text/html">
+
+
+    <div id="slider" class="view_products_slider">
+        <div id="out_wrapper">
+            <div class="left_arrow"></div>
+            <div id="wrapper">
+                <div id="track" class="track" style="left: 0px;right: 0px"></div>
+            </div>
+            <div class="right_arrow"></div>
+        </div>
+    </div>
+
+
+</script>
+
+
+
+<script id="view_products_template" type="text/html">
+
+<div class="blend_item" id="<%= id %>" style="width: <%= width %>px;"  data-big="<%= big_url %>">
+
+    <div class="description" style="display:none">
+        <%= description %>
+    </div>
+    <a class="image">
+        <img src="<%= image_url %>" alt=""/>
+    </a>
+
+
+
+
+</div>
+
+</script>
+
+
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/app.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/BlendsCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/BottomBlendsCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/NewBlendsCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/ProductsBlendsCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/ProductsMasterCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/collections/ProductsCollection.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/BlendCollectionView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/ProductsBlendCollectionView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/ProductView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/MasterBlendCollectionView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/BottomBlendCollectionView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/views/NewBlendCollectionView.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/controllers/ViewController.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/app/routers/ViewRouter.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/style/js/products.js"></script>
+<script type="text/javascript" src="/web/20160412172618js_/http://www.tettea.com/bower_components/marionette/lib/backbone.marionette.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+
+
+         var productsBottomShow=function(el){
+        var _el=el;
+
+
+
+        $(_el).children('span').css({display:'block'});
+
+        $('.bottom_bg').css({display:'block'});
+        setTimeout(function(){
+            $('.bottom_bg').css({opacity:1});
+            $(_el).children('span').css({opacity:1});
+
+        },300);
+
+        if(typeof window.footer != 'undefined'){
+
+            clearTimeout(window.footer);
+        }else{
+
+
+                var bottomBlends=new BottomBlendCollectionView({
+                    collection:BlendsBottom
+                });
+                MyApp.footerRegion.show(bottomBlends);
+
+                $('.bottom_bg').hover(function(){
+                    $(_el).children('span').css({opacity:1});
+                    $(this).css({opacity:1});
+                    clearTimeout(window.footer);
+                },function(){
+
+                    $(this).css({opacity:0});
+                    $(_el).children('span').css({opacity:0});
+                    window.footer=setTimeout(function(){
+                        $('.bottom_bg').css({display:'none'});
+                        $(_el).children('span').css({display:'none'});
+                        productsBottomDestroyCore(_el);
+                    },300);
+                });
+
+
+
+        }
+
+
+    };
+
+    var productsBottomDestroyCore=function(_el){
+
+
+        delete window.footer;
+        MyApp.footerRegion.reset();
+
+
+
+    };
+    var productsBottomDestroy=function(el){
+        var _el=$(el);
+
+        $('.bottom_bg').css({opacity:0});
+
+        $(_el).children('span').css({opacity:0});
+        window.footer=setTimeout(function(){
+            $(_el).children('span').css({display:'none'});
+            $('.bottom_bg').css({display:'none'});
+            productsBottomDestroyCore();
+        },1500);
+
+    };
+jQuery(function($) {
+    window.scroll_index=1;
+   window.stroll_enable=false;
+    $('body').scrollTo('body>div:first-of-type', {duration:100,onAfter:function(){
+                window.stroll_enable=true;
+    }});
+    var wheel=function(e){
+    console.log(e);
+    console.log(e.deltaY);
+
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            console.log('scrolling up! index: '+window.scroll_index);
+
+            if(window.stroll_enable&&window.scroll_index>1){
+            window.stroll_enable=false;
+            if(window.scroll_index>1){
+                window.scroll_index-=1;
+                 $('body').scrollTo('body>div:nth-of-type('+window.scroll_index+')', {duration:500,onAfter:function(){
+                window.stroll_enable=true;
+            }});
+            }else{
+              window.stroll_enable=true;
+            }
+
+
+
+            }
+        }
+        else{
+            console.log('scrolling down ! index: '+window.scroll_index);
+            if(window.stroll_enable&&$('body>div').length>window.scroll_index){
+            window.stroll_enable=false;
+            var count=$('body>div').length-1;
+            var features=$('#features').html().trim();
+            if(features==''){
+                count-=1;
+            }
+            if($('#collections').height()<$(window).height()){
+                count-=1;
+            }
+            if(count>window.scroll_index){
+                window.scroll_index+=1;
+                 $('body').scrollTo('body>div:nth-of-type('+window.scroll_index+')', {duration:500,onAfter:function(){
+                window.stroll_enable=true;
+            }});
+            }else{
+              window.stroll_enable=true;
+            }
+
+
+            }
+        }
+        return false;
+    }
+
+    $('body').on('mousewheel',wheel);
+
+
+});
+/*]]>*/
+</script>
+</body>
+</html>

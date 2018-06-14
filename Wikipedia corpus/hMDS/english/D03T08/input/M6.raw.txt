@@ -1,0 +1,44 @@
+17 September 2008
+
+In brief: The Full Federal Court has handed down its much-awaited decision in Baxter concerning bundling practices. Partner Jacqueline Downes (view CV), Lawyer Liana Crowne and Law Graduate James Greenwood report.
+
+
+How does it affect you?
+
+While bundling practices can be pro-competitive, Baxter is the first case in which bundling was found to have contravened the Trade Practices Act 1974 (Cth).
+Businesses need to carefully consider the purpose and likely effect of their bundling strategies, particularly if offering bundled packages at significant discounts to item-by-item prices.
+
+The Full Federal Court handed down its decision in ACCC v Baxter Healthcare Pty Ltd 1 on 11 August 2008. Justices Mansfield and Gyles (Justice Dowsett dissenting) found that Baxter contravened sections 46 and 47 of the Trade Practices Act 1974 (Cth) (the TPA) when tendering, negotiating and entering into agreements to supply a bundled package of sterile fluids and peritoneal dialysis (PD) fluids to state purchasing authorities (SPAs).
+
+The matter has been remitted to a single judge of the Federal Court to consider whether penalties should be imposed and other relief.*
+
+The facts
+
+Baxter had an effective monopoly in Australia for the production of 'sterile fluids' and foreign manufacturers provided little constraint on Baxter in the domestic market. Baxter also manufactured PD fluids but faced real competition from imports in relation to those fluids.
+
+Between 1998 and 2001, Baxter successfully tendered for the supply of sterile fluids and PD fluids to SPAs in New South Wales, South Australia, Western Australia, Queensland and the Australian Capital Territory. Baxter structured its tenders by offering to supply the products either on high, item-by-item prices – the so-called 'cherry pick' prices – or on a bundled basis at prices significantly lower than the cherry pick prices. The bundled offer was conditional on Baxter being the sole supplier of both sterile and PD fluids to the SPAs.
+
+The Australian Competition and Consumer Commission (the ACCC) commenced proceedings against Baxter in 2005, alleging that:
+
+the bundled offers amounted to Baxter misusing its market power to deter competitive manufacturers of PD fluids from competing with it in contravention of s46 of the TPA; and
+the likely effect of the offers was to substantially lessen competition in the national market for PD fluids in contravention of s47 of the TPA.
+
+At first instance, Justice Allsop would have found that Baxter contravened s46 in relation to one offer and s47 in relation to all offers except for in the ACT. However, Justice Allsop found that the TPA did not apply to Baxter, as it was entitled to derivative Crown immunity. The High Court reversed that decision and remitted the matter to the Full Court.
+
+Section 46
+
+The Full Court unanimously held that Baxter had had a substantial degree of power in the sterile fluids market and had taken advantage of its market power by offering unrealistically high item-by-item prices for sterile fluids. The Full Court considered that, had there been any serious competitor in the sterile fluids market, Baxter could not have rationally offered such unrealistically high prices.
+
+A majority of the Full Court (Justice Dowsett dissenting) also found that Baxter's purpose in making the bundled offer was to deter or prevent Baxter's potential competitors in the PD fluids market from being able to compete in the PD fluids market.
+
+Section 47
+
+The majority upheld Justice Allsop's finding that Baxter's conduct had the purpose and effect of substantially lessening competition in the tender process (except in the ACT). Again, the purpose of Baxter's offer strategy was to hinder or prevent potential competitors from competing in the SPA tender process. Each tender process gave suppliers an opportunity to contract to supply PD fluids and Baxter could essentially exclude competitors from this process.
+
+The ACCC also contended on appeal that Baxter's conduct had both the purpose and effect, or likely effect, of substantially impeding or hindering 'the wider competitive process' in the market. The court agreed with the trial judge that the conduct did not have the purpose or effect of substantially lessening competition in the 'wider' PD fluids market. Potential competitors would be able to compete with Baxter in the next call for tenders and Baxter's purpose was not, in the long term, to cause its competitors to drop out of the market.
+
+Conclusion
+
+Baxter is the first case where bundling has been found to contravene the TPA. Businesses need to carefully consider the purpose and likely effect of their bundling strategies, particularly if offering bundled packages at significant discounts to item-by-item prices.
+
+* Baxter has now applied to the High Court for special leave to appeal and the penalty hearing has been adjourned.

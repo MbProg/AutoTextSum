@@ -1,0 +1,27 @@
+Baxter fine a warning for those who bundle products or services
+The Federal Court's decision to fine Baxter Healthcare Pty Ltd $4.9 million for breaches of the misuse of market power and exclusive dealing provisions of the Trade Practices Act 1974 is a warning to any company which bundles products or services together (Australian Competition and Consumer Commission v Baxter Healthcare Pty Ltd [2010] FCA 929).
+Companies with a significant market share need to be careful when bundling the supply of their products, where the reason for the bundling is to seek an advantage over their competitors, and competitors are known to be unable to match the offer by a competitive competing bundle.
+Baxter's offer to bundle products
+The breaches arose when Baxter responded to requests for tender by State Purchasing Authorities, acting on behalf of state hospitals and health facilities, for the supply of two different products, sterile fluids and peritoneal dialysis fluids (PD products). Both sterile fluids (used for re-hydration and cleaning wounds) and PD products (used to treat chronic renal failure) are essential for hospitals and health facilities.
+Baxter offered to supply sterile fluids and PD products on an item-by-item basis at high prices. As an alternative, it would supply the products at discounted prices, as long as the Authority acquired all or most of its requirements from Baxter for a long-term period, an offer which each Authority accepted.
+At the time of offering to bundle its products, Baxter was the sole Australian manufacturer of sterile fluids and faced very limited competition from imports. It was also the main manufacturer of PD products in Australia, although it faced import competition.
+This, said the Australian Competition and Consumer Commission, was a deal structured to remove any realistic prospect of competition. It launched proceedings, alleging that Baxter had breached both sections 46 and 47 by taking advantage of its substantial market power in the national market for sterile fluids to secure long-term, exclusive contracts with the Authorities.
+In 2008, the Full Federal Court found that Baxter had breached sections 46 and 47 of the Trade Practices Act .
+Determining the right penalty for breaching misuse of market power and exclusive dealing provisions
+The ACCC sought a penalty of $27.3 million. Justice Mansfield imposed the much lower penalty for a variety of reasons.
+Against Baxter, he considered:
+the need to send a “significant signal to the community” that this conduct attracts “significant pecuniary penalties”;
+the conduct was deliberate, ongoing and significant; and
+Baxter's ignorance that its conduct was in breach of the Trade Practices Act was no excuse;
+In Baxter's favour, Justice Mansfield noted:
+the Authorities had decided upon the form of tenders and had included an opportunity for bundling;
+the conduct was unlikely to occur again, because of the Authorities' increased awareness and Baxter's steps since 2007 to reinforce its trade practices compliance program; and
+the conduct occurred at a time when the former maximum penalty of $10 million per contravention applied.
+Justice Mansfield concluded that $4.9 million was an appropriate penalty, although as he also ordered Baxter to pay the ACCC's costs of the proceedings at first instance and on appeal to the Full Court, the ultimate cost to Baxter will be significantly higher.
+Conclusion
+Significantly, this is the first case in which bundling conduct was been found to contravene the Trade Practices Act and confirms that bundling conduct is unlikely to be a problem unless the bundle is particularly attractive to customers, or the supplier of the bundle is the only person who can supply it (or supply at that price).
+Companies with a significant market share need to be careful when bundling the supply of their products, where the reason for the bundling is to seek an advantage over their competitors, and competitors are known to be unable to match the offer by a competitive competing bundle.
+The penalty in this case is considerable and, while less than other penalties that have been imposed for a section 46 breach, it indicates that the courts will look to impose penalties which send a “significant signal to the community” about engaging in breaches of Part IV of the Act.
+Disclaimer
+Clayton Utz communications are intended to provide commentary and general information. They should not be relied upon as legal advice. Formal legal advice should be sought in particular transactions or on matters of interest arising from this bulletin. Persons listed may not be admitted in all states and territories.
+For more information, contact...

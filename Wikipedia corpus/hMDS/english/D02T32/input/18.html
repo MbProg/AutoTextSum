@@ -1,0 +1,286 @@
+<html>
+
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=170;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Digital History</title>
+
+<style type="text/css">
+body {
+	background-color: #1d222f;
+}
+td {
+	FONT-SIZE: 13px;
+    COLOR: #2c3346;
+    FONT-FAMILY: Verdana, Helvetica, Arial, Sans-serif;
+    TEXT-DECORATION: none;
+}
+
+.dhnum {
+	font-size: 11px;
+	font-style: italic;
+	color: #990000;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&amp;psid=3251";
+
+var firstYear = 1996;
+var displayDay = "11";
+var displayMonth = "May";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&amp;psid=3251" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160511133945" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150908021652/http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtid=2&amp;psid=3251" title="8 Sep 2015">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 13:39:45 May 11, 2016">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jun
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150908021652/http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtid=2&amp;psid=3251" title="2:16:52 Sep 8, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 13:39:45 May 11, 2016">11</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150326054247/http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&amp;psid=3251" title="26 Mar 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 13:39:45 May 11, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160511133945*/http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&amp;psid=3251" title="See a list of every capture for this URL">5 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Oct 14 - 11 May 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000100_2015:-1:001000002000_2016:4:000010000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<TABLE BORDER=0 cellspacing=0 cellpadding=1 width=770 ALIGN="CENTER" BGCOLOR=#cbcfd5>
+<TR><TD ALIGN="CENTER" VALIGN="TOP"><TR><TD WIDTH=768 VALIGN="TOP">
+	<TABLE BORDER=0 cellspacing=1 width=768 ALIGN=left BGCOLOR=#cbcfd5>
+		<TR>
+			<TD WIDTH="768" VALIGN="TOP"><IMG SRC="images/banner.gif" WIDTH="768" HEIGHT="128">
+			</TD>
+		</TR>
+		<TR>
+			<TD VALIGN="MIDDLE" WIDTH="768" HEIGHT="46" CELLPADDING="0" CELLSPACING="0" BORDER="0" BGCOLOR="#ffffff">
+		      
+            <div align="center">
+              
+<a href="/web/20160511133945/http://www.digitalhistory.uh.edu/">Digital History</a></div>
+                            
+                            
+		      <table border="0" width="100%" cellpadding="10" cellspacing="5">
+		<tr><td>
+		
+
+			&nbsp;<a href="disp_textbook_print.cfm?smtid=2&amp;psid=3251">Printable Version</a>				
+			<table border="0" width="100%" align="left">
+				<tr>
+					<td><b>The Donner Party</b></td>
+					<td width="60"><a href='disp_textbook.cfm?smtid=2&amp;psid=3250'>Previous</a></td>
+					<td width="60"><a href='disp_textbook.cfm?smtid=2&amp;psid=3252'>Next</a></td>
+				</tr>
+				<tr><td colspan="3"><span class="dhnum">Digital History ID 3251</span><br></td></tr>
+			</table><p>
+		<p>&nbsp;</p>
+		Early in April, l846, 87 pioneers led by George Donner, a well-to-do 62-year-old farmer, set out from Springfield, Illinois, for California. Like many emigrants, they were ill-prepared for the dangerous trek. The pioneers' 27 wagons were loaded with fancy foods, liquor, and built-in beds and stoves. 
+<P>
+On July 20, at Fort Bridger, Wyoming, the party decided to take a shortcut. Lansford W. Hastings, a California booster, had suggested in a guidebook that pioneers could save 400 miles by cutting south of the Great Salt Lake. Hastings himself had never taken his own shortcut. He was trying to overthrow California's weak Mexican government and hoped to bring in enough emigrants to start a revolution.
+<P>
+Soon huge boulders, arid desert, and dangerous mountain passes slowed the expedition to a crawl. During one stretch, the party traveled only 36 miles in 2l days. A desert crossing that Hastings said would take two days actually took six days and nights.
+<P>
+Twelve weeks after leaving Fort Bridger, the Donner Party reached the eastern Sierra Nevada Mountains and prepared to cross Truckee Pass, the last remaining barrier before they arrived in California's Sacramento Valley. On October 3l, they climbed the high Sierra ridges in an attempt to cross the pass, but five-foot high snow drifts blocked their path.
+<P>
+Trapped, the party built crude tents and tepees, covered with clothing, blankets, and animal hides. To survive, the Donner party was forced to eat mice, their rugs, and even their shoes. In the end, surviving members of the party escaped starvation only by eating the flesh of those who died.
+<P>
+In mid-December, a group of l2 men and 5 women made a last-ditch effort to cross the pass to find help. They took only a 6-day supply of rations, consisting of finger-sized pieces of dried beef--two pieces a person per day. During a severe storm, two of the group died. The surviving members of the party "stripped the flesh from their bones, roasted and ate it, averting their eyes from each other, and weeping." More than a month passed before seven frost-bitten survivors reached an American settlement. By then, the rest had died and two Indian guides had been shot and eaten.
+<P>
+Relief teams immediately sought to rescue the pioneers still trapped near Truckee Pass. During the winter, four successive rescue parties broke through and brought out the survivors. The situation that the rescuers found was unspeakably gruesome. Thirteen were dead. Surviving members of the Donner party were delirious from hunger and overexposure. One survivor was found in a small cabin next to a cannibalized body of a young boy. Of the original 87 members of the party, only 47 survived.
+		<p>
+                <table border="0" width="150" align="right">
+				<tr>
+					<td width="60"><a href='disp_textbook.cfm?smtid=2&amp;psid=3250'>Previous</a></td>
+					<td width="60"><a href='disp_textbook.cfm?smtid=2&amp;psid=3252'>Next</a></td>
+				</tr>
+			</table>
+            </p>
+            <p>&nbsp;</p>
+			
+
+        <div align="center">Copyright 2016 Digital History</div>
+</td></tr>				
+</table></TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>			
+
+</body>
+
+</html>

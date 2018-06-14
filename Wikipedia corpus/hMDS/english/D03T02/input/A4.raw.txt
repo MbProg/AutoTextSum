@@ -1,0 +1,17 @@
+ 
+Afroyim v. Rusk – Case Brief Summary
+Summary of Afroyim v. Rusk, 387 U.S. 253, 87 S. Ct. 1660, 18 L. Ed. 2d 757 (1967).
+Facts
+Afroyim (P) was born in Poland and became a United States citizen in 1926. In 1950 Afroyim went to Israel and voted in an Israeli election the following year. In 1960 the State Department refused to grant his reapplication for a U.S. passport on the grounds that he had lost his citizenship by virtue of the Nationality Act of 1940 which provided that a United States citizen shall lose his citizenship if he votes in a foreign election.
+Afroyim brought this lawsuit against Secretary of State Dean Rusk (D) in federal district court for a declaratory judgment, contending that the Nationality Act of 1940 violated his rights under the Due Process Clause of the Fifth Amendment. He also asserted that the Constitution does not grant Congress the express power to revoke citizenship once it has been acquired, and that citizenship can only be lost through voluntary renunciation in light of Section 1 Clause 1 of the Fourteenth Amendment.
+The Government in turn contended that the Act empowers Congress to terminate citizenship without voluntary renunciation. The district court held that Congress has the authority to revoke citizenship by voting in a foreign election by virtue of its implied power to regulate foreign relations. The court of appeals affirmed and the Supreme Court granted certiorari.
+Issue
+Does Congress have the power to strip an American citizen of his or her citizenship if that person has not voluntarily renounced it?
+Holding and Rule (Black)
+No. Congress does not have the power to strip an American citizen of his or her citizenship if that person has not voluntarily renounced it.
+Congress has no express power under the Constitution to revoke a person’s citizenship. Congress recognized before the passage of the Fourteenth Amendment, as did the Supreme Court in Osborn v. Bank of the United States, that no such power can be sustained as an implied attribute of sovereignty.
+The Fourteenth Amendment’s provision that all persons born or naturalized in the United States are citizens of the United States completely controls that status and prevents the cancellation of Afroyim’s citizenship.
+Disposition
+Reversed – Afroyim did not lose his citizenship.
+See Nollan v. California Coastal Commission for a constitutional law case brief in which the Supreme Court addressed the issue of whether the conditioning of a grant of a land use permit upon the landowner’s grant of a permanent easement was unconstitutional in light of the Takings Clause of the Fifth Amendment.
+Related posts:

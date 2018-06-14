@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="no-js">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app36.us.archive.org";archive_analytics.values.server_ms=265;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>(window.NREUM||(NREUM={})).loader_config={xpid:"UgIFUFZbGwIAUlNRAAMF"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function u(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,f=0;s>f;f++)a[f].apply(i,r);var u=c[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return f[t]=f[t]||r(u)}function h(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in c||(c[e]=[])})}var m={},v={},w={on:d,emit:u,get:p,listeners:l,context:e,buffer:h};return w}function o(){return new n}var i="nr@context",a=t("gos"),s=t(1),c={},f={},u=e.exports=r();u.backlog=c},{1:24,gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=NREUM.o.EV;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").get("events"),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").get("history"),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").get("raf"),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").get("timer"),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e){e=e||this;var n=i.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,i.emit("xhr-resolved",[],e));try{c.inPlace(e,l,"fn-",r)}catch(o){}}function r(t,e){return e}function o(t,e){for(var n in t)e[n]=t[n];return e}var i=t("ee").get("xhr"),a=t(1),s=t(2),c=s(i),f=s(a),u=NREUM.o,d=u.XHR,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=i,window.XMLHttpRequest=function(t){var e=new d(t);try{i.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&f.inPlace(e,["addEventListener","removeEventListener"],"-",r),e.addEventListener("readystatechange",n,!1)}catch(o){try{i.emit("internal-error",[o])}catch(a){}}return e},o(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:7,2:26,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=n(t,this.lastSize);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var o="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return r(o)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=null,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:15,4:11,5:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],14:[function(t,e){function n(t,e){return function(){r(t,[(new Date).getTime()].concat(i(arguments)),null,e)}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],s=["addPageAction"],c="api-";o(a,function(t,e){newrelic[e]=n(c+e,"api")}),o(s,function(t,e){newrelic[e]=n(c+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),r("err",[t,(new Date).getTime()])}},{1:24,2:25,handle:"D5DuLP"}],15:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n,o){r.buffer([t],o),r.emit(t,e,n)}var r=t("ee").get("handle");e.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var h=0},{1:24,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta name="description" content="On December 14, 1911, Norwegian explorer Roald Amundsen and his four-man team became the first people to reach the South Pole. Today is the 100th anniversary of the feat." />
+<link rel="shortcut icon" href="/web/20160321165021im_/http://www.timeforkids.com/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="keywords" content="roald amundsen, polar exploration" />
+<link rel="canonical" href="/news/race-south-pole/23816" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/23816" />
+    <title>Race to the South Pole | TIME For Kids
+</title>
+    <link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_vv4pljwlvwdCGPcixhZ126582XBUyQM6Fs-F_c0Bkt0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_IViljsZVWJO2uTRG53g8n5DiAJMo1VOERpg9iE3B7n4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_wqczGRnbq2Q8Vp_QLV8BPqnrBa_a0wRUGbzlOLgJCjc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_axmfaE0FpfvfvrhjG3Bhu76iRiPVeiDsin69g40mxfA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160321165021cs_/http://www.timeforkids.com/files/css/css_e0Oi8I1L8cGJ7KxcUbimLkO-ivlPDoZXuBZMWKAz5GY.css" media="print" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/web/20160321165021/http://www.timeforkids.com/files/css/css_60RtK0G2Vv8wTD73AYblv93KxhHwYAeuyHliqQgr-rE.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/web/20160321165021/http://www.timeforkids.com/files/css/css_ASwTmD8Einhykpj6G4tR1NTH7a7d73XnA7jveby0Z6o.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="/web/20160321165021/http://www.timeforkids.com/files/css/css_FfUxaviuIvL7pz6eKI_g5wtdwNXiTnsvUosYv6SwcoM.css" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_JLxuxbhhrFRy-sBnijHkR0TGGHgiukMPv94zvDWgQ3g.js"></script>
+<script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_hVl1i_lmOd7398XNY-MDmW_7-2JoUpOsFkN1QXx5SoY.js"></script>
+<script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_4Rb2Tequ8taxZaNWSz7I1J5U-Xf6LBJWoCOfShFRxpE.js"></script>
+<script type="text/javascript" src="/web/20160321165021js_/http://tiads.timeforkids.com/ads/tgx.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var adConfig = new TiiAdConfig("3475.tfk");adConfig.setCmSitename("cm.tfk");adConfig.setRevSciTracking(false);var adFactory = new TiiAdFactory(adConfig, "kids/news");adFactory.setChannel("news");adFactory.setSubchannel("");adFactory.setContentPage();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var s_account='timekidscom';
+//--><!]]>
+</script>
+<script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_JLNblviF-9Qr7bWZ8MyMmRubavkxGYwGUUtZxioIYu4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+s_time.channel = 'tfk';
+s_time.pageName = 'tfk|kids|news|race to the south pole';
+s_time.prop16 = 'news';
+s_time.prop13 = 'non-registered';
+s_time.prop15 = 'article';
+s_time.prop17 = location.href;
+var s_code=s_time.t();if(s_code)document.write(s_code)
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_qvd37Uk4BAEKrv0Hvbw2ZImO2yzT9jG14oSX7i4mKnI.js"></script>
+<script type="text/javascript" src="/web/20160321165021js_/http://www.timeforkids.com/files/js/js_uyha9kozZbVkS30c76Anlf5Fq0-Y8pvhC8Dm1fP0dzE.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"tfk","theme_token":"AmRyMCeDuOUydN_90EwgjO2Ek88WvoniqKowfxjlLos","js":{"0":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/themes\/tfk\/js\/tfk_global.js":1,"sites\/all\/modules\/custom\/tfk_search\/js\/tfk_search.js":1,"sites\/all\/modules\/contrib\/video\/js\/video.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"/web/20160321165021/http://tiads.timeforkids.com\/ads\/tgx.js":1,"1":1,"2":1,"sites\/all\/themes\/tfk\/js\/timekids-omniture.js":1,"3":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/modules\/contrib\/ti_udo\/js\/metadata.js":1,"sites\/all\/themes\/tfk\/js\/tfk-jump.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/video\/css\/video.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.css":1,"sites\/all\/themes\/tfk\/css\/html-reset.css":1,"sites\/all\/themes\/tfk\/css\/wireframes.css":1,"sites\/all\/themes\/tfk\/css\/layout-fixed.css":1,"sites\/all\/themes\/tfk\/css\/page-backgrounds.css":1,"sites\/all\/themes\/tfk\/css\/tabs.css":1,"sites\/all\/themes\/tfk\/css\/pages.css":1,"sites\/all\/themes\/tfk\/css\/blocks.css":1,"sites\/all\/themes\/tfk\/css\/navigation.css":1,"sites\/all\/themes\/tfk\/css\/views-styles.css":1,"sites\/all\/themes\/tfk\/css\/nodes.css":1,"sites\/all\/themes\/tfk\/css\/comments.css":1,"sites\/all\/themes\/tfk\/css\/forms.css":1,"sites\/all\/themes\/tfk\/css\/fields.css":1,"sites\/all\/themes\/tfk\/hh-css\/css\/style.css":1,"sites\/all\/themes\/tfk\/css\/ui.css":1,"sites\/all\/themes\/tfk\/css\/print.css":1,"sites\/all\/themes\/tfk\/css\/ie8.css":1,"sites\/all\/themes\/tfk\/css\/ie7.css":1,"sites\/all\/themes\/tfk\/css\/ie6.css":1}},"encrypt_submissions":{"baseUrl":"/web/20160321165021/http://www.timeforkids.com"},"tfk_helper":{"access":true},"tfk_search":{"facet_accordion":false},"urlIsAjaxTrusted":{"\/news\/race-south-pole\/23816":true},"field_group":{"div":"full"}});
+//--><!]]>
+</script>
+</head>
+
+    <body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-23816 node-type-article section-news non-admin" >
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.timeforkids.com/news/race-south-pole/23816";
+
+var firstYear = 1996;
+var displayDay = "21";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.timeforkids.com/news/race-south-pole/23816" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160321165021" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150705014454/http://www.timeforkids.com/news/race-south-pole/23816" title="5 Jul 2015">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:50:21 Mar 21, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Apr
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160304144124/http://www.timeforkids.com/news/race-south-pole/23816" title="14:41:24 Mar 4, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:50:21 Mar 21, 2016">21</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20131005230039/http://www.timeforkids.com/news/race-south-pole/23816" title="5 Oct 2013"><strong>2013</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:50:21 Mar 21, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160321165021*/http://www.timeforkids.com/news/race-south-pole/23816" title="See a list of every capture for this URL">19 captures</a>
+           <div class="r" title="Timespan for captures of this URL">5 Jan 12 - 21 Mar 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:210001101000_2013:-1:211111011100_2014:-1:000000000000_2015:-1:000000100000_2016:2:002000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+  <div id="skip-link">
+    <a href="#main-menu" class="element-invisible element-focusable">Jump to Navigation</a>
+  </div>
+    <div class="region region-page-top">
+    <!-- Begin Metadata Object -->
+<!-- End Metadata Object -->
+<!-- Begin Tealium Integration -->
+
+  <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    (function(a,b,c,d){
+      a='//tags.tiqcdn.com/utag/timeinc/timeforkids.com/prod/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    //--><!]]>
+  </script>
+
+  
+<!-- End Tealium Integration -->
+  </div><!-- /.region -->
+  
+
+<div id="page-wrapper"><div id="page">
+
+  <div id="header">
+    <div class="section clearfix">
+          <a href="/web/20160321165021/http://www.timeforkids.com/" title="Home" rel="home" id="logo"><img src="/web/20160321165021im_/http://www.timeforkids.com/profiles/acquia/AcquiaDrupalLogo.png" alt="Home" /></a>
+              <div id="banner_728x90"><div id="banner_728x90_jump_helper">&nbsp;</div><div id="banner_728x90_container"><script type="text/javascript">ad = adFactory.getAd(728, 90);ad.setPosition(1);ad.write();</script></div></div>        </div>
+  </div>
+  
+  <div id="navigation" class="clearfix">
+
+  <div class="section clearfix">
+    
+    <div id="global-nav-container">
+        <div id="block-menu-menu-tfk-global-navigation" class="block block-menu first odd ">
+  
+              <h2 class="block-title">TFK Global Navigation</h2>
+          
+    <div class="content">
+      <ul class="menu"><li class="first leaf"><a href="/web/20160321165021/http://www.timeforkids.com/news" class="news">News</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/kid-reporters" class="kid-reporter">Kid Reporters</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/around-the-world" class="atw">Around the World</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/homework-helper" class="homework-helper">Homework Helper</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/photos-video" class="photos-video">Photos &amp; Videos</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/mini-sites" class="mini-sites">Mini-Sites</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/extras" class="tfk-extras">TFK Extras</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/store/subscriptions" class="store">Store</a></li>
+<li class="last leaf"><a href="/web/20160321165021/http://www.timeforkids.com/store/lessons-for-tablets">Lessons For Tablets</a></li>
+</ul>    </div>
+  
+  </div>
+    </div>
+
+    <div id="teacher-nav-container">
+      <div class="inner">
+                                  <div id="block-menu-menu-tfk-teachers-menu" class="block block-menu even ">
+  
+              <h2 class="block-title">TFK Teachers Menu</h2>
+          
+    <div class="content">
+      <ul class="menu"><li class="first leaf"><a href="/web/20160321165021/http://www.timeforkids.com/tfk-magazine" class="tfk-magazine">TFK Magazine</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://app.timeforkids.com/" class="classroom_app">Classroom App</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/digital" class="digital_edition">Digital Edition</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/worksheets" class="worksheets">Printables</a></li>
+<li class="last leaf"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html" class="subscribe-renew">Subscribe &amp; Renew</a></li>
+</ul>    </div>
+  
+  </div>
+          <div id="block-block-16" class="block block-block last odd ">
+  
+              
+    <div class="content">
+      <p>Subscribers: <a class="login-link" href="/web/20160321165021/http://www.timeforkids.com/user">LOG IN</a>&nbsp; &nbsp; Not a member? <a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html">SUBSCRIBE!</a></p>
+    </div>
+  
+  </div>
+      </div>
+    </div>
+
+  </div></div><!-- /.section, /#header -->
+
+  <div id="main-wrapper">
+    <div id="main" class="clearfix">
+        <div class="region region-sidebar-second column sidebar"><div class="section">
+      <div id="block-search-form" class="block block-search first odd ">
+  
+              
+    <div class="content">
+      <form class="search-form" action="/web/20160321165021/http://www.timeforkids.com/news/race-south-pole/23816" method="post" id="search-block-form--2" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--4">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Go" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-r-TjwK_hAgvvFOVMYQfK6vcqYWLkRQeDN48YAyc9l2o" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  
+  </div>
+<div class="current-issue-widget-redux">
+    <div class="title">TFK Magazine</div>
+    <div class="magazines">
+    <div class="view view-current-issue-widget view-id-current_issue_widget view-display-id-gk1 view-dom-id-a1615d334baccf1274dca1fc7fc1b061">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2016-03/k10304p1v2.jpg?itok=ryzeWiMl" width="71" height="95" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-current-issue-widget view-id-current_issue_widget view-display-id-g2 view-dom-id-cc63ea586973ed15f52f01dd6f0e79fb">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2016-01/g20205p1v2.jpg?itok=dH41CrOQ" width="71" height="95" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-current-issue-widget view-id-current_issue_widget view-display-id-g34 view-dom-id-9c133843f8f86842f16d14d7d79ac0df">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2016-03/g30325p1v2.jpg?itok=kOuTXuOY" width="71" height="95" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-current-issue-widget view-id-current_issue_widget view-display-id-g56 view-dom-id-b792b1086f90ff238e1722d9503df4cb">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2016-03/g50325p1v2.jpg?itok=H2_4IsgO" width="71" height="95" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+    <div class="subscribe-now-redux"><a href="/web/20160321165021/http://www.timeforkids.com/current-issue-subscribe-now">Subscribe Now</a></div>
+</div>  <div id="block-views-e1fd7ec0792e427785c60f04deef22cf" class="block block-views odd ">
+  
+              
+    <div class="content">
+      <div id="banner_160x190"><div id="banner_160x190_jump_helper">&nbsp;</div><div id="banner_160x190_container"><script type="text/javascript">ad = adFactory.getAd(160, 190);ad.write();</script></div></div>    </div>
+  
+  </div>
+  <div id="block-views-current-issue-widget-block-1" class="block block-views even ">
+  
+              
+    <div class="content">
+      <div class="view view-current-issue-widget view-id-current_issue_widget view-display-id-block_1 view-dom-id-a5a1d81a8812c1006a6708ba1bbc2849">
+            <div class="view-header">
+      <p>TFK Family Edition</p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/http://www.timeforkids.com/familyedition"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2014-11/newsstand_cover.png?itok=CS-bECQJ" width="71" height="95" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><p>Get the monthly edition for tablets</p>
+<span><a href="/web/20160321165021/http://www.timeforkids.com/familyedition">Subscribe Now</a></span></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/http://www.timeforkids.com/familyedition"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2014-10/newsstand_cover_oct.png?itok=kUrryfrg" width="71" height="95" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><p>Get the monthly edition for tablets</p>
+<span><a href="/web/20160321165021/http://www.timeforkids.com/familyedition">Subscribe Now</a></span></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/http://www.timeforkids.com/familyedition"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2014-08/solarroads_final_still.png?itok=2z1E8qvR" width="71" height="95" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><p>Get the monthly edition for tablets</p>
+<span><a href="/web/20160321165021/http://www.timeforkids.com/familyedition">Subscribe Now</a></span></span>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/web/20160321165021/http://www.timeforkids.com/familyedition"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/styles/tfk_71x95/public/2014-06/june_family_edition.jpg.jpeg?itok=8Fqv1qyg" width="71" height="95" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><p>Get the monthly edition for tablets</p>
+<span><a href="/web/20160321165021/http://www.timeforkids.com/familyedition">Subscribe Now</a></span></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  </div>
+  <div id="block-block-1" class="block block-block last odd ">
+  
+              
+    <div class="content">
+      <div id="banner_160x600"><div id="banner_160x600_jump_helper">&nbsp;</div><div id="banner_160x600_container"><script type="text/javascript">ad = adFactory.getAd(160, 600);ad.write();</script></div></div>    </div>
+  
+  </div>
+  </div></div><!-- /.section, /.region -->
+
+              <h1 class="title" id="section-title">                      News                  </h1>
+      
+      <div id="first-column">
+                           
+                    <div class="region region-sidebar-first column sidebar"><div class="section">
+      <div id="block-tfk-news-tfk-news-latest-news-link" class="block block-tfk-news first odd ">
+  
+              
+    <div class="content">
+      <div class="link-latest-news"><a href="/web/20160321165021/http://www.timeforkids.com/news">LATEST NEWS</a></div>    </div>
+  
+  </div>
+  <div id="block-tfk-news-tfk-news-taxonomy-links" class="block block-tfk-news even ">
+  
+              
+    <div class="content">
+      <a href="/web/20160321165021/http://www.timeforkids.com/news-archive">NEWS ARCHIVE</a>
+<ul class="menu">
+  <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/all">All News</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/entertainment" class="">Entertainment</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/for%20teachers" class="">For Teachers</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/health" class="">Health</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/kid%20reporter%20scoops" class="">Kid Reporter Scoops</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/nation" class="">Nation</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/news%20brief" class="">News Brief</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/science" class="highlighted">Science</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/specials" class="">Specials</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/sports" class="">Sports</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/tfk%20extras%21" class="">TFK Extras!</a></li>
+	   <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/world" class="">World</a></li>
+  
+      <li><a href="/web/20160321165021/http://www.timeforkids.com/news-archive/polls" class="">Polls</a>  </ul>    </div>
+  
+  </div>
+  <div id="block-tfk-news-tfk-news-year-filter" class="block block-tfk-news last odd ">
+  
+              
+    <div class="content">
+      <script>
+//  $(document).ready(function(){
+//    $('#yearsubmit').click(function(event){
+//      event.preventDefault();
+//
+//      var yr = $('#yeardropdown').val();
+//      location.href= '/news-archive/' + yr;
+//    });
+//  });
+</script>
+
+
+<div id="news-sidebar-year-filter">
+  
+<form action="">
+	<p>Select a date range</p>
+	<label for="yeardropdown">Year</label>
+	<select id="yeardropdown" name="listofyears">
+          <option id="news-all" value="all">All</option>
+    		<option id="2016"   >2016</option>
+    		<option id="2015"   >2015</option>
+    		<option id="2014"   >2014</option>
+    		<option id="2013"   >2013</option>
+    		<option id="2012"   >2012</option>
+    		<option id="2011"   >2011</option>
+    		<option id="2010"   >2010</option>
+    		<option id="2009"   >2009</option>
+    		<option id="2008"   >2008</option>
+    		<option id="2007"   >2007</option>
+    		<option id="2004"   >2004</option>
+    	</select>
+	<div class="button-holder">
+		<input type="button" id="yearsubmit" value="Submit Date Range">	
+	</div>
+	<div class="clearfix"></div>
+</form>
+</div>    </div>
+  
+  </div>
+  </div></div><!-- /.section, /.region -->
+                
+                                </div>
+      
+                                
+      <div id="content" class="column">
+      
+              
+        <div class="section clearfix">
+        
+                
+                              <a id="main-content"></a>
+                                <!-- <h1 class="title" id="page-title">Race to the South Pole</h1>-->
+                              
+                    
+                                          
+                
+            <div class="region region-content">
+      <div id="block-system-main" class="block block-system first last odd ">
+  
+              
+    <div class="content">
+      
+<div id="node-23816" class="node node-article view-mode-full   clearfix" about="/news/race-south-pole/23816" typeof="sioc:Item foaf:Document">
+
+  
+      <span property="dc:title" content="Race to the South Pole
+" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+    
+  <div class="content">
+      <div class="field field-name-field-article-category field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Science</div></div></div>      <h1>Race to the South Pole
+</h1>
+      <div class="field field-name-field-deck field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Today marks the 100th anniversary of the first successful expedition to the globe's southernmost point</p>
+</div></div></div><div class="field-group-format group_date_and_author field-group-div group-date-and-author  speed-none effect-none"><div class="field field-name-field-date field-type-datestamp field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-12-14T15:16:00-05:00">December 14, 2011</span></div></div></div><div class="field field-name-field-article-byline field-type-taxonomy-term-reference field-label-hidden clearfix">
+    <div class="field-items">
+          <div class="field-item even">By Kelli Plasket</div>
+      </div>    
+</div>
+
+<!-- Link to Print the Article -->
+<div id = "print-link"><a href="/web/20160321165021/http://www.timeforkids.com/node/23816/print" target="_blank"> Print </a></div>
+</div><div class="field field-name-field-lrg-rect-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/web/20160321165021im_/http://www.timeforkids.com/files/2011-12/111214_pole_tout2.jpg" alt="" /></div></div></div><div class="field field-name-field-image-credit field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">GETTY IMAGES</div></div></div><div class="field field-name-field-wysiwyg-image-caption field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><p>After arriving at the South Pole on December 14, 1911, explorer Roald Amundsen (left) spent three days there with his companions: Oscar Wisting, Sverre Hassel, Helmer Hanssen and Olav Bjaaland (the photographer, not pictured).</p></div></div></div><div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>On December 14, 1911, Norwegian explorer Roald Amundsen and his four-man team became the first people to reach the South Pole, where they raised the Norwegian flag in victory. On Wednesday, exactly 100 years later, Norway’s prime minister gathered with scientists and polar adventurers at the bottom of the world to remember the famous explorer’s achievements. "We are here to celebrate one of the greatest feats in human history," Prime Minister Jens Stoltenberg said, as he unveiled an ice sculpture of Amundsen.</p>
+<p><span style="font-size:14px;"><strong>A Great Expedition</strong></span></p>
+<div class="inline-img" style="width:180px; float:right;"><img alt="Norwegian explorer Roald Amundsen became the first man to reach the South Pole on December 14, 1911" rel="TIME &amp; LIFE PICTURES/GETTY IMAGES" src="/web/20160321165021im_/http://www.timeforkids.com/files/media/2011/111214_pole_vert.jpg" style="float: right; width: 180px; height: 240px;"><br />
+<div class="credit">TIME &amp; LIFE PICTURES/GETTY IMAGES</div>
+<div class="caption">Norwegian explorer Roald Amundsen became the first man to reach the South Pole on December 14, 1911.</div>
+</div>
+<p>In the early 1900s, there was a race to see who could get to the South Pole first. Amundsen beat his rival, British explorer Robert Flacon Scott, by five weeks. On March 8, 1912, after learning of Amundsen's successful expedition, <em>The New York Times</em> wrote: "The whole world has now been discovered."</p>
+<p>Amundsen was one of the world’s most notable polar explorers. In 1903, he became the first to make a ship voyage through the Northwest Passage, the sea route through the Arctic Ocean on the northern coast of North America. After learning that American explorer Robert E. Peary had reached the North Pole first in April 1909, Amundsen made secret plans for a South Pole expedition. At the time, the South Pole was considered to be the last great, undiscovered territory.</p>
+<p>On October 19, 1911, Amundsen set out from his base, in Bay of Whales, Antarctica, with four companions, 52 dogs and four sleds. His success in reaching the South Pole was aided by careful planning. He took a preliminary trip to drop food and supplies along the first part of his route. His use of sled dogs to carry supplies also helped. Amundsen and his men, along with 11 surviving dogs, made it back to base on January 25, 1912, quicker than expected.</p>
+<p>In addition to Norway's flag, Amundsen left behind a tent with spare equipment for Scott, and a letter addressed to the King of Norway about his accomplishment. Though Scott eventually reached the South Pole, he died while returning home. On Wednesday, Norway’s prime minister took time to remember the British explorer’s accomplishments, too. "Scott and his men will forever be remembered for their valor and their determination to reach the most inhospitable place on Earth," Stoltenberg said. The two explorers share the name of the research station now located at the South Pole: the Amundsen-Scott Station.</p>
+<p><span style="font-size:14px;"><strong>A Land of Research</strong></span></p>
+<p>Today, Antarctica is a base for a variety of global scientific research projects, from oceanography to cosmology. Cosmology is the study of the origin and structure of the universe. The land holds many clues to Earth's past and future changes, especially those related to global climate change. Wednesday’s ceremony at the pole also served a reminder of the importance of continuing scientific research in this distant place. "The loss of ice in the Antarctic can have grave global consequences,” Stoltenberg said. “Roald Amundsen and Robert Scott and their men went to extraordinary lengths to accomplish their goals. We must be prepared to do the same.”</p>
+</div></div></div><br/>
+
+                  
+                  
+  </div>
+  
+    
+</div><!-- /.node -->    </div>
+  
+  </div>
+  </div><!-- /.region -->
+  
+        </div>
+        
+        
+      </div><!-- /.section, /#content -->
+      
+                        <div id="footer" class="section no-clearfix">
+              <div class="region region-footer">
+      <div id="block-menu-menu-tfk-footer-primary" class="block block-menu first odd ">
+  
+              <h2 class="block-title">TFK Footer Primary</h2>
+          
+    <div class="content">
+      <ul class="menu"><li class="first leaf"><a href="/web/20160321165021/http://www.timeforkids.com/news">News</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/kid-reporters" class="kid-reporters">Kid Reporters</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/around-the-world" class="atw">Around the World</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/homework-helper" class="homework-helper">Homework Helper</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/photos-video" class="photos-video">Photos &amp; Videos</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/mini-sites" class="mini-sites">Mini-Sites</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/extras" class="tfk-extras">TFK Extras</a></li>
+<li class="last leaf"><a href="/web/20160321165021/http://www.timeforkids.com/store/subscriptions">Store</a></li>
+</ul>    </div>
+  
+  </div>
+  <div id="block-menu-menu-tfk-footer-secondary" class="block block-menu even ">
+  
+              <h2 class="block-title">TFK Footer Secondary</h2>
+          
+    <div class="content">
+      <ul class="menu"><li class="first leaf"><a href="/web/20160321165021/http://www.timeforkids.com/info/about">About Us</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/info/what-you-get">Subscription Benefits</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/customerservice">Customer Service</a></li>
+<li class="leaf"><a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005015.html">Subscribe &amp; Renew</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeforkids.com/info/contact">Contact Us</a></li>
+<li class="last leaf"><a href="/web/20160321165021/https://secure.customersvc.com/wes/servlet/Show?WESPAGE=am/Services/faq/tkfaq.jsp&amp;MSRSMAG=TK#Section_13">FAQ</a></li>
+</ul>    </div>
+  
+  </div>
+  <div id="block-menu-menu-tfk-footer-tertiary" class="block block-menu odd ">
+  
+              <h2 class="block-title">TFK Footer Tertiary</h2>
+          
+    <div class="content">
+      <ul class="menu"><li class="first leaf"><a href="/web/20160321165021/http://www.timeforkids.com/info/advertising">Advertisement &amp; Sponsorship</a></li>
+<li class="leaf"><a href="/web/20160321165021/http://www.timeinc.net/subs/privacy/tk/policy.html">Privacy Policy</a></li>
+<li class="leaf"><a href="/web/20160321165021/https://subscription.timeinc.com/storefront/privacy/tfk/generic_privacy_new.html?dnp-source=I#california" target="_blank">Your California Privacy Rights</a></li>
+<li class="last leaf"><a href="/web/20160321165021/https://subscription.timeinc.com/storefront/privacy/tfk/privacy_terms_service.html">Terms of Service</a></li>
+</ul>    </div>
+  
+  </div>
+  <div id="block-block-6" class="block block-block even ">
+  
+              
+    <div class="content">
+      <p>&copy; 2016 Time Inc. All Rights Reserved.</p>
+    </div>
+  
+  </div>
+  <div id="block-block-26" class="block block-block last odd ">
+  
+              
+    <div class="content">
+      <div id="banner_728x90_footer"><div id="banner_728x90_footer_jump_helper">&nbsp;</div><div id="banner_728x90_footer_container"><script type="text/javascript">var zone = adFactory.setZone(adFactory.zone + '/footer');var ad = adFactory.getAd(728, 90);ad.setPosition(2);ad.write();</script></div></div>    </div>
+  
+  </div>
+  </div><!-- /.region -->
+          </div>
+                    
+    </div><!-- /#main -->
+  
+
+  </div><!-- /#main-wrapper -->
+
+</div></div><!-- /#page, /#page-wrapper -->
+
+  <div class="region region-bottom">
+      <div id="block-tfk-helper-tfk-helper-login" class="block block-tfk-helper first odd ">
+  
+              
+    <div class="content">
+      <form action="/web/20160321165021/http://www.timeforkids.com/user" method="post" id="user-login" accept-charset="UTF-8"><div><div class="logincontent" id="login-container" >
+  <div id="login-header">Current subscribers log in/register for timeforkids.com<a id="close-button" class="close-button">&nbsp;</a></div><div id="login-form-container">
+    <input type="hidden" name="form_build_id" value="form-jw-XbejEqfk8_dEdu8faWkME4XME35Co1ZnSnvGNJA4" />
+    <input name="form_id" value="user_login" type="hidden">
+    <h2>Registered Users Log In</h2>
+    <div class="form-item form-type-textfield form-item-name"><label for="edit-name">Email:</label>&nbsp;<input class="form-text required" id="edit-name" maxlength="60" name="name" value="" type="text"></div>
+    <div class="form-item form-type-password form-item-pass"><label for="edit-pass">Password:</label>&nbsp;<input class="form-text required" id="edit-pass" maxlength="128" name="pass" value="" type="password"></div>
+    <div class="form-actions form-wrapper" id="edit-actions"><input class="form-submit" id="edit-submit" name="op" value="Log in" type="submit"></div>
+    <a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/universalForgotPassword.ep?magcode=TK">Forgot Password?</a>
+  </div>
+  <div>
+  <div class="bold">Register Now for FREE<br />Subscriber Benefits</div>
+  <div class="form-actions form-wrapper"><a class="form-submit" href="/web/20160321165021/https://secure.customersvc.com/servlet/Show?WESPAGE=am/tablet/tk/tk_web_login.jsp&amp;MSDDMOFF=ABTF&amp;MSDTRACK=TKSO&amp;MSDVNDID=TBLT">Register Now!</a></div>
+  </div>
+  <div id="message-box">
+    <div id="message-header">Do it now to get all this:</div>
+      <ul id="message-list">
+        <li>Access to Interactive Digital Editions</li>
+        <li>Online Archives of Past Lessons & Teachers' Guides</li>
+        <li>Interactive Teacher Community</li>
+      </ul>
+    </div>
+  <div class="clearfix" id="login-footer"><span class="bold">Not Yet A Subscriber?</span> <a href="/web/20160321165021/https://subscription.timeforkids.com/storefront/subscribe-to-time-for-kids/link/1005016.html">Click here to subscribe</a> </div><div style="float: right; font-size: 9px;">Website Login Page</div>
+
+</div></div></form>    </div>
+  
+  </div>
+  <div id="block-block-51" class="block block-block last even ">
+  
+              
+    <div class="content">
+      <!-- Google Code for Remarketing Tag --><script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1054499833;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script><script type="text/javascript" src="/web/20160321165021js_/http://www.googleadservices.com/pagead/conversion.js">
+</script><p><noscript></p>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="/web/20160321165021im_/http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1054499833/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+<p></noscript></p>
+    </div>
+  
+  </div>
+  </div><!-- /.region -->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7fc7d5aa08","applicationID":"10623722","transactionName":"YFABN0tQCxJQUkEMXVkaNhFQHgwPVVRNS0JfRQ==","queueTime":0,"applicationTime":299,"atts":"TBcCQQNKGBw=","errorBeacon":"bam.nr-data.net","agent":""}
+//--><!]]>
+</script>
+</body>
+</html>

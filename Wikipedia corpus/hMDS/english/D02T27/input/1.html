@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=307;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+	<script src="/web/20160612203919js_/https://cdn.optimizely.com/js/4873741680.js"></script>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Texas Revolution</title>
+	<link rel="shortcut icon" href="/web/20160612203919im_/https://tshaonline.org/sites/all/themes/custom/tsha/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="/web/20160612203919js_/https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/validator.js"></script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '161037934272938');
+	fbq('track', "PageView");</script>
+	<noscript><img height="1" width="1" style="display:none" src="/web/20160612203919im_/https://www.facebook.com/tr?id=161037934272938&amp;ev=PageView&amp;noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-2909930-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+
+</head>
+
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "https://tshaonline.org/revolution/san-jacinto.php?utm_source=tshaonline-Banner&amp;utm_medium=banner-popup&amp;utm_content=rev-banner-ipad-san-jacinto&amp;utm_campaign=Texas-Revolution&amp;utm_media=site-banners";
+
+var firstYear = 1996;
+var displayDay = "12";
+var displayMonth = "Jun";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://tshaonline.org/revolution/san-jacinto.php?utm_source=tshaonline-Banner&amp;utm_medium=banner-popup&amp;utm_content=rev-banner-ipad-san-jacinto&amp;utm_campaign=Texas-Revolution&amp;utm_media=site-banners" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160612203919" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    May
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:39:19 Jun 12, 2016">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jul
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:39:19 Jun 12, 2016">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:39:19 Jun 12, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160612203919*/https://tshaonline.org/revolution/san-jacinto.php?utm_source=tshaonline-Banner&amp;utm_medium=banner-popup&amp;utm_content=rev-banner-ipad-san-jacinto&amp;utm_campaign=Texas-Revolution&amp;utm_media=site-banners" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Jun 16 - 12 Jun 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:5:000001000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+	<div class="main">
+		<header class="codrops-header">
+			<div class="cntrl">
+			<img src="img/tsha-logo.png" class="logo">
+			<h1 class="header-title main"><span>Independence!</span>Road to the Texas Revolution</h1>
+			<h3 class="desc">TSHA is proud to announce the launch of <span class="red">a new series of seven eBooks<br></span> offering an exclusive look at the Texas Revolution,<br>including the battles and 
+heroes that changed Texas history.</h3> 
+
+			<div class="row book-titles">
+
+				<h2><span class="title-down">The seventh eBook, <em>San Jacinto</em>, is now available from the<br> Texas State Historical Association and is offered for a limited time.</span></h2>
+
+
+				<div class="col-md-3">
+					<img class="ebook" src="img/book-covers/flat/San-Jacinto.jpg" width="100%" >
+				</div>					
+
+				<div class="col-md-5">
+
+					<ul class="bullets">
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Explore the battle that concluded the Texas Revolution.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Learn more about the participants and weaponry at San Jacinto.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Gain insight into how the Texas Revolution led to the Mexican-American War.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Plus so much more!</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4">
+				<div class="row signup top">
+								
+					<form action="process.php" method="POST" id="ss-form" class="email-form San Jacinto" role="form">
+							<div class="form-group full-width">
+							<input autocomplete="off" type="text" name="entry.810039692" id="entry_810039692" class="form-control first-name" data-error="Please enter a first name" placeholder="Enter your first name" required>
+							<div class="help-block with-errors"></div>
+							<input autocomplete="off" type="text" name="entry.1142406116" id="entry_1142406116" class="form-control last-name" data-error="Please enter a last name" placeholder="Enter your last name" required>
+							<div class="help-block with-errors"></div>
+						</div>
+					    <div class="form-group">
+					      <input autocomplete="off" type="email" name="entry.143753257" id="entry_143753257" class="form-control email" data-error="Please enter a valid email address" placeholder="Enter your email address" required>
+					      <div class="help-block with-errors"></div>
+
+					      <input type="hidden" name="entry.1912852788" value="" class="hidden-title" id="entry_1912852788" dir="auto" title="">
+
+					    </div><!-- /form-group -->
+					    <button type="submit" class="btn btn-success pull-right">Get my eBook now</button>
+					</form>
+
+				</div>
+				</div>
+				
+			</div>
+
+			<div class="row other-books">
+
+				<h2 class="title-down">Get all <span class="red"><b>7</b></span> in the series</h2>					
+
+				<div class="col-md-1">					
+
+					<img class="ebook-cover" src="img/book-covers/flat/sfa-cover-flat.jpg" width="75%">
+
+					<a style="margin:30px 0;" href="" class="btn btn-success modalButton" data-src="img/book-covers/sfa-cover-flat.jpg" data-title="Stephen F. Austin" data-target="#myModal2" data-toggle="modal">Download now</a>
+
+				</div>
+
+				<div class="col-md-1">
+
+					<img class="ebook-cover" src="img/book-covers/flat/wotb-cover-flat.jpg" width="75%">
+
+					<a style="margin:30px 0;" href="" class="btn btn-success modalButton" data-src="img/book-covers/flat/wotb-cover-flat.jpg" data-title="Washington on the Brazos" data-target="#myModal2" data-toggle="modal">Download now</a>
+
+				</div>
+
+				<div class="col-md-1">
+					<img class="ebook-cover" src="img/book-covers/flat/alamo-cover-flat.jpg" width="75%">
+
+					<a style="margin:30px 0;" class="btn btn-success modalButton" data-src="img/book-covers/flat/alamo-cover-flat.jpg"  data-title="The Battle of the Alamo" data-target="#myModal2" data-toggle="modal">Download now</a>
+
+
+				</div>
+
+				<div class="col-md-1">
+
+					<img class="ebook-cover" src="img/book-covers/flat/william-b-travis.jpg" width="75%">
+
+					<a style="margin:30px 0;" class="btn btn-success modalButton"  data-title="William Barret Travis" data-src="img/book-covers/flat/william-b-travis.jpg" data-target="#myModal2" data-toggle="modal">Download now</a>
+				</div>
+
+				<div class="col-md-1">
+
+					<img class="ebook-cover" src="img/book-covers/flat/sam-houston-cover.jpg" width="75%">
+
+					<a style="margin:30px 0;" class="btn btn-success modalButton"  data-title="Sam Houston" data-src="img/book-covers/flat/sam-houston-cover.jpg" data-target="#myModal2" data-toggle="modal">Download now</a>
+
+				</div>
+
+
+
+				<div class="col-md-1">
+
+					<img class="ebook-cover" src="img/book-covers/flat/goliad.jpg" width="75%">
+
+					<a style="margin:30px 0;" class="btn btn-success modalButton"  data-title="Goliad Massacre" data-src="img/book-covers/flat/goliad.jpg" data-target="#myModal2" data-toggle="modal">Download now</a>
+
+				</div>
+
+				<div class="col-md-1">
+
+					<img class="ebook-cover" src="img/book-covers/flat/San-Jacinto.jpg" width="75%">
+
+					<a style="margin:30px 0;" class="btn btn-success modalButton"  data-title="San Jacinto" data-src="img/book-covers/flat/San-Jacinto.jpg" data-target="#myModal2" data-toggle="modal">Download now</a>
+				</div>
+
+			</div>
+
+			<a href="#start"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+
+		</div>
+		</header>
+
+	
+		
+		<div class="container"></div>
+		<div class="text">
+			
+			<section class="js-section" data-zoom-start="2" id="start">
+
+				<h2><span class="title-down">Battle of Gonzales</span></h2>
+				<blockquote>
+						<p>October 2, 1835</p>
+					</blockquote>
+
+				<p>The first shots of the Texas Revolution were fired when fighting broke out at Gonzales between Mexican soldiers and Texas militiamen. When Domingo de Ugartechea, military commander in Texas, received word that the American colonists of Gonzales refused to surrender a small cannon that had been given to that settlement in 1831 as a defense against the Indians, he dispatched Francisco de Castañeda and 100 dragoons to retrieve it on September 27. Though Castañeda attempted to avoid conflict, on the morning of October 2 his force clashed with local Texian militia led by John Henry Moore in the first battle of the Texas Revolution. The struggle for the "Come and Take It" cannon was only a brief skirmish that ended with the retreat of Castañeda and his force, but it also marked a clear break between the American colonists and the Mexican government.</p>
+
+
+			</section>
+
+			<section class="js-section"  data-zoom-start="3">
+
+				<h2><span class="title-down">Battle of Goliad</span></h2>
+
+					<blockquote>
+						<p>October 10, 1835</p>
+					</blockquote>				
+
+				<p>The battle of Goliad was the second skirmish of the Texas Revolution. In the early-morning hours of October 9, 1835, Texian settlers attacked the Mexican Army soldiers garrisoned at Presidio La Bahía, a fort near the Texas settlement of Goliad. La Bahía lay halfway between the only other large garrison of Mexican soldiers at Presidio San Antonio de Bexar and the then-important Texas port of Copano.</p>
+
+			</section>
+
+
+				<section class="js-section"  data-zoom-start="3">			
+
+					<h2><span class="title-down">Siege of Bexar</span></h2>
+
+						<blockquote>
+							<p>October 27 – December 9, 1835</p>
+						</blockquote>	
+
+					<p>The siege of Bexar (San Antonio) became the first major campaign of the Texas Revolution. From October until early December 1835 an army of Texian volunteers laid siege to a Mexican army in San Antonio de Béxar. After a Texas force drove off Mexican troops at Gonzales on October 2, the Texan army grew to 300 men and elected Stephen F. Austin commander to bring unity out of discord. The Texans advanced on October 12 toward San Antonio, where Gen. Martín Perfecto de Cos recently had concentrated Mexican forces numbering 650 men. Cos fortified the town plazas west of the San Antonio River and the Alamo, a former mission east of the stream.
+					</p>
+
+
+			</section>	
+
+
+				<section class="js-section"  data-zoom-start="3">
+
+				<h2><span class="title-down">Battle of Concepción</span></h2>
+
+				<blockquote>
+						<p>October 28, 1835</p>
+					</blockquote>
+
+				<p>
+					The battle of Concepción occurred on October 28, 1835, the opening engagement in the siege of Bexar. After the skirmish at Gonzales on October 2, the Texas army under Stephen F. Austin grew to 400 men as it advanced on San Antonio. Gen. Martín Perfecto de Cos, with a Mexican army that peaked in size at 750 men in late October, fortified the plazas in San Antonio and the Alamo mission across the river. The battle, which occurred near the site of Mission Concepción, was the first engagement of the siege of Bexar and resulted in Mexican forces withdrawing to defensive positions in  Bexar.
+				</p>
+
+			</section>		
+
+
+			<section class="js-section" data-zoom-start="3">
+
+
+				<h2><span class="title-down">Grass Fight</span></h2>
+
+				<blockquote>
+						<p>November 26, 1835</p>
+					</blockquote>
+
+				<p>The Grass Fight, on November 26, 1835, became the last engagement in the Siege of Bexar before the final Texian assault on the town. In November Col. Domingo de Ugartechea had left San Antonio with a cavalry escort to guide reinforcements to the garrison commanded by Gen. Martín Perfecto de Cos. After the departure of Stephen F. Austin to represent Texas in the United States, the Texian army elected as commander Col. Edward Burleson, who continued to harass Cos while scouting for the return of Ugartechea. Texian forces intercepted a Mexican cavalry unit west of town which they suspected of carrying the payroll of the army. When the fighting ceased, the Texians determined it was actually a foraging expedition carrying grass for the livestock.
+				</p>
+
+			</section>				
+
+
+				<section class="js-section"  data-zoom-start="3">
+
+				<h2><span class="title-down">Battle of Lipantitlán</span></h2>
+
+				<blockquote>
+						<p>November 4, 1835</p>
+					</blockquote>
+
+				<p>
+					The battle of Lipantitlán occurred on November 4, 1835, on the east bank of the Nueces River three miles above San Patricio in San Patricio County, directly across from Fort Lipantitlán. A Texian force of around seventy men under Adjutant Ira J. Westover engaged a Mexican force of about ninety men under Capt. Nicolás Rodríguez. The Texans scored an important victory. 
+				</p>
+
+
+			</section>
+
+
+			<section class="js-section" data-zoom-start="3">
+				<h2><span class="title-down">Battle of the Alamo</span></h2>
+
+					<blockquote>
+						<p>February 23 – March 6, 1836</p>
+					</blockquote>				
+
+				<p>The battle of the Alamo (February 23 – March 6, 1836) was a pivotal event in the Texas Revolution. Following a 13-day siege, Mexican troops under President General Antonio López de Santa Anna launched an assault on the Alamo Mission near San Antonio de Béxar. Santa Anna's cruelty during the battle inspired many Texians—both Texas settlers and adventurers from the United States—to join the Texian Army.</p>
+
+				</section>
+
+
+			<section class="js-section"  data-zoom-start="3">
+
+
+				<h2><span class="title-down">Battle of San Patricio</span></h2>
+
+				<blockquote>
+						<p>February 27, 1836</p>
+					</blockquote>
+
+				<p>Gen. José de Urrea, through a network of spies, kept track of the Johnson-Grant forces and left Matamoros with about 400 men. Upon learning that Johnson was camped at San Patricio, he put his men through a forced march during a bitterly cold, wet night and arrived at San Patricio at 3:00 A.M. on February 27. His first action was to send thirty men under Capt. Rafael Pretala to the ranch where the horses had been taken. In the attack four men were killed and eight taken prisoner. In San Patricio Urrea reported sixteen killed and twenty-four taken prisoner. Johnson and four men quartered with him managed to escape and made their way back to Goliad.
+				</p>
+
+
+			</section>
+
+			<section class="js-section" data-zoom-start="3">
+
+				<h2><span class="title-down">Battle of Agua Dulce Creek</span></h2>
+
+				<blockquote>
+						<p>March 2, 1836</p>
+					</blockquote>
+
+				<p>The battle of Agua Dulce Creek, an engagement of the Texas Revolution and an aftermath of the controversial Matamoros expedition of 1835–36, occurred twenty-six miles below San Patricio on March 2, 1836. Dr. James Grant and his party of twenty-three Americans and three Mexicans were surprised and defeated by a Mexican force under José de Urrea. Six of the volunteers escaped, five of whom joined James W. Fannin, Jr., at Goliad and were killed in the Goliad Massacre on March 27; six were captured and taken to Matamoros as prisoners; all others were killed in the engagement.
+				</p>
+
+
+			</section>
+
+
+				<section class="js-section" data-zoom-start="3">
+
+				<h2><span class="title-down">Texas Independence</span></h2>
+
+				<blockquote>
+						<p>March 2, 1836</p>
+					</blockquote>
+
+				<p>
+					The Convention of 1836 wrote the Texas Declaration of Independence and the Constitution of the Republic of Texas, organized the ad interim government, and named Sam Houston commander in chief of the military forces of the republic. The convention met on March 1, 1836, in near-freezing weather in an unfinished building belonging to Noah T. Byars and Peter M. Mercer, his business partner. Forty-four delegates were assembled on the first day of the convention. Fifty-nine delegates finally attended its sessions. Twelve of the members were natives of Virginia, ten of North Carolina, nine of Tennessee, six of Kentucky, four of Georgia, three of South Carolina, three of Pennsylvania, three of Mexico (including two born in Texas), two of New York, and one each of Massachusetts, Mississippi, New Jersey, England, Ireland, Scotland, and Canada. Sam Houston, Robert Potter, Richard Ellis, Samuel P. Carson, Martin Parmer, and Lorenzo de Zavala had all had political experience in Mexico or the United States in state or national government, several in both. After the examination of credentials of the members, the permanent officers were elected; Richard Ellis was president and Herbert Simms Kimble was secretary. The Declaration of Independence was adopted on March 2, and members began signing it on March 3. The convention then proceeded to the writing of the constitution and election of ad interim government officials. With the report of the approach of the Mexican army, the convention adjourned in haste in the early morning hours of March 17.
+				</p>
+
+
+
+					<img class="js-image" src="img/battles/washington-on-brazos.jpg" style="display:none;" />
+
+
+			</section>
+
+				<section class="js-section" data-zoom-start="2">
+
+
+				<h2><span class="title-down">Battle of Refugio</span></h2>
+
+				<blockquote>
+						<p>March 12 – 15, 1836</p>
+					</blockquote>
+
+				<p>The series of fights that together make up the battle of Refugio occurred between March 12 and 15, 1836, during the Texas Revolution, at Nuestra Señora del Refugio Mission in Refugio County. In early March 1836 Carlos de la Garza and about eighty rancheros, serving as scouts and advance cavalry for Mexican general José de Urrea's invading army, raided the village of Refugio. On March 10, during the Goliad campaign of 1836, James W. Fannin, Jr., sent Amon B. King and twenty-eight men to Refugio to help the families besieged there escape to Goliad, knowing that their destination lay in the path by which the main Mexican force under Urrea was expected daily.
+				</p>
+
+
+
+			</section>
+
+
+			<section class="js-section" data-zoom-start="2">
+
+				<h2><span class="title-down">Battle of Coleto Creek</span></h2>
+
+				<blockquote>
+						<p>March 18, 1836</p>
+					</blockquote>
+
+
+				<p>
+					The battle of Coleto Creek, the culmination of the Goliad Campaign of 1836, occurred near Coleto Creek in Goliad County on March 19 and 20, 1836. Originally called "the battle of the prairie" and "la batalla del encinal [oak grove] del Perdido [Creek]," it was one of the most significant engagements of the Texas Revolution. The battle, however, cannot properly be considered as isolated from the series of errors and misfortunes that preceded it, errors for which the Texas commander, James W. Fannin, Jr., was ultimately responsible. The most exasperating decision confronting Fannin was whether to abandon Goliad after having fortified it, and if so, when. Still, he continued to fortify Fort Defiance, as he christened the La Bahía presidio, and awaited orders from superiors to abandon the site, knowing also that a retreat would not be well received among his men, who were eager to confront the Mexicans. When he finally departed, his force was caught in open country by forces under General Urrea and forced to surrender. Fannin and his men were returned to La Bahia where most were eventually executed on March 27 in what became known as the Goliad Massacre, an important rallying cry for Texian forces.
+				</p>
+
+
+
+
+			</section>
+
+			<section class="js-section" data-zoom-start="4">
+				<h2><span class="title-down">Battle of San Jacinto</span></h2>
+
+				<blockquote>
+						<p>April 21, 1836</p>
+					</blockquote>
+
+				<p>Houston placed his forces in battle order about 3:30 in the afternoon while all was quiet on the Mexican side during the afternoon siesta. The battle line was formed with Edward Burleson's regiment in the center, Sherman's on the left wing, the artillery under George W. Hockley on Burleson's right, the infantry under Henry Millard on the right of the artillery, and the cavalry under Lamar on the extreme right. The Twin Sisters were wheeled into position, and the whole line, led by Sherman's men, sprang forward on the run with the cry, "Remember the Alamo!" "Remember Goliad!" The battle lasted but eighteen minutes. According to Houston's official report, the casualties were 630 Mexicans killed and 730 taken prisoner. Against this, only nine of the 910 Texans were killed or mortally wounded and thirty were wounded less seriously.</p>
+
+
+			</section>		
+
+	</div>
+			<section class="content content--related">
+			
+			<div class="row book-titles bottom">
+
+				<h2><span class="title-down">The seventh eBook, <em>San Jacinto</em>, is now available from the<br> Texas State Historical Association and is offered for a limited time.</span></h2>
+
+
+				<div class="col-md-3">
+					<img class="ebook" src="img/book-covers/flat/San-Jacinto.jpg" width="100%" >
+				</div>					
+
+				<div class="col-md-5">
+
+					<ul class="bullets">
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Explore the battle that concluded the Texas Revolution.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Learn more about the participants and weaponry at San Jacinto.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Gain insight into how the Texas Revolution led to the Mexican-American War.</li>
+						<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Plus so much more!</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4">
+				<div class="row signup top">
+								
+					<form action="process.php" method="POST" id="ss-form" class="email-form San Jacinto" role="form">
+							<div class="form-group full-width">
+							<input autocomplete="off" type="text" name="entry.810039692" id="entry_810039692" class="form-control first-name" data-error="Please enter a first name" placeholder="Enter your first name" required>
+							<div class="help-block with-errors"></div>
+							<input autocomplete="off" type="text" name="entry.1142406116" id="entry_1142406116" class="form-control last-name" data-error="Please enter a last name" placeholder="Enter your last name" required>
+							<div class="help-block with-errors"></div>
+						</div>
+					    <div class="form-group">
+					      <input autocomplete="off" type="email" name="entry.143753257" id="entry_143753257" class="form-control email" data-error="Please enter a valid email address" placeholder="Enter your email address" required>
+					      <div class="help-block with-errors"></div>
+
+					      <input type="hidden" name="entry.1912852788" value="" class="hidden-title" id="entry_1912852788" dir="auto" title="">
+
+					    </div><!-- /form-group -->
+					    <button type="submit" class="btn btn-success pull-right">Get my eBook now</button>
+					</form>
+
+				</div>
+				</div>
+				
+			</div>
+
+		</section>	
+
+
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+		      <div class="modal-dialog">
+		         <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title" id="myModalLabel"></h4>
+		           </div>
+		         <div class="modal-body">
+		            
+		           <div class="row cta">
+		           	<div id="mycontent"></div>
+					<p>For a limited time, TSHA is launching a series of seven eBooks offering an exclusive look into the battles and heroes of the Texas Revolution. Get <span class="title"><em>The Life of Stephen F. Austin</em></span>, <strong><span class="red">FREE</span></strong> for a limited time.</p>
+
+					<div class="col-md-4 text-right">
+						<img class="ebook-cover" src="img/book-covers/1-lrg.png" width="100%">
+					</div>
+
+
+					<div class="col-md-8">
+					<div class="row signup top">
+						<form action="process.php" method="POST" id="ss-form" class="email-form" role="form">
+							<div class="form-group full-width">
+							<input type="text" name="entry.810039692" id="entry_810039692" class="form-control first-name" data-error="Please enter a first name" placeholder="Enter your first name" required>
+							<div class="help-block with-errors"></div>
+							<input type="text" name="entry.1142406116" id="entry_1142406116" class="form-control last-name" data-error="Please enter a last name" placeholder="Enter your last name" required>
+							<div class="help-block with-errors"></div>
+						</div>
+					    <div class="form-group">
+					      <input type="email" name="entry.143753257" id="entry_143753257" class="form-control email" data-error="Please enter a valid email address" placeholder="Enter your email address" required>
+					      <div class="help-block with-errors"></div>
+
+					      <input type="hidden" name="entry.1912852788" value="" class="hidden-title" id="entry_1912852788" dir="auto" title="">
+
+					    </div><!-- /form-group -->
+					    <button type="submit" class="btn btn-success pull-right">Get my eBook now</button>
+					</form>
+					</div>
+					</div>
+
+			</div>
+		         </div>
+		         <div class="modal-footer">
+		            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		         </div>
+		        </div><!-- /.modal-content -->
+		     </div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+		</div>
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap/js/bootstrap.min.js"></script> 
+
+	<script src="dist/app.js"></script>
+
+	<script type="text/javascript">
+
+		function GetIEVersion() {
+		  var sAgent = window.navigator.userAgent;
+		  var Idx = sAgent.indexOf("MSIE");
+
+		  // If IE, return version number.
+		  if (Idx > 0) 
+		    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+		  // If IE 11 then look for Updated user agent string.
+		  else if (!!navigator.userAgent.match(/Trident\/7\./)) 
+		    return 11;
+
+		  else
+		    return 0; //It is not IE
+		}
+
+		if (GetIEVersion() > 0) {
+		   $("body").css({
+		   	"background":"url('img/map-texas.png')no-repeat fixed",	   	
+		   });
+			$(".container").css("display","none");
+		}
+		else {
+		}
+
+	</script>
+
+
+	<script type="text/javascript">
+
+
+
+
+    $(document).ready(function(){ 
+
+
+    	$('#ss-form, .modal #ss-form').validator().on('submit', function (e) {
+
+    		$(this).submit(function(){
+    			return false;
+    		});
+
+    		formTitle = $(this).attr('class').replace('email-form','');
+    		$(this).find('input.hidden-title').val(formTitle);
+
+		  if (e.isDefaultPrevented()) {
+
+
+
+		  } else {
+			fbq('track', 'Lead');
+			ga("send","pageview","/KIMBIA/Almanac/registerNameAcquisition");
+			ga('send','event','form-submit', formTitle);
+			var form = $('#ss-form, .modal #ss-form'); 
+		    // let the browser natively reset defaults
+		  }
+});
+
+
+    	$('.modalButton').click(function(e){
+    		coverImage = $(this).attr('data-src');
+    		var btnTitle = $(this).attr('data-title');
+    		var formClass = 'email-form' + " " + btnTitle;
+    		$(".modal form#ss-form").attr('class', formClass);
+    		ga('send','event', 'Discover-more-clicks', btnTitle);
+    		$('#ss-form input, .modal #ss-form input').val('');
+    		$('#myModal2 h4.modal-title, span.title').html(btnTitle);
+    		$('.modal-body img.ebook-cover').attr('src', coverImage);
+    	});
+
+    	$('a.modalButton').on('click', function(e) {
+		    var title = $(this).attr('data-title');
+
+		    $('#myModal2 h4.modal-title').html(title); 
+/*
+		$.ajax({
+		   url: src,
+		   type:'GET',
+		   success: function(data){
+		   		var article = $('#mycontent');
+		       $(article).html($(data).find('#tshaHandbookArticleBodyContainer').html());
+		       $(article).find('.lightboxright').css('margin','20px 0');
+		       $(article).find('.lightboxright img').css('margin-bottom','20px');
+		   } 
+		});	
+*/
+
+		});
+
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+
+    });
+
+	</script>
+
+</body>
+</html>

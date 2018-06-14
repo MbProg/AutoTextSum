@@ -1,0 +1,72 @@
+The Supreme Court Grants Review in a Treaty Power Case
+Monday, October 18, 2010
+By MICHAEL C. DORF
+Last week, the Supreme Court added a case to its docket that involves a question about legal standing -- the capacity of a party to make an argument in court.
+In Bond v. United States, the Court will consider whether a criminal defendant has standing to object that Congress lacked the constitutional power to enact the federal law under which she is being prosecuted.
+The United States Court of Appeals for the Third Circuit held that the defendant, Ms. Bond, lacked such standing, but the Solicitor General of the United States (wisely) concedes that the Third Circuit's ruling was simply mistaken on this point.
+With the government and the petitioner, Bond (ably represented by former Solicitor General Paul Clement), in agreement about how to answer the question presented, it is not clear why the Court granted the petition for full review, rather than summarily reversing (as urged by Clement) or simply vacating the Third Circuit decision and remanding (as urged by the equally-able Acting Solicitor General Neal Katyal).
+One can expect short briefs and a quick, congenial oral argument.
+That's too bad, for lurking beneath the surface in Bond is an important question about the scope of federal power under treaties.
+But because the lower courts did not reach that question, the Supreme Court won't tackle it either.
+Nonetheless, the Bond case provides an opportunity to raise the issue for public debate.
+The Standing Question
+Bond allegedly attempted to poison an erstwhile friend, upon learning that Bond's husband had impregnated that former friend.
+Based on these allegations, she was charged with violating a federal statute that was enacted by Congress to implement the 1993 Chemical Weapons Convention.
+Bond argued to the district court that the statute was invalid but when the trial judge rejected that argument, she pleaded guilty.
+Bond renewed her constitutional challenge on appeal, but the Third Circuit, on its own, asked the parties to address the question whether she even had legal standing to challenge the law.
+The court concluded that she did not, relying on the Supreme Court's 1939 ruling in Tennessee Electric Power Co. v. Tennessee Valley Authority .
+There, the Court said that private parties, as opposed to States, have no standing to raise a Tenth Amendment question.
+The Third Circuit ruling was plainly mistaken.
+It is true that the Tennessee Electric Power case says that private parties lack standing to raise Tenth Amendment issues, but the relevant language must be understood in context.
+In Tennessee Electric Power, a group of private electric companies sought to block a federally-created entity--the Tennessee Valley Authority--from competing with them.
+Because such competition was not regulation of the private companies, the Court found that the plaintiffs' interest in avoiding regulation under an invalid federal law was not implicated.
+Whatever rights were being asserted belonged to the States.
+Yet Tennessee Electric Power has no bearing on a case in which a federal law directly regulates the conduct of a private party.
+That is why, in case after case, the Supreme Court has entertained constitutional challenges to congressional authority by private parties charged with violating federal laws.
+Allowing standing in such cases makes good sense, because the whole theory of limited federal power is that the limits on congressional authority reserve power to the states for the benefit of the people.
+Accordingly, the issue on which the Court granted review appears to be a no-brainer.
+Given that the Acting Solicitor General does not defend the Third Circuit's judgment, it is not clear what there is for the parties to write in their briefs, or to say at oral argument.
+The Underlying Merits of the Case
+It is a shame that the Supreme Court will waste one of its relatively small number of plenary hearings this Term on the standing issue in Bond.
+That's especially true because the underlying merits of the case are extremely important.
+As an initial matter, there is a question of statutory interpretation.
+Although Ms. Bond pled guilty to using a chemical weapon, it is hardly clear that the statute under which she was charged was meant to apply to such garden-variety (albeit also dangerously criminal) attacks.
+Her conduct does fit within the literal terms of the statutory prohibition, but given the international context that gave rise to the statute's adoption, perhaps it should be read more narrowly to leave such cases to state law.
+More fundamentally, Bond raises a constitutional objection.
+Congress, she says, lacks the authority to regulate intrastate crime that is accomplished through chemical means.
+Is that contention correct?
+The Treaty Power
+Unlike most federal criminal laws, the statute under which Bond was charged does not require the government to prove that the defendant either made use of or affected interstate commerce.
+Thus, the power of Congress to regulate interstate commerce is a dubious source of authority for the law.
+However, the treaty power appears to fill the gap in authority.
+The 1920 ruling in Missouri v. Holland is the leading precedent.
+In that case, the Court assumed (contrary to modern doctrine) that the Commerce Clause did not grant the authority to regulate the hunting of certain migratory birds.
+Nonetheless, it held that Congress was entitled to pass the Migratory Bird Act in order to satisfy its obligations under a treaty with Canada.
+As the point was articulated by Justice Oliver Wendell Holmes, Jr., when Congress makes a treaty with a foreign sovereign, it obtains the power to pass laws implementing that treaty, even though it would have lacked the power to pass such laws absent the treaty.
+Likewise, here, the government would contend, on the merits, that the ratification of the Chemical Weapons Convention authorized Congress to enact implementing legislation.
+Missouri v. Holland has long been controversial.
+For many years, members of Congress attempted to supersede it, through what was known as the Bricker Amendment (so-named for Ohio Republican Senator John Bricker).
+And today, conservatives lament Missouri v. Holland on the ground that it provides a means of circumventing the Constitution's limits on federal power.
+Their charge gains force from the fact that the proper subject-matter-coverage of treaties has changed since the Founding.
+Whereas treaties formerly governed inter-sovereign relations, modern multilateral human-rights treaties frequently impose obligations that run from each sovereign signatory to its own people.
+Consider one politically-charged example: The federal government probably lacks the power to forbid capital punishment by the states, but if the U.S. were to join the group of Western hemisphere countries that have ratified the Protocol to the American Convention on Human Rights to Abolish the Death Penalty, then the principle of Missouri v. Holland would authorize such a federal law abolishing the death penalty nationwide.
+The Implications for Health Care and the Individual Mandate
+More broadly still, the theory of Missouri v. Holland undercuts one of the key arguments for invalidating the individual mandate in the health care law that was passed earlier this year.
+Various state attorneys general who are challenging the mandate argue that it falls outside of the Court's power to regulate interstate commerce.
+In two prior columns ( here and here ), I explained why I believe that the mandate does fall within the scope of congressional power under the Commerce Clause.
+However, the courts could disagree, and if they do, the question will then arise whether the mandate falls within the power of Congress to levy taxes.
+The relevant precedents on the taxing power are somewhat confused.
+Old cases that have not been officially overruled forbid Congress from taxing in order to achieve a regulatory objective that it could not achieve directly.
+However, more modern cases tend to sustain federal taxation that is motivated by substantial regulatory goals, even if Congress could not pursue those goals directly, so long as the tax raises even a very modest amount of revenue.
+Read broadly, Missouri v. Holland implies that the limitations of one power of Congress should not be imported into other powers of Congress.
+The particular case involved the interaction between the Commerce Clause and the treaty power, but in principle, this precedent could also be applied to interactions between the Commerce Clause and the taxing power.
+Under this admittedly expansive reading of Missouri v. Holland, a finding by a court that Congress lacks the authority to impose the individual mandate under the Commerce Clause would have no bearing on the question whether Congress has the power to enforce the mandate by increasing the tax burden on those who fail to purchase health insurance.
+The taxing power, like the treaty power, would be a tub sitting solely on its own bottom.
+Thus, the substantive issues in Bond are much more important than the standing issue on which the Court granted review.
+As a rule, the Court does not hear argument on questions that it has not agreed to review.
+But eventually the Justices will be presented with a case that properly presents the questions of the scope and continuing vitality of Missouri v. Holland.
+No matter how it decides those questions, the decision will have important ramifications.
+Michael C. Dorf is the Robert S. Stevens Professor of Law at Cornell University.
+His latest book is   The Oxford Introductions to U.S. Law: Constitutional Law   (with Trevor Morrison).
+He blogs at dorfonlaw.org .
+Ads by FindLaw

@@ -1,0 +1,282 @@
+[1-890] Cross-examination in proceedings for Commonwealth offences
+[1-800] Conduct of trials
+An accused person may appear personally, and may conduct his or her own case: ss 36(1), 37(2) Criminal Procedure Act 1986.
+These provisions apply “to all offences, however arising (whether under an Act or at common law), whenever committed                and in whatever court dealt with”: s 28(1) Criminal Procedure Act.
+While the election by an accused to appear self-represented is a fundamental right which should not be interfered with (R v Zorad (1990) 19 NSWLR 91 at 95) the operation of the adversarial system “may be severely impaired” by the absence of legal representation: Mansfield v Director of Public Prosecutions (WA) (2006) 226 CLR 486 at [49].
+The High Court in Dietrich v The Queen (1992) 177 CLR 292 at 302 describes the disadvantages facing a self-represented accused.
+See also Judicial Commission of                NSW, Equality before the Law Bench Book, 2006–, “Self-represented parties” at [ 10.1 ]ff.
+[1-810] Duty of the trial judge
+The duty of the trial judge is to give information and advice as is necessary to ensure that the self-represented accused                receives a fair trial so that “the accused is put in a position where he [or she] is able to make an effective choice as to                the exercise of his [or her] rights during the course of the trial, but it is not [the judge’s] duty to tell the accused how                to exercise those rights”: R v Zorad (1990) 19 NSWLR 91 at 99; R v Anastasiou (aka Peters) (1991) 21 NSWLR 394 at 399.
+The trial judge must maintain the appearance of impartiality and should ascertain the level of                assistance required by a self-represented accused: Kenny v Ritter [2009] SASC 139 at [23].
+A judge is entitled to peruse committal papers to inform himself or herself about the likely scope                of the trial and potential evidentiary or other issues that might arise: R v SY [2004] NSWCCA 297 at [13].
+The judge may also, of course, ask the Crown to give an outline of the Crown case and the nature                of the evidence to be led.
+[1-820] Suggested advice and information to accused in the absence of the jury
+The suggested advice and information below assumes that the Crown has taken all reasonable steps to ensure that the self-represented                accused is “equipped to respond” to the Crown case in accordance with the Office of Director of Public Prosecutions (NSW),                Prosecution Guidelines, Guideline 23, Unrepresented Accused Persons.
+The suggested advice and information also assumes that the issues of whether proceedings should be stayed, or whether the                trial will proceed as a judge-alone trial, have already been resolved.
+Where the trial is by judge-alone trial, the suggested                information and advice will require appropriate amendment.
+It is a matter of discretion for the trial judge as to whether aspects of the following suggested advice and information are                provided to the accused, prior to, or after, the Crown Prosecutor opens its case.
+Given the length of the suggested guidance,                the judge may prefer to deal with the issues in more than one stage.
+Consideration might also be given to the provision of                the suggested advice and information to the accused in written form.
+If the issue of an alibi is raised by a self-represented                accused at the beginning of the trial and notice has not been given to the Crown, then, depending on the circumstances, it                might be necessary to consider a short adjournment: see Alibi at [ 6-010 ].
+Before empanelling the jury
+You have been charged with … [state offence(s)].
+There are a number of essential ingredients or elements to that charge(s) which the Crown must prove beyond reasonable                   doubt … [detail elements of offence(s)].
+As this is a criminal trial, the burden or obligation to prove you are guilty is placed squarely on the Crown.
+That burden                   rests upon the Crown in respect of every ingredient or essential fact that makes up the offence with which you have been charged.
+There is no obligation whatsoever on you to prove any fact or issue that is in dispute.
+You do not have any obligation to                   call any evidence or prove anything.
+Role of judge and jury
+I should explain my role and the role of the jury in the trial.
+The jury is the sole judge of the facts.
+All disputes about                   matters of fact in this case will be decided by the jury and not me.
+Generally that means that it is entirely up to the jury                   to decide what evidence they accept and what evidence they do not accept.
+I am not involved in making decisions about the                   facts.
+I am the judge of the law.
+During the trial this means that I am required to ensure that all the rules of procedure                   and evidence are followed.
+At the end of the trial, I will give the jury directions about the legal principles that apply                   to the case.
+I will explain to them how the legal principles should be applied to the issues which they have to decide.
+Legal argument
+Sometimes during the trial a question of law will arise for me to decide.
+This might include arguments about whether particular                   evidence should be admitted.
+I may need to hear arguments from the Crown Prosecutor and from you before I make a decision.
+If that occurs, it is usually necessary for the matter to be debated in the absence of the jury.
+Opening addresses
+After the jury has been empanelled, I will ask the Crown Prosecutor to give an outline of the case the Crown anticipates establishing                   by the evidence.
+The purpose of the opening is to assist the jury in understanding the evidence as it is given during the                   trial.
+What the Crown tells the jury in the outline is not evidence.
+It is nothing more than an outline of what the Crown                   expects the evidence will establish.
+After the Crown Prosecutor has completed [his/her] address you have the right to address the jury yourself.
+Your address can refer to any issues which you dispute or which                   you do not dispute.
+However, at this stage, your address must be limited to the matters dealt with in the prosecutor’s opening                   address and, if you wish, to the matters you propose to raise in your defence … [see s 159(1), (2) Criminal Procedure Act 1986].
+Like the Crown Prosecutor’s opening address, what you say to the jury at this stage is not evidence.
+You do not have                   to address the jury.
+That is up to you.
+[Note: It may be appropriate to empanel the jury after these opening remarks: see [ 1-015 ] below; and once that has been completed, continue with the following comments in the jury’s absence.]
+Explanation of the Crown case and objections
+You have heard the Crown Prosecutor explain to the jury the nature of the charge(s) and the Crown’s case against you.
+When                   the jury is brought back into court, the Crown Prosecutor will call witnesses and produce documents or other material, to                   seek to prove the charge(s).
+[If it is considered more appropriate to give this information and advice before the jury has been empanelled, this part of                      the advice could read:
+Once the Crown Prosecutor explains to the jury the nature of the charge(s) and the Crown’s case against you, [he/she] will call witnesses and produce documents or other material, to seek to prove the charge(s).]
+Documents and other material tendered in evidence during the trial are marked as exhibits.
+The exhibits are used by the jury                   in its deliberations.
+You can object to any question asked by the Crown Prosecutor if you have a legal basis for doing so.
+An example of a legal                   basis for an objection is that a question is not relevant or it is unfair.
+If you want to object to any question, after it                   is asked but before it has been answered, you must stand up and say “I object”.
+I will then hear whatever you want to say                   about the question, and depending on why you are objecting, I may do so in the absence of the jury.
+You cannot object simply                   because you disagree with the evidence.
+If you are unsure about your right to object to a question on legal grounds, you should                   ask me for assistance.
+If the Crown seeks to tender material such as a document, photograph, video or other item, you have the right to object to                   its tender if there is a legal basis for the objection.
+If you want me to rule on the tender of any such material you should                   stand up and say, “I object”, and I will then hear whatever you want to say.
+Again, I may do so in the absence of the jury.
+Cross-examination of Crown witnesses
+[Note: The following does not apply to cross-examination of complainants in prescribed sexual offence proceedings and vulnerable witnesses in personal                      violence proceedings: see [ 1-020 ] below which addresses that scenario.]
+You have the right to cross-examine a Crown witness: that is, to ask him or her any questions which you think may help you,                   or weaken the Crown case.
+However, they must be questions, not statements or comments by you.
+If a Crown witness is able to                   say something or has material which you think will assist your case [give example, possibly an earlier inconsistent statement of an alleged victim who is a witness], then you can ask the witness questions and tender in evidence that material through the witness.
+If there is evidence you                   want the jury to consider which affects the reliability of the witness or the witness’s evidence [give examples — related to witness’s memory, or potentially unreliable evidence or witnesses referred to in s 165 Evidence                      Act such as identification evidence, prison informers, etc], then you may test that by asking the witness questions.
+If you are going to contradict the evidence of a Crown witness or suggest that the witness is telling lies, you should make                   your allegations to that witness in the form of questions, so that he or she has the opportunity to respond to your suggestions.
+It is also important for you to remember that any suggestion in a question you have asked during cross-examination is not                   evidence, unless the witness agreed with that suggestion.
+So, for example, if you ask a witness [give example, “you saw me wearing a grey jumper on [date], didn’t you?”]
+, and the witness says “no” or “I don’t know” or “I don’t remember”, there is no evidence to support the particular question you have asked.
+[Note: The rule in Browne v Dunn does not generally apply in criminal trials: MWJ v The Queen (2005) 80 ALJR 329 at [41].]
+Defence case
+No case to answer
+After the Crown Prosecutor has called all the Crown evidence, you will be given the opportunity to submit to me that the Crown                   case should be taken away from the jury because there is not enough evidence to prove the charge(s) against you.
+This application                   is made in the absence of the jury.
+You do not have to do this.
+Opportunity to present any evidence
+If you do not make such an application, or you make an application and it is rejected, you will then be given an opportunity                   to present any evidence you wish to answer the Crown case.
+You do not have to give evidence yourself and you do not have to                   call any witnesses to give evidence on your behalf.
+The Crown has to prove the case against you.
+You do not have to prove                   anything.
+However, if you are calling any evidence, either by giving evidence yourself or by calling other witnesses, you may, if you                   wish, first address the jury … [see s 159(3) Criminal Procedure Act].
+The purpose of addressing the jury before you call your evidence is to give them a general outline of the case you are                   going to present.
+During that address you cannot attack the Crown case.
+You have the opportunity to do that later, in your                   final address, after all the evidence has been given.
+You may give evidence yourself, or choose not to give evidence.
+If you choose not to give evidence, I will direct the jury                   that you are entitled to say nothing and make the Crown prove your guilt and that your silence in court cannot be used against                   you … [see Suggested Direction at [ 2-1010 ]].
+Even if you do not give evidence, you can still call other witnesses to give evidence which is relevant to the charge(s).
+You may also tender any relevant documents or other things as exhibits in your case.
+If you intend to give evidence yourself                   and to call other witnesses, it is normal to give your own evidence before calling those witnesses because, if you give evidence                   after any of your witnesses, the comment may be made that you have tailored your own evidence to fit in with the evidence                   given by them … [see R v RPS (unrep, 13/8/97, NSWCCA) at 23].
+But if you decide not to call evidence, I will direct the jury that decision cannot be used against you either.
+I remind you again that you do not have to give evidence or call witnesses to give evidence on your behalf.
+It is entirely                   a matter for the Crown to prove its case against you.
+You do not have to prove anything.
+Questioning witnesses
+When you do call your own witnesses, you may ask them questions.
+However, you cannot ask your own witnesses a leading question.
+A leading question is one which suggests the answer to the witness.
+[Give example, “You’re a good bloke aren’t you?”]
+If you do ask a leading question, then the Crown is likely to object.
+In some circumstances you may, with the leave of the court, question a witness you have called as though you were cross-examining                   the witness.
+[Optional explanation to accused of s 38 Evidence Act 1995
+You may wish to do this because the witness has given evidence that is unfavourable to you, or the witness has not made a                   genuine attempt to give evidence about a matter which he or she may reasonably be expected to have knowledge of, or the witness                   has given a prior statement which is inconsistent with the evidence he or she has given in court.]
+If that occurs, I will make a legal ruling about whether you can cross-examine your own witness.
+If leave is granted, you                   may ask him or her any questions which you think may help you, or weaken the Crown case.
+The Crown has the right to cross-examine the witnesses you call.
+At the conclusion of the Crown’s cross-examination, you may                   ask each witness further questions to explain or contradict matters put to them in cross-examination which they might have                   been unable to explain or contradict during the cross-examination itself.
+It is also very important that all the evidence you want the jury to hear is given during your case.
+Closing addresses
+When all of the evidence has been presented, both you and the Crown Prosecutor have the opportunity to address the jury again.
+The Crown Prosecutor will address the jury first.
+After that, you will have the opportunity, if you wish, to address the jury.
+At that time, you may present arguments as to why the jury should not accept the Crown case against you, or as to why you                   should be found “not guilty”.
+At that stage, you can discuss the evidence already given, but you cannot introduce new evidence.
+You will be entitled to refer in your address to all of the evidence that the jury has heard or seen.
+This includes any exhibit                   which has been put into evidence, and includes your own evidence if you have given evidence.
+As I have already said, any suggestion                   in a question you have asked one of the Crown’s witnesses during cross-examination or one of your own witnesses is not evidence                   unless the witness agreed with the suggestion put to them.
+You must understand that if, during your address, you assert facts about the charge(s) which are not supported by the evidence,                   I may give the Crown permission to make a supplementary address or another address to the jury replying to any such assertion                   [see s 160(2) Criminal Procedure Act].
+If you would like me to further explain anything I have told you, please let me know now, or when the particular matter arises.
+[Other general comments
+Other general comments may be necessary depending on the nature of the case.
+These comments should be made before the jury                   has been empanelled.]
+[Where appropriate — admission to an investigating official
+In this case, the Crown alleges that you have made an admission to an investigating official.
+It is for the judge in the trial                   to decide whether an admission you may have made should be admitted in evidence.
+I decide those issues by hearing evidence                   from the witnesses to whom you are said to have made the alleged admission.
+If you wish to contest the evidence of the admission,                   then you should tell me now, and I will deal with the issue before the jury is empanelled.]
+[Where appropriate — good character
+If you want to suggest to the jury that you are a person of good character either generally or in a particular respect, then                   you are entitled to raise that good character for their consideration.
+You may do this by either asking appropriate questions                   of Crown witnesses, or by stating this during your evidence, and/or by calling witnesses to give evidence to that effect.
+[For example, if you do not have a criminal history, then you may wish to ask one of the Crown witnesses a question about that.]
+However, it is important for you to understand that if you, either directly or by implication, suggest to a witness that you                   are a person of good character either generally or in a particular respect then, depending on his or her answer, the Crown                   may lead evidence to rebut your suggestion that you are a person of good character.
+This may include evidence of any criminal                   record you might have.]
+[Where appropriate — alibi
+If you wish to rely upon an alibi: that is, to suggest either by cross-examination of Crown witnesses, during your own evidence,                   or by calling witnesses in your case, that you were not at a relevant place at the relevant time, but were somewhere else,                   then, unless you have already given notice of that alibi to the Crown, you may not do so unless you first obtain the leave                   of the court.]
+[1-830] Empanelling the jury — right of accused to challenge
+[Name of the accused], the law requires that you be tried by a jury of 12 people chosen from those members of the public forming the jury panel                   who are presently in court.
+Each potential juror has been given a number.
+They are referred to by that number and not by their                   names.
+Twelve cards will now be drawn, at random, from a box, one by one.
+Each of the 12 people selected will then take a                   seat in the jury box over there.
+Each person will then be called again, one by one.
+[If Bibles are being used to swear the jurors:
+The sheriff’s officer might hand them a Bible.
+This depends on whether they have told the sheriff’s officer that they will                   take an oath or make an affirmation.]
+You have a legal right to challenge a maximum of three people without giving any reason.
+If you do wish to challenge a particular                   person, then you should say, “challenge” as that person’s number is read a second time.
+In addition, if you want to challenge a particular person for a specific reason, then you should, without stating your reason,                   say, “challenge for cause”.
+I will deal with that situation, if it arises [see s 46 Jury Act 1977].
+Do you understand?
+The Crown has the same right of challenge, and that right will be exercised by the Crown Prosecutor.
+[1-835] Notes
+1.
+Stay of proceeding: even if a self-represented accused is aware of his or her right to make an application for an adjournment or stay of the                         proceedings to enable legal representation to be obtained, the trial judge should consider whether the trial is likely to                         be unfair if the accused is forced to proceed unrepresented: Dietrich v The Queen (1992) 177 CLR 292.
+Where a self-represented accused, “who through no fault on his or her part, is unable to obtain legal representation” and                         is facing trial for serious offences, a trial judge has power to make an order staying the proceedings if, in the circumstances                         of the case, it appears that the accused would otherwise not receive a fair trial: Dietrich v The Queen at 315.
+See also R v Gilfillan (2003) 139 A Crim R 460 where the Court of Criminal Appeal noted at [75] that circumstances may exist where it is reasonable                         for an accused to withdraw his or her instructions even at an advanced stage of a trial, and that although there is a strong                         public interest in ensuring that a criminal trial which is well advanced proceeds to a verdict, the court is required to consider why instructions were withdrawn.
+In Craig v South Australia (1995) 184 CLR 163 at 184, the High Court considered the phrase, “through no fault of his own”, and concluded that the test                         focused on the reasonableness of the accused’s conduct in all of the circumstances, and excluded the situation where it was                         fair to say the accused “by his gratuitous and unreasonable conduct, had been the author of his own misfortune”.
+2.
+Address by the Crown Prosecutor: the Crown is not prohibited from making a closing address where the accused is self-represented, although there is a practice                         that the Crown not do so in such circumstances: R v Zorad (1990) 19 NSWLR 91; R v EJ Smith [1982] 2 NSWLR 608 at 615–616.
+The decision as to whether the Crown Prosecutor should exercise the right to make a closing                         address is a question for the trial judge to make in the exercise of his or her discretion: R v Zorad at 95.
+3.
+The following documents may also be of assistance when considering the professional obligations of the Crown Prosecutor:
+Office of the Director of Public Prosecutions (NSW), Unrepresented Accused Persons, Prosecution Guidelines, Guideline 23, June 2007
+The New South Wales Bar Association, Guidelines for barristers on dealing with self-represented litigants, October 2001: see < www.nswbar.asn.au/docs/resources/publications/selfrepresented16_10.pdf >
+The New South Wales Law Society, Guidelines for solicitors dealing with self-represented parties, April 2006: see < www.lawsociety.com.au/idc/groups/public/documents/internetcostguidebook/008731.pdf >.
+[1-840] Cross-examination of complainants in prescribed sexual offence proceedings and vulnerable witnesses in criminal proceedings
+Special procedures apply with respect to the cross-examination of certain witnesses by a self-represented accused.
+The relevant                categories of witness are complainants in sexual offence proceedings: s 294A Criminal Procedure Act; and vulnerable persons (whether or not the complainant) in criminal proceedings: s 306ZL.
+If the accused is self-represented,                any cross-examination must be conducted through a court-appointed intermediary.
+With respect to vulnerable persons, the court may choose not to appoint such a person if the court considers that it is not                in the interests of justice to do so: s 306ZL(5).
+There is no such discretion with respect to sexual offence complainants:                s 294A(5).
+The person appointed must ask the complainant or vulnerable person only those questions which the accused person requests                that person to put to the complainant or vulnerable person: ss 294A(3), 306ZL(3); and must not give legal or other advice                to the accused: ss 294A(4), 306ZL(4).
+The procedure applies whether or not closed-circuit television facilities are used to give evidence, or alternative arrangements                have been made: ss 294A(6), 306ZL(6).
+The purpose of the provisions is to spare the witness “the need to answer questions directly asked of him or her by the person                said to have committed the offence”: Clark v R (2008) 185 A Crim R 1; [2008] NSWCCA 122.
+The legitimacy of such provisions with respect to sexual assault complainants was                confirmed in R v MSK & MAK (2004) 61 NSWLR 204, where it was recognised at [69]:
+“The use by [the self-represented accused] of the opportunity to confront and to challenge his alleged victim personally and                      directly risks diverting the integrity of the judicial process, insofar as it is likely to intimidate the complainant to the point where he or she is unable to give a coherent and rational account of what truthfully occurred.
+The threat of its occurrence                      may also discourage a victim of sexual assault from giving evidence or even from making an initial complaint.”
+Special leave to appeal to the High Court was refused on 17 February 2005: R v MSK and MAK [2005] HCA Trans 22.
+Section 294A does not prescribe a procedure for the application of its provisions.
+In Clark v R it was held that it was appropriate for the judge to have appointed the registrar as the intermediary, and that there was                nothing in the legislation to require the appointment of a legal practitioner: at [40], [43]–[44].
+The appointed person should                be present in court to hear the examination in chief of the complainant so as to ensure that the appointed person can carry                out the cross-examination effectively and intelligently: at [45], [55].
+The judge erred in requiring the appellant to provide the judge with a list of questions proposed for cross-examination before                the complainant’s examination in chief: at [46].
+Such a requirement is “likely to give rise to the risk of a miscarriage of                justice”: at [47], [55].
+Furthermore, it may be impossible to meet as the questions asked in cross-examination may depend                to a significant degree upon the witness’s responses to previous questions: at [48].
+Such an approach may be justified where                proposed questions deal with the matters proscribed by s 293 Criminal Procedure Act: at [49]; but even in those circumstances disclosure before the complainant’s evidence in chief is finished is not justified:                at [50]–[53].
+[1-845] Suggested procedure: ss 293, 294A
+The following procedure is suggested (steps (a) to (e) should take place in the absence of the jury):
+(a)
+At the earliest possible opportunity in proceedings, the court should inform the self-represented accused that if he or she                         remains self-represented, he or she is prevented by law from personally questioning the complainant, and that the court must                         appoint a person to ask the questions on behalf of the accused.
+(b)
+Once it is apparent that the trial will proceed with a self-represented accused, at the earliest opportunity the court should                         appoint the person who will ask the accused’s questions of the complainant: s 294A(2).
+In any event, the person should be                         appointed in sufficient time to ensure that he or she can be present in court to hear the examination in chief of the complainant: Clark v R (2008) 185 A Crim R 1 at [45], [55].
+(c)
+The judge will explain to the intermediary his or her role, that is, that the intermediary is only to ask the questions sought                         to be put by the accused: s 294A(3).
+(d)
+The court should advise the accused to begin to prepare a list of questions sought to be asked of the complainant in cross-examination.
+Consistent with the judge’s obligations with respect to a self-represented accused, the judge should explain the proposed                         procedure for cross-examination of the complainant to the accused and advise the accused of the nature and form of questions                         that are not permissible.
+For example, the trial judge should explain to the accused the type of questions that may be proscribed                         by s 293: Clark v R at [49].
+There is no requirement that the draft questions be made available to the Crown, although the Crown may be entitled to notice                         of particular questions, for example, for the purposes of ascertaining admissibility under s 293: Clark v R at [54].
+Similarly, there is no requirement for all of the draft questions to be submitted to the court for approval in advance as:
+“… any question to be asked of a witness in cross-examination may ride upon the answer just given.
+The requirement to frame                               all questions in advance may impart a rigidity which robs a cross-examination of its effectiveness”: Clark v R at [48].
+However, the trial judge may require the accused to formulate proposed questions which might infringe the requirements of                         s 293, and inform the court in advance of any such questions: Clark v R at [49].
+(e)
+If the accused is not literate, the court-appointed intermediary — or, if necessary, an interpreter — could write out the                         questions sought to be put by the accused.
+(f)
+The jury will be brought back into court and an explanation should be given to the jury by the judge about the procedure to                         be adopted for the accused to cross-examine the complainant and the required warning given: s 294A(7).
+(g)
+Once the complainant has given evidence in chief, the accused will be given the opportunity to add to and/or re-formulate                         the list of questions he or she has prepared.
+(h)
+The intermediary will then ask the complainant only the questions that the accused has requested him or her to ask: s 294A(3).
+The intermediary may rephrase a question if necessary to aid the complainant’s understanding: Clark v R at [45].
+(i)
+If necessary during the cross-examination, the judge will give the accused the opportunity to re-formulate the questions in                         accordance with the court’s rulings on objections and admissibility.
+(j)
+After the complainant has answered the questions, the judge will ask the accused if he or she has any further questions arising                         from the complainant’s answers, or any questions previously overlooked.
+(k)
+If the accused has further questions, the procedures set out in paragraphs (d)–(e) and (h)–(j) would be repeated.
+Section 293(4) Criminal Procedure Act sets out the limited circumstances in which a complainant can be cross-examined about her or his sexual experience.
+Section 293(8)                provides the court must, before the evidence is given, provide reasons as to why the evidence falls within one of the exceptions in s 293(4) and the nature                and scope of the evidence.
+Where an accused is self-represented “the trial judge needs to take special care to see that the                requirements of the section are respected”: Clark v R at [49].
+The judge should explain to an accused person the nature of the questions proscribed by s 293 and require the accused                to formulate any proposed questions in advance: Clark v R at [49].
+See further discussion of s 293 at [ 1-342 ].
+[1-850] Suggested information and advice to accused in respect of a “prescribed sexual offence”
+As you are representing yourself in these proceedings, I must inform you that you cannot ask the complainant questions once                   the Crown Prosecutor has finished asking [his/her] questions.
+I will appoint a person, who I will refer to as an intermediary, to ask the complainant questions in cross-examination                   for you.
+The intermediary will be present at the time the complainant gives [his/her] evidence in chief.
+You need to prepare a list of the questions you want the intermediary to ask the complainant and I suggest that you start                   preparing those questions now, if you have not already done so.
+The intermediary is only here to help you by asking the complainant                   the questions you have prepared.
+[He/she] cannot give you legal advice.
+However, the intermediary can put into other words the questions you have prepared.
+Before                   the intermediary cross-examines the complainant I will give you the opportunity to review the questions you propose to have asked.
+The Crown Prosecutor will not see the questions before they are asked, but if [he/she] objects to any of the questions when the intermediary asks the complainant, then I will deal with that objection in the                   usual way.
+During the cross-examination of the complainant, if you need more time to prepare additional questions, or reconsider the                   wording of some of your questions because of rulings I have made as a result of objections or the admissibility of a particular                   question, then I will give you some time to do so.
+[Note: to address the possibility or difficulty of the accused communicating with the intermediary during the course of cross-examination                      see Clark v R at [47].]
+When the cross-examination is finished, and before I give the Crown Prosecutor the opportunity to re-examine the complainant,                   I will ask you if you have any other questions arising from the cross-examination of the complainant and, if you need more                   time to prepare additional questions, I will give you some time to do so.
+[1-860] Suggested information and advice where s 293(4) does not apply
+There are some questions that by law you cannot ask the complainant.
+You cannot ask the complainant questions about what the                   law refers to as [his/her] “sexual reputation”.
+This means you cannot ask any question which suggests that the complainant:
+has or may have had sexual experience, or
+lacks sexual experience, or
+has taken part in sexual activity, or
+has not taken part in sexual activity.
+[1-870] Suggested information and advice to accused’s intermediary
+You have been appointed by me to assist the accused in this case.
+That assistance is limited to asking the complainant the                   questions appearing on the list the accused has prepared.
+You cannot give the accused legal advice.
+However, if some of the                   questions the accused proposes that you ask do not make sense then you can put those particular questions into other words.
+The only time you may ask additional questions is when it is necessary to assist the complainant’s understanding of a particular                   question which has been asked.
+[1-875] Warning re use of intermediary
+Where an intermediary is appointed to ask questions of a complainant in prescribed sexual offence proceedings: s 294A(7);                or a vulnerable witness in criminal proceedings: s 306ZI(4); and the proceedings are before a jury, the judge must:
+(a)
+inform the jury that it is standard procedure in such cases to appoint the person to put the questions to the complainant, and
+(b)
+warn the jury not to draw any inference adverse to the accused person, or to give the evidence any greater or lesser weight                         because of the use of that arrangement.
+[1-880] Suggested direction to jury re use of intermediary
+An intermediary has been appointed by me to cross-examine the complainant for the accused.
+[He/she] is not a lawyer representing the accused; perhaps this person is not a lawyer at all.
+During cross-examination, [he/she] will ask the complainant questions — which have been formulated by the accused — on the accused’s behalf.
+Where, as here, the accused is self-represented, it is standard procedure in cases of sexual assault for the court to appoint                   a person to ask the complainant questions on the accused’s behalf.
+You should not draw any inference against the accused or                   give the evidence any greater or lesser weight simply because it is given in this manner.
+You should assess the evidence in                   the same way as you assess the evidence of any other witness in the case.
+[1-890] Cross-examination in proceedings for Commonwealth offences
+Part 1AD Crimes Act 1914 (Cth) also places constraints on the cross-examination of certain witnesses by a self-represented accused.
+That Part applies                to various offences, including child sex tourism, slavery, sexual servitude and human trafficking: s 15Y(1).
+Under s 15YF,                a self-represented accused is prohibited from cross-examining a vulnerable person, and a person appointed by the court is                to ask him or her any questions sought to be put by the accused.
+A self-represented accused must not cross-examine a vulnerable                person unless the court grants leave: s 15YG(1).
+Section 15YG(1A) defines a vulnerable person to include a child witness (other                than a child complainant) for a child proceeding (as defined in s 15YA).
+The court must not grant leave “unless satisfied                that the vulnerable person’s ability to testify under cross-examination will not be adversely affected”: s 15YG(2).
+In applying                this test, the court is to consider “any trauma that could be caused if the defendant conducts the cross-examination”: s 15YG(3).
+The Commonwealth legislation does not specifically require a warning in the terms of ss 294A(7) or 306ZI(4) Criminal Procedure Act, although it may be prudent to give a warning in such terms for these matters.
