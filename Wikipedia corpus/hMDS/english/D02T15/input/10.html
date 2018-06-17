@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=195;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgEDVVNRGwAHXVFaAgM="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(11),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(12),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),c.xhrWrappable&&t(6),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,["addEventListener","removeEventListener"],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(13)(a),c=t("gos");e.exports=a,o(window),"getPrototypeOf"in Object?(r(document),r(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&o(XMLHttpRequest.prototype),a.on("addEventListener-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(13)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(13)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],6:[function(t,e,n){function r(t,e){e=e||this;var n=a.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,a.emit("xhr-resolved",[],e));try{f.inPlace(e,p,"fn-",o)}catch(r){}}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").get("xhr"),s=t(3),c=t(13),f=c(a),u=c(s),d=NREUM.o,l=d.XHR,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=a,window.XMLHttpRequest=function(t){var e=new l(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",r,!1)}catch(n){try{a.emit("internal-error",[n])}catch(i){}}return e},i(l,XMLHttpRequest),XMLHttpRequest.prototype=l.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(8),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(10),m=window.XMLHttpRequest;s.features.xhr=!0,t(3),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(11),a=t(12);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],10:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],11:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],12:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],13:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(12),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([y,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},y={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return y}function i(){return new r}var a="nr@context",s=t("gos"),c=t(11),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(11),f=window,u=f.document;NREUM.o={ST:setTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(9);var d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-892.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,7]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hiking in Maine: Walking in the footsteps of a pre-traitorous Benedict Arnold - The Portland Press Herald / Maine Sunday Telegram</title>
+<link rel="icon" type="image/png" href="http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/favicon.png"/>
+<link rel="apple-touch-icon" type="image/png" href="http://www.pressherald.com/wp-content/uploads/2014/06/apple-touch-icon-iphone.png"/>
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="http://www.pressherald.com/wp-content/uploads/2014/06/apple-touch-icon-ipad.png"/>
+<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="http://www.pressherald.com/wp-content/uploads/2014/06/apple-touch-icon-iphone-retina-display.png"/>
+ 
+<link href='/web/20160404101605cs_/http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'/>
+<link href='/web/20160404101605cs_/http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ 
+ 
+<meta name="google-site-verification" content="QWs9pxQP8fwo2-nR5mWopc6qCK2D3920f7bl-U-zkso"/>
+ 
+ 
+<meta name="apple-itunes-app" content="app-id=951845858">
+ 
+ 
+<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '217790361900135');
+	//fbq('track', "PageView");
+	</script>
+<noscript><img height="1" width="1" style="display:none" src="/web/20160404101605im_/https://www.facebook.com/tr?id=217790361900135&amp;ev=PageView&amp;noscript=1"/></noscript>
+ 
+ 
+<meta name="description" content="Hikers can explore a 13-mile segment of history thanks to the Arnold Expedition Historical Society."/>
+<link rel="canonical" href="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/"/>
+<link rel="publisher" href="https://plus.google.com/+Pressherald/posts"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Hiking in Maine: Walking in the footsteps of a pre-traitorous Benedict Arnold - The Portland Press Herald / Maine Sunday Telegram"/>
+<meta property="og:description" content="Hikers can explore a 13-mile segment of history thanks to the Arnold Expedition Historical Society."/>
+<meta property="og:url" content="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/"/>
+<meta property="og:site_name" content="The Portland Press Herald / Maine Sunday Telegram"/>
+<meta property="article:publisher" content="https://www.facebook.com/pressherald"/>
+<meta property="article:section" content="Outdoors"/>
+<meta property="article:published_time" content="2014-11-02T03:00:00+00:00"/>
+<meta property="article:modified_time" content="2014-11-09T12:22:14+00:00"/>
+<meta property="og:updated_time" content="2014-11-09T12:22:14+00:00"/>
+<meta property="fb:admins" content="769488179"/>
+<meta property="og:image" content="http://www.pressherald.com/wp-content/uploads/2014/11/529729_589405-West-Carry-Pond.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@pressherald"/>
+<meta name="twitter:domain" content="The Portland Press Herald / Maine Sunday Telegram"/>
+<meta name="twitter:creator" content="@pressherald"/>
+<meta name="twitter:image:src" content="http://www.pressherald.com/wp-content/uploads/2014/11/529729_589405-West-Carry-Pond.jpg"/>
+ 
+<link rel="alternate" type="application/rss+xml" title="The Portland Press Herald / Maine Sunday Telegram &raquo; Hiking in Maine: Walking in the footsteps of a pre-traitorous Benedict Arnold Comments Feed" href="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/feed/"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"/web/20160404101605/http://s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"/web/20160404101605/http://www.pressherald.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='flexslider-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/vendor/flexslider.css?ver=2.2.0' type='text/css' media='all'/>
+<link rel='stylesheet' id='bxslider-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/vendor/jquery.bxslider.css?ver=4.0' type='text/css' media='all'/>
+<link rel='stylesheet' id='slick-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/vendor/slick/slick.css?ver=4.3.1' type='text/css' media='all'/>
+<link rel='stylesheet' id='ticker-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/vendor/ticker-style.css?ver=0.6.2' type='text/css' media='all'/>
+<link rel='stylesheet' id='mtm-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/mainetoday.min.css?ver=0.6.2' type='text/css' media='all'/>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='ie-eight-css'  href='/web/20160404101605/http://www.pressherald.com/wp-content/themes/mainetoday/assets/css/ie8.css?ver=0.6.2' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css' href='/web/20160404101605cs_/http://www.pressherald.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.4.3' type='text/css' media='all'/>
+<script type="text/javascript">
+				window._taboola = window._taboola || [];
+				_taboola.push({article:'auto'});
+				!function (e, f, u) {
+					if( (window.innerWidth < 501 && !document.cookie.match(/mspan_paywall_user/i)) || (window.innerWidth > 501 && !navigator.userAgent.match(/Trident.*rv[ :]*11\./)) ){
+						e.async = 1;
+						e.src = u;
+						f.parentNode.insertBefore(e, f);
+					}
+				}(document.createElement('script'), document.getElementsByTagName('script')[0], '/web/20160404101605/http://cdn.taboola.com/libtrc/mainetodaymedia-pressheraldcom/loader.js');
+			</script>
+<style type="text/css"></style>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20141201'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://s7.addthis.com/js/300/addthis_widget.js?ver=4.3.1#pubid=ra-535983434d690928'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.pressherald.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.pressherald.com/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.3.1"/>
+<link rel='shortlink' href='http://www.pressherald.com/?p=529729'/>
+<link rel='https://github.com/WP-API/WP-API' href='http://www.pressherald.com/wp-json'/>
+<style type='text/css'>img#wpstats{display:none}</style> <meta property="fb:app_id" content="178078215650057">
+<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important;}</style>
+<script type="text/javascript" src="/web/20160404101605js_/http://mainetoday-d.openx.net/w/1.0/jstag?nc=6119-pressherald"></script>
+<script type="text/javascript">
+				<!--
+
+				var viewportwidth;
+				var viewportheight;
+
+				// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+				if (typeof window.innerWidth != 'undefined')
+				{
+					viewportwidth = window.innerWidth,
+						viewportheight = window.innerHeight
+				}
+
+				// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+				else if (typeof document.documentElement != 'undefined'
+					&& typeof document.documentElement.clientWidth !=
+					'undefined' && document.documentElement.clientWidth != 0)
+				{
+					viewportwidth = document.documentElement.clientWidth,
+						viewportheight = document.documentElement.clientHeight
+				}
+
+				// older versions of IE
+
+				else
+				{
+					viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+						viewportheight = document.getElementsByTagName('body')[0].clientHeight
+				}
+
+				//-->
+			</script>
+<script type='text/javascript'>
+				var googletag = googletag || {},
+					mtmads = mtmads || {},
+					AdSection;
+
+				googletag.cmd = googletag.cmd || [];
+				(function() {
+					var gads = document.createElement('script');
+					gads.async = true;
+					gads.type = 'text/javascript';
+					var useSSL = 'https:' == document.location.protocol;
+					gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+					var node = document.getElementsByTagName('script')[0];
+					node.parentNode.insertBefore(gads, node);
+				})();
+			</script>
+<script type="text/javascript">
+				// Place to stash data (currently to only resize iframes when actually needed)
+				mtmads.iFrameData = mtmads.iFrameData || {};
+
+				function iFrameAutoResize(id){
+					var newheight;
+
+					if( document.getElementById ){
+						newheight = document.getElementById( id ).contentWindow.document .body.scrollHeight;
+					}
+
+					if ( "undefined" === typeof mtmads.iFrameData[ id ] || mtmads.iFrameData[ id ] !== newheight ) {
+						document.getElementById( id ).height= ( newheight ) + "px";
+						mtmads.iFrameData[ id ] = newheight;
+					}
+				};
+
+				googletag.cmd.push(function() {
+					var pos1homemapping = googletag.sizeMapping().
+						addSize([1000, 200], [[970, 90],[970,30],[728, 90],[1,1]]). // SLB only for desktop and tablet wide
+						addSize([750, 200], [728, 90]). // 728 only for Tablet Portrait and above
+						addSize([0, 0], [[320, 50], [300, 50]]). //all sizes
+						build();
+
+					var pos1mapping = googletag.sizeMapping().
+						addSize([1000, 200], [[970, 90],[728, 90]]). // SLB only for desktop and tablet wide
+						addSize([750, 200], [728, 90]). // 728 only for Tablet Portrait and above
+						addSize([0, 0], [[320, 50], [300, 50]]). //all sizes
+						build();
+
+					var pos2mapping = googletag.sizeMapping().
+						addSize([785, 200], [[300,600],[300,250]]). // Half Page in desktop and tablet wide
+						addSize([0, 0], [300, 250]). // MR all sizes
+						build();
+
+					var pencilmapping = googletag.sizeMapping().
+						addSize([1000, 200], [970,30]). // pencil only in desktop and tablet wide
+						addSize([0, 0], []). // supress below desktop
+						build();
+
+					var pos3mapping = googletag.sizeMapping().
+						addSize([785, 200], [[300,600],[300,250]]). // add half page in tablet wide and desktop
+						addSize([400, 200], [300, 250]). // medium rectangle only in tablet portrait
+						addSize([0, 0], [300,250]). // MR all sizes
+						build();
+
+					var pos4mapping = googletag.sizeMapping().
+						addSize([750, 200], [728, 90]). // Portait tablet
+						addSize([0, 0], []). //supress Position 4 below Tablet Portrait
+						build();
+
+					var btfmrmapping = googletag.sizeMapping().
+						addSize([785, 200], [300,250]). // Desktop
+						addSize([0, 0], []). //supress positions 8 and 9 below desktop.
+						build();
+
+				
+						mtmads.pos_1_atf_728x90 = googletag.defineSlot('/6119/pressherald.com/sports/article', [728, 90], "pos_1_atf_728x90").setTargeting("pos", ["1","atf"]).defineSizeMapping(pos1mapping).addService(googletag.pubads());
+
+						
+						mtmads.pos_2_atf_300x250 = googletag.defineSlot('/6119/pressherald.com/sports/article', [300, 250], "pos_2_atf_300x250").setTargeting("pos", "2").defineSizeMapping(pos2mapping).addService(googletag.pubads());
+
+						
+						mtmads.pos_3_btf_300x250_300x600 = googletag.defineSlot('/6119/pressherald.com/sports/article', [300, 250], "pos_3_btf_300x250_300x600").setTargeting("pos", "3").defineSizeMapping(pos3mapping).addService(googletag.pubads());
+
+						if ( viewportwidth > 767 ) {
+						mtmads.pos_6_atf_300x100 = googletag.defineSlot('/6119/pressherald.com/sports/article', [300, 50], "pos_6_atf_300x100").setTargeting("pos", ["6","atf"]).addService(googletag.pubads());
+
+						}if ( viewportwidth > 767 ) {
+						mtmads.pos_btf_8_300x250 = googletag.defineSlot('/6119/pressherald.com/article', [300, 250], "pos_btf_8_300x250").setTargeting("pos", ["8","btf"]).defineSizeMapping(btfmrmapping).addService(googletag.pubads());
+
+						}				    //tracking section via ad code manager
+				    AdSection = "pressherald.com";
+
+					// Manually Controlled Ad Slots
+					// Interstitial - Originally googletag.defineOutOfPageSlot('/6119/mnt.pressherald.home', 'div-gpt-ad-1401897265346-0-oop').addService(googletag.pubads());
+					mtmads.interstitial = googletag.defineOutOfPageSlot('/6119/pressherald.com/sports/article', 'div-gpt-ad-1401897265346-0-oop').addService(googletag.pubads());
+
+					mtmads.native_ad = googletag.defineSlot( '/6119/pressherald.com/sports/article', [1,1], 'native_ad').addService(googletag.pubads());
+
+					mtmads.native_ad.oldRenderEnded = mtmads.native_ad.renderEnded;
+					mtmads.native_ad.renderEnded = function() {
+						// Remove height/width since the actual content of this ad will be larger than 1x1
+						var $iframe =  jQuery('#native_ad iframe');
+						$iframe.removeAttr('height').removeAttr('width');
+						iFrameAutoResize( $iframe.attr('id') );
+
+						mtmads.nativeAd.oldRenderEnded();
+					};
+					var is_logged_in = !!document.cookie.match(/MSPAN_Paywall_user/);
+					
+						if(is_logged_in) {
+							googletag.pubads().setTargeting("sub","true");
+						} else {
+							googletag.pubads().setTargeting("sub","false");
+						}
+						
+					googletag.pubads().setTargeting("category",["outdoors"]);
+						googletag.pubads().collapseEmptyDivs();
+						googletag.enableServices();
+										});
+			</script>
+</head>
+<body class="single single-post postid-529729 single-format-standard story-head">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/";
+
+var firstYear = 1996;
+var displayDay = "4";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160404101605" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20160205101641/http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/" title="5 Feb 2016">FEB</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:16:05 Apr 4, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160205101641/http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/" title="10:16:41 Feb 5, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:16:05 Apr 4, 2016">4</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150114232238/http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/" title="14 Jan 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:16:05 Apr 4, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160404101605*/http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/" title="See a list of every capture for this URL">17 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Nov 14 - 4 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000021_2015:-1:100003100004_2016:3:220100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="www.pressherald.com",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+ 
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-10862716-1', 'auto');
+	ga('require', 'displayfeatures');
+
+	// Custom dimensions for analytics
+	jQuery(function( $ ){
+		var customDimensions = {};
+		var section = (function(){
+		   var $sectionTitles = $('.section');
+		   var reg = {
+		      word: /\w/,
+		      space: /^\s+|\s+$/g
+		   };
+		   var tmpText;
+
+		   for(var i = 0; i < $sectionTitles.length; i++){
+		      tmpText = $sectionTitles.eq(i).text().replace(reg.space, '');
+		      if(tmpText.match(reg.word)){
+		         return tmpText;
+		      }
+		   }
+		   return "unknown section";
+		}());
+
+		customDimensions.dimension2 = section;
+		customDimensions.dimension3 = 'logged ' + (document.cookie.match(/MSPAN_Paywall_user/i) ? 'in' : 'out');
+       	
+       	if( typeof AdSection !== "undefined" ) {
+        	customDimensions.dimension6 = AdSection;
+        }
+        
+		if( undefined !== window.MSPAN ) {
+			customDimensions.dimension4 = window.MSPAN.Paywall.totalViews();
+		}
+		
+		if(window.innerHeight > window.innerWidth) {
+			customDimensions.dimension5 = 'Portrait'; 
+		} else {
+			customDimensions.dimension5 = 'Landscape';
+		}
+
+		ga('send', 'pageview', customDimensions);
+
+			
+	});
+</script>
+  
+<div class="mtm-utility-launch">
+<div class="mtm-article-utility-bar">
+<div class="utility-logo" style="background-image: url(/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/nav-white-p.png)" onClick="location.href='/'">
+</div>
+<div class="utility-menu">
+<span>SECTIONS</span>
+</div>
+<div class="utility-logo-large">
+<a href="/web/20160404101605/http://www.pressherald.com/"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/header-images/pph-logo200x30.png" alt="logo"/></a>
+</div>
+<div class="subscribe-utility">
+<ul class="header-banner-subscribe logged-out">
+ 
+<li class='welcome'>Welcome </li>
+<li class='login-button'><a href="/web/20160404101605/http://www.pressherald.com/login/" class="accountlogin">Log in</a></li>
+<li class='subscribe-button'><a href="/web/20160404101605/https://myaccount.pressherald.com/order/?ref=paywall-topright&amp;return=http://www.pressherald.com/?p=529729&amp;promo=extra2">Subscribe</a></li>
+<li><a class="support-button last" href="/web/20160404101605/http://www.pressherald.com/support/">Support</a></li>
+<li><a class="accountlogin last logout-button" href="">Logout</a></li>
+</ul>
+</div>
+<div class="search-utility">
+<form method="get" action="/web/20160404101605/http://www.pressherald.com/" id="searchform" class="search-mobile-form">
+<input type="text" class="search-box" name="s" id="s" placeholder="What are you looking for?" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Looking for something?'">
+<input type="submit" value="" class="search-submit-off" id="searchsubmit">
+</form>
+</div>
+<div class="mobile-search-toggle"></div>
+<div class="search-mobile slide">
+<form method="get" action="/web/20160404101605/http://www.pressherald.com/" id="searchform" class="search-mobile-form">
+<input type="text" class="search-box" name="s" id="s" placeholder="What are you looking for?" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Looking for something?'">
+<input type="submit" value="" class="search-submit-off" id="searchsubmit">
+</form>
+</div>
+<div class="utility-article-assets">
+<ul>
+<li class="article-launch dynamic active" onclick="ga('send', 'event', 'UI', 'click', 'articlebar | viewarticle', {'nonInteraction': 1});">
+<span>&#8592; BACK TO ARTICLE</span>
+</li>
+</ul>
+</div>
+<div class="login-state">
+ 
+<div class="sign-in-button accountlogin log-in"><a href="/web/20160404101605/http://www.pressherald.com/login/" style="color:#fff; font-weight: bold;">LOG IN</a></div>
+ 
+<div class="sign-in-button accountlogin log-out" onclick="MSPAN.Paywall.logout();">LOG OUT</div>
+</div>
+</div>
+ 
+<div class="utility-menu-skin">
+<div class="weather">
+<span class="wximage"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/weather/35.png" width="80" height="50" alt="Partly cloudy"></span>
+<span class="wxcurrent">18&deg; Partly cloudy</span>
+<span class="wxtemp">High: 30&deg; | Low: 20&deg;</span>
+<span class="wxforecast"><a href="/web/20160404101605/http://www.pressherald.com/weather">Ten Day Forecast</a></span></div>
+<ul id="utility-menu" class="menu"><li id="menu-item-15575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15575 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/">Home</a></li>
+<li id="menu-item-15642" class="news menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-15642 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/news/">News</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/news/">More in News</a></li>
+<li id="menu-item-684738" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684738 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/news/localstate/">Local &#038; State</a></li>
+<li id="menu-item-684739" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684739 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/news/nationworld/">Nation &#038; World</a></li>
+<li id="menu-item-684740" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684740 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/news/mainecrime/">Cops &#038; Courts</a></li>
+<li id="menu-item-684741" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684741 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/news/schools/">Schools &#038; Education</a></li>
+<li id="menu-item-684742" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684742 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/community-news/">Community News</a></li>
+<li id="menu-item-684743" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684743 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/news/special/">Special Features</a></li>
+<li id="menu-item-684744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684744 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/the-maine-forecast/">The Maine Forecast</a></li>
+</ul>
+</li>
+<li id="menu-item-532046" class="politics menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-532046 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/politics/">Politics</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/politics/">More in Politics</a></li>
+<li id="menu-item-684746" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684746 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/politics/">Politics</a></li>
+<li id="menu-item-798971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-798971 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/tag/president-2016/">Election 2016</a></li>
+<li id="menu-item-734547" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734547 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/politics/capitol-ticker/">Capitol Ticker</a></li>
+</ul>
+</li>
+<li id="menu-item-87729" class="business menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-87729 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/business/">Business</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/business/">More in Business</a></li>
+<li id="menu-item-684750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684750 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/business/wordwiththeboss/">A Word with the Boss</a></li>
+<li id="menu-item-684751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684751 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/business/on-the-job/">On the Job</a></li>
+<li id="menu-item-684753" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684753 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/business/portfolio/">Portfolio</a></li>
+<li id="menu-item-734545" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734545 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/business/people-on-the-move/">People on the Move</a></li>
+</ul>
+</li>
+<li id="menu-item-15643" class="sports menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-15643 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/sports/">Sports</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/sports/">More in Sports</a></li>
+<li id="menu-item-684759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684759 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/highschoolsports/">High School Sports</a></li>
+<li id="menu-item-684761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684761 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/patriots/">New England Patriots</a></li>
+<li id="menu-item-734548" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734548 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/bruins/">Boston Bruins</a></li>
+<li id="menu-item-734550" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734550 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/pirates/">Portland Pirates</a></li>
+<li id="menu-item-734549" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734549 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/celtics/">Boston Celtics</a></li>
+<li id="menu-item-734551" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-734551 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/red_claws/">Maine Red Claws</a></li>
+<li id="menu-item-684758" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-684758 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sports/outdoors/">Outdoors</a></li>
+<li id="menu-item-795203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-795203 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/VMEAs">Varsity Maine Awards</a></li>
+</ul>
+</li>
+<li id="menu-item-15645" class="opinion menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-15645 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/opinion/">Opinion</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/opinion/">More in Opinion</a></li>
+<li id="menu-item-684762" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684762 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/opinion/editorials/">Editorials</a></li>
+<li id="menu-item-684765" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684765 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/opinion/columnists-opinion/">Columns</a></li>
+<li id="menu-item-684766" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684766 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/opinion/bill-nemitz-opinion/">Bill Nemitz</a></li>
+<li id="menu-item-684767" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684767 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/opinion/greg-kesich-opinion/">Greg Kesich</a></li>
+<li id="menu-item-684770" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684770 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/letters/">Letters</a></li>
+<li id="menu-item-783967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783967 depth-1"><a target="_blank" href="/web/20160404101605/http://www.pressherald.com/2016/02/11/portland-press-heralds-mainevoices-live-event-tess-gerritsen/">Maine Voices Live</a></li>
+</ul>
+</li>
+<li id="menu-item-15765" class="foodanddining menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-15765 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/">Food</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/">More in Food</a></li>
+<li id="menu-item-684773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684773 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/restaurant-reviews/">Restaurant reviews</a></li>
+<li id="menu-item-684776" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684776 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/recipes/">Recipes</a></li>
+<li id="menu-item-684778" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684778 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/cookbook-reviews/">Cookbook Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-752968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-752968 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/source/">Source</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/source/">More in Source</a></li>
+<li id="menu-item-753608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-753608 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/source/green-plate-special/">Green Plate Special</a></li>
+<li id="menu-item-753609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-753609 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/source/maine-gardener/">Maine Gardener</a></li>
+<li id="menu-item-753611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-753611 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/foodanddining/source/meet-source/">Meet</a></li>
+<li id="menu-item-752970" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-752970 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/source/sea-change/">Sea Change</a></li>
+<li id="menu-item-785584" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-785584 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sourceawards">Source Awards</a></li>
+</ul>
+</li>
+<li id="menu-item-15854" class="life menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-15854 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/life/">Lifestyle</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/life/">More in Lifestyle</a></li>
+<li id="menu-item-684783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684783 depth-1"><a href="/web/20160404101605/http://calendar.mainetoday.com/events">Things to Do</a></li>
+<li id="menu-item-684784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684784 depth-1"><a href="/web/20160404101605/http://mainetoday.com/tag/mainetoday-magazine/">MaineToday Magazine</a></li>
+<li id="menu-item-684785" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684785 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/life/audience/">Arts &#038; Entertainment</a></li>
+<li id="menu-item-684786" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684786 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/life/books/">Books</a></li>
+<li id="menu-item-739730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-739730 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/scene-heard/">Scene &#038; Heard</a></li>
+<li id="menu-item-684787" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684787 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/life/religionandvalues/">Religion and Values</a></li>
+<li id="menu-item-684788" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684788 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/life/flashback/">Flashback</a></li>
+<li id="menu-item-684789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684789 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/crossword/">Crossword</a></li>
+<li id="menu-item-684790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684790 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/sudoku/">Sudoku</a></li>
+<li id="menu-item-684795" class="logo menu-item menu-item-type-custom menu-item-object-custom menu-item-684795 depth-1"><a target="_blank" href="/web/20160404101605/http://www.mainetoday.com/">Maine Today</a></li>
+</ul>
+</li>
+<li id="menu-item-684796" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-684796 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/realestate/">Real Estate</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/realestate/">More in Real Estate</a></li>
+<li id="menu-item-684797" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684797 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/realestate/featured-home/">Featured Home</a></li>
+<li id="menu-item-684798" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684798 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/realestate/home-of-the-week/">Home of the Week</a></li>
+<li id="menu-item-684799" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-684799 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/realestate/design/">Design</a></li>
+<li id="menu-item-684800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684800 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/open-houses/">Open Houses</a></li>
+</ul>
+</li>
+<li id="menu-item-15875" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15875 depth-0"><a href="/web/20160404101605/http://obituaries.pressherald.com/obituaries/mainetoday-pressherald/">Obituaries</a></li>
+<li id="menu-item-752974" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-752974 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/auto/">Auto</a>
+<ul class="sub-menu sub">
+<li class="more"><a href="/web/20160404101605/http://www.pressherald.com/auto/">More in Auto</a></li>
+<li id="menu-item-820673" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-820673 depth-1"><a title="New Car Specials" href="/web/20160404101605/http://www.pressherald.com/auto/new-cars/">New Cars</a></li>
+<li id="menu-item-820938" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-820938 depth-1"><a href="/web/20160404101605/http://www.pressherald.com/auto/used-cars/">Used Cars</a></li>
+</ul>
+</li>
+<li id="menu-item-15884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15884 depth-0"><a href="/web/20160404101605/http://mainejobs.mainetoday.com/">Jobs</a></li>
+</ul>
+</div>
+<div class="utility-menu-skin-cover">
+</div>
+</div>
+<div class="related-hidden"><p>Open</p></div>
+<div class="paywall-banner">
+<p><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/pph-icon.png" style="vertical-align:middle;"><span></span><span> <a href='/web/20160404101605/http://www.pressherald.com/login'>Sign in</a> or <a href='/web/20160404101605/https://myaccount.pressherald.com/order/?ref=paywall-topright&amp;return=http://www.pressherald.com/?p=785378&amp;promo=extra2'>Subscribe</a>.</span> <span class="expand-extra-messaging extra-closed">See Offers </span><span class="close-slidedown"> <img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/2015/12/close-icon.png" style="vertical-align:middle;"></span></p>
+<div class="special-messaging">
+<p></p>
+<img src=""/>
+<br>
+</div>
+</div>
+<div class="mtm-wrapper post-wrapper">
+<div id="pos_1_atf_728x90-wrap" class="ad-wrapper">
+<div id='pos_1_atf_728x90' class="mtm-leaderboard-pos1">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('pos_1_atf_728x90'); });
+					</script>
+</div>
+</div>
+<div class="main-content-wrap">
+<div itemscope itemtype="http://schema.org/Article" class="mtm-article-full-width" id="js-mtm-article">
+<header>
+<a href="/web/20160404101605/http://www.pressherald.com/sports/outdoors/" class="category-wrapper">
+<div class="category">
+Outdoors </div>
+</a>
+<div class="timestamp">
+<div class="posted">
+Posted <time itemprop="datePublished" datetime="2014-11-02T03:00:00+00:00">November 2, 2014</time>
+</div>
+<div class="updated">
+Updated <span>November 9, 2014</span>
+</div>
+</div>
+<div class="font-resize">
+<span>increase font size</span>
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/font-resize.png" alt="Resize Font"/>
+</div>
+<h1 itemprop="headline">Hiking in Maine: Walking in the footsteps of a pre-traitorous Benedict Arnold</h1>
+<p class="article-excerpt" itemprop="description">
+Hikers can explore a 13-mile segment of history thanks to the Arnold Expedition Historical Society. </p>
+</header>
+<div class="mtm-article">
+<div class="byline">
+<div class="byline-author 1">
+<div class="name">
+<span class="by">By </span>Carey Kish </div>
+</div>
+</div> 
+<div class="article-social-sharing">
+<div class="share-name">Share</div>
+<div class="facebook social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/facebook/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-fb-icon.png" alt="facebook">
+</a>
+</div>
+<div class="twitter social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/twitter/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F%3Fp%3D529729" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-twitter-icon.png" alt="tweet">
+</a>
+</div>
+<div class="email social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/email/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-email-icon.png" alt="email">
+</a>
+</div>
+<div class="print social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/printfriendly/offer?title=&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-print-icon.png" alt="print">
+</a>
+</div>
+<div class="comment social-button comment-launch">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/2015/03/comment-icon.png" alt="print">
+<a class="disqus-comment-count " data-disqus-url="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/">
+Comment </a>
+</div>
+</div>
+<div class="comment-button article-launch" style="display:none;">
+<a onclick="ga('send', 'event', 'UI', 'click', 'articlebottom | viewarticle', {'nonInteraction': 1});">
+Read Article </a>
+</div>
+<div class="post-content clearfix" itemprop="articleBody" id="js-post-content" data-truncate="3">
+<p>In early October 1775, Gen. Benedict Arnold and a contingent of 1,100 American soldiers made the portage over the Great Carrying Place between the Kennebec River and the Dead River on their wilderness expedition to Quebec City. The lengthy and difficult portage greatly weakened Arnold&#8217;s army, which ultimately failed in its attempt to wrest control of the city from the British and thereby expand the Revolutionary War, forcing it to retreat in defeat in the dead of winter.</p>
+<p>Hikers today can explore this incredible 13-mile segment of history thanks to the Arnold Expedition Historical Society, which recently opened the Great Carrying Place Portage Trail after seven years of hard work and 239 years after Arnold and his troops passed through.</p><div class="inner-sidebar">
+<div class="article-sidebar">
+<div class="article-additional-photos">
+<h3>Additional Images</h3>
+<div class="photo-scale">
+<div class="photo-scale-icon"></div>
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/2014/11/529729_589405-West-Carry-Pond.jpg" alt="West Carry Pond offers a lean-to that helps make a modern hike on the Great Carrying Place somewhat easier that what Benedict Arnold and his troops endured in 1775."/>
+<div class="photo-credit">
+West Carry Pond offers a lean-to that helps make a modern hike on the Great Carrying Place somewhat easier that what Benedict Arnold and his troops endured in 1775. <span class="credit">Carey Kish photo</span> </div>
+</div>
+</div>
+<div class="photo-store">
+<div class="photo-store-icon">
+<a href="/web/20160404101605/http://mainetoday.mycapture.com/mycapture/index.asp" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/2015/03/photostore-icon.png" alt="photo-store">
+</a>
+</div>
+<div class="description">
+Search photos available for purchase: <a href="/web/20160404101605/http://mainetoday.mycapture.com/mycapture/index.asp" target="_blank">Photo Store →</a>
+</div>
+</div>
+</div>
+</div>
+<p>&#8220;We wanted to recreate and reopen the route so modern people could get a sense of what the Arnold Expedition had to go through on their way to Canada,&#8221; said Stephen Clark, society member and author of a new guide that describes the portage trail. &#8220;It&#8217;s a way of expressing history by allowing us to walk in their footsteps.&#8221;</p>
+<p>The new trail begins at Carrying Place Stream on the western shore of Wyman Lake, a 15-mile stretch of the Kennebec River impounded by Wyman Dam in 1930. The trail climbs 750 feet to East Carry Pond and then proceeds to Middle Carry Pond. Just beyond at Sandy Stream, the trail joins the Appalachian Trail and follows it for some three miles, crossing Arnold Bog and then traveling over a wooded ridge to reach West Carry Pond at Arnold Point. Ahead, the trail reaches its 1,519-foot high point just north of Roundtop Mountain before descending to cross Long Falls Dam Road on its way to Flagstaff Lake, which submerged the Dead River in 1950.</p>
+<p>Hikers can walk the Great Carrying Place Portage Trail in short segments, make it a long day hike, or turn it into an overnight journey with a stay at the AT lean-to on West Carry Pond. Clark recommends hiking the trail from east to west &#8220;to more closely emulate the experiences of the soldiers of the 1775 expedition.&#8221;</p>
+<p>The portage route over the Great Carrying Place was discovered and developed by Native Americans many centuries ago as a way to travel between the Maine coast and the St. Lawrence River, allowing them to bypass the dangerous rapids and falls on the Kennebec River above Caratunk.</p>
+<p>Heavily burdened, &#8220;Arnold&#8217;s men had to make as many as six trips between each segment of the portage,&#8221; explained Clark. &#8220;That&#8217;s 31/2 miles each way between the Kennebec River and East Carry Pond times six for a total of over 40 miles.&#8221;</p>
+<p>This grueling back and forth shuttling was then repeated between each of the three ponds en route before the Dead River was finally reached. Moving tons of heavy wooden boats (some 220 in all) and countless barrels of supplies and military equipment in this manner so depleted the troops that a small field hospital was hastily constructed near East Carry Pond to attend to the sick and disabled soldiers. It took Arnold&#8217;s army nearly two weeks to complete the portage, an amazing feat on its own.</p>
+<p>This year the AEHS overcame two major obstacles that allowed final completion of the trail: The National Park Service granted permission to utilize a portion of the Appalachian Trail between Sandy Stream and West Carry Pond, and Plum Creek allowed a right-of-way around the south end of West Carry Pond. The trail was then blazed with orange paint and directional signs erected.</p>
+<p>Hikers will want a copy of Clark&#8217;s trail booklet, available for $5. Another must-have is &#8220;Arnold&#8217;s Wilderness March,&#8221; a full-color map and guide ($6) to enjoying the 80-mile section of the expedition route between the Kennebec and Lac Megantic by car, canoe and foot. Get them both by writing to AEHS, 60 Burnham Road, Scarborough 04074. More info: arnoldsmarch.com.</p>
+<p><i>Carey Kish of Southwest Harbor is editor of the AMC Maine Mountain Guide. Follow Kish&#8217;s adventures in his Maineiac Outdoors blog at: </i></p>
+<p><i>mainetoday.com/blog/maineiac-outdoors. </i></p>
+</p>
+<div class="mobile-article-sidebar-wrapper">
+<div class="mobile-article-sidebar-1"></div>
+<div class="mobile-article-sidebar-2"></div>
+</div>
+<div class="article-social-sharing bottom">
+<div class="share-name">Share</div>
+<div class="facebook social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/facebook/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-fb-icon.png" alt="facebook">
+</a>
+</div>
+<div class="twitter social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/twitter/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F%3Fp%3D529729" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-twitter-icon.png" alt="tweet">
+</a>
+</div>
+<div class="email social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/email/offer?title=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-email-icon.png" alt="email">
+</a>
+</div>
+<div class="print social-button">
+<a href="/web/20160404101605/http://api.addthis.com/oexchange/0.8/forward/printfriendly/offer?title=&amp;pubid=ra-535983434d690928&amp;url=http%3A%2F%2Fwww.pressherald.com%2F2014%2F11%2F02%2Fcarey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold%2F" target="_blank">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/article-print-icon.png" alt="print">
+</a>
+</div> </div>
+<div class="comment-button comment-launch">
+<a onclick="ga('send', 'event', 'UI', 'click', 'articlebottom | viewcomments', {'nonInteraction': 1});">Read or Post Comments</a>
+</div>
+<div class="feedback clearfix">
+<p>Were you interviewed for this story? If so, please fill out our <a href="/web/20160404101605/http://www.pressherald.com/accuracy-form/?headline=Hiking+in+Maine%3A+Walking+in+the+footsteps+of+a+pre-traitorous+Benedict+Arnold&amp;pubdate=11%2F02%2F2014">accuracy form</a>
+</p>
+<p>
+<a href="/web/20160404101605/http://www.pressherald.com/feedback-form/">
+Send questions/comments to the editors. </a>
+</p>
+</div>
+</div>  
+</div>  
+<div class="mtm-ad-col-article" id="js-mtm-sidebar">
+<ul class="widget-sidebar">
+<li id="text-21" class="widget widget_text"> <div class="textwidget"> 
+<div class="addthis_horizontal_follow_toolbox"></div>
+<style>.addthis_horizontal_follow_toolbox{margin-bottom:20px;}#atftbx p{float:left;margin:6px 10px 0px 0px;font-family:'Open Sans',sans-serif;}</style></div>
+</li>
+<li id="acm_ad_zones-10" class="widget acm_ad_zones"> <div id="pos_2_atf_300x250-wrap" class="ad-wrapper">
+<div id='pos_2_atf_300x250' class="pos_2_atf_300x250">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('pos_2_atf_300x250'); });
+					</script>
+</div>
+</div>
+</li>
+<li id="acm_ad_zones-6" class="widget acm_ad_zones"> <div id="pos_6_atf_300x100-wrap" class="ad-wrapper">
+<div id='pos_6_atf_300x100' class="sticky-recover">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('pos_6_atf_300x100'); });
+					</script>
+</div>
+</div>
+</li>
+<div id="most-tabs">
+<ul class="most-tabs-button">
+<li class="thirds">
+<a href="#tabs-1">
+Recent </a>
+</li>
+<li class="thirds">
+<a href="#tabs-2">
+Read </a>
+</li>
+<li class="thirds">
+<a href="#tabs-3">
+Shared </a>
+</li>
+</ul>
+<div id="tabs-1">
+<ul>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/04/flashback-portlands-central-fire-station-1953/" onclick="ga('send', 'event', 'click', 'mostRecent', 'Flashback: Portland\'s Central Fire Station, 1953');">
+Flashback: Portland&#039;s Central Fire Station, 1953 </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/04/cruz-quietly-hits-kasich-wisconsin-campaigning/" onclick="ga('send', 'event', 'click', 'mostRecent', 'Cruz quietly hits Kasich in Wisconsin campaigning');">
+Cruz quietly hits Kasich in Wisconsin campaigning </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/04/interactive-map-tax-acquired-properties-portland/" onclick="ga('send', 'event', 'click', 'mostRecent', 'Interactive map: Tax acquired properties in Portland');">
+Interactive map: Tax acquired properties in Portland </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/04/ncaa-men-brothers-prepare-to-face-off-in-final/" onclick="ga('send', 'event', 'click', 'mostRecent', 'NCAA men: \'Brothers\' prepare to face off in final');">
+NCAA men: &#039;Brothers&#039; prepare to face off in final </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/04/trump-looks-to-regain-ground-as-new-battleground-emerges/" onclick="ga('send', 'event', 'click', 'mostRecent', 'Trump looks to re-establish dominance as Wisconsin battleground emerges');">
+Trump looks to re-establish dominance as Wisconsin battleground emerges </a>
+</h3>
+</li>
+</ul>
+</div>
+<div id="tabs-2">
+<ul>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/02/trade-deals-take-toll-in-key-election-states/" onclick="ga('send', 'event', 'click', 'mostRead', 'Trade deals costly in key election states');">
+Trade deals costly in key election states </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/01/lepage-refuses-to-swear-in-senator-elect-over-spat-with-democrats/" onclick="ga('send', 'event', 'click', 'mostRead', 'LePage refuses to swear in senator-elect over nomination spat with Democrats');">
+LePage refuses to swear in senator-elect over nomination spat with Democrats </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/03/31/giant-underground-ice-wall-switched-on-at-fukushima-nuclear-plant/" onclick="ga('send', 'event', 'click', 'mostRead', 'Giant underground ice wall switched on at Fukushima nuclear plant');">
+Giant underground ice wall switched on at Fukushima nuclear plant </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/01/will-taxpayers-bear-cost-of-coal-mine-mess/" onclick="ga('send', 'event', 'click', 'mostRead', 'Will taxpayers bear cost of coal mine mess?');">
+Will taxpayers bear cost of coal mine mess? </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2016/04/02/report-man-threatening-suicide-shot-by-westbrook-police-officer/" onclick="ga('send', 'event', 'click', 'mostRead', 'Armed man threatening suicide shot by Westbrook police officer');">
+Armed man threatening suicide shot by Westbrook police officer </a>
+</h3>
+</li>
+</ul>
+</div>
+<div id="tabs-3">
+<ul>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2015/11/26/estefans-to-feed-homeless-as-their-music-starts-macys-parade/" onclick="ga('send', 'event', 'click', 'mostShared', 'Estefans to feed homeless as their music starts Macy\'s parade');">
+Estefans to feed homeless as their music starts Macy&#039;s parade </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2015/11/02/seaweed-can-help-feed-world-will-eat/" onclick="ga('send', 'event', 'click', 'mostShared', 'Seaweed can help feed the world &ndash; but will we eat it?');">
+Seaweed can help feed the world – but will we eat it? </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2015/11/23/solidarity-harvest-corrals-massive-food-drive-to-feed-8000/" onclick="ga('send', 'event', 'click', 'mostShared', 'Solidarity Harvest corrals massive food drive to feed 8,000');">
+Solidarity Harvest corrals massive food drive to feed 8,000 </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2015/11/06/m-d-harmon-maines-legalized-gambling-amounts-to-swimming-with-sharks/" onclick="ga('send', 'event', 'click', 'mostShared', 'M.D. Harmon: Fantasy sports sites feed the unsuspecting to gambling\'s \'sharks\'');">
+M.D. Harmon: Fantasy sports sites feed the unsuspecting to gambling&#039;s &#039;sharks&#039; </a>
+</h3>
+</li>
+<li>
+<h3>
+<a href="/web/20160404101605/http://www.pressherald.com/2015/11/16/doctors-push-for-warnings-on-marijuana/" onclick="ga('send', 'event', 'click', 'mostShared', 'Doctors push for warnings on pot use during pregnancy, breast-feeding');">
+Doctors push for warnings on pot use during pregnancy, breast-feeding </a>
+</h3>
+</li>
+</ul>
+</div>
+</div>
+<li id="acm_ad_zones-11" class="widget acm_ad_zones"> <div id="pos_3_btf_300x250_300x600-wrap" class="ad-wrapper">
+<div id='pos_3_btf_300x250_300x600' class="%class%">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('pos_3_btf_300x250_300x600'); });
+					</script>
+</div>
+</div>
+</li>
+<li id="text-9" class="widget widget_text"> <div class="textwidget"><style>#gform_wrapper_305 .article-signup{background-image:url('/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/2015/01/breakingnews-newsletter.png');background-color:#fff;border:0px;padding-left:3%;box-shadow:0px 0px 0px #000 inset;padding-right:3%;padding-top:2%;padding-bottom:4.5%;width:97%;font-family:Helvetica neue,sans-serif;text-align:center!important;margin-top:14px;margin-bottom:14px;color:#fff!important;}#gform_wrapper_305 .article-signup .button{display:inline-block;margin-top:10px;padding:8px 22px;text-decoration:none;border:2px solid #008dde;background-color:#008dde;font-size:12px!important;font-weight:400;color:#fff;text-transform:uppercase;letter-spacing:3px;-webkit-transition-duration:.25s;transition-duration:.25s;cursor:pointer;}#gform_wrapper_305 .article-signup .button:hover{background-color:#fff;color:#008dde;-webkit-transition-duration:.25s;transition-duration:.25s;}#gform_wrapper_305 .article-signup #field_305_1 .gfield_label,#gform_wrapper_305 .article-signup #field_305_3 .gfield_label{display:none!important;}#gform_wrapper_305 .article-signup .email-field input{border:0px solid #ccc;padding:10px 35px;font-family:Georgia,"Times New Roman",Times,serif;font-size:16px;width:80%;margin:0 auto;color:#333;letter-spacing:.3px;font-style:italic;}#gform_wrapper_305 input#input_305_1{padding-top:14px;padding-bottom:14px;border:0px;width:96%;margin:0 auto;}#gform_wrapper_305 label#label_3_1{font-size:12px;}#gform_wrapper_305{margin-top:0px;}.article-signup .email-field input:focus{background-color:#CEE1EA;}#gform_wrapper_305 .article-signup .gform_footer.top_label{padding:0px!important;margin:0px!important;}#gform_wrapper_305 h3.gform_title span{text-transform:uppercase;font-size:14px;letter-spacing:1px;font-weight:200;display:block;margin-top:18px;}#gform_wrapper_305 .article-signup h3.gform_title,.article-signup h2.gform_title{font-size:32px!important;margin-bottom:4px;margin-top:12px;color:#fff;text-align:center;text-shadow:0px 0px 10px #000;}li#field_305_2{text-align:left;}#gform_wrapper_305 .gform_wrapper .gfield_checkbox li label,#gform_wrapper_305 .gform_wrapper .gfield_radio li label{font-size:13px;text-shadow:0px 0px 2px #000;}#gform_wrapper_305 .article-signup .gform_description{font-size:14px;letter-spacing:.3px;color:#fff;text-align:center;text-shadow:0px 0px 10px #000;}#gform_wrapper_305 .gform_wrapper ul.gfield_checkbox li,.gform_wrapper ul.gfield_radio li{margin-right:4%;font-size:14px;font-weight:400;text-transform:uppercase;}#gform_wrapper_305 .gform_wrapper ul.gfield_checkbox,#gform_wrapper_305 .gform_wrapper ul.gfield_radio{margin-top:14px!important;}#gform_wrapper_305 .gform_wrapper ul.gfield_checkbox a{color:#27aae1;}#field_305_2{display:none;}</style>
+<script>
+jQuery("#input_305_1").focus(function(){
+jQuery("#field_305_2").show();
+});
+</script></div>
+</li>
+<li id="text-12" class="widget widget_text"> <div class="textwidget"><script>
+
+
+jQuery(function(){
+if (jQuery(".article-sidebar").length <= 0){
+  jQuery(".photo-store").hide();
+}
+});
+</script>
+<style>@media screen and (max-width: 800px){.mtm-article .font-resize,.mtm-article-full-width .font-resize{display:block;position:absolute;margin-top:-70px;right:20px;}}.article-sidebar{clear:both;}.mtm-article .main-asset .image-crop{clear:both;}@media screen and (max-width: 532px) {.print.social-button{display:none;}}.article-social-sharing{height:15px;}</style>
+</div>
+</li>
+<li id="acm_ad_zones-79" class="widget acm_ad_zones"> <div id="pos_btf_8_300x250-wrap" class="ad-wrapper">
+<div id='pos_btf_8_300x250' class="%class%">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('pos_btf_8_300x250'); });
+					</script>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="mtm-article-comments">
+<p>Here at <strong>MaineToday Media</strong> we value our readers and are committed to growing our community by encouraging you to add to the discussion. </p>
+<p>To ensure conscientious dialogue we have implemented a strict no-bullying policy. To participate, you must follow our <a target="_blank" href="/web/20160404101605/http://www.pressherald.com/terms-use/">Terms of Use</a>. <a target="_blank" href="/web/20160404101605/http://www.pressherald.com/feedback/">Click here</a> to flag and report a comment that violates our terms of use.</p>
+<fb:comments href="http://www.pressherald.com/2014/11/02/carey-kish-walking-in-the-footsteps-of-a-pre-traitorous-benedict-arnold/"></fb:comments>
+</div>
+<div class="taboola-widgets clearfix">
+<div id='taboola-below-article-thumbs-mix' class="taboola-thumbs"></div>
+<script type="text/javascript">
+				if( (window.innerWidth < 501 && !document.cookie.match(/mspan_paywall_user/i)) || (window.innerWidth > 501 && !navigator.userAgent.match(/Trident.*rv[ :]*11\./)) ){
+				window._taboola = window._taboola || [];
+				_taboola.push({mode:'thumbs-1r', container:'taboola-below-article-thumbs-mix', placement:'below-article-thumbs', target_type:'mix'});
+			}
+		</script>
+<div id='taboola-below-article-text-links-mix' class="taboola-text"></div>
+<script type="text/javascript">
+				if( (window.innerWidth < 501 && !document.cookie.match(/mspan_paywall_user/i)) || (window.innerWidth > 501 && !navigator.userAgent.match(/Trident.*rv[ :]*11\./)) ){
+				window._taboola = window._taboola || [];
+				_taboola.push({mode:'hybrid-text-links-2c', container:'taboola-below-article-text-links-mix', placement:'below-article-text-links', target_type:'mix'});
+			}
+		</script>
+</div>
+</div>  
+</div>  
+<div class="mtm-footer">
+<div id="pos_btf_728x90-wrap" class="ad-wrapper">
+<div id='%tag%' class="%class%">
+<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('%tag%'); });
+					</script>
+</div>
+</div>
+<div class="TopPart">
+<div class="footer-logo">
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/uploads/header-images/pph-logo185x29.png" width="185" height="29" alt="Portland Press Herald"/>
+</div>
+<div class="footer-logo-white">
+<div class="mtm-mobile-footer-menu"></div>
+<img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/pph-white.png" alt="Portland Press Herald"/>
+</div>
+<div class="social">
+<a href="/web/20160404101605/https://www.facebook.com/pressherald" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-facebook-icon.png" alt="facebook"/></a>
+<a href="/web/20160404101605/https://twitter.com/PressHerald" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-twitter-icon.png" alt="twitter"/></a>
+<a href="/web/20160404101605/http://www.linkedin.com/company/the-portland-press-herald" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-linkedin-icon.png" alt="linkedin"/></a>
+<a href="/web/20160404101605/https://plus.google.com/+Pressherald/posts" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-google-icon.png" alt="google"/></a>
+<a href="/web/20160404101605/http://www.youtube.com/channel/UC0sPBv78fAj46b_AaU159qQ" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-youtube-icon.png" alt="youtube"/></a>
+<a href="/web/20160404101605/http://www.pressherald.com/feeds" target="_blank"><img src="/web/20160404101605im_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/images/footer-rss-icon.png" alt="rss"/></a>
+</div>
+<div class="back-to-top">
+BACK TO TOP
+</div>
+</div>
+<div class="Navigation">
+<ul>
+<li class="category">CUSTOMER SERVICE</li>
+<div class="menu-customer-service-container"><ul id="menu-customer-service" class="menu"><li id="menu-item-18707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18707 depth-0"><a target="_blank" href="/web/20160404101605/https://myaccount.pressherald.com/">My Account</a></li>
+<li id="menu-item-18747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18747 depth-0"><a target="_blank" href="/web/20160404101605/https://myaccount.pressherald.com/order/">Subscriptions</a></li>
+<li id="menu-item-513058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-513058 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/reader-services/home-delivery-help/">Home Delivery Help</a></li>
+<li id="menu-item-18766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18766 depth-0"><a target="_blank" href="/web/20160404101605/https://myaccount.pressherald.com/">Digital Subscriptions</a></li>
+<li id="menu-item-536989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-536989 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/reader-services/">Reader Services</a></li>
+<li id="menu-item-18781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18781 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/contact">Contact Us</a></li>
+<li id="menu-item-447179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447179 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-537530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-537530 depth-0"><a href="/web/20160404101605/http://mainetoday.mycapture.com/mycapture/index.asp">Purchase a Photo</a></li>
+</ul></div> </ul>
+<ul>
+<li class="category">CONNECT</li>
+<div class="menu-connect-container"><ul id="menu-connect" class="menu"><li id="menu-item-19101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19101 depth-0"><a href="/web/20160404101605/https://myaccount.pressherald.com/login.php">e-Edition</a></li>
+<li id="menu-item-19108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19108 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/mobile-products">Mobile</a></li>
+<li id="menu-item-19123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19123 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/newsletters">Email Newsletters</a></li>
+<li id="menu-item-536990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-536990 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/contact-advertising/">Contact Advertising</a></li>
+<li id="menu-item-19138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19138 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/feedback">Site Feedback</a></li>
+<li id="menu-item-19159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19159 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/staff-directory">Staff Directory</a></li>
+</ul></div> </ul>
+<ul>
+<li class="category">SITE INDEX</li>
+<div class="menu-site-index-container"><ul id="menu-site-index" class="menu"><li id="menu-item-537226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-537226 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/site-index">Full Site Index</a></li>
+<li id="menu-item-536993" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-536993 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/news/">News</a></li>
+<li id="menu-item-536997" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-536997 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/politics/">Politics</a></li>
+<li id="menu-item-536994" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-536994 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/business/">Business</a></li>
+<li id="menu-item-536995" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-536995 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/life/">Lifestyle</a></li>
+<li id="menu-item-536996" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-536996 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/opinion/">Opinion</a></li>
+<li id="menu-item-536998" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-536998 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/sports/">Sports</a></li>
+<li id="menu-item-537000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-537000 depth-0"><a href="/web/20160404101605/http://obituaries.pressherald.com/obituaries/mainetoday-pressherald/">Obituaries</a></li>
+<li id="menu-item-536999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-536999 depth-0"><a href="/web/20160404101605/http://contributors.pressherald.com/">Blogs</a></li>
+<li id="menu-item-537377" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-537377 depth-0"><a href="/web/20160404101605/http://video.pressherald.com/">Video</a></li>
+<li id="menu-item-537378" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-537378 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/uncategorized/"><br/></a></li>
+</ul></div> </ul>
+<ul>
+<li class="category">NETWORK</li>
+<div class="menu-network-container"><ul id="menu-network" class="menu"><li id="menu-item-16138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16138 depth-0"><a target="_blank" href="/web/20160404101605/http://www.pressherald.com/about">About MaineToday Media</a></li>
+<li id="menu-item-551314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551314 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/career-opportunities/">Work Here</a></li>
+<li id="menu-item-554434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-554434 depth-0"><a target="_blank" href="/web/20160404101605/http://mediakit.pressherald.com/">Media Kit</a></li>
+<li id="menu-item-554437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-554437 depth-0"><a href="/web/20160404101605/http://www.centralmaine.com/">CentralMaine.com</a></li>
+<li id="menu-item-554438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-554438 depth-0"><a href="/web/20160404101605/http://www.mainetoday.com/">MaineToday.com</a></li>
+<li id="menu-item-615465" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-615465 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/news/"><style>#most-tabs li:last-child{display:none;}.most-tabs-button li.thirds{width:49%;}.mtm-main-col .mtm-top-stories-masonry,.mtm-top-stories-masonry{overflow:visible;}.brightcove-wrap{padding-bottom:10px;}.BrightcoveExperience{position:relative;top:0;left:0;width:100%;height:auto;min-height:375px;}@media screen and (max-width: 600px) {.no-mobile{display:none;}}@media only screen and (max-width: 600px) {.paywall-callout{display:none!important;}.paywall-callout-leavebehind{display:none!important;}}.kicker{clear:both;}.mtm-top-stories-masonry li p{display:none;}.mtm-top-stories-masonry .related{margin-top:10px;}.mtm-top-stories-masonry .related ul li{display:none;}.mtm-top-stories-masonry .related ul li:first-child{display:block;margin-left:8px;}.mtm-top-stories-masonry .related ul li:first-child a{color:#000;padding-left:8px;letter-spacing:-.5px;}.mtm-featured .related ul li a{color:#000;}.mtm-featured .related ul{margin-left:6px;}</style></a></li>
+<li id="menu-item-661181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-661181 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/uncategorized/"><script async="async" data-client-id="rKdGlMfKPmTnTNY" type="text/javascript" src="/web/20160404101605js_/http://d3avqv6zaxegeu.cloudfront.net/abw.js"></script>  <script type="text/javascript">var mediaContent = "media\\:content,content"; jQuery(function() {jQuery('.btf-block').wrapAll('<div class="btf-container"></div>');});</script></a></li>
+<li id="menu-item-685175" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-685175 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/uncategorized/"><style>@media screen and (max-width: 800px) {.mtm-large-main-col .mtm-top-stories-masonry li:nth-child(odd){clear:left;}}</style></a></li>
+<li id="menu-item-685898" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-685898 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/uncategorized/"><style>@media screen and (max-width: 1030px) and (min-width: 801px) {.mtm-large-main-col .mtm-featured-package-b,.mtm-large-main-col .mtm-main-col{width:71%!important}}</style></a></li>
+<li id="menu-item-735688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-735688 depth-0"><a href="/web/20160404101605/http://www.pressherald.com/uncategorized/"><script>(function(){    if(typeof utils != 'undefined'){       return;    }    window.utils = {ZombieCookie : function(){} }; }());</script></a></li>
+</ul></div> </ul>
+</div>
+<div class="Copyright">
+&copy; 2016 MaineToday Media
+</div>
+</div>
+</div> 
+<div class="mtm-login-skin" style="">
+</div>
+  <script type="text/javascript">
+				if( (window.innerWidth < 501 && !document.cookie.match(/mspan_paywall_user/i)) || (window.innerWidth > 501 && !navigator.userAgent.match(/Trident.*rv[ :]*11\./)) ){			
+			window._taboola = window._taboola || [];
+			_taboola.push({flush:true});
+			}
+		</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=178078215650057";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+<script type='text/javascript' src='/web/20160404101605js_/http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201614'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MTMMailChimp = {"nonce":"99b81fef9b","action":"mtm_mailchimp_subscribe","ajaxurl":"/web/20160404101605/http://www.pressherald.com\/wp-admin\/admin-ajax.php"};
+var mtmSettings = {"isSingular":"true","isHome":"false","isComments":"false","url":"/web/20160404101605/http://www.pressherald.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/js/mainetoday.min.js?ver=0.6.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var paywall = {"global":{"count":"10","promo":"extra2","returnPath":"/web/20160404101605/http://www.pressherald.com\/wp-content\/themes\/mainetoday\/returnpath.php","currentPage":"/web/20160404101605/http://www.pressherald.com\/?p=529729","resetCode":"text","bypassCode":"APril16ful","isSingle":1}};
+var SlideDown_messages = ["Welcome. This is your 1st of 10 free articles.","","","","This is your 5th of 10 free articles.","","","","","This is your last free article."];
+var SlideDown_special = {"text":"","image":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-content/themes/mainetoday/assets/js/paywall.min.js?ver=0.6.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"mtmpph"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/web/20160404101605js_/http://www.pressherald.com/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+<script type='text/javascript' src='/web/20160404101605js_/http://stats.wp.com/e-201614.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.4.3',blog:'89363060',post:'529729',tz:'-4'} ]);
+	_stq.push([ 'clickTrackerInit', '89363060', '529729' ]);
+</script>
+<script type="text/javascript">
+		var addthis_config = {
+			data_ga_property: 'UA-10862716-1',
+			data_ga_social : true
+		};
+	</script>
+<script type="text/javascript">
+	var disqus_shortname = 'mtmpph';
+
+	(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+ </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a472c36f4c","applicationID":"3790852","transactionName":"MgdWYkVXWUVQAUIKXwtNYUReGRhfXwZTGx4VCkQ=","queueTime":0,"applicationTime":663,"ttGuid":"","agentToken":"","atts":"HkBVFA1NSks=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

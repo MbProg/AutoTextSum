@@ -1,0 +1,1347 @@
+<!doctype html>
+<!--[if !IE]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<!--[if IE]>
+<html class="ie" lang="en" xmlns="/web/20160523124904/http://www.w3.org/1999/xhtml">
+<![endif]-->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=229;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Ug8CUVVbGwcCV1ZVBgc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+		<link rel="search" type="application/opensearchdescription+xml" title="Course Hero" href="/open-search-description.xml" />
+	<title>St Pauls 12 South Transept Flashcards - Course Hero</title>
+	        <meta name="description" content="Vocabulary for St Pauls 12 South Transept. Find, create, and access  flashcards with Course Hero.">
+        <meta property="og:description" content="Vocabulary for St Pauls 12 South Transept. Find, create, and access  flashcards with Course Hero."/>
+            	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                    <meta property="og:image" content="https://www.coursehero.com/assets/img/coursehero_logo_600x600.png"/>
+        <meta property="og:title" content="St Pauls 12 South Transept Flashcards - Course Hero"/>
+                        <meta name="twitter:widgets:csp" content="on">
+        <meta name="apple-itunes-app" content="app-id=922208952">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+	<!-- CSS -->
+	        <link href='/web/20160523124904cs_/https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600%7CRoboto+Slab:400,300' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="/web/20160523124904cs_/https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+				<link href="/web/20160523124904cs_/https://www.coursehero.com//sym-assets/css/3839d05-f1794db.css" rel='stylesheet' type='text/css'/>
+				            <link rel="stylesheet" href="/web/20160523124904cs_/https://www.coursehero.com//sym-assets/css/a2496b6-0d3aa97.css">
+    
+	<!-- Head Javascript -->
+					<script src="/web/20160523124904js_/https://www.coursehero.com//sym-assets/js/f9a3f5a-5d022ad.js" type="text/javascript"></script>
+		
+                <script src="/web/20160523124904js_/https://cdn.optimizely.com/js/2642930221.js"></script>
+        
+				<script type="text/javascript">
+			//<![CDATA[
+			var AKSB = AKSB || {};
+			AKSB.q = [];
+			AKSB.mark = function(c, b) {
+				AKSB.q.push(["mark", c, b || (new Date).getTime()])
+			};
+			AKSB.measure = function(c, b, a) {
+				AKSB.q.push(["measure", c, b, a || (new Date).getTime()])
+			};
+			AKSB.done = function(c) {
+				AKSB.q.push(["done", c])
+			};
+			AKSB.mark("firstbyte", (new Date).getTime());
+			AKSB.prof = {
+				origin: true,
+				custid: "434776",
+				beaconrate: 100
+			};
+			(function(b) {
+				var a = document.createElement("iframe");
+				a.src = "javascript:false";
+				(a.frameElement || a).style.cssText = "width: 0; height: 0; border: 0; display: none";
+				var c = document.getElementsByTagName("script"),
+						c = c[c.length - 1];
+				c.parentNode.insertBefore(a, c);
+				a = a.contentWindow.document;
+				a.open().write("<body onload=\"var js = document.createElement('script');js.id = 'aksb-ifr';js.src = '" + b + "';document.body.appendChild(js);\">");
+				a.close()
+			})(("https:" === document.location.protocol ? "https:" : "http:") + "//ds-aksb-a.akamaihd.net/434776/aksb-a/aksb.min.js");
+			//]]>
+		</script>
+		
+            <link rel="shortcut icon" href="/web/20160523124904im_/https://www.coursehero.com/chfavicon.ico" type="image/x-icon" />
+        <script>/*DO NOT ALTER *** CourseHero.com*/(function(e){var t="1909",n=document,r,i,s={http:"/web/20160523124904/http://cdn.mplxtms.com/s/MasterTMS.min.js",https:"/web/20160523124904/https://secure-cdn.mplxtms.com/s/MasterTMS.min.js"},o=s[/\w+/.exec(window.location.protocol)[0]];i=n.createElement("script"),i.type="text/javascript",i.async=!0,i.src=o+"#"+t,r=n.getElementsByTagName("script")[0],r.parentNode.insertBefore(i,r),i.readyState?i.onreadystatechange=function(){if(i.readyState==="loaded"||i.readyState==="complete")i.onreadystatechange=null}:i.onload=function(){try{e()}catch(t){}}})(function(){});</script></head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "https://www.coursehero.com/flashcards/838411/St-Pauls-12-South-Transept/";
+
+var firstYear = 1996;
+var displayDay = "23";
+var displayMonth = "May";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://www.coursehero.com/flashcards/838411/St-Pauls-12-South-Transept/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160523124904" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Apr
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 12:49:04 May 23, 2016">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jun
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 12:49:04 May 23, 2016">23</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 12:49:04 May 23, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160523124904*/https://www.coursehero.com/flashcards/838411/St-Pauls-12-South-Transept/" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">23 May 16 - 23 May 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:4:000010000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!-- Google Tag Manager -->
+    <noscript><iframe src="/web/20160523124904if_/https://www.googletagmanager.com/ns.html?id=GTM-DK9F"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-DK9F');</script>
+    <!-- Wrapping Google Tag Management event firing code in a try/catch block -->
+    <script>
+        try{
+                    } catch (error){
+            if (typeof(console) !== 'undefined') {
+                console.error("[GTM-EVENT] ERROR: "+error);
+            }
+        }
+    </script>
+    <!-- End Google Tag Manager -->
+
+		<!--Mobile App Banner-->
+		        	<!-- End Banner -->
+	<header id="ch-header">
+				    <div class="ch-header_primary-nav_wrapper">
+    <nav class="ch-header_primary-nav_container">
+
+        <a  href="/web/20160523124904/https://www.coursehero.com/"  id="ch-header_logo">
+            <img src="/web/20160523124904im_/https://www.coursehero.com/assets/img/coursehero-logo.svg" alt="Course Hero logo"/>
+        </a>
+                                    <a href="#" id="ch-header_mobile-nav_action"><i class="fa fa-bars"></i></a>
+            <a href="#" id="ch-header_mobile-search_action"><i class="fa fa-search"></i></a>
+                        <div id="ch-header_product-user-nav_container">
+                                    <ul class="ch-header_primary-nav_group" id="ch-header_product-nav">
+            <li class="ch-header_primary-nav_list-item">
+            <a href="/web/20160523124904/https://www.coursehero.com/study-materials/">Study Resources <i class="icon-down-dir fa fa-caret-down"></i></a>
+            <ul class="ch-header_primary-subnav_group">
+                                                            <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/study-materials/">By School</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/subjects/">By Subject</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/standardized-tests/">By Standardized Tests</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/books/">By Book</a></li>
+                                                </ul>
+        </li>
+            <li class="ch-header_primary-nav_list-item">
+            <a href="/web/20160523124904/https://www.coursehero.com/tutors/homework-help/">Tutors <i class="icon-down-dir fa fa-caret-down"></i></a>
+            <ul class="ch-header_primary-subnav_group">
+                                                            <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/tutors/homework-help/">Get Homework Help</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/qa/about_tutors.php">About Tutors</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/qa/expert/landing.php">Become a Tutor</a></li>
+                                                </ul>
+        </li>
+            <li class="ch-header_primary-nav_list-item">
+            <a href="/web/20160523124904/https://www.coursehero.com/flashcards/">Flashcards <i class="icon-down-dir fa fa-caret-down"></i></a>
+            <ul class="ch-header_primary-subnav_group">
+                                                            <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/flashcards/browse/">Find Flashcards</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/flashcards/create.php" rel="nofollow">Create Flashcards</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/flashcards/">About Flashcards</a></li>
+                                                </ul>
+        </li>
+            <li class="ch-header_primary-nav_list-item">
+            <a href="/web/20160523124904/https://www.coursehero.com/earn-money/">Sharing <i class="icon-down-dir fa fa-caret-down"></i></a>
+            <ul class="ch-header_primary-subnav_group">
+                                                            <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/upload/marketplace/" rel="nofollow">Upload Documents</a></li>
+                                                                                <li class="ch-header_primary-subnav_list-item"><a href="/web/20160523124904/https://www.coursehero.com/qa/qa-builder/" rel="nofollow">Create Q&amp;As</a></li>
+                                                </ul>
+        </li>
+    </ul>
+                                                    <ul id="ch-header_user-nav_group" class="ch-header_primary-nav_group">
+    <li class="first ch-header_primary-nav_list-item blue-bg">
+        <a id="ch-header_primary-nav_login" data-ch-mixpanel-conversion-tracking="Nav Login" href="/web/20160523124904/https://www.coursehero.com/login.php?ref=login" rel="nofollow">Log-in</a>
+    </li>
+    <li id="ch-header_primary-nav_signup" class="ch-header_primary-nav_list-item">
+        <a href="/web/20160523124904/https://www.coursehero.com/registerForm.php" data-ch-mixpanel-conversion-tracking="Nav Signup" rel="nofollow">Sign Up</a>
+    </li>
+</ul>
+                            </div>
+                        </nav>
+</div>
+<script>
+    jQuery(document).ready(function(){
+        var responsive = new ResponsiveHeader();
+        responsive.init();
+    });
+</script>					<div id="ch-header_secondary-nav_wrapper" class="ch-header_secondary-nav_wrapper">
+    <div class="ch-header_secondary-nav_container">
+        <div id="ch-header_secondary-nav_search" class="for-marketplace">
+            <form action="/web/20160523124904/https://www.coursehero.com/search/results/" method="POST" data-ng-module="searchServices">
+                <div class="ch_h-search-form_input_container">
+                    <input type="hidden" name="header" value="v2">
+                    <input type="hidden" name="filters_product" value="documents">
+                    <input name="stx" type="search" class="ch_h-search-form_input" data-ch-smart-search placeholder="Search Course Hero"/>
+                </div>
+                <input type="submit" value="Search" class="ch_h-search-form-submit_button"/>
+            </form>
+        </div>
+        <ul id="ch-header_secondary-nav_group" class="for-marketplace">
+            <li class="ch-header_secondary-nav_list-item">
+                <a href="/web/20160523124904/https://support.coursehero.com/" data-ch-mixpanel-conversion-tracking="Nav Support"><i class="fa fa-life-ring"></i> Support</a>
+            </li>
+            <li class="ch-header_secondary-nav_list-item">
+                <a href="/web/20160523124904/https://www.coursehero.com/free-access/" data-ch-mixpanel-conversion-tracking="Nav Free Access"><i class="fa fa-gift"></i> Get Free Access</a>
+            </li>
+            <li class="ch-header_secondary-nav_list-item">
+                <a href="/web/20160523124904/https://www.coursehero.com/earn-money/" data-ch-mixpanel-conversion-tracking="Nav Earn Money"><i class="fa fa-dollar"></i> Earn Money</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+			</header>
+	<div id="ch-body">
+		<div data-ng-app="flashcardLanding" data-ng-controller="FlashcardCtrl as flashcard" data-ch-key-press-watcher>
+        <div data-ng-controller="RelatedCtrl">
+        <div class="fcp_title_wrapper">
+            <div class="fcp_title_container">
+                <h1 class="fcp_page_title">St Pauls 12 South Transept</h1>
+                <div class="fcp_taxonomy_container">
+                                    </div>
+            </div>
+        </div>
+        <div class="fcp_feature_tab-wrapper shepherd-target shepherd-element-attached-top shepherd-element-attached-center shepherd-target-attached-bottom shepherd-target-attached-center">
+            <div class="fcp_feature_tab-container">
+                <ul class="fcp_feature_tab-group">
+    <li>
+        <a href="#" class="fcp_feature_tab fcp_feature_tab-action" ng-click="flashcard.showTab('1')" ng-class="flashcard.activeTab == '1' ? 'highlighted' : ''" ch-event-tracker='["Tabs", "List of Terms"]'>
+            <i class="fa fa-fw fa-list-ul"></i> <strong>List<span> of Terms</span></strong>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="fcp_feature_tab fcp_feature_tab-action" ng-click="flashcard.showTab('2')" ng-class="flashcard.activeTab == '2' ? 'highlighted' : ''" ch-event-tracker='["Tabs", "Flip Flashcards"]'>
+            <i class="fcp_flashcards_icon"></i> <strong>Flip<span> Flashcards</span></strong>
+        </a>
+    </li>
+            <li>
+                <a href="#" ng-click="flashcard.redirectToOptimalLearn()" class=" fcp_feature_tab-action" ch-event-tracker='["Tabs", "Optimal Learn"]'>
+                    <i class="fa fa-fw fa-graduation-cap"></i> <strong><span>Optimal </span>Learn</strong>
+                    <span class="fcp_tab_tooltip">
+                                                Optimal Learn will design a customized study program to help you master this flashcard set by a given deadline.
+                                            </span>
+                </a>
+        </li>
+        <li>
+                    <a href="#" class="fcp_feature_tab-action" ng-click="flashcard.redirectToQuiz()" ch-event-tracker='["Tabs", "Take a Quiz"]'>
+                <i class="fa fa-fw fa-pencil-square-o"></i> <strong><span>Take a </span>Quiz</strong>
+            </a>
+          
+    </li>      
+</ul>            </div>
+        </div>
+        <div class="fcp_body_wrapper" data-ng-controller="RatingCtrl" data-ng-init="init('flashcard', 838411)">
+            <div data-ch-library-tagging-popup
+                 data-open="justFavorited"
+                 data-type="'flashcard'"
+                 data-id="838411"
+                 data-source-type="desktop"
+                 data-source-id="initial_flashcard_landing"
+            ></div>
+            <div class="fcp_body_container">
+                <main class="fcp_body_main">
+                    <div id="fcp_fullscreen_container" data-ch-full-screen>
+                            <div class="fcp_controls_toolbar">
+    <ul class="fcp_controls_button-group">
+        <li class="fcp_controls_list-item">
+            <a data-fcsid="838411" data-ng-click="flashcard.toggleFavorite()" class="fcp_controls_action" ng-class="flashcard.favorite ? 'fcp_controls_saved highlighted' : 'fcp_controls_save'" ch-event-tracker='["Toolbar", "Save to dashboard"]'>
+                <i data-ng-class="{'fa fa-spinner fa-spin': flashcard.loadingFavorite, 'fa fa-bookmark': !flashcard.loadingFavorite}"></i>
+                <span class="fcp_controls_tooltip">Save to dashboard</span>
+            </a>
+        </li>
+        <li class="fcp_controls_list-item">
+            <a ng-click="flashcard.redirectToEdit()" class="fcp_controls_action fcp_edit_action" ch-event-tracker='["Toolbar", "Edit these flashcards"]'>
+                <i class="fa fa-pencil"></i>
+                <span class="fcp_controls_tooltip">Edit these flashcards</span>
+            </a>
+        </li>
+        <li class="fcp_controls_list-item fcp_group_control" ng-hide="flashcard.groups.length == 0">
+            <a class="fcp_controls_action" href="" onclick="return false;">
+                <i class="fa fa-plus"></i>
+                <i class="fa fa-users"></i>
+            </a>
+            <ul class="fcp_add-group_list">
+                <li ng-repeat="group in flashcard.groups">
+                    <a href="#" class="fcp_group_toggle" ng-class="{highlighted: group.added }" ng-click="flashcard.toggleFlashcardGroup($index)" ch-event-tracker='["Toolbar", "Add to group"]'>
+                        {[ group.name ]}
+                        <i class="fa fa-check"></i>
+                    </a>
+                </li>
+            </ul>
+        </li>
+                    <li class="fcp_controls_list-item fcp_print_control">
+                <a class="fcp_controls_action" href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=printing" ch-event-tracker='["Toolbar", "Print icon"]'>
+                    <i class="fa fa-print"></i>
+                </a>
+                <ul class="fcp_print_list">
+                                            <li class="fcp_print_upgrade">
+                            <a href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=printing" ch-event-tracker='["Toolbar", "Upgrade for print"]'>
+                                Only Premier members can use this feature. Upgrade your membership to print this set.
+                            </a>
+                        </li>
+                                        <li>
+                        <a                                      href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=printing" class="disabled"
+                             ch-event-tracker='["Toolbar", "Print option 1"]'>
+                            <img class="fcp_print_icon" src="/web/20160523124904im_/https://www.coursehero.com/assets/img/flashcards/flashcard-print-options/large.png" alt="Flashcards on a page"/>
+                            <strong>Option 1: Large</strong>
+                             <span class="fcp_print_desc">
+                                    Terms on one side and Definitions on other side of the page
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a                                      href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=printing" class="disabled"
+                             ch-event-tracker='["Toolbar", "Print option 2"]'>
+                            <img class="fcp_print_icon" src="/web/20160523124904im_/https://www.coursehero.com/assets/img/flashcards/flashcard-print-options/large.png" alt="Flashcards on a page"/>
+                            <strong>Option 2: Large</strong>
+                            <span class="fcp_print_desc">
+                                    Terms and Definitions side by side on the same page
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a                                      href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=printing" class="disabled"
+                             ch-event-tracker='["Toolbar", "Print index card"]'>
+                            <img class="fcp_print_icon" src="/web/20160523124904im_/https://www.coursehero.com/assets/img/flashcards/flashcard-print-options/index-card.png" alt="Index card" />
+                            <strong>3" x 5" index card</strong>
+                            <span class="fcp_print_desc">
+                                    Index card size with Terms on one side and Definition on other side.
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+                <li class="fcp_controls_list-item fcp_fullscreen_control">
+            <a href="" id="fcp_fullscreen_action" class="fcp_controls_action" data-ng-click="flashcard.toggleFullscreen()" ch-event-tracker='["Toolbar", "Fullscreen"]'>
+                <i class="fa fa-expand" data-ng-class="{'fa-compress' : flashcard.isFullscreen}"></i>
+                <span class="fcp_controls_tooltip">
+                    Fullscreen
+                </span>
+            </a>
+        </li>
+                    <li class="fcp_controls_list-item fcp_keyboard_control" ng-if="flashcard.activeTab == 2" ng-cloak>
+                <a href="" onclick="return false;" class="fcp_controls_action" ch-event-tracker='["Toolbar", "Keyboard Shortcuts"]'>
+                    <i class="fa fa-keyboard-o"></i>
+                    <span class="fcp_controls_tooltip fcp_shortcuts_tooltip">
+                        <ul>
+                            <li>Keyboard Shortcuts:</li>
+                            <li><i class="fa fa-arrow-left fcp_highlight"></i> Previous</li>
+                            <li><i class="fa fa-arrow-right fcp_highlight"></i> Next</li>
+                            <li><i><strong class="fcp_highlight">F</strong></i> Flip card</li>
+                        </ul>
+                    </span>
+                </a>    
+            </li>
+            </ul>
+    <ul class="fcp_ratings_button-group">
+         <li class="fcp_ratings_list-item" >
+            <a class="fcp_ratings_action helpful" data-ng-class="{'highlighted': getUserRating().is_like}" data-ng-click="flashcard.redirectToLoginIfLoggedOut('rating'); upvote()" ch-event-tracker='["Toolbar", "Helpful"]'>
+                <i data-ng-class="{'fa fa-spinner fa-spin': isLoading('like'), 'fa fa-thumbs-up': !isLoading('like')}"></i>
+                <span class="fcp_ratings_tooltip" data-ng-cloak>Helpful | {[ getHelpfuls() ]}</span>
+            </a>
+        </li>
+        <li class="fcp_ratings_list-item" >
+            <a class="fcp_ratings_action unhelpful" data-ng-class="{'highlighted': getUserRating().is_dislike}" data-ng-click="flashcard.redirectToLoginIfLoggedOut('rating'); downvote()" ch-event-tracker='["Toolbar", "Unhelpful"]'>
+                <i data-ng-class="{'fa fa-spinner fa-spin': isLoading('dislike'), 'fa fa-thumbs-down': !isLoading('dislike')}"></i>
+                <span class="fcp_ratings_tooltip" data-ng-cloak>Unhelpful | {[ getUnhelpfuls() ]}</span>
+            </a>
+        </li>      
+    </ul>
+            <a class="fcp_premier_action" href="/web/20160523124904/https://www.coursehero.com/flashcards/upgrade_premier.php?lead=get_premier_button" ch-event-tracker='["Toolbar", "Get Premier"]'>Get Premier Features
+            <span class="fcp_controls_tooltip fcp_premier_tooltip">Premier flashcard features include: <br />
+                <i class="fa fa-check fcp_highlight"></i> Private flashcard sets <br />
+                <i class="fa fa-check fcp_highlight"></i> Unlimited image uploads <br />
+                <i class="fa fa-check fcp_highlight"></i> Private groups and stats <br />
+                <i class="fa fa-check fcp_highlight"></i> Printing flashcard sets <br />
+            </span>
+        </a>
+        <div class="fcp_show-both_container sessionFlashCardShowBoth" ng-show="flashcard.activeTab == 2">
+        <label class="fcp_show-both_label" for="fcp_show-def_checkbox"><input type="checkbox" id="fcp_show-def_checkbox" ng-model="flashcard.showBothSide" ch-event-tracker='["Toolbar", "Show both sides"]'/> Show both sides</label>
+    </div>
+</div>
+                        <div id="fcp_flashcard_feature_1" data-ng-show="flashcard.activeTab == '1'" class="fcp_flashcard_feature list">
+                            <table class="fcp_list_table" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <thead>
+        <tr>
+            <th>Terms</th>
+            <th>Definitions</th>
+        </tr>
+    </thead>
+</table> 
+<div class="fcp_list-scrollable_wrapper">
+    <table id="fcp_list_terms_table" class="fcp_list_table" ch-flashcard-list>
+        <tbody>
+                            <tr id="flashcard-row-0" class="active">
+                    <td id="fc-term-0" class="fcp_list_terms">
+                                                    When &amp; where was Horatio Nelson born ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            1758   -   Norfolk  -  suffered from Seasickness
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-1" >
+                    <td id="fc-term-1" class="fcp_list_terms">
+                                                    What relation was Nelson&#039;s mother to Sir Robert Walpole ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Grandniece
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-2" >
+                    <td id="fc-term-2" class="fcp_list_terms">
+                                                    What did Nelson do in 1800 in the North Pole ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Pursued a polar bear, before being ordered to return to the ship.  On being questioned why, he replied that &quot;I wished, Sir, to get the skin for my father.”
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-3" >
+                    <td id="fc-term-3" class="fcp_list_terms">
+                                                    What happened to Nelson in the battle to conquer Santa Cruz de Tenerife ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            He lost his right arm
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-4" >
+                    <td id="fc-term-4" class="fcp_list_terms">
+                                                    What happened to Nelson in the battle in Corsica ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Lost the sight of his right eye
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-5" >
+                    <td id="fc-term-5" class="fcp_list_terms">
+                                                    Where was Nelson shot &amp; killed ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            On board the deck of HMS Victory at the Battle of Trafalgar in 1805  -  By a French sharpshooter
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-6" >
+                    <td id="fc-term-6" class="fcp_list_terms">
+                                                    What was known as  ‘The Nelson Touch’ ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            His battle plan  -   Nelson broke up his fleet into two sections  -  one attacked from the rear while the other smashed through the front, cutting the enemy line in half
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-7" >
+                    <td id="fc-term-7" class="fcp_list_terms">
+                                                    What was Nelson&#039;s signal ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            &quot;England expects that every man will do his duty&quot;  -  referenced up to the modern day  -  most famous signal in naval history
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-8" >
+                    <td id="fc-term-8" class="fcp_list_terms">
+                                                    Who &amp; where did Nelson marry ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Frances &quot;Fanny&quot; Nisbet  -  1787
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-9" >
+                    <td id="fc-term-9" class="fcp_list_terms">
+                                                    Who was Nelson introduced to during the negotiations for reinforcements in Naples ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            William Hamilton&#039;s new wife, Emma Hamilton  -  British ambassador to the kingdom
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-10" >
+                    <td id="fc-term-10" class="fcp_list_terms">
+                                                    How was Nelson standing on the deck of HMS Victory when he was shot ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            In full view in his admiral’s uniform &amp; decorations  -  like a sitting duck
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-11" >
+                    <td id="fc-term-11" class="fcp_list_terms">
+                                                    What were nelson&#039;s last words ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            “Thank God I have done my duty”
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-12" >
+                    <td id="fc-term-12" class="fcp_list_terms">
+                                                    How many British ships were at the Battle of Trafalgar ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            27 British ships  -   defeated  33  French and Spanish  -  22  French and Spanish lost  -  all the British ships survived
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-13" >
+                    <td id="fc-term-13" class="fcp_list_terms">
+                                                    What colour did Nelson order his ships to be painted ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Yellow &amp; black
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-14" >
+                    <td id="fc-term-14" class="fcp_list_terms">
+                                                    Who sculpted the Nelson monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            John Flaxman    1808 - 1818
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-15" >
+                    <td id="fc-term-15" class="fcp_list_terms">
+                                                    How can we see Nelson in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            In his peer’s robes,  with his left hand resting on an anchor which rests in turn on a coil of rope
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-16" >
+                    <td id="fc-term-16" class="fcp_list_terms">
+                                                    What is Nelson standing on in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            On a large cylindrical plinth with a frieze of sea Gods
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-17" >
+                    <td id="fc-term-17" class="fcp_list_terms">
+                                                    What can be seen on the right side of the plinth in Nelson&#039;s monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A British lion crouches ferociously
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-18" >
+                    <td id="fc-term-18" class="fcp_list_terms">
+                                                    What can be seen on the right side of the frieze in Nelson&#039;s monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A sphinx   -   a reference to Nelson’s victory at the Battle of the Nile in 1798
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-19" >
+                    <td id="fc-term-19" class="fcp_list_terms">
+                                                    What can be seen on the left of Nelson in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Figure of Britannia, in helmet and Greek dress, points to the hero, drawing the attention of two young boys to him, and commending his example  -  boy is holding Sextant an optical instrument used in navigation
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-20" >
+                    <td id="fc-term-20" class="fcp_list_terms">
+                                                    Who was Charles, Marquess Cornwallis ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A British Army officer and colonial administrator
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-21" >
+                    <td id="fc-term-21" class="fcp_list_terms">
+                                                    What is Cornwallis best remembered for in the American war of independent ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            1781  surrender of Yorktown,  Virginia  -  captured and exchanged for Henry Laurens
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-22" >
+                    <td id="fc-term-22" class="fcp_list_terms">
+                                                    Beside America where else did Cornwallis serve ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A civil and military governor in  Ireland  &amp;  India  -  1801  -  Act of Union in Ireland
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-23" >
+                    <td id="fc-term-23" class="fcp_list_terms">
+                                                    Where did Cornwallis die &amp; buried ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Gauspur  -  India
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-24" >
+                    <td id="fc-term-24" class="fcp_list_terms">
+                                                    How is Cornwallis seen in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            He stands on a tall fluted plinth,  dressed as Knight of the Garter  -  sculptor John  Rossi
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-25" >
+                    <td id="fc-term-25" class="fcp_list_terms">
+                                                    What can be seen in front of Cornwallis in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A female figure grieving below
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-26" >
+                    <td id="fc-term-26" class="fcp_list_terms">
+                                                    Who is seated on the left to Cornwallis monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Britannia seated  -  Union Jack on her shield
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-27" >
+                    <td id="fc-term-27" class="fcp_list_terms">
+                                                    What can be seen on the right side of Cornwallis in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            A male nude wearing beads with his head bowed solemnly
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-28" >
+                    <td id="fc-term-28" class="fcp_list_terms">
+                                                    What is inscribed on the cylindrical plinth in Nelson&#039;s monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Copenhagen  -  Nile  -  Trafalgar
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-29" >
+                    <td id="fc-term-29" class="fcp_list_terms">
+                                                    How is Nelson immortalised in his monument ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            As a fearless leader looking to the horizon,  his face without emotion
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                            <tr id="flashcard-row-30" >
+                    <td id="fc-term-30" class="fcp_list_terms">
+                                                    Where can we see HMS Victory ?
+                                            </td>
+                    <td class="fcp_list_definition">
+                        <div class="fcp_list_definition_content">
+                            Portsmouth Historic Dockyard   -   built in Chatham Dockyard
+                        </div>
+
+                        
+                                            </td>
+                </tr>
+                    </tbody>
+    </table>
+</div>    
+  
+                        </div>
+                        <div id="fcp_flashcard_feature_2" data-ng-show="flashcard.activeTab == '2'" class="fcp_flashcard_feature flashcard" data-ng-cloak>
+                            <div class="fcp_flashcard_group">
+    <div class="fcp_flashcard_main">
+        <div class="fcp_flashcard_progress">
+            <div id="fcp_flashcard_progress_value" class="fcp_flashcard_progress_value" style="width: {[ ((flashcard.currentCard + 1 ) / flashcard.lengthOfFlashcards) * 100 ]}%;"></div>
+            <span id="fcp_flashcard_tracker" class="fcp_flashcard_tracker"><span data-ng-bind="flashcard.currentCard + 1"></span> / 31</span>
+        </div>
+        <div class="fcp_3d_flipper" hm-tap="flashcard.toggleFlip()" hm-swipe-left="flashcard.changeCard(1)" hm-swipe-right="flashcard.changeCard(-1)" data-ng-class="flashcard.flip ? 'flip' : ''">
+            <div class="fcp_flashcard_front">
+                <div class="fcp_term_title">Term:</div>
+                <div class="fcp_term_text solo" data-ng-bind-html="flashcard.flashcards[flashcard.currentCard].term"></div>
+                <div class="fcp_definition_section" data-ng-show="flashcard.showBothSide">
+                    <div class="fcp_term_title">Definition:</div>
+                    <div class="fcp_definition_text" data-ng-bind-html="flashcard.flashcards[flashcard.currentCard].definition"></div>
+                </div>
+            </div>
+            <div class="fcp_flashcard_back">
+                <div class="fcp_term_title">Definition:</div>
+                <div class="fcp_definition_text" data-ng-bind-html="flashcard.flashcards[flashcard.currentCard].definition"></div>
+            </div>
+        </div>
+        <div class="fcp_flashcard_helpers">
+            <div class="fcp_sentence_section" data-ng-show="flashcard.flashcards[flashcard.currentCard].sentence">
+                <span class="fcp_helpers_prompt-icon"><i class="fa fa-align-left"></i></span>
+                <a class="fcp_show_sentence" href="#" data-ng-click="flashcard.toggleShowSentence()" data-ch-event-tracker='["Content", "Toggle sentence"]'>
+                    <span data-ng-hide="flashcard.showSentence">Show</span>
+                    <span data-ng-show="flashcard.showSentence">Hide</span> example sentence
+                </a>
+                                <div id="fcp_sentence_container" class="fcp_sentence_container" data-ng-show="flashcard.showSentence">
+                    <div class="fcp_sentence_title"><strong>Example Sentence:</strong>
+                        <span class="fcp_sentence_text" data-ng-bind-html="flashcard.flashcards[flashcard.currentCard].sentence"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fcp_hint_section" data-ng-show="flashcard.flashcards[flashcard.currentCard].hint">
+                <span class="fcp_helpers_prompt-icon"><i class="fa fa-question-circle"></i></span>
+                <a class="fcp_show_hint" href="#" data-ng-click="flashcard.toggleShowHint()" data-ch-event-tracker='["Content", "Toggle hint"]'>
+                    <span data-ng-hide="flashcard.showHint">Show</span>
+                    <span data-ng-show="flashcard.showHint">Hide</span> hint
+                </a>
+                                <div class="fcp_hint_container" data-ng-show="flashcard.showHint">
+                    <div class="fcp_hint_title"><strong>Hint:</strong>
+                        <span class="fcp_hint_text" data-ng-bind-html="flashcard.flashcards[flashcard.currentCard].hint"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fcp_flashcard_options">
+        <a href="#" class="fcp_flashcard_prev" data-ng-class="flashcard.lengthOfFlashcards == 1 ? 'disabled' : ''" data-ng-click="flashcard.changeCard(-1)" data-ch-event-tracker='["Content", "Prev card"]'><i class="fa fa-fw fa-chevron-left"></i></a>
+        <a href="#" class="fcp_flashcard_flip" data-ng-click="flashcard.toggleFlip()" data-ch-event-tracker='["Content", "Flip card"]'>Flip Card</a>
+        <a href="#" class="fcp_flashcard_next" data-ng-class="flashcard.lengthOfFlashcards == 1 ? 'disabled' : ''" data-ng-click="flashcard.changeCard(1)" data-ch-event-tracker='["Content", "Next card"]'><i class="fa fa-fw fa-chevron-right"></i></a>
+    </div>
+</div>                        </div>
+                    </div>
+                </main>
+                <aside class="fcp_sidebar">
+                                            <div data-ng-include="'/user_widget/flashcards/100000756431573/'">
+    </div>
+<div class="fcp_about_panel">
+    <h2>About these Flashcards</h2>
+    <ul class="fcp_about_bundle">
+                <li>
+            <label>NO. OF TERMS</label>
+            31
+        </li>
+        <li>
+            <label>UPLOAD DATE</label>
+            December 9th, 2015
+        </li>
+                        <li>
+            <label>SHARE</label>
+            <a class="fcp_email_button" href="mailto:?subject=I%20thought%20you%20would%20like%20these%20flashcards&amp;body=I%20would%20like%20to%20share%20these%20flashcards%20with%20you%21%0A%0Ahttp%3A%2F%2Fwww.coursehero.com%2Fflashcards%2F838411%2FSt-Pauls-12-South-Transept%2F" data-ch-event-tracker='["Sidebar", "Email"]'>
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a class="fcp_twitter_button" data-ng-href="https://twitter.com/intent/tweet?text={[ flashcard.encodedTweetShareMsg ]}" data-ch-event-tracker='["Sidebar", "Twitter"]'><i class="fa fa-twitter"></i></a>
+            <a class="fcp_facebook_button" data-ng-click="flashcard.shareOnFacebook($event)" href="#" data-ch-event-tracker='["Sidebar", "Facebook"]'><i class="fa fa-facebook"></i></a>
+        </li>
+                    <div class="ch_flag_container">
+                <a class="ch_flagDocLanding_action" href="/web/20160523124904/https://www.coursehero.com/registerForm.php?login_user_type=document&amp;user_action=flag&amp;user_action_id=838411" rel="nofollow"><i class="fa fa-fw fa-flag"></i>Report</a>
+    </div>
+  
+
+        <link rel="stylesheet" href="/web/20160523124904cs_/https://www.coursehero.com//sym-assets/css/975d9b4-e7a0c50.css">
+    
+            </ul>
+</div>
+
+<div class="fcp_teachers_panel">
+    <p>
+        <strong>For Teachers:</strong><br />
+        Help your students learn more effectively. <a href="/web/20160523124904/https://www.coursehero.com/flashcards/teachers.php" data-ch-event-tracker='["Sidebar", "For Teachers"]'>Find out how <i class="fa fa-chevron-right"></i></a>
+    </p>
+</div>
+
+<div class="fcp_mobile_panel">
+    <p>
+        <strong>Study these flashcards on your mobile device.</strong> <br /><a href="/web/20160523124904/https://www.coursehero.com/flashcards/mobile-apps.php" data-ch-event-tracker='["Sidebar", "Mobile apps"]'>View our list of apps <i class="fa fa-chevron-right"></i></a>
+    </p>
+</div>
+                </aside>
+            </div>
+        </div>
+        <!--googleoff: snippet-->
+        <section class="ch_comments_section" data-ng-class="{ flashcard: resourceType === 'flashcard', question: resourceType === 'question' }" data-ng-controller="CommentController" data-ng-cloak data-ng-init="init('flashcard', 838411, 0, 1)">
+    <div data-ng-show="show && (enabled || getComments().length > 0)">
+        <h4 data-ng-if="enabled">Leave a Comment ({[ getComments().length ]})</h4>
+        <h4 data-ng-if="!enabled">Comments ({[ getComments().length ]})</h4>
+        <div class="ch_comments_panel">
+            <div data-ng-if="enabled">
+                <a name="comments"></a>
+                <textarea placeholder="Leave your comment here..." data-ng-model="comment.comment"></textarea>
+                <a data-ng-show="!isSubmitting()" class="ch_comments-submit_button" href="" data-ng-click="submit()">Submit</a>
+                <a data-ng-show="isSubmitting()" class="ch_comments-submit_button" href=""><span class="fa fa-spinner fa-spin"></span></a>
+                <a class="ch_comments-cancel_button" href="" data-ng-click="comment.comment = ''">Cancel</a>
+            </div>
+            <div class="ch_comments" data-ng-repeat="comment in getComments()" data-ng-show="expanded || comment == getComments()[0]">
+                <strong>{[comment.username]}</strong> <span class="dotSeparator">•</span>
+                <strong class="ch_comments_time"><span data-livestamp="{[ comment.created_on ]}"></span></strong>
+                <p>
+                    {[ comment.comment ]}
+                </p>
+            </div>
+            <a data-ng-show="getComments().length > 1" class="ch_more-comments_link" href="" data-ng-click="expanded=!expanded">
+                <span data-ng-hide="expanded">View All {[ getComments().length ]} Comments</span>
+                <i class="fa " data-ng-class="{'fa-chevron-down': !expanded, 'fa-chevron-up':expanded}"></i>
+            </a>
+        </div>
+    </div>
+</section>
+        <div class="fcp_related_wrapper" data-ng-show="!hideAllRelated">
+            <section class="fcp_related_container">
+                <h3 class="fcp_section_heading gray"><span>Related Study Resources</span></h3>
+                <div class="ch_h-search-form_container">
+    <form action="/web/20160523124904/https://www.coursehero.com/search_result.php" method="GET" >
+        <div class="ch_h-search-form_input_container">
+            <input type="hidden" name='header' value="v2"/>
+            <input type="hidden" name='filters_product' value=""/>
+            <input name="stx" type="search" class="ch_h-search-form_input" data-ch-smart-search placeholder="Search Course Hero"/>
+        </div>
+                <input type="submit" value="Search" class="ch_h-search-form-submit_button" data-ch-event-tracker='["Horizontal Search", "Search"]' />
+    </form>
+</div>
+                            </section>
+        </div>
+        <!--googleon: snippet-->
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.fcsid = "838411";
+    window.favorite = false;
+        window.loggedIn = false;
+    window.embedded = false;
+    window.groups = '[]';
+    window.activeTab = "1";
+    window.gaqPageName = "Flashcard Landing Page - New";
+    window.isReturnedUser = false;
+    window.tweetShareMsg = "Try the 'St-Pauls-12-South-Transept' flashcard! /web/20160523124904/http://www.coursehero.com/flashcards/838411/St-Pauls-12-South-Transept/";
+    window.hasRelatedFlashcards = false;
+    // needed for the tagger directive
+    var _tagger_school = '';
+    var FULL_TITLE = "St Pauls 12 South Transept Flashcards - Course Hero";
+    var LIBRARY_TAGGING_TITLE = "You have favorited " + "St Pauls 12 South Transept" + ".";
+</script>
+
+
+
+	</div>
+
+			<div id="ch-footer" class="ch-wrapper">
+            <div class="ch-trust-seals_wrapper">
+            <div class="ch-trust-seals_container">
+                <a target="_blank"
+                   href="javascript:window.open('/web/20160523124904/https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.coursehero.com&amp;lang=en', 'SymantecSeal', 'location=yes,status=yes,resizable=yes,scrollbars=yes,width=560,height=500');"
+                   rel="nofollow"
+                   class="ch-trust-seals_verisign-icon"
+                        ></a>
+                <span class="ch-trust-seals_bbb-icon"></span>
+                <div id="fb2f890b-c797-4871-8a9b-d0350de5fd5f" class="ch-trust-seals_truste-icon">
+                    <script type="text/javascript" src="/web/20160523124904js_/https://privacy-policy.truste.com/privacy-seal/Course-Hero/asc?rid=fb2f890b-c797-4871-8a9b-d0350de5fd5f">
+                    </script>
+                    <a href="/web/20160523124904/https://privacy.truste.com/privacy-seal/CourseHero/validation?rid=a50533b3-15e2-472e-a9fc-0fcdc0471ef1"
+                       title="TRUSTe online privacy certification" target="_blank">
+                        <img style="border: none" src="/web/20160523124904im_/https://privacy-policy.truste.com/privacy-seal/Course-Hero/seal?rid=a50533b3-15e2-472e-a9fc-0fcdc0471ef1" alt="TRUSTe online privacy certification"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ch-footer-links_wrapper">
+                    <ul class="ch-footer-links_container" id="ch-footer-links_container">
+                <li>
+                    <h6>Company</h6>
+                    <a href="/web/20160523124904/https://www.coursehero.com/about-us/">About Us</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/blog/">Blog</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/sitemap/">Sitemap</a>
+                    <!--<a href="/api/intro.php">API</a>-->
+                </li>
+                <li>
+                    <h6>Get Course Hero</h6>
+                    <a href="/web/20160523124904/https://itunes.apple.com/us/app/course-hero/id922208952?mt=8" target="_blank">iOS</a>
+                    <a href="/web/20160523124904/https://play.google.com/store/apps/details?id=com.coursehero.coursehero&amp;hl=en" target="_blank">Android</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/teachers/">Teachers</a>
+                </li>
+                <!--<li>
+                    <h6>Resources</h6>
+                    <a href="/sitemap/">Sitemap</a>
+                </li>-->
+                <li>
+                    <h6>Careers</h6>
+                    <a href="/web/20160523124904/https://www.coursehero.com/our-team/" rel="nofollow">Our Team</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/jobs/" rel="nofollow">Jobs</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/business-internship/" rel="nofollow">Internship</a>
+                </li>
+                <li>
+                    <h6>Help</h6>
+                    <a href="/web/20160523124904/https://support.coursehero.com/" rel="nofollow">Contact Us</a>
+                    <a href="/web/20160523124904/https://support.coursehero.com/">FAQ</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/feedback.php">Feedback</a>
+                </li>
+                <li>
+                    <h6>Legal</h6>
+                    <a href="/web/20160523124904/https://www.coursehero.com/copyright/">Copyright Policy</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/honor-code/">Honor Code</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/privacy-policy/" rel="nofollow">Privacy Policy</a>
+                    <a href="/web/20160523124904/https://www.coursehero.com/terms-of-use/" rel="nofollow">Terms of Use</a>
+                </li>
+                <li>
+                    <h6>Connect with Us</h6>
+                    <a href="/web/20160523124904/https://www.facebook.com/coursehero" target="_blank">Facebook</a>
+                    <a href="/web/20160523124904/https://twitter.com/CourseHero" target="_blank">Twitter</a>
+                    <a href="/web/20160523124904/https://www.linkedin.com/company/course-hero-inc." target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+                <div class="ch-copyright_wrapper">
+            <div class="ch-copyright_container">
+                <p class="ch-copyright_info">
+                    Copyright © 2016. Course Hero, Inc.
+                                    </p>
+                <p class="ch-copyright_fyi">Course Hero is not sponsored or endorsed by any college or university.</p>
+            </div>
+        </div>
+    </div>
+
+            <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1389869-2']);
+    _gaq.push(['_setCustomVar', 1, 'usertype', "visitor", 2]);
+    _gaq.push(['_setCustomVar', 2, 'conversion', "false", 2]);
+        if (typeof utmx !== 'undefined' && utmx('combination') != undefined) {
+        var l = document.location, s = l.search;
+        s = s + (s.length ? '&' : '?') + 'combination=' + utmx('combination');
+        _gaq.push(['_trackPageview', l.pathname + s]);
+    } else{
+        _gaq.push(['_trackPageview']);
+    }
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? '/web/20160523124904/https://ssl' : '/web/20160523124904/http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+
+<script type="text/javascript">
+    
+    adroll_adv_id = "RMA4JRK3LBCRFDGPVVO45A";
+    adroll_pix_id = "4D6DGYEGP5GENH5XDDV55J";
+    (function () {
+        var oldonload = window.onload;
+        window.onload = function(){
+            __adroll_loaded=true;
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ?
+                    "/web/20160523124904/https://s.adroll.com" : "/web/20160523124904/http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            document.body.appendChild(scr);
+            if(oldonload){oldonload()}};
+    }());
+</script>
+
+        <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
+    <script type='text/javascript'>
+        var _mTrack = _mTrack || [];
+        _mTrack.push(['trackPage']);
+
+        (function() {
+            var mClientId = '518m4q45325';
+            var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+            var mHost = 'tracker.marinsm.com';
+
+            var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/' + 'tracker/' + 'async/' + mClientId + '.js';
+            var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+        })();
+    </script>
+    <noscript>
+        <img width="1" height="1" src="/web/20160523124904im_/https://tracker.marinsm.com/tp?act=1&amp;cid=518m4q45325&amp;script=no" alt="tracker img"/>
+    </noscript>
+    <!-- END: Copyright Marin Software -->
+
+    <!-- Google Code for Remarketing Tag -->
+    <!--
+    Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: /web/20160523124904/http://google.com/ads/remarketingsetup
+    -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1029779469;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="/web/20160523124904js_/https://www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none; position:absolute;" alt="" src="/web/20160523124904im_/https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1029779469/?value=0&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+
+</div>
+	
+			    <div id="ch_askQuestionTray_wrapper" data-ng-module="qa.askAQuestion">
+                <div class="ch_askQuestionTray_tab">
+            <i class="ch_askQTrayTab_icon fa fa-comments"></i>
+            <span>Ask a homework question</span>
+            <small><i class="ch_askQTrayOnline_icon fa fa-fw fa-circle"></i> <span data-num-online-tutors>-</span> tutors are online</small>
+            <span><i class="ch_askQTrayToggle_icon fa fa-chevron-up"></i><i class="ch_askQTrayToggle_icon fa fa-chevron-down"></i></span>
+        </div>
+        <div class="ch_askQuestionTray_container">
+            <div id="dashboard-ask-question-widget">
+    <div class="follow-message-wrapper-js" style="display:none;">
+        <div class="message-box-red error follow-message-wrapper">
+            <ul class="follow-messages">
+            </ul>
+        </div>
+    </div>
+    <div id="ask-question-widget-full">
+        <div data-ask-a-question data-user-id="" data-is-basic-default="1" data-current-user-id=""> </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="/web/20160523124904js_/https://www.coursehero.com/assets/js/vendor/jquery.waypoint.js"></script>
+    <script type="text/javascript">
+        var registerWayPoint = function(){
+            jQuery("#ch-footer").waypoint(function(direction){
+                if(direction == "up"){
+                    $("#ch_askQuestionTray_wrapper").removeClass("isNotSticky");
+                }
+                else{
+                    $("#ch_askQuestionTray_wrapper").addClass("isNotSticky");
+                }
+            }, { offset: "100%" });
+        };
+
+        var initAskQuestionTab = function(){
+            registerWayPoint();
+
+            jQuery("#ch_askQuestionTray_wrapper > .ch_askQuestionTray_tab").on("click", function() {
+                $("#ch_askQuestionTray_wrapper").toggleClass("isOpen")
+            });
+        };
+
+        jQuery(document).ready(function(){
+            initAskQuestionTab();
+
+            // dynamic pages need to recalculate viewport
+            window.setInterval(function(){
+                registerWayPoint();
+            }, 300);
+        });
+    </script>
+	
+					<script src="/web/20160523124904js_/https://www.coursehero.com//sym-assets/js/2df7319-fb04142.js" type="text/javascript"></script>
+		
+							
+		<script>
+		var appId = 126130834105126;
+		</script>
+
+		<!--[if IE 9]>
+				<script src="/web/20160523124904/https://www.coursehero.com//sym-assets/js/7f36ca4-579bc8b.js" type="text/javascript"></script>
+				<script>
+			$('input:not([data-ng-model]), textarea:not([data-ng-model])').placeholder();
+		</script>
+		<![endif]-->
+	
+	        <script type="text/javascript" src="/web/20160523124904js_/https://www.coursehero.com//sym-assets/js/2eaae60-7b5f417.js"></script>
+    <script type="text/javascript" async src="/web/20160523124904js_/https://platform.twitter.com/widgets.js"></script>
+    <script>
+        var relatedContentQuery = 'St%20Pauls%2012%20South%20Transept';
+    </script>
+
+        <script type="text/javascript">
+        setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0034/4159.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+
+        <script type="text/javascript">
+        var _kiq = _kiq || [];
+        (function(){
+            setTimeout(function(){
+                var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+                s.async = true; s.src = '//s3.amazonaws.com/ki.js/59766/dqn.js'; f.parentNode.insertBefore(s, f);
+            }, 1);
+        })();
+    </script>
+    <script type="text/javascript" charset="utf-8">
+    	_kiq.push(['identify', '']);
+    </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"404bf9505f","applicationID":"4237716","transactionName":"NVFbZUFUC0RTAEcLXQwbekRAQQpaHQVfA0EKV1hDV2oJVlwHWgxV","queueTime":0,"applicationTime":197,"atts":"GRZYEwlOGEo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

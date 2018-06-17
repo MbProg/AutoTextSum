@@ -1,0 +1,145 @@
+About the Presenter:
+Professor Peter Guth (PhD, MIT) teaches oceanography, including geology and GIS, at the United States Naval Academy in Annapolis.
+Dr. Guth’s publications include over 30 peer-reviewed journal papers and book chapters.
+His research interests include geomorphometry from digital elevation models, algorithms using digital elevation models, and innovative uses of GIS in archaeology including the Battle of Big Hole (1877), 3D artefact distributions on the Swedish warship Vasa, and the search for the Bonhomme Richard.
+Lesson Objectives:
+Articulate the issues in the debate about the commercialization of nautical archaeology.
+Understand the history of the great ships from the Age of Sail that have been raised and preserved in museums.
+Discuss the challenges in interpreting a ship that has been afloat for over 200 years, and understanding what is original and what has been added over the centuries.
+Introduction
+The operating costs for a marine survey ship can approach $50,000 per day, whether in transit to the operations area or while conducting survey work.
+ROVs, AUVs, magnetometers, and side scan sonars all represent substantial investments, and even with careful operating procedures some of this expensive equipment will inevitably be lost.
+Underwater archaeology developed in the last 60 years, and has always seen tensions between different groups--divers and non-divers, professionals and amateurs.
+The first major discoveries in underwater archaeology were the Swedish warship Vasa (see discussion below) and a Bronze Age ship excavated near Bodrum, Turkey.
+As the same time as these scientific projects, "treasure hunting" also began to get more technical, and to employ the same tools and techniques.
+This lesson has a number of links, some of which are very large documents.
+Except for the two papers on for-profit marine archaeology, you do not have to read the links and they will not be covered on the quiz.
+Odyssey Marine Exploration typifies a commercial shipwreck exploration company.
+Traded on the American Stock Exchange, the main business of the company is to make money for its investors.
+Thus they will concentrate on wrecks with valuable gold cargoes, like the HMS Victory we discussed in the last lesson.
+While they have produced movies of their work for television, and have a number of publications on the web which showcase the technology they use and what they find, they do not have the commitment to scientific publication and artefact conservation and preservation.
+To the degree that they will see the artefacts to finance operations and provide a profit to their investors, nothing may ultimately remain in a museum, in marked contrast with the Vasa and Mary Rose to be discussed below.
+Odyssey Marine is also embroiled in litigation with the Spanish government over the "Black Swan" wreck (Odyssey's version, wikipedia)--warships cannot be considered abandoned and freely salvaged, and the difference between crown and commercial shipping was not always clear several hundred years ago.
+Odyssey Marine has agreements with the U.K. government for its work on HMS Victory and HMS Sussex, but the Spanish government has prevented work on the Sussex.
+Read the following two discussions to get a sense of how commercial, scientific, technical, legal, diplomatic, and ethical issues intersect.
+Pringle, H., 2007, Profiteers on the High Seas:  Archaeology.
+This is a magazine published by the Archaeological Institute of America to promote the science of archaeology to the interested layperson.
+Kingslye, S., 2009, Into the Abyss: Deep-sea shipwrecks, science & scandal: Current Word Archaeology, Issue 33.
+This is a commercial magazine from a publisher whose aim is to sell subscriptions.
+If you wanted to get a sense of what a ship like the Bonhomme Richard was like in the summer and fall of 1779, you could visit one of the ships from the Age of Sail that has survived until the present day.
+You can go to a ship that sank, and was later excavated, raised, and exhibited in a museum.
+This ship might have tens of thousands of artefacts recovered, and faithfully preserves a snapshot of what the ship looked like on the day it sank.
+Two ships--the Mary Rose and the Vasa fall into this category, and both actually significantly predate the Bonhomme Richard.
+But their ability to give a sense of an actual sailing ship, complete with a snapshot of life afloat, make them important vessels for anyone trying to understand what the Bonhomme Richard would have been like.
+Alternatively, you could find a ship that has remained in service for over two centuries.
+In this case, you have to worry about what changes have been made to the ship during that time interval, since navies tended to be practical and reuse ships in old age, and it may not be clear that the current usage of the ship's spaces actually reflects their original plans, and it might also not be clear how much of the timbers and other equipment is original.
+As an example of wishful thinking illustrating the difficulty in interpreting a 200 year old ship, the USS Constellation in Baltimore has been claimed to be a 1797 frigate rather than an 1854 sloop.
+Two near contemporaries of the Bonhomme Richard remain, HMS Victory (not the Victory in the Engineering 3 lesson) and the USS Constitution.
+Table 1.
+Comparison of the remaining ships to the Bonhomme Richard and Serapis
+Ship 	Built 	Length 	Breadth 	Height 	Height
+(mast)
+Guns 	Tons
+Mary Rose 	Built 1510, Refits 1527-28, 1536 	32 m keel, 38.5 m waterline 	11.66 m 	13 m 	  	78-91 	500 initially, 700 after refit
+Vasa 	Launched 1628 	47 m at waterline, 61 m 	11.7 m 	20 m 	  	64 	1200
+HMS Victory 	Launched 1765 	57 m gundeck, 69.34 m overall 	15.8 m 	  	62.5 m 	100 	3500
+USS Constitution 	Launched 1797 	53 m at waterline, 62 m overall 	13.26 m 	  	67 m 	44-52 	1576
+Bohommme Richard 	Built 1765, Refit 1779 	47 m 	12 m 	  	  	40 	900
+Serapis 	Launched 1779 	47 m 	13 m 	  	  	44-50 	879
+Mary Rose
+The Mary Rose was built for King Henry VIII of England in 1510 as a carrack-type warship.
+This was a Portuguese design with a high rounded stern with an aftcastle, and a forecastle as the stem.
+In 1545, the French assembled a large fleet to invade England, and the Mary Rose was the flagship of the English defending fleet.
+On July 19 the Mary Rose led an attack on French galleys in the Solent, but heeled over and sank almost instantly.
+Fewer than 35 men escaped from the 400 man crew.
+Efforts to raise the ship failed, but some guns and rigging were recovered in the 16th century.
+The ship came to rest on its starboard side.
+The port side was mostly destroyed, and a hard layer of sediment covered the starboard side.
+The site was rediscovered in 1836 and several cannons raised, but the divers apparently did not get into the actual ship area.
+The ship was rediscovered in the mid 1960s, and identified as the Mary Rose in 1971.
+Underwater excavation using divers conducted 27,831 dives from 1979 to 1982.
+They recovered 20,571 artefacts.
+Upon the completion of excavation, the wreck was lifted to the surface in 1982 and taken to Portsmouth for conservation.
+The ship is not currently on display while a new museum is being built.
+The excellent preservation of the ship and its contents provide an unparalleled look at navy life in Tudor England.
+The online database has over 14,000 artefacts, a large proportion of which include textiles, leather, and other objects not commonly preserved.
+Part of the value of the collection was that every artefact was on the ship and in use on July 19, 1545.
+Columbus's ships.
+The Santa Maria was a carrack.
+Source: Wikipedia.
+The Mary Rose as seen in the 1540's Anthony Roll which inventoried 58 naval vessels.
+Compare the high, "off-balance" lines of the ship with those of the Victory and Constitution below.
+The Vasa shared similar design elements, and the instability of both Vasa and Mary Rose was a learning experience for naval architects, as well as a treasure trove for archaeologists.
+Source: wikipedia
+Battle of the Solent, with the French fleet on the left and the English on the right.
+The sunken Mary Rose is in the center of the image.
+Source: wikipedia
+Raising the Mary Rose.
+Source: wikipedia
+The Mary Rose undergoing conservation.
+The misting operation to preserve the ship obscured details and led to an almost ghostly viewing experience which will be gone when the new museum opens.
+Source: Wikipedia.
+The Mary Rose in Portsmouth.
+Because only one side of the ship is preserved, it presents a very different impression than the complete Vasa.
+Source: Wikipedia.
+Vasa
+The Swedish warship Vasa sank in 1628 on its maiden voyage, so it is about a century younger than the Mary Rose.
+Salvage of the Vasa in 1961 predated the rediscovery of the Mary Rose, and lessons learned from the Vasa helped the archaeological and recovery teams for the Mary Rose.
+The Vasa was to be the flagship for the Baltic fleet of King Gustavus Adlofus, and as a result was highly decorated with brightly painted sculptures.
+The Vasa in its Stockholm museum.
+The ship's boat is at the lower right.
+Source: wikipedia
+The side view of Vasa.
+Visitors can walk around the ship, and look into the gunports and the deck from balconies on several levels.
+Source:  wikipedia
+The lower gundeck.
+An interesting aspect of the Vasa is the very small number of interior spaces compared to other more recent ships; as an example, the Captain shared a single cabin with the other officers.
+This view provides a very unrealistic and uncluttered view of how this space would have looked during the ship's life.
+The inside of the ship is not open to visitors, and the artefacts have been removed for preservation, and to lower the weight which the ship's timbers must support.
+Source:  wikipedia
+The Vasa artefacts include some of the cannons, which are among the most durable and commonly preserved artefacts.
+The large size means cannons are rarely overlooked, even when underwater visibility is poor.
+Their size and value often meant that early salvage attempts concentrate on them.
+Photo from Professor Guth
+Most of the over 30,000 Vasa artefacts are in museum storage, such as these barrels.
+Photo from Professor Guth
+Vasa artefacts include leather shoes, and the wooden shoe lasts a sailor would own so that additional shoes could be created with the proper size.
+Photo from Professor Guth
+Vasa preserved fabric.
+Photo from Professor Guth
+Vasa sculpture as preserved today.
+Photo from Professor Guth
+Vasa sculpture reconstruction, based on analysis of how it was originally painted.
+This sculpture represents Vasa and the Swedish crown, and shows the symbolism that the ship was intended to portray.
+Photo from Professor Guth
+HMS Victory
+The HMS Victory that currently sits in drydock in Portsmouth was the 6th ship of the Royal Navy with the name.
+This was a 100 gun ship of the line, and  significantly larger than any of the sailing ships ever owned by the U.S. Navy (see Table 1 with a comparison to "Old Ironsides", the USS Constitution).
+This Victory is most famous as Nelson's flagship at Trafalgar.
+HMS Victory in Portsmouth
+Photo from Professor Guth
+HMS Victory in drydock is no longer afloat.
+The importance of this distinction will be apparent when we look at USS Constitution.
+Photo from Professor Guth
+Photo from Professor Guth
+USS Constitution
+The USS Constitution was a frigate, comparable in many respects with Serapis.
+It is the oldest commissioned warship afloat in the world, but from an archaeological perspective, the ship is the sum of its 200+ year history, and is thus very different from the Vasa and Mary Rose.
+But like the Victory in Portsmouth, if you visit the Charlestown Navy Yard, Massachusetts, you can tour the ship and get a sense of what we think a frigate from the Age of Sail looked like.
+July 1812 encounter between USS Constitution and a British squadron.
+This is a photograph of a painting.
+Source: Naval Historical Center
+July 1812 encounter between USS Constitution and a British squadron.
+This is a photograph of a painting.
+Source: Naval Historical Center
+Constitution undergoing repairs at the Navy yard, Portsmouth, N.H. 1858.
+Note that the ship has been substantially rebuilt.
+Source: wikipedia
+Constitution in Boston c. 1905.
+Note that the ship has been turned into a floating barracks.
+Source: wikipedia
+Conclusion
+There are several ways to experience what life would have been like on the Bonhomme Richard and the Serapis.
+Several ships from that era survive, and only require us to see through the changes that have been made over the centuries as their missions changed, our ideas of historic preservation evolved, and the ships were modified for safety and tourist comfort.
+For a snapshot view of a ship and its contents, we can look to the Mary Rose and the Vasa.
+Those ships were recovered with the single purpose of understanding and preserving their history, and making the knowledge freely available.

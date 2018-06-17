@@ -1,0 +1,30 @@
+Manhatten project: Oak Ridge
+The mission of the Oak Ridge facility in Tennessee was to produce enriched uranium for the first atomic bombs. Originally called the Clinton Engineer Works, Oak Ridge was expanded and renamed in 1943 as part of the Manhattan Project.
+
+The Oak Ridge site was selected because the Clinch River provided ample supplies of water, nearby Knoxville was a good source of labor, and the TVA could supply the huge amounts of electricity needed. Gen. Groves ordered acquisition of the 56,200 acre site on 19 September 1942 in a tightly controlled security area spanning three Appalachian valleys.
+
+In 1942, at the outset of the Manhattan Project, two methods of uranium enrichment were under consideration: gaseous diffusion and electromagnetic separation. Since no one could say which was more likely to succeed, both were tried, an enormous undertaking under wartime conditions. The Y-12 plant utilized calutrons for the electromagnetic separation method while the K-25 plant used gaseous diffusion. A third facility known as X-10 housed a graphite plutonium production reactor and the facilities needed to extract the plutonium from the irradiated fuel.
+
+he Oak Ridge X-10 Site
+
+The original portion of the Oak Ridge facility, built in 1942 as the Clinton Engineer Works, is known as X-10, comprising 2,900 acres in Melton and Bethel Valleys, 10 miles southwest of the City of Oak Ridge, 20 miles west of Knoxville, TN. In 1943, the facility name was changed to Oak Ridge.
+
+The Manhattan Project plan was to create two atomic weapons--one fueled by plutonium, the other by enriched uranium. Hanford, Washington, was selected as the site for plutonium production, but before a facility could be built there, the X-10 pilot plant was necessary to prove the feasibility of scaling up from laboratory experiments. The Graphite Reactor was built for this purpose in only 11 months, designed to show that plutonium could be extracted from irradiated uranium slugs.
+
+Workers began loading uranium into the reactor during the afternoon of 3 November 1943 and at 5AM the next morning, Enrico Fermi saw the reactor go critical. Four months later, Oak Ridge chemists produced the world's first few grams of plutonium.
+The Oak Ridge Y-12 Plant
+
+Construction on Y-12 began in February 1943 to implement the electromagnetic separation method, with first production in November of the same year (although construction continued through 1945). Tennessee Eastman took over operation of Y-12 in June 1943.
+
+At Y-12, nine main processing buildings and over two hundred support buildings were constructed to house the process. The primary process used calutrons--large arrangements of electro-magnets which separated weapons grade U-235 out of naturally more abundant U-238. Because of the war time shortage of copper, 14,700 tons of silver from the U.S. Treasury were used in the calutron windings and associated electrical conductors. Y-12 employed 22,000 workers in the peak war years period, but the gaseous diffusion process at the K-25 Plant proved to be more effective for uranium enrichment and Y-12 was mothballed at the end of the war. Later the massive Y-12 facility became a nuclear weapons production facility and large scale lithium separation plant, a material critical to the hydrogen bomb.
+The Oak Ridge K-25 Site
+
+The K-25 Site occupies a 1,700-acre area adjacent to the Clinch River, approximately 13 miles west of Oak Ridge. The K-25 Plant was authorized in late 1942, and was the last of the big Oak Ridge sites to become operational. It was the world's first gaseous diffusion plant, the method of uranium enrichment with the best theoretical basis, championed by the British, but which had never been tried in practice.
+
+K-25 was huge, even by Oak Ridge standards, with fifty four-story buildings totaling 2,000,000 square feet, in a U-shape measuring a 2,600 feet long by 1,000 feet wide. Covering some 44 acres, the K-25 building was the world's largest roofed structure when it was completed in March 1945. Housing and service facilities were built for the population that eventually reached 15,000.
+
+Oak Ridge Y-12
+
+Inside K-25, a series of over 1,000 huge cells were linked in a cascade through which uranium hexafluoride gas traveled, with small fractions of the U-235 isotope separated by a barrier material with microscopic pores. Production problems at K-25 led to an August 1943 decision that K-25 would not fully enrich uranium but would produce partially enriched feeder material for Y-12. A key production problem was developing a suitable diffusion barrier, material with millions of tiny holes that would also withstand the extremely corrosive gas involved. That problem was not solved until 1944 enabling production in 1945.
+
+Both the Y-12 and K-25 plants failed to meet expectations. Early in 1944 neither plant was producing anything usable, but Gen. Groves and his team pushed forward nonetheless. This was an enormous gamble with fantastic sums of money and scarce resources being poured into the Oak Ridge project. Gen. Groves decided to invest in a third technique, thermal diffusion, developed by Philip Abelson for the Navy. A contractor, H.K. Ferguson Company of Cleveland, was given just 90 days to construct the S-50 themal diffusion facility, involving 2,142 columns, each over 40 feet tall.

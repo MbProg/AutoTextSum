@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app4.us.archive.org";archive_analytics.values.server_ms=627;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="seadragon/css/dris_pageturner.css"/>
+
+    <!--<style type="text/css" media="screen"> @import url('zoom/css/dris_pageturner_ie6.css');</style>-->
+
+
+    <script src="/web/20160325155001js_/http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/web/20160325155001js_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="/web/20160325155001cs_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
+    <!-- <script type="text/javascript" src="zoom/js/aggregate/dris-common-1.0.js"></script> This mightk be the reference to jquery removing -->
+    <script type="text/javascript" src="seadragon/seadragon-min.js"></script>
+    <!--<script type="text/javascript" src="zoom/js/util/s_code.js"></script>-->
+    <script type="text/javascript" src="seadragon/js/lib/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="seadragon/js/aggregate/dris-page-1.0.js"></script>
+
+    <script type="text/javascript" src="js/jquery.hashchange.min.js"></script>
+    <script type="text/javascript" src="js/browserDetect.js"></script>
+
+
+    <style>
+        #preview {
+            position: absolute;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background: #333;
+            padding: 5px;
+            display: none;
+            color: #fff;
+        }
+
+    </style>
+
+    <title> Book of Kells </title><meta name="description" content="The Book of Kells contains the four Gospels in Latin based on the Vulgate text which St Jerome completed in 384AD, intermixed with readings from the earlier Old Latin translation. The Gospel texts are prefaced by other texts, including  canon tables , or concordances of Gospel passages common to two or more of the evangelists; summaries of the gospel narratives (Breves causae); and prefaces characterizing the evangelists (Argumenta).
+
+The book is written on vellum (prepared calfskin) in a bold and expert version of the script known as  insular majuscule . It contains 340 folios, now measuring approximately 330 x 255 mm; they were severely trimmed, and their edges gilded, in the course of rebinding in the 19th century." /><meta name="keywords" content="Manuscripts, Medieval--Ireland, Decoration and ornament, Celtic, Illumination of books and manuscripts, Medieval--Ireland, Illumination of books and manuscripts, Celtic, Bible. N.T. Gospels. Latin. Book of Kells, Book of Kells"  />    <!-- <title>DRIS Trinity College Library Dublin</title> -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="Content-Language" content="en"/>
+    <!-- <title>Trinity College Library Dublin : Trinity College Dublin, The University of Dublin, Ireland</title> -->
+    <!--Google Analytics-->
+    <!--Google Analytics-->
+    <meta name="author" content="Trinity College Dublin"/>
+    <meta name="copyright" content="&copy; 2007 Trinity College Dublin"/>
+    <meta name="date" content="2010-05-26T17:16:27P"/>
+
+    <!--    <meta name="description" content="Trinity College Library" />
+        <meta name="keywords" content="trinity,college,library,trinity college dublin,university,ireland,irish,universities,tcd,national,university of dublin,research,academic,study,studying,undergraduate,postgraduate"  />   -->
+    <meta name="robots" content="all"/>
+
+    <link rel="Start" href="//www.tcd.ie/Library" title="Home"/>
+    <link rel="Next" href="/Library/using-library/index.php" title="Using the Library (next)"/>
+    <link rel="Author" href="mailto:library@tcd.ie" title="Author ()"/>
+    <link rel="Search" type="text/html" href="http://search.tcd.ie/search" title="Search Trinity College"/>
+    <link rel="Index" type="text/html" href="http://www.tcd.ie/az" title="A-Z of Trinity College"/>
+    <link rel="Shortcut Icon" href="/web/20160325155001im_/http://www.tcd.ie/tms/m/styles/favicon.ico" type="image/x-icon"/>
+
+    <link rel="alternate" type="application/rss+xml" title="News feed for Trinity College Library Dublin."
+          href="//tcld.wordpress.com/feed/"/>
+
+
+    <script>
+        function formatSubjects() {
+            return "tommy";
+        }
+    </script>
+
+    <!-- This is the template that is applied to the json data. Note the type of the script tag, so that browsers will blissfully ignore it. -->
+    <script type="text/x-jquery-tmpl" id="json-template">
+<div id="fancybox">
+
+
+{{each $item.a(mods.subject)}}
+	
+{{/each}}
+<div class="clear"></div>
+
+
+{{each $item.a(mods.titleInfo)}}
+		{{if typeof(type) != "undefined" && type == "alternative"}}
+		<div class="heading_title meta_data_separator">Alternative Title:</div>
+		<div class="meta_content">
+		<li class="title noListType">${$item.totext(title)}</li>
+		</div><div class="clear"></div>
+		{{else}}
+		<div class="heading_title meta_data_separator">Title:</div>
+		<div class="meta_content">
+		<li class="title noListType">${$item.totext(title)}</li>
+		</div><div class="clear"></div>
+		{{/if}}
+{{/each}}
+<div class="heading_title meta_data_separator">Name(s):</div>
+<div class="meta_content">
+{{each $item.a(mods.name)}}
+	{{if $item.totext(type) == "personal"}}
+	<li class="name noListType"><a class="metaList" onClick="ShowSearchResults('${$item.totext(namePart)}');" title="">${$item.totext(namePart)}</a></li>
+	{{/if}}
+{{/each}}
+</div><div class="clear"></div>
+
+{{each $item.a(mods.location)}}
+ {{if typeof physicalLocation != "undefined"}}
+   <div class="heading_title meta_data_separator">${$item.totext(physicalLocation.displayLabel)}:</div>
+<div class="meta_content">
+   <a class="metaList" onClick="ShowSearchResults('${$item.totext(physicalLocation.$)}');" title="">${$item.totext(physicalLocation.$)}</a>
+ {{/if}}
+{{/each}}
+</div><div class="clear"></div>
+
+{{each $item.a(mods.location)}}
+	{{if typeof holdingSimple != "undefined"}}
+   		<div class="heading_title meta_data_separator">Item No.:</div>
+<div class="meta_content">
+   		<a class="metaList" onClick="ShowSearchResults('${$item.totext(holdingSimple.copyInformation.shelfLocator.$)}');" title="">${$item.totext(holdingSimple.copyInformation.shelfLocator.$)}</a>
+	{{/if}}
+{{/each}}
+
+
+{{each $item.a(mods.relatedItem)}}
+	</div><div class="clear"></div>
+	<div class="heading_title meta_data_separator">${$item.totext(displayLabel)}:</div>
+	<div class="meta_content">
+	<a class="metaList" onClick="ShowSearchResults('${$item.totext(titleInfo.title)}');" title="">${$item.totext(titleInfo.title)}</a>
+{{/each}}
+
+{{if $item.isInArray(mods.identifier, "type", "doi")}}
+	</div><div class="clear"></div>
+	<div class="heading_title meta_data_separator">${$item.totext($item.findInArray(mods.identifier, "type", "doi").displayLabel)}:</div>
+	<div class="meta_content">
+	${$item.totext($item.findInArray(mods.identifier, "type", "doi").$)}
+{{/if}}	
+{{each $item.a(mods.note)}}
+	{{if typeof $value == "string"}}
+		</div><div class="clear"></div>
+		<div class="heading_title meta_data_separator">Note:</div>
+		<div class="meta_content">
+		${$item.totext($value)}
+	{{/if}}
+{{/each}}
+
+
+
+{{each $item.a(mods.abstract.$)}}
+      </div><div class="clear"></div>
+      <div class="heading_title meta_data_separator">Abstract:</div>
+      <div class="meta_content">
+      ${$item.totext($value)}
+{{/each}}
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Type of work:</div>
+<div class="meta_content">
+<a class="metaList" onClick="ShowSearchResults('${$item.totext(mods.genre.$)}');" title="">${$item.totext(mods.genre.$)}</a>
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Dimensions:</div>
+<div class="meta_content">
+${$item.totext(mods.physicalDescription.extent)}
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Materials:</div>
+<div class="meta_content">
+{{each $item.aa(mods.physicalDescription.note)}}
+	{{if typeof orig$ != "undefined"}}
+	<li class="material {type} noListType"><a class="metaList" onClick="ShowSearchResults('${$item.totext(orig$)}');" title="">${$item.totext(orig$)}</a></li>
+	{{/if}}
+{{/each}}	
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Subjects:</div>
+<div class="meta_content">
+{{each $item.a($item.findInArray($item.a(mods.subject),"topic"))}}
+	{{each $item.a($value.topic)}}
+		<li class="subject"><a class="metaList" onClick="ShowSearchResults('${$item.totext($value)}');" title="">${$item.totext($value)}</a></li>
+	{{/each}}
+{{/each}}
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Publisher:</div>
+<div class="meta_content">
+<a class="metaList" onClick="ShowSearchResults('${$item.totext(mods.originInfo.publisher)}');" title="">${$item.totext(mods.originInfo.publisher)}</a>
+</div><div class="clear"></div>
+<div class="heading_title meta_data_separator">Copyright:</div>
+<div class="meta_content">
+${$item.totext(mods.accessCondition.$)}
+</div><div class="clear"></div>
+
+</div>  
+
+
+
+
+    </script>
+    <!-- end of template -->
+
+
+    <script type="text/javascript">
+
+        //GLOBAL JS VARIABLES START
+        var $tmpl;
+        var helper;
+        //GLOBAL JS VARIABLES END
+
+        function detectspecialkeys(e) {
+            if ($("#zoom_window").is(":visible")) {
+                var evtobj = window.event ? event : e
+                if (evtobj.shiftKey) DRISPageTurner.F.toggleFullPage();
+            }
+        }
+
+
+        function key_event(evt) {
+            if ($("#zoom_window").is(":visible")) {
+                if (evt.keyCode == 37) DRISPageTurner.F.setPrevPage();
+                else if (evt.keyCode == 38) {
+                    if (DRISPageTurner.F.viewer.viewport) {
+                        DRISPageTurner.F.viewer.viewport.zoomBy(Seadragon.Config.zoomPerClick / 1)
+                    }
+                }
+                else if (evt.keyCode == 39) DRISPageTurner.F.setNextPage();
+                else if (evt.keyCode == 40) {
+                    if (DRISPageTurner.F.viewer.viewport) {
+                        DRISPageTurner.F.viewer.viewport.zoomBy(1 / Seadragon.Config.zoomPerClick)
+                    }
+                }
+                else if (evt.keyCode == 0) DRISPageTurner.F.viewer.viewport.goHome();
+
+            }
+        }
+
+        function updateMetaTitle(pid) {
+            $("#fancybox").attr("href", "getMeta.php?pid=" + pid);
+            $("#jpegBox").attr("href", $("#jpegBox").attr("href").substring(0, $("#jpegBox").attr("href").lastIndexOf("/") + 1).concat(pid.concat("_LO.jpg")));
+
+            $('#fancybox').unbind('click');
+            $("#fancybox").click(function () {
+                $.getJSON($(this).attr("href"), function (data) {
+                    var content = $.tmpl($tmpl, data, helper).html();
+                    $.fancybox({
+                        maxWidth: 600,
+                        maxHeight: 300,
+                        openEffect: 'elastic',
+                        closeEffect: 'elastic',
+                        content: content,
+                        autoSize: false,
+                        closeBtn: true
+                    });
+                });
+                return false;
+            });
+
+
+        }
+
+        // this function will send to google analytics the text of a search if return is pressed.
+        function recordSearchIfReturnPressed(e, searchTerm) {
+            var unicode = e.keyCode ? e.keyCode : e.charCode
+            if (unicode == 13) {
+                _gaq.push(['_trackEvent', 'Search', 'return', searchTerm]);
+            }
+        }
+
+        function doSearch(thesearchterm) {
+            window.location.hash = "searchresults";
+            if (thesearchterm != '') {
+                Manager.store.addByValue('fq', "allText" + ':' + thesearchterm);
+                Manager.doRequest(0);
+            }
+            else Manager.doRequest(0);
+        }
+
+        function initPage() {
+            try {
+                document.getElementById('searchterm').focus();
+            }
+            catch (error) {
+            }
+
+            document.onkeydown = detectspecialkeys;
+            document.onkeyup = key_event;
+
+            //new stuff for Europeana QUERY string START
+            if ("14" != "") {
+                showZoomPage("14", "MS58_003v")
+            }
+            else {
+                //jQuery("#dris_splash_window").show();
+            }
+            //new stuff for Europeana QUERY string END
+
+        }
+
+
+        function setCookie(c_name, value, expiredays) {
+
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + expiredays);
+            document.cookie = c_name + "=" + escape(value) +
+                ((expiredays == null) ? "" : ";expires=" + exdate.toUTCString());
+        }
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+
+        function backToSearchResults() {
+            jQuery("#zoom_window").hide();
+            jQuery("#dris").show();
+            window.location.hash = "searchresults";
+        }
+        function ShowSearchResults(SearchTerm) {
+            jQuery("#zoom_window").hide();
+            jQuery("#dris").show();
+            $(".fancybox-close").click();
+            doSearch(SearchTerm);
+        }
+
+
+        function showZoomPage(folder_id, pid, entry_point) {
+            if (entry_point == 'undefined') entry_point = 2;
+            if (entry_point == undefined) entry_point = 1;
+            jQuery("#dris_splash_window").hide();
+            jQuery("#dris").hide();
+            try {
+                showZoom(folder_id, pid, entry_point);
+            }
+            catch (err) {
+            }
+            $("#qrcode").click(function () {
+                $.fancybox([
+                    "/web/20160325155001/http://digitalcollections.tcd.ie/content/" + folder_id + "/qrcode_" + folder_id + ".png"
+                ], {
+                    'type': 'image'
+                });
+
+
+            });
+
+            //need special conditions for kells-ugly!
+            if (folder_id == 14) {
+                jQuery("#meta_download_box").hide();
+                jQuery("#qrcodebox").hide();
+            }
+
+            $("#fancybox").eq(0).trigger('click');
+
+        }
+
+        function showZoomWindow() {
+            jQuery("#meta_window").hide();
+            jQuery("#dris").show();
+        }
+
+
+        function loadjscssfile(filename, filetype) {
+            if (filetype == "js") { //if filename is a external JavaScript file
+                var fileref = document.createElement('script')
+                fileref.setAttribute("type", "text/javascript")
+                fileref.setAttribute("src", filename)
+            }
+            else if (filetype == "css") { //if filename is an external CSS file
+                var fileref = document.createElement("link")
+                fileref.setAttribute("rel", "stylesheet")
+                fileref.setAttribute("type", "text/css")
+                fileref.setAttribute("href", filename)
+            }
+            if (typeof fileref != "undefined")
+                document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
+
+
+        function loadScript(url, callback) {
+            var head = document.getElementsByTagName("head")[0];
+            var script = document.createElement("script");
+            script.src = url;
+
+            // Attach handlers for all browsers
+            var done = false;
+            script.onload = script.onreadystatechange = function () {
+                if (!done && ( !this.readyState
+                    || this.readyState == "loaded"
+                    || this.readyState == "complete")) {
+                    done = true;
+
+                    // Continue your code
+                    callback();
+
+                    // Handle memory leak in IE
+                    script.onload = script.onreadystatechange = null;
+                    head.removeChild(script);
+                }
+            };
+
+            head.appendChild(script);
+        }
+
+
+        function showZoom(folder_id, pid, entry_point) {
+            filesize = "unknown size";
+
+            //set the cookie START
+            setCookie("DRIS", folder_id + "@" + pid);
+            //set the cookie END
+
+            $('#zoom_window').html("<script type=\"text/javascript\" src=\"seadragon/js/lib/jquery.jscrollpane.js\"><\/script> \
+	  <script type=\"text/javascript\"> \
+	  Seadragon.Config.imagePath = \"seadragon/img/\"; \
+	  Seadragon.Config.PageType = \"book\"; \
+	  var DRIS_ITEM_ID = " + folder_id + "; \
+	  var DRISBookPageName = 'Page'; \
+	  var DRISBookHideThumbsText = 'Hide Thumbnails'; \
+	  var DRISBookShowThumbsText = 'Show Thumbnails'; \
+	  <\/script> \
+	  <div id=\"container\"><div id=\"topnav\"> \
+  </div> \
+  <div id=\"dris_zoom_content\">  \
+    <div id=\"navigation\"> \
+           <ul class=\"nav\" id=\"navigation_list\">   \
+                 <li title=\"Return to Search Results\" class=\"backbutton\"> \
+                       <button onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu', 'click" + pid + "', 'back']);backToSearchResults()\" class=\"submit_button searchresults_button\">< Back</button> \
+		  </li> \
+                 <li id=\"options\" class=\"meta_title\"> \
+                       <span class=\"heading_title\"></span><span id=\"meta_page_title\">" + pid + "</span> \
+                       <br/> \
+		       <a href=\"getMeta.php?pid=" + pid + "\"  id=\"fancybox\"  class=\"fancyboxxxxx\" onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'metadata\']);\">Click for more information...</a> \
+		       </li>    \
+                 <li class=\"meta_download\" id=\"meta_download_box\"> \
+                       <a href=\"/web/20160325155001/http://digitalcollections.tcd.ie/content/" + folder_id + "/pdf/" + folder_id + ".pdf\" title=\" \" class=\"openpdf\" data-fancybox-type=\"iframe\" onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'pdf\']);\">          \
+                               Open in PDF \
+                       </a> \
+                       <br/> \
+                               <a id=\"jpegBox\" href=\"/web/20160325155001/http://digitalcollections.tcd.ie/content/" + folder_id + "/jpeg/" + pid + "_LO.jpg\" title=\" \" class=\"openpdf\" data-fancybox-type=\"iframe\" onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'jpeg\']);\"> \
+                                Open JPG \
+                             </a> \
+                 </li> \
+				<li class=\"meta_download\" id=\"discussion\"> \
+                               <a title=\" \" id=\"discussionButton\" class=\"openDisqus\" data-fancybox-type=\"iframe\"  href=\"discuss.php?folder_id=" + folder_id + "&pidtopage=" + pid + "&entry_point=" + entry_point + "\" onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'discuss\']);\">Discuss This Item</a></br> \                               <a title=\" \" id=\"emailList\" class=\"openEmailList\" data-fancybox-type=\"iframe\" onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'email\']);\"  href=\"emailList/emailList.html\">Join Our Email List</a> \
+				</li>	\
+		      <li id=\"qrcodebox\" class=\"qrcodelist\">         \
+			<img id=\"qrcode\" src=\"./images/qrcode.gif\" alt=\"Digital Collections Trinity College Library Dublin\"/ onclick=\"_gaq.push([\'_trackEvent\', \'itemLevelMenu\', \'click" + pid + "\', \'qr\']);\"> \
+			</li>  \
+			<li class=\"meta_pagenumber\">        \
+                       <div class=\"meta_pagenumber_top\"> \
+                       <a href=\"zoom/#\"  id=\"control-prev\" class=\"meta_pagenumber_prev\">                 \
+                               &lt; previous \
+                       </a> \
+                       Page \
+                       <span id=\"cur-page\">0</span> \
+                             of \
+                       <span id=\"total-page\">0</span> \
+                       <a href=\"zoom/#\" id=\"control-next\" class=\"meta_pagenumber_next\">  \
+                             next &gt;                                                                    \
+                       </a> \
+                       </div> \
+                 </li>   \
+           </ul>        \
+     </div> \
+      <div id=\"book_view_container\">   \
+      <a id=\"toggleScrollPane\" href=\"zoom/#\"></a> \
+      <div id=\"page_thumbs_div_wrap\"> \
+     <div id=\"page_thumbs_div\" > &nbsp; \
+     </div> \
+   </div> \
+   <div id=\"zoom_viewer_div\"> \
+       <div id=\"item_display\"></div> \
+   </div> \
+   <link rel=\"stylesheet\" type=\"text/css\" href=\"/content/" + folder_id + "/" + folder_id + "_book.css\"  /> \
+    <script type=\"text/javascript\" src=\"/content/" + folder_id + "/" + folder_id + "_data.js\"><\/script> \
+    ");
+
+
+            jQuery("#meta_window").hide();
+            jQuery("#zoom_window").show();
+
+            $('.submit_button').mouseover(function () {
+                $(this).addClass('button_hovered');
+            }).mouseout(function () {
+                $(this).removeClass('button_hovered').removeClass('button_down');
+            }).mousedown(function () {
+                $(this).addClass('button_down');
+            }).mouseup(function () {
+                $(this).removeClass('button_down');
+            });
+
+
+            helper = {
+                a: function (o) {
+                    if (typeof o == "undefined")
+                        return [];
+                    if ($.isArray(o))
+                        return o;
+                    if (null == o) return [];
+                    return [o];
+                },
+                aa: function (o) {
+                    var arr = helper.a(o);
+                    var res = [];
+                    $.each(arr, function () {
+                        if (typeof this["$"] != "undefined") {
+                            var v = $.extend(this, {});
+                            v.orig$ = v.$;
+                            v.$ = jQuery;
+                            res.push(v);
+                        }
+                        else res.push(this);
+                    });
+                    return res;
+                },
+                totext: function (o, propName) {
+                    if (typeof o == "undefined")
+                        return "";
+                    if (o == null) return "";
+                    return "" + o;
+                },
+                defined: function (o) {
+                    if (typeof o == "undefined") return false;
+                    return true;
+                },
+                findInArray: function (o, key, val) {
+                    for (var i = 0; i < o.length; ++i) {
+                        if ((typeof(o[i][key]) != "undefined") && (typeof val == "undefined" || o[i][key] == val)) {
+                            return o[i];
+                        }
+                    }
+                    return false;
+                },
+                isInArray: function (o, key, val) {
+                    return helper.findInArray(o, key, val) != false;
+                }
+
+
+            };
+
+            $tmpl = $("#json-template").template();
+
+            $("#fancybox").click(function () {
+                $.getJSON($(this).attr("href"), function (data) {
+                    var content = $.tmpl($tmpl, data, helper).html();
+                    $.fancybox({content: content, autoDimensions: false, autoScale: false});
+                });
+                return false;
+            });
+
+            keeganReady(pid, entry_point);
+
+
+        }
+
+
+        //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(
+            ['b._setAccount', 'UA-15138320-1'],
+            ['b._setDomainName', '.tcd.ie'],
+            ['b._setAllowHash', false],
+            ['b._trackPageview', location.pathname + location.search + location.hash]
+        );
+        //]]>
+    </script>
+
+
+    <meta name="robots" content="all"/>
+
+    <link rel="Start" href="//www.tcd.ie/Library" title="Home"/>
+    <link rel="Next" href="/Library/using-library/index.php" title="Using the Library (next)"/>
+    <link rel="Author" href="mailto:library@tcd.ie" title="Author ()"/>
+    <link rel="Search" type="text/html" href="http://search.tcd.ie/search" title="Search Trinity College"/>
+    <link rel="Index" type="text/html" href="http://www.tcd.ie/az" title="A-Z of Trinity College"/>
+    <link rel="Shortcut Icon" href="/web/20160325155001im_/http://www.tcd.ie/tms/m/styles/favicon.ico" type="image/x-icon"/>
+
+    <link rel="alternate" type="application/rss+xml" title="News feed for Trinity College Library Dublin."
+          href="//tcld.wordpress.com/feed/"/>
+
+    <!--[if lt IE 8]>
+    <link rel="Stylesheet" type="text/css" href="//www.tcd.ie/tms/m/styles/ie-lt-8-pre.css" media="screen"/><![endif]-->
+    <link rel="Stylesheet" type="text/css" href="/web/20160325155001cs_/http://www.tcd.ie/tms/m/styles/master.css" media="screen"/>
+    <link rel="Stylesheet" type="text/css" href="/web/20160325155001cs_/http://www.tcd.ie/tms/m/styles/print.css" media="print"/>
+
+    <link rel="Stylesheet" type="text/css" href="/web/20160325155001cs_/http://www.tcd.ie/tms/t/library/styles-library.css" media="screen"/>
+
+    <!--[if lt IE 7]>
+    <link rel="Stylesheet" type="text/css" href="//www.tcd.ie/tms/m/styles/ie-lt-7.css" media="screen"/><![endif]-->
+
+    <!--[if IE 6]>
+    <script src="//www.tcd.ie/tms/m/scripts/ie6-background-image-cache.js"></script><![endif]-->
+
+    <style type="text/css" media="screen">
+        <!--
+
+        @import url(/web/20160325155001im_/http://www.tcd.ie/styles/tcdmaster.css);
+        @import url(/web/20160325155001im_/http://www.tcd.ie/styles/tcdhome.css);
+        -->
+    </style>
+    <script type="text/javascript">
+        //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(
+            ['b._setAccount', 'UA-15138320-1'],
+            ['b._setDomainName', '.tcd.ie'],
+            ['b._setAllowHash', false],
+            ['b._trackPageview', location.pathname + location.search + location.hash]
+        );
+        //]]>
+    </script>
+
+
+    <!--START OF AJAXSOLR STYLESHEETS-->
+    <link rel="stylesheet" type="text/css" href="css/results.css" media="screen"/>
+    <script type="text/javascript" src="js/dris.js"></script>
+    <script type="text/javascript" src="js/briefDoc.js"></script>
+    <script type="text/javascript" src="js/widgets.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/Core.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractManager.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/managers/Manager.jquery.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractSpatialWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractSpellcheckWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/Parameter.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/ParameterStore.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/ParameterHashStore.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractTextWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/dris/getCredentials.js"></script>
+    <script type="text/javascript" src="widgets/ResultWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/helpers/jquery/ajaxsolr.theme.js"></script>
+    <script type="text/javascript" src="js/dris.theme.js"></script>
+    <script type="text/javascript" src="js/jquery.livequery.min.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/widgets/jquery/PagerWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/core/AbstractFacetWidget.js"></script>
+    <script type="text/javascript" src="widgets/TagcloudWidget.js"></script>
+    <script type="text/javascript" src="widgets/KeeganWidget.js"></script>
+    <script type="text/javascript" src="widgets/CurrentSearchWidget.9.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="ext/jquery.autocomplete.css" media="screen" />
+     <script type="text/javascript" src="ext/jquery.autocomplete.js"></script> -->
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
+
+    <script type="text/javascript" src="widgets/AutocompleteWidget.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/helpers/ajaxsolr.support.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/lib/helpers/ajaxsolr.theme.js"></script>
+    <script type="text/javascript" src="widgets/CountryCodeWidget.js"></script>
+    <!--  <script type="text/javascript" src="/web/20160325155001/http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script> -->
+    <!--  <link rel="stylesheet" type="text/css" href="ext/smoothness/jquery-ui.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="ext/smoothness/ui.theme.css" media="screen" />  -->
+    <script type="text/javascript" src="widgets/CalendarWidget.js"></script>
+    <!--END OF AJAXSOLR STYLESHEETS-->
+
+    <style>
+        .ui-corner-all {
+            -moz-border-radius: 4px 4px 4px 4px;
+        }
+
+        .ui-widget-content {
+            /*   border: 5px solid black;
+               color: #222222;
+               background-color: Red;*/
+        }
+
+        .ui-widget {
+            /*     font-family: Verdana,Arial,sans-serif;
+                 font-size: 15px; */
+        }
+
+        .ui-menu {
+            width: 100%;
+            list-style-position: outside;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ui-autocomplete {
+            cursor: default;
+            position: absolute;
+            max-height: 400px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+            width: 400px;
+            /*	max-width: 100px;	*/
+        }
+
+        .ui-menu .ui-menu-item {
+            text-align: left;
+            width: 400px;
+        }
+
+        .ui-menu .ui-menu-item a {
+            font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+            color: #000;
+            font-size: 100%;
+            background-color: #fff;
+            border: none;
+            border: 1px solid #e5e5e4;
+            overflow: hidden;
+            padding: 0;
+            z-index: 99999;
+
+        }
+
+        .ui-menu .ui-menu-item a:hover {
+            background-color: #f2f2f0;
+            color: #DE7D09;
+            text-decoration: underline;
+        }
+
+        .ui-widget-content a {
+            /*     color: #222222; */
+        }
+    </style>
+
+
+    <!-- START OF UNAO- HOME SCRIPT -->
+    <script type="text/javascript">
+        function setCaption(inputstring) {
+            if (inputstring.length > 100) inputstring = inputstring.substring(0, 105) + "...";
+
+            jQuery("#tapestry_caption").text(inputstring);
+        }
+
+        function clearCaption() {
+            jQuery("#tapestry_caption").text(" ");
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery.randomtapestry.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var imgUrl = "/web/20160325155001/http://digitalcollections.tcd.ie:8080/solr/dris/select?q=*:* AND coverpage:true%20" +
+                getCredentials() + "&facet=true&facet.limit=-1&facet.mincount=1&json.nl=map" +
+                "&sort=random_1234%20desc&facet.field=title&facet.field=name&facet.field=PID&wt=json&json.wrf=?&_=1292174780400";
+            var start = 0;
+            var rows = 12;
+            var total = 999999;
+            var extractImagesFromSolr = function (data, callback) {
+                $.each(data.response.docs, function () {
+                    var t = this;
+
+                    callback({
+                        src: "/web/20160325155001/http://digitalcollections.tcd.ie/covers_220/" + this.identifier_doi + "_LO.jpg",
+                        title: this.title,
+                        link: "#" + 'folder_id=' + t.identifier_DRIS_FOLDER + '&pidtopage=' + t.PID + '&entry_point=' + t.identifier_DRIS_ENTRY_POINT
+                    });
+                });
+            }
+
+            $("#home_thumbnails").randomtapestry({
+                //Initial delay before the second batch of pictures gets loaded
+                delay: 1000,
+                //Refresh between each image transition
+                period: 3000,
+                //Callback to retrieve images (first batch)
+                images: function (tapestry, addImgCallback) {
+                    $.getJSON(imgUrl, function (data) {
+                        total = data.response.numFound;
+                        extractImagesFromSolr(data, addImgCallback);
+                    });
+                },
+                //Callback to fetch more images. do nothing if no more images to load
+                fetchMore: function (tapestry, addImgCallback) {
+                    start += 48;
+                    if (total <= start)
+                        return;
+                    var url = imgUrl + "&start=" + start + "&rows=48";
+                    $.getJSON(url, function (data) {
+                        extractImagesFromSolr(data, addImgCallback);
+                    });
+                },
+                //Callback to check when the tapestry should stop updating itself. Here I check that the splash window is still visible.
+                checkStopped: function (tapestry) {
+                    return $("#dris_splash_window").css("display") == "none";
+                }
+            });
+
+
+        });
+    </script>
+    <!-- END OF UNAO-HOME SCRIPT -->
+
+
+    <!--START OF DRIS STYLESHEETS-->
+    <link href="css/global.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/home_styling.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/searchresults_styling.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!--END OF DRIS STYLESHEETS-->
+
+    <!--START OF FANCYBOX STYLESHEETS-->
+    <!--  <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>-->
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <!--END OF FANCYBOX STYLESHEETS-->
+
+
+    <!--<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+
+    <link rel="stylesheet" href="css/jquery.jscrollpane.lozenge.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen"/>
+
+    <!--JQUERY HISTORY STUFF START-->
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/web/20160325155001js_/http://digitalcollections.tcd.ie/home/js/jquery.hash.js"></script>
+    <!--JQUERY HISTORY STUFF END-->
+
+
+    <script>
+        $(document).ready(function ($) {
+            $.history.init(function (hash) {
+                    if (hash == "") {
+                        jQuery("#zoom_window").hide();
+                        jQuery("#dris").hide();
+                        $(".fancybox-close").click();
+                        if ("14" == "") {
+                            jQuery("#dris_splash_window").show();
+                        }
+                        else jQuery("#dris_splash_window").hide();
+                    }
+                    else if (hash == "searchresults") {
+                        jQuery("#zoom_window").hide();
+                        jQuery("#dris_splash_window").hide();
+                        $(".fancybox-close").click();
+                        jQuery("#dris").show();
+                        gPidtopageFromUrl = "";
+                        gFolderIDFromUrl = "";
+                        gEntryPointFromUrl = "";
+                    }
+                    else if (hash.startsWith("volume") == true) {
+                        var pid = "MS58_003v";
+                        alert("PID:" + pid);
+                        var ender = parseInt("4");
+                        var newpage = pid.substring(ender + 1);
+                        setKeeganVolumeCurrentPage(1, newpage);
+                        jQuery("#dris_splash_window").hide();
+                        jQuery("#dris").hide();
+                        jQuery("#zoom_window").show();
+                        //keeganReady();
+                    } else if (hash.indexOf('pidtopage') > -1) {
+                        // get the PID, Folder ID, and the page number from the Hash and call show page. The Hash supercedes the webpage parameters.
+                        var pidtopageFromUrl = hash.substr(hash.indexOf('&pidtopage=') + 11,
+                            hash.indexOf('&entry_point=') - (hash.indexOf('&pidtopage=') + 11));
+                        var folderIDFromUrl = hash.substr(10, hash.indexOf('&pidtopage') - 10);
+                        var entryPointFromUrl = hash.substr(hash.indexOf('&entry_point=') + 13, hash.length);
+                        // if  the three variables are greater than zero, and folderIDFromUrl and entryPointFromUrl are numbers call showZoomPage(fo,pid,entry)
+                        if ((pidtopageFromUrl.length > 0) &&
+                            (folderIDFromUrl.length > 0) &&
+                            (entryPointFromUrl.length > 0) &&
+                            (isFinite(String(folderIDFromUrl))) &&
+                            (isFinite(String(entryPointFromUrl)))) {
+                            // if the globals are null empty then call zoom page and set the globals
+                            if (( typeof gPidtopageFromUrl === 'undefined' ) ||
+                                ( typeof gFolderIDFromUrl === 'undefined') ||
+                                ( typeof gEntryPointFromUrl === 'undefined')) {
+                                gPidtopageFromUrl = pidtopageFromUrl;
+                                gFolderIDFromUrl = folderIDFromUrl;
+                                gEntryPointFromUrl = entryPointFromUrl;
+                                showZoomPage(gFolderIDFromUrl, gPidtopageFromUrl, gEntryPointFromUrl);
+                            } else if ((gPidtopageFromUrl != pidtopageFromUrl) ||  // set the global variables if they are different to the parameters.
+                                (gFolderIDFromUrl != folderIDFromUrl)) {
+                                gPidtopageFromUrl = pidtopageFromUrl;
+                                gFolderIDFromUrl = folderIDFromUrl;
+                                gEntryPointFromUrl = entryPointFromUrl;
+                                showZoomPage(gFolderIDFromUrl, gPidtopageFromUrl, gEntryPointFromUrl);
+                            } else if ((gPidtopageFromUrl == pidtopageFromUrl) &&  // this is in case someone clicks the browers navigation buttons.
+                                (gFolderIDFromUrl == folderIDFromUrl) &&
+                                (gEntryPointFromUrl != entryPointFromUrl)) {
+                                if (!(typeof DRISPageTurner === 'undefined')) // this should always be true.
+                                {
+                                    if (DRISPageTurner.F.viewing_page != entryPointFromUrl) {
+                                        gPidtopageFromUrl = pidtopageFromUrl;
+                                        gFolderIDFromUrl = folderIDFromUrl;
+                                        gEntryPointFromUrl = entryPointFromUrl;
+                                        DRISPageTurner.F.gotoTOCPage(entryPointFromUrl);
+                                    }
+                                }
+                            }
+                        } else if ((folderIDFromUrl.length > 0) &&
+                            (pidtopageFromUrl.length > 0) &&
+                            (isFinite(String(folderIDFromUrl)))) {
+                            // this if statement handlles if there is a folderid and a pid but no entry point.
+                            gPidtopageFromUrl = pidtopageFromUrl;
+                            gFolderIDFromUrl = folderIDFromUrl;
+                            gEntryPointFromUrl = '1';// if there is no page set to jump to, then jump to the first page.
+                            showZoomPage(gFolderIDFromUrl, gPidtopageFromUrl, gEntryPointFromUrl);
+
+                        } else {
+                            showZoomPage('14', 'MS58_001v', '2');
+                        }
+                    }
+                }
+                ,
+                {unescape: ",/"});
+
+            $('.submit_button').mouseover(function () {
+                $(this).addClass('button_hovered');
+            }).mouseout(function () {
+                $(this).removeClass('button_hovered').removeClass('button_down');
+            }).mousedown(function () {
+                $(this).addClass('button_down');
+            }).mouseup(function () {
+                $(this).removeClass('button_down');
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37710984-1']);
+        _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? '/web/20160325155001/https://ssl' : '/web/20160325155001/http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+        // this code is to track the after the hash in the url using google analytics.
+        $(window).hashchange(function () {
+            _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
+        });
+        $(window).hashchange();
+
+    </script>
+</head>
+
+<body onLoad="initPage();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v";
+
+var firstYear = 1996;
+var displayDay = "25";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160325155001" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20160223154303/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="23 Feb 2016">FEB</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 15:50:01 Mar 25, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20160502020110/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="2 May 2016"><strong>MAY</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160323182659/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="18:26:59 Mar 23, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 15:50:01 Mar 25, 2016">25</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160326193129/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="19:31:29 Mar 26, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150325071139/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="25 Mar 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 15:50:01 Mar 25, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160325155001*/http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=MS58_003v" title="See a list of every capture for this URL">80 captures</a>
+           <div class="r" title="Timespan for captures of this URL">18 Mar 13 - 10 Oct 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:003311010211_2014:-1:001120100212_2015:-1:153111033922_2016:2:47a220000100" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="/web/20160325155001if_/http://www.googletagmanager.com/ns.html?id=GTM-MPQVHV"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MPQVHV');</script>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--<input type="text" id="searchterm" name="searchterm"  value="" />-->
+
+<style type="text/css">
+
+    div#col1 {
+        height: 100%;
+        width: 24%;
+        float: left;
+        margin-left: 1%;
+    }
+
+    div#col2 {
+        height: 100%;
+        width: 24%;
+        float: right;
+        margin-left: 1%;
+    }
+
+    div#col3 {
+        height: 100%;
+        width: 24%;
+        float: left;
+        margin-left: 1%;
+    }
+
+    div#col4 {
+        height: 100%;
+        width: 24%;
+        float: right;
+        margin-left: 1%;
+    }
+
+</style>
+
+
+<div id="content">
+
+
+    <script type="text/javascript">
+
+        //<![CDATA[
+
+        //function sendSearch() {
+        //alert("sending search");
+        //this.manager.doRequest(0);
+        //alert(AjaxSolr.id);
+        //alert("crowerrrrr2");
+
+        //var mySearchField = document.getElementById('query');
+        //query.value = "";
+        //mySearchField.value = "";
+        //alert("You entered: " + mySearchField.value);
+        //Manager.doRequest();
+
+        /*if(mySearchField.value != "")
+         alert("You entered: " + mySearchField.value)
+         else
+         alert("Would you please enter some text?")
+         }*/
+
+        //}
+        //]]>
+    </script>
+
+
+    <div class="wrap">
+
+        <!--start of Trinity header-->
+<div class="core-header">
+<div id="tcd-cookie-notice-placeholder"></div>
+<script type="text/javascript">
+
+// Trinity Cookie Notice
+(function() {
+    var s = document.createElement('script'),
+    	fs = document.getElementsByTagName('script')[0];
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '/web/20160325155001/https://www.tcd.ie/assets/php/cookie-notice/1/app.js?v=2';
+    //s.src = '/assets/php/cookie-notice/1/app.js?v=1';
+    fs.parentNode.insertBefore(s, fs);
+    s = document.createElement('link');
+    s.type = 'text/css';
+    s.rel = 'stylesheet';
+    s.href = '/web/20160325155001/https://www.tcd.ie/assets/php/cookie-notice/1/app.css?v=2';
+    //s.href = '/assets/php/cookie-notice/1/app.css';
+    fs.parentNode.insertBefore(s, fs);
+}());
+
+</script>
+        <h1><a href="/web/20160325155001/http://www.tcd.ie/">Trinity College Dublin<span></span></a></h1>
+        <p class="cloak"><a href="#main-content">Skip to main content</a>.</p>
+        <form class="core-search" method="get" action="/web/20160325155001/http://search.tcd.ie/search">
+                <fieldset>
+                        <legend><span class="accelerator-key">S</span>earch TCD</legend>
+                        <label for="search" class="cloak">Your query: </label>
+                        <input accesskey="s" type="text" name="q" id="search" value="Search TCD" onfocus="if(this.value=='Search TCD'){this.value='';this.style.color='#54575e';this.style.background='#ffffff';}else{this.select();}" onblur="if(this.value==''){this.value='Search TCD';this.style.color='#54575e';this.style.background='#EDF1F8';}">
+                        <input type="image" src="/web/20160325155001im_/http://www.tcd.ie/tms/m/styles/img/go.gif" class="submit" alt="Go" value="go">
+                        <input type="hidden" name="entqr" value="0">
+                        <input type="hidden" name="ud" value="1">
+                        <input type="hidden" name="sort" value="date:D:L:d1">
+                        <input type="hidden" name="output" value="xml_no_dtd">
+                        <input type="hidden" name="oe" value="UTF-8">
+                        <input type="hidden" name="ie" value="ISO-8859-1">
+                        <input type="hidden" name="client" value="default_frontend">
+                        <input type="hidden" name="proxystylesheet" value="default_frontend">
+                        <input type="hidden" name="site" value="default_collection">
+                </fieldset>
+        </form>
+        <h2 class="cloak">Top Level TCD Links</h2>
+        <div class="core-tabs">
+                <ul>                        <li><a href="/web/20160325155001/http://www.tcd.ie/" class="core-tab" title="TCD Home"><span>TCD Home</span></a></li>
+                        <li title="Visit Faculties &amp; Schools"><a href="/web/20160325155001/http://www.tcd.ie/structure/" title="Visit Faculties &amp; Schools"><span>Faculties &amp; Schools</span></a></li>
+                        <li><a href="/web/20160325155001/http://www.tcd.ie/courses/undergraduate/az/" title="Browse TCD Courses"><span>Courses</span></a></li>
+                        <li><a href="/web/20160325155001/http://www.tcd.ie/research/" title="Find out more about our Research"><span>Research</span></a></li>
+                        <li id="selected" class="core-tab"><a href="/web/20160325155001/http://www.tcd.ie/services/" title="TCD Services"><span>Services</span></a></li>
+                        <li><a href="/web/20160325155001/http://www.tcd.ie/contacts/" title="Contact Details"><span>Contact</span></a></li>
+                        <li><a href="/web/20160325155001/http://www.tcd.ie/az/" title="TCD A-Z Listings"><span>A – Z</span></a></li>
+                </ul>        </div>
+</div>
+		<!--end of Trinity header-->
+
+        <div class="clear"></div>
+        <!--start of DRIS Search Results Page-->
+
+
+        		<div id="dris_topbar" class="topbar_menu_text">
+			<ul>
+				<li><a href="/web/20160325155001/http://www.tcd.ie/Library/">Library</a></li>
+				<li><a href="/web/20160325155001/http://www.tcd.ie/Library/dris/index.php">Imaging Services</a></li>
+				<li><a href="/web/20160325155001/http://www.tcd.ie/Library/about/exhibitions.php">Exhibitions</a></li>
+			</ul>
+			<!--<div id="login_control" class="login_div">
+				<a href="/web/20160325155001/http://www.tcd.ie/Library/">Stephen | </a>
+				<a href="/web/20160325155001/http://www.tcd.ie/Library/">Logout</a>
+			</div>-->
+
+		</div>
+
+
+        <div id="meta_window" style="display:none;">
+        </div>
+
+        <div id="zoom_window" style="height:750px;width:950px;">
+        </div>
+
+
+        <div id="dris_splash_window" class="fontstyle" style="display:none;">
+            <div id="home_left">
+                <div id="dris_logo_home">
+                    <img src="css/images/dris_logo.gif" alt="Digital Collections Trinity College Library Dublin"/>
+                </div>
+                <div id="home_thumbnails" onmouseout="clearCaption()">
+                    <ul>
+                        <!--If we want this page to validate (W3C) we would need to have alt text for each of these images? Title text could also be alt text?-->
+                        <li><img src="temp_images/CoxPlate_01_LO.jpg"/></li>
+                        <li><img src="temp_images/LCN14679989_pg_001_LO.jpg"/></li>
+                        <li><img src="temp_images/MS942_Vol_1_001_LO.jpg"/></li>
+                        <li><img src="temp_images/MS942_Vol_2_001_LO.jpg"/></li>
+                        <li><img src="temp_images/MS1368_001_LO.jpg"/></li>
+                        <li><img src="temp_images/MS7271_01_LO.jpg"/></li>
+                        <li><img src="temp_images/PapyrusCase1_01_LO.jpg"/></li>
+                        <li><img src="temp_images/SamuelsBox2pt5_001_LO.jpg"/></li>
+                        <li><img src="temp_images/SamuelsBox2pt6_001_LO.jpg"/></li>
+                        <li><img src="temp_images/SamuelsBox2pt12_001_LO.jpg"/></li>
+                        <li><img src="temp_images/SamuelsBox3_001_LO.jpg"/></li>
+                        <li><img src="temp_images/SamuelsBox4_001_LO.jpg"/></li>
+                    </ul>
+                    <div id="tapestry_caption" class="tapestry_label">&nbsp;</div>
+                </div>
+            </div>
+            <div id="home_right">
+
+
+                <div id="home_search">
+
+                    <div class="searchresults_esc" style="float:left;">(Press ESC to close suggestions)</div>
+                    <div id="home_searcher" style="float:left;">
+                        <input type="text" id="searchterm"
+                               onkeydown="recordSearchIfReturnPressed(event, document.getElementById('searchterm').value);"
+                               name="searchterm" class="search_input home_input"/>
+                    </div>
+
+                    <div style="float:left;">
+                        <input type="button"
+                               onclick="_gaq.push(['_trackPageview', '/search_results.php?q='+document.getElementById('searchterm').value]);_gaq.push(['_trackEvent', 'Search', 'click', document.getElementById('searchterm').value]); doSearch(document.getElementById('searchterm').value);"
+                               value="Search" class="submit_button home_button"/>
+                    </div>
+                </div>
+
+                <div id="home_desc">
+
+                    <p>Explore our collection of 119,238 treasures including
+                        <br/>books, maps, paintings, manuscripts and photographs. </p>
+                    <a href="/web/20160325155001/http://www.tcd.ie/Library/dris/digital.php">Learn more about Digital Collections</a>
+                </div>
+
+
+                <div>
+
+                    <div class="fb-like-box" data-href="http://www.facebook.com/DigitalCollectionsTCD" data-width="420"
+                         data-height="315" data-show-faces="false" data-stream="true" data-header="false"></div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+
+
+        <div id="dris" class="fontstyle" style="display:none">
+            <!--<div id="dris" class="fontstyle" >-->
+
+            <div id="searchresults_left">
+                <div id="logo_small">
+                    <!--<a href="index.php">-->
+                    <!--<form method="post" action="index.php"><input type="hidden" name="restart" value="true"><input type="image" src="css/images/DRIS_Logo_Small.gif" alt="Digital Collections Trinity College Library Dublin"></form>-->
+                    <!--<input onclick='killSession();' type="image" src="css/images/DRIS_Logo_Small.gif" alt="Digital Collections Trinity College Library Dublin">						-->
+                    <a href="index.php"><img src="css/images/DRIS_Logo_Small.gif"
+                                             alt="Digital Collections Trinity College Library Dublin"></a>
+                    <!--</a>-->
+                </div>
+                <div id="searchresults_search">
+                    <div id="searchresults_filter">
+                        <div class="refine_heading">Selected Search Categories</div>
+                        <ul id="selection">
+                        </ul>
+                    </div>
+                    <!--<form method="post" action="home.php">-->
+                    <div class="searchresults_esc">(Press ESC to close suggestions)</div>
+                    <div id="searcher">
+                        <input type="text" id="query" name="query"
+                               onkeydown="recordSearchIfReturnPressed(event, document.getElementById('query').value);"
+                               class="search_input searchresults_input"/>
+                    </div>
+                    <!--put a div around the input tag to make it validate!-->
+
+                    <div class="searchresults_buttonbox"><input id="theSearchBox" type="button"
+                                                                onclick="_gaq.push(['_trackPageview', '/search_results.php?q='+document.getElementById('query').value]); _gaq.push(['_trackEvent', 'Search', 'click', document.getElementById('query').value]); doSearch(document.getElementById('query').value);"
+                                                                value="Search"
+                                                                class="submit_button searchresults_button"/></div>
+                    <!-- put a div around the button tag to style it to next line and align right. Also to validate.-->
+                    <!--</form>-->
+
+
+                </div>
+                <div class="refine_heading">Refine Your Search
+                </div>
+                <a class="toggler toggler-opened" href="#" title="">By Genre Categories </a>
+
+                <div class="toggler-c toggler-c-opened" title="By Genre Categories ">
+                    <noscript><h4>By genre:</h4></noscript>
+                    <form id="form-refine-search" method="get">
+                        <input type="hidden" id="query-get" name="query" value=""/>
+                        <input type="hidden" id="qf-get" name="qf" value=""/>
+                    </form>
+                    <div style="overflow-x: hidden; overflow-y: auto; max-height: 600px;">
+                        <table class="facetTable" width="160px">
+                            <tbody class="tagcloud" id="keegan1"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <a class="toggler toggler-opened" href="#" title="">By Media Type </a>
+
+                <div class="toggler-c toggler-c-opened" title="By Media Type ">
+                    <noscript><h4>By type:</h4></noscript>
+                    <form id="form-refine-search" method="get">
+                        <input type="hidden" id="query-get" name="query" value=""/>
+                        <input type="hidden" id="qf-get" name="qf" value=""/>
+                    </form>
+                    <div style="overflow-x: hidden; overflow-y: auto; max-height: 200px;">
+                        <table class="facetTable" width="160px">
+                            <tbody class="tagcloud" id="keegan3"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <a class="toggler toggler-opened" href="#" title="">By Trinity Department </a>
+
+                <div class="toggler-c toggler-c-opened" title="By Trinity Department ">
+                    <style>
+                        .ui-icon {
+                            float: left;
+                        }
+                    </style>
+                    <form id="form-refine-search" method="get">
+                        <input type="hidden" id="query-get" name="query" value=""/>
+                        <input type="hidden" id="qf-get" name="qf" value=""/>
+                    </form>
+                    <div style="overflow-x: hidden; overflow-y: auto; max-height: 200px;">
+                        <table class="facetTable">
+                            <tbody class="tagcloud" id="keegan_location"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <a class="toggler toggler-opened" href="#" title="">By Dates </a>
+
+                <div class="toggler-c toggler-c-opened" title="By Dates ">
+                    <style>
+                        .ui-icon {
+                            float: left;
+                        }
+                    </style>
+                    <form id="form-refine-search" method="get">
+                        <input type="hidden" id="query-get" name="query" value=""/>
+                        <input type="hidden" id="qf-get" name="qf" value=""/>
+                    </form>
+                    <div style="overflow-x: hidden; overflow-y: auto; max-height: 200px;">
+                        <table class="facetTable" width="160px">
+                            <tbody class="tagcloud" id="keegan4"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- GOC 22-aug-13-->
+
+                <a class="toggler toggler-opened" href="#" title="">By Subject Area </a>
+
+                <div class="toggler-c toggler-c-opened" title="By Subject Area ">
+                    <style>
+                        .ui-icon {
+                            float: left;
+                        }
+                    </style>
+                    <form id="form-refine-search" method="get">
+                        <input type="hidden" id="query-get" name="query" value=""/>
+                        <input type="hidden" id="qf-get" name="qf" value=""/>
+                    </form>
+                    <div style="overflow-x: hidden; overflow-y: auto; max-height: 200px;">
+                        <table class="facetTable">
+                            <tbody class="tagcloud" id="keegan_subject_lcsh"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchresults_right">
+
+
+                <div id="navigation">
+                    <div id="pager-header"></div>
+                    <ul class="pager" id="pager"></ul>
+                </div>
+                <!--navigation div-->
+
+                <div id="docs">
+                    <div class="clear"></div>
+                    <!--added in clearing div-->
+                </div>
+                <!--end of docs-->
+
+
+            </div>
+            <!--end of #searchresults_right-->
+            <div class="clear"></div>
+
+        </div>
+        <!--end of DRIS Search Results page-->
+
+
+        <!--start of DRIS footer-->
+        <div class="f">
+<hr class="cloak" />
+<p>
+<span class="date-modified" title="Last update">
+<span title="TCHPC">Hosted @ <a href="/web/20160325155001/http://www.tchpc.tcd.ie/">TCHPC</a></span> |
+<span><a href="/web/20160325155001/http://www.tcd.ie/Library/dris/contact.php">Contact</a></span>
+</span>
+<span class="cloak"> | </span>
+<a href="/web/20160325155001/http://www.tcd.ie/Library/about/copyright.php">Copyright</a> |
+<a href="mailto:Digitalresources@tcd.ie?subject=Website Feedback">Website Feedback</a> |
+<a href="/web/20160325155001/http://www.tcd.ie/Library/dris/help.php">Help</a></p>
+</div>
+        <!--end of DRIS footer-->
+
+
+        <!--start of Trinity footer-->
+        	
+
+<div class="tcd-footer">
+<address>
+Trinity College Dublin, College Green, Dublin 2.
+<br>
+Central Switchboard: +353 1 896 1000.
+</address>
+<ul>
+<li><a href="/web/20160325155001/http://www.tcd.ie/accessibility/">Accessibility</a></li>
+<li><a href="/web/20160325155001/http://www.tcd.ie/privacy/">Privacy</a></li>
+<li><a href="/web/20160325155001/http://www.tcd.ie/disclaim/">Disclaimer</a></li>
+<li><a href="/web/20160325155001/http://www.tcd.ie/contacts/">Contact</a></li>
+</ul>
+<!-- End of footer -->
+</div>
+        <!--end of Trinity footer-->
+
+
+    </div>
+    <!--end of wrap-->
+
+
+    <script type="text/javascript">
+        <!--
+        
+        var password;
+        var pass1 = "tcd_dris"; // place password here
+
+        var thelocation = String(window.location);
+        var tester = thelocation.indexOf("DRIS_ID");
+
+        // End -->
+    </script>
+
+
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+        var sc_project = 5992708;
+        var sc_invisible = 1;
+        var sc_security = "c3ce38d0";
+    </script>
+
+    <script type="text/javascript"
+            src="/web/20160325155001js_/http://www.statcounter.com/counter/counter.js"></script>
+    <noscript>
+        <div
+            class="statcounter"><a title="joomla statistics"
+                                   href="/web/20160325155001/http://statcounter.com/joomla/" target="_blank"><img
+                    class="statcounter"
+                    src="/web/20160325155001im_/http://c.statcounter.com/5992708/0/c3ce38d0/1/"
+                    alt="joomla statistics"></a></div>
+    </noscript>
+    <!-- End of StatCounter Code -->
+
+
+    
+    <script type="text/javascript">
+        var keyVar = '04c78eedfcd3e0da4728';
+        var script = document.createElement("script");
+        script.src = "//wripl.com/js/jquery.wriplFE.js",
+            script.async = !0;
+        var firstScript = document.getElementsByTagName("script")[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    </script>
+</body>
+
+
+</html>

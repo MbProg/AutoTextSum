@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: /web/20160424160432/http://ogp.me/ns#" prefix="og: /web/20160424160432/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: /web/20160424160432/http://ogp.me/ns#" prefix="og: /web/20160424160432/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: /web/20160424160432/http://ogp.me/ns#" prefix="og: /web/20160424160432/http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app36.us.archive.org";archive_analytics.values.server_ms=196;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta charset="utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+<meta name="robots" content="index, follow"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script>
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.defineSlot('/7211001/300x250-AdExchange',[300,250],'div-gpt-ad-1454538700567-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1447448043579-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1456964279291-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1447448043579-1').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1456967562301-0').addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>
+<!-- Begin comScore Tag -->
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20782744"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"/web/20160424160432/https://sb":"/web/20160424160432/http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+<noscript>
+<img src="/web/20160424160432im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=20782744&amp;cv=2.0&amp;cj=1"/>
+</noscript>
+<!-- End comScore Tag -->
+<!-- Begin mbid Tag -->
+<script id="mbid-nucleus" src="/web/20160424160432js_/http://c.mbid.io/tags/h" data-bsm-flag="true" data-bsm-version="v3" data-bsm-sizes="300x250 300x600" data-bsm-pub="historynet" data-bsm-pub-zone="historynet.com/ros" data-bsm-event-host="//b.mbid.io"></script>
+<!-- End mbid Tag -->
+<style>@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(/web/20160424160432im_/http://fonts.gstatic.com/s/raleway/v10/JbtMzqLaYbbbCL9X6EvaIy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(/web/20160424160432im_/http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(/web/20160424160432im_/http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v3.1.2 - /web/20160424160432/https://yoast.com/wordpress/plugins/seo/ -->
+<title>Medieval Warfare: How to Capture a Castle with Siegecraft | HistoryNet</title>
+<link rel="canonical" href="http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Medieval Warfare: How to Capture a Castle with Siegecraft | HistoryNet"/>
+<meta property="og:description" content="During the Middle Ages, a besieging army needed manpower, siege engines, and, more often than not, patience in order to carry a fortress."/>
+<meta property="og:url" content="http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<meta property="article:publisher" content="https://www.facebook.com/HistoryNet-121405527876395/"/>
+<meta property="article:tag" content="Ancient-Medieval"/>
+<meta property="article:tag" content="Military Technology"/>
+<meta property="article:tag" content="Weaponry"/>
+<meta property="article:section" content="Gear"/>
+<meta property="article:published_time" content="2006-06-12T20:07:25+00:00"/>
+<meta property="article:modified_time" content="2016-04-13T16:40:26+00:00"/>
+<meta property="og:updated_time" content="2016-04-13T16:40:26+00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="During the Middle Ages, a besieging army needed manpower, siege engines, and, more often than not, patience in order to carry a fortress."/>
+<meta name="twitter:title" content="Medieval Warfare: How to Capture a Castle with Siegecraft | HistoryNet"/>
+<meta name="twitter:site" content="@HistoryNet"/>
+<meta name="twitter:creator" content="@HistoryNet"/>
+<!-- / Yoast SEO plugin. -->
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Feed" href="http://www.historynet.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Comments Feed" href="http://www.historynet.com/comments/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Medieval Warfare: How to Capture a Castle with Siegecraft Comments Feed" href="http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm/feed"/>
+<script type="text/javascript">window._wpemojiSettings={"baseUrl":"/web/20160424160432/http://s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"/web/20160424160432/http://www.historynet.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+<link rel='stylesheet' id='aqpb-view-css-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/aqua/assets/css/A.aqpb-view.css,qver=4.2.2.pagespeed.cf.3IrwmHA7Ng.css' type='text/css' media='all'/>
+<style id='wds_frontend-css' media='all'>.wds_more{font-size:12px}div[id^="wds_container"] *{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;line-height:1}div[id^="wds_container"] p{padding:0!important;margin:0!important}.wds_layer a,.wds_layer a:hover{color:inherit!important;font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;text-decoration:none}.wds_loading_img{border:none!important;float:none;width:50px;animation:spin 2.5s infinite linear;-moz-animation:spin 2.5s infinite linear;-o-animation:spin 2.5s infinite linear;-webkit-animation:spin 2.5s infinite linear}.wds_loading{text-align:center}div[id^="wds_container"] .wds_btn_cont{height:100%;left:0;position:absolute;top:0;vertical-align:middle;width:100%}div[id^="wds_container"] .wds_contTableCell{display:table-cell}div[id^="wds_container"] .wds_contTable{display:table}div[id^="wds_container"] .wds_left_btn_cont,div[id^="wds_container"] .wds_right_btn_cont,div[id^="wds_container"] .wds_pp_btn_cont{display:inline-block;position:relative;text-align:center;vertical-align:middle;z-index:16}div[id^="wds_container"] .wds_left_btn_cont{margin-left:10px}div[id^="wds_container"] .wds_right_btn_cont{margin-right:10px}@-webkit-keyframes wdszoom0 { 100% { background-size: 170%; }}@-webkit-keyframes wdszoom70 { 100% { background-size: 100%; }}@-moz-keyframes wdszoom0 { 100% { background-size: 170%; }}@-moz-keyframes wdszoom70 { 100% { background-size: 100%; }}@keyframes wdszoom0 { 100% { background-size: 170%; }}@keyframes wdszoom70 { 100% { background-size: 100%; }}</style>
+<link rel='stylesheet' id='wds_effects-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/A.wds_effects.css,qver=1.0.8.pagespeed.cf.eFCRIpN5sL.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='wds_font-awesome-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/font-awesome-4.3.0/A.font-awesome.css,qver=4.3.0.pagespeed.cf.HpcIsdYD5q.css' type='text/css' media='all'/>
+<style id='wp-polls-css' media='all'>.wp-polls-archive{}.wp-polls,.wp-polls-form{}.wp-polls ul li,.wp-polls-ul li,.wp-polls-ans ul li{text-align:left;background-image:none;display:block}.wp-polls ul,.wp-polls-ul,.wp-polls-ans ul{text-align:left;list-style:none;float:none}.wp-polls ul li:before,.wp-polls-ans ul li:before,#sidebar ul ul li:before{content:''}.wp-polls IMG,.wp-polls LABEL,.wp-polls INPUT,.wp-polls-loading IMG,.wp-polls-image IMG{display:inline;border:0px;padding:0px;margin:0px}.wp-polls-ul{padding:0px;margin:0px 0px 10px 10px}.wp-polls-ans{width:100%;filter: alpha(opacity=100);-moz-opacity:1;opacity:1}.wp-polls-loading{display:none;text-align:center;height:16px;line-height:16px}.wp-polls-image{border:0px}.wp-polls .Buttons{border:1px solid #c8c8c8;background-color:#f3f6f8}.wp-polls-paging a,.wp-polls-paging a:link{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:visited{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:hover{border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging a:active{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging span.pages{padding:2px 4px 2px 4px;margin:2px 2px 2px 2px;color:#000;border:1px solid #000;background-color:#fff}.wp-polls-paging span.current{padding:2px 4px 2px 4px;margin:2px;font-weight:bold;border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging span.extend{padding:2px 4px 2px 4px;margin:2px;border:1px solid #000;color:#000;background-color:#fff}</style>
+<style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background-image:url(/web/20160424160432im_/http://cdn.historynet.com/wp-content/plugins/wp-polls/images/default/pollbg.gif);border:1px solid #c8c8c8}</style>
+<link rel='stylesheet' id='cointent-wp-plugin-css' href='/web/20160424160432cs_/http://connect.cointent.com/style.css?ver=4.2.2' type='text/css' media='all'/>
+<link rel='stylesheet' id='parent-style-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/themes/superblog/A.style.css,qver=4.2.2.pagespeed.cf.NIi9n46JnW.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='styles-min-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/themes/superblog-child/assets/css/A.style.min.css,qver=4.2.2.pagespeed.cf.J2k8FwvL3N.css' type='text/css' media='all'/>
+<style id='default_style-css' media='all'></style>
+<link rel='stylesheet' id='shortcodes-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css,qver=4.2.2.pagespeed.cf.eivA_VCL_f.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='fontawesome-css' href='/web/20160424160432cs_/http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=1.3.9' type='text/css' media='all'/>
+<!--[if IE 7]>
+<link rel='stylesheet' id='fontawesome-ie-css'  href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css?ver=1.3.9' type='text/css' media='all' />
+<![endif]-->
+<style id='plugin_css-css' media='all'>#newsFeed{width:100%;height:auto;padding:0px 3px 3px 5px;margin-top:3px auto}ul.feedEkList{list-style:none;padding:10px;margin:0px}ul.feedEkList li{border-bottom:1px solid #d3cad7;padding-bottom:15px}h1.itemTitle{margin-bottom:10px}.itemTitle a{text-decoration:none}.itemContent{padding:1px 3px 3px 3px;color:#3e3e3e}.itemPoston{float:left;margin-right:10px;font-size:13px}.itemDate{font-size:13px;color:#666}.itemContent img{float:left;margin:0 20px 0 0}.itemBtn{background-color:#3a5795;border-radius:2px;color:#fff;float:right;padding:3px 8px;text-decoration:none}.itemBtn:hover{text-decoration:none;color:#fff}.itemClear{clear:both}</style>
+<link rel='stylesheet' id='tabby.css-css' href='/web/20160424160432cs_/http://cdn.historynet.com/wp-content/plugins/tabby-responsive-tabs/css/A.tabby.css,qver=1.2.1.pagespeed.cf.aIEY0mYxoY.css' type='text/css' media='all'/>
+<style>.fa-hidden{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.rtl .fa-hidden{left:10000px}.fa-showtext{margin-right:5px}</style>
+<script src="/web/20160424160432js_/http://cdn.historynet.com/wp-includes,_js,_jquery,_jquery.js,qver==1.11.2+wp-includes,_js,_jquery,_jquery-migrate.min.js,qver==1.2.1+wp-content,_plugins,_slider-wd,_js,_jquery.mobile.js,qver==1.0.8.pagespeed.jc.XONe6FEUyF.js"></script><script>eval(mod_pagespeed_RRVdbBC0pu);</script>
+<script>eval(mod_pagespeed_Hf0$z$LmEX);</script>
+<script>eval(mod_pagespeed_98HfFSFkSU);</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.historynet.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.historynet.com/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.2.2"/>
+<link rel='shortlink' href='http://www.historynet.com/?p=3033256'/>
+<meta property="og:title" content="Medieval Warfare: How to Capture a Castle with Siegecraft"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://cdn.historynet.com/wp-content/themes/historynet/images/redesign/HistoryNetComlogo.gif"/>
+<meta property="og:url" content="http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm"/>
+<meta property="og:description" content="During the Middle Ages, a besieging army needed manpower, siege engines, and, more often than not, patience in order to carry a fortress."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<!-- Themnific Shortcodes CSS -->
+<link href="/web/20160424160432cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css.pagespeed.cf.yf0g4U5MBA.css" rel="stylesheet" type="text/css"/>
+<!-- Themnific Styling -->
+<style type="text/css">#header,#navigation,.nav li ul,ul.social-menu .social-menu-more li,.flexcarousel ul.slides li,#hometab,.postinfo,.widgetable,ul.products li.product{background-color:#fff}.nav>li>ul:after{border-color:#fff transparent}#main-nav>li>a,.searchform,ul.social-menu li{border-color:#fff!important}.woocommerce-message,.woocommerce-error,.woocommerce-info{background:#fff!important}#footer,.body2,h2.widget_spec,.imgwrap,#topnav,.maso,.mainflex .videoinside{background-color:#32373b}.socialtrigger a:hover,.socialtrigger a.active,.overrating,.meta_more a:hover,.sf-sub-indicator,span.score,.flexslider a.flex-prev,.flexslider a.flex-next,.ratingbar,#sidebar p input[type="submit"],span.ribbon,a#triggernav,a#triggernav-sec,a.fromhome,a.mainbutton,a.itembutton,.page-numbers.current,a.comment-reply-link,#submit,#comments .navigation a,.tagssingle a,.contact-form .submit,.intro,li.main h2,.plan-bottom a,.scrollTo_top a,.gallery-item,submit{background-color:#fa0505}h3 a i,h4 a i,#core .meta_more a,#content .meta_more a,a.moreposts,.more a.fr,#content .entry a,li ul li.current-menu-item a,#core a.add_to_cart_button{color:#fa0505}h2.widget,h2.widget_spec,.meta_more a,#serinfo-nav li.current a,.woocommerce a.button{border-color:#fa0505!important}#main-nav>li>a:hover,#main-nav>li.current-menu-ancestor>a,#main-nav>li.current-menu-item>a,#main-nav>li.sfHover>a,#main-nav>li.current_page_item>a,#main-nav>li.current-menu-item>a,.page-numbers.current,.woocommerce a.button:hover{background-color:#fa0505!important}body,#navigation,.social-menu-more{background-color:#fafafa}.body1 a,a:link,a:visited,.nav li ul li a{color:#393847}span>a.moreposts,ul#serinfo-nav li a{color:#393847!important}a:hover,.body1 a:hover{color:#fa0505!important}#sec-nav>li>a,#footer a{color:#fff}.body2 a:hover,p.body2 a:hover,#sec-nav>li>a:hover{color:#ccc!important}.woocommerce ul.products,#navigation,#header,.aq-block,.fblock,ul#serinfo,.postinfo,.postinfo span,.widgetable,.related,#hometab,h2.leading,.postauthor_alt{border-color:#ededed!important}body,input,textarea,input checkbox,input radio,select,file,h3.sd-title{font:400 13px/1.8em Roboto;color:#141414}.body2,#footer,.searchformhead>input.s{font:400 12px/1.8em Roboto;color:#eee}.ratingblock h2,.ratingblock h3,.ratingblock p,#footer h2,.body2 h2,.body2 h3{color:#eee}.intro h1,.intro h1 a,a.itembutton,a.mainbutton,.page-numbers.current{color:}h1,h2.post{font:400 50px/1.0em Roboto;color:#2e373f}h2.widget,.meta_more a,a.morebutton,ul#serinfo-nav li a{font:700 13px/1.2em Roboto;color:#3d3d3d}h2{font:700 28px/1.2em Roboto;color:#3d3d3d}h3,h3#reply-title,#respond h3,.comment-author cite{font:700 25px/1.0em Roboto;color:#222}h4,li.product h3,.woocommerce .upsells.products h2,.woocommerce .related.products h2,.woocommerce ul.cart_list li a,.woocommerce ul.product_list_widget li a,.woocommerce-page ul.cart_list li a,.woocommerce-page ul.product_list_widget li a{font:400 14px/1.5em Roboto;color:#222}h5,p.meta,.meta a{font:400 11px/1.5em Roboto;color:#999}h6{font:400 11px/1.5em Roboto;color:#999}#main-nav>li>a,.searchform input.s,.woocommerce a.button{font:700 13px/1.0em Raleway;color:#000}ul.social-menu li a{font:700 13px/1.0em }.tab-post small a,.taggs a{color:#141414}</style>
+<script type="text/javascript" src="/web/20160424160432js_/http://s.ntv.io/serve/load.js" async></script>
+<style>.adspace:after{content:" ";display:table;clear:both}@media (max-width:1096px){#div-gpt-ad-1447803615327-0{display:none}.ad-cont{text-align:center}#div-gpt-ad-1447448043579-0{float:none!important;display:inline-block}}ul.related{padding-bottom:0;margin-bottom:15px}ul.related li a{font-weight:800!important}ul.related li{width:100%!important;float:none!important;padding:0!important}ul.related li:last-child{border-bottom:none!important}ul.related li:last-child h4{margin-bottom:0}.side-bar h2{display:block;text-align:center;background:#dcdcdc;text-transform:uppercase;font-size:16px;font-weight:800;padding:12px 0;margin:0;margin-top:15px}.side-bar h4{margin:0 0 10px 0}</style></head>
+<body class="single single-post postid-3033256 single-format-standard upper" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm";
+
+var firstYear = 1996;
+var displayDay = "24";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160424160432" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20160304073006/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm" title="4 Mar 2016">MAR</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:04:32 Apr 24, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160415005518/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm" title="0:55:18 Apr 15, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:04:32 Apr 24, 2016">24</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150223100843/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm" title="23 Feb 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:04:32 Apr 24, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160424160432*/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm" title="See a list of every capture for this URL">30 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 Apr 08 - 24 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000220202101_2009:-1:030000000000_2010:-1:000000000020_2011:-1:000000000000_2012:-1:100000000000_2013:-1:000000000100_2014:-1:100000000100_2015:-1:110010001011_2016:3:002300000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="header" class="" itemscope itemtype="http://schema.org/WPHeader">
+<div id="topnav">
+<div class="container">
+<a id="triggernav-sec" href="#">MENU</a>
+<ul id="sec-nav" class="nav custom-nav"><li id="menu-item-13694790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694790"><a href="/web/20160424160432/http://www.historynet.com/american-history">American History</a></li>
+<li id="menu-item-13694789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694789"><a href="/web/20160424160432/http://www.historynet.com/americas-civil-war">America&#8217;s Civil War</a></li>
+<li id="menu-item-13694787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694787"><a href="/web/20160424160432/http://www.historynet.com/aviation-history">Aviation History</a></li>
+<li id="menu-item-13694788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694788"><a href="/web/20160424160432/http://www.historynet.com/civil-war-times">Civil War Times</a></li>
+<li id="menu-item-13694786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694786"><a href="/web/20160424160432/http://www.historynet.com/military-history">Military History</a></li>
+<li id="menu-item-13694785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694785"><a href="/web/20160424160432/http://www.historynet.com/mhq">MHQ</a></li>
+<li id="menu-item-13694784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694784"><a href="/web/20160424160432/http://www.historynet.com/vietnam">Vietnam</a></li>
+<li id="menu-item-13694783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694783"><a href="/web/20160424160432/http://www.historynet.com/wild-west">Wild West</a></li>
+<li id="menu-item-13694782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694782"><a href="/web/20160424160432/http://www.historynet.com/worldwar2">World War II</a></li>
+</ul>
+<span class="fr visfix"></span> </div>
+</div>
+<div class="clearfix"></div>
+<div id="navigation_wrap">
+<nav id="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="post">
+<div class="nav-logo">
+<a class="logo-link" href="/web/20160424160432/http://www.historynet.com/"></a>
+<a id="triggernav" href="#">MENU</a>
+</div>
+<h1 class="post-title">Medieval Warfare: How to Capture a Castle with Siegecraft</h1>
+<ul id="main-nav" class="nav custom-nav"><li id="menu-item-13697640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697640"><a href="/web/20160424160432/http://www.historynet.com/videos">Videos</a></li>
+<li id="menu-item-13698760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13698760"><a href="/web/20160424160432/http://www.historynet.com/galleries">Galleries</a></li>
+<li id="menu-item-13697637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697637"><a href="/web/20160424160432/http://www.historynet.com/today-in-history">Today in History</a></li>
+<li id="menu-item-13699434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13699434"><a href="/web/20160424160432/http://www.historynet.com/history-trivia-quiz">Daily Quiz</a></li>
+<li id="menu-item-13697731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13697731"><a href="/web/20160424160432/http://www.historynet.com/magazines/ask-mr-history">Ask Mr. History</a></li>
+<li id="menu-item-13697636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13697636"><a title="Subscribe" href="/web/20160424160432/http://shop.historynet.com/?utm_source=historynet&amp;utm_medium=nav">Subscribe</a></li>
+</ul> <div class="menu-right">
+<ul class="social-menu">
+<li class="sprite-facebook"><a target="_blank" class="mk-social-facebook" title="Facebook" href="/web/20160424160432/https://www.facebook.com/HistoryNet-121405527876395/"></a></li>
+<li class="sprite-twitter"><a target="_blank" class="mk-social-twitter-alt" title="Twitter" href="/web/20160424160432/https://twitter.com/HistoryNet"></a></li>
+<li class="sprite-youtube"><a target="_blank" class="mk-social-youtube" title="You Tube" href="/web/20160424160432/https://www.youtube.com/channel/UCzdWdL_xC5qk07WWOtnXSWA"></a></li>
+<li class="sprite-instagram"><a target="_blank" class="mk-social-photobucket" title="Instagram" href="/web/20160424160432/https://www.instagram.com/historynetofficial/"></a></li>
+<li class="socialtrigger">
+<a title="Show More" href="#">+</a>
+<ul class="social-menu-more">
+</ul>
+</li>
+</ul> </div>
+</nav>
+</div>
+</div>
+<div class="clearfix"></div>
+<div id="morphsearch" class="morphsearch">
+<form class="morphsearch-form" role="search" method="get" action="/web/20160424160432/http://www.historynet.com/">
+<input class="morphsearch-input" type="search" placeholder="Search..." name="s" id="s"/>
+<input class="morphsearch-submit" type="submit" id="searchsubmit" value="search"/>
+</form>
+<span class="morphsearch-close"></span>
+</div><!-- /morphsearch -->
+<div class="container  upper" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<script>jQuery('h1.post-title').on('click',function(){jQuery('html, body').animate({scrollTop:0},500);});</script>
+<div id="core" class="None >
+
+        <div class=" post-3033256 post type-post status-publish format-standard hentry category-gear category-mhq tag-ancient-medieval tag-military-technology tag-weaponry" itemscope itemprop="blogPost" itemtype="http://schema.org/Article">
+<div class="clearfix"></div>
+<div id="content" class="eightcol">
+<div class="feature_image">
+</div>
+<h1 class="post entry-title" itemprop="headline"><a href="/web/20160424160432/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm">Medieval Warfare: How to Capture a Castle with Siegecraft</a></h1>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160424160432/http://www.facebook.com/sharer.php?u=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160424160432/http://twitter.com/share?url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160424160432/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160424160432/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+<div class="medium-12 large-8 columns entry" itemprop="text" style="float: left;">
+<div class="clearfix"></div>
+<p class="meta">
+6/12/2006 &bull;
+<a href="/web/20160424160432/http://www.historynet.com/magazines/gear" rel="category tag">Gear</a>, <a href="/web/20160424160432/http://www.historynet.com/magazines/mhq" rel="category tag">MHQ</a> </p>
+<p>The present-day notion of medieval warfare is of longbowmen standing shoulder to shoulder loosing arrows and knights charging across open fields before engaging in brutal hand-to-hand battle. Hastings, Bannockburn, and Agincourt come to mind. Such battles, however, were the exception, for during the Middle Ages warfare was a much more complicated affair that more often than not involved siegecraft.</p>
+<p>After his 1066 victory at Hastings, William the Conqueror initiated a massive castle-building program in England that was instrumental in completing the Normans&#8217; subjugation of the Anglo-Saxons. Throughout medieval Europe and the Middle East, the castle functioned as a private fortress that, among its other roles, physically&#8211;and symbolically&#8211;proclaimed the status and strength of its lord to all comers, friend or foe. Even the simplest earth and timber motte and bailey castle, used to great effect by the Norman kings of England, validated the power of the conquering force.</p>
+<p>During the twelfth and thirteenth centuries, castles evolved into powerful fortresses capable of defying intensive assaults. At the same time, in order to combat strengthened castle defenses, siegecraft developed. By the late Middle Ages, few major campaigns took place without at least one castle siege. Indeed, while battles such as Crcy (1346) have gleaned all the glory, it was not until the siege of Calais in the following year that the English made significant progress in their fight against France. The successful castle siege skillfully combined sophisticated science with specific standards of conduct known to, but not always practiced by, the participants. Ultimately, the siege dominated medieval warfare for at least as long as the castle dominated the social and political order of the day.</p>
+<p>Besieging a castle was a much more complicated affair than simply &#8216;rushing into the breach,&#8217; as Shakespeare&#8217;s Henry V exhorted his troops before the 1415 siege of Harfleur. Sieges, likewise, involved much more than bombarding a fortress until either the garrison surrendered or the defenses were overcome. In fact the medieval siege was a complex, highly choreographed process that ended with a castle assault only when other tactics had failed to force a surrender. Besieging a castle involved assembling and paying an army, gathering supplies, and hauling them to the siege site. Because the costs were so high, military leaders normally did not rush into a siege. Indeed, if a besieging army lost too many men in an initial onslaught, it was often forced to retreat or give up the siege entirely. If it was successful enough to gain control of the castle, the army&#8217;s now-weakened troops might not be capable of repulsing a renewed attack by forces sent to relieve the garrison. Consequently, the full-out siege was normally a last resort, unless, of course, the attacking king or lord had a particular investment in breaking his opponent.</p>
+<p>Early medieval sieges were generally directed against towns or major cities, which were often fortified, rather than at individual castles. As castle sieges became more commonplace, besiegers devised methods to overcome increasingly complex defenses. Until about 1100, tactics mainly consisted of using firepower to break through the castle&#8217;s physical defenses or of starving out the defenders by blockade. During the twelfth and thirteenth centuries, siege warfare became increasingly sophisticated, and by the mid-fourteenth century enormous timber war machines had become the mainstay of virtually every investment. At the same time, specific conventions for conducting a siege were well established. The most practiced soldiers followed traditional protocol, which encouraged honorable negotiation and surrender before an attacker pummeled the garrison into submission.</p>
+<p>Commanders first had to devise an overall strategy for taking the castle. They had to consider from where in the realm the best archers, skilled carpenters, blacksmiths, sappers, and engineers could be drawn. If a king was contemplating launching a siege, he would consider which lords owed him knights&#8217; service and how many men-at-arms they would provide (knights normally were obligated to serve for forty days during the course of a year). Other considerations included how much timber, lead, tools, nails, food, drink, livestock, and other provisions were required for the duration of the siege and where they could be acquired.</p>
+<p>The preparations undertaken prior to the 1224 siege of Bedford Castle by Hubert de Burgh for King Henry III provide a case in point. First, the archbishop of Canterbury, the king&#8217;s advocate, excommunicated the castle&#8217;s garrison, hoping to demoralize the defenders into surrendering. In the meantime, the besiegers began to assemble vital materials, laborers (including miners, carpenters, and masons), knights, and other fighters. Among the items required for the siege were iron, hides, charcoal, leather, and some nineteen thousand crossbow quarrels. The king ordered protective screens, bolts, hammers, mallets, wedges, tents, wax, and a variety of spices. He also made sure that several siege engines were readied and that gynours, or gunners, were on hand to operate the machines.</p>
+<p>The most satisfying way to successfully conclude a battle was without fighting. Indeed, many more sieges were settled by negotiation, bribery, or forms of intimidation than open warfare. Given the huge effort involved in coordinating a siege and assembling an army, potential besiegers made at least cursory efforts to convince the garrison, the constable, or the lord of the castle to surrender peaceably.</p>
+<p>Surrender under honorable terms was a common way out of a siege. In many cases, the besiegers allowed the defenders a period of time, ranging from a week to forty days, to decide whether or not to give in. Truces effectively delayed a full-blown assault, so that the constable could contact his lord for directions on how to handle the situation or to gain assistance at the castle. Lengthy truces could also lead to the deterioration of the attacking army, particularly when knights&#8217; forty-day service obligations neared completion and no reinforcements showed up to replace them. If members of a beleaguered garrison knew they had enough food and drink to carry them at least forty days or had notice that relief was on its way, they knew they might survive the investment. Truces also gave the defenders time to construct their own siege engines, shore up their defenses, and build wooden hoards, or fighting platforms, on the battlements.</p>
+<p>If the garrison refused surrender demands, the siege began with an overt act by the attackers, a symbolic sign of intent. At the siege of Rhodes in 1480, for example, Muslim forces hoisted a black flag to warn their opponents that they would attack. At times, attackers threw javelins or shot crossbow bolts at the castle gateway to signal their intentions. On occasion, siege engines hurled missiles. By the late Middle Ages, cannon fire signaled the beginning of sieges.</p>
+<p>When a garrison refused to surrender, the balance of besieging forces would trek to the siege site, set up their encampment, and construct some basic defenses of their own not too far from the castle&#8217;s walls. Engineers would also begin erecting bulky, intimidating siege engines. Other soldiers fomented dissent in the surrounding countryside in an effort to recruit supporters and seize control of crops and other resources&#8211;assuming landowners and peasants had not already torched them. It was common for inhabitants of an area to use a&#8217;scorched earth&#8217; policy to sabotage an impending siege. After gathering food, livestock, and other items for their own use, they intentionally burned their own lands to prevent the enemy from gaining any benefit from them. Often the resulting famine left the besiegers no alternative but to retreat.</p>
+<p>In order to ease access to the castle, attackers might first fill the strongpoint&#8217;s surrounding dry ditch or wet moat with tree branches, gorse, heather, loose earth, or whatever else was available. Alternatively, they might sail a barge to the base of the castle&#8217;s outer, or curtain, wall. Once the ditch could be crossed or the moat forded, the initial offensive could proceed rapidly. Often relatively light, the early assault primarily featured an escalade&#8211;an attempt to scale the curtain wall by ladders. The key to an escalade was for the attackers to climb the ladders as quickly as possible, leap onto the battlements, and begin fighting the defenders. During this effort, archers, crossbowmen, and slingers outside the castle provided protective fire for their comrades while shielding themselves behind screens known as pavises. The onrush would take place at several spots along the curtain wall in hopes of splitting up the garrison, diverting attention, and gaining access at whatever point might weaken.</p>
+<p>At the same time, the besiegers assaulted the main gate&#8217;s heavy timber doors and attempted to set afire any timber rooftops shielding castle towers. They might also begin hammering the masonry defenses with picks, iron bars, and other tools while protected inside a hide-covered timber-and-iron framework, known variously as a cat, rat, tortoise, or turtle, which had been wheeled to the castle wall. Of course, the defenders made every effort to thwart the escalade by shoving ladders away from the walls, shooting at the besiegers, and dropping stones, quicklime, or hot liquids upon them.</p>
+<p>It took nimble, sure-footed, quick-thinking men to maneuver their weighty armor and weapons and scale the walls successfully. At the siege of Caen in 1346, Sir Edmund Springhouse slipped off a ladder and fell into the ditch. French soldiers overhead swiftly tossed flaming straw on top of the Englishman and burned him alive. During the siege of Smyrna, Turkey, also in the fourteenth century, one of the besiegers climbed halfway up a ladder. When he rested and took off his helmet to see how much farther he had to climb to reach the top, a crossbow bolt shot from the battlements hit him between the eyes, killing him.</p>
+<p>If an escalade proved successful, the besiegers would chivalrously offer the garrison a final chance to surrender with honor or to call a temporary truce. On the other hand, when an escalade failed to make a serious dent in the defenses, the attackers intensified the onslaught. They also began constructing siegeworks or a siege castle, sometimes called a countercastle, in preparation for a prolonged conflict. Then they would man the era&#8217;s most destructive weapons&#8211;siege engines.</p>
+<p>No two sieges were ever conducted in exactly the same way. How the operation developed depended on the strength, size, and resources of the attacking army; the condition and complexity of the castle&#8217;s fortifications; the fortress&#8217; armory and supplies; as well as the resolve of the besieged. An army might employ several different types of siege engines to bring down the battlements while also attempting to force surrender by other means.</p>
+<p>Medieval siege engines originated in Greek, Roman, and ancient Chinese warfare. Archimedes was responsible for advancing siege technology, which the Greeks had introduced before the fourth century b.c. The renowned mathematician and engineer developed several engines as early as 213 b.c., when the Greeks fought the Romans at the siege of Syracuse. His prototypical petrariae, great stone-throwing engines, were copied and modified by the Romans and later used throughout the medieval world.</p>
+<p>The Romans bequeathed two important siege engines to medieval warfare. The onager, meaning wild ass, consisted of a heavy timber trestle mounted midway on a horizontal timber frame, and it hurled a missile in an overhead arc, rather like a child flinging peas with a spoon. When fired, the engine&#8217;s rear kicked upward&#8211;hence the descriptive name. The onager&#8217;s medieval counterpart, a mangonel, employed a long timber arm or beam held in place by skeins of tightly twisted rope stretched between two sides of the frame. Gunners would ratchet back the arm and place a large stone or incendiary device in the scoop at its end. When the firing arm was released, the projectile would arc out to a range of up to five hundred yards.</p>
+<p>Despite the inherent inaccuracy of this torsion-powered machine, which is sometimes called a catapult, the mangonel could effectively break through stone walls or knock down a castle&#8217;s battlements. Mangonels were occasionally used to hurl dead carcasses over battlements in an effort to spread disease among the castle defenders. In response, defenders sometimes used their own siege engines to toss back one of the besiegers&#8211;if they had managed to capture one during the escalade or during a raid outside the castle&#8211;or a messenger who carried unacceptable surrender terms.</p>
+<p>Used in battle across Europe and the Holy Land, mangonels saw action when the Vikings besieged Paris in 885, at the 1191 siege of Acre, and at the 1203-4 siege of Chteau Gaillard. Mangonels were also on hand in 1216, when France&#8217;s Prince Louis besieged mighty Dover Castle, on England&#8217;s southeastern coast. Despite Louis&#8217; greatest efforts, which included a battery of siege engines, he failed to breach Dover&#8217;s formidable defenses.</p>
+<p>The Romans modified the modest Greek siege engine known as the scorpion into a horrific dart-firing machine called the ballista, which was later used during the Middle Ages. Like the mangonel, the ballista was powered by twisted skeins of rope, hair, or sinew. But, instead of firing its missiles in an overhead arc, the ballista loosed heavy stones, bolts, and spears along a flat trajectory. Easy to fire accurately, smaller ballistas were effective anti-personnel weapons that could skewer warriors to trees, while large versions could send a sixty-pound stone at least four hundred yards.</p>
+<p>A variant of the ballista was a tension-driven device called the springald, which closely resembled a crossbow in function. Used to fire javelins or large bolts, it had a vertical springboard fixed at its lower end to a timber framework. Soldiers manually retracted the board, which moved like a lever. When released, the springboard smacked the end of the projectile, propelling it toward its target. Springalds also made excellent defensive weapons. At Chepstow Castle in Wales, Roger Bigod mounted four springalds on the corners of the great keep to hold the enemy at bay. Although the springalds no longer survive, the platforms on which they stood during the late thirteenth century are still visible.</p>
+<p>While their comrades busily managed the siege machines, other besiegers used battering rams or bores (chisellike poles) to pound the main gateway and crash through the walls. Rather than simply grabbing a giant log and repeatedly thrusting it at castle gates or stone walls until they broke through, medieval soldiers did their ramming from inside a timber framework called a penthouse or pentise. Used in warfare as early as the sixth century, rams and bores were often pointed and iron-tipped for added effect, and were sometimes shaped, not surprisingly, as rams&#8217; heads. The ram or bore was suspended by chains or ropes from the penthouse ceiling so that the operators, sometimes scores of men, could swing the beam rhythmically and pound the walls into submission.</p>
+<p>The movable penthouse consisted of a lanky timber gallery covered with a pointed roof, cloaked with wet hides to prevent burning, and braced with iron plates to deflect missiles dropped by the defenders overhead. The attackers used rollers, levers, ropes, pulleys, and winches to maneuver the penthouse into place at the base of the castle wall. They then removed the wheels to stabilize the structure.</p>
+<p>Rams were most effective against timber defenses, particularly the heavy oak doors barricading most main gates. Against stone fortifications, they worked best when battering corners. Defenders would counter by using hook-ended ropes to grab the ram and overturn the penthouse or by swinging beams on pulleys to smash the timber cat as it approached the castle. Popular during the Crusades, battering rams were effectively employed in 1191 at Acre, a walled city with a formidable citadel. They became obsolete once the most powerful siege engine of all&#8211;the trebuchet&#8211;began to dominate European sieges.</p>
+<p>The terrible trebuchet was the mother of all stone-throwing siege engines. A purely medieval invention, the giant counterweight-powered machine struck fear into the hearts of many garrisons. Considerable question exists about the trebuchet&#8217;s origins. Peter Vemming Hansen, director of the Medieval Centre in Denmark, argues that the first trebuchets arrived in the Nordic countries by way of northern Germany and may have been used by the Vikings as early as a.d. 873. He states that the first trebuchet arrived in Denmark as early as 1134 and emphasizes that the counterweight engine was definitely a Western invention that spread eastward.</p>
+<p>Trebuchet may derive from the Old French word, trabucher, which means to overturn or fall, and probably described the action of the timber beam that falls over its pivot. The word made its first appearance in the account of the siege of Castelnuovo Bocca d&#8217;Adda written by Johannes Codagnellus in the late twelfth century. According to the Chanson de la Croisadde Albigeoise, Simon de Montfort used a &#8216;trabuquet&#8217; against Castelnaudary in 1211, destroying a tower and the hall. Powered by a counterweight mechanism and able to accurately hit targets at a range of five hundred yards with missiles exceeding three hundred pounds in weight, the trebuchet&#8217;s ability to relentlessly pound a curtain wall until it broke open made the engine invaluable during a siege.</p>
+<p>Engineers in seventh-century China may have perfected an early form of the trebuchet, the perrier&#8211;a traction trebuchet operated solely by men pulling down on ropes attached to a pivoting arm. Its medieval counterpart, however, effectively applied the principle of counterpoise and replaced manpower with a counterweight. Lead weights or a massive pivoting ballast box filled with stones, sand, or dirt&#8211;sometimes weighing as much as twenty tons&#8211;was fixed to one end of the engine&#8217;s arm, which could be up to sixty feet long. The other, longer end of the arm would be hauled down and a heavy stone placed in a leather pouch that was attached by two ropes to the beam&#8217;s end. When the arm was released, the force created by the falling weight propelled the long end upward and caused the missile to be flung slinglike toward a target. The same spot could be pummeled repeatedly, and range and aim could be adjusted. Eventually, the incessant pounding breached walls, killed personnel, or crushed siege engines defending the castle.</p>
+<p>Counterweight trebuchets probably arrived in England when Prince Louis of France besieged Dover Castle during his near-successful invasion of England. In 1216 the French army first used a variety of techniques and weapons to try to breach the resistant castle walls. Then the two sides signed a truce in October, and Louis moved most of his troops to London. After the English garrison broke the truce, killed many of the French soldiers posted outside the castle, and interfered with the movement of troops and supplies, the prince returned to Dover, which he again besieged. The following May, he used a trebuchet, but it proved ineffective. After the defeat of the French fleet in August 1217, the prince gave up his ambitions for the English throne. Despite the losses and his retreat back to France, Louis left an important legacy in England: new technology that not only changed how sieges were conducted but also influenced the design of castle defenses.The trebuchet was also useful for flinging all sorts of projectiles over the curtain walls to create mayhem. In 1346 outside Kaffa, on the Crimean Peninsula, an unknown but virulent disease savaged a besieging Mongol-Tartar army. Hoping to likewise weaken their enemies, the Asian warriors used a trebuchet to toss the diseased bodies of their dead comrades at the Genoese army, which held the major port and cathedral city. The Italian soldiers then unwittingly carried the mysterious disease&#8211;later known as the Black Death&#8211;back to their homeland, and it subsequently devastated Europe.</p>
+<p>Trebuchets also hurled incendiary devices, including flaming missiles, casks of burning tar, and pots of Greek fire, a particularly nasty concoction whose ingredients included saltpeter and sulfur. The fiery substance stuck like glue to almost any surface and was nearly impossible to extinguish, except with sand, salt, or urine&#8211;water only fanned the flames. In twelfth-century medieval France, Count Geoffrey V of Anjou used a siege engine to hurl a heated iron jar filled with Greek fire at the castle of Montreuil-Bellay, which promptly fell after having endured a three-year siege.</p>
+<p>England&#8217;s Edward I, a master of siegecraft as well as castle building, was particularly fond of the trebuchet and used it and other siege engines against castles in Scotland, Wales, and France in the late thirteenth and early fourteenth centuries. In 1304 Edward I assaulted Scotland&#8217;s Stirling Castle using thirteen siege engines, including a springald, a battering ram, and an enormous trebuchet named Warwolf, which, when disassembled, filled thirty wagons. According to Michael Prestwich, who has written extensively on the reign of Edward I, historic documents indicate that the construction of the giant trebuchet took five master carpenters and forty-nine other laborers at least three months to complete. A contemporary account of the siege states, &#8216;During this business the king had carpenters construct a fearful engine called the Warwolf, and this when it threw, brought down the whole wall.&#8217;</p>
+<p>Even before construction could be completed, the sight of the giant engine so intimidated the Scots that they tried to surrender. Edward, declaring, &#8216;You don&#8217;t deserve any grace, but must surrender to my will,&#8217; decided to carry on with the siege and witness for himself the power of the masterful weapon. The Warwolf accurately hurled missiles weighing as much as three hundred pounds and leveled a large section of the curtain wall.</p>
+<p>In 1300 Edward had besieged Caerlaverock Castle. Located in the Scottish Borders about three miles from Dumfries, the castle of the Lords Maxwell posed a formidable obstacle to the king&#8217;s plans to control Scotland. In a contemporary poem titled &#8216;The Song of Caerlaverock,&#8217; Walter of Exeter, a Franciscan friar, chronicled the entire event, from the gathering of troops and materials for the siege train to the assault with siege engines. Originally composed in French, the work remains an invaluable record of the tactics and technology involved in conducting a castle siege.</p>
+<p>According to Walter, &#8216;Caerlaverock was so strong a castle that it feared no siege before the King came there, for it would never have had to surrender, provided that it was well supplied, when the need arose, with men, engines and provisions.&#8217; Edward required all of England&#8217;s noblemen who owed knights&#8217; service or held property in his name to assemble at Carlisle, in the northwestern corner of the country. He commissioned Brother Robert of Ulm as his master mason, and a variety of specialist laborers to construct a cat, battering ram, belfry, springalds, and robinets (probably trebuchets). Edward also stockpiled large stones, timber, bolts, animal hides, and tools. Ships hauled in supplies by sea, while the siege train journeyed northward to the castle.</p>
+<p>Once at their destination, the English army set up camp, erected tents and huts, stabled the horses, and foraged in the surrounding countryside for timber and other resources. Then they laid siege to the Scottish castle. English and Breton soldiers toting small arms charged the castle walls while siege engines began their assault. Despite suffering several deaths, the garrison remained defiant, and the siege continued for some twenty-four hours. Finally, the siege engines breached the curtain wall. Waving a white flag, the Scots first requested a truce to discuss terms, but their spokesman was killed by an arrow, and they soon surrendered. The English ended the siege by formally taking over the castle and flying the king&#8217;s standard. The garrison had amounted to only sixty men, whose fates varied from reprieve to hanging.</p>
+<p>If a castle was strong enough to withstand the pounding of siege engines and if the garrison refused to surrender, the commander of the besieging army still had several options. He could employ sappers to dig tunnels underneath castle walls and towers. Once the miners reached their destination, they filled the tunnel, sometimes called a sap, with tar-soaked beams, branches, and other flammable material that was set on fire. If things went according to plan and the flames consumed the timber props inside, the tunnel would collapse, as well as the tower or section of wall overhead. Besiegers would then storm through the breach.</p>
+<p>Undermining was not without risks, and miners were sometimes killed when a tunnel collapsed too early. Yet the technique was an effective tactic and resulted in the capture of formidable fortresses. In late 1215, England&#8217;s King John besieged Rochester Castle, which was held by a group of rebellious barons led by William d&#8217;Albini. For almost seven weeks John used five siege engines to pound away at the powerful stronghold, but he failed to take the castle from the well-supplied and well-armed defenders. The king then turned to his miners.</p>
+<p>First the sappers managed to breach the outer wall, and John&#8217;s troops rushed into the bailey. In response, the rebels retreated to the protection of the great keep, which was one of the strongest in the kingdom. John&#8217;s sappers were soon undermining the southeastern corner of the huge rectangular structure and filling the tunnel with the usual flammable items.</p>
+<p>Meanwhile, to ensure the keep&#8217;s demise, King John ordered his justiciary, Hubert de Burgh, to send &#8216;with all speed by day and night forty of the fattest pigs of the sort least good for eating.&#8217; After the king had the swine killed, his sappers packed the tunnel with their carcasses. The subsequent fire burned so hot that the keep&#8217;s foundations cracked, and the corner and a portion of wall fell outward. The rebels still refused to yield and retreated to the opposite side of the keep, which was divided by a sturdy cross wall into two separate, self-sufficient areas. John then waited out the barons, who finally surrendered due to fatigue and hunger. When repaired, the new angle of the keep sported a more modern round turret.</p>
+<p>During the late stages of a prolonged siege, attackers would often make use of one last great engine&#8211;the siege tower, or belfry. It was a multipurpose machine that would be rolled to the battlements of a castle so that the men secreted inside could climb onto the walls or operate weapons, such as battering rams and mangonels, from close-range positions of relative safety. Bringing a siege tower into the fray was an expensive prospect and required advance planning, plenty of building materials, skilled craftsmen, and enough soldiers to move the engine as close to the castle as possible. Sometimes disassembled belfries were transported to the siege and only assembled when absolutely necessary, for it could take several weeks to put the engine together. Only the wealthiest noblemen could afford to construct siege towers.</p>
+<p>The wheeled wooden tower normally stood at least three stories high. Near the top, a strategically placed drawbridge lowered to allow the attackers to scramble onto the battlements. Some belfries rose well over ninety feet and were crowned with a mangonel or ballista. To protect the belfry from fire and the men inside from being shot, animal hides soaked in mud and vinegar covered the framework. On rare occasions, iron plates also offered protection. The mechanism itself might carry scores of soldiers, who climbed ladders to move between levels. A belfry at the 1266 siege of Kenilworth Castle held two hundred archers and eleven siege engines.</p>
+<p>Moving the belfry into position was no mean feat. Attackers first had to ensure that the moat or ditch was filled in and the ground relatively smooth. Then strong, persistent men&#8211;and sometimes oxen&#8211;hauled the unstable, heavy tower into place at the foot of a curtain wall. Windy weather posed problems, and the large, slow-moving belfry was vulnerable to fire from castle siege engines, as well as archers and crossbowmen.</p>
+<p>Each man assigned to a siege engine had a particular role to play. Some were responsible for moving the clumsy structure into place; others stood poised with containers of water to keep fires at bay. The ground level of a belfry often featured a ram, which swung on ropes or chains from the ceiling. Sappers might dig at the castle foundations from inside the tower. Archers, crossbowmen, gunners, and armored knights manned upper levels, firing at the castle defenders while waiting to pounce upon them when the drawbridge dropped onto the curtain wall.</p>
+<p>During the 1224 siege of Bedford Castle, Henry III employed two enormous belfries to tower over the battlements and shelter archers firing at the garrison. The castle must have been a formidable foe to precipitate such an extensive and expensive undertaking. After it was captured, the king ordered the complete demolition of the fortress.</p>
+<p>Given the destructive power of siege engines, the devastation that mining could cause, and the determination of the attacking army, one would expect a breach in the castle&#8217;s walls or the surrender of the garrison during the later stages of a siege. But as often as not, the besiegers had to resort to a final tactic to force capitulation. With the attackers already in place around the castle, and much of the land scorched, the likelihood was poor at best that reinforcements and additional supplies would safely reach the besieged. Attackers could then attempt to starve out the garrison.</p>
+<p>Of course, this wait-them-out approach could come early in a siege, if the attackers believed the garrison had few resources with which to defend themselves. Then a blockade might save lives on both sides of the fight, while also conserving the resources available to the besiegers if they decided to push ahead with a full-scale assault. Sometimes garrisons held out for months during blockades and forced the besiegers to retreat when their supplies ran out or disease became a problem.</p>
+<p>Occasionally, a castle&#8217;s constable might concoct shrewd displays to induce an attacking commander to abandon his plans and move on. In 1096 at Pembroke Castle in Wales, Gerald de Windsor ordered that the garrison&#8217;s four remaining hogs be cut up and thrown over the curtain wall, creatively convincing his Welsh enemies that his stronghold was fully stocked. His actions suggested to the attackers that the castle was so filled with food that the men inside could resist a siege indefinitely. In fact, the garrison was on the verge of starvation, but Gerald&#8217;s plan intimidated the Welsh into a speedy retreat.</p>
+<p>When a garrison finally gave in, the men often symbolically signaled the besiegers of their intent to surrender. Many sieges ended with the waving of a white flag or the handing over of castle keys to the leader of the attacking force. Negotiations would then begin to ensure the safety of the garrison or of any important individuals remaining in the castle. For example, in 1326 John Felton, constable of Caerphilly Castle in Wales, withstood a four-month siege led by William, lord Zouche, in the name of Queen Isabella. While the castle ably withstood the battering, Felton began negotiating a pardon for himself and Hugh le Despenser II, boy heir to the lordship of Glamorgan. In March 1327, Felton obtained amnesty and surrendered the castle and its provisions.</p>
+<p>As soon as a garrison surrendered, arrangements were made for the movement of captives and the payment of ransom, and the victors were expected to keep up their side of the bargain. A variety of solutions might be debated, including banishment, relinquishment of all personal property, or the symbolic humiliation of the captives, which included parading them barefoot. Not surprisingly, defeated leaders were often imprisoned or swiftly and brutally executed.</p>
+<p>In the thirteenth century, cannons, or bombards, began to appear in medieval warfare. It was not until the late fourteenth century that cannons were developed to the point that they began to replace timber engines as the preferred siege machine. By 1415, when Henry V besieged Harfleur, the king&#8217;s favored weapon was the cannon, the fire from which devastated the castle&#8217;s barbican to the point that the English could then torch the castle and force the French garrison&#8217;s surrender.</p>
+<p>In response to changing technology, castle-builders devised sturdier defenses to thwart the bombards, as at Craignethan Castle in Scotland, where low, thick bastion walls with cannon loops were added in 1530. As the construction of new castles waned, Henrician gun forts&#8211;Henry VIII&#8217;s so-called Italian &#8216;Device&#8217; forts, armed with clustered circular batteries of heavy artillery that eased cannon positioning&#8211;began to take their place. Despite these developments, besieging armies continued to adhere to the conventions of warfare established centuries earlier.</p>
+<p>Like the timber siege engines, in time the castle became obsolete, not just as a weapon in the medieval arsenal but also as a formidable residence. Yet castles continued to serve a military function until well into the seventeenth century, when they thwarted the efforts of Parliament to defeat King Charles I. As late as World War II, Dover Castle was still considered to have strategic value to the British army and was used by Churchill and his compatriots in the battle against Germany. While castles and trebuchets no longer play a critical role in the military theater, the conventions of siege warfare still guide the efforts of military strategists around the world.</p>
+<p>This article was written by Lise Hull and originally published in the Spring 2004 edition of <i>MHQ</i>.</p>
+<p>For more great articles, subscribe to <a href='/web/20160424160432/http://www.historynetshop.com/901mq1.html' target='_blank'><i>MHQ: The Quarterly Journal of Military History</i></a> today!</p>
+<h3 class="tags"><a href="/web/20160424160432/http://www.historynet.com/topics/ancient-medieval" rel="tag">Ancient-Medieval</a>, <a href="/web/20160424160432/http://www.historynet.com/topics/military-technology" rel="tag">Military Technology</a>, <a href="/web/20160424160432/http://www.historynet.com/topics/weaponry" rel="tag">Weaponry</a></h3>
+<div class="clearfix"></div>
+</div>
+<!-- end .entry -->
+<div class="side-bar">
+<!-- /7211001/300x250-AdExchange -->
+<div id='div-gpt-ad-1454538700567-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1454538700567-0');});</script>
+</div>
+<header class="sidebar-widget-header">
+<span>Related Stories</span>
+</header>
+<ul class="related">
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/audio-why-didnt-germany-win-the-race-to-build-the-atomic-bomb.htm?utm_source=historynet&amp;utm_medium=related" title="Audio: Why Didn&#8217;t Germany Win The Race To Build The Atomic Bomb?"> <div class="relImg"></div> </li>
+<b>Audio: Why Didn&#8217;t Germany Win The Race To Build The Atomic Bomb?</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/japans-type-97-chi-ha-medium-tank.htm?utm_source=historynet&amp;utm_medium=related" title="Japan&#8217;s Type 97 Chi-Ha Medium Tank"> <div class="relImg"><img width="186" height="140" src="/web/20160424160432im_/http://cdn.historynet.com/wp-content/uploads/2016/04/186x140xChiHa960x640-186x140.jpg.pagespeed.ic.4eyK6mNvBe.jpg" class="attachment-related wp-post-image" alt=""/></div> </li>
+<b>Japan&#8217;s Type 97 Chi-Ha Medium Tank</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/the-truth-about-rotaries.htm?utm_source=historynet&amp;utm_medium=related" title="The Truth About Rotaries"> <div class="relImg"></div> </li>
+<b>The Truth About Rotaries</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/p-51-mustang-weapons-manual.htm?utm_source=historynet&amp;utm_medium=related" title="American P-51D Mustang Fighter Bomber"> <div class="relImg"><img width="186" height="140" src="/web/20160424160432im_/http://cdn.historynet.com/wp-content/uploads/2016/04/186x140xP51Mustang-960x640-186x140.jpg.pagespeed.ic.SddDWTFJRu.jpg" class="attachment-related wp-post-image" alt="North American P-51 Mustang figher plane over France. Mustangs served in nearly every combat zone. P-51s had destroyed 4,950 enemy aircraft in the air, more than any other fighter in Europe."/></div> </li>
+<b>American P-51D Mustang Fighter Bomber</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/enduring-heritage-b-17g-takes-center-stage-at-the-strategic-air-space-museum.htm?utm_source=historynet&amp;utm_medium=related" title="Enduring Heritage: B-17G Takes Center Stage at the Strategic Air &#038; Space Museum"> <div class="relImg"></div> </li>
+<b>Enduring Heritage: B-17G Takes Center Stage at the Strategic Air &#038; Space Museum</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160424160432/http://www.historynet.com/enduring-heritage-douglas-o-38f-flew-history-30-years-alaskas-wilderness.htm?utm_source=historynet&amp;utm_medium=related" title="Enduring Heritage: The Douglas O-38F Flew into History After 30 Years in Alaska’s Wilderness"> <div class="relImg"></div> </li>
+<b>Enduring Heritage: The Douglas O-38F Flew into History After 30 Years in Alaska’s Wilderness</b></a>
+</div>
+</ul>
+<div class="clearfix"></div>
+<p class="meta">Also featuring</p>
+<a href="/web/20160424160432/http://www.militarytimes.com/" target="_blank"><img src="/web/20160424160432im_/http://cdn.historynet.com/wp-content/uploads/2016/03/xmilitaryTimes-LOGO.png.pagespeed.ic.FBZS9cwte-.png"/></a>
+<div class="clearfix"></div>
+<!-- /7211001/300x250-HN-Default -->
+<div id='div-gpt-ad-1447448043579-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1447448043579-0');});</script>
+</div>
+</div>
+<div class="adspace">
+</div>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160424160432/http://www.facebook.com/sharer.php?u=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160424160432/http://twitter.com/share?url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160424160432/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160424160432/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm&amp;t=Medieval%20Warfare:%20How%20to%20Capture%20a%20Castle%20with%20Siegecraft" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+</div>
+<div class="clearfix"></div>
+<!-- Here we load disqus comments -->
+<div class="dcl-disqus-thread" id="comments">
+<div id="disqus_thread">
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+var disqus_url='/web/20160424160432/http://www.historynet.com/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm';var disqus_identifier='3033256 ';var disqus_container_id='disqus_thread';var disqus_domain='disqus.com';var disqus_shortname='historynet';var disqus_title="Medieval Warfare: How to Capture a Castle with Siegecraft";var disqus_config=function(){var config=this;config.language='';config.callbacks.preData.push(function(){document.getElementById(disqus_container_id).innerHTML='';});config.callbacks.onReady.push(function(){var script=document.createElement('script');script.async=true;script.src='?cf_action=sync_comments&post_id=3033256';var firstScript=document.getElementsByTagName("script")[0];firstScript.parentNode.insertBefore(script,firstScript);});};
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var DsqLocal={'trackbacks':[],'trackback_url':"/web/20160424160432/http://www.historynet.com\/medieval-warfare-how-to-capture-a-castle-with-siegecraft.htm\/trackback"};
+//]]></script>
+</div><!-- #homecontent -->
+</div>
+</div><!-- #core -->
+<!--script for MediaBong -->
+<script>var $=jQuery;var aB="<div style='margin: 30px;'><div id='mb_video_syncad' class='floating_banner no_video'></div></div><div id='mb_container'></div><div id='mb_video_sponso'><span></span></div>";var cats='<a href="/web/20160424160432/http://www.historynet.com/magazines/gear" rel="category tag">Gear</a>, <a href="/web/20160424160432/http://www.historynet.com/magazines/mhq" rel="category tag">MHQ</a>';var gallery=($.inArray("Galleries",cats.replace(/<\/?[^>]+(>|$)/g,"").split(','))>-1);if(gallery){var pL=$('.entry').find('.imagecaptioneasy');var b=Math.floor(pL.length/3)-1;$(pL[b]).after(aB);}else{var pL=$('.entry').find('p');for(var i=1;i<=pL.length-1;i++){if(pL[i]&&pL[i+1]){if($(pL[i]).html().length>200&&$(pL[i+1]).html().length>200){$(pL[i]).after("<h1>"+aB+"</h1>");break;}}else{console.log('failed -- find big p');pL.sort(function(a,b){return $(b).html().length-$(a).html().length;});var sent=$(pL[0]).html().split('. ');$(pL[0]).html('');for(var s=0;s<=sent.length-1;s++){var e=(s==sent.length-1?'':'. ');var half=Math.floor(sent.length/2);var ad=(s==half?'</p>'+aB+'</p>':'');$(pL[0]).append(sent[s]+e+ad);}break;}}}</script>
+<script type="text/javascript">(function(){var sc=document.createElement('script');sc.src='/web/20160424160432/http://player.mediabong.net/se/575.js?url='+encodeURIComponent(document.location.href);sc.type='text/javascript';sc.async=true;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sc,s);})();</script>
+<!--END script for MediaBong -->
+</div>
+<div class="clerfix"></div>
+<div class="super-footer-wrap"> <!-- start .super-footer-wrap  -->
+<div class="super-footer">
+<div class="row small-collapse medium-collapse large-collapse">
+<div class="small-12 medium-3 columns">
+<h3 class="lead">MAGAZINES</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/american-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">American History</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/americas-civil-war?utm_source=historynet&amp;utm_medium=footer" target="_blank">America's Civil War</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/aviation-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">Aviation History</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/civil-war?utm_source=historynet&amp;utm_medium=footer" target="_blank">Civil War Times</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/military-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">Military History</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/mhq?utm_source=historynet&amp;utm_medium=footer" target="_blank">MHQ</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/vietnam?utm_source=historynet&amp;utm_medium=footer" target="_blank">Vietnam</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/wild-west?utm_source=historynet&amp;utm_medium=footer" target="_blank">Wild West</a></li>
+<li><a href="/web/20160424160432/http://shop.historynet.com/collections/frontpage/products/world-war-ii?utm_source=historynet&amp;utm_medium=footer" target="_blank">World War II</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">SECTIONS</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160424160432/http://www.historynet.com/today-in-history">Today in History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/magazines/quiz">Daily Quiz</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/magazines/historynet-interviews">Interviews</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/magazines/homepage-peoplepersonalities">Personalities</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/magazines/book_reviews">Reviews</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/magazines/ask-mr-history">Ask Mr. History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/videos">Videos</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/galleries">Galleries</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">TOPICS</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/civil-war">Civil War</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/black-history">Black History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/womens-history">Women's History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/vietnam-war">Vietnam War</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/american-history-tag">American History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/vietnam">Vietnam</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/john-f-kennedy">John F. Kennedy</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/art">Art</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/military-history">Military History</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/topics/historical-figures">Historical Figures</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">ABOUT US</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160424160432/http://www.historynet.com/contact-historynet-and-world-history-group">Contact Us</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/work-for-historynet">Work For HistoryNet</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/about-historynet">What is HistoryNet.com?</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/advertise-with-historynet-and-world-history-group">Advertising Inquries</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/heritage-travel-directory">Heritage Travel Directory</a></li>
+<li><a href="/web/20160424160432/http://www.historynet.com/historynet-privacy-policy">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="row small-collapse medium-collapse large-collapse">
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+</div>
+</div><!-- end .super-footer-wrap  -->
+<div id="footer">
+<div class="row">
+<div class="medium-5 columns">
+<div class="textwidget"><img src="/web/20160424160432im_/http://cdn.historynet.com/wp-content/uploads/2015/03/xhn-260x70b.png.pagespeed.ic.RSj4a6GZM4.png">
+<br>
+<p>HistoryNet.com is brought to you by World History Group, the world's largest publisher of history magazines. HistoryNet.com contains daily features, photo galleries and over 5,000 articles originally published in our various magazines.
+</p></div>
+</div>
+<div class="medium-5 columns">
+<ul class="social-ft">
+<li><a href="/web/20160424160432/https://www.facebook.com/HistoryNet/" target="_blank"><i class="fa fa-facebook"></i> </a></li>
+<li><a href="/web/20160424160432/https://twitter.com/HistoryNet" target="_blank"><i class="fa fa-twitter"></i> </a></li>
+<li><a href="/web/20160424160432/https://www.youtube.com/channel/UCzdWdL_xC5qk07WWOtnXSWA" target="_blank"><i class="fa fa-youtube"></i> </a></li>
+<li><a href="/web/20160424160432/https://www.instagram.com/historynetofficial/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+</ul>
+</div>
+<!-- <div class="medium-3 columns">
+			</div>
+-->
+<div id="copyright">
+<div>
+<p>&copy; 2016 HistoryNet</p>
+</div>
+<div class="fr">
+</div>
+</div> <!-- end #copyright  -->
+</div><!--  end .cotainer  -->
+</div><!-- end #footer  -->
+<div class="scrollTo_top" style="display: block">
+<a title="Scroll to top" href="#">
+<i class="fa fa-arrow-circle-o-up"></i>
+</a>
+</div>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-1768379-1','auto');ga('send','pageview');</script>
+<script type='text/javascript'>//<![CDATA[
+jQuery(function($){if(jQuery('.shortcode-tabs').length){jQuery('.shortcode-tabs').each(function(){var tabCount=1;jQuery(this).children('.tab').each(function(index,element){var idValue=jQuery(this).parents('.shortcode-tabs').attr('id');var newId=idValue+'-tab-'+tabCount;jQuery(this).attr('id',newId);jQuery(this).parents('.shortcode-tabs').find('ul.tab_titles').children('li').eq(index).find('a').attr('href','#'+newId);tabCount++;});var thisID=jQuery(this).attr('id');jQuery(this).tabs({fx:{opacity:'toggle',duration:200}});});}if(jQuery('.shortcode-toggle').length){jQuery('.shortcode-toggle').each(function(){var toggleObj=jQuery(this);toggleObj.closedText=toggleObj.find('input[name="title_closed"]').attr('value');toggleObj.openText=toggleObj.find('input[name="title_open"]').attr('value');if(toggleObj.find('a.more-link.read-more').length){toggleObj.readMoreText=toggleObj.find('a.more-link.read-more').text();toggleObj.readLessText=toggleObj.find('a.more-link.read-more').attr('readless');toggleObj.find('a.more-link.read-more').removeAttr('readless');toggleObj.find('a.more-link').click(function(){var moreTextObj=jQuery(this).next('.more-text');moreTextObj.animate({opacity:'toggle',height:'toggle'},300).css('display','block');moreTextObj.toggleClass('open').toggleClass('closed');if(moreTextObj.hasClass('open')){jQuery(this).text(toggleObj.readLessText);}if(moreTextObj.hasClass('closed')){jQuery(this).text(toggleObj.readMoreText);}return false;});}toggleObj.find('input[name="title_closed"]').remove();toggleObj.find('input[name="title_open"]').remove();toggleObj.find('h4.toggle-trigger a').click(function(){toggleObj.find('.toggle-content').animate({opacity:'toggle',height:'toggle'},300);toggleObj.toggleClass('open').toggleClass('closed');if(toggleObj.hasClass('open')){jQuery(this).text(toggleObj.openText);}if(toggleObj.hasClass('closed')){jQuery(this).text(toggleObj.closedText);}return false;});});}});
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var pollsL10n={"ajax_url":"/web/20160424160432/http://www.historynet.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+//]]></script>
+<script src="/web/20160424160432js_/http://cdn.historynet.com/wp-content,_plugins,_wp-polls,_polls-js.js,qver==2.72+wp-content,_themes,_superblog-child,_assets,_js,_scripts.min.js,qver==4.2.2+wp-content,_themes,_superblog-child,_assets,_js,_classie.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_superfish.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.hoverIntent.minified.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.prettyPhoto.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_ownScript.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_mobile.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider-min.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider.start.single.js,qver==4.2.2+wp-includes,_js,_comment-reply.min.js,qver==4.2.2+wp-content,_plugins,_classic-facebook-feed,_js,_FeedEk.js,qver==1.0.0.pagespeed.jc.EJJuylmFo_.js"></script><script>eval(mod_pagespeed_3T_iBnaLzL);</script>
+<script>eval(mod_pagespeed_9MYB8RFAqS);</script>
+<script>eval(mod_pagespeed_PLpGQbeKQi);</script>
+<script>eval(mod_pagespeed_oO0y8pm9Bd);</script>
+<script>eval(mod_pagespeed_RQIgcGkRcG);</script>
+<script>eval(mod_pagespeed_tvnFSZ4G7E);</script>
+<script>eval(mod_pagespeed_lMCQI6PBMA);</script>
+<script>eval(mod_pagespeed_TkkTvnLpXP);</script>
+<script>eval(mod_pagespeed_YoVNVRVl0V);</script>
+<script>eval(mod_pagespeed_Lt_LjrXBWI);</script>
+<script>eval(mod_pagespeed_O883pN9VWD);</script>
+<script>eval(mod_pagespeed_2uqUj3WKVU);</script>
+<script type='text/javascript'>//<![CDATA[
+var cointent_tracking_data={"articleId":"3033256","publisherId":"1293","gated":""};
+//]]></script>
+<script type='text/javascript' src='/web/20160424160432js_/http://connect.cointent.com/cointent-tracker.0.2.js?ver=4.2.2'></script>
+<script type="text/javascript">var disqus_shortname="historynet";if(typeof ds_loaded=="undefined"){var ds_loaded=false;}function loadDisqus(){var disqus_div=document.getElementById("disqus_thread");var top=disqus_div.offsetTop;var disqus_data=disqus_div.dataset;if(!ds_loaded&&(window.scrollY||window.pageYOffset)+window.innerHeight>top){ds_loaded=true;for(var key in disqus_data){if(key.substr(0,6)=="disqus"){window["disqus_"+key.replace("disqus","").toLowerCase()]=disqus_data[key];}}var dsq=document.createElement("script");dsq.type="text/javascript";dsq.async=true;dsq.src="http://"+window.disqus_shortname+".disqus.com/embed.js";if(document.getElementById("dcl-hidden-div")){document.getElementById("dcl-hidden-div").innerHTML="Loading...";}(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(dsq);}}var disqus_div_new=document.getElementById("disqus_thread");var divExists=disqus_div_new!=null;if(document.body.scrollHeight<window.innerHeight){loadDisqus();}else if(divExists){window.onscroll=function(){loadDisqus();}}</script><script type='text/javascript'>//<![CDATA[
+var hash=window.location.hash;var disqus_shortname='historynet';if(hash!==''){var ds_loaded=true;var dcl_loaded=1;(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.'+'disqus.com'+'/'+'embed'+'.js'+'?pname=wordpress&pver=2.84';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();}
+//]]></script><script>(function(){var morphSearch=document.getElementById('morphsearch'),input=morphSearch.querySelector('input.morphsearch-input'),ctrlClose=morphSearch.querySelector('span.morphsearch-close'),isOpen=isAnimating=false,toggleSearch=function(evt){if(evt.type.toLowerCase()==='focus'&&isOpen)return false;var offsets=morphsearch.getBoundingClientRect();if(isOpen){classie.remove(morphSearch,'open');if(input.value!==''){setTimeout(function(){classie.add(morphSearch,'hideInput');setTimeout(function(){classie.remove(morphSearch,'hideInput');input.value='';},300);},500);}input.blur();}else{classie.add(morphSearch,'open');}isOpen=!isOpen;};input.addEventListener('focus',toggleSearch);ctrlClose.addEventListener('click',toggleSearch);document.addEventListener('keydown',function(ev){var keyCode=ev.keyCode||ev.which;if(keyCode===27&&isOpen){toggleSearch(ev);}});})();</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8e5c801d03","applicationID":"8778079","transactionName":"YVMDYEJTWUcDU00LX1gZNEZZHV5aBlVBTEBeRg==","queueTime":0,"applicationTime":3,"atts":"TRQAFgpJSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: /web/20160424160432/http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Database Caching 3/22 queries in 0.030 seconds using memcached
+Object Caching 1908/1953 objects using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: cdn.historynet.com
+
+ Served from: www.historynet.com @ 2016-04-24 04:52:20 by W3 Total Cache -->

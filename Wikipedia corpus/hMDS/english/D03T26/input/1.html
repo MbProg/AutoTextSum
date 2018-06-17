@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=356;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/web/20160418095258im_/https://indypendent.org/sites/all/themes/indypendent/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/1291" />
+<link rel="canonical" href="/2007/10/05/how-jena-6-case-got-started" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>How the Jena 6 Case Got Started | The Indypendent</title>
+  <link type="text/css" rel="stylesheet" href="/web/20160418095258cs_/https://indypendent.org/sites/default/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160418095258cs_/https://indypendent.org/sites/default/files/css/css_ea4Rk8WEX5J5OyGf37New6epwLW4ULch4Yl7yrHTZZo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160418095258cs_/https://indypendent.org/sites/default/files/css/css_IFljSRmXqg7ovqjSV5tyfKURExk3Muui2htLldG3vJQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/web/20160418095258cs_/https://indypendent.org/sites/default/files/css/css_So3S0EXDmXWf52b6ERpZZjtK4t3_Ndx410suP3Ft2hg.css" media="all" />
+  <script type="text/javascript" src="/web/20160418095258js_/https://indypendent.org/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="/web/20160418095258js_/https://indypendent.org/sites/default/files/js/js_KCd8rbJYUruV1tRJnh4um34UYvyhlrSVCPR1jNko2h8.js"></script>
+<script type="text/javascript" src="/web/20160418095258js_/https://indypendent.org/sites/default/files/js/js_Tzniwe2snerugpdcoe1OP2VHJB8NxOfPMeT_eRitmFc.js"></script>
+<script type="text/javascript" src="/web/20160418095258js_/https://indypendent.org/sites/default/files/js/js_O5ZHLd-Gvp2QCsYVCpT01T4FmKy6xbZKytxDVUwws54.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-54201416-1", "auto");ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="/web/20160418095258js_/https://indypendent.org/sites/default/files/js/js_U4NwpHfNvPgCwUUvLae0TEZNVZ-7I9yx6KmWZee00mM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: false,
+dropShadows: true});
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"indypendent","theme_token":"hXyNHx5XMYS1Cdkpb3FnwTRU--qGYKgHJ3rEx-1Vxio","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/form.js":1,"sites\/all\/modules\/mollom\/mollom.js":1,"sites\/all\/modules\/simpleads\/simpleads.js":1,"sites\/all\/modules\/simpleads\/modules\/simpleads_campaigns\/simpleads_campaigns.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/modules\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/panels\/js\/panels.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/jquery.bgiframe.min.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/custom_search\/custom_search.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"misc\/textarea.js":1,"modules\/filter\/filter.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/simplenews\/simplenews.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/simpleads\/simpleads.css":1,"sites\/all\/modules\/ubercart\/uc_attribute\/uc_attribute.css":1,"sites\/all\/modules\/ubercart\/uc_order\/uc_order.css":1,"sites\/all\/modules\/ubercart\/uc_product\/uc_product.css":1,"sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-vertical.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/custom_search\/custom_search.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"modules\/filter\/filter.css":1,"sites\/all\/modules\/ds\/layouts\/ds_3col_stacked_fluid\/ds_3col_stacked_fluid.css":1,"sites\/all\/themes\/indypendent\/style.css":1,"sites\/all\/themes\/indypendent\/indypendent-admin.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"100%","maxHeight":"100%","fixed":true,"__drupal_alter_by_ref":["default"]},"custom_search":{"form_target":"_self","solr":0},"simpleads":{"url":{"ckeditor":"\/simpleads\/dashboard\/ckeditor"},"modulepath":"sites\/all\/modules\/simpleads"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"ckeditor":{"input_formats":{"full_html":{"customConfig":"\/sites\/all\/modules\/ckeditor\/ckeditor.config.js?1349815401","defaultLanguage":"en","toolbar":"[\r\n    [\u0027Source\u0027],\r\n    [\u0027Cut\u0027,\u0027Copy\u0027,\u0027Paste\u0027,\u0027PasteText\u0027,\u0027PasteFromWord\u0027,\u0027-\u0027,\u0027SpellChecker\u0027, \u0027Scayt\u0027],\r\n    [\u0027Undo\u0027,\u0027Redo\u0027,\u0027Find\u0027,\u0027Replace\u0027,\u0027-\u0027,\u0027SelectAll\u0027,\u0027RemoveFormat\u0027],\r\n    [\u0027Image\u0027,\u0027Media\u0027,\u0027Flash\u0027,\u0027Table\u0027,\u0027HorizontalRule\u0027,\u0027Smiley\u0027,\u0027SpecialChar\u0027],\r\n    \u0027\/\u0027,\r\n    [\u0027Bold\u0027,\u0027Italic\u0027,\u0027Underline\u0027,\u0027Strike\u0027,\u0027-\u0027,\u0027Subscript\u0027,\u0027Superscript\u0027],\r\n    [\u0027NumberedList\u0027,\u0027BulletedList\u0027,\u0027-\u0027,\u0027Outdent\u0027,\u0027Indent\u0027,\u0027Blockquote\u0027],\r\n    [\u0027JustifyLeft\u0027,\u0027JustifyCenter\u0027,\u0027JustifyRight\u0027,\u0027JustifyBlock\u0027,\u0027-\u0027,\u0027BidiLtr\u0027,\u0027BidiRtl\u0027],\r\n    [\u0027Link\u0027,\u0027Unlink\u0027,\u0027Anchor\u0027, \u0027Linkit\u0027],\r\n    [\u0027DrupalBreak\u0027],\r\n    \u0027\/\u0027,\r\n    [\u0027Format\u0027,\u0027Font\u0027,\u0027FontSize\u0027],\r\n    [\u0027TextColor\u0027,\u0027BGColor\u0027],\r\n    [\u0027Maximize\u0027, \u0027ShowBlocks\u0027]\r\n]\r\n    ","enterMode":1,"shiftEnterMode":2,"toolbarStartupExpanded":true,"width":"100%","skin":"kama","format_tags":"p;div;pre;address;h1;h2;h3;h4;h5;h6","show_toggle":"f","ss":"2","loadPlugins":{"tableresize":{"name":"tableresize","desc":"Tableresize plugin","path":"\/sites\/all\/libraries\/ckeditor\/plugins\/tableresize\/","default":"t"}},"scayt_autoStartup":true,"filebrowserBrowseUrl":"\/imce?app=ckeditor%7Csendto%40ckeditor_imceSendTo%7C","stylesCombo_stylesSet":"drupal:\/sites\/all\/modules\/ckeditor\/ckeditor.styles.js","contentsCss":["\/sites\/all\/modules\/ckeditor\/ckeditor.css?n","\/sites\/all\/libraries\/ckeditor\/contents.css?n"]}},"plugins":[],"textarea_default_format":{"edit-comment-body-und-0-value":"plain_text"}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1291 node-type-article" >
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "https://indypendent.org/2007/10/05/how-jena-6-case-got-started";
+
+var firstYear = 1996;
+var displayDay = "18";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://indypendent.org/2007/10/05/how-jena-6-case-got-started" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160418095258" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130727114147/http://www.indypendent.org/2007/10/05/how-jena-6-case-got-started" title="27 Jul 2013">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:52:58 Apr 18, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130727114147/http://www.indypendent.org/2007/10/05/how-jena-6-case-got-started" title="11:41:47 Jul 27, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:52:58 Apr 18, 2016">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130727114147/http://www.indypendent.org/2007/10/05/how-jena-6-case-got-started" title="27 Jul 2013"><strong>2013</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:52:58 Apr 18, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160418095258*/https://indypendent.org/2007/10/05/how-jena-6-case-got-started" title="See a list of every capture for this URL">2 captures</a>
+           <div class="r" title="Timespan for captures of this URL">27 Jul 13 - 18 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000100000_2014:-1:000000000000_2015:-1:000000000000_2016:3:000100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper">
+
+  <!-- Header -->
+  <div id="header-wrapper">
+
+    <!-- Region: Top Ad Banner -->
+        <div id="top-banner-region">
+        <div class="region region-top-banner">
+    <div id="block-block-5" class="block block-block ">
+
+    
+  <div class="content">
+    <p><a href="/web/20160418095258/http://www.howtoletgomovie.com/"><img alt="" src="/web/20160418095258im_/https://indypendent.org/sites/default/files/HTLG_728x90_NY.jpg" style="width: 728px; height: 90px;" /></a></p>
+  </div>
+</div>
+  </div>
+    </div>
+    
+    <!-- Region: Header -->
+        <div id="header-region">
+        <div class="region region-header">
+    <div id="block-block-1" class="block block-block donate-subscribe">
+
+    
+  <div class="content">
+    <p><a class="img-donate" href="/web/20160418095258/https://indypendent.org/donate"><img src="/web/20160418095258im_/https://indypendent.org/sites/all/themes/indypendent/images/donate.png" /></a> <a class="img-subscribe" href="/web/20160418095258/http://indypendent.org/subscribe" target=""><img src="/web/20160418095258im_/https://indypendent.org/sites/all/themes/indypendent/images/subscribe.png" /></a></p>
+  </div>
+</div>
+<div id="block-blockify-blockify-logo" class="block block-blockify logo">
+
+    
+  <div class="content">
+    <a href="/web/20160418095258/https://indypendent.org/" id="logo" rel="home" title="Return to the The Indypendent home page"><img src="/web/20160418095258im_/https://indypendent.org/sites/all/themes/indypendent/logo.png" alt="The Indypendent logo" /></a>  </div>
+</div>
+<div id="block-search-form" class="block block-search ">
+
+    
+  <div class="content">
+    <form class="search-form" action="/web/20160418095258/https://indypendent.org/2007/10/05/how-jena-6-case-got-started" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input class="custom-search-default-value custom-search-box form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="SEARCH" size="15" maxlength="128" />
+</div>
+<fieldset class="custom_search-popup form-wrapper" id="edit-popup"><div class="fieldset-wrapper"></div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input alt="" class="custom-search-button form-submit" type="image" id="edit-submit--2" name="op" value="" src="/web/20160418095258im_/https://indypendent.org/sites/all/themes/indypendent/images/search-btn.png" /></div><input type="hidden" name="form_build_id" value="form-QufO7rOgOXMjIb0dm1_fJ1ahXeb9YHwHRU5BjxE9HeY" />
+<input type="hidden" name="form_id" value="search_block_form" />
+<input class="default-text" type="hidden" name="default_text" value="SEARCH" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-superfish-1" class="block block-superfish ">
+
+    
+  <div class="content">
+    <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-14 sf-parent-items-1 sf-single-items-13"><li id="menu-327-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/issue/current" id="menu-current-issue" class="right-border menu-image sf-depth-1">Current Issue</a></li><li id="menu-328-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/section/local" id="menu-local" class="right-border menu-image sf-depth-1">Local</a></li><li id="menu-329-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/section/national" id="menu-national" class="right-border menu-image sf-depth-1">National</a></li><li id="menu-330-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/section/international" id="menu-international" class="right-border menu-image sf-depth-1">International</a></li><li id="menu-331-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/section/culture" id="menu-culture" class="right-border menu-image sf-depth-1">Culture</a></li><li id="menu-332-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/calendar/month" id="menu-calendar" class="right-border menu-image sf-depth-1">Calendar</a></li><li id="menu-333-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/multimedia" id="menu-multimedia" class="right-border menu-image sf-depth-1">Multimedia</a></li><li id="menu-334-1" class="middle even sf-item-8 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/indyblog" id="menu-blogs" class="right-border menu-image sf-depth-1">Blogs</a></li><li id="menu-335-1" class="middle odd sf-item-9 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/archives" id="menu-archives" class="right-border menu-image sf-depth-1">Archives</a></li><li id="menu-336-1" class="middle even sf-item-10 sf-depth-1 sf-no-children"><a href="/web/20160418095258/http://indypendent.org/subscribe" id="menu-store" class="menu-image sf-depth-1">Store</a></li><li id="menu-337-1" class="middle odd sf-item-11 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/web/20160418095258/https://indypendent.org/about" id="menu-about-us" class="menu-image sf-depth-1 menuparent">About Us</a><ul><li id="menu-743-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/contact" class="sf-depth-2 ">Contact Us</a></li><li id="menu-756-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/about/distribution-locations" class="sf-depth-2 ">Where To Get A Copy</a></li><li id="menu-351-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/get-involved" class="sf-depth-2 ">Get Involved</a></li><li id="menu-2217-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/about/masthead" title="Masthead" id="menu-masthead" class="sf-depth-2 ">Masthead</a></li><li id="menu-1141-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/about/endorsements" class="sf-depth-2 ">Endorsements</a></li></ul></li><li id="menu-338-1" class="middle even sf-item-12 sf-depth-1 sf-no-children"><a href="/web/20160418095258/http://twitter.com/theindypendent" id="menu-twitter" class="menu-image sf-depth-1">Twitter</a></li><li id="menu-339-1" class="middle odd sf-item-13 sf-depth-1 sf-no-children"><a href="/web/20160418095258/http://facebook.com/theindypendent" id="menu-facebook" class="menu-image sf-depth-1">Facebook</a></li><li id="menu-340-1" class="last even sf-item-14 sf-depth-1 sf-no-children"><a href="/web/20160418095258/https://indypendent.org/rss.xml" id="menu-rss" class="menu-image sf-depth-1">RSS</a></li></ul>  </div>
+</div>
+  </div>
+    </div>
+    
+  </div>
+  <!-- // Header -->
+
+  <!-- Center Content -->
+  <div id="main-wrapper">
+
+    <!-- Edit/View Tabs -->
+          <div class="content-admin-tabs"></div>
+        
+    
+    <!-- Region: Right Sidebar -->
+        <div id="sidebar-right">
+        <div class="region region-sidebar-right">
+    <div id="block-views-latest-issue-block-1" class="block block-views issue-navigator">
+
+    
+  <div class="content">
+    <div class="view view-latest-issue view-id-latest_issue view-display-id-block_1 view-dom-id-1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-issue-cover">        <div class="field-content"><a href="/web/20160418095258/https://indypendent.org/issue/213"><img src="/web/20160418095258im_/https://indypendent.org/sites/default/files/styles/issue_navigator_cover/public/Cover%20Opt.jpg?itok=Uean_mK5" width="120" height="176" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/web/20160418095258/https://indypendent.org/issue/213">Issue 213</a></span>  </div>  
+  <div class="views-field views-field-nothing views-field-field-issue-date">        <span class="field-content"><span class="date-display-single">Mar 3</span> - <span class="date-display-single">Apr 4, 2016</span></span>  </div>  
+  <div class="views-field views-field-field-issue-pdf">        <div class="field-content"><a href="/web/20160418095258/https://indypendent.org/sites/default/files/Indypendent%20Issue%20213%20Opt.pdf">Download Issue</a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-block-6" class="block block-block ">
+
+    
+  <div class="content">
+    <p><a href="/web/20160418095258/http://www.haymarketbooks.org/pb/From-BlackLivesMatter-to-Black-Liberation"><img alt="" src="/web/20160418095258im_/https://indypendent.org/sites/default/files/HaymarketIndyWedAd_22516.jpg" style="width: 300px; height: 250px;" /></a></p>
+  </div>
+</div>
+<div id="block-block-8" class="block block-block ">
+
+    
+  <div class="content">
+    <p><a href="/web/20160418095258/https://indypendent.org/2016/03/31/2016-election-coverage"><img alt="" src="/web/20160418095258im_/https://indypendent.org/sites/default/files/Election%20Coverage%20Image_crop.jpg" style="width: 300px; height: 245px;" /></a></p>
+  </div>
+</div>
+<div id="block-block-9" class="block block-block ">
+
+    
+  <div class="content">
+    <p><a href="/web/20160418095258/https://indypendent.org/2016/04/06/you-can-now-listen-podcasts-indypendentorg-5"><img alt="" src="/web/20160418095258im_/https://indypendent.org/sites/default/files/indy_podcast_new.jpg" style="width: 300px; height: 245px;" /></a></p>
+  </div>
+</div>
+<div id="block-simplenews-15151" class="block block-simplenews ">
+
+    <h2>The Indypendent e-news</h2>
+  
+  <div class="content">
+          <p>Get the Indy in your inbox!</p>
+  
+      <form class="simplenews-subscribe" action="/web/20160418095258/https://indypendent.org/2007/10/05/how-jena-6-case-got-started" method="post" id="simplenews-block-form-15151" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail--2">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-mail--2" name="mail" value="" size="20" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-submit--3" name="op" value="Subscribe" class="form-submit" /><input type="hidden" name="form_build_id" value="form-otGwN6TTtBUMNI66CRBD6DSHDaWuWYBeeBFfE3VtSvw" />
+<input type="hidden" name="form_id" value="simplenews_block_form_15151" />
+</div></form>  
+      <div class="issues-link"><a href="/web/20160418095258/https://indypendent.org/newsletter/indypendent-e-news">Previous issues</a></div>
+  
+  
+      <a href="/web/20160418095258/https://indypendent.org/taxonomy/term/15151/feed" class="feed-icon" title="Subscribe to The Indypendent e-news feed"><img src="/web/20160418095258im_/https://indypendent.org/misc/feed.png" width="16" height="16" alt="Subscribe to The Indypendent e-news feed" /></a>    </div>
+</div>
+  </div>
+    </div>
+        
+    <!-- Region: Pre Content -->
+        <div id="pre-content">
+        <div class="region region-pre-content">
+    <div id="block-views-pre-article-block-1" class="block block-views ">
+
+    
+  <div class="content">
+    <div class="view view-pre-article view-id-pre_article view-display-id-block_1 view-dom-id-2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-feature-image">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-section">        <div class="field-content National"><a href="/web/20160418095258/https://indypendent.org/section/national">National</a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">How the Jena 6 Case Got Started</span>  </div>  
+  <div class="views-field views-field-field-excerpt">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-nothing views-field-share-hr">        <div class="field-content National"></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-sharethis-block-sharethis-block" class="block block-sharethis-block ">
+
+    
+  <div class="content">
+    <span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_facebook' ></span><span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_twitter' ></span><span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_reddit' ></span><span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_pinterest' ></span><span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_googleplus' ></span><span st_url=https://indypendent.org/2007/10/05/how-jena-6-case-got-started st_title='How the Jena 6 Case Got Started' class='st_email' ></span><script type='text/javascript'>var switchTo5x=true;</script>
+    <script type='text/javascript' src='/web/20160418095258js_/http://w.sharethis.com/button/buttons.js'></script>
+    <script type='text/javascript'>stLight.options({publisher:''});</script>  </div>
+</div>
+  </div>
+    </div>
+    
+    <!-- Region: Left Sidebar -->
+        <div id="sidebar-left">
+        <div class="region region-sidebar-left">
+    <div id="block-menu-menu-secondary-menu" class="block block-menu secondary-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/donate">Donate</a></li>
+<li class="leaf"><a href="/web/20160418095258/http://indypendent.org/subscribe">Subscribe</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://indypendent.org/advertise">Advertise</a></li>
+</ul>  </div>
+</div>
+<div id="block-menu-menu-secondary-about-us" class="block block-menu secondary-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/about">About Us</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/about/masthead" title="Masthead" id="menu-masthead">Masthead</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://indypendent.org/about/endorsements">Endorsements</a></li>
+</ul>  </div>
+</div>
+<div id="block-menu-menu-secondary-interact" class="block block-menu secondary-menu secondary-menu-last">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/workshops">Workshops</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/contact">Contact Us</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/get-involved">Get Involved</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/get-involved/internships">Internships</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://indypendent.org/about/distribution-locations">Where To Get A Copy</a></li>
+</ul>  </div>
+</div>
+  </div>
+    </div>
+    
+    <div id="content">
+    <!-- Region: Content -->
+        <div class="region region-content">
+    <div id="block-system-main" class="block block-system ">
+
+    
+  <div class="content">
+    <div class="ds-3col-stacked-fluid node node-article node-promoted view-mode-full clearfix">
+
+  
+      <div class="group-header">
+      <div class="field-name-field-authors clearfix"><div class="label-inline field-label">By</div><a href="/web/20160418095258/https://indypendent.org/authors/john-tarleton-3">John Tarleton</a></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">October 5, 2007</div></div></div><div class="label-inline field-label">Issue #</div><a href="/web/20160418095258/https://indypendent.org/node/83">110</a>    </div>
+  
+  
+      <div class="group-middle">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The Jena Six controversy began in August 2006 when two Black students stood under the “white tree” during lunch break at Jena High School. The tree and its shade had long been the preserve of white students, and the following day three nooses were found hanging from the tree. The predominantly white school board considered the nooses a prank and handed down brief suspensions.</p>
+<p>Months of racial tensions followed, including several altercations between Black and white students. On Dec. 4, a white student was knocked unconscious in a school fight. He was released from the hospital within hours and attended a school function later that night. Second-degree attempted murder charges were subsequently filed against five Black youths for the fight, while a sixth was charged in juvenile court.</p>
+<p>Seventeen-year-old Mychal Bell, the first of the six youths to go on trial, faced as much as 22 years in prison after being convicted June 28 of aggravated battery and conspiracy by an all-white jury. As the story of the Jena Six began to spread (especially on Black blogs and talk radio), national pressure on the town began to grow. By early September, attempted murder charges against three of the youths were reduced to aggravated battery and Bell’s conviction was overturned by a state appeals court. Following the Sept. 20 protest, charges against Bell were re-filed in juvenile court and he was released on $45,000 bond.</p>
+<p>And the “white tree?” It was cut down over the summer by town officials looking to put the incident behind them. — JT</p>
+</div></div></div>    </div>
+  
+  
+      <div class="group-footer">
+      <div class="field field-name-comments-hr field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">
+<hr class="national"/></div></div></div><div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-755"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/755#comment-755" class="permalink" rel="bookmark"></a><span class="username">Endaca</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">10/05/2007 - 5:08pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>That shit is unbelieveable!! Charging those kids with murder for a damn school fight. The boy attended a school function that night! Attempted murder my ass!! Shows you that racism is still alive. They should get the same punishment they gave the white kids. A suspension.</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/755">reply</a></li>
+</ul></div><a id="comment-757"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/757#comment-757" class="permalink" rel="bookmark"></a><span class="username">Ashley Tate</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">10/05/2007 - 6:23pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>That was not right because them white kids should have got in touble because they had handed three black boys that was stand under the tree they should stand where they want to stand  so that was not right i feel that was not right now i really hate white kids because of that mess they should got punishment  because that was unbelieveable. IHATE WHITE KIDS I DONT CARE WHAT THEY DO THEY CAN DIE  IIIIIIIIIIIIIIIIIIIIIIIIIII HHHHHHHHHHHHHHHHHHHATTTTTTTTTTTTTTTTTTTTTTTEEEEEEEEEEE THEM.</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/757">reply</a></li>
+</ul></div><a id="comment-759"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/759#comment-759" class="permalink" rel="bookmark"></a><span class="username">Keshia Smith</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">10/05/2007 - 7:24pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I dont think that bulshit was right them muthafuckin kids shouldnt been charged they didint charge them got damn white muthafuckin kids so them prejudice muthafuckas can kiss my ass</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/759">reply</a></li>
+</ul></div><a id="comment-761"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/761#comment-761" class="permalink" rel="bookmark"></a><span class="username">Clive Choat</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">10/05/2007 - 8:21pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I&#039;m sorry, but I can&#039;t let this article go without the full story being told.  </p>
+<p>The Alexandria Town Talk has the complete story, not this half baked &quot;news&quot; report.  the address for anyone (to include the writer of this article) is below.</p>
+<p><a href="/web/20160418095258/http://www.thetowntalk.com/apps/pbcs.dll/article?AID=/99999999/NEWS/70915030">http://www.thetowntalk.com/apps/pbcs.dll/article?AID=/99999999/NEWS/7091...</a></p>
+<p>if your going to be a reporter, you have to be factual, and neutral.  This article was not</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/761">reply</a></li>
+</ul></div><a id="comment-775"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/775#comment-775" class="permalink" rel="bookmark"></a><span class="username">Derrick Acheampong</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">10/07/2007 - 4:05pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This shit  pissed me off when my Afro-American teacher told me about this. How come white racist bastards get off so easy.</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/775">reply</a></li>
+</ul></div><a id="comment-862"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/862#comment-862" class="permalink" rel="bookmark"></a><span class="username">jamie</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">11/13/2007 - 10:46pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>maybe if you all knew the whole damn story about everything you&#039;d understand. read up a little bit, cause everything thats on the new, aint the damn truth.</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/862">reply</a></li>
+</ul></div><a id="comment-863"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/863#comment-863" class="permalink" rel="bookmark"></a><span class="username">jamie</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">11/13/2007 - 10:49pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>im sure as hell not saying what happened is right. cause it not at all. but still read up on shit cause theres so much shit about that whoole story thats a lie or an exxaggeration from the media</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/863">reply</a></li>
+</ul></div><a id="comment-1027"></a>
+<div class="ds-1col comment comment-by-anonymous view-mode-full clearfix ">
+
+  
+  <a href="/web/20160418095258/https://indypendent.org/comment/1027#comment-1027" class="permalink" rel="bookmark"></a><span class="username">Alisicia</span><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">01/27/2008 - 8:37pm</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>that was not right.Even thought thats not the whole story,the boy didn&#039;t die.so why was he charged with murder?</p>
+</div></div></div><ul class="links inline"><li class="comment-reply first last"><a href="/web/20160418095258/https://indypendent.org/comment/reply/1291/1027">reply</a></li>
+</ul></div>
+      <h2 class="title comment-form">Add new comment</h2>
+    <form class="comment-form" action="/web/20160418095258/https://indypendent.org/comment/reply/1291" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Your name </label>
+ <input type="text" id="edit-name" name="name" value="" size="30" maxlength="60" class="form-text" />
+</div>
+<div class="form-item form-type-textfield form-item-subject">
+  <label for="edit-subject">Subject </label>
+ <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="64" class="form-text" />
+</div>
+<div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="text-format-wrapper"><div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+  <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="text-full form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea></div>
+</div>
+<fieldset class="filter-wrapper form-wrapper" style="display: none;" id="edit-comment-body-und-0-format"><div class="fieldset-wrapper"><div class="filter-guidelines form-wrapper" id="edit-comment-body-und-0-format-guidelines"></div></div></fieldset>
+</div>
+</div></div><input type="hidden" name="form_build_id" value="form-VTbXCK4EXBMAz3WA6nOowNhEdsYmYwJ7MkZ0esnOxTk" />
+<input type="hidden" name="form_id" value="comment_node_article_form" />
+<input class="mollom-session-id" type="hidden" name="mollom[session_id]" value="" />
+<div style="display: none;"><div class="form-item form-type-textfield form-item-mollom-homepage">
+ <input title="Homepage" autocomplete="off" type="text" id="edit-mollom-homepage" name="mollom[homepage]" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><div class="description mollom-privacy">By submitting this form, you accept the <a href="/web/20160418095258/http://mollom.com/web-service-privacy-policy">Mollom privacy policy</a>.</div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Save" class="form-submit" /><input type="submit" id="edit-preview" name="op" value="Preview" class="form-submit" /></div></div></form>  </div>
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+    </div>
+
+  </div>
+  <!-- // Center Content -->
+
+  <div id="footer-region">
+  <!-- Region: Footer -->
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-give-us-money" class="block block-menu ">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/donate">Donate</a></li>
+<li class="leaf"><a href="/web/20160418095258/http://indypendent.org/subscribe">Subscribe</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/advertise">Advertise</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://www.wepay.com/stores/the-indypendent" target="_blank">Store</a></li>
+</ul>  </div>
+</div>
+<div id="block-menu-menu-footer-about-us" class="block block-menu ">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/about">About Us</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/about/endorsements">Endorsements</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://indypendent.org/about/awards">Awards</a></li>
+</ul>  </div>
+</div>
+<div id="block-menu-menu-footer-interact" class="block block-menu footer-menu-last">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/web/20160418095258/https://indypendent.org/contact">Contact Us</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/get-involved">Get Involved</a></li>
+<li class="leaf"><a href="/web/20160418095258/https://indypendent.org/get-involved/internships">Internships</a></li>
+<li class="last leaf"><a href="/web/20160418095258/https://indypendent.org/about/distribution-locations">Where To Get A Copy</a></li>
+</ul>  </div>
+</div>
+  </div>
+  </div>
+
+</div>
+
+</body>
+</html>  <!--[if !(lt IE 8)]><!-->
+<script type="text/javascript">
+  var tdwfb_config = {};
+  (function(){
+    var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
+    e.src = document.location.protocol + '//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
+  })();
+</script>
+<!--<![endif]--></body>
+</html>

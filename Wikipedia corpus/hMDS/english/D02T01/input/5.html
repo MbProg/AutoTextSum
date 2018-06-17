@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<!--[if IE]><html class="ie"><![endif]-->
+<!--[if !IE]> --><html class="not-ie"><!-- <![endif]-->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=595;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2d4f7e7bad","applicationID":"8953552","transactionName":"IFdcREJZCV1dExtQWA1MV15EGQZeVgJRQ0MQF0FYX0E=","queueTime":17,"applicationTime":203,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw4HV1BXGwsJUVJXAgM="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function u(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,f=0;s>f;f++)a[f].apply(i,r);var u=c[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return f[t]=f[t]||r(u)}function h(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in c||(c[e]=[])})}var m={},v={},w={on:d,emit:u,get:p,listeners:l,context:e,buffer:h};return w}function o(){return new n}var i="nr@context",a=t("gos"),s=t(1),c={},f={},u=e.exports=r();u.backlog=c},{1:24,gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=NREUM.o.EV;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").get("events"),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").get("history"),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").get("raf"),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").get("timer"),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e){e=e||this;var n=i.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,i.emit("xhr-resolved",[],e));try{c.inPlace(e,l,"fn-",r)}catch(o){}}function r(t,e){return e}function o(t,e){for(var n in t)e[n]=t[n];return e}var i=t("ee").get("xhr"),a=t(1),s=t(2),c=s(i),f=s(a),u=NREUM.o,d=u.XHR,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=i,window.XMLHttpRequest=function(t){var e=new d(t);try{i.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&f.inPlace(e,["addEventListener","removeEventListener"],"-",r),e.addEventListener("readystatechange",n,!1)}catch(o){try{i.emit("internal-error",[o])}catch(a){}}return e},o(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:7,2:26,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=n(t,this.lastSize);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var o="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return r(o)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=null,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:15,4:11,5:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],14:[function(t,e){function n(t,e){return function(){r(t,[(new Date).getTime()].concat(i(arguments)),null,e)}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],s=["addPageAction"],c="api-";o(a,function(t,e){newrelic[e]=n(c+e,"api")}),o(s,function(t,e){newrelic[e]=n(c+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),r("err",[t,(new Date).getTime()])}},{1:24,2:25,handle:"D5DuLP"}],15:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n,o){r.buffer([t],o),r.emit(t,e,n)}var r=t("ee").get("handle");e.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var h=0},{1:24,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta charset='utf-8'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+<!-- Icons -->
+<link href='/web/20160309001638im_/https://assets.boundless.com/assets/favicon-b3e1374b821f09e4ca67cad004235be2.png' rel='shortcut icon'>
+<link href='https://assets.boundless.com/touch_icons/Icon-60.png' rel='apple-touch-icon'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-29-66844eabadfa4159b2a729acb4fc485d.png' rel='apple-touch-icon' sizes='29x29'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-29@2x-5ba6d2ea01718a1ecaa9f0e00456db8f.png' rel='apple-touch-icon' sizes='58x58'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-29@3x-92ba622e12cbc9732b8997057638d614.png' rel='apple-touch-icon' sizes='87x87'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-40-e3354d02f6e496393950411e0a544095.png' rel='apple-touch-icon' sizes='40x40'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-40@2x-8a4755a78a5df05f0bc6b830446138f5.png' rel='apple-touch-icon' sizes='80x80'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-40@3x-aceeb445908a9ac48eabbf1e6b664747.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='https://assets.boundless.com/touch_icons/Icon-60.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-60@2x-aceeb445908a9ac48eabbf1e6b664747.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-60@3x-9e2daa46e984faa02e80c643a60abf75.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-76-9bb6f10f3d1fa73c54ce3c989457633e.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='https://assets.boundless.com/assets/touch_icons/Icon-76@2x-078c3470126bd1a8208b3be32a1028fe.png' rel='apple-touch-icon' sizes='152x152'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FYHwdvf37wSM7TvRS7uknqOuifOc6frg5nsj/umUQT9BcQTlx7/KeN5oHwDgkitfBL4cg0TdVLSJUtxbZqaatw==" />
+<!-- iOS App Reference -->
+<!-- Stripe -->
+<meta content='pk_Y0xOTxNRUMiV2gwrFLF0NoJjeaeCg' name='stripe-key'>
+<!-- Chrome frame -->
+<meta content='IE=edge,chrome=1' httpequiv='X-UA-Compatible'>
+<!-- Page Title -->
+<title>Colonies in Crisis</title>
+<!-- Meta Description -->
+<meta content='Learn more about colonies in crisis in the Boundless open textbook. ' name='description'>
+<!-- Meta Keywords -->
+<link rel="stylesheet" media="screen" href="/web/20160309001638cs_/https://assets.boundless.com/assets/global/common/julia-f2e0eee70b3e7da205b301c0f5395c1e.css" />
+<link rel="stylesheet" media="all" href="/web/20160309001638cs_/https://assets.boundless.com/assets/shared-417fc7be7c0fc5ba73fdb310d75b6e34.css" />
+<link rel="stylesheet" media="all" href="/web/20160309001638cs_/https://assets.boundless.com/assets/platform/common/base-8d0be066a1a3e1966b6b44d643f060dc.css" />
+<link rel="stylesheet" media="all" href="/web/20160309001638cs_/https://assets.boundless.com/assets/platform/application-b0f08d64e7854531145bab754fb09fb9.css" />
+
+<!-- Segment.io snippet -->
+<script>
+  !(function () {window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8";
+    window.analytics.load("dv5j6lr4ku");
+    window.analytics.page();
+  })();
+</script>
+
+<link href='/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/' rel='canonical'>
+<meta content='summary' name='twitter:card'>
+<meta content='Learn more about colonies in crisis in the Boundless open textbook. ' name='twitter:description'>
+<meta content='@goboundless' name='twitter:site'>
+<meta content='Colonies in Crisis - Boundless Open Textbook' property='og:title'>
+<meta content='Boundless' property='og:site_name'>
+<meta content=' Read more about colonies in crisis in the Boundless open textbook.' property='og:description'>
+<meta content='http://figures.boundless.com/4388/full/androsaprisonerinboston.png' name='twitter:image'>
+<meta content='http://figures.boundless.com/4388/full/androsaprisonerinboston.png' property='og:image'>
+<meta content='Colonies in Crisis' name='twitter:title'>
+<!-- /google scholar meta -->
+<meta content='Colonies in Crisis' name='citation_title'>
+<meta content='Boundless' name='citation_publisher'>
+<meta content='Boundless' name='citation_author'>
+<meta content='2015/07/21' name='citation_publication_date'>
+<meta content='Boundless U.S. History' name='citation_inbook_title'>
+<meta content='en' name='citation_language'>
+<meta content='initial-scale=1' name='viewport'>
+
+<script>
+  window.PageData = window.PageData || {};
+</script>
+</head>
+<body class='not-logged-in boundless-content-platform&#x000A; '>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/";
+
+var firstYear = 1996;
+var displayDay = "9";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160309001638" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150602004640/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" title="2 Jun 2015">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 0:16:38 Mar 9, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20160701221940/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" title="1 Jul 2016"><strong>JUL</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150602004640/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" title="0:46:40 Jun 2, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 0:16:38 Mar 9, 2016">9</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160701221940/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" title="22:19:40 Jul 1, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 0:16:38 Mar 9, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160309001638*/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" title="See a list of every capture for this URL">3 captures</a>
+           <div class="r" title="Timespan for captures of this URL">2 Jun 15 - 1 Jul 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000001000000_2016:2:001000100000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!-- /This haml is based on a "half implementation" of header features. See TODO items below for -->
+<!-- /placeholders that will be used once the header is fully implemented. /web/20160309001638/https://trello.com/c/SsmKHIvU -->
+<header class='fw_header navbar' id='header'>
+<div class='rainbow-road'></div>
+<div class='viewport-padding'>
+<nav class='navbar-inner navbar__first'>
+<div class='navbar__first__left'>
+<a class="navbar__app-zone navbar__app-zone__main" href="/web/20160309001638/https://www.boundless.com/"><div class='navbar__app-zone navbar__app-zone__main'>
+<div class='navbar__app-zone__icon'></div>
+<div class='navbar__app-zone__label'><div class='navbar__app-zone__label__brand'></div><div class='navbar__app-zone__label__zone'></div>
+</div>
+<div class='navbar__app-zone-dropdown'>
+<!-- /TODO later. see card -->
+</div>
+</div>
+</a><div class='navbar__search navbar__icon__menu'>
+<div class='navbar__search__inner'>
+<i class='icon-search navbar__search__icon navbar__icon'></i>
+</div>
+</div>
+</div>
+<div class='navbar__first__middle-floats'>
+<!-- /The "middle floats" are the menu items that get collapsed into the hamburger, and/or moved to the -->
+<!-- /navbar__second level for mobile screens -->
+<div class='navbar__middle-floats'>
+<form action='/web/20160309001638/https://www.boundless.com/search/'>
+<div class='navbar__search__input__wrap'>
+<input class='navbar__search__input' name='q' type='text'>
+<div class='navbar__search__input__close boundless-icon-x'></div>
+</div>
+<input id='header-search-filter' name='filter' type='hidden' value='books,concepts,quizzes,questions,issues,profiles'>
+</form>
+<div class='navbar__destination-item navbar__middle-floats__item navbar__subjects'>
+<div class='navbar__destination-item__inner'>
+<a data-push="true" href="/web/20160309001638/https://www.boundless.com/subjects/"><div class='navbar__item-label'>
+Subjects
+</div>
+</a><div class='navbar__dropdown__cta'>
+<i class='icon-caret-right'></i>
+<div class='navbar__dropdown navbar__subjects__dropdown'>
+<div class='navbar__dropdown__triangle'></div>
+<ul class='navbar__dropdown__list'>
+<div class='scroll-gradient'></div>
+<div class='navbar__dropdown__inner'>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/accounting/">Accounting</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/algebra/">Algebra</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/art-history/">Art History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/biology/">Biology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/business/">Business</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/calculus/">Calculus</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/chemistry/">Chemistry</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/communications/">Communications</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/computer-science/">Computer Science</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/economics/">Economics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/education/">Education</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/finance/">Finance</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/management/">Management</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/marketing/">Marketing</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/microbiology/">Microbiology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/music/">Music</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/philosophy/">Philosophy</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/physics/">Physics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/physiology/">Physiology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/political-science/">Political Science</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/psychology/">Psychology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/sociology/">Sociology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/statistics/">Statistics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/">U.S. History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/world-history/">World History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/writing/">Writing</a></li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='navbar__contribute navbar__destination-item navbar__middle-floats__item'>
+<div class='navbar__destination-item__inner'>
+<a data-push="true" data-track="Header:clicked_contribute" href="/web/20160309001638/https://www.boundless.com/issues/"><div class='navbar__item-label'>
+Contribute
+</div>
+</a></div>
+</div>
+</div>
+
+</div>
+<div class='navbar__first__right'>
+<div class='navbar__hamburger navbar__icon__menu'>
+<i class='icon-reorder navbar__icon'></i>
+</div>
+<div class='navbar__login'>
+<a data-popup="register" data-redirect-reload="true" data-start-event="clicked_sign_up_in_header" class="header__sign-up-link navbar__login__link" href="#register"><i class='boundless-icon-signup'></i>
+<span class='lbl'>Sign Up</span>
+</a><a data-popup="login" data-redirect-reload="true" class="header__login-link navbar__login__link" href="#login"><i class='icon-signin'></i>
+<span class='lbl'>Login</span>
+</a></div>
+</div>
+</nav>
+</div>
+<nav class='navbar-inner navbar__second'>
+<div class='navbar__second__middle-floats'>
+<!-- /The "middle floats" are the menu items that get collapsed into the hamburger, and/or moved to the -->
+<!-- /navbar__second level for mobile screens -->
+<div class='navbar__middle-floats'>
+<form action='/web/20160309001638/https://www.boundless.com/search/'>
+<div class='navbar__search__input__wrap'>
+<input class='navbar__search__input' name='q' type='text'>
+<div class='navbar__search__input__close boundless-icon-x'></div>
+</div>
+<input id='header-search-filter' name='filter' type='hidden' value='books,concepts,quizzes,questions,issues,profiles'>
+</form>
+<div class='navbar__destination-item navbar__middle-floats__item navbar__subjects'>
+<div class='navbar__destination-item__inner'>
+<a data-push="true" href="/web/20160309001638/https://www.boundless.com/subjects/"><div class='navbar__item-label'>
+Subjects
+</div>
+</a><div class='navbar__dropdown__cta'>
+<i class='icon-caret-right'></i>
+<div class='navbar__dropdown navbar__subjects__dropdown'>
+<div class='navbar__dropdown__triangle'></div>
+<ul class='navbar__dropdown__list'>
+<div class='scroll-gradient'></div>
+<div class='navbar__dropdown__inner'>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/accounting/">Accounting</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/algebra/">Algebra</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/art-history/">Art History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/biology/">Biology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/business/">Business</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/calculus/">Calculus</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/chemistry/">Chemistry</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/communications/">Communications</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/computer-science/">Computer Science</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/economics/">Economics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/education/">Education</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/finance/">Finance</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/management/">Management</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/marketing/">Marketing</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/microbiology/">Microbiology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/music/">Music</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/philosophy/">Philosophy</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/physics/">Physics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/physiology/">Physiology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/political-science/">Political Science</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/psychology/">Psychology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/sociology/">Sociology</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/statistics/">Statistics</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/">U.S. History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/world-history/">World History</a></li>
+<li><a class="navbar__dropdown__list__item" data-push="true" href="/web/20160309001638/https://www.boundless.com/writing/">Writing</a></li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='navbar__contribute navbar__destination-item navbar__middle-floats__item'>
+<div class='navbar__destination-item__inner'>
+<a data-push="true" data-track="Header:clicked_contribute" href="/web/20160309001638/https://www.boundless.com/issues/"><div class='navbar__item-label'>
+Contribute
+</div>
+</a></div>
+</div>
+</div>
+
+</div>
+<div class='scroll-gradient--h'></div>
+</nav>
+</header>
+
+<div id='main' role='main'>
+
+<div class='bcp-content' id='wiselinks-container'>
+<div class='bcp__concept content-under-navbar'>
+<div class='viewport-padding'>
+<div class='container site-width'>
+<div class='content__breadcrumbs'>
+<span class='content__breadcrumbs--inner'>
+<div class='gnome__breadcrumb-mod content__breadcrumb' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a itemprop="url" class="content__breadcrumb-link" data-push="true" data-track="Sneak:clicked_breadcrumb" data-track-properties-json="{&quot;root_class&quot;: &quot;Concept&quot;, &quot;breadcrumb_index&quot;: 0}" href="/web/20160309001638/https://www.boundless.com/u-s-history/"><span itemprop='title'>U.S. History</span>
+</a></div>
+<div class='gnome__breadcrumb-mod content__breadcrumb' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a itemprop="url" class="content__breadcrumb-link" data-push="true" data-track="Sneak:clicked_breadcrumb" data-track-properties-json="{&quot;root_class&quot;: &quot;Concept&quot;, &quot;breadcrumb_index&quot;: 1}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/"><span itemprop='title'>Textbooks</span>
+</a></div>
+<div class='gnome__breadcrumb-mod content__breadcrumb' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a itemprop="url" class="content__breadcrumb-link" data-push="true" data-track="Sneak:clicked_breadcrumb" data-track-properties-json="{&quot;root_class&quot;: &quot;Concept&quot;, &quot;breadcrumb_index&quot;: 2}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/"><span itemprop='title'>Boundless U.S. History</span>
+</a></div>
+<div class='gnome__breadcrumb-mod content__breadcrumb' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a itemprop="url" class="content__breadcrumb-link" data-push="true" data-track="Sneak:clicked_breadcrumb" data-track-properties-json="{&quot;root_class&quot;: &quot;Concept&quot;, &quot;breadcrumb_index&quot;: 3}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/"><span itemprop='title'>The Expansion and Crises of the Colonies: 1650-1750</span>
+</a></div>
+<div class='gnome__breadcrumb-mod content__breadcrumb' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+<a itemprop="url" class="content__breadcrumb-link" data-push="true" data-track="Sneak:clicked_breadcrumb" data-track-properties-json="{&quot;root_class&quot;: &quot;Concept&quot;, &quot;breadcrumb_index&quot;: 4}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"><span itemprop='title'>Colonies in Crisis</span>
+</a></div>
+</span>
+<span class='content__breadcrumbs-caret'>
+<i class='icon-caret-down'></i>
+</span>
+</div>
+<div class='content__breadcrumbs-dropdown'>
+<a class="content__breadcrumbs-dropdown__link" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"><div class='chevron'>
+<i class='icon-angle-right'></i>
+</div>
+<span>U.S. History</span>
+<span>Textbooks</span>
+<span>Boundless U.S. History</span>
+<span>The Expansion and Crises of the Colonies: 1650-1750</span>
+<span>Colonies in Crisis</span>
+</a><a class="content__breadcrumbs-dropdown__link" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/"><div class='chevron'>
+<i class='icon-angle-right'></i>
+</div>
+<span>U.S. History</span>
+<span>Textbooks</span>
+<span>Boundless U.S. History</span>
+<span>The Expansion and Crises of the Colonies: 1650-1750</span>
+</a><a class="content__breadcrumbs-dropdown__link" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/"><div class='chevron'>
+<i class='icon-angle-right'></i>
+</div>
+<span>U.S. History</span>
+<span>Textbooks</span>
+<span>Boundless U.S. History</span>
+</a><a class="content__breadcrumbs-dropdown__link" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/"><div class='chevron'>
+<i class='icon-angle-right'></i>
+</div>
+<span>U.S. History</span>
+<span>Textbooks</span>
+</a><a class="content__breadcrumbs-dropdown__link" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/"><div class='chevron'>
+<i class='icon-angle-right'></i>
+</div>
+<span>U.S. History</span>
+</a></div>
+</div>
+</div>
+
+<div class='content__top'>
+<div class='viewport-padding'>
+<div class='site-width container'>
+<div class='content__meta'>
+<div class='content__meta-icon'>
+<i class='boundless-icon-concept'></i>
+</div>
+<div class='content__meta-inner'>
+<div class='content__meta-line'>
+<span class='content__meta__type'>Concept</span>
+<span class='content__meta__version'>Version 10</span>
+</div>
+<div class='content__creator'>
+<span>Created by Boundless</span>
+</div>
+</div>
+</div>
+<div class='content__meta__right'>
+<div class='content__meta__favorite-button-container'>
+<div class='content-button__wrapper'>
+<a class='content-button'>
+<i class='content-button__icon boundless-icon-star'></i>
+<span class='content-button__label'>
+Favorite
+</span>
+</a>
+<div class='content-button__count'>
+0
+</div>
+</div>
+</div>
+
+<div class='content__meta__watch-button-container'>
+<div class='content-button__wrapper' id='concept-316'>
+<a class='content-button'>
+<i class='content-button__icon boundless-icon-eye'></i>
+<span class='content-button__label'>
+<span>Watch</span>
+</span>
+</a>
+<div class='content-button__count'>
+0
+</div>
+</div>
+</div>
+
+<div class='content__meta__action-info__cont'>
+<a class='content-action-info__toggle'>
+<i class='icon-info'></i>
+<i class='icon-caret-down'></i>
+</a>
+</div>
+<div class='content-action-info__panel__cont' style="display: none">
+<div class='callout-thingy'></div>
+<div class='content-action-info__panel__header'>
+<i class='icon-remove'></i>
+About Watch and Favorite
+</div>
+<div class='content-action-info__panel__body'>
+<div class='content-action-info__panel__section'>
+<h6>
+<i class='boundless-icon-eye'></i>
+Watch
+</h6>
+<p>Watching this resources will notify you when proposed changes or new versions are created so you can keep track of improvements that have been made.</p>
+</div>
+<div class='content-action-info__panel__section'>
+<h6>
+<i class='boundless-icon-star'></i>
+Favorite
+</h6>
+<p>Favoriting this resource allows you to save it in the “My Resources” tab of your account. There, you can easily access this resource later when you’re ready to customize it or assign it to your students.</p>
+</div>
+</div>
+</div>
+</div>
+<h1 class='content__title'>Colonies in Crisis</h1>
+</div>
+</div>
+</div>
+<div class='viewport-padding'>
+<div class='container concept-content-width clearfix'>
+<div class='content-nav'>
+<div class='content-nav__inner'>
+<a data-push="true" class="content-nav__link current-nav-link" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/"><i class='link-icon boundless-icon-read'></i>
+<span class='lbl'>Read</span>
+</a><h5 class='content-nav__header'></h5>
+<a class="content-nav__link content-nav__link--edit" rel="nofollow" data-track="Sisyphus:clicked_edit_tab" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/issues/new/"><i class='link-icon boundless-icon-proposechange'></i>
+<span class='lbl'>Edit</span>
+</a><a data-push="true" data-track="Sisyphus:clicked_feedback_tab" class="content-nav__link content-nav__link--feedback" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/issues/open/"><i class='link-icon boundless-icon-feedback'></i>
+<span class='lbl'>Feedback</span>
+</a><a data-push="true" rel="nofollow" class="content-nav__link " href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/history/"><i class='link-icon boundless-icon-history'></i>
+<span class='lbl'>Version History</span>
+</a><a data-push="true" rel="nofollow" class="content-nav__lesson-usage content-nav__link " href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/usage/"><i class='link-icon boundless-icon-usage'></i>
+<span class='lbl'>Usage</span>
+</a><h5 class='content-nav__header mq__fixed'></h5>
+<div class='sis__sidebar-ad mq__fixed'>
+<div id='div-gpt-ad-1414682687232-0' style="width:160px; height:600px;"></div>
+</div>
+<div class="ad-actions"><a data-popup="register" data-redirect-destination="https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" data-skip-additional-info="true" data-skip-role-selector="true" data-start-event="Sisyphus:clicked_reg_to_hide_ads" data-start-event-properties-json="{&quot;ad_location&quot;:&quot;Concept leaderboard&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Register for FREE to remove ads and unlock more features!</a> <a class="nowrap" data-popover="remove-ads" data-placement="bottom" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Learn more <i class="icon-question-sign"></i></a></div>
+</div>
+</div>
+
+<div class='nav-right__sidebar-margin'>
+<!--
+Template Version 0.3
+-->
+<div class='sis__ad-leaderboard mq__no-phone'>
+<div class='sis__ad'>
+<div id='div-gpt-ad-1423749603292-0' style="width:728px; height:90px;"></div>
+</div>
+<div class="ad-actions"><a data-popup="register" data-redirect-destination="https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" data-skip-additional-info="true" data-skip-role-selector="true" data-start-event="Sisyphus:clicked_reg_to_hide_ads" data-start-event-properties-json="{&quot;ad_location&quot;:&quot;Concept leaderboard&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Register for FREE to remove ads and unlock more features!</a> <a class="nowrap" data-popover="remove-ads" data-placement="bottom" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Learn more <i class="icon-question-sign"></i></a></div>
+</div>
+<div class='content__actions'>
+<div class='content__action'>
+<a class='btn btn-green content__action-btn content__action-btn__assign' data-json-concept-reading-lesson='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"concept_id":316,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading","section_path":"/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"}' data-json-section-reading-lesson='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading"}' data-json='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"concept_id":316,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading","section_path":"/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"}' data-popup='assign_lesson' data-resource-type='reading' data-track-do-redirect='false' data-track-properties-json='{"inline_resource": "reading"}' data-track='Gnome:clicked_teaching_resources_inline_ad'>
+<i class='icon-calendar-empty'></i>
+<span>Assign Concept Reading</span>
+</a>
+</div>
+<div class='content__action'>
+<a class="btn content__action-btn content__action-btn__quiz " data-track="Gnome:clicked_teaching_resources_inline_ad" data-track-properties-json="{&quot;inline_resource&quot;: &quot;quiz&quot;}" href="/web/20160309001638/https://www.boundless.com/quizzes/colonies-in-crisis-quiz-92715/"><i class='boundless-icon-quiz-righttab'></i>
+View Quiz
+</a></div>
+<div class='content__action'>
+<a class="btn content__action-btn content__action-btn__ppt " data-track="Gnome:clicked_teaching_resources_inline_ad" data-track-properties-json="{&quot;inline_resource&quot;: &quot;ppt&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-52-powerpoint-templates/"><i class='boundless-icon-ppt-righttab'></i>
+View <span>PowerPoint</span> Template
+</a></div>
+</div>
+<div class='bcp-concept--content-area bcp-concept--content-display'>
+<div class='bcp-concept--brief-container'>
+<h2 class='bcp-concept--brief'><p>The events of the Glorious Revolution in England had tumultuous repercussions for British colonies in America.</p></h2>
+</div>
+<div class='bcp-concept--smartnotes'>
+<div class='bcp-concept--learning-objectives'>
+<h4 class='bcp-concept--minor-heading'>Learning Objective</h4>
+<ul class='bcp-concept--learning-objectives-list'>
+<li class='bcp-concept__smartnote-list-item'>
+<p>Analyze colonial tensions that emerged as a result of James II's policies</p>
+</li>
+</ul>
+</div>
+<hr class='concept-smartnotes__rule'>
+<div class='bcp-concept--key-points'>
+<h4 class='bcp-concept--minor-heading'>Key Points</h4>
+<ul class='bcp-concept--key-points-list'><ul>
+  <li>The Catholic King <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/james-ii" data-push="true" data-track="Sneak:clicked_mentioned_key_term">James II</a> sought to bring <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/colony" data-push="true" data-track="Sneak:clicked_mentioned_key_term">colonies</a> in America more closely under the control of the crown by creating the Dominion of <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/new-england" data-push="true" data-track="Sneak:clicked_mentioned_key_term">New England</a>. In 1689, colonists in Boston revolted and deposed <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/sir-edmund-andros" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Sir Edmund Andros</a>, <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/governor" data-push="true" data-track="Sneak:clicked_mentioned_key_term">governor</a> of the Dominion.</li>
+  <li>That same year, Leisler's Rebellion, led by <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/militia" data-push="true" data-track="Sneak:clicked_mentioned_key_term">militia</a> captain Jacob Leisler, seized control of part of the colony of <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/new-york" data-push="true" data-track="Sneak:clicked_mentioned_key_term">New York</a>.</li>
+  <li>Coode's Rebellion, led by John Coode, rebelled against the purportedly Catholic <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/colonial-governments" data-push="true" data-track="Sneak:clicked_mentioned_key_term">colonial government</a> of Maryland.</li>
+</ul></ul>
+</div>
+<hr class='concept-smartnotes__rule'>
+<h4 class='bcp-concept--minor-heading'>Terms</h4>
+<ul class='unstyled key_terms clearfix'>
+<li class='bcp-concept__smartnote-list-item'>
+<a class="keyterm" data-push="true" href="/web/20160309001638/https://www.boundless.com/definition/coode-s-rebellion/">Coode's Rebellion</a>
+<p class='definition'><p>Coode's rebellion, or the Protestant Revolution of 1689, was an armed insurrection by Maryland Protestants against the proprietal government, seen by the rebels as dominated by Catholicism.</p></p>
+</li>
+<li class='bcp-concept__smartnote-list-item'>
+<a class="keyterm" data-push="true" href="/web/20160309001638/https://www.boundless.com/definition/leisler-s-rebellion/">Leisler's Rebellion</a>
+<p class='definition'><p>Leisler's Rebellion was an uprising in late 17th century colonial New York, in which German American merchant and militia captain Jacob Leisler seized control of the colony's south and ruled it from 1689 to 1691.</p></p>
+</li>
+<li class='bcp-concept__smartnote-list-item'>
+<a class="keyterm" data-push="true" href="/web/20160309001638/https://www.boundless.com/definition/dominion-of-new-england/">Dominion of New England</a>
+<p class='definition'><p>The Dominion of New England in America (1686–89) was an administrative union of English colonies in the New England region of North America.</p></p>
+</li>
+</ul>
+<hr class='concept-smartnotes__rule'>
+<div class='flagger__flag-container smartnotes'></div>
+</div>
+</div>
+<div class='bcp-concept--content-area bcp-concept--content-display'>
+<div class='sis__ad-fulltext'>
+<div class='sis__ad'>
+<div id='div-gpt-ad-1425409301314-0' style="width:336px; height:280px;"></div>
+</div>
+<div class="ad-actions"><a data-popup="register" data-redirect-destination="https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/" data-skip-additional-info="true" data-skip-role-selector="true" data-start-event="Sisyphus:clicked_reg_to_hide_ads" data-start-event-properties-json="{&quot;ad_location&quot;:&quot;Concept leaderboard&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Register for FREE to remove ads and unlock more features!</a> <a class="nowrap" data-popover="remove-ads" data-placement="bottom" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/">Learn more <i class="icon-question-sign"></i></a></div>
+</div>
+<h4 class='bcp-concept--minor-heading'>Full Text</h4>
+<div class='bcp-concept--fulltext'><p>On April 18, 1689, a well-organized "mob" of provincial militia and <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/citizen" data-push="true" data-track="Sneak:clicked_mentioned_key_term">citizens</a> formed in the city of Boston. They arrested dominion officials as a protest against the rule of Sir Edmund Andros, the governor of the Dominion of New England. Andros, commissioned governor of New England in 1686, had earned the enmity of the local populace by enforcing the restrictive <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/navigation-acts" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Navigation Acts</a>, denying the validity of existing land titles, restricting <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/town-meetings" data-push="true" data-track="Sneak:clicked_mentioned_key_term">town meetings</a>, and appointing unpopular regular officers to lead colonial militia, among other actions that were part of an attempt to bring the colonies under the closer control of the crown.</p><p>Furthermore, he had infuriated <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/puritan" data-push="true" data-track="Sneak:clicked_mentioned_key_term"></a><a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/puritans" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Puritans</a> in Boston by promoting the <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/church-of-england" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Church of England</a>, which was disliked by many Nonconformist New England colonists. Members of the Church of England, believed by Puritans to sympathize with the administration of the dominion, were also taken into custody by the rebels. Neither <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/faction" data-push="true" data-track="Sneak:clicked_mentioned_key_term">faction</a> sustained casualties during the revolt. Leaders of the former <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/massachusetts-bay" data-push="true" data-track="Sneak:clicked_mentioned_key_term"></a><a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/massachusetts-bay-colony" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Massachusetts Bay</a><a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/massachusetts-bay-colony" data-push="true" data-track="Sneak:clicked_mentioned_key_term"> Colony</a> then reclaimed control of the government. In other colonies, members of governments displaced by the dominion were returned to power.</p><p>Following similar frustrations against the rule and policies of James II as the Bostonians, <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/german" data-push="true" data-track="Sneak:clicked_mentioned_key_term">German</a> American <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/merchant" data-push="true" data-track="Sneak:clicked_mentioned_key_term">merchant</a> and militia captain Jacob Leisler seized control of the southern part of the colony of New York and ruled it from 1689 to 1691. Royal authority was not restored until 1691, when English troops and a new governor were sent to New York. Leisler was arrested by these forces, who tried him for <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/treason" data-push="true" data-track="Sneak:clicked_mentioned_key_term">treason</a>. Leisler was convicted and executed, but the revolt left the colony polarized and bitterly split into two rival factions.</p><p>Maryland saw Coode's rebellion, or the <a class="keyterm__mention" href="/web/20160309001638/https://www.boundless.com/u-s-history/definition/protestant-revolution" data-push="true" data-track="Sneak:clicked_mentioned_key_term">Protestant Revolution</a> of 1689. This was an armed insurrection by Maryland Protestants against the colonial government, seen by the rebels as dominated by Catholicism. The insurrection drew its name from John Coode, the militant and colorful leader of the Protestant Association.</p><a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/images/andros-a-prisoner-in-boston-illustrated-by-f-o-c-darley-william-l-shepard-or-granville-perkins-1876/" data-push="true" data-global-id="gid://boundless/Image/4388"><div class="atom__components__figure" data-global-id="gid://boundless/Image/4388">
+  <div class="atom__components__figure__cont">
+    <img class="atom__components__figure__image" src="/web/20160309001638im_/https://figures.boundless.com/4388/large/androsaprisonerinboston.png">
+    <div class="atom__components__document">
+      <h2>"Andros a Prisoner in Boston" illustrated by F.O.C. Darley, William L. Shepard or Granville Perkins, 1876</h2>
+      <p>British Governor Andros was arrested by rebels in Boston in 1689.</p>
+    </div>
+  </div>
+</div></a></div>
+</div>
+<div class='flagger__flag-container fulltext'></div>
+<div class='sneak__assign-reading-footer'>
+<a class='btn btn-green content__action-btn' data-json-concept-reading-lesson='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"concept_id":316,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading","section_path":"/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"}' data-json-section-reading-lesson='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading"}' data-json='{"subject_tag_id":42,"book_id":298,"chapter_id":4,"section_id":52,"concept_id":316,"lesson_duration":"TODO","lesson_title":"Colonies in Crisis","body":"TODO","activity":"reading","section_path":"/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/"}' data-popup='assign_lesson' data-position='bottom' data-resource-type='reading'>
+<i class='icon-calendar-empty'></i>
+<span>Assign Concept Reading</span>
+</a>
+<p class='sneak__assign-reading-footer-text'>Assign just this concept or entire chapters to your class for free.</p>
+</div>
+
+<div class='sisyphus__inline-edit--container'>
+<span class='sis__inline-edit'>[ <!-- non-admins go to feedback page -->
+<a class="sisyphus__edit-action" rel="nofollow" data-track="Sisyphus:clicked_inline_edit" data-track-properties-json="{&quot;registered&quot;: &quot;true&quot;, &quot;admin&quot;: &quot;false&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/issues/new/">edit
+</a> ]</span>
+</div>
+<div class='sisyphus__selection-popup'>
+<!-- non-admins go to feedback page -->
+<a class="sisyphus__edit-action" rel="nofollow" data-track="Sisyphus:clicked_text_selection_edit" data-track-properties-json="{&quot;registered&quot;: &quot;true&quot;, &quot;admin&quot;: &quot;false&quot;}" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/issues/new/"><i class='icon-pencil'></i><span class='lbl'>Edit this content</span></a></div>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class='content-footer clearfix'>
+<div class='container concept-content-width clearfix'>
+<div class='adjacent-concept-link__container adjacent-concept-link__prev'>
+<a class="adjacent-concept-link__button" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/british-expansion-51/quaker-liberty-315-6730/"><i class='icon-angle-left'></i>
+Prev Concept
+</a><div class='adjacent-concept-link__title'>Quaker Liberty</div>
+</div>
+<div class='adjacent-concept-link__container adjacent-concept-link__next'>
+<div class='adjacent-concept-link__title'>Bacon's Rebellion</div>
+<a class="adjacent-concept-link__button" data-push="true" href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/bacon-s-rebellion-317-2398/">Next Concept
+<i class='icon-angle-right'></i>
+</a></div>
+</div>
+</div>
+<div class='sub-content-footer'>
+<div class='container concept-content-width clearfix'>
+<div class='content-objects-list'>
+<div class='content-objects-list__header'>
+<form class="pull-right" action="/web/20160309001638/https://www.boundless.com/questions/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="r+CGgIAkA8t0PKkJWYaCtWrsLWPZvrEhH/LNd0Dkj4ncOUh2IiORLB9RpXN+3skmK9Ds1+UwPHWcSy6bRjU3/A==" />
+<input type="hidden" name="question[atom_id]" id="question_atom_id" value="1709" />
+<button name="button" type="submit" class="btn"><i class="icon-plus"></i> Create Question</button>
+</form>
+
+Referenced in <b>1 quiz question</b>
+</div>
+<div class='content-objects-list__item'>
+<a class="content__meta-icon content-objects-list__item__icon" href="/web/20160309001638/https://www.boundless.com/questions/the-revolt-and-deposition-of-sir-edmund-andros-in-1689-was-motivated-by-which-of-the-following-grievances-39676/"><i class='boundless-icon-question'></i>
+</a><div class='content-objects-list__item__body'>
+<div class='content-objects-list__item__body__title'>
+<a href="/web/20160309001638/https://www.boundless.com/questions/the-revolt-and-deposition-of-sir-edmund-andros-in-1689-was-motivated-by-which-of-the-following-grievances-39676/">The revolt and deposition of Sir Edmund Andros in 1689 was motivated by which of the following grievances? </a>
+</div>
+<div class='content-objects-list__item__body__subtitle'>
+Widespread frustration in the colony of New York over James II's imposition of the Navigation Acts, James II's appointment of a Catholic-dominated government in Maryland in 1689, James II's decision to appoint unpopular officers in the colonial militias, or James II's imposition of restrictive policies, designed to solidify Crown authority in New England
+</div>
+<a class="content-objects-list__item__carat-cta-link" href="/web/20160309001638/https://www.boundless.com/questions/the-revolt-and-deposition-of-sir-edmund-andros-in-1689-was-motivated-by-which-of-the-following-grievances-39676/"><i class='content-objects-list__item__carat-cta icon-angle-right'></i>
+</a></div>
+</div>
+</div>
+</div>
+<div class='container concept-content-width clearfix'>
+<div class='glossary-container'>
+<h4 class='bcp-concept--collapsible-header collapsed' data-target='#key_term_glossary' data-toggle='collapse'>
+<i class='icon-caret-down'></i>
+Key Term Reference
+</h4>
+<dl class='collapse' id='key_term_glossary'>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='church-of-england'>Church of England</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/social-class-in-the-colonies-54/the-anglican-class-332-1711/">The Anglican Class</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/new-england-society-274-2253/">New England Society</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/puritanism-277-10429/">Puritanism</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='colonial-governments'>Colonial Governments</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/slavery-freedom-and-the-struggle-for-empire-1750-1763-5/the-political-climate-of-the-colonies-58/freedom-of-expression-and-its-limits-355-430/">Freedom of Expression and its Limits</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/troubled-neighbors-48/troubled-neighbors-299-2476/">Troubled Neighbors</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/slavery-freedom-and-the-struggle-for-empire-1750-1763-5/the-political-climate-of-the-colonies-58/colonial-government-352-6469/">Colonial Government</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='german'>German</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/from-isolation-to-world-war-ii-1930-1943-26/the-end-of-wwii-209/the-collapse-of-nazi-germany-1155-12/">The Collapse of Nazi Germany</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/reconstruction-1865-1877-19/the-grant-administration-142/reform-and-the-election-of-1872-755-190/">Reform and the Election of 1872</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/german-migration-324-8566/">German Migration</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='glorious-revolution'>Glorious Revolution</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/slavery-freedom-and-the-struggle-for-empire-1750-1763-5/an-empire-of-freedom-57/the-rights-of-englishmen-347-2475/">The Rights of Englishmen</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/the-glorious-revolution-319-8535/">The Glorious Revolution</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/english-administration-of-the-colonies-46/the-dominion-of-new-england-293-10446/">The Dominion of New England</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='james-ii'>James II</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/empires-in-conflict-50/the-dutch-empire-307-8530/">The Dutch Empire</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-the-middle-colonies-and-georgia-42/settling-the-middle-colonies-and-georgia-279-10313/">Settling the Middle Colonies and Georgia</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-the-middle-colonies-and-georgia-42/new-jersey-281-10314/">New Jersey</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='massachusetts-bay'>Massachusetts Bay</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/plymouth-270-2470/">Plymouth</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/a-growing-population-and-expanding-economy-in-british-north-america-276-5295/">A Growing Population and Expanding Economy in British North America</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/the-british-empire-in-north-america-39/the-pequot-war-264-8134/">The Pequot War</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='massachusetts-bay-colony'>Massachusetts Bay Colony</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/american-life-during-the-revolution-1763-1789-8/religious-revolution-74/separating-church-and-state-422-9444/">Separating Church and State</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/rhode-island-272-9636/">Rhode Island</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/witchcraft-in-new-england-320-9656/">Witchcraft in New England</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='navigation-acts'>Navigation Acts</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/founding-a-nation-1783-1789-9/america-under-the-articles-of-confederation-78/trade-and-economy-444-5562/">Trade and Economy</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/english-administration-of-the-colonies-46/the-mercantalist-system-291-8185/">The Mercantalist System</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/english-administration-of-the-colonies-46/enforcing-the-navigation-acts-292-9429/">Enforcing the Navigation Acts</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='new-england'>New England</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-market-revolution-1815-1840-13/a-market-society-109/a-market-society-586-157/">A Market Society</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/a-growing-society-321-547/">A Growing Society</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/a-diverse-population-322-8536/">A Diverse Population</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='new-york'>New York</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/founding-a-nation-1783-1789-9/america-under-the-articles-of-confederation-78/land-policy-443-19/">Land Policy</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/settlers-and-native-americans-325-123/">Settlers and Native Americans</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/british-expansion-51/the-conquest-of-new-york-312-1708/">The Conquest of New York</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='protestant-revolution'>Protestant Revolution</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in this related concept:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-the-chesapeake-40/maryland-267-2473/">Maryland</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='puritans'>Puritans</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/the-consumer-revolution-327-1710/">The Consumer Revolution</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/religious-diversity-323-8992/">Religious Diversity</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/settling-new-england-41/settling-new-england-269-10425/">Settling New England</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='sir-edmund-andros'>Sir Edmund Andros</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in this related concept:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/english-administration-of-the-colonies-46/the-glorious-revolution-in-america-294-9693/">The Glorious Revolution in America</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='town-meetings'>Town Meetings</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/colonial-society-326-2433/">Colonial Society</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-british-empire-and-the-colonial-crisis-1754-1775-6/the-tea-party-and-the-coercive-acts-1770-1774-62/the-spreading-conflict-381-2477/">The Spreading Conflict</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-british-empire-and-the-colonial-crisis-1754-1775-6/the-tea-party-and-the-coercive-acts-1770-1774-62/the-coercive-acts-379-9571/">The Coercive Acts</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='citizen'>citizen</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/democracy-in-america-1815-1840-12/the-monroe-and-adams-administrations-102/from-property-to-democracy-546-230/">From Property to Democracy</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-gilded-age-1870-1900-20/the-transformation-of-the-west-149/african-american-migration-789-645/">African American Migration</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/founding-a-nation-1783-1789-9/we-the-people-81/we-the-people-457-6701/">&quot;We the People&quot;</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='colony'>colony</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/self-government-in-the-colonies-47/powers-of-the-governors-297-386/">Powers of the Governors</a>, <a href="/web/20160309001638/https://www.boundless.com/microbiology/textbooks/boundless-microbiology-textbook/culturing-microorganisms-6/culturing-bacteria-58/aseptic-technique-dilution-streaking-and-spread-plates-367-7652/">Aseptic Technique, Dilution, Streaking, and Spread Plates</a>, and <a href="/web/20160309001638/https://www.boundless.com/sociology/textbooks/boundless-sociology-textbook/economy-16/the-transformation-of-economic-systems-119/colonialism-decolonization-and-neo-colonialism-673-10479/">Colonialism, Decolonization, and Neo-Colonialism</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='faction'>faction</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/founding-a-nation-1783-1789-9/the-ratification-debate-and-the-origin-of-the-bill-of-rights-80/extend-the-sphere-454-6471/">&quot;Extend the Sphere&quot;</a>, <a href="/web/20160309001638/https://www.boundless.com/sociology/textbooks/boundless-sociology-textbook/government-15/the-u-s-political-system-116/political-parties-and-elections-645-7758/">Political Parties and Elections</a>, and <a href="/web/20160309001638/https://www.boundless.com/sociology/textbooks/boundless-sociology-textbook/education-13/schools-as-formal-organizations-99/student-subcultures-559-8977/">Student Subcultures</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='governor'>governor</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-conservative-turn-of-america-1968-1989-30/the-carter-administration-227/the-carter-administration-1276-192/">The Carter Administration</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/self-government-in-the-colonies-47/the-habit-of-self-government-296-6551/">The Habit of Self-Government</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/slavery-freedom-and-the-struggle-for-empire-1750-1763-5/the-political-climate-of-the-colonies-58/the-rise-of-the-assemblies-353-9692/">The Rise of the Assemblies</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='merchant'>merchant</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-gilded-age-1870-1900-20/the-transformation-of-the-west-149/the-migratory-stream-788-949/">The Migratory Stream</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/reconstruction-1865-1877-19/the-battle-over-reconstruction-139/johnson-s-plan-738-1681/">Johnson&#39;s Plan</a>, and <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/the-growth-of-the-colonies-53/colonial-cities-328-11219/">Colonial Cities</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='militia'>militia</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/a-house-dividing-1840-1861-17/the-impending-crisis-129/the-aftermath-of-john-brown-s-raid-689-7781/">The Aftermath of John Brown&#39;s Raid</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-american-revolution-1763-1783-7/setbacks-for-the-british-1777-67/the-forage-war-398-9442/">The Forage War</a>, and <a href="/web/20160309001638/https://www.boundless.com/users/14854/textbooks/pf-civics-full/unit-2-the-constitution-610/appendix-the-constitution-of-the-united-states-631/the-second-amendment-657-11149/">The Second Amendment</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='puritan'>puritan</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/the-british-empire-in-north-america-39/the-coming-of-the-english-258-10434/">The Coming of the English</a>, <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/britain-and-the-settling-of-the-colonies-1600-1750-3/the-british-empire-in-north-america-39/english-colonies-259-10437/">English Colonies</a>, and <a href="/web/20160309001638/https://www.boundless.com/world-history/textbooks/boundless-world-history-i-ancient-1600-textbook/early-modern-europe-12/christianity-in-europe-56/the-english-reformation-212-13326/">The English Reformation</a>
+</span>
+</dd>
+</div>
+<div class='key_term_glossary_entry'>
+<dt class='target' id='treason'>treason</dt>
+<dd>
+<span class='key_term_reference_list'>
+<strong>Appears in these related concepts:</strong> <a href="/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/securing-the-republic-1800-1815-11/divisions-in-the-republican-party-97/the-burr-conspiracy-525-10386/">The Burr Conspiracy</a>, <a href="/web/20160309001638/https://www.boundless.com/users/14854/textbooks/pf-civics-full/unit-2-the-constitution-610/appendix-the-constitution-of-the-united-states-631/article-iii-648-11144/">Article III</a>, and <a href="/web/20160309001638/https://www.boundless.com/world-history/textbooks/boundless-world-history-i-ancient-1600-textbook/the-middle-ages-in-europe-9/the-late-middle-ages-c-1301-1500-ce-47/crime-and-punishment-180-13321/">Crime and Punishment</a>
+</span>
+</dd>
+</div>
+</dl>
+</div>
+
+</div>
+<div class='container concept-content-width clearfix'>
+<div class='sources-container'>
+<h4 class='bcp-concept--collapsible-header collapsed' data-target='.sources' data-toggle='collapse'>
+<i class='icon-caret-down'></i>
+Sources
+</h4>
+<ul class='sources collapse'>
+<p class='bcp-sans-copy'>Boundless vets and curates high-quality, openly licensed content from around the Internet. This particular resource used the following sources:</p>
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;1689 Boston revolt.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/1689_Boston_revolt">http://en.wikipedia.org/wiki/1689_Boston_revolt</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/https://en.wikipedia.org/wiki/Public_domain">Public domain</a>.
+</div>
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Protestant Revolution of 1689.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/Protestant_Revolution_of_1689">http://en.wikipedia.org/wiki/Protestant_Revolution_of_1689</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Leisler's Rebellion.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/Leisler%2527s_Rebellion">http://en.wikipedia.org/wiki/Leisler%2527s_Rebellion</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Dominion of New England.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/Dominion%20of%20New%20England">http://en.wikipedia.org/wiki/Dominion%20of%20New%20England</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Leisler's Rebellion.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/Leisler's%20Rebellion">http://en.wikipedia.org/wiki/Leisler&#39;s%20Rebellion</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Coode's Rebellion.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://en.wikipedia.org/wiki/Coode's%20Rebellion">http://en.wikipedia.org/wiki/Coode&#39;s%20Rebellion</a>
+<span class='attribution-name'>Wikipedia</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+<div class='attribution'>
+<div class='attribution-title'>
+<strong>&quot;Boundless.&quot;</strong>
+</div>
+<a class="attribution-link" href="/web/20160309001638/http://www.boundless.com/">http://www.boundless.com/</a>
+<span class='attribution-name'>Boundless Learning</span>
+<a href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+</div>
+
+</ul>
+</div>
+</div>
+<div class='container concept-content-width clearfix'>
+<h4 class='bcp-concept--collapsible-header'>
+Cite This Source
+</h4>
+<div class='citation-container'>
+<div class='copy-citation-button-container' id='refme-placeholder'></div>
+<p class='bcp-sans-copy'>Source: Boundless. “Colonies in Crisis.” <em>Boundless U.S. History</em>. Boundless, 21 Jul. 2015. Retrieved 09 Mar. 2016 from <span class='citation__url-text'>https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/</span></p>
+</div>
+</div>
+</div>
+<div id='prompter_container'></div>
+
+
+</div>
+<footer id='footer'>
+<div class='footer__content-container'>
+<div class='footer__group'>
+<h5 class='footer__header'>
+Subjects
+</h5>
+<ul class='footer__subject-list'>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/accounting/">Accounting</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/algebra/">Algebra</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/art-history/">Art History</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/biology/">Biology</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/business/">Business</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/calculus/">Calculus</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/chemistry/">Chemistry</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/communications/">Communications</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/computer-science/">Computer Science</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/economics/">Economics</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/education/">Education</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/finance/">Finance</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/management/">Management</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/marketing/">Marketing</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/microbiology/">Microbiology</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/music/">Music</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/philosophy/">Philosophy</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/physics/">Physics</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/physiology/">Physiology</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/political-science/">Political Science</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/psychology/">Psychology</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/sociology/">Sociology</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/statistics/">Statistics</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/u-s-history/">U.S. History</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/world-history/">World History</a>
+</li>
+<li class='footer__subject-list-item'>
+<a data-push="true" target="blank" href="/web/20160309001638/https://www.boundless.com/writing/">Writing</a>
+</li>
+</ul>
+</div>
+<div class='footer__group'>
+<div class='footer__subgroup'>
+<h5 class='footer__header'>
+Products
+</h5>
+<ul class='footer__products-list'>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/students/">For Students</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/teaching/">For Educators</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/institutions/">For Institutions</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://marketplace.boundless.com/">Marketplace</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/subjects/quizzes/">Quizzes</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/subjects/powerpoint-templates/">PowerPoints</a></li>
+<li class='footer__products-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/canvas/">Canvas Integration</a></li>
+</ul>
+</div>
+<div class='footer__subgroup'>
+<div class='company-subgroup'>
+<h5 class='footer__header'>
+Boundless
+</h5>
+<ul class='footer__company-links-list'>
+<li class='footer__company-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/careers/">Careers</a></li>
+<li class='footer__company-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/about-us/">About Us</a></li>
+<li class='footer__company-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/partners/">Partners</a></li>
+<li class='footer__company-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/press/">Press</a></li>
+<li class='footer__company-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/community/">Community</a></li>
+</ul>
+</div>
+</div>
+<div class='footer__subgroup'>
+<div class='follow-us-subgroup'>
+<h5 class='footer__header'>
+Follow Us
+</h5>
+<ul class='footer__follow-us-links-list'>
+<li class='footer__follow-us-links-list-item'><a target="blank" title="Boundless on Facebook" href="/web/20160309001638/https://www.facebook.com/GoBoundless">Facebook</a></li>
+<li class='footer__follow-us-links-list-item'><a target="blank" title="Boundless on Twitter" href="/web/20160309001638/http://twitter.com/GoBoundless">Twitter</a></li>
+<li class='footer__follow-us-links-list-item'><a target="blank" href="/web/20160309001638/http://blog.boundless.com/">Blog</a></li>
+</ul>
+</div>
+</div>
+<div class='footer__subgroup'>
+<div class='questions-subgroup'>
+<h5 class='footer__header'>
+Questions?
+</h5>
+<ul class='footer__questions-links-list'>
+<li class='footer__questions-links-list-item'><a target="blank" href="/web/20160309001638/http://support.boundless.com/">Visit Support</a></li>
+<li class='footer__questions-links-list-item'><a target="blank" href="mailto:support@boundless.com">Email Us</a></li>
+</ul>
+</div>
+</div>
+<div class='footer__subgroup'>
+<h5 class='footer__header'>
+Legal
+</h5>
+<ul class='footer__legal-links-list'>
+<li class='footer__legal-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/terms/">Terms of Service</a></li>
+<li class='footer__legal-links-list-item'><a target="blank" href="/web/20160309001638/https://www.boundless.com/privacy/">Privacy</a></li>
+</ul>
+</div>
+</div>
+<div class='footer__footer'>
+<p>Except where noted, content and user contributions on this site are licensed under <a rel="license" href="/web/20160309001638/http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> with attribution required.</p>
+</div>
+</div>
+</footer>
+
+<div class='reader-frame'>
+<div class='reader-frame__inner'>
+<iframe class='reader-frame__iframe' name='reader-frame__iframe'></iframe>
+</div>
+</div>
+</div>
+
+<script>
+  var _event_queue = _event_queue || [];
+  var browser_supported = true;
+</script>
+<script src="/web/20160309001638js_/https://js.pusher.com/2.2/pusher.min.js"></script>
+<script>
+  window.PageData = (window.PageData || {});
+</script>
+<script>
+  window.landing_page = "concept_page";
+</script>
+<script>
+//<![CDATA[
+window.PageData.subjects = [{"id":28,"name":"Accounting","chegg":{"id":682,"name":"Accounting","url_name":"Accounting","parent_id":718}},{"id":30,"name":"Algebra","chegg":{"id":1,"name":"Algebra","url_name":"Algebra","parent_id":601}},{"id":32,"name":"Art History","chegg":{"id":53,"name":"Art History","url_name":"Art-History","parent_id":721}},{"id":54,"name":"Biology","chegg":{"id":599,"name":"Biology","url_name":"Biology","parent_id":606}},{"id":36,"name":"Business","chegg":{"id":1356,"name":"Business","url_name":"Business","parent_id":2820}},{"id":37,"name":"Calculus","chegg":{"id":604,"name":"Calculus","url_name":"Calculus","parent_id":601}},{"id":38,"name":"Chemistry","chegg":{"id":602,"name":"Chemistry","url_name":"Chemistry","parent_id":606}},{"id":39,"name":"Communications","chegg":{"id":1321,"name":"Communication","url_name":"Communication","parent_id":721}},{"id":71,"name":"Computer Science","chegg":{"id":30,"name":"Computer Science","url_name":"Computer-Science","parent_id":686}},{"id":56,"name":"Economics","chegg":{"id":603,"name":"Economics","url_name":"Economics","parent_id":718}},{"id":61,"name":"Education","chegg":{"id":1405,"name":"Education","url_name":"Education","parent_id":721}},{"id":41,"name":"Finance","chegg":{"id":701,"name":"Finance","url_name":"Finance","parent_id":718}},{"id":43,"name":"Management","chegg":{"id":1421,"name":"Management","url_name":"Management","parent_id":1356}},{"id":44,"name":"Marketing","chegg":{"id":1343,"name":"Marketing","url_name":"Marketing","parent_id":718}},{"id":45,"name":"Microbiology","chegg":{"id":630,"name":"Microbiology","url_name":"Microbiology","parent_id":599}},{"id":64,"name":"Music","chegg":{"id":542,"name":"Music Theory","url_name":"Music-Theory","parent_id":721}},{"id":72,"name":"Philosophy","chegg":{"id":642,"name":"Philosophy","url_name":"Philosophy","parent_id":721}},{"id":46,"name":"Physics","chegg":{"id":600,"name":"Physics","url_name":"Physics","parent_id":606}},{"id":47,"name":"Physiology","chegg":{"id":42,"name":"Physiology","url_name":"Physiology","parent_id":599}},{"id":48,"name":"Political Science","chegg":{"id":691,"name":"Political Science","url_name":"Political-Science","parent_id":718}},{"id":55,"name":"Psychology","chegg":{"id":40,"name":"Psychology","url_name":"Psychology","parent_id":718}},{"id":50,"name":"Sociology","chegg":{"id":660,"name":"Sociology","url_name":"Sociology","parent_id":718}},{"id":51,"name":"Statistics","chegg":{"id":605,"name":"Statistics","url_name":"Statistics","parent_id":601}},{"id":42,"name":"U.S. History","chegg":{"id":47,"name":"US History","url_name":"US-History","parent_id":631}},{"id":70,"name":"World History","chegg":{"id":48,"name":"World History","url_name":"World-History","parent_id":631}},{"id":52,"name":"Writing","chegg":{"id":43,"name":"Writing","url_name":"Writing","parent_id":721}}];
+
+//]]>
+</script>
+
+<script>
+  window.Boundless = window.Boundless || {};
+  
+  (function (Boundless) {
+  
+    document.domain = 'boundless.com';
+  
+    constants = {
+      API: "/web/20160309001638/https://www.boundless.com/api/public",
+      APP_URL: "/web/20160309001638/https://www.boundless.com",
+      BOOK_PRICE: 9.99,
+      COURSE_PRICE: 29.99,
+      COOKIE_DOMAIN: ".boundless.com",
+      DEBUG: (window.location.href.indexOf('debug') != -1) || false,
+      ENV: "production",
+      FIGURES_CDN: "//figures.boundless.com",
+      FIGURES_URL: "/web/20160309001638/http://figures.boundless.com",
+      HOST_DOMAIN: "www.boundless.com:443",
+      PROTOCOL: "https",
+      WWW_HOST: "www.boundless.com",
+      MARKETPLACE_HOST: "marketplace.boundless.com",
+  
+      is_full_story_enabled: function () {
+        return true;
+      },
+  
+      auth_token_param: "authentication_token",
+      pusher_key: "e73010c1bf8eac300729"
+    };
+  
+    for (var key in constants) {
+      if (constants.hasOwnProperty(key)) {
+        Boundless[key] = constants[key];
+      }
+    }
+  
+    Boundless.getServerConstants = function () {
+      if (_ !== undefined && _.clone !== undefined) {
+        return _.clone(constants);
+      } else {
+        config.warn('This method uses Underscore to clone the constants.');
+      }
+    }
+  
+    Boundless.getConstants = function () {
+      var re = /^[A-Z_]+$/,
+          constants = {};
+  
+      for (var key in Boundless) {
+        if (key.match(re) && Boundless.hasOwnProperty(key)) {
+          constants[key] = Boundless[key];
+        }
+      }
+  
+      return constants;
+    };
+  
+  })(window.Boundless);
+</script>
+
+<script src="/web/20160309001638js_/https://assets.boundless.com/assets/shared-f72840b5961353d728d3eddb38556697.js"></script>
+<script src="/web/20160309001638js_/https://assets.boundless.com/assets/global/core-8944214d17eac36029b883f0bca8db7f.js"></script>
+<script src="/web/20160309001638js_/https://js.stripe.com/v2/"></script>
+<script>
+  var PageData = PageData || {}
+  PageData['chegg_tutors'] = [{"sticky_id": "WKRFU", "last_name": "Z", "major": "Political Science", "is_staff": false, "negative_reviews": 2, "image_thumb_xlarge": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/e079b8b1dd3ed5b44ffb0e5db701ebae_20160107200207281483_thumb_xlarge.png", "id": 69374, "image_thumb_small": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/e079b8b1dd3ed5b44ffb0e5db701ebae_20160107200207281483_thumb_small.png", "available_now": false, "school": "Columbia University in the City of New York", "image_thumb_large": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/e079b8b1dd3ed5b44ffb0e5db701ebae_20160107200207281483_thumb_large.png", "user_id": 541402, "chat_availability": 3, "tutor_profile_id": 69374, "uri": "/web/20160309001638/https://instaedu.com/tutors/online-tutors/Nidale-Z-085106/", "image_thumb_medium": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/e079b8b1dd3ed5b44ffb0e5db701ebae_20160107200207281483_thumb_medium.png", "is_superuser": false, "role": 2, "first_name": "Nidale", "positive_reviews": 86}, {"sticky_id": "WJCV6", "last_name": "S", "major": "Industrial and Labor Relations", "is_staff": false, "negative_reviews": 0, "image_thumb_xlarge": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/bf3254e8a417f89407c7f2ceec9d711f_20150323151805352370_thumb_xlarge.png", "id": 72337, "image_thumb_small": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/bf3254e8a417f89407c7f2ceec9d711f_20150323151805352370_thumb_small.png", "available_now": false, "school": "Cornell University", "image_thumb_large": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/bf3254e8a417f89407c7f2ceec9d711f_20150323151805352370_thumb_large.png", "user_id": 582698, "chat_availability": 3, "tutor_profile_id": 72337, "uri": "/web/20160309001638/https://instaedu.com/tutors/online-tutors/Emily-S-080742/", "image_thumb_medium": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/bf3254e8a417f89407c7f2ceec9d711f_20150323151805352370_thumb_medium.png", "is_superuser": false, "role": 2, "first_name": "Emily", "positive_reviews": 134}, {"sticky_id": "5JWK2", "last_name": "G", "major": "History & Near Eastern Languages and Civilizations", "is_staff": false, "negative_reviews": 1, "image_thumb_xlarge": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/200cac552ae2eebbf6e30770179ac1ae_20140412202016111942_thumb_xlarge.png", "id": 24429, "image_thumb_small": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/200cac552ae2eebbf6e30770179ac1ae_20140412202016111942_thumb_small.png", "available_now": false, "school": "University of Chicago", "image_thumb_large": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/200cac552ae2eebbf6e30770179ac1ae_20140412202016111942_thumb_large.png", "user_id": 109281, "chat_availability": 1, "tutor_profile_id": 24429, "uri": "/web/20160309001638/https://instaedu.com/tutors/online-tutors/Michael-G-266272/", "image_thumb_medium": "/web/20160309001638/https://d33uy43563vk3t.cloudfront.net/200cac552ae2eebbf6e30770179ac1ae_20140412202016111942_thumb_medium.png", "is_superuser": false, "role": 2, "first_name": "Michael", "positive_reviews": 202}]
+  PageData['concept_data'] = {"atom_id":1709,"chapter_id":4,"chapter_title":"The Expansion and Crises of the Colonies: 1650-1750","section_id":52,"section_title":"Colonies in Crisis","section_index":6,"subject_tag_id":42,"subject_tag":"U.S. History","section_concepts":[{"atom_id":1709,"concept_title":"Colonies in Crisis"},{"atom_id":2398,"concept_title":"Bacon's Rebellion"},{"atom_id":9420,"concept_title":"King Philip's War"},{"atom_id":8535,"concept_title":"The Glorious Revolution"},{"atom_id":9656,"concept_title":"Witchcraft in New England"}]};
+</script>
+<script>
+  window.direct_traffic = 1;
+</script>
+<script>
+  Boundless.PageCallbacks.push(function() {
+  
+    ViewHelpers.typeset_equations('.bcp-content');
+  
+    window.flagger_app = new Boundless.Flagger.App();
+  
+    var sub_controller = null, title = null, completion_cookie = null;
+  
+    Boundless.Sneak = {
+      reading_url: '/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/',
+      quiz_url: '/web/20160309001638/https://www.boundless.com/quizzes/colonies-in-crisis-quiz-92715/'
+    };
+  
+  
+    if (!session.current_user) {
+      if (CookieMonster.get('user_type_administrator')) {
+        window.prompter = new Boundless.PrompterController({
+          el: $('#prompter_container'),
+          title: 'Boundless for Institutions',
+          sub_view: 'learn_more_institutions',
+          completion_cookie: 'how_can_we_help',
+          delay: 5000
+        });
+      } else if (CookieMonster.get('user_type_educator')) {
+        window.prompter = new Boundless.PrompterController({
+          el: $('#prompter_container'),
+          title: 'Boundless Teaching',
+          sub_view: 'learn_more_teaching',
+          completion_cookie: 'how_can_we_help',
+          delay: 5000
+        });
+      } else if(CookieMonster.get('user_type_student')){
+        window.prompter = new Boundless.PrompterController({
+          el: $('#prompter_container'),
+          title: 'Find an online tutor now',
+          sub_controller: Boundless.TutoringSurveyController,
+          subject_name: "U.S. History",
+          completion_cookie: 'chegg_tutoring_survey',
+          delay: 000
+        });
+      } else if (!CookieMonster.has_user_type_cookie()) {
+        window.prompter = new Boundless.PrompterController({
+          el: $('#prompter_container'),
+          title: 'Welcome to Boundless, see how we can help!',
+          sub_controller: Boundless.HowCanWeHelpController,
+          atom_id: 1709,
+          subject_name: "U.S. History",
+          completion_cookie: 'how_can_we_help',
+          delay: 5000
+        });
+      }
+    }
+  
+    RefME.createButton({
+      element: '#refme-placeholder',
+      config: {style: 'apa'},
+      data: [{
+        id: "1709-v86241",
+        title: "Boundless U.S. History",
+        'container-title': "Colonies in Crisis",
+        type: 'book',
+        URL: "/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/",
+        author: [{
+          given: 'Boundless'
+        }],
+        issued: {
+          year: "2015",
+          month: "7",
+          day: "21"
+        }
+      }]
+    })
+  });
+</script>
+<!-- Sisyphus -->
+<!-- Inline edit links are injected after each minor heading. -->
+<script>
+  Boundless.PageCallbacks.push(function() {
+    $('.bcp-concept--minor-heading').each(function(i, node) {
+      $(node).append($('.sisyphus__inline-edit--container .sis__inline-edit').clone())
+    })
+  });
+</script>
+<script>
+  Boundless.PageCallbacks.push(function() {
+    $("body").bind('copy', function (e) {
+      if (typeof window.getSelection == "undefined") return; //IE8 or earlier...
+
+      var body_element = document.getElementsByTagName('body')[0];
+      var selection = window.getSelection();
+      var range = selection.getRangeAt(0);
+
+      //if the selection is short let's not annoy our users
+      if (("" + selection).length < 30) return;
+
+      //create a div outside of the visible area
+      var newdiv = document.createElement('div');
+      newdiv.style.position = 'absolute';
+      newdiv.style.left = '-99999px';
+      body_element.appendChild(newdiv);
+      newdiv.appendChild(range.cloneContents());
+
+      //we need a <pre> tag workaround
+      //otherwise the text inside "pre" loses all the line breaks!
+      if (range.commonAncestorContainer.nodeName == "PRE") {
+        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+      }
+
+      if (!session.current_user || (session.current_user && !session.current_user.is_admin())){
+        newdiv.innerHTML += "<br /><br />Source: Boundless. “Colonies in Crisis.” <em>Boundless U.S. History</em>. Boundless, 21 Jul. 2015. Retrieved 09 Mar. 2016 from <span class='citation__url-text'>/web/20160309001638/https://www.boundless.com/u-s-history/textbooks/boundless-u-s-history-textbook/the-expansion-and-crises-of-the-colonies-1650-1750-4/colonies-in-crisis-52/colonies-in-crisis-316-1709/</span>";
+      }
+
+      selection.selectAllChildren(newdiv);
+      window.setTimeout(function () {
+        body_element.removeChild(newdiv);
+
+        // Restore the original selection
+        range = rangy.createRange();
+        range.setStart(range.startContainer, range.startOffset);
+        range.setEnd(range.endContainer, range.endOffset);
+        selection = rangy.getSelection();
+        selection.setSingleRange(range);
+      }, 100);
+    });
+  });
+</script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/10344682/Concept_Inline_Leaderboard', [728, 90], 'div-gpt-ad-1423749603292-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423749603292-0'); });
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/10344682/Concept_Inline', [336, 280], 'div-gpt-ad-1425409301314-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1425409301314-0'); });
+</script>
+
+<script>
+  Boundless.PageCallbacks.push(function() {
+  
+    $(".content__breadcrumbs").off('click').on('click', function(evt){
+      if( $body.width() < 500 ){
+        evt.preventDefault();
+        evt.stopPropagation();
+        $('.content__breadcrumbs-dropdown').slideToggle(150);
+      }
+    });
+  });
+</script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/10344682/Concept_Sidebar_160x600', [160, 600], 'div-gpt-ad-1414682687232-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1414682687232-0'); });
+</script>
+
+<script>
+  // Handle the action info dropdown simple logic
+  $('.content-action-info__toggle').click(function(e) {
+    e.stopPropagation();
+    $('.content-action-info__panel__cont .callout-thingy').css({
+      right: $('.content-action-info__toggle').offsetParent().width() - 38 }
+    );
+  
+    $('.content-action-info__panel__cont').toggle();
+  });
+  
+  $('.content-action-info__panel__header').click(function(e) {
+    $('.content-action-info__panel__cont').hide();
+  });
+  
+  $(document).click(function(e) {
+    if ($('.content-action-info__panel__cont').is(":visible")) {
+      if (!$(e.currentTarget).closest('.content-action-info__panel__cont').length) {
+        $('.content-action-info__panel__cont').hide();
+      }
+    }
+  
+    if ( $(e.target).hasClass('content__top__alignment-title__meta__toggle') ){
+      $('.content__top__alignment-title__meta').removeClass('content__top__alignment-title__meta--hidden').addClass('content__top__alignment-title__meta--shown')
+    }
+  });
+  //////
+  
+  Boundless.PageCallbacks.push(function() {
+    watcher = new Boundless.Watcher.App({"resource_type":"Atom","resource_id":1709,"watch_count":0,"notification_subscription_id":null,"resource_name":"concept"});
+    favoriter = new Boundless.Favoriter.App({"resource_type":"Atom","resource_id":1709,"favorite_count":0,"favorite_id":null});
+  })
+</script>
+<script>
+  Boundless.PageCallbacks.push(function() {
+    new Boundless.Header({
+      el: $('.navbar')
+    })
+  })
+</script>
+<script src="/web/20160309001638js_/https://assets.boundless.com/assets/platform/application-ebff9b2e325e2fd39fc2e672b3444afe.js"></script>
+<script src="/web/20160309001638js_/https://assets.boundless.com/assets/prompter/application-608654689d52982237e83c9ba6d97dee.js"></script>
+
+<script>
+  // Don't let Google Analytics count this as a bounce if visit is >60s or they click a link
+  $(function() {
+    $('a').one('click', function(){
+      Boundless.Events.General.track('no_bounce');
+    });
+    setTimeout(function(){
+      Boundless.Events.General.track('no_bounce');
+    }, 60000);
+  });
+</script>
+<noscript>
+<div style='display:inline;'>
+<img alt='' height='1' src='/web/20160309001638im_/https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1004080308/?value=0&amp;label=SnMoCKyoxgQQtJnk3gM&amp;guid=ON&amp;script=0' style='border-style:none;' width='1'>
+</div>
+</noscript>
+<img alt='' height='1' id='adwords_conversion_img' src='' style="visibility: hidden; position: absolute; bottom: 0;" width='1'>
+<!-- MathJax -->
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/SVG"],
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    Macros: {
+      euro: "\\unicode{x20AC}"
+    }
+  },
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  messageStyle: 'none',
+  skipStartupTypeset: true,
+  showMathMenu: false,
+  "SVG": {
+    scale: 100,
+    minScaleAdjust: 50,
+    blacker: 10,
+    EqnChunk: 50,
+    EqnChunkFactor: 1.5,
+    EqnChunkDelay: 100
+  }
+});
+</script>
+<script src="/web/20160309001638js_/https://mathjax.boundless.com/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- / Retargeting if initial purchase was just made -->
+<script type="text/javascript">
+  var google_conversion_id = 1004080308;
+  var google_conversion_label = "pTmACO_Zz14QtJnk3gM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+</script>
+<div style="display: none;">
+  <script type="text/javascript" src="/web/20160309001638js_/https://www.googleadservices.com/pagead/conversion.js"></script>
+</div>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="/web/20160309001638im_/https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1004080308/?value=1.00&amp;currency_code=USD&amp;label=pTmACO_Zz14QtJnk3gM&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+<!-- OwnerIQ -->
+<script>
+  var _oiqq = _oiqq || [];
+  _oiqq.push(['oiq_doTag']);
+  
+  (function() {
+    var oiq = document.createElement('script'); oiq.type = 'text/javascript'; oiq.async = true;
+    oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/bound.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
+  })();
+</script>
+</body>
+<!-- /.....................................................,,....,,............................ -->
+<!-- /.`7MM"""Yp,........................................`7MM..`7MM............................ -->
+<!-- /...MM....Yb..........................................MM....MM............................ -->
+<!-- /...MM....dP...,pW"Wq..`7MM..`7MM..`7MMpMMMb.....,M""bMM....MM....gP"Ya...,pP"Ybd..,pP"Ybd -->
+<!-- /...MM"""bg...6W'...`Wb..MM....MM....MM....MM..,AP....MM....MM..,M'...Yb..8I...`"..8I...`" -->
+<!-- /...MM....`Y..8M.....M8..MM....MM....MM....MM..8MI....MM....MM..8M""""""..`YMMMa...`YMMMa. -->
+<!-- /...MM....,9..YA....,A9..MM....MM....MM....MM..`Mb....MM....MM..YM.....,..L....I8..L....I8 -->
+<!-- /..JMMmmmd9....`Ybmd9'...`Mbod"YML..JMML..JMML..`Wbmd"MML..JMML..`Mbmmd'..M9mmmP'..M9mmmP' -->
+<!-- / -->
+<!-- /  /web/20160309001638/http://boundless.com/careers -->
+</html>

@@ -1,0 +1,486 @@
+Application of TPA to Government - Seminar Paper
+Home » Application of TPA to Government - Seminar Paper
+Print
+Enter one or more keywords
+Areas of law
+Administrative Decision Making and Review
+Advocacy
+Coronial Inquests and Royal Commissions
+Corporate Governance
+General Litigation and Dispute Resolution
+Government Records
+Occupational Health and Safety and Risk Management
+Ombudsman
+Public Sector Governance and Integrity
+Public: Private Partnerships
+Restructuring and Machinery of Government
+Social Media
+Explores how the Trade Practices Act applies (or doesn't apply) to state government departments or statutory authorities.
+Critical to this is whether you are 'carrying on a business' or whether relevant exceptions apply.
+August 2007 - Seminar Paper
+Summary: This paper focuses on aspects of the application of the competition provisions of Part IV of the Trade Practices Act 1974 (Cth) (TPA) to the State, 1 and in particular:
+how the competition provisions apply to state government entities
+when state government entities will be ‘carrying on a business’
+procurement by the Executive Government
+statutory exceptions to the ‘carrying on a business’ requirement
+refusal to supply a service – an example from NT Power Generation v Power and Water Authority
+issues raised by the recent judgement in ACCC v Baxter Healthcare Pty Limited 2 regarding derivative Crown immunity
+authorisation and notifications
+_________________________________________________
+How do competition provisions of TPA apply to State Government?
+In 1995, the Commonwealth, the States, the ACT and the Northern Territory entered into a number of intergovernmental agreements to give effect to a program of National Competition Policy reforms.
+Those agreements were the Competition Principles Agreement, the Conduct Code Agreement and the National Competition Policy and Related Reforms Agreement, dated 11 April 1995.
+Pursuant to the Competition Code Agreement, amendments were made to the TPA to provide that Parts IV, VB and XIB of the TPA would apply to the Crown in the right of a State, in so far as it carried on a business.
+Part X1A was added to the TPA, setting out the basis upon which the States would enact a national Competition Code, consisting of the Schedule version of Part IV, most other provisions of the TPA as they would apply to the Schedule version of Part IV and relevant regulations enacted under the TPA, with the effect that the competition provisions of Part IV apply to state government business enterprises.
+In Victoria this legislation was the Competition Policy Reform (Victoria) Act 1995 (CPRA).
+_________________________________________________
+S 2B – Crown carrying on a business is bound by the TPA
+As a result of s 2B(1)(a) of the TPA, Part IV of the TPA binds the Crown in the right of the State:
+so far as the Crown carries on a business, either directly or by an authority of the State.
+S 2B(1)(c) has the effect that other provisions of the TPA so far as they relate to Part IV will also apply, providing a complete regime for authorisations, notifications, remedies and penalties with respect to the competition provisions, subject to the terms of s 2B.
+S 2B(2) provides that the Crown in the right of the State can not be liable for the pecuniary penalties and offences.
+However, under s 2B(3), this protection does not apply to an authority of the State.
+S 2C provides a non-exhaustive list of activities that are not carrying on a business.
+What is an authority of the State?
+‘S 4 of the TPA defines ‘authority’ in relation to the State to mean:
+(a) a body corporate established for a purpose of the State or the Territory by or under a law of the State or Territory; or
+(b) an incorporated company in which the State or the territory, or a body corporate referred to in (a) has a controlling interest.
+‘Controlling interest’ is not defined in the TPA.
+This equates to board control or holding (directly or indirectly through an ‘authority’) more than 50% of the voting shares in the relevant body corporate.
+S 2B only applies to authorities where they can be said to be instruments by which ‘the Crown as executive’ 3 is indirectly engaging in the relevant activities.
+Where an authority is not an entity which is ‘the Crown as executive’, it may still be regulated by the provisions of the TPA if it is a ‘corporation’ within s 4 (for example, where State statutory authorities are trading or financial corporations, the TPA applies to them).
+_________________________________________________
+Local government
+Under s 2BA, Part IV of the TPA applies to a local government body, only to the extent to which it carries on a business, either directly or by an incorporated company in which it has a controlling interest.
+Under that section ‘local government body’ means a body established by or under the law of the State for the purposes of local government, other than a body established solely or primarily for the purposes of providing a particular service, such as the supply of electricity or water.
+4
+_________________________________________________
+Competition Code of Victoria
+S 5 of the CPRA states that the Competition Code text, as in force for the time being, applies as a law of Victoria.
+The Competition Code text is the Schedule version of Part IV introduced into the TPA by Part XIA, the remaining provisions of the TPA as they would relate to the Schedule version of Part IV and applicable regulations made under the TPA.
+Numbering in the Schedule version of Part IV is in parallel with that in Part IV of the TPA, but references to ‘corporation’ have been changed to ‘person’.
+In interpreting the Competition Code, the Acts Interpretation Act 1901 (Cth) applies.
+Under s 8 of the CPRA, the Competition Code applies to or in relation to
+(a) persons carrying on business within this jurisdiction; or
+(b) bodies corporate incorporated or registered under a law of this jurisdiction; or
+(c) persons ordinarily resident in this jurisdiction; or
+(d) persons otherwise connected with this jurisdiction.
+Part 4 of the CPRA provides for the application of the Competition Code to the Crown.
+S 13 is in terms equivalent to s 2B of the TPA, with respect to the Crown in the right of the State and other jurisdictions.
+S 14 provides that the Competition Codes of other States will bind the Crown in the right of the State, so far as the Crown carries on a business, either directly or indirectly by an authority.
+_________________________________________________
+National administration and enforcement of the Competition Codes
+The Competition Code operates as part of a single national code, together with the Competition Codes of other jurisdictions (s 11 CPRA).
+Part 5 of the CPRA provides for a regime of national and administration and enforcement so that under the Competition Codes:
+The ACCC is to grant authorisations and accept notifications
+Federal Court has jurisdiction• Offences under the Competition Codes will be offences against the law of the Commonwealth
+Commonwealth administrative law applies
+No doubling up of liabilities under the Competition Codes, or any Competition Code in the TPA (s 34 CPRA).
+Top of Page
+_________________________________________________
+Application of TPA and Competition Codes to state government departments, agencies and statutory authorities
+As a consequence of the provisions of the TPA and CPRA referred to above, the competition provisions apply to state government departments, agencies and statutory authorities so far as they are carrying on a business.
+For constitutional reasons, the application of Part IV of the TPA or the Competition Code or both, may vary depending upon the nature of the government entity:
+State government departments are ‘the Crown as executive’, but not ‘persons’ to whom the TPA applies.
+They will be bound by the Competition Code through the CPRA so far as they are carrying on a business.
+State statutory authorities which are ‘the Crown as executive’ will bound by the overlapping requirements of Part IV of the TPA (which principally, but not exclusively, regulates corporations 5 ) and the Competition Code so far as they are carrying on a business.
+State statutory authorities which are not ‘the Crown as executive’ will be bound by the overlapping requirements of Part IV of the TPA (to the extent to which they are trading or financial corporations) and the Competition Code through s 8 of the CPRA, irrespective of whether they are carrying on a business.
+Other non-corporate state government agencies which are not ‘the Crown as executive’ will be bound by the Competition Code through s 8 of the CPRA, so far as they are carrying on a business.
+6
+For simplicity, throughout this paper reference will be made to ss 2B and 2C of the TPA, and Part IV of the TPA.
+Those references should be read as including s 13 and 15 of the CPRA, and the Competition Code, unless otherwise stated.
+_________________________________________________
+When will authorities be ‘the Crown as executive’?
+As noted above, where a state statutory authority is ‘the Crown as executive’, the competition provisions of Part IV will have limited application.
+A statutory authority may be identified as ‘the Crown as executive’ by express words in the relevant statute constituting that entity.
+In Victoria, s 46A(3) of the Interpretation of Legislation Act 1984 provides that the mere fact that there is no such provision does not of itself give rise to any implications as to whether that entity has, or does not have the status, privileges or immunities of the Crown.
+In the absence of an express provision, it is necessary to construe the relevant legislation to identify an intention that the statutory authority is ‘the Crown as executive’.
+The Courts look to the nature of the relationship established by the legislation between the entity and the Executive Government.
+Relevant factors include the nature of the entity’s functions (particularly where those functions are a means of implementing government policy or regulation) and the degree of control or direction by the Executive Government in relation to those functions, through features such as the entity’s constitution, control of the board, voting rights and reporting obligations.
+7
+The High Court has stated that it will be harder to identify the relevant intention where an entity is established under a general enactment for the incorporation of companies 8 (such as the Corporations Act or the State Owned Enterprises Act 1992).
+Statutory authorities may have the immunities and privileges of the Crown for one purpose and not another, as confirmed by the High Court in Townsville Hospitals Board v Townsville City Council.
+9 In State Superannuation Board v Trade Practices Commission, the Federal Court held that the State Superannuation Board of Victoria was ‘not the Crown or an emanation of the Crown’ in relation to any of its functions in relation to the fund established under the Superannuation Act 1958.
+Ellicott J stated that:
+When will state government entities be ‘carrying on a business’?
+What is ‘carrying on a business’?
+S 2B does not define ‘carrying on a business’.
+S 4 TPA states that ‘business’ includes a business not carried on for profit.
+Whether the State is carrying on a business for the purposes of s 2B requires an analysis of the activities conducted by the relevant state government entity.
+In Markit Pty Limited v Commissioner of Taxation the following factors were identified as indicating carrying on a business:
+repetition, systems and regularity of activities (but this is not sufficient);
+an element of commerce or trade in those activities, such as a private citizen might undertake;
+activities taking place in a business context or having a business character.
+11
+In NSW v RT & YE Falls Investments Pty Limited, it was held that for the activities of a government agency to be carrying on a business, they must be:
+_________________________________________________
+Government functions not ‘carrying on a business’
+Carrying on an essentially government function is not likely to be carrying on a business.
+In Village Building Co v Canberra International Airport No 2, Finn J summarised relevant authorities and stated:
+An activity is unlikely to be characterised as having a business character, or to take place in a commercial context, where it involves the carrying out of a regulatory or government function in the interests of community or the performance of a statutory duty in respect of which fees are charged.
+13
+In identifying whether a government function is being undertaken, the Courts will look at the purpose of the activity – to carry on part of the ‘business of government’ is different from the carrying on of a business.
+14
+In Corrections Corporation v Commonwealth Finkelstein J considered whether in outsourcing the operation of a detention centre and custody services, the Commonwealth was carrying on a business for the purposes of the TPA.
+He stated:
+_________________________________________________
+Discharge of statutory functions
+Where an authority of a State is discharging statutory functions, this may be relevant to the question of whether it is carrying on a business for the purposes of s 2B.
+In NT Power Generation Pty Limited v Power and Water Authority, the Power and Water Authority (PAWA) was held to be carrying on a business despite the fact its activities involved the discharge of statutory functions under the Power and Water Authority Act 1987 (NT) (PAWA Act).
+The High Court found the PAWA carried on a substantial business in the sale of electricity, and used its electricity infrastructure as part of its conduct in that business.
+16
+The strategies, objectives and business intent of an authority in undertaking statutory functions will also be relevant.
+In the NT Power case, PAWA’s duty under the PAWA Act included its obligation under s 17 to act ‘in a commercial manner’.
+PAWA had substantial sales revenue (in excess of $253 million in the year prior to the hearing).
+The High Court examined remarks in a report presented by PAWA to the Minister for Essential Services under the applicable public sector management legislation, which was required to be made public before the Legislative Assembly.
+That report spoke of PAWA’s ‘core business’ and made references to its ‘commercial functions’.
+The report described PAWA’s entire operation as a ‘business’.
+The High Court said that these were technically ‘informal’ admissions, but ‘having been made pursuant to statutory duties and in a document which there was a statutory duty to make public, they are of the utmost solemnity’.
+The admissions were held to be inconsistent with the case in relation to the application of s 2B which PAWA advanced in litigation.
+17
+In Braverus Maritime v Port Kembla Coal, the Federal Court applied the same approach to analyse whether the relevant statutory corporation was engaging in trade or commerce in providing pilotage services, noting:
+_________________________________________________
+‘So far as’ carrying on a business under s 2B(1)of the TPA
+S 2B provides that Part IV applies ‘so far as’ the State is carrying on a business, directly or indirectly.
+A department or statutory authority may be carrying on a business in relation to only some of its functions or activities.
+In Paramedical Services v Ambulance Services of NSW, although the Court accepted that a number of activities carried out by the NSW Ambulance Service were governmental functions pursuant to statute (involving the provisions of ‘ambulance services’ – rendering first aid to and the transportation of sick and injured persons), the provision of ambulance services at sporting events and first aid training for a fee was found to be carrying on a business.
+19
+Identifying the business carried on by government is not the same as identifying a ‘market’ for the purposes of the competition provisions of Part IV.
+In the NT Power case, PAWA argued that it was not carrying on business in relation to supply of electricity infrastructure and therefore its conduct denying access to that infrastructure was not within s 2B.
+The High Court held that this was the wrong analysis.
+The Court held that PAWA was using its electricity infrastructure for the purposes of conducting its business of electricity supply, and conduct relating to the electricity infrastructure (in that case, denial of access to NT Power) was conduct by PAWA in the course of carrying its electricity supply business.
+_________________________________________________
+Purchasing by the Executive government for its own requirements
+A number of cases indicate that purchasing by government departments and agencies for the needs of the Executive government, particularly through tendering, is not ‘carrying on a business’, irrespective of the fact that these activities may involve substantial commercial transactions.
+In J S McMillan v Commonwealth, officers of the Commonwealth Department of Administrative Services issued a request for tender for the sale of the Australian Government Publishing Service (AGPS).
+AGPS was a business unit of the Department, but the Federal Court considered whether in acquiring printing services from AGPS prior to the proposed sale, the Commonwealth had been carrying on a business for the purposes of s 2A of the TPA.
+Emmett, J stated:
+In so far as the Commonwealth, in the guise of the Department of the Senate, the Department of the House of Representatives or other Departments, utilised the services provided or procured by AGPS, it does not in the carrying out of government functions.
+It could not be said that the Commonwealth in those guises is carrying on a business.
+It is acquiring the services systematically and regularly, but only for the purposes of governing.
+20
+In Corrections Corporation v Commonwealth , Finkelstein J considered the activities of the Commonwealth in calling for tenders for custody services, and stated:
+….
+the Commonwealth was seeking to find an appropriate person who would provide it with services at detention centres; however, it was not itself attempting to trade in goods or provide any services.
+So it would always be difficult to characterise the tender process as a business.
+It is in any event difficult to see how the process of selecting a person to provide services to the Commonwealth can be described as conduct which has a commercial flavour, when looked at from the point of view of the Commonwealth.
+21
+Purchasing authorities of the States were identified as ‘part of the executive arm’ of the relevant States in ACCC v Baxter Healthcare.
+22 The ACCC conceded in that case that acquisition of health care products by those purchasing authorities was not in the course of ‘carrying on a business’.
+23 However, in his minority judgement Kirby, J questioned whether that concession should have been made.
+24 It remains to be seen whether, over time, the Courts will revisit this issue.
+25
+_________________________________________________
+Exceptions to ‘carrying on a business’ in s 2C of the TPA
+s 2C provides that limited forms of conduct will not amount to ‘carrying on a business’ for the purposes of s 2B.
+This list is not exhaustive.
+The High Court has said that these exceptions should be construed narrowly.
+Application of the Trade Practices Act to Government
+Under s 2C(1)(a) – imposing or collecting taxes, levies or fees for licences:
+Under s 2C (1)(a) imposing or collecting taxes, levies or fees for licences is not ‘carrying on a business’.
+This includes recourse to legal proceedings for the recovery of taxes, or activity relating to the winding up of a taxpayer in order to collect taxes due and owing.
+27 However, as noted in FAI General Insurance v Workcover Corporation, if imposing or collecting taxes, and administering levies is only one function carried by a statutory authority, the authority may still be ‘carrying on a business’ in relation to other functions.
+28
+‘Fees for licences’ does not include all fees for services.
+s 2C (3) provides that a ‘licence’ for the purposes of s 2C is a licence that allows the licensee to supply goods or services.
+Top of Page
+_________________________________________________
+S 2C(1)(b) – granting, refusing to grant, revoking, suspending or varying licences (whether or not they are subject to conditions)
+Under s 2C (1)(b) granting, refusing to grant, revoking, suspending or varying licences (whether or not they are subject to conditions) is not ‘carrying on a business’.
+As noted above, ‘licence’ is defined as a licence that allows the licensee to supply goods or services.
+‘Licence’ for the purposes of s 2C does not include consents or permissions.
+In NT Power the High Court considered PAWA’s argument that its refusal to grant consent to NT Power for the use of electricity transmission and distribution infrastructure was a refusal to grant a ‘licence’ within s 2C.
+NT Power had sought this consent because s 29(1) of the Electricity Act 1978 (NT) provided that it was an offence to use the infrastructure without PAWA’s consent.
+PAWA had already granted NT power a licence to supply electricity pursuant to the Electricity Act.
+The High Court found that the refusal to grant the approval sought by NT Power was not a refusal to grant a licence within the meaning of s 2C, as the permission being sought by NT Power was not a permission to sell goods or services.
+29
+_________________________________________________
+S 2C(1)(d) transactions involving only government parties:
+Under s 2C(1)(d) certain transactions involving only specified government parties are not ‘carrying on a business’.
+‘Transaction’ is not defined.
+Some models of service provision by government agencies may involve complex intergovernmental arrangements.
+In the case of these arrangements, in order to rely on s 2C(1)(c), it is necessary to ensure that the only parties to the transaction are the participants specified in one or other sub-clauses of s 2C(1)(d).
+Where a member of the public or a private sector participant is a party to the transaction, these exceptions will not apply.
+In this situation it will be necessary to consider whether, in engaging in the transaction, the relevant government entities are otherwise ‘carrying on a business’ for the purposes of s 2B.
+The exception applies to transactions involving only the following participants:
+persons acting for the Crown in the right of the State, but not any authority of the State
+persons acting for the same authority
+persons acting for the Crown in the right of the State and one or more ‘non-commercial’ authorities
+‘non-commercial’ authorities of the State
+persons acting for the same local government body (s 2BA) or for the same incorporated company in which such a body has controlling interest.
+S 2C(3) provides that an authority of the State is ‘non-commercial’ if it is constituted by only one person, and is neither a trading or financial corporation.
+_________________________________________________
+S 2C(1)(e) acquisition of primary products under legislation
+S 2C(1)(e) provides that the acquisition of primary products by a government body under legislation will not be ‘carrying on a business’ unless the acquisition occurs because:
+(a) the body chooses to acquire the products; or
+(b) the body has not exercised a discretion that would allow it not to acquire the products.
+S 2(3) provides that ‘government body’ means the Commonwealth, a state, a territory, an authority of the Commonwealth or an authority of a state or territory.
+_________________________________________________
+Refusal to supply a service – an example from NT Power Generation v Power and Water Authority
+The NT Power case offers an important example of how a statutory authority with a monopoly of infrastructure and services, which has not yet commenced to grant access to others, may be in breach of Part IV of the TPA in refusing access for any of the purposes proscribed by s 46 of the TPA (misuse of market power).
+In the NT Power case, it was alleged that PAWA, and its wholly owned subsidiary, Gasgo Pty Limited (Gasgo) had each taken advantage of market power for a proscribed purpose contrary to s 46 of the TPA, in conduct towards NT Power.
+NT Power was intending to supply electricity in the Northern Territory, and had been licensed by PAWA to do so under the Electricity Act.
+NT Power also sought indirect use of electricity distribution infrastructure owned and operated by PAWA, to supply its customers.
+In essence, NT Power wanted PAWA to take electricity from NT Power, receive it into its system, and manage its transmission and distribution.
+PAWA refused.
+NT Power generated electricity, and needed fuel for its generators.
+Gas was the cheapest fuel for this purpose.
+Gasgo purchased gas from gas suppliers, for on-supply to PAWA.
+Gasgo had certain pre-emptive rights to acquire any gas offered by the suppliers to other customers, at the price offered to those customers.
+NT Power requested Gasgo not to insist on its pre-emptive rights in relation to gas which was to be supplied to NT Power.
+Gasgo refused to give this undertaking.
+As noted above, as PAWA was found to be carrying on a business for the purposes of s 2B of the TPA, Part IV of the TPA, including s 46, applied to its conduct in relation to NT Power.
+The High Court found that PAWA was in breach of s 46.
+PAWA’s conduct could be analysed as taking advantage of its power in the market for the sale of electricity which arose from its control of electricity infrastructure, for the purpose of injuring NT Power in that market.
+Despite the fact that PAWA did not supply access to that infrastructure to others, it also had a substantial degree of power in that market.
+The High Court noted that PAWA had denied access to NT Power:
+for no reason of want of capacity or technical difficulty or safety, but simply in order to protect its revenue position in relation to electricity sales.
+30
+PAWA argued that the Minister for Essential Services had given PAWA a direction not to enter into any arrangements with NT Power pending work being undertaken to develop a Northern Territory access regime for electricity.
+The High Court found that even if a s 16 direction had been given to that effect, PAWA could not rely on this.
+What PAWA did in response to the direction of the Minister was conduct of PAWA and the Minister’s mental state in relation to the purpose was PAWA’s mental state.
+31
+It had been found at the trial that the mental state of those who advised the Minister to recommend as he did was to deter or prevent NT Power from participating in the transmission or distribution markets and in the electricity supply market (in which it was likely that its prices would undercut PAWA’s) until the Northern Territory introduced an access regime.
+The desire of the Minister and his advisers to establish an effective access regime to encourage genuine and efficient competition in the medium to long term did not provide immunity from s 46.
+32
+Gasgo argued that it was part of the Crown in the right of the Northern Territory, or was entitled to derivative Crown immunity for its conduct relating to the gas supply arrangements.
+The High Court found that Gasgo was not the Crown, and that it could not rely on the principle of derivative Crown immunity as the Crown was not party to the gas supply contracts, 33 and no proprietary right or interest or contractual right or prerogative of Crown would be affected by granting the relief sought by NT Power.
+34 The High Court has since considered the issue of derivative Crown immunity in relation to the competition provisions of the TPA in ACCC v Baxter Healthcare.
+High Court decision in ACCC v Baxter Healthcare
+Background
+Before the introduction of s 2B of the TPA, the High Court held in Bradken Consolidated v Broken Hill Proprietary Company 35 that the TPA did not apply to the Crown in the right of a State.
+In Bradken, the Queensland Commissioner for Railways was held to be exempt from the operation of the TPA as the Crown in the right of the State of Queensland.
+The High Court also held that relief was not available against other parties to a contract with the Commissioner, as if the relief sought was granted the Commissioner would be prejudiced by the operation of the TPA just as much as if the provisions had been enforced against him.
+36 This principle of derivative Crown immunity with respect to the TPA has since been applied in numerous cases.
+In ACCC v Baxter Healthcare, the ACCC commenced proceedings in relation to conduct of Baxter Healthcare Pty Limited (Baxter) in responding to tenders issued by purchasing authorities of Western Australia, South Australia, New South Wales, Queensland and the Australian Capital Territory, which was said to be in breach of the TPA.
+Each of these purchasing authorities had entered into long term exclusive contracts with Baxter for the supply of their entire requirements of sterile fluids and at least 90% of their requirements for peritoneal dialysis products (PD products) for the contract period.
+37 These products were purchased for supply to public hospitals and other health facilities.
+Baxter had been the sole manufacturer of some sterile fluids in Australia, but other companies supplied PD products.
+In dealing with the purchasing authorities, Baxter offered high item-by-item prices for the supply of individual sterile fluids or PD products, and lower prices should the purchasing authorities agree to acquire all of their requirements for sterile fluids and PD products from Baxter.
+Except for one offer made to the purchasing authority of South Australia (Offer 1A), Baxter’s offers were made in accordance with the tendering requirements of the state purchasing authorities, which envisaged that bundled offers could be made, or made in addition to otherwise compliant tenders which offered item-by-item pricing.
+The ACCC commenced proceedings against Baxter alleging Baxter:
+in submitting bundled tenders to the purchasing authorities and negotiated bundled supply contracts for the supply of sterile fluids and PD products with the purpose and likely effect of substantially lessening competition; and
+in relation to Offer 1A, a particular bundled offer submitted to the purchasing authority of South Australia, Baxter’s refusal to disaggregate the offer and to offer to separately supply products at comparable prices
+was taking advantage of market power within s 46 of the TPA, or exclusive dealing having the purpose or effect or likely effect of substantially lessening competition, in contravention of s 47(2) of the TPA.
+When the proceedings commenced, each of these supply contracts had been fully performed.
+No proceedings were brought against the States or the Australian Capital Territory.
+38 As noted above, it was conceded that the purchasing authorities were the Crown as executive, and that in undertaking the purchasing of health care products through the tender process they were not carrying on a business.
+At first instance Allsop J followed Bradken.
+He found that but for the derivative immunity enjoyed by Baxter, its conduct in relation to Offer 1A would have contravened s 46, and its conduct in relation to the bundling of its offers would have been in breach of s 47 in a number of respects, as this had the purpose or the effect or was likely to have the effect of substantially lessening competition in the tendering process.
+All of these findings are the subject of notice of contention which has now been remitted to the Full Federal Court for determination following the judgement of the High Court.
+He concluded that the TPA did not apply to or operate in respect of the conduct of Baxter complained of, and an appeal to the full Federal Court was dismissed on the basis of the principle of derivative Crown immunity.
+_________________________________________________
+High Court judgment
+The High Court by majority 39 held that Bradken no longer expressed the law.
+Following Bropho v Western Australia, 40 the ultimate question in relation to the application of crown immunity:
+must be whether the presumption against the Crown being bound has been rebutted, and, if it has, the extent to which it was the legislative intent that the particular Act should bind the Crown and/or those covered by the prima facie immunity of the Crown.
+41
+This is a question of statutory construction, recognising the objects of the TPA (stated in s 2 to be enhancing the welfare of Australians through the promotion of competition and fair trading).
+The High Court affirmed that it is clear that because of s 2B of the TPA, even when the Crown is acting through a corporation as defined, or in any extended application of the Act under s 6, ss 46 and 47 (and indeed the whole of Part IV) do not apply to conduct of the Crown in the right of the State in so far as the Crown does not carry on a business.
+42
+However, the High Court stated that:
+…(Baxter) was a trading corporation.
+A conclusion that, in carrying on dealings with government in the course of its own business, it enjoyed a general immunity that would not be available to the government itself when the government was carrying on a business itself would be remarkable.
+Such a conclusion would be impossible to reconcile with the objects of the Act ….
+(and) would go far beyond what is necessary to protect the legal rights of governments, or to prevent a divesting of proprietary, contractual and other legal rights and interests.
+43
+The High Court held that it was not necessary to protect the legal rights of the Crown to deny that entering into or performing the contract could involve a contravention of Part IV of the TPA by a commercial party.
+The High Court emphasised that when making or performing a contract is illegal for the commercial party, as a result of the application of the TPA, the result was not necessarily the general unenforceability of the contract.
+This depended by the application of the detailed legislative scheme concerning remedies, including s 4L, which provides for severance of contractual terms.
+44
+The High Court indicated:
+There is nothing unusual about a circumstance in which making or giving effect to a contract involves an offence by one party to the contract but not the other.
+The consequences of such illegality for the rights of the respective parties will not necessarily be the same… Different application of legislation to parties to a contract is commonplace, although working out the legal consequences may be complex …… As was pointed out in SST Consulting Services Pty Limited v Rieson, the Act is far from being silent upon the question of the consequences of illegality, but, rather, contains elaborate provisions.
+That is not to say that the express provisions of the Act answer all questions that may arise but they answer many of them and set the context in which others are to be resolved.
+45
+The States argued that derivative Crown immunity was necessary to preserve the unfettered contractual capacities of the Crown, noting that the conduct of Baxter in responding to the tenders had been within the contemplation of the State purchasing authorities.
+The High Court rejected the argument.
+It stated:
+promotion of competition and fair trading is at least as likely to be of the benefit of government purchasing authorities as it is to be an invasion of government interests.
+46
+It also noted this argument ignored the provisions of s 51(1) of the TPA:
+_________________________________________________
+Some implications of the High Court judgement
+Although the conduct considered in ACCC v Baxter Healthcare was the unilateral conduct of Baxter in relation to negotiating, entering into and supplying under the purchasing authorities’ tenders, the judgement has significant implications for government purchasing and government purchasing contracts.
+Notwithstanding that the High Court has upheld the principle of State Crown immunity from the competition provisions of the TPA, save to the extent s 2B applies, the decision may effectively require State governments to ensure that they comply with the requirements of Part IV of the TPA in relation to government purchasing, in addition to activities in which they are carrying on a business.
+It is not clear how the decision in ACCC v Baxter Healthcare will affect contracts which have been entered into, as opposed to pre-contractual contracts.
+If the making or performing of a government purchasing contract is illegal for the commercial party, then the State may be deprived of the benefits anticipated under that contract.
+The ACCC and third parties will be able to seek relief against the commercial party in relation to such conduct, under the various provisions which set out remedies for contravention of the TPA.
+The High Court’s judgement suggests that s 4L may apply to government purchasing contracts, with the effect that the terms of the contracts are amended in ways not consistent with the original objectives of the procurement.
+48 S 4L provides:
+If the making of a contract after the commencement of this section contravenes this Act by reason of the inclusion of a particular provision of the contract, then, subject to any order made under section 87 or 87A, nothing in this Act affects the validity or enforceability of the contract otherwise than in relation to that provision in so far as the provision is severable.
+In the SST Consulting Services v Rieson, 49 the High Court held that where the making of a contract contravenes the TPA by reason of the inclusion of a particular provision, s 4L requires that provision to be severed from the contract.
+The High Court has said that there is no requirement that the offending provision must be capable of being severed under common law rules.
+50 In some instances, severance within the meaning of s 4L can be achieved by a ‘blue pencil’ approach, but if not, the High Court said s 4L marks the limits of invalidity and unenforceability.
+51
+In view of the High Court’s decision in ACCC v Baxter Healthcare, where the making of a State purchasing contract contravenes the TPA by reason of a particular provision, orders might be sought which have the effect of modifying those contracts.
+Subject to s 51 or any relevant authorisation or notification, the Executive government in purchasing for its own requirements will now need to consider the effect of the operation of the competition provisions on the commercial parties who supply under those contracts, including the liability of those parties for penalties under the TPA.
+In setting its own requirements for procurement categories, the State will need to avoid imposing requirements which might involve commercial parties in a breach of the competition provisions.
+The decision of the High Court in ACCC v Baxter Healthcare may affect the willingness of commercial parties to offer to supply on terms which have historically been negotiated, 52 particularly where the market in which the State is acquiring goods or services is local to the State.
+As the High Court noted:
+The amount involved in the combined purchasing of goods and services by the executive government of the States and State instrumentalities is massive and, as this case illustrates, in many fields would dominate demand.
+53
+Given the High Court has noted that working out the legal consequences of the different application of legislation to the State and commercial parties to such contract may be complex, 54 State governments may need to consider the option of legislating or applying for authorisation of some key purchasing activities.
+The High Court stated:
+Authorisations and notifications
+Authorisation by legislation pursuant to s 51(1) of the TPA
+S 51(1)(b) of the TPA provides an exemption from Part IV for anything done in a State, if the thing is specified in, and specifically authorised by an Act passed by the parliament of that State, or regulations made under such Act.
+The exemption in s 51(1) applies subject to s 51(1C) of the TPA.
+Under s 2 of the Conduct Code Agreement, where a State wishes to enact legislation pursuant to s 51(1):
+it must provide written notice to the ACCC within 30 days of enactment; and
+the Commonwealth may override any such legislation by regulation.
+56
+Victoria has included provisions in a number of statutes authorising particular conduct that might otherwise be in contravention of the competition provisions, or providing for regulations to be made under those statutes authorising such conduct.
+Examples include s 134O Health Services Act 1998, s 86 and 86A State Owned Enterprises Act 1992, and s 39(1)(b) CPRA.
+S 134O of the Health Services Act 1998 relates to the activities of Health Purchasing Victoria (HPV) in relation to collective purchasing by public hospitals:
+(1) Any act or thing of or relating to HPV and carrying its functions or exercising its powers under this Part is authorised for the purposes of Part IV of the Trade Practices Act 1974 of the Commonwealth and the Competition Code.
+(2) Any act or thing of or relating to a public hospital or a member of a board of a public hospital or a person who is engaged or employed by a public hospital in complying with an HPV direction or a purchasing policy of HPV under this Part or in relation to the purchase by, or supply to, a public hospital of goods of services in accordance with this Part is authorised for the purposes of Part IV of the Trade Practices Act and the Competition Code.
+S 39(1) (b) of the CPRA provides that regulations may be made under that Act
+_________________________________________________
+Authorisation and notification under the TPA
+Where conduct is likely to be in breach of the competition provisions, it may also be the subject of an application to the ACCC for authorisation or a notification pursuant to Part VII of the TPA.
+As a result of Part 5 of the CPRA, applications for authorisation or notifications with respect to the Competition Code of Victoria must be made to the ACCC.
+Authorisation or notification effectively provides immunity from proceedings brought by the ACCC or a third party with respect to conduct that would otherwise contravene the competition provisions.
+Authorisation is available for all provisions in Part IV other than s 46 (but authorisation of conduct falling within other sections of the Act can effectively immunise a party from breach of s 46 in some instances), where the ACCC is satisfied that the conduct delivers a net public benefit.
+It involves a comprehensive public consultation process.
+57
+Notification of exclusive dealing conduct provides immunity for potential breaches of the exclusive dealing provisions of the Act.
+The immunity operates from the date a notification is validly lodged with the ACCC, or soon after in the case of notifications of third line forcing conduct and remains in force unless revoked by the ACCC.
+58
+The ACCC has introduced a new procedure for collective bargaining notifications for the benefit of small business.
+Financial limitations on the value of transactions covered by that process is such that they are unlikely to be of assistance in relation to collective purchasing by government.
+59
+Authorisation by the ACCC is one means by which State Governments seek to ensure they comply with the TPA and the Competition Code in relation to collective purchasing arrangements.
+In 2001, prior to the addition of s 134O of the Health Services Act, HPV lodged an application for authorisation with respect to the calling and awarding of a tender for the exclusive acquisition of temporary agency nursing staff on behalf of public health services in metropolitan Melbourne and Geelong.
+Authorisation was sought because the exclusive arrangements may have the purpose or effect of substantially lessening competition (s 45) or involve giving effect to an exclusionary provision (s 45).
+In that case, the authorisation was granted subject to imposing conditions in relation to the terms of the procurement.
+The ACCC confirmed that the proposed collective tender process would generate some limited public benefit in administrative cost savings to health services which are likely to be directed to improving the quality of patient health care, and in enhancing the availability of nursing services through the requirement that tenderers adhere to service level targets.
+60
+For further information or legal advice on any issues raised in this paper contact:
+Sue Nolen on 8684 0402
+Assistant Victorian Government Solicitor
+Isabel Parsons on 8684 0431
+Managing Principal Solicitor
+Sam Funnell on 8684 0409
+Principal Solicitor
+The VGSO is the primary source of legal services to the Victorian state government and its statutory authorities, providing strategic advice and practical legal solutions.
+This topic was the subject of the monthly VGSO lunchtime seminar held on 30 August 2007.
+These notes are published with the permission of the presenter, Isabel Parsons.
+The notes are not be regarded as legal advice.
+_________________________________________________
+1.
+The paper does not deal in detail with these provisions.
+See the website of the Australian Competition and Consumer Commission for general material relating to the TPA http://www.accc.gov.au and the high level summary of the provisions of Part IV of the TPA in the slides prepared by Alexandra Merrett, Principal Lawyer, ACCC ‘Application of the Trade Practices Act to Government’ as part of the VGSO client seminar 30 August 2007.
+2.
+Australian Competition and Consumer Commission v Baxter Healthcare Pty Limited [2007] HCA 38 (29 August 2007) http://www.austlii.edu.au/au/cases/cth/HCA/2007/38.html
+3.
+The High Court has recently criticised use of the term ‘Crown’ or ‘emanation of the Crown’ in this context, and expressed a preference for ‘the Crown as executive’ or the ‘Executive Government of the State’: see N T Power Generation Pty Limited v Power and Water Authority (2004) 210 ALR 312 at [163].
+That usage is followed here.
+4.
+Local government is not dealt with in this presentation.
+5.
+See ss 5 and 6 for the extended operation of the TPA.
+6.
+And may also be bound by the TPA if ss 5 or 6 apply.
+7.
+N T Power Generation Pty Limited v Power and Water Authority (2001) 184 ALR 481 at [259]-[260] (Federal Court) for a discussion of these factors in relation to the Power and Water Authority, and at [261] in relation to its wholly owned subsidiary Gasgo Pty Limited.
+8.
+N T Power Generation Pty Limited v Power and Water Authority (2004) 210 ALR 312 at [165] (High Court).
+9.
+Townsville Hospitals Board v Council of the City of Townsville 1982 149 CLR 282 at page 288.
+In that case the High Court held that the relevant Act did not reveal an intention that the Board should have the privileges and immunities of the Crown when erecting a building with borrowed money, per Gibbs, J at pages 291-292.
+10.
+State Superannuation Board v Trade Practices Commission 1982 60 FLR 165 at page 194.
+11.
+Markit Pty Limited v Commissioner of Taxation (Cth) [2006] QSC 157 at [30].
+12.
+NSW v RT & YE Falls Investments Pty Limited (2003) NSWCA 54 at [131].
+13.
+Village Building Co v Canberra International Airport No 2 (2004) FCA 133 at [90].
+14.
+Markit case [2006] QSC 157 at [32].
+15.
+Corrections Corporation of Australia Pty Limited v Commonwealth [2000] FCA 1280 at [14].
+16.
+NT Power case (2004) 210 ALR 312 at [69] (High Court).
+17.
+NT Power case (2004) 210 ALR 312 at [55] (High Court).
+18.
+Braverus Maritime Inc v Port Kembla Coal Terminal Limited [2005] FCAFC 256 at [147], and generally at [142] - [147].
+19.
+Paramedical Services Pty Limited v Ambulance Service of NSW [1999] FCA 548 at [87].
+20.
+J S McMillan Pty Limited v Commonwealth (1997) 147 ALR 410 at 437.5.
+21.
+Corrections Corporation case [2000] FCA 1280 at [16].
+22.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [9].
+23.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [16].
+24.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [132].
+25.
+For a discussion of issues involved in categorising government purchasing as not ‘carrying on a business’ see Seddon, N Government Contracts Federation Press Third edition 2004 at para 6.13.
+26.
+NT Power case (2004) 210 ALR 312 at [95] (High Court).
+27.
+Markit case [2006] QSC 157 at [27].
+28.
+FAI General Insurance Company Limited v Workcover Corporation of SA (1999) ATPR 41-639 at page 41,065.
+29.
+NT Power case (2004) 210 ALR 312 at [103] (High Court).
+30.
+NT Power case (2004) 210 ALR 312 at [72] (High Court).
+31.
+NT Power case (2004) 210 ALR 312 at [136] (High Court).
+32.
+NT Power case (2004) 210 ALR 312 at [137] (High Court).
+33.
+NT Power case (2004) 210 ALR 312 at [175] (High Court).
+34.
+NT Power case (2004) 210 ALR 312 at [172], [174] (High Court).
+The case against Gasgo under s 46 was remitted to the trial judge for factual findings to be made [190].
+35.
+Bradken Consolidated Limited v Broken Hill Proprietary Company Limited (1979) 145 CLR 107.
+36.
+Bradken case (1979) 145 CLR 107 at 23 per Gibbs, J.
+37.
+ACCC v Baxter Healthcare case [2006] FCAFC 126 at [19].
+38.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [37].
+39.
+Gummow, Hayne, Heydon and Crennan JJ and in a separate judgement Kirby J.
+40.
+Bropho v Western Australia [1990] HCA 24.
+41.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [41].
+42.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [63].
+43.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [64].
+44.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [70].
+45.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [44] and [46].
+46.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [48].
+47.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [73].
+48.
+In the ACCC v Baxter Healthcare case, it was clear that the State purchasing authorities saw some commercial and demonstrative advantages in relation to the bundled exclusive contracts with Baxter.
+49.
+SST Consulting Services Pty Limited v Rieson [2006] HCA 31.
+50.
+SST Consulting Services case [2006] HCA 31 at [49] to [51].
+51.
+SST Consulting Services case [2006] HCA 31 at [52].
+52.
+Where the making of such an offer is conduct to which the competition provisions of the Act might apply, commercial parties may be reluctant to make such an offer without an indemnity from the State.
+53.
+Quoting the Full Federal Court with approval: ACCC v Baxter Healthcare case [2007] HCA 38 at [74].
+54.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [44].
+55.
+ACCC v Baxter Healthcare case [2007] HCA 38 at [48].
+56.
+However, if such regulations are tabled more than four months after notice was given of the legislation, the regulations must be accompanied by a report from the National Competition Council as to the effects of the legislation on competition.

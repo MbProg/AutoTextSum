@@ -1,0 +1,15 @@
+Yesterday, the High Court handed down its decision in the case of Australian Competition and Consumer Commission v Baxter Healthcare Pty Limited & Others [2007] HCA 38. The decision is of particular interest to departments and agencies engaged in procurement, and businesses dealing with government. It is a timely reminder about the value of competitive procurement processes.
+
+This special Alert discusses the implications that arise for government and business as a consequence of the Court's decision to qualify the doctrine of derivative Crown immunity and apply Part IV of the Trade Practices Act 1974 (Cth).
+
+On 29 August 2007, the High Court held that Baxter Healthcare Pty Limited (Baxter) was bound by sections 46 and 47 of the Trade Practices Act - even when dealing with government entities which were not bound by the Act. As a result, the question of breach has been remitted to the Full Federal Court.
+
+In reaching its conclusion the High Court held that an earlier decision of Bradken Consolidated Ltd v Broken Hill Co Ltd (1979) CLR 107 (Bradken) was no longer authoritative law on the doctrine of derivative Crown immunity.
+
+Factual background
+
+At first instance it was held that Baxter would have breached sections 46 (misuse of market power) and 47 (exclusive dealing) of the Trade Practices Act had it not been protected by the doctrine of derivative Crown immunity. The appeal did not require the Court to decide whether contracts between Baxter and the relevant government authorities were enforceable.
+
+At the time of the alleged breaches Baxter was, for all practical purposes, the sole supplier of high volume, low value, sterile fluids in Australia. These fluids are an essential item for every hospital in Australia. Baxter also supplied low volume, high value products with very specialised uses (such as peritoneal dialysis) - but there were rival companies seeking to supply competing products.
+
+Between 1998 and 2001, Baxter responded to a series of tenders called by State and Territory health purchasing authorities, typically offering to supply its products on the following alternate bases. …

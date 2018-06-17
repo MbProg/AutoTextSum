@@ -1,0 +1,297 @@
+FEB
+APR
+JUN
+11
+2015
+2016
+2017
+58 captures
+6 Aug 04 - 11 Oct 16
+Close Help
+Otto Robert Frisch
+From Wikipedia, the free encyclopedia
+Jump to: navigation , search
+Otto Robert Frisch
+Otto Robert Frisch's wartime Los Alamos ID badge photo.
+Born
+(1904-10-01)1 October 1904
+Vienna , Austria-Hungary
+Died
+22 September 1979(1979-09-22) (aged 74)
+Cambridge , United Kingdom
+Nationality
+Austrian / British
+Fields
+physics
+Known for
+atomic bomb
+Influences
+Rudolf Peierls
+Notable awards
+Fellow of the Royal Society [1]
+Signature
+University of Birmingham - Poynting Physics Building - blue plaque
+Otto Robert Frisch FRS [1] (1 October 1904 – 22 September 1979) was an Austrian-British physicist .
+With his German-British collaborator Rudolf Peierls [1] he designed the first theoretical mechanism for the detonation of an atomic bomb in 1940.
+[2]
+Contents
+1 Overview
+2 Retirement
+3 Bibliography
+4 See also
+5 References
+6 External links
+Overview[ edit ]
+Frisch was Jewish , born in Vienna, Austria , in 1904, the son of Justinian Frisch, a painter, and Auguste Meitner Frisch, a concert pianist.
+He himself was talented at both but also shared his aunt Lise Meitner 's love of physics and commenced a period of study at the University of Vienna, graduating in 1926 with some work on the effect of the newly discovered electron on salts.
+After some years working in relatively obscure laboratories in Germany, Frisch obtained a position in Hamburg under the Nobel Prize -winning scientist Otto Stern .
+Here he produced novel work on the diffraction of atoms (using crystal surfaces) and also proved that the magnetic moment of the proton was much larger than had been previously supposed.
+[3]
+The accession of Adolf Hitler to the chancellorship of Germany in 1933 caused Otto Robert Frisch to make the decision to move to London , where he joined the staff at Birkbeck College and worked with the physicist Patrick Maynard Stuart Blackett on cloud chamber technology and artificial radioactivity .
+He followed this with a five-year stint in Copenhagen with Niels Bohr where he increasingly specialised in nuclear physics , particularly in neutron physics.
+During the Christmas holiday in 1938 he visited his aunt Lise Meitner in Kungälv .
+While there she received the news that Otto Hahn and Fritz Strassmann in Berlin had discovered that the collision of a neutron with a uranium nucleus produced the element barium as one of its byproducts.
+Hahn, in a letter to Meitner, called this new reaction a "bursting" of the uranium nucleus.
+Frisch and Meitner hypothesized that the uranium nucleus had split in two, explained the process, estimated the energy released, and Frisch coined the term fission to describe it.
+Political restraints of the Nazi era forced the team of Hahn and that of Frisch and Meitner (both of whom were Jewish) to publish separately.
+Hahn's paper described the experiment and the finding of the barium byproduct.
+[4] Meitner's and Frisch's paper explained the physics behind the phenomenon.
+[5] Frisch went back to Copenhagen, where he was quickly able to isolate the fragments produced by fission reactions.
+[6] As Frisch himself later recalls, a fundamental idea of the direct experimental proof of the nuclear fission was suggested to him by George Placzek .
+[7] [8]
+In the Summer of 1939 Frisch left Denmark for what he anticipated would be a short trip to Birmingham , but the outbreak of World War II precluded his return.
+With war on his mind, he and the physicist Rudolf Peierls produced the Frisch–Peierls memorandum at Birmingham University , which was the first document to set out a process by which an atomic explosion could be generated.
+Their process would use separated Uranium-235, which would require a fairly small critical mass and could be made to achieve criticality using conventional explosives to create an immensely powerful detonation.
+The memorandum went on to predict the effects of such an explosion — from the initial blast to the resulting fallout .
+This memorandum was the basis of British work on building an atomic device (the Tube Alloys project) and also that of the Manhattan Project on which Frisch worked as part of the British delegation.
+Frisch and Rudolf Peierls worked together in the Physics Department at Birmingham University 1939–40.
+[9] He went to America in 1943 having been hurriedly made a British citizen.
+In 1944 at Los Alamos , one of Frisch's tasks as the leader of the Critical Assemblies group was to accurately determine the exact amount of enriched uranium which would be required to create the critical mass, the mass of uranium which would sustain a nuclear chain reaction.
+[10] He did this by stacking several dozen 3 cm bars of enriched uranium hydride at a time and measuring rising neutron activity as the critical mass was approached.
+The hydrogen in the metal bars increased the time that the reaction required to accelerate.
+One day Frisch almost caused a runaway reaction by leaning over the stack, which he termed the "Lady Godiva assembly" .
+[11] His body reflected neutrons back into the stack.
+Out of the corner of his eye he saw that the red lamps that flickered intermittently when neutrons were being emitted, were 'glowing continuously'.
+[11] Realizing what was happening, Frisch quickly scattered the bars with his hand.
+Later he calculated that the radiation dose was "quite harmless" but that if he "had hesitated for another two seconds before removing the material ... the dose would have been fatal".
+[11] "In two seconds he received, by the generous standards of the time, a full day's permissible dose of neutron radiation."
+[12] In this way his experiments determined the exact masses of uranium required to fire the Little Boy bomb over Hiroshima .
+In 1946 he returned to England to take up the post of head of the nuclear physics division of the Atomic Energy Research Establishment at Harwell, though he also spent much of the next thirty years teaching at Cambridge where he was Jacksonian Professor of Natural Philosophy and a fellow of Trinity College .
+Before he retired he designed [13] a device, SWEEPNIK , that used a laser and computer to measure tracks in Bubble chambers .
+Seeing that this had wider applications, he helped found a company, Laser-Scan Limited, now known as 1Spatial, to exploit the idea.
+Retirement[ edit ]
+He retired from the chair in 1972 as required by University regulations.
+[13] He died in 1979.
+His son, Tony Frisch, is also a physicist.
+Bibliography[ edit ]
+Atomic Physics Today (1961)
+What Little I Remember (1980; posthumous publication)
+See also[ edit ]
+Godiva device
+References[ edit ]
+^ a b c
+Peierls, R. (1981).
+"Otto Robert Frisch.
+1 October 1904-22 September 1979".
+Biographical Memoirs of Fellows of the Royal Society 27: 283.
+doi : 10.1098/rsbm.1981.0012 .
+JSTOR   769874 .
+^
+Bethe, H. A. ; Winter, George (January 1980).
+"Obituary: Otto Robert Frisch" .
+Physics Today 33 (1): 99–100.
+Bibcode : 1980PhT....33a.
+.99B .
+doi : 10.1063/1.2913924 .
+^
+Frisch, Otto R.; Stern, Otto (1933).
+"Über die magnetische Ablenkung von Wasserstoffmolekülen und das magnetische Moment des Protons".
+Zeitschrift für Physik (in German) 85 (1–2): 4–16.
+Bibcode : 1933ZPhy...85....4F .
+doi : 10.1007/BF01330773 .
+^
+Hahn, O.; Strassmann, F. (1939).
+"Über den Nachweis und das Verhalten der bei der Bestrahlung des Urans mittels Neutronen entstehenden Erdalkalimetalle [On the detection and characteristics of the alkaline earth metals formed by irradiation of uranium without neutrons]".
+Naturwissenschaften (in German) 27 (1): 11–15.
+Bibcode : 1939NW.....27...11H .
+doi : 10.1007/BF01488241 .
+The authors were identified as being at the Kaiser-Wilhelm-Institut für Chemie, Berlin-Dahlem.
+Received 22 December 1938.
+^
+Meitner, Lise; Frisch, O. R. (1939).
+"Disintegration of Uranium by Neutrons: a New Type of Nuclear Reaction" .
+Nature 143 (3615): 239–240.
+Bibcode : 1939Natur.143.
+.239M .
+doi : 10.1038/143239a0 .
+The paper is dated 16 January 1939.
+Meitner is identified as being at the Physical Institute, Academy of Sciences, Stockholm.
+Frisch is identified as being at the Institute of Theoretical Physics, University of Copenhagen.
+^
+Frisch, O. R. (1939).
+"Physical Evidence for the Division of Heavy Nuclei under Neutron Bombardment" .
+Nature 143 (3616): 276–276.
+Bibcode : 1939Natur.143.
+.276F .
+doi : 10.1038/143276a0 .
+The paper is dated 17 January 1939.
+[The experiment for this letter to the editor was conducted on 13 January 1939; see
+Rhodes, Richard (1986).
+The Making of the Atomic Bomb.
+Simon and Schuster.
+pp. 263 and 268.
+^ Otto R. Frisch, "The Discovery of Fission – How It All Began", Physics Today, V20, N11, pp. 43-48 (1967).
+^ J. A. Wheeler, "Mechanism of Fission", Physics Today V20, N11, pp. 49-52 (1967).
+^ http://www.birmingham.ac.uk/documents/culture/bookletfinalpdf.pdf
+^
+Rhodes, Richard (1986).
+The Making of the Atomic Bomb.
+Simon and Schuster.
+pp. 612–613.
+^ a b c
+Frisch, Otto Robert (1980).
+What Little I Remember.
+Cambridge University Press.
+pp. 161–162.
+ISBN   9780521280105 .
+an unusual assembly ... no reflecting material ... For obvious reasons we called it the Lady Godiva assembly.
+^ Rhodes, Richard.
+The Making of the Atomic Bomb.
+1986, Simon and Schuster.
+610-11
+^ a b Otto Frisch, "What Little I Remember", Cambridge University Press (1979), ISBN 0-521-40583-1
+External links[ edit ]
+Annotated bibliography for Otto Frisch from the Alsos Digital Library for Nuclear Issues
+Los Alamos National Laboratory on the British mission
+Oral History interview transcript with Otto Robert Frisch 8 May 1963, American Institute of Physics, Niels Bohr Library and Archives
+Oral History interview transcript with Otto Robert Frisch 3 May 1967, American Institute of Physics, Niels Bohr Library and Archives
+"On the Feasibility of Coal-Driven Power Stations" (Spoof essay by Frisch written in commemoration of the 70th birthday of Niels Bohr, October 7th 1955)
+Authority control
+WorldCat Identities
+VIAF : 112095253
+LCCN : n83182148
+ISNI : 0000 0001 1083 7611
+GND : 118536117
+SELIBR : 187561
+SUDOC : 034609725
+BNF : cb125347971 (data)
+NLA : 35889702
+NDL : 00440245
+Retrieved from " https://en.wikipedia.org/w/index.php?title=Otto_Robert_Frisch&oldid=710916118 "
+Categories :
+1904 births
+1979 deaths
+20th-century scientists
+Austrian physicists
+Jewish physicists
+British physicists
+British Jews
+Austrian Jews
+British nuclear physicists
+Austrian nuclear physicists
+Manhattan Project people
+Nuclear weapons programme of the United Kingdom
+Academics of the University of Birmingham
+Academics of Birkbeck, University of London
+Fellows of the Royal Society
+Fellows of Trinity College, Cambridge
+Jewish refugees
+Austrian refugees
+Jews who immigrated to the United Kingdom to escape Nazism
+Scientists from Vienna
+British people of Austrian-Jewish descent
+Hidden categories:
+CS1 German-language sources (de)
+Wikipedia articles with VIAF identifiers
+Wikipedia articles with LCCN identifiers
+Wikipedia articles with ISNI identifiers
+Wikipedia articles with GND identifiers
+Wikipedia articles with SELIBR identifiers
+Wikipedia articles with BNF identifiers
+Wikipedia articles with NLA identifiers
+Navigation menu
+Personal tools
+Not logged in
+Talk
+Contributions
+Create account
+Log in
+Namespaces
+Article
+Talk
+Variants
+Views
+Read
+Edit
+View history
+More
+Search
+Navigation
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+In other projects
+Wikimedia Commons
+Languages
+Български
+Bosanski
+Català
+Čeština
+Dansk
+Deutsch
+Español
+فارسی
+Français
+Gaeilge
+Hrvatski
+Bahasa Indonesia
+Italiano
+Kreyòl ayisyen
+Latina
+Magyar
+Nederlands
+日本語
+Norsk bokmål
+Norsk nynorsk
+Polski
+Русский
+Slovenčina
+Svenska
+Українська
+Tiếng Việt
+中文
+Edit links
+This page was last modified on 19 March 2016, at 20:57.
+Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply.
+By using this site, you agree to the Terms of Use and Privacy Policy .
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+Contact Wikipedia
+Developers
+Cookie statement
+Mobile view

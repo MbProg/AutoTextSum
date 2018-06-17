@@ -1,0 +1,118 @@
+Mar
+APR
+May
+9
+2015
+2016
+2017
+1 captures
+9 Apr 16 - 9 Apr 16
+Close Help
+Erstellen Erkunden Lernen & Support
+Loslegen
+Anmelden
+Preise
+Loslegen
+Anmelden
+Meine Prezis Erkunden Lernen & Support
+Produkt Unternehmen Karriere Support Community Kontakt Apps
+English Español 한국어 日本語 Deutsch Português Français Magyar Italiano
+×
+Houston, wir haben ein Problem!
+Hoppla.
+Eine Firewall blockiert den Zugriff auf Prezi-Inhalte.
+Lesen Sie diesen Artikel , um mehr darüber zu erfahren, oder kontaktieren Sie Ihren System-Administrator.
+Einprägsam aus der Masse hervorstechen - mit Prezi,
+der Geheimwaffe für filmreifes Präsentieren.
+Heute starten
+Loslegen
+Was ist Prezi?
+Mehr erfahren
+Lädt Präsentation...
+Öffentlich & kopierbar
+Kopieren Teilen Einbetten Liked Like
+Fernpräsentation
+Senden Sie den Link unten via E-Mail oder PN
+Kopieren
+Präsentieren Sie für Ihr Publikum
+Fernpräsentation beginnen
+Eingeladene Zuschauer werden Ihnen folgen, während Sie navigieren und präsentieren
+Zu dieser Präsentation eingeladene Personen benötigen kein Prezi-Konto
+Dieser Link verfällt 10 Minuten, nachdem Sie die Präsentation schließen
+Maximal 30 Nutzer können Ihrer Präsentation folgen
+Erfahren Sie in unserer Wissensdatenbank mehr über diese Funktion
+Möchten Sie diese Prezi wirklich löschen?
+Weder Sie, noch die Personen, mit denen Sie diese Prezi geteilt haben, können die Prezi dann wiederherstellen.
+Löschen Abbrechen
+Möchten Sie Ihre "Likes" auf Facebook sichtbar machen?
+Verbinden Sie Ihr Facebook-Konto mit Prezi und lassen Sie Ihre "Likes" in Ihrer Chronik erscheinen.
+Sie können dies jederzeit unter Einstellungen & Konto ändern.
+Nein danke
+Mit Facebook verbinden
+Ex Parte Crow Dog
+Keine Beschreibung
+von
+Shelby Harris
+am 5.
+Dezember 2013
+Twittern
+Kommentare (0)
+Bitte anmelden , um Ihren Kommentar hinzuzufügen.
+Missbrauch melden
+Transkript von Ex Parte Crow Dog
+Ex Parte Crow Dog
+Did the federal government have the right to sentence Crow Dog to death for a crime committed against another Native American on their reservation?
+Decision
+THE END
+Case Breakdown
+Kan-gi-Shun-ca (Crow Dog) shot and killed another Native American (Spotted Tail) on the Great Sioux Reservation in present-day South Dakota.
+Sioux tribal government ordered him to pay restitution to the victim's family
+The government of the Dakota Territory charged Crow Dog with murder and sentenced him to be hanged.
+Crow Dog appeals decision under
+writ of habeas corpus.
+November 26, 1883 - December 17, 1883
+HISTORY
+OF
+GREAT SIOUX RESERVATION
+Arguments
+Crow Dog: federal court lacked jurisdiction, pointing to an 1834 act that specifically excluded crimes committed by one Native American on another from federal jurisdiction
+Gov't: 1868 treaty with the Sioux, that required the tribe surrender criminals to United States, superseded the earlier statute.
+With a 9-0 decision, the Court concluded that Congress had not granted federal courts jurisdiction over the murder of one Native American by another.
+CROW DOG RELEASED
+Following the Ruling
+The Major Crimes Act was passed in 1885 by Congress, placing 15 crimes on Indian land under federal authority if committed by one Indian against another.
+Sites used:
+-http://supreme.justia.com/cases/federal/us/109/556/case.htmp
+-http://www.oyez.org/cases/1851-1900/1883/1883_1
+-http://tm112.community.uaf.edu/unit-1/cherokee-nation-v-georgia-1831/
+Spotted Tail
+Lakota Tribal Chief
+Crazy Horse's Uncle
+Killed on August 5th, 1881
+It was a Friday
+Crow Dog
+Lakota Sub-Chief
+Born in Montana
+Descendant of prestigious medicine men
+Komplettes Transkript
+Weitere Präsentationen von Shelby Harris
+Genetically modified mindset
+Untitled Prezi
+Untitled Prezi
+Weitere Prezis von diesem Autor
+Beliebte Präsentationen
+Weitere beliebte oder die neuesten Prezis ansehen
+Produkt Unternehmen Karriere Support Community Kontakt Apps
+English
+español
+한국어
+日本語
+Deutsch
+Português
+français
+Magyar
+italiano
+© 2016 Prezi Inc.
+Nutzungsbedingungen
+<p>Verbinden Sie Ihr Facebook-Konto mit Prezi und veröffentlichen Sie in der Zukunft Ihre "Likes".
+</p><form class="bypass" method="post" action="/web/20160409210306/https://prezi.com/associate/facebook/"><input type='hidden' name='csrfmiddlewaretoken' value='JexgGCdDJ2FiyQkY7cpmvbEjDppGZ7GZ' /><input type="hidden" name="next" value="/hpxe8g2bdc5-/og-like/"><p class="clearfix"><button type="submit" class="btn btn-primary" id="fb-connect-like-ok-btn">OK</button><a class="btn pull-right" onclick="closeOverlay();return false;" href="javascript:void(0);">Nein danke</a></p></form>

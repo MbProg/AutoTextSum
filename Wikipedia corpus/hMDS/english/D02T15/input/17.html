@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: /web/20160404111317/http://ogp.me/ns#" prefix="og: /web/20160404111317/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: /web/20160404111317/http://ogp.me/ns#" prefix="og: /web/20160404111317/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: /web/20160404111317/http://ogp.me/ns#" prefix="og: /web/20160404111317/http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app4.us.archive.org";archive_analytics.values.server_ms=307;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta charset="utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+<meta name="robots" content="index, follow"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script>
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.defineSlot('/7211001/300x250-AdExchange',[300,250],'div-gpt-ad-1454538700567-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1447448043579-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1456964279291-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1447448043579-1').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1456967562301-0').addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>
+<!-- Begin comScore Tag -->
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20782744"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"/web/20160404111317/https://sb":"/web/20160404111317/http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+<noscript>
+<img src="/web/20160404111317im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=20782744&amp;cv=2.0&amp;cj=1"/>
+</noscript>
+<!-- End comScore Tag -->
+<script type="text/javascript" src="/web/20160404111317js_/http://s.ntv.io/serve/load.js" async></script>
+<!-- Begin mbid Tag -->
+<script id="mbid-nucleus" src="/web/20160404111317js_/http://c.mbid.io/tags/h" data-bsm-flag="true" data-bsm-version="v3" data-bsm-sizes="300x250 300x600" data-bsm-pub="historynet" data-bsm-pub-zone="historynet.com/ros" data-bsm-event-host="//b.mbid.io"></script>
+<!-- End mbid Tag -->
+<style>@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(/web/20160404111317im_/http://fonts.gstatic.com/s/raleway/v10/JbtMzqLaYbbbCL9X6EvaIy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(/web/20160404111317im_/http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(/web/20160404111317im_/http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v3.1.2 - /web/20160404111317/https://yoast.com/wordpress/plugins/seo/ -->
+<title>Invasion of Canada During the American Revolutionary War | HistoryNet</title>
+<link rel="canonical" href="http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Invasion of Canada During the American Revolutionary War | HistoryNet"/>
+<meta property="og:description" content="On the night of December 30, 1775, after months of hardship and perseverance against heavy odds, the forces of Brig. Gen. Richard Montgomery and Colonel Benedict Arnold were at last poised to take Quebec. Then a single British cannon shot caused their plan to unravel."/>
+<meta property="og:url" content="http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<meta property="article:publisher" content="https://www.facebook.com/HistoryNet-121405527876395/"/>
+<meta property="article:tag" content="17th - 18th Century"/>
+<meta property="article:tag" content="American Revolutionary War"/>
+<meta property="article:tag" content="Historical Conflicts"/>
+<meta property="article:section" content="George Washington"/>
+<meta property="article:published_time" content="2006-06-12T20:11:06+00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="On the night of December 30, 1775, after months of hardship and perseverance against heavy odds, the forces of Brig. Gen. Richard Montgomery and Colonel Benedict Arnold were at last poised to take Quebec. Then a single British cannon shot caused their plan to unravel."/>
+<meta name="twitter:title" content="Invasion of Canada During the American Revolutionary War | HistoryNet"/>
+<meta name="twitter:site" content="@HistoryNet"/>
+<meta name="twitter:creator" content="@HistoryNet"/>
+<!-- / Yoast SEO plugin. -->
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Feed" href="http://www.historynet.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Comments Feed" href="http://www.historynet.com/comments/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Invasion of Canada During the American Revolutionary War Comments Feed" href="http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm/feed"/>
+<script type="text/javascript">window._wpemojiSettings={"baseUrl":"/web/20160404111317/http://s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"/web/20160404111317/http://www.historynet.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+<link rel='stylesheet' id='aqpb-view-css-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/aqua/assets/css/A.aqpb-view.css,qver=4.2.2.pagespeed.cf.3IrwmHA7Ng.css' type='text/css' media='all'/>
+<style id='wds_frontend-css' media='all'>.wds_more{font-size:12px}div[id^="wds_container"] *{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;line-height:1}div[id^="wds_container"] p{padding:0!important;margin:0!important}.wds_layer a,.wds_layer a:hover{color:inherit!important;font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;text-decoration:none}.wds_loading_img{border:none!important;float:none;width:50px;animation:spin 2.5s infinite linear;-moz-animation:spin 2.5s infinite linear;-o-animation:spin 2.5s infinite linear;-webkit-animation:spin 2.5s infinite linear}.wds_loading{text-align:center}div[id^="wds_container"] .wds_btn_cont{height:100%;left:0;position:absolute;top:0;vertical-align:middle;width:100%}div[id^="wds_container"] .wds_contTableCell{display:table-cell}div[id^="wds_container"] .wds_contTable{display:table}div[id^="wds_container"] .wds_left_btn_cont,div[id^="wds_container"] .wds_right_btn_cont,div[id^="wds_container"] .wds_pp_btn_cont{display:inline-block;position:relative;text-align:center;vertical-align:middle;z-index:16}div[id^="wds_container"] .wds_left_btn_cont{margin-left:10px}div[id^="wds_container"] .wds_right_btn_cont{margin-right:10px}@-webkit-keyframes wdszoom0 { 100% { background-size: 170%; }}@-webkit-keyframes wdszoom70 { 100% { background-size: 100%; }}@-moz-keyframes wdszoom0 { 100% { background-size: 170%; }}@-moz-keyframes wdszoom70 { 100% { background-size: 100%; }}@keyframes wdszoom0 { 100% { background-size: 170%; }}@keyframes wdszoom70 { 100% { background-size: 100%; }}</style>
+<link rel='stylesheet' id='wds_effects-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/A.wds_effects.css,qver=1.0.8.pagespeed.cf.eFCRIpN5sL.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='wds_font-awesome-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/font-awesome-4.3.0/A.font-awesome.css,qver=4.3.0.pagespeed.cf.HpcIsdYD5q.css' type='text/css' media='all'/>
+<style id='wp-polls-css' media='all'>.wp-polls-archive{}.wp-polls,.wp-polls-form{}.wp-polls ul li,.wp-polls-ul li,.wp-polls-ans ul li{text-align:left;background-image:none;display:block}.wp-polls ul,.wp-polls-ul,.wp-polls-ans ul{text-align:left;list-style:none;float:none}.wp-polls ul li:before,.wp-polls-ans ul li:before,#sidebar ul ul li:before{content:''}.wp-polls IMG,.wp-polls LABEL,.wp-polls INPUT,.wp-polls-loading IMG,.wp-polls-image IMG{display:inline;border:0px;padding:0px;margin:0px}.wp-polls-ul{padding:0px;margin:0px 0px 10px 10px}.wp-polls-ans{width:100%;filter: alpha(opacity=100);-moz-opacity:1;opacity:1}.wp-polls-loading{display:none;text-align:center;height:16px;line-height:16px}.wp-polls-image{border:0px}.wp-polls .Buttons{border:1px solid #c8c8c8;background-color:#f3f6f8}.wp-polls-paging a,.wp-polls-paging a:link{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:visited{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:hover{border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging a:active{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging span.pages{padding:2px 4px 2px 4px;margin:2px 2px 2px 2px;color:#000;border:1px solid #000;background-color:#fff}.wp-polls-paging span.current{padding:2px 4px 2px 4px;margin:2px;font-weight:bold;border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging span.extend{padding:2px 4px 2px 4px;margin:2px;border:1px solid #000;color:#000;background-color:#fff}</style>
+<style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background-image:url(/web/20160404111317im_/http://cdn.historynet.com/wp-content/plugins/wp-polls/images/default/pollbg.gif);border:1px solid #c8c8c8}</style>
+<link rel='stylesheet' id='cointent-wp-plugin-css' href='/web/20160404111317cs_/http://connect.cointent.com/style.css?ver=4.2.2' type='text/css' media='all'/>
+<link rel='stylesheet' id='parent-style-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/themes/superblog/A.style.css,qver=4.2.2.pagespeed.cf.eteQb27wQ2.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='styles-min-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/themes/superblog-child/assets/css/A.style.min.css,qver=4.2.2.pagespeed.cf.wj-9mVu1Nb.css' type='text/css' media='all'/>
+<style id='default_style-css' media='all'></style>
+<link rel='stylesheet' id='shortcodes-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css,qver=4.2.2.pagespeed.cf.eivA_VCL_f.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='fontawesome-css' href='/web/20160404111317cs_/http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=1.3.9' type='text/css' media='all'/>
+<!--[if IE 7]>
+<link rel='stylesheet' id='fontawesome-ie-css'  href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css?ver=1.3.9' type='text/css' media='all' />
+<![endif]-->
+<style id='plugin_css-css' media='all'>#newsFeed{width:100%;height:auto;padding:0px 3px 3px 5px;margin-top:3px auto}ul.feedEkList{list-style:none;padding:10px;margin:0px}ul.feedEkList li{border-bottom:1px solid #d3cad7;padding-bottom:15px}h1.itemTitle{margin-bottom:10px}.itemTitle a{text-decoration:none}.itemContent{padding:1px 3px 3px 3px;color:#3e3e3e}.itemPoston{float:left;margin-right:10px;font-size:13px}.itemDate{font-size:13px;color:#666}.itemContent img{float:left;margin:0 20px 0 0}.itemBtn{background-color:#3a5795;border-radius:2px;color:#fff;float:right;padding:3px 8px;text-decoration:none}.itemBtn:hover{text-decoration:none;color:#fff}.itemClear{clear:both}</style>
+<link rel='stylesheet' id='tabby.css-css' href='/web/20160404111317cs_/http://cdn.historynet.com/wp-content/plugins/tabby-responsive-tabs/css/A.tabby.css,qver=1.2.1.pagespeed.cf.aIEY0mYxoY.css' type='text/css' media='all'/>
+<style>.fa-hidden{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.rtl .fa-hidden{left:10000px}.fa-showtext{margin-right:5px}</style>
+<script src="/web/20160404111317js_/http://cdn.historynet.com/wp-includes,_js,_jquery,_jquery.js,qver==1.11.2+wp-includes,_js,_jquery,_jquery-migrate.min.js,qver==1.2.1+wp-content,_plugins,_slider-wd,_js,_jquery.mobile.js,qver==1.0.8+wp-content,_themes,_superblog-child,_assets,_js,_scripts.min.js,qver==4.2.2.pagespeed.jc.QSoG6zPLLx.js"></script><script>eval(mod_pagespeed_RRVdbBC0pu);</script>
+<script>eval(mod_pagespeed_Hf0$z$LmEX);</script>
+<script>eval(mod_pagespeed_98HfFSFkSU);</script>
+<script>eval(mod_pagespeed_9MYB8RFAqS);</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.historynet.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.historynet.com/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.2.2"/>
+<link rel='shortlink' href='http://www.historynet.com/?p=3035601'/>
+<meta property="og:title" content="Invasion of Canada During the American Revolutionary War"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://cdn.historynet.com/wp-content/themes/historynet/images/redesign/HistoryNetComlogo.gif"/>
+<meta property="og:url" content="http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm"/>
+<meta property="og:description" content="On the night of December 30, 1775, after months of hardship and perseverance against heavy odds, the forces of Brig. Gen. Richard Montgomery and Colonel Benedict Arnold were at last poised to take Quebec. Then a single British cannon shot caused their plan to unravel."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<!-- Themnific Shortcodes CSS -->
+<link href="/web/20160404111317cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css.pagespeed.cf.yf0g4U5MBA.css" rel="stylesheet" type="text/css"/>
+<!-- Themnific Styling -->
+<style type="text/css">#header,#navigation,.nav li ul,ul.social-menu .social-menu-more li,.flexcarousel ul.slides li,#hometab,.postinfo,.widgetable,ul.products li.product{background-color:#fff}.nav>li>ul:after{border-color:#fff transparent}#main-nav>li>a,.searchform,ul.social-menu li{border-color:#fff!important}.woocommerce-message,.woocommerce-error,.woocommerce-info{background:#fff!important}#footer,.body2,h2.widget_spec,.imgwrap,#topnav,.maso,.mainflex .videoinside{background-color:#32373b}.socialtrigger a:hover,.socialtrigger a.active,.overrating,.meta_more a:hover,.sf-sub-indicator,span.score,.flexslider a.flex-prev,.flexslider a.flex-next,.ratingbar,#sidebar p input[type="submit"],span.ribbon,a#triggernav,a#triggernav-sec,a.fromhome,a.mainbutton,a.itembutton,.page-numbers.current,a.comment-reply-link,#submit,#comments .navigation a,.tagssingle a,.contact-form .submit,.intro,li.main h2,.plan-bottom a,.scrollTo_top a,.gallery-item,submit{background-color:#fa0505}h3 a i,h4 a i,#core .meta_more a,#content .meta_more a,a.moreposts,.more a.fr,#content .entry a,li ul li.current-menu-item a,#core a.add_to_cart_button{color:#fa0505}h2.widget,h2.widget_spec,.meta_more a,#serinfo-nav li.current a,.woocommerce a.button{border-color:#fa0505!important}#main-nav>li>a:hover,#main-nav>li.current-menu-ancestor>a,#main-nav>li.current-menu-item>a,#main-nav>li.sfHover>a,#main-nav>li.current_page_item>a,#main-nav>li.current-menu-item>a,.page-numbers.current,.woocommerce a.button:hover{background-color:#fa0505!important}body,#navigation,.social-menu-more{background-color:#fafafa}.body1 a,a:link,a:visited,.nav li ul li a{color:#393847}span>a.moreposts,ul#serinfo-nav li a{color:#393847!important}a:hover,.body1 a:hover{color:#fa0505!important}#sec-nav>li>a,#footer a{color:#fff}.body2 a:hover,p.body2 a:hover,#sec-nav>li>a:hover{color:#ccc!important}.woocommerce ul.products,#navigation,#header,.aq-block,.fblock,ul#serinfo,.postinfo,.postinfo span,.widgetable,.related,#hometab,h2.leading,.postauthor_alt{border-color:#ededed!important}body,input,textarea,input checkbox,input radio,select,file,h3.sd-title{font:400 13px/1.8em Roboto;color:#141414}.body2,#footer,.searchformhead>input.s{font:400 12px/1.8em Roboto;color:#eee}.ratingblock h2,.ratingblock h3,.ratingblock p,#footer h2,.body2 h2,.body2 h3{color:#eee}.intro h1,.intro h1 a,a.itembutton,a.mainbutton,.page-numbers.current{color:}h1,h2.post{font:400 50px/1.0em Roboto;color:#2e373f}h2.widget,.meta_more a,a.morebutton,ul#serinfo-nav li a{font:700 13px/1.2em Roboto;color:#3d3d3d}h2{font:700 28px/1.2em Roboto;color:#3d3d3d}h3,h3#reply-title,#respond h3,.comment-author cite{font:700 25px/1.0em Roboto;color:#222}h4,li.product h3,.woocommerce .upsells.products h2,.woocommerce .related.products h2,.woocommerce ul.cart_list li a,.woocommerce ul.product_list_widget li a,.woocommerce-page ul.cart_list li a,.woocommerce-page ul.product_list_widget li a{font:400 14px/1.5em Roboto;color:#222}h5,p.meta,.meta a{font:400 11px/1.5em Roboto;color:#999}h6{font:400 11px/1.5em Roboto;color:#999}#main-nav>li>a,.searchform input.s,.woocommerce a.button{font:700 13px/1.0em Raleway;color:#000}ul.social-menu li a{font:700 13px/1.0em }.tab-post small a,.taggs a{color:#141414}</style>
+<style>.adspace:after{content:" ";display:table;clear:both}@media (max-width:1096px){#div-gpt-ad-1447803615327-0{display:none}.ad-cont{text-align:center}#div-gpt-ad-1447448043579-0{float:none!important;display:inline-block}}ul.related{padding-bottom:0;margin-bottom:15px}ul.related li a{font-weight:800!important}ul.related li{width:100%!important;float:none!important;padding:0!important}ul.related li:last-child{border-bottom:none!important}ul.related li:last-child h4{margin-bottom:0}.side-bar h2{display:block;text-align:center;background:#dcdcdc;text-transform:uppercase;font-size:16px;font-weight:800;padding:12px 0;margin:0;margin-top:15px}.side-bar h4{margin:0 0 10px 0}</style></head>
+<body class="single single-post postid-3035601 single-format-standard upper" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm";
+
+var firstYear = 1996;
+var displayDay = "4";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160404111317" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20160113194116/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" title="13 Jan 2016">JAN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:13:17 Apr 4, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160113194116/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" title="19:41:16 Jan 13, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:13:17 Apr 4, 2016">4</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160407195545/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" title="19:55:45 Apr 7, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20141119014931/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" title="19 Nov 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:13:17 Apr 4, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160404111317*/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm" title="See a list of every capture for this URL">27 captures</a>
+           <div class="r" title="Timespan for captures of this URL">19 Apr 08 - 9 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000201100010_2009:-1:010000000100_2010:-1:010000000000_2011:-1:000000010000_2012:-1:001000000110_2013:-1:001300001000_2014:-1:000000000110_2015:-1:000010001101_2016:3:100300000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="header" class="" itemscope itemtype="http://schema.org/WPHeader">
+<div id="topnav">
+<div class="container">
+<a id="triggernav-sec" href="#">MENU</a>
+<ul id="sec-nav" class="nav custom-nav"><li id="menu-item-13694790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694790"><a href="/web/20160404111317/http://www.historynet.com/american-history">American History</a></li>
+<li id="menu-item-13694789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694789"><a href="/web/20160404111317/http://www.historynet.com/americas-civil-war">America&#8217;s Civil War</a></li>
+<li id="menu-item-13694787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694787"><a href="/web/20160404111317/http://www.historynet.com/aviation-history">Aviation History</a></li>
+<li id="menu-item-13694788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694788"><a href="/web/20160404111317/http://www.historynet.com/civil-war-times">Civil War Times</a></li>
+<li id="menu-item-13694786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694786"><a href="/web/20160404111317/http://www.historynet.com/military-history">Military History</a></li>
+<li id="menu-item-13694785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694785"><a href="/web/20160404111317/http://www.historynet.com/mhq">MHQ</a></li>
+<li id="menu-item-13694784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694784"><a href="/web/20160404111317/http://www.historynet.com/vietnam">Vietnam</a></li>
+<li id="menu-item-13694783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694783"><a href="/web/20160404111317/http://www.historynet.com/wild-west">Wild West</a></li>
+<li id="menu-item-13694782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694782"><a href="/web/20160404111317/http://www.historynet.com/worldwar2">World War II</a></li>
+</ul>
+<span class="fr visfix"></span> </div>
+</div>
+<div class="clearfix"></div>
+<div id="navigation_wrap">
+<nav id="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="post">
+<div class="nav-logo">
+<a class="logo-link" href="/web/20160404111317/http://www.historynet.com/"></a>
+<a id="triggernav" href="#">MENU</a>
+</div>
+<h1 class="post-title">Invasion of Canada During the American Revolutionary War</h1>
+<ul id="main-nav" class="nav custom-nav"><li id="menu-item-13697640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697640"><a href="/web/20160404111317/http://www.historynet.com/videos">Videos</a></li>
+<li id="menu-item-13698760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13698760"><a href="/web/20160404111317/http://www.historynet.com/galleries">Galleries</a></li>
+<li id="menu-item-13697637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697637"><a href="/web/20160404111317/http://www.historynet.com/today-in-history">Today in History</a></li>
+<li id="menu-item-13699434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13699434"><a href="/web/20160404111317/http://www.historynet.com/history-trivia-quiz">Daily Quiz</a></li>
+<li id="menu-item-13697731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13697731"><a href="/web/20160404111317/http://www.historynet.com/magazines/ask-mr-history">Ask Mr. History</a></li>
+<li id="menu-item-13697636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13697636"><a title="Subscribe" href="/web/20160404111317/http://shop.historynet.com/?utm_source=historynet&amp;utm_medium=nav">Subscribe</a></li>
+</ul> <div class="menu-right">
+<form class="searchform" method="get" action="/web/20160404111317/http://www.historynet.com/">
+<input type="text" name="s" class="s" size="30" value="Search..." onfocus="if (this.value = '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}"/><button class='searchSubmit'><i class="fa fa-search"></i></button>
+</form><ul class="social-menu">
+<li class="sprite-facebook"><a target="_blank" class="mk-social-facebook" title="Facebook" href="/web/20160404111317/https://www.facebook.com/HistoryNet-121405527876395/"></a></li>
+<li class="sprite-twitter"><a target="_blank" class="mk-social-twitter-alt" title="Twitter" href="/web/20160404111317/https://twitter.com/HistoryNet"></a></li>
+<li class="sprite-youtube"><a target="_blank" class="mk-social-youtube" title="You Tube" href="/web/20160404111317/https://www.youtube.com/channel/UCzdWdL_xC5qk07WWOtnXSWA"></a></li>
+<li class="sprite-instagram"><a target="_blank" class="mk-social-photobucket" title="Instagram" href="/web/20160404111317/https://www.instagram.com/historynetofficial/"></a></li>
+<li class="socialtrigger">
+<a title="Show More" href="#">+</a>
+<ul class="social-menu-more">
+</ul>
+</li>
+</ul> </div>
+</nav>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="container  upper" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<script>jQuery('h1.post-title').on('click',function(){jQuery('html, body').animate({scrollTop:0},500);});</script>
+<div id="core" class="None >
+
+        <div class=" post-3035601 post type-post status-publish format-standard hentry category-george-washington category-military_history tag-17th-18th-century tag-american-revolutionary-war tag-historical-conflicts" itemscope itemprop="blogPost" itemtype="http://schema.org/Article">
+<div class="clearfix"></div>
+<div id="content" class="eightcol">
+<div class="feature_image">
+</div>
+<h1 class="post entry-title" itemprop="headline"><a href="/web/20160404111317/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm">Invasion of Canada During the American Revolutionary War</a></h1>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160404111317/http://www.facebook.com/sharer.php?u=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160404111317/http://twitter.com/share?url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160404111317/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160404111317/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+<div class="entry" itemprop="text" style="float: left;">
+<div class="clearfix"></div>
+<p class="meta">
+6/12/2006 &bull;
+<a href="/web/20160404111317/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents/george-washington" rel="category tag">George Washington</a>, <a href="/web/20160404111317/http://www.historynet.com/magazines/military_history" rel="category tag">Military History</a> </p>
+<p><P> In front of the American commander rolled the St. Lawrence River, and across the waterway lay his objective&#8211;Qu&eacute;bec. Behind the commander struggled the remnants of a small, ragtag army that had followed him through the early winter cold of northern Maine. It was November 3, 1775, and their 350-mile hike from the mouth of the Kennebec River had ended, but their ordeal was far from over.</P> <P>Colonel Benedict Arnold was both exhilarated and apprehensive. Now one question was on his mind: How would he capture the Canadian city on the opposite shore? The question would occupy his thoughts for the next seven weeks.</P> <P>The events that brought Arnold to the St. Lawrence had begun to unfold some 200 miles southwest of Qu&eacute;bec at Fort Ticonderoga in late August 1775. By that time, the rebelling American colonists had surrounded Boston&#8211;a situation unchanged by the successful but costly British assault on Breed&#8217;s Hill on June 17&#8211;and the Continental Congress was looking for the knockout blow that would make their revolt against the British crown a brief one. The only major British forces around North America were in Florida and the Caribbean islands, as well as 700 more troops in Canada. Most American leaders, political and military, believed the Canadians, who had only been under British rule since 1760, would readily flock to the cause of independence. They were sadly mistaken. Most Canadians could not see much correlation between their situation and that of the 13 colonies to the south. The Americans would learn this the bloody, hard way.</P> <P>Full of optimism for a Canadian venture, the Continental Congress sent a message to the commander of Fort Ticonderoga, Maj. Gen. Philip Schuyler, on June 27, authorizing him to marshal an invasion force and advance into those areas of Canada that he judged &#8216;practicable&#8217; to seize. Schuyler was suffering from rheumatic gout at the time, and the troops he needed for the operation were just beginning to trickle into the fort. As more soldiers arrived, Schuyler passed Congress&#8217; message on to his second-in-command, the energetic Brig. Gen. Richard Montgomery, on August 7. In addition, Montgomery had received word that the British were building a fleet in the area of St. Johns, Quebec, about 20 miles southeast of Montr&eacute;al on the Richelieu River. At the end of August, two months after the message had arrived from Congress, the 38-year-old Montgomery tired of his ailing commander&#8217;s recalcitrance. He scrabbled together 1,200 men, a hodgepodge collection of ships, canoes and rowboats, and on August 27 he headed upriver to fight an army from which he, born an Irishman, had resigned only three years before.</P> <P>Schuyler, who had somewhat regained his mobility, was conferring with Iroquois chiefs at Albany when he learned of Montgomery&#8217;s march on St. Johns. Traveling up Lake Champlain in a speedy whaleboat, he caught up with the invasion force on September 4 and reassumed command. On the following day, the Americans established a base of operations on Ile aux Noix, 10 miles south of St. Johns. Schuyler had received false reports that indicated the strength of British fort and garrison was greater than it actually was (in fact, the garrison numbered only 700 men, though most were British Army Regulars).On that same day, September 5, he launched an attack, but the Americans were repulsed by a screening party of Indian skirmishers who had deployed outside St. Johns&#8217; fort by the British garrison commander, Major Charles Preston. Schuyler retreated several miles back down the Sorel River but sent 500 New York militiamen to stage another assault on September 10, only to learn that they had broken into a panicked run upon making contact with another advance force of fellow Americans. Schuyler&#8217;s poor health caught up with him once more, and on the 16th he returned to Ticonderoga, leaving Montgomery in charge again. The brigadier brought his small army back to St. Johns.</P> <P>Although the British position was not nearly as strong as Schuyler had believed, it was enough to stop Montgomery. The latter settled down to a siege he believed would take five days. It ended up lasting 55.</P> <P>Eventually, Schuyler was able to send reinforcements and some cannons to Montgomery, who put them all to good use. Major Preston was down to three days&#8217; rations inside St. Johns and received word that no relief force was on the way. On November 2, he surrendered. Fort Chambly, just a short distance north, fell quickly to an advance party of Americans. One of those taken prisoner there by the colonists was Lieutenant John Andr&eacute;, who, after later being paroled, would gain notoriety in September 1780, when he was caught by rebel militia while carrying documents in which then Maj. Gen. Benedict Arnold offered to hand over his command, West Point, to the British. With his lines of supply and communication secure, Montgomery raced on toward Montr&eacute;al, which fell to him with astonishing ease on November 13.</P> <P>While Montgomery had been floundering around St. Johns, General George Washington was impatiently looking for a way to help him. Earlier in the spring, a plan to take Qu&eacute;bec had been presented to him. He now dusted it off and gave it to Colonel Arnold, who threw his considerable talents to the task.</P> <P>After studying maps of the region, Arnold thought he could easily get 1,000 men up the Kennebec River, portage across an area known as &#8216;The Great Carrying Place&#8217; to the Chaudire River, and then head to Qu&eacute;bec. On the basis of maps drawn in 1759 by explorer John Montresor, it looked like a three-week journey. Arnold gathered up some 1,050 volunteers, including Aaron Burr and Daniel Morgan, as well as two &#8216;Mollies&#8217; (camp followers) of Captain William Hendricks&#8217; Rifle Company from Cumberland, Penn.: teenaged Jemima Warner, who accompanied her husband James, and Suzannah Grier, wife of Sergeant Joseph Grier. Arnold also ordered the construction of 200 bateaux for transports. They would be awaiting him at the mouth of the Kennebec in what is now the state of Maine.</P> <P>Everything was proceeding smoothly for Arnold so far. The plan was to link up with Montgomery, thus doubling the force. That would give Arnold the 2,000 men he thought necessary to take Qu&eacute;bec.</P> <P>The expedition left Cambridge, Mass., on September 13. Following a short march to Newburyport, they boarded ships that brought them to Gardiner (now in Maine) to take delivery of the bateaux. The boats proved to be the first of many problems that would plague the expedition.</P> <P>A bateau is something of a cross between a canoe and a rowboat, but longer and heavier. To his great distress, Arnold learned that these vessels were more difficult to maneuver than he had been led to believe. Worse yet, the carpenters he had sent ahead to build his fleet had used green wood. The result was a barely seaworthy craft that weighed some 400 pounds. With no alternative, Arnold was forced to make the best of it and issued his marching orders.</P> <P>He set up three roughly equal divisions of troops, each marching a day apart. Almost immediately, Arnold&#8217;s schedule was thrown off. The day after leaving Gardiner, Captain Simeon Thayer wrote in his diary, &#8216;The river here is very rapid and difficult.&#8217; The next day&#8217;s entry reads in part: &#8216;The river here is both rapid and rocky. Proceeded to the foot of the falls. Here is the first carrying place we came to.&#8217; The entry for the third day, September 28, is even more enlightening: &#8216;Proceeded about three miles through rapid water. Our men are obligated to wade more than half their time. It begins to be cold and uncomfortable.&#8217;</P> <P>Thus, Arnold had several problems with which to contend. The maps he had studied during his planning did not accurately describe the rapids and waterfalls that Arnold&#8217;s men would be forced to portage around. Complicating matters was the deteriorating northern New England weather. Food began to spoil, and potable water was used up. The men drank murky rainwater, causing dysentery and nausea. Jemima Warner and Suzannah Grier caught trout in the Kennebec River, but the fish did not provide fat, which the troops desperately needed as the weather got colder. By the time the expedition reached the Dead River, winter storms and floods made even fishing impossible. Smallpox became a constant, dreaded companion. A number of the men died long before any shots were fired, including Private James Warner. After standing by her ailing husband to the end, Jemima Warner buried his body under some leaves, took up his rifle and powder, and ran 20 miles through a snowstorm to catch up with her company and take his place in the ranks.</P> <P>Arnold also brought some of his misery upon himself. In mid-October, when his force was 160 miles from Qu&eacute;bec, he sent a letter ahead to friends in the Canadian city in a legitimate, if somewhat risky, attempt to gain information on the British disposition. He entrusted the letter to an Indian who had joined the expedition around Norridgewock and who immediately turned the note over to the British. While Arnold could be faulted for being reckless, he was in dire need of the intelligence and had no other means to obtain it. In his position, it was probably a chance worth taking, but he was not completely injudicious. In his letter, he claimed he was leading &#8216;about 2,000 men.&#8217; If the letter did reach the British, they would have a rather nasty nugget to chew on.</P> <P>Somehow, though, Arnold&#8217;s leadership kept his troops&#8217; morale high, and spirits remained generally excellent among the survivors&#8211;until October 25, when Colonel Roger Enos, commanding the rearmost division, turned back with some 350 men. Despite the difficulties, the remainder plodded on, held together only by Arnold&#8217;s vigorous generalship. The bateaux foundered constantly, losing precious supplies overboard. As the troops waded through frozen swamps, Suzannah Grier tucked her skirts up around her waistband and carried her husband&#8217;s equipment over her head, while Captain Hendricks admonished the men to avert their eyes and make no lewd remarks. Rations became so scarce that the men were forced to consume pet dogs and make gruel out of wax candles.</P> <P>On November 8, just five days before Montgomery took Montr&eacute;al, Arnold arrived at Point Levis, opposite Qu&eacute;bec on the St. Lawrence, with barely 600 frozen, starving men. The trek had taken six weeks, twice what he had estimated.</P> <P>But now that Arnold was here, what could he do? His &#8216;army&#8217; was too weak to take the objective. Had Arnold&#8217;s ill-fated letter served its purpose, he would have known that only a handful of soldiers garrisoned Qu&eacute;bec, and if he could have crossed the St. Lawrence, the city might have fallen more easily than he thought possible. Instead, there seemed to be little he could do but sit back and wait for Montgomery.</P> <P>After the fall of Montr&eacute;al to Montgomery, the initiative shifted somewhat to the British. Caught between the two cities was a 200-man reinforcement column of Canadian volunteers heading east under Lt. Col. Allen Maclean, and behind him was Sir Guy Carleton, the British governor general of Canada. Carleton, dressed as a farmer, took a rowboat and narrowly avoided Montgomery&#8217;s troops. While he made his way to Qu&eacute;bec, its garrison was already preparing a stout defense.</P> <P>Arnold&#8217;s next step was to get his army across the St. Lawrence. The bateaux had been left some 100 miles behind, leaving canoes as the only conveyances available to the expedition. Arnold began shuttling his men across the river in them the first chance he got&#8211;but due to high winds and rough water that opportunity did not arrive until November 13. He had ferried about 500 men across the river when a patrolling British barge came upon the American army, and after a brief exchange of shots, Arnold ended the effort, leaving his army temporarily split.</P> <P>Silently leading the men he had to King&#8217;s Road and heading eastward across the Plains of Abraham, Arnold brought his column up to the edge of the woods about a mile from St. Louis Gate. By dawn his men had occupied some local dwellings, and Arnold had established his headquarters at the country estate of Colonel Henry Caldwell. Once the area was secure, most of the exhausted Americans fell asleep, but Arnold remained awake. Although exhilarated by his success thus far, he was sure the British knew all about him and his men and decided that a surprise attack on the city was now out of the question. In fact, the patrol boat&#8217;s crew failed to report their findings for several hours. Later, when the British finally were aware of Arnold&#8217;s presence, they sent out a land patrol that captured one of Daniel Morgan&#8217;s men, Private George Merchant, who had been ordered to watch St. Johns&#8217; Gate but had fallen asleep at his post.</P> <P>Arnold was certain the enemy would sally out from the city, and he prepared to meet them. On the 14th, he even had the audacity to send a rather blustery letter to Hector Cramah&eacute;, the lieutenant governor of Qu&eacute;bec, demanding the city&#8217;s immediate surrender &#8216;in the name of the United Colonies.&#8217; When Matthias Ogden, accompanied by a drummer, tried to deliver the message, he received Cramah&eacute;&#8217;s reply in advance&#8211;in the form of a cannon shot that sent him scurrying back to rebel lines. The New Jersey?born rebel tried again the next day, carrying both the ultimatum and a message from Arnold stating that Cramah&eacute;&#8217;s behavior the previous evening was unworthy of his &#8216;honor and valor&#8217; and represented &#8216;an insult I could not have expected from a private soldier.&#8217; Cramah&eacute;&#8217;s response was no different but more accurate&#8211;his salvo almost killed Ogden.</P> <P>The British forces in Qu&eacute;bec, still under Maclean, were far weaker than Arnold realized. Although the city had ample provisions, cannons and ammunition, there were only 1,200 troops in the garrison, and half were civilian militiamen who the British felt were no more reliable than their American rebel counterparts. Only 70 were Regular troops, while the balance were sailors drawn from ships in Qu&eacute;bec Harbor and Maclean&#8217;s own Canadian volunteers. Given that situation, Maclean was not about to repeat the error made on September 13, 1759 by French General Louis Joseph de St. V&eacute;ran, <I>marquis</I> de Montcalm (ironically, Montgomery had served under Maj. Gen. James Wolfe during that earlier fight for Qu&eacute;bec, in which both Wolfe and Montcalm lost their lives). Rather than risk battle on the Plains of Abraham, the British sat back in the city and waited for the Americans to come to them. No amount of American demonstrating outside the city could persuade the defenders to come out.</P> <P>Arnold then laid siege to the city, which was so ineffectual that he withdrew some 20 miles west to Pointe-Aux-Trembles. As he left the area of Qu&eacute;bec, his men were disheartened by the boisterous welcome being given Governor Carleton as he entered the city on November 19. Shortly after arriving at Point-Aux-Trembles, however, Arnold learned that Montr&eacute;al had fallen and that Carleton&#8217;s arrival in Qu&eacute;bec was more escape than anything else. Better yet was the news that Montgomery was on his way with reinforcements.</P> <P>In a letter to Montgomery on November 20, Arnold painted a bleak picture. He was down to 550 effectives, while his supplies included 600 pairs of coarse stockings, 300 milled caps, 300 dozen pairs of mittens and gloves, only 300 blankets and very little food. In a very candid postscript, he added that his &#8216;hard cash is nearly exhausted&#8217; and that the French Canadians already held so many IOU&#8217;s that &#8216;I don&#8217;t think it prudent to offer&#8230;them at present.&#8217; In addition, he estimated the number of men under Maclean and Carleton at 1,900, although he did not believe them to be of very high quality. On that same day, Arnold wrote General Washington that his army of 650 (a figure that included about 100 ill, not mentioned in the letter to Montgomery) was &#8216;almost naked and in want of every necessity.&#8217;</P> <P>Finally, after leisurely reorganizing his army, Montgomery arrived at Point-Aux-Trembles on December 3. He had with him a paltry 350 men&#8211;just enough to replace those who had left with Colonel Enos, but hardly worth waiting for. Montgomery had judged it necessary to leave the rest behind as a garrison in Montr&eacute;al. Another problem was looming for the luckless force&#8211;the enlistments of the men in the expedition were due to expire on New Year&#8217;s Eve. If Arnold&#8217;s army of barely 1,000 men was going to accomplish anything, it would have to be soon.</P> <P>Fortunately, Montgomery and Arnold hit it off well and quickly devised a mutually agreeable plan. On December 5, Arnold wrote optimistically to Washington, telling him that the scheme was well underway. By that date, the colonists were once again encamped around Qu&eacute;bec.</P> <P>Montgomery tried to approach Qu&eacute;bec under a white flag of truce to parley but was driven off by British cannons. Jemima Warner then dressed in a formal gown that someone had obtained from one of the local residences and marched 800 yards through deep snows to deliver Montgomery&#8217;s terms. She was admitted into the city and delivered the surrender demand to Carleton, but he promptly tore it up and imprisoned her. Five days later, he released her but made her march out the gate between two rows of drummers, a gesture to indicate that, as a rebel, she was being drummed out of the empire.</P> <P>The siege continued. On December 11, the British guns managed to destroy a rebel artillery battery at St. Roch, killing a man and a woman. The latter was Jemima Warner, probably the first woman to die in combat for a country that still had yet to formally declare its independence.</P> <P>Arnold and Montgomery were awaiting only a stretch of favorable weather to launch the attack. In this case, &#8216;favorable&#8217; meant a blinding snowstorm through which some element of surprise might be obtained. The first apparent chance came on the evening of December 27. About 300 men were sent to feint against the riverside business district while the real attack would come from the Plains of Abraham, where the main force under Montgomery (who outranked Colonel Arnold) would scale the walls with ladders. Unfortunately for the Americans, the storm blew over before the attack was launched. Montgomery called it off, and the only rebel who got into the city was a deserter who promptly revealed as much as he knew. Montgomery and Arnold found it prudent to change their plan.</P> <P>Still, they needed a snowstorm to hide their movements. It appeared that the weather was acting as if its own term of enlistment was up soon&#8211;for days it was quiet and uncooperative. Then, on the night of December 30, a fierce Canadian storm brewed up out of the northwest. The final chapter of the invasion was about to be played out.</P> <P>At 2 a.m. on December 31, muster was called. Somewhat disgruntled, the men fell in. No one wanted to die on their last day in the army. Nonetheless, they followed the orders of their officers.</P> <P>The plan for the evening was even simpler than that of four nights ago. Montgomery would lead his men along the river from the west while Arnold&#8217;s larger force would come in from the east. In the middle of the business district, the two columns would meet and turn north, heading out of Lower Town and up a winding road to Upper Town.</P> <P>At the western edge of Lower Town, the British&#8211;forewarned by a deserter that the American attack would take place &#8216;on the first wild night&#8217;&#8211;had erected a feeble barricade manned by 50 British sailors and British and Canadian irregulars. The main armament consisted of a trio of 3-pounders, only one of which was kept loaded. Out of the swirling mist of snow the defenders spotted a body of men approaching cautiously from around Cape Diamond. Only 50 yards away the troops halted, and a few stepped forward to reconnoiter the position. A cry went out: &#8216;Men of New York, you will not fear to follow where your general leads! March on!&#8217; These were Montgomery&#8217;s last words. At that point, a sergeant named Hugh McQuarters brought a dramatic and sudden end to the western attack. Under orders from his captain, he fired off his one round of grapeshot.</P> <P>Horrified, the Americans watched as McQuarters&#8217; gunnery wiped out their three-man advance party. Montgomery; his aide-de-camp, Captain John Macpherson; and a battalion commander, Captain Jacob Cheeseman&#8211;three of the top men in command&#8211;were killed. Ten privates were also killed and a sergeant wounded. The next in command, Lt. Col. Donald Campbell, turned back with his men and raced pell-mell to safety. Montgomery&#8217;s attack was over. Rarely, if ever, has a single cannon shot been more effective in altering the course of history. The panicky British continued to fire for 10 more minutes, not realizing there was nothing left to shoot at.</P> <P>On the other side of Lower Town, Arnold had launched his attack as soon as he saw the three signal rockets Montgomery fired to let his compatriot know the western attack was beginning. Arnold had no way of knowing that only minutes later the brigadier would lie dead. He opened his attack as planned. He and his men struggled through the swiftly falling snow and toward another British barricade. The rebels&#8217; single artillery piece had been abandoned in a snowdrift, and Arnold had no choice but to order a frontal assault. Like Montgomery, he was in the lead. And, like his counterpart, he fell. A musketball tore into his left leg, lodging in his heel. He tried to continue but soon gave up, allowing two of his men to carry him out of the fight and to a Catholic hospital outside Qu&eacute;bec. Before leaving, however, he turned command over to the indomitable Daniel Morgan.</P> <P>Leaping to the forefront, Morgan provided the impetus that got his Virginia riflemen moving. That in turn gave the cowering New Englanders courage, and together they stormed the position. After several long minutes of heavy fighting (Arnold later erroneously wrote that it was an entire hour), the barricade was taken. Another loomed ahead, but it was unmanned, and the troops poured over it. Morgan was ready to race up Mountain Street into Upper Town, but his subordinates cautioned that it would be wiser to wait for Montgomery. Morgan argued but was eventually forced to give in. Whatever momentum the attack may have had was now lost.</P> <P>Carleton used the respite to reorganize his disordered troops. It was slowly becoming obvious that the threat to his right flank had disappeared, and he could now concentrate his men better. When Morgan finally got impatient and roused his men again, Carleton was ready.</P> <P>The Americans pulled themselves through the twisting streets leading to Upper Town as musket fire poured down on them from houses and barricades. The snow for which they had so ardently hoped also worked in favor of the defenders hidden behind their positions. Carleton, meanwhile, maneuvered some men into the unmanned barricade, which had been abandoned by the Americans. The colonists were cut off.</P> <P>The fight went on for three hours as the American column, stretched along the streets, was gradually broken down into smaller and smaller pockets. Ever defiant, Morgan simply refused to surrender and dared the British to come and take his sword. He eventually turned it over to a very frightened priest. Virtually the entire force was captured, except for those like Arnold who were wounded early and sent to the rear.</P> <P>Arnold himself endured the crude medical care of his day valiantly and reassured the Canadians that his troops had taken Lower Town and that the time was ripe to join the revolution. The Canadians were less than convinced. After dawn, Arnold got word that the British were moving toward the hospital. He tried to rouse some men for defense, but they responded with an apathy born of suffering, and little was done. Fortunately, Carleton became overly cautious and recalled his men, although there is no doubt their attack would have totally destroyed Arnold&#8217;s force had they pressed it.</P> <P>With that, the attack on Qu&eacute;bec frittered to an end. The total American casualties came to 454, of which 440 were in Arnold&#8217;s command. All 14 of the casualties in Montgomery&#8217;s force came from the single cannon shot. Arnold lost 35 troops killed, 33 wounded and 372 taken prisoner, including Daniel Morgan. (Aaron Burr seems to have been ill at the time of the attack, although Arnold later claimed in a letter that he had acquitted himself well both before and afterward.) British losses were a mere 20 killed and wounded. The fledgling American army had suffered its first defeat on the battlefield.</P> <P>The rest of the adventure was anti-climactic, if long and drawn out. On January 10, 1776, Arnold was promoted to brigadier general and given overall command of what remained of the rebel forces outside Qu&eacute;bec. He refused to quit the field and with a handful of men&#8211;just 50 to 75&#8211;put the city &#8216;under siege&#8217; again for the remainder of the winter while he recovered from his wound. The siege was, naturally, wholly ineffective, but Carleton decided to sit tight and await reinforcements as soon as the river became navigable. During an exchange of gunfire, which occurred intermittently throughout the siege, Suzannah Grier was shot and killed on April 13.</P> <P>Arnold was relieved on April Fool&#8217;s Day, 1776, by Brig. Gen. David Wooster, whose boorish behavior antagonized everyone, including Washington, who was miles away. Wooster was relieved on May 1 by Maj. Gen. John Thomas, who learned on the following day that 15 British ships were coming up the St. Lawrence to relieve the city. On May 5, he officially lifted the siege and was preparing his troops for an orderly withdrawal when the first three ships, bearing 400 British troops, approached Qu&eacute;bec and spotted the blue flag that Carleton had said he would fly as a signal that his garrison was still holding out. Once the first reinforcements had debarked, Carleton combined them with a roughly equal number of his own troops and led them toward Thomas&#8217; men, who panicked and fled, leaving much of their equipment behind. Qu&eacute;bec was now safe for the landing of fresh troops&#8211;a total of 9,000 British and 4,400 Hessian and Brunswick soldiers, under the overall command of Maj. Gen. John Burgoyne.</P> <P>Thomas and his ragged, starving troops retreated to Sorel, where he contacted smallpox on May 21. He died on June 2, and Brig. Gen. John Sullivan, who had just arrived with a column of New York troops, took overall command of the haggard army.</P> <P>Arnold, meanwhile, remained busy despite the blow to his pride over the loss of command. He was made commandant of Montr&eacute;al and, while serving in that capacity, led a small expedition that &#8212; mostly through bluff but also with a good bit of generalship&#8211;secured the release of hundreds of American prisoners from a larger British force. He then returned to Qu&eacute;bec, where Sullivan informed him of the arrival of thousands of the expected British reinforcements. In retrospect, it is obvious that the British would never have allowed Arnold to hold Qu&eacute;bec, and thus Canada, even had the American expedition been fully successful during the winter and even if Arnold had 2,000 men in the city. Finally realizing the hopelessness of the situation, Arnold agreed that it was time to quit Canada. With the fiasco clearly over, Arnold told Sullivan he would be content to be the last American to leave the country.</P> <P>The surviving Americans followed Montgomery&#8217;s route back down to Fort Ticonderoga. On the summer evening of June 18, the Canadian border town of St. Johns was burning fiercely along the waterfront, put to the torch by a retreating army. Between the banks of the Sorel River the remnants of the expedition rowed south toward safety. Only two Americans remained in St. Johns. When they heard the beating of British drums in the distance, the men shot their horses and one, Captain James Wilkinson, climbed into a canoe, grabbing a paddle. The second waited until his aide settled in, then pushed off the canoe and climbed in himself. That second man was Brig. Gen. Benedict Arnold, making good on his vow to be the last to leave Canada.</P> <P><br/>
+<hr size='1' noshade>This article was written by Lee Enderlin and originally published in the August 1999 issue of <i>Military History</i> magazine. For more great articles be sure to subscribe to <a href='/web/20160404111317/http://www.historynetshop.com/901mh1.html' target='_blank'><i>Military History</i></a> magazine today!</P></p>
+<h3 class="tags"><a href="/web/20160404111317/http://www.historynet.com/topics/17th-18th-century" rel="tag">17th - 18th Century</a>, <a href="/web/20160404111317/http://www.historynet.com/topics/american-revolutionary-war" rel="tag">American Revolutionary War</a>, <a href="/web/20160404111317/http://www.historynet.com/topics/historical-conflicts" rel="tag">Historical Conflicts</a></h3>
+<div class="clearfix"></div>
+</div>
+<!-- end .entry -->
+<div class="side-bar">
+<!-- /7211001/300x250-AdExchange -->
+<div id='div-gpt-ad-1454538700567-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1454538700567-0');});</script>
+</div>
+<header class="sidebar-widget-header">
+<span>Related Stories</span>
+</header>
+<ul class="related">
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/death-before-dishonor-the-samurai-of-japan.htm?utm_source=historynet&amp;utm_medium=related" title="Death Before Dishonor: The Samurai of Japan"> <div class="relImg"></div> </li>
+<b>Death Before Dishonor: The Samurai of Japan</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/spanish-civil-war-open-discussion.htm?utm_source=historynet&amp;utm_medium=related" title="Spanish Civil War &#8211; Open Discussion"> <div class="relImg"></div> </li>
+<b>Spanish Civil War &#8211; Open Discussion</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/scw_discussion.htm?utm_source=historynet&amp;utm_medium=related" title="SCW_Discussion"> <div class="relImg"></div> </li>
+<b>SCW_Discussion</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/charles-howard-a-wild-and-splendid-man.htm?utm_source=historynet&amp;utm_medium=related" title="Charles Howard: A Wild and Splendid Man"> <div class="relImg"><img width="164" height="140" src="/web/20160404111317im_/http://cdn.historynet.com/wp-content/uploads/2014/08/164x140xHOWARD9421205_pg28_600dpi-e14333477624621.jpg.pagespeed.ic.zVRGPkwK1j.jpg" class="attachment-related wp-post-image" alt="HOWARD9421205_pg28_600dpi-e1433347762462[1]"/></div> </li>
+<b>Charles Howard: A Wild and Splendid Man</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/jihad-war-to-the-knife.htm?utm_source=historynet&amp;utm_medium=related" title="Jihad: War to the Knife"> <div class="relImg"></div> </li>
+<b>Jihad: War to the Knife</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160404111317/http://www.historynet.com/napoleons-six-days.htm?utm_source=historynet&amp;utm_medium=related" title="Napoléon’s Six Days"> <div class="relImg"></div> </li>
+<b>Napoléon’s Six Days</b></a>
+</div>
+</ul>
+<div class="clearfix"></div>
+<p class="meta">Also featuring</p>
+<a href="/web/20160404111317/http://www.militarytimes.com/" target="_blank"><img src="/web/20160404111317im_/http://cdn.historynet.com/wp-content/uploads/2016/03/xmilitaryTimes-LOGO.png.pagespeed.ic.FBZS9cwte-.png"/></a>
+<div class="clearfix"></div>
+<!-- /7211001/300x250-HN-Default -->
+<div id='div-gpt-ad-1447448043579-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1447448043579-0');});</script>
+</div>
+</div>
+<div class="adspace">
+</div>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160404111317/http://www.facebook.com/sharer.php?u=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160404111317/http://twitter.com/share?url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160404111317/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160404111317/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm&amp;t=Invasion%20of%20Canada%20During%20the%20American%20Revolutionary%20War" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+</div>
+<div class="clearfix"></div>
+<!-- Here we load disqus comments -->
+<div class="dcl-disqus-thread" id="comments">
+<div id="disqus_thread">
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+var disqus_url='/web/20160404111317/http://www.historynet.com/invasion-of-canada-during-the-american-revolutionary-war.htm';var disqus_identifier='3035601 ';var disqus_container_id='disqus_thread';var disqus_domain='disqus.com';var disqus_shortname='historynet';var disqus_title="Invasion of Canada During the American Revolutionary War";var disqus_config=function(){var config=this;config.language='';config.callbacks.preData.push(function(){document.getElementById(disqus_container_id).innerHTML='';});config.callbacks.onReady.push(function(){var script=document.createElement('script');script.async=true;script.src='?cf_action=sync_comments&post_id=3035601';var firstScript=document.getElementsByTagName("script")[0];firstScript.parentNode.insertBefore(script,firstScript);});};
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var DsqLocal={'trackbacks':[],'trackback_url':"/web/20160404111317/http://www.historynet.com\/invasion-of-canada-during-the-american-revolutionary-war.htm\/trackback"};
+//]]></script>
+</div><!-- #homecontent -->
+</div>
+</div><!-- #core -->
+<!--script for MediaBong -->
+<script>var $=jQuery;var aB="<div style='margin: 30px;'><div id='mb_video_syncad' class='floating_banner no_video'></div></div><div id='mb_container'></div><div id='mb_video_sponso'><span></span></div>";var cats='<a href="/web/20160404111317/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents/george-washington" rel="category tag">George Washington</a>, <a href="/web/20160404111317/http://www.historynet.com/magazines/military_history" rel="category tag">Military History</a>';var gallery=($.inArray("Galleries",cats.replace(/<\/?[^>]+(>|$)/g,"").split(','))>-1);if(gallery){var pL=$('.entry').find('.imagecaptioneasy');var b=Math.floor(pL.length/3)-1;$(pL[b]).after(aB);}else{var pL=$('.entry').find('p');for(var i=1;i<=pL.length-1;i++){if(pL[i]&&pL[i+1]){if($(pL[i]).html().length>200&&$(pL[i+1]).html().length>200){$(pL[i]).after("<h1>"+aB+"</h1>");break;}}else{console.log('failed -- find big p');pL.sort(function(a,b){return $(b).html().length-$(a).html().length;});var sent=$(pL[0]).html().split('. ');$(pL[0]).html('');for(var s=0;s<=sent.length-1;s++){var e=(s==sent.length-1?'':'. ');var half=Math.floor(sent.length/2);var ad=(s==half?'</p>'+aB+'</p>':'');$(pL[0]).append(sent[s]+e+ad);}break;}}}</script>
+<script type="text/javascript">(function(){var sc=document.createElement('script');sc.src='/web/20160404111317/http://player.mediabong.net/se/575.js?url='+encodeURIComponent(document.location.href);sc.type='text/javascript';sc.async=true;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sc,s);})();</script>
+<!--END script for MediaBong -->
+</div>
+<div class="clerfix"></div>
+<div class="super-footer-wrap"> <!-- start .super-footer-wrap  -->
+<div class="super-footer">
+<div class="row small-collapse medium-collapse large-collapse">
+<div class="small-12 medium-3 columns">
+<h3 class="lead">MAGAZINES</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/american-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">American History</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/americas-civil-war?utm_source=historynet&amp;utm_medium=footer" target="_blank">America's Civil War</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/aviation-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">Aviation History</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/civil-war?utm_source=historynet&amp;utm_medium=footer" target="_blank">Civil War Times</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/military-history?utm_source=historynet&amp;utm_medium=footer" target="_blank">Military History</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/mhq?utm_source=historynet&amp;utm_medium=footer" target="_blank">MHQ</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/vietnam?utm_source=historynet&amp;utm_medium=footer" target="_blank">Vietnam</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/wild-west?utm_source=historynet&amp;utm_medium=footer" target="_blank">Wild West</a></li>
+<li><a href="/web/20160404111317/http://shop.historynet.com/collections/frontpage/products/world-war-ii?utm_source=historynet&amp;utm_medium=footer" target="_blank">World War II</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">SECTIONS</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160404111317/http://www.historynet.com/today-in-history">Today in History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/magazines/quiz">Daily Quiz</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/magazines/historynet-interviews">Interviews</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/magazines/homepage-peoplepersonalities">Personalities</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/magazines/book_reviews">Reviews</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/magazines/ask-mr-history">Ask Mr. History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/videos">Videos</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/galleries">Galleries</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">TOPICS</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/civil-war">Civil War</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/black-history">Black History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/womens-history">Women's History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/vietnam-war">Vietnam War</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/american-history-tag">American History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/vietnam">Vietnam</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/john-f-kennedy">John F. Kennedy</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/art">Art</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/military-history">Military History</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/topics/historical-figures">Historical Figures</a></li>
+</ul>
+</div>
+<div class="small-12 medium-3 columns">
+<h3 class="lead">ABOUT US</h3>
+<ul class="menu vertical">
+<li><a href="/web/20160404111317/http://www.historynet.com/contact-historynet-and-world-history-group">Contact Us</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/work-for-historynet">Work For HistoryNet</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/about-historynet">What is HistoryNet.com?</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/advertise-with-historynet-and-world-history-group">Advertising Inquries</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/heritage-travel-directory">Heritage Travel Directory</a></li>
+<li><a href="/web/20160404111317/http://www.historynet.com/historynet-privacy-policy">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="row small-collapse medium-collapse large-collapse">
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+<div class="small-12 medium-3 columns">
+</div>
+</div>
+</div><!-- end .super-footer-wrap  -->
+<div id="footer">
+<div class="row">
+<div class="medium-5 columns">
+<div class="textwidget"><img src="/web/20160404111317im_/http://cdn.historynet.com/wp-content/uploads/2015/03/xhn-260x70b.png.pagespeed.ic.RSj4a6GZM4.png">
+<br>
+<p>HistoryNet.com is brought to you by World History Group, the world's largest publisher of history magazines. HistoryNet.com contains daily features, photo galleries and over 5,000 articles originally published in our various magazines.
+</p></div>
+</div>
+<div class="medium-5 columns">
+<ul class="social-ft">
+<li><a href="/web/20160404111317/https://www.facebook.com/HistoryNet/" target="_blank"><i class="fa fa-facebook"></i> </a></li>
+<li><a href="/web/20160404111317/https://twitter.com/HistoryNet" target="_blank"><i class="fa fa-twitter"></i> </a></li>
+<li><a href="/web/20160404111317/https://www.youtube.com/channel/UCzdWdL_xC5qk07WWOtnXSWA" target="_blank"><i class="fa fa-youtube"></i> </a></li>
+<li><a href="/web/20160404111317/https://www.instagram.com/historynetofficial/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+</ul>
+</div>
+<!-- <div class="medium-3 columns">
+			</div>
+-->
+<div id="copyright">
+<div>
+<p>&copy; 2016 HistoryNet</p>
+</div>
+<div class="fr">
+</div>
+</div> <!-- end #copyright  -->
+</div><!--  end .cotainer  -->
+</div><!-- end #footer  -->
+<div class="scrollTo_top" style="display: block">
+<a title="Scroll to top" href="#">
+<i class="fa fa-arrow-circle-o-up"></i>
+</a>
+</div>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-1768379-1','auto');ga('send','pageview');</script>
+<script type='text/javascript'>//<![CDATA[
+jQuery(function($){if(jQuery('.shortcode-tabs').length){jQuery('.shortcode-tabs').each(function(){var tabCount=1;jQuery(this).children('.tab').each(function(index,element){var idValue=jQuery(this).parents('.shortcode-tabs').attr('id');var newId=idValue+'-tab-'+tabCount;jQuery(this).attr('id',newId);jQuery(this).parents('.shortcode-tabs').find('ul.tab_titles').children('li').eq(index).find('a').attr('href','#'+newId);tabCount++;});var thisID=jQuery(this).attr('id');jQuery(this).tabs({fx:{opacity:'toggle',duration:200}});});}if(jQuery('.shortcode-toggle').length){jQuery('.shortcode-toggle').each(function(){var toggleObj=jQuery(this);toggleObj.closedText=toggleObj.find('input[name="title_closed"]').attr('value');toggleObj.openText=toggleObj.find('input[name="title_open"]').attr('value');if(toggleObj.find('a.more-link.read-more').length){toggleObj.readMoreText=toggleObj.find('a.more-link.read-more').text();toggleObj.readLessText=toggleObj.find('a.more-link.read-more').attr('readless');toggleObj.find('a.more-link.read-more').removeAttr('readless');toggleObj.find('a.more-link').click(function(){var moreTextObj=jQuery(this).next('.more-text');moreTextObj.animate({opacity:'toggle',height:'toggle'},300).css('display','block');moreTextObj.toggleClass('open').toggleClass('closed');if(moreTextObj.hasClass('open')){jQuery(this).text(toggleObj.readLessText);}if(moreTextObj.hasClass('closed')){jQuery(this).text(toggleObj.readMoreText);}return false;});}toggleObj.find('input[name="title_closed"]').remove();toggleObj.find('input[name="title_open"]').remove();toggleObj.find('h4.toggle-trigger a').click(function(){toggleObj.find('.toggle-content').animate({opacity:'toggle',height:'toggle'},300);toggleObj.toggleClass('open').toggleClass('closed');if(toggleObj.hasClass('open')){jQuery(this).text(toggleObj.openText);}if(toggleObj.hasClass('closed')){jQuery(this).text(toggleObj.closedText);}return false;});});}});
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var pollsL10n={"ajax_url":"/web/20160404111317/http://www.historynet.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+//]]></script>
+<script src="/web/20160404111317js_/http://cdn.historynet.com/wp-content,_plugins,_wp-polls,_polls-js.js,qver==2.72+wp-content,_themes,_superblog,_js,_superfish.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.hoverIntent.minified.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.prettyPhoto.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_ownScript.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_mobile.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider-min.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider.start.single.js,qver==4.2.2+wp-includes,_js,_comment-reply.min.js,qver==4.2.2+wp-content,_plugins,_classic-facebook-feed,_js,_FeedEk.js,qver==1.0.0.pagespeed.jc.2iDbTNey0g.js"></script><script>eval(mod_pagespeed_3T_iBnaLzL);</script>
+<script>eval(mod_pagespeed_oO0y8pm9Bd);</script>
+<script>eval(mod_pagespeed_RQIgcGkRcG);</script>
+<script>eval(mod_pagespeed_tvnFSZ4G7E);</script>
+<script>eval(mod_pagespeed_lMCQI6PBMA);</script>
+<script>eval(mod_pagespeed_TkkTvnLpXP);</script>
+<script>eval(mod_pagespeed_YoVNVRVl0V);</script>
+<script>eval(mod_pagespeed_Lt_LjrXBWI);</script>
+<script>eval(mod_pagespeed_O883pN9VWD);</script>
+<script>eval(mod_pagespeed_2uqUj3WKVU);</script>
+<script type='text/javascript'>//<![CDATA[
+var cointent_tracking_data={"articleId":"3035601","publisherId":"1293","gated":""};
+//]]></script>
+<script type='text/javascript' src='/web/20160404111317js_/http://connect.cointent.com/cointent-tracker.0.2.js?ver=4.2.2'></script>
+<script type="text/javascript">var disqus_shortname="historynet";if(typeof ds_loaded=="undefined"){var ds_loaded=false;}function loadDisqus(){var disqus_div=document.getElementById("disqus_thread");var top=disqus_div.offsetTop;var disqus_data=disqus_div.dataset;if(!ds_loaded&&(window.scrollY||window.pageYOffset)+window.innerHeight>top){ds_loaded=true;for(var key in disqus_data){if(key.substr(0,6)=="disqus"){window["disqus_"+key.replace("disqus","").toLowerCase()]=disqus_data[key];}}var dsq=document.createElement("script");dsq.type="text/javascript";dsq.async=true;dsq.src="http://"+window.disqus_shortname+".disqus.com/embed.js";if(document.getElementById("dcl-hidden-div")){document.getElementById("dcl-hidden-div").innerHTML="Loading...";}(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(dsq);}}var disqus_div_new=document.getElementById("disqus_thread");var divExists=disqus_div_new!=null;if(document.body.scrollHeight<window.innerHeight){loadDisqus();}else if(divExists){window.onscroll=function(){loadDisqus();}}</script><script type='text/javascript'>//<![CDATA[
+var hash=window.location.hash;var disqus_shortname='historynet';if(hash!==''){var ds_loaded=true;var dcl_loaded=1;(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.'+'disqus.com'+'/'+'embed'+'.js'+'?pname=wordpress&pver=2.84';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();}
+//]]></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8e5c801d03","applicationID":"8778079","transactionName":"YVMDYEJTWUcDU00LX1gZNEZZHV5aBlVBTEBeRg==","queueTime":0,"applicationTime":3,"atts":"TRQAFgpJSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: /web/20160404111317/http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Database Caching 3/22 queries in 0.028 seconds using memcached
+Object Caching 1846/1875 objects using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: cdn.historynet.com
+
+ Served from: www.historynet.com @ 2016-04-03 14:02:02 by W3 Total Cache -->

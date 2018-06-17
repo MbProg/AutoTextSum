@@ -1,0 +1,79 @@
+Above: The warship Mary Rose as depicted in the Anthony Roll, a record of ships in the English Tudor navy produced during the 1540s (Gerry Bye, Wikimedia Commons)
+It takes effort to learn a new language.
+But once you’ve mastered it, it can open up a world of information.
+Isotopes—atoms of the same element that have different numbers of neutrons—are a lot like a foreign language.
+Once you know how to interpret them, you can learn a lot more about the world around you.
+At a very basic level, atoms tell you what things are made of.
+Water, for example, is made of two hydrogen atoms and one oxygen atom.
+But atoms have other stories to tell, too.
+Their isotopes can shed light on the history of Earth’s climate, the lives of your ancestors, and even who is killing endangered animals.
+Oxygen isotopes reveal the history of Earth’s climate
+Atoms of the same element always have the same number of protons.
+But the number of neutrons can vary.
+For example, all stable oxygen atoms have 8 protons.
+However, while some have 8 neutrons, others have 9 or 10.
+There are three naturally-occurring isotopes of hydrogen.
+Protium (hydrogen-1), has one proton and no neutrons).
+Deuterium (hydrogen-2), has one proton and one neutron.
+And tritium (hydrogen-3), has one proton and two neutrons (Dirk Hünniger, Wikimedia Commons)
+These different oxygen isotopes all behave the same way in a chemical reaction.
+However, they don’t always behave the same way physically.
+For instance, consider the isotopes oxygen-16 (8 protons plus 8 neutrons gives an atomic weight of 16) and oxygen-18 (8 protons plus 10 neutrons).
+While the ratio between oxygen-16 and oxygen-18 is fairly stable in ocean water, it can vary greatly in ice.
+Water molecules that contain oxygen-18 are heavier than water molecules that contain oxygen-16.
+As a result, when water evaporates, molecules that contain oxygen-18 tend to evaporate more slowly.
+And when evaporated water condenses again, water molecules containing oxygen-18 tend to condense more quickly—much more quickly if temperatures are very cold.
+As a result, the concentration of oxygen-18 in very old ice can provide information on prehistoric patterns of heating and cooling.
+Ice that has evaporated and condensed many times contains a higher concentration of oxygen-18 than ice that has not evaporated and condensed as often.
+For example, during periods when temperatures frequently rise above 0° C, sea ice evaporates and recondenses more often.
+As a result, the ice will have a higher concentration of oxygen-18.
+So when they wanted to confirm the dates of the last ice age, climate scientists measured the concentration of oxygen-18 in the ice sheet that covers Greenland.
+They were able to determine that the Earth’s temperature cooled down significantly about 110,000 years ago and warmed up again about 20,000 years ago.
+Did you know?
+In the 1500s, a return fishing trip from England to Iceland took three to six months.
+A return trip to Newfoundland took even longer.
+Carbon isotopes uncover Renaissance history
+In 1545, while attempting to repel a French invasion, the English warship Mary Rose sank.
+When it was brought to the surface over 400 years later, the ship still contained thousands of dried cod bones.
+English sailors ate a lot of cod in the 1500s!
+But where did those fish come from?
+Were they caught nearby or were they transported long distances?
+Carbon isotopes helped solve that mystery!
+Like oxygen-16 and oxygen-18, the ratio of carbon-12 to carbon-13 in Earth’s atmosphere is fairly constant.
+But depending on where they grow and live, plants and the animals that eat them accumulate different ratios of these two isotopes.
+Mass spectrometry
+A mass spectrometer in a laboratory (Nadina Wiórkiewicz, Wikimedia Commons)
+Researchers determine the concentration of different isotopes in a sample by using a process called mass spectrometry.
+First, molecules are heated and vapourized.
+Next, electrons are removed to turn the molecules into electrically charged ions.
+The resulting ions are accelerated through a magnetic field.
+As they pass through the magnetic field, lighter ions—isotopes with fewer neutrons—will change direction more more than heavier ions.
+By comparing the current produced by ions that follow different paths, a mass spectrometer can be used to determine the relative concentrations of two different isotopes in a sample.
+Learn More
+The Mass Spectrometer
+(Jim Clark, Chemguide, 2009)
+All plants absorb carbon dioxide from the air.
+Through photosynthesis, they use the carbon to create the carbohydrates they need for energy.
+Grasses that are native to temperate climates build carbohydrates mostly out of carbon-12 and release most of the carbon-13 back into the atmosphere.
+Grasses that grow closer to the equator incorporate both isotopes of carbon into their carbohydrates.
+So by analyzing the ratio of carbon-12 (with 6 neutrons) to carbon-13 (with 7 neutrons) in a piece of bone, scientists can learn a lot about what an animal ate and where it came from.
+This is especially true for animals that live on land, but isotopes can still say a lot about where fish came from.
+Among other tests, archaeologists measured the ratio of carbon-12 to carbon-13 in the cod bones they found on the Mary Rose and compared them to other cod caught around the same time.
+Many of the cod bones had isotope ratios unlike those found in cod caught near England.
+But they had very similar isotope ratios to cod caught as far away as Iceland.
+One sample even showed similarities to cod caught near Newfoundland.
+That’s how far 16th-century England was prepared to send ships to find food for its growing navy!
+Did you know?
+Radioactive carbon has eight neutrons.
+But it eventually loses one neutron to become carbon-12 or carbon-13.
+Crime-solving isotopes
+Isotopes can even be used to catch ivory poachers.
+As conservationists work to protect the endangered African elephant, poachers continue to kill elephants and sell the ivory in their tusks on the black market.
+Gathering evidence to convict a poacher can be difficult, especially since it is legal to sell small amounts of ivory from certain countries.
+Elephants that live in different parts of Africa have slightly different diets.
+As a result, they have different ratios of carbon, oxygen, and hydrogen isotopes in their bodies.
+Researchers have analyzed hundreds of pieces of ivory and created a map linking specific ratios to different locations.
+So it is now possible to tell where an ivory sample came from by analyzing the isotopes of carbon, nitrogen, and hydrogen it contains.
+In fact, scientists can trace ivory back to its source with 95% confidence.
+Identifying where a piece of ivory came from can help prosecute poachers, and help elephant populations recover.
+As you learn to interpret the stories that isotopes have to tell, you begin to understand how scientists can use them to better understand the past, and even help build a better future.

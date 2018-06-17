@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: /web/20160330145927/http://ogp.me/ns#" prefix="og: /web/20160330145927/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: /web/20160330145927/http://ogp.me/ns#" prefix="og: /web/20160330145927/http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: /web/20160330145927/http://ogp.me/ns#" prefix="og: /web/20160330145927/http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=347;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta charset="utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-892.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+<meta name="robots" content="index, follow"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script>
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.defineSlot('/7211001/300x250-AdExchange',[300,250],'div-gpt-ad-1454538700567-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1447448043579-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x250-HN-Default',[300,250],'div-gpt-ad-1456964279291-0').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1447448043579-1').addService(googletag.pubads());googletag.defineSlot('/7211001/300x600-HN-Site-Wide',[300,600],'div-gpt-ad-1456967562301-0').addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>
+<!-- Begin comScore Tag -->
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20782744"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"/web/20160330145927/https://sb":"/web/20160330145927/http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+<noscript>
+<img src="/web/20160330145927im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=20782744&amp;cv=2.0&amp;cj=1"/>
+</noscript>
+<!-- End comScore Tag -->
+<script type="text/javascript" src="/web/20160330145927js_/http://s.ntv.io/serve/load.js" async></script>
+<!-- Begin mbid Tag -->
+<script id="mbid-nucleus" src="/web/20160330145927js_/http://c.mbid.io/tags/h" data-bsm-flag="true" data-bsm-version="v3" data-bsm-sizes="300x250 300x600" data-bsm-pub="historynet" data-bsm-pub-zone="historynet.com/ros" data-bsm-event-host="//b.mbid.io"></script>
+<!-- End mbid Tag -->
+<style>@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(/web/20160330145927im_/http://fonts.gstatic.com/s/raleway/v10/JbtMzqLaYbbbCL9X6EvaIy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(/web/20160330145927im_/http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(/web/20160330145927im_/http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - /web/20160330145927/https://yoast.com/wordpress/plugins/seo/ -->
+<title>President William McKinley: Assassinated by an Anarchist | HistoryNet</title>
+<link rel="canonical" href="http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="President William McKinley: Assassinated by an Anarchist | HistoryNet"/>
+<meta property="og:description" content="Anarchist Leon Czolgosz came to Buffalo, New York, with a mission. He believed that government was evil, and he planned to stamp out that evil, beginning at the top."/>
+<meta property="og:url" content="http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<meta property="article:publisher" content="https://www.facebook.com/HistoryNet-121405527876395/"/>
+<meta property="article:tag" content="American History"/>
+<meta property="article:tag" content="Historical Figures"/>
+<meta property="article:tag" content="People"/>
+<meta property="article:tag" content="Politics"/>
+<meta property="article:section" content="American History"/>
+<meta property="article:published_time" content="2001-10-01T20:06:21+00:00"/>
+<meta property="article:modified_time" content="2011-11-08T12:19:26+00:00"/>
+<meta property="og:updated_time" content="2011-11-08T12:19:26+00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="Anarchist Leon Czolgosz came to Buffalo, New York, with a mission. He believed that government was evil, and he planned to stamp out that evil, beginning at the top."/>
+<meta name="twitter:title" content="President William McKinley: Assassinated by an Anarchist | HistoryNet"/>
+<meta name="twitter:site" content="@HistoryNet"/>
+<meta name="twitter:creator" content="@HistoryNet"/>
+<!-- / Yoast SEO plugin. -->
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Feed" href="http://www.historynet.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; Comments Feed" href="http://www.historynet.com/comments/feed"/>
+<link rel="alternate" type="application/rss+xml" title="HistoryNet &raquo; President William McKinley: Assassinated by an Anarchist Comments Feed" href="http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm/feed"/>
+<script type="text/javascript">window._wpemojiSettings={"baseUrl":"/web/20160330145927/http://s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"/web/20160330145927/http://www.historynet.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+<link rel='stylesheet' id='aqpb-view-css-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/aqua/assets/css/A.aqpb-view.css,qver=4.2.2.pagespeed.cf.3IrwmHA7Ng.css' type='text/css' media='all'/>
+<style id='wds_frontend-css' media='all'>.wds_more{font-size:12px}div[id^="wds_container"] *{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;line-height:1}div[id^="wds_container"] p{padding:0!important;margin:0!important}.wds_layer a,.wds_layer a:hover{color:inherit!important;font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;text-decoration:none}.wds_loading_img{border:none!important;float:none;width:50px;animation:spin 2.5s infinite linear;-moz-animation:spin 2.5s infinite linear;-o-animation:spin 2.5s infinite linear;-webkit-animation:spin 2.5s infinite linear}.wds_loading{text-align:center}div[id^="wds_container"] .wds_btn_cont{height:100%;left:0;position:absolute;top:0;vertical-align:middle;width:100%}div[id^="wds_container"] .wds_contTableCell{display:table-cell}div[id^="wds_container"] .wds_contTable{display:table}div[id^="wds_container"] .wds_left_btn_cont,div[id^="wds_container"] .wds_right_btn_cont,div[id^="wds_container"] .wds_pp_btn_cont{display:inline-block;position:relative;text-align:center;vertical-align:middle;z-index:16}div[id^="wds_container"] .wds_left_btn_cont{margin-left:10px}div[id^="wds_container"] .wds_right_btn_cont{margin-right:10px}@-webkit-keyframes wdszoom0 { 100% { background-size: 170%; }}@-webkit-keyframes wdszoom70 { 100% { background-size: 100%; }}@-moz-keyframes wdszoom0 { 100% { background-size: 170%; }}@-moz-keyframes wdszoom70 { 100% { background-size: 100%; }}@keyframes wdszoom0 { 100% { background-size: 170%; }}@keyframes wdszoom70 { 100% { background-size: 100%; }}</style>
+<link rel='stylesheet' id='wds_effects-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/A.wds_effects.css,qver=1.0.8.pagespeed.cf.eFCRIpN5sL.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='wds_font-awesome-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/plugins/slider-wd/css/font-awesome-4.3.0/A.font-awesome.css,qver=4.3.0.pagespeed.cf.HpcIsdYD5q.css' type='text/css' media='all'/>
+<style id='wp-polls-css' media='all'>.wp-polls-archive{}.wp-polls,.wp-polls-form{}.wp-polls ul li,.wp-polls-ul li,.wp-polls-ans ul li{text-align:left;background-image:none;display:block}.wp-polls ul,.wp-polls-ul,.wp-polls-ans ul{text-align:left;list-style:none;float:none}.wp-polls ul li:before,.wp-polls-ans ul li:before,#sidebar ul ul li:before{content:''}.wp-polls IMG,.wp-polls LABEL,.wp-polls INPUT,.wp-polls-loading IMG,.wp-polls-image IMG{display:inline;border:0px;padding:0px;margin:0px}.wp-polls-ul{padding:0px;margin:0px 0px 10px 10px}.wp-polls-ans{width:100%;filter: alpha(opacity=100);-moz-opacity:1;opacity:1}.wp-polls-loading{display:none;text-align:center;height:16px;line-height:16px}.wp-polls-image{border:0px}.wp-polls .Buttons{border:1px solid #c8c8c8;background-color:#f3f6f8}.wp-polls-paging a,.wp-polls-paging a:link{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:visited{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:hover{border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging a:active{padding:2px 4px 2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging span.pages{padding:2px 4px 2px 4px;margin:2px 2px 2px 2px;color:#000;border:1px solid #000;background-color:#fff}.wp-polls-paging span.current{padding:2px 4px 2px 4px;margin:2px;font-weight:bold;border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging span.extend{padding:2px 4px 2px 4px;margin:2px;border:1px solid #000;color:#000;background-color:#fff}</style>
+<style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background-image:url(/web/20160330145927im_/http://cdn.historynet.com/wp-content/plugins/wp-polls/images/default/pollbg.gif);border:1px solid #c8c8c8}</style>
+<link rel='stylesheet' id='cointent-wp-plugin-css' href='/web/20160330145927cs_/http://connect.cointent.com/style.css?ver=4.2.2' type='text/css' media='all'/>
+<link rel='stylesheet' id='parent-style-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/themes/superblog/A.style.css,qver=4.2.2.pagespeed.cf.eteQb27wQ2.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='styles-min-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/themes/superblog-child/assets/css/A.style.min.css,qver=4.2.2.pagespeed.cf.HRYW6Qz9dL.css' type='text/css' media='all'/>
+<style id='default_style-css' media='all'></style>
+<link rel='stylesheet' id='shortcodes-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css,qver=4.2.2.pagespeed.cf.eivA_VCL_f.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='fontawesome-css' href='/web/20160330145927cs_/http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=1.3.9' type='text/css' media='all'/>
+<!--[if IE 7]>
+<link rel='stylesheet' id='fontawesome-ie-css'  href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css?ver=1.3.9' type='text/css' media='all' />
+<![endif]-->
+<style id='plugin_css-css' media='all'>#newsFeed{width:100%;height:auto;padding:0px 3px 3px 5px;margin-top:3px auto}ul.feedEkList{list-style:none;padding:10px;margin:0px}ul.feedEkList li{border-bottom:1px solid #d3cad7;padding-bottom:15px}h1.itemTitle{margin-bottom:10px}.itemTitle a{text-decoration:none}.itemContent{padding:1px 3px 3px 3px;color:#3e3e3e}.itemPoston{float:left;margin-right:10px;font-size:13px}.itemDate{font-size:13px;color:#666}.itemContent img{float:left;margin:0 20px 0 0}.itemBtn{background-color:#3a5795;border-radius:2px;color:#fff;float:right;padding:3px 8px;text-decoration:none}.itemBtn:hover{text-decoration:none;color:#fff}.itemClear{clear:both}</style>
+<link rel='stylesheet' id='tabby.css-css' href='/web/20160330145927cs_/http://cdn.historynet.com/wp-content/plugins/tabby-responsive-tabs/css/A.tabby.css,qver=1.2.1.pagespeed.cf.aIEY0mYxoY.css' type='text/css' media='all'/>
+<style>.fa-hidden{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.rtl .fa-hidden{left:10000px}.fa-showtext{margin-right:5px}</style>
+<script src="/web/20160330145927js_/http://cdn.historynet.com/wp-includes,_js,_jquery,_jquery.js,qver==1.11.2+wp-includes,_js,_jquery,_jquery-migrate.min.js,qver==1.2.1+wp-content,_plugins,_slider-wd,_js,_jquery.mobile.js,qver==1.0.8+wp-content,_themes,_superblog-child,_assets,_js,_scripts.min.js,qver==4.2.2.pagespeed.jc.HwM386Kdf4.js"></script><script>eval(mod_pagespeed_RRVdbBC0pu);</script>
+<script>eval(mod_pagespeed_Hf0$z$LmEX);</script>
+<script>eval(mod_pagespeed_98HfFSFkSU);</script>
+<script>eval(mod_pagespeed_9MYB8RFAqS);</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.historynet.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.historynet.com/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.2.2"/>
+<link rel='shortlink' href='http://www.historynet.com/?p=3032096'/>
+<meta property="og:title" content="President William McKinley: Assassinated by an Anarchist"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://cdn.historynet.com/wp-content/themes/historynet/images/redesign/HistoryNetComlogo.gif"/>
+<meta property="og:url" content="http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm"/>
+<meta property="og:description" content="Anarchist Leon Czolgosz came to Buffalo, New York, with a mission. He believed that government was evil, and he planned to stamp out that evil, beginning at the top."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="HistoryNet"/>
+<!-- Themnific Shortcodes CSS -->
+<link href="/web/20160330145927cs_/http://cdn.historynet.com/wp-content/themes/superblog/functions/css/A.shortcodes.css.pagespeed.cf.yf0g4U5MBA.css" rel="stylesheet" type="text/css"/>
+<!-- Themnific Styling -->
+<style type="text/css">#header,#navigation,.nav li ul,ul.social-menu .social-menu-more li,.flexcarousel ul.slides li,#hometab,.postinfo,.widgetable,ul.products li.product{background-color:#fff}.nav>li>ul:after{border-color:#fff transparent}#main-nav>li>a,.searchform,ul.social-menu li{border-color:#fff!important}.woocommerce-message,.woocommerce-error,.woocommerce-info{background:#fff!important}#footer,.body2,h2.widget_spec,.imgwrap,#topnav,.maso,.mainflex .videoinside{background-color:#32373b}.socialtrigger a:hover,.socialtrigger a.active,.overrating,.meta_more a:hover,.sf-sub-indicator,span.score,.flexslider a.flex-prev,.flexslider a.flex-next,.ratingbar,#sidebar p input[type="submit"],span.ribbon,a#triggernav,a#triggernav-sec,a.fromhome,a.mainbutton,a.itembutton,.page-numbers.current,a.comment-reply-link,#submit,#comments .navigation a,.tagssingle a,.contact-form .submit,.intro,li.main h2,.plan-bottom a,.scrollTo_top a,.gallery-item,submit{background-color:#fa0505}h3 a i,h4 a i,#core .meta_more a,#content .meta_more a,a.moreposts,.more a.fr,#content .entry a,li ul li.current-menu-item a,#core a.add_to_cart_button{color:#fa0505}h2.widget,h2.widget_spec,.meta_more a,#serinfo-nav li.current a,.woocommerce a.button{border-color:#fa0505!important}#main-nav>li>a:hover,#main-nav>li.current-menu-ancestor>a,#main-nav>li.current-menu-item>a,#main-nav>li.sfHover>a,#main-nav>li.current_page_item>a,#main-nav>li.current-menu-item>a,.page-numbers.current,.woocommerce a.button:hover{background-color:#fa0505!important}body,#navigation,.social-menu-more{background-color:#fafafa}.body1 a,a:link,a:visited,.nav li ul li a{color:#393847}span>a.moreposts,ul#serinfo-nav li a{color:#393847!important}a:hover,.body1 a:hover{color:#fa0505!important}#sec-nav>li>a,#footer a{color:#fff}.body2 a:hover,p.body2 a:hover,#sec-nav>li>a:hover{color:#ccc!important}.woocommerce ul.products,#navigation,#header,.aq-block,.fblock,ul#serinfo,.postinfo,.postinfo span,.widgetable,.related,#hometab,h2.leading,.postauthor_alt{border-color:#ededed!important}body,input,textarea,input checkbox,input radio,select,file,h3.sd-title{font:400 13px/1.8em Roboto;color:#141414}.body2,#footer,.searchformhead>input.s{font:400 12px/1.8em Roboto;color:#eee}.ratingblock h2,.ratingblock h3,.ratingblock p,#footer h2,.body2 h2,.body2 h3{color:#eee}.intro h1,.intro h1 a,a.itembutton,a.mainbutton,.page-numbers.current{color:}h1,h2.post{font:400 50px/1.0em Roboto;color:#2e373f}h2.widget,.meta_more a,a.morebutton,ul#serinfo-nav li a{font:700 13px/1.2em Roboto;color:#3d3d3d}h2{font:700 28px/1.2em Roboto;color:#3d3d3d}h3,h3#reply-title,#respond h3,.comment-author cite{font:700 25px/1.0em Roboto;color:#222}h4,li.product h3,.woocommerce .upsells.products h2,.woocommerce .related.products h2,.woocommerce ul.cart_list li a,.woocommerce ul.product_list_widget li a,.woocommerce-page ul.cart_list li a,.woocommerce-page ul.product_list_widget li a{font:400 14px/1.5em Roboto;color:#222}h5,p.meta,.meta a{font:400 11px/1.5em Roboto;color:#999}h6{font:400 11px/1.5em Roboto;color:#999}#main-nav>li>a,.searchform input.s,.woocommerce a.button{font:700 13px/1.0em Raleway;color:#000}ul.social-menu li a{font:700 13px/1.0em }.tab-post small a,.taggs a{color:#141414}</style>
+<style>.adspace:after{content:" ";display:table;clear:both}@media (max-width:1096px){#div-gpt-ad-1447803615327-0{display:none}.ad-cont{text-align:center}#div-gpt-ad-1447448043579-0{float:none!important;display:inline-block}}ul.related{padding-bottom:0;margin-bottom:15px}ul.related li a{font-weight:800!important}ul.related li{width:100%!important;float:none!important;padding:0!important}ul.related li:last-child{border-bottom:none!important}ul.related li:last-child h4{margin-bottom:0}.side-bar h2{display:block;text-align:center;background:#dcdcdc;text-transform:uppercase;font-size:16px;font-weight:800;padding:12px 0;margin:0;margin-top:15px}.side-bar h4{margin:0 0 10px 0}</style></head>
+<body class="single single-post postid-3032096 single-format-standard upper" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm";
+
+var firstYear = 1996;
+var displayDay = "30";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160330145927" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20160126030933/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="26 Jan 2016">JAN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 14:59:27 Mar 30, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20160430181323/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="30 Apr 2016"><strong>APR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20160329024728/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="2:47:28 Mar 29, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 14:59:27 Mar 30, 2016">30</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160430181323/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="18:13:23 Apr 30, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150323062736/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="23 Mar 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 14:59:27 Mar 30, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160330145927*/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm" title="See a list of every capture for this URL">42 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Apr 08 - 7 Oct 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000202000501_2009:-1:000000000000_2010:-1:000000000001_2011:-1:000000000011_2012:-1:000000000100_2013:-1:000000000100_2014:-1:000000001111_2015:-1:001002002110_2016:2:303100053100" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="header" class="" itemscope itemtype="http://schema.org/WPHeader">
+<div id="topnav">
+<div class="container">
+<a id="triggernav-sec" href="#">MENU</a>
+<ul id="sec-nav" class="nav custom-nav"><li id="menu-item-13694790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694790"><a href="/web/20160330145927/http://www.historynet.com/american-history">American History</a></li>
+<li id="menu-item-13694789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694789"><a href="/web/20160330145927/http://www.historynet.com/americas-civil-war">America&#8217;s Civil War</a></li>
+<li id="menu-item-13694787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694787"><a href="/web/20160330145927/http://www.historynet.com/aviation-history">Aviation History</a></li>
+<li id="menu-item-13694788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694788"><a href="/web/20160330145927/http://www.historynet.com/civil-war-times">Civil War Times</a></li>
+<li id="menu-item-13694786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694786"><a href="/web/20160330145927/http://www.historynet.com/military-history">Military History</a></li>
+<li id="menu-item-13694785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694785"><a href="/web/20160330145927/http://www.historynet.com/mhq">MHQ</a></li>
+<li id="menu-item-13694784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694784"><a href="/web/20160330145927/http://www.historynet.com/vietnam">Vietnam</a></li>
+<li id="menu-item-13694783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694783"><a href="/web/20160330145927/http://www.historynet.com/wild-west">Wild West</a></li>
+<li id="menu-item-13694782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13694782"><a href="/web/20160330145927/http://www.historynet.com/worldwar2">World War II</a></li>
+</ul>
+<span class="fr visfix"></span> </div>
+</div>
+<div class="clearfix"></div>
+<div id="navigation_wrap">
+<nav id="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="post">
+<div class="nav-logo">
+<a class="logo-link" href="/web/20160330145927/http://www.historynet.com/"></a>
+<a id="triggernav" href="#">MENU</a>
+</div>
+<h1 class="post-title">President William McKinley: Assassinated by an Anarchist</h1>
+<ul id="main-nav" class="nav custom-nav"><li id="menu-item-13697640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697640"><a href="/web/20160330145927/http://www.historynet.com/videos">Videos</a></li>
+<li id="menu-item-13698760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13698760"><a href="/web/20160330145927/http://www.historynet.com/galleries">Galleries</a></li>
+<li id="menu-item-13697637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13697637"><a href="/web/20160330145927/http://www.historynet.com/today-in-history">Today in History</a></li>
+<li id="menu-item-13699434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13699434"><a href="/web/20160330145927/http://www.historynet.com/history-trivia-quiz">Daily Quiz</a></li>
+<li id="menu-item-13697731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13697731"><a href="/web/20160330145927/http://www.historynet.com/magazines/ask-mr-history">Ask Mr. History</a></li>
+<li id="menu-item-13697636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13697636"><a title="Subscribe" href="/web/20160330145927/http://shop.historynet.com/?utm_source=historynet&amp;utm_medium=nav">Subscribe</a></li>
+</ul> <div class="menu-right">
+<form class="searchform" method="get" action="/web/20160330145927/http://www.historynet.com/">
+<input type="text" name="s" class="s" size="30" value="Search..." onfocus="if (this.value = '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}"/><button class='searchSubmit'><i class="fa fa-search"></i></button>
+</form><ul class="social-menu">
+<li class="sprite-facebook"><a target="_blank" class="mk-social-facebook" title="Facebook" href="/web/20160330145927/https://www.facebook.com/HistoryNet-121405527876395/"></a></li>
+<li class="sprite-twitter"><a target="_blank" class="mk-social-twitter-alt" title="Twitter" href="/web/20160330145927/https://twitter.com/HistoryNet"></a></li>
+<li class="sprite-youtube"><a target="_blank" class="mk-social-youtube" title="You Tube" href="/web/20160330145927/https://www.youtube.com/channel/UCzdWdL_xC5qk07WWOtnXSWA"></a></li>
+<li class="sprite-instagram"><a target="_blank" class="mk-social-photobucket" title="Instagram" href="/web/20160330145927/https://www.instagram.com/historynetofficial/"></a></li>
+<li class="socialtrigger">
+<a title="Show More" href="#">+</a>
+<ul class="social-menu-more">
+</ul>
+</li>
+</ul> </div>
+</nav>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="container  upper" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<script>jQuery('h1.post-title').on('click',function(){jQuery('html, body').animate({scrollTop:0},500);});</script>
+<div id="core" class="None >
+
+        <div class=" post-3032096 post type-post status-publish format-standard hentry category-american_history category-james-gang category-theodore-roosevelt category-us-presidents tag-american-history-tag tag-historical-figures tag-people tag-politics" itemscope itemprop="blogPost" itemtype="http://schema.org/Article">
+<div class="clearfix"></div>
+<div id="content" class="eightcol">
+<div class="feature_image">
+</div>
+<h1 class="post entry-title" itemprop="headline"><a href="/web/20160330145927/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm">President William McKinley: Assassinated by an Anarchist</a></h1>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160330145927/http://www.facebook.com/sharer.php?u=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160330145927/http://twitter.com/share?url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160330145927/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160330145927/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+<div class="entry" itemprop="text" style="float: left;">
+<div class="clearfix"></div>
+<p class="meta">
+<span style="font-size: 14px;"><b>By Wyatt Kingseed</b></span> <br/> 10/1/2001 &bull;
+<a href="/web/20160330145927/http://www.historynet.com/magazines/american_history" rel="category tag">American History</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/wild-west/outlaws/james-gang" rel="category tag">James Gang</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents/theodore-roosevelt" rel="category tag">Theodore Roosevelt</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents" rel="category tag">US Presidents</a> </p>
+<p>Leon Czolgosz stood in line and counted the people between him and the president of the United States. Nondescript, dressed in a dark suit, and wearing an innocent expression, Czolgosz (pronounced chlgsh) looked younger than his 28 years. He had waited for more than two hours in 82-degree heat on September 6, 1901, for his turn to shake hands with President William McKinley, who was visiting the Pan-American Exposition in Buffalo, New York.</p>
+<p>It was the first year of the new century, a perfect time to reflect on the nation&#8217;s rise in world prominence and to speculate on the future. The exposition, a world&#8217;s fair that celebrated the Americas&#8217; industrial progress and achievement, had attracted visitors from around the world. The event was more than halfway through its six-month run when President McKinley, the most popular chief executive since Abraham Lincoln, arrived.</p>
+<p>McKinley&#8217;s final public appearance in Buffalo was an afternoon reception in the Temple of Music, an ornate red-brick hall on the exposition grounds. Since being elected president in 1896, McKinley had been notorious for discounting his own personal safety at public appearances, and he had repeatedly resisted attempts by his personal secretary, George Cortelyou, to cancel this event. Cortelyou had argued that it wasn&#8217;t worth the risk to greet such a small number of people, but the 58-year-old president refused to change his mind. &#8216;Why should I?&#8217; he asked. &#8216;Who would want to hurt me?&#8217;</p>
+<p>Cortelyou, always nervous about public receptions, tightened security as best he could. The people who wished to greet the president at the Temple had to file down a narrow aisle under the scrutiny of a special guard provided for the occasion. Outside, mounted police and soldiers controlled the massive crowd seeking entrance.</p>
+<p>Just months into his second presidential term, McKinley &#8212; who had easily won reelection in 1900 &#8212; had made the most significant speech of his presidency the day before, announcing a policy of reciprocal trade agreements with foreign nations to encourage improved markets for American goods. It marked the culmination of a decade-long evolution in thinking for the long-time isolationist and exemplified his statesmanship in recognition of changing times.</p>
+<p>McKinley&#8217;s star first rose on the national scene some 10 years earlier as the Republican Party&#8217;s staunchest advocate of protectionism. He believed that high tariffs discouraged the importation of foreign goods, thereby helping keep prices high for American goods and producing profits for industries and high wages for workers. Using protectionism as his platform for election to the U.S. House of Representatives and the Ohio statehouse, where he served two terms as governor, McKinley established himself as his party&#8217;s standard-bearer. According to biographer Margaret Leech, McKinley &#8216;carried to Congress an emotional conviction that the solution for all the country&#8217;s economic ills was to make the already high tariff rates higher still.&#8217; By 1900, however, he saw reciprocity as a means for commercial expansion and a way to promote world peace.</p>
+<p>McKinley was a veteran of the Civil War and retained vivid memories of the bloody conflict. As president, he was reluctantly drawn into the Spanish-American War of 1898. At first he downplayed stories of Spanish atrocities against Cuban nationals. But the yellow journalism of competing newspaper publishers William Randolph Hearst and Joseph Pulitzer fired passions after the battleship Maine exploded and sank in Havana&#8217;s harbor. Big business, looking to expand markets, added to the inexorable forces pushing the president toward war.</p>
+<p>Spain proved little challenge though, as American forces easily defeated the outnumbered and out-gunned army and navy of the Old World power. As the victor, the United States gained Puerto Rico, Wake, Guam, and the Philippines. The Pacific Islands were particularly significant as they established an American presence in a new hemisphere. Moreover, the United States annexed the Hawaiian Islands that summer. American business concerns became ecstatic over the prospects for expanded influence overseas. But not everyone supported the president. Hearst in particular continued to publicly criticize him. The condemnation reached a low point on April 10, 1901, when the publisher&#8217;s Journal printed an editorial that declared, &#8216;If bad institutions and bad men can be got rid of only by killing, then the killing must be done.&#8217; Although Hearst had been responsible for many attacks on McKinley, he maintained that the editorial had been published without his knowledge. He ordered the presses stopped, but a number of newspapers were already on the streets.</p>
+<p>On September 5 an estimated 50,000 people, including Leon Czolgosz, had listened to the president&#8217;s speech. &#8216;Isolation is no longer possible or desirable,&#8217; McKinley said. &#8216;The period of exclusiveness is past. The expansion of our trade and commerce is the pressing problem. Commercial wars are unprofitable. A policy of good-will and friendly trade relations will prevent reprisals.&#8217; The New York Times, remarking on the president&#8217;s about-face, wrote, &#8216;Unquestionably the President has learned much in the last few years.&#8217;</p>
+<p>Unfortunately, America&#8217;s move toward imperialism had done little for the common workingman. Already frustrated by years of economic depression that began with the Panic of 1893, and by the lack of progress toward more humane working conditions, American workers wondered why some of the vast wealth of the industrial boom wasn&#8217;t trickling down to them. Millionaires like railroad king Cornelius Vanderbilt, oil baron John D. Rockefeller, steel magnate Andrew Carnegie, and banker J.P. Morgan had accumulated unprecedented private wealth and were known to spend more on an evening&#8217;s entertainment than a coal miner or tradesman could earn in a lifetime. Such ostentatious displays bred discontent. Rubbing salt in the wound, the industrialists routinely relied on the government to help squelch worker uprisings.</p>
+<p>Employee unions had progressively become a more dominant force in American life during the last quarter of the nineteenth century as they sought to improve working conditions. Strikers had clashed violently with police and the military in Chicago&#8217;s Haymarket Riot in 1886 and again in the Pullman strike eight years later, leaving scores of people dead in the streets. In 1892, Pinkerton detectives in Homestead, Pennsylvania, suppressed a steel strike and protected scab laborers. The government had sided with management against workers in each instance.</p>
+<p>A more dangerous element &#8212; anarchism &#8212; exacerbated the situation when it arrived from Europe. Anarchists brought a more radical philosophy to the scene, maintaining that any form of government exploited and oppressed the people. They believed that one way to combat government was to eliminate those in power. Since 1894, anarchists had assassinated four European leaders &#8212; President Sadi Carnot of France, Empress Elizabeth of Austria, King Humbert of Italy, and Spanish statesman Cnovas del Castillo. In the United States, an anarchist had attacked industrialist Henry Clay Frick, in part for his role in the failed Homestead strike.</p>
+<p>For some individuals with little or no formal education, few skills, and no hope of improvement, anarchism offered a natural outlet for their frustration. Cleveland resident Leon Czolgosz fit the profile perfectly. Poor, reclusive, and often unemployed, he had been born in Detroit to Polish parents in 1873. He left school after five and a half years and worked at various jobs and later drifted to Chicago and became interested in the socialist movement. The interest continued in Cleveland, where he took a job in the city&#8217;s wire mills. Two weeks before he traveled to Buffalo, Czolgosz attended a lecture given by the nation&#8217;s most notorious anarchist leader, Emma Goldman. She spoke of the struggle between the classes and why the time had come for action against government.</p>
+<p>Surrounded by his entourage inside the Temple of Music, McKinley enjoyed the opportunity to meet his admirers. Host John Milburn, the exposition&#8217;s president, stood on the president&#8217;s left, so he could introduce acquaintances to McKinley as they approached. Secret Service agent George Foster, the president&#8217;s chief bodyguard, usually held that position, but he found himself five feet away from the president and standing opposite him. To McKinley&#8217;s right stood Cortelyou, who looked into the face of each person as they came close to his boss. He intended to signal the guards to close the doors after 10 minutes to stop the parade of well-wishers and then rush the president on to his next appointment.</p>
+<p>President McKinley greeted each person with a warm smile and a handshake, pausing briefly to exchange words with any children who had accompanied their parents. The line moved quickly. Many in attendance held cloths to dab the sweat from their foreheads on the warm, humid day. As the waiting people shuffled forward, Foster noticed one man in line who had his right hand wrapped in a handkerchief. Foster wondered if it covered an embarrassing injury.</p>
+<p>McKinley saw the man&#8217;s apparent disability, and he reached to shake his left hand. Suddenly, Leon Czolgosz thrust his bandaged right hand into the president&#8217;s chest. Onlookers heard two sharp popping sounds, like small firecrackers, and a thin veil of gray smoke rose up in front of the president. McKinley looked confused and rose up on his toes, clutched his chest, and leaned forward. Members of his entourage moved to support the slumping president and help him to a nearby chair as the blood spread across his white vest. &#8216;Be careful how you tell my wife,&#8217; McKinley said, his strength already waning.</p>
+<p>Foster and others pounced on the assailant, knocking him roughly to the floor as he tried to aim his revolver for a third shot. McKinley managed a weak, &#8216;Don&#8217;t let them hurt him,&#8217; when he saw Czolgosz being pummeled beneath a mass of angry guards. As the pandemonium continued, aides rushed the president to a hospital on the exposition grounds. One bullet had struck his sternum a glancing blow, causing only a superficial wound, but the other had penetrated his abdomen, a potentially fatal injury.</p>
+<p>Dr. Roswell Park, the exposition&#8217;s medical director and a surgeon with an international reputation, was performing a cancer operation in nearby Niagara Falls. Rather than wait for his return, the doctors present believed it imperative to act immediately, and they decided to operate as soon as prominent Buffalo surgeon Dr. Matthew Mann arrived.</p>
+<p>At 5:20 p.m., an hour and 13 minutes after the shooting, President McKinley went under the knife. As he slipped into an ether-induced sleep, he murmured the Lord&#8217;s Prayer. Operating conditions were far from ideal, and professional lapses occurred that in retrospect probably raised an eyebrow or two, but the grave emergency required snap judgment. At one time doctors had to reflect the waning sun&#8217;s rays onto the patient with a mirror because of inadequate lighting.</p>
+<p>An anxious crowd awaited word of the president&#8217;s condition. At 7:00 p.m. the physicians released a statement detailing the extent of McKinley&#8217;s injuries and describing the surgery, during which they had searched for but could not find the second bullet. Summing up, they said the president&#8217;s &#8216;condition at the conclusion of the operation was gratifying. The result cannot be foretold. His condition at present justifies hope of recovery.&#8217;</p>
+<p>While initial reports were optimistic, as they would be for the next six days, one presidential adviser felt an uneasy foreboding. Secretary of State John Hay had already experienced the assassinations of two presidents &#8212; the first as a personal secretary to Abraham Lincoln and the second as a personal friend and confidant of James Garfield. Called to Buffalo from Washington, Hay reportedly told his escort that the president would surely die. But the secretary of state&#8217;s fear was an exception. The optimism of other reports prompted cabinet officials to return to their duties elsewhere. Vice President Theodore Roosevelt, who had rushed to the president&#8217;s bedside when he received news of the shooting, left Buffalo &#8216;with a light heart&#8217; and joined his family on vacation in the Adirondacks.</p>
+<p>The president improved daily, and he felt strong enough on the morning of September 12 to receive his first food orally &#8212; toast and coffee. McKinley&#8217;s spirits were good, but by afternoon he began to experience discomfort, and his condition rapidly worsened. Within 36 hours Hay&#8217;s prediction came true. Gangrene, unseen, had been forming along the path of the bullet for nearly a week. Some 40 years before penicillin became generally available, McKinley had been doomed the moment Czolgosz fired his revolver. The president died in the early morning hours of September 14, surrounded by a small group of family and friends. That afternoon Theodore Roosevelt was sworn in as president of the United States.</p>
+<p>As doctors had removed the president to John Milburn&#8217;s house after surgery, another spectacle was playing out across town at police headquarters, where the anarchist&#8217;s life was in as great a peril as McKinley&#8217;s had been. Police brandishing rifles and soldiers with bayonets transported the assailant through an angry mob of thousands who called for Czolgosz&#8217;s head. Now an estimated crowd of 30,000 stood ready to rush the station to drag the prisoner from his cell. &#8216;Kill him! Lynch him!&#8217; they demanded. One observer commented that the &#8216;roar of the crowd was never to be forgotten by anyone who heard it.&#8217; Buffalo Police Superintendent William Bull&#8217;s quick action probably saved the prisoner&#8217;s life. Bull and his men, some of them mounted, used nightsticks to beat back the surging crowd and eventually managed to cordon off the street and surround the police station three deep, a daunting presence that discouraged mob action.</p>
+<p>District Attorney Thomas Penney interrogated the would-be assassin inside the station. Czolgosz readily confessed. A self-described anarchist and disciple of Emma Goldman, Czolgosz said he had acted alone. &#8216;I killed President McKinley because I done my duty,&#8217; he explained without emotion. &#8216;I didn&#8217;t believe one man should have so much service and another man should have none.&#8217;</p>
+<p>From his cell across the street from city hall, Czolgosz must have heard the caisson carrying McKinley&#8217;s remains roll slowly through the streets of Buffalo on September 16 on its way to the train station for its journey to Washington, D.C. There the president&#8217;s body was placed under the Capitol dome in the same chamber that once housed the remains of Lincoln and Garfield, before completing its trip for burial in McKinley&#8217;s hometown of Canton, Ohio.</p>
+<p>Czolgosz was indicted and arraigned on September 16, and the trial commenced one week later in Buffalo&#8217;s city hall. The accused, resigned and unrepentant, pled guilty, but Judge Truman C. White, one of the most experienced of New York&#8217;s supreme court justices, instructed the court clerk to enter a plea of not guilty in accordance with New York state law. Loran L. Lewis and Robert C. Titus, the two retired justices of the state supreme court appointed to serve as defense counsel, didn&#8217;t hide their disgust at having been handed the assignment.</p>
+<p>District Attorney Penney focused on the medical aspects of the president&#8217;s wound and death. During cross-examination, Dr. Herman Mynter, one of the attending physicians, discussed why the doctors did not find the second bullet. He explained that given McKinley&#8217;s weakened condition, further search risked killing him on the operating table. Doctors did not find the bullet during the autopsy, he noted, because the McKinley family did not want the body mutilated.</p>
+<p>The prosecution then established beyond any doubt that the defendant had committed the crime. Czolgosz&#8217;s signed confession and interrogation immediately after the shooting confirmed his guilt. The only hope for a not-guilty verdict remained with the question of the defendant&#8217;s mental state, a matter of much newspaper speculation in the weeks preceding the trial. The prosecution and the defense had engaged six psychiatrists to examine Czolgosz, but the alienists, as they were then known, found no evidence of insanity. Defense counsel never even raised the issue until closing arguments, and then only weakly. In fact, defense counsel called no witnesses on Czolgosz&#8217;s behalf. In fairness, though, the defendant refused to discuss the matter with either attorney, leaving them little on which to base a defense.</p>
+<p>The state rested its case after just one and a half days, and the judge issued his instructions to the jury. In 30 minutes they returned with the expected verdict &#8212; guilty in the first degree. The trial had been a model of expediency, but it hardly represented an example of a strong defense. By today&#8217;s standards it would likely result in a mistrial on appeal. But in 1901, given the crime&#8217;s dastardly nature and a public calling for blood, defense counsel did not file an appeal.</p>
+<p>The following month, the state of New York carried out Czolgosz&#8217;s death sentence at the penitentiary in Auburn. The warden received more than 1,000 requests for invitations to the execution, but he allowed only 26 witnesses in accordance with state law. Prison officials also rejected two morbid proposals &#8212; one from a museum curator to buy the corpse for $5,000 and another from a kinescope operator for $2,000 to film the condemned man&#8217;s walk to the death chamber. On October 29 the executioner threw a switch and sent 1,700 volts of electricity through Czolgosz&#8217;s body. Officials were afraid that removal of Czolgosz&#8217;s corpse might cause a spectacle, so they secured the family&#8217;s permission to inter it in the prison cemetery. Prison guards doused the body with sulfuric acid to render it unrecognizable. At Czolgosz&#8217;s request, the prison chaplain did not conduct a religious ceremony.</p>
+<p>In spite of death threats made towards McKinley during his presidency, he had been protected by the most casual and primitive security. The president had often walked unattended in Canton and strolled alone on the White House grounds without George Foster in attendance. After his death &#8212; the third presidential assassination in 36 years &#8212; Congress stepped up security for United States presidents by directing the Secret Service to add the protection of the president to its duties. Two years later, Congress enacted legislation that made presidential protection a permanent Secret Service responsibility.</p>
+<p>This article was written by Wyatt Kingseed and originally appeared in the October 2001 issue of <i> American History</i> magazine. For more great articles, subscribe to <i><a target="_blank" href="/web/20160330145927/http://www.historynetshop.com/901ah1.html">American History</a></i> magazine today!</p>
+<h3 class="tags"><a href="/web/20160330145927/http://www.historynet.com/topics/american-history-tag" rel="tag">American History</a>, <a href="/web/20160330145927/http://www.historynet.com/topics/historical-figures" rel="tag">Historical Figures</a>, <a href="/web/20160330145927/http://www.historynet.com/topics/people" rel="tag">People</a>, <a href="/web/20160330145927/http://www.historynet.com/topics/politics" rel="tag">Politics</a></h3>
+<div class="clearfix"></div>
+</div>
+<!-- end .entry -->
+<div class="side-bar">
+<!-- /7211001/300x250-AdExchange -->
+<div id='div-gpt-ad-1454538700567-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1454538700567-0');});</script>
+</div>
+<header class="sidebar-widget-header">
+<span>Related Stories</span>
+</header>
+<ul class="related">
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/5-ways-to-celebrate-martin-luther-king-jr-day.htm?utm_source=historynet&amp;utm_medium=related" title="5 Ways to Celebrate Martin Luther King Jr. Day"><img width="186" height="140" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2016/01/186x140xmlk-day-1200-186x140.jpg.pagespeed.ic.2_Ox_g6Hqs.jpg" class="attachment-related wp-post-image" alt="Martin Luther King, Jr. speaking at microphones, during anti-war demonstration, New York City, 1967"/></li>
+<b>5 Ways to Celebrate Martin Luther King Jr. Day</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/american-history-the-first-real-two-party-us-presidential-election-in-1796.htm?utm_source=historynet&amp;utm_medium=related" title="American History: The First Real Two-Party U.S. Presidential  Election in 1796"><img width="186" height="140" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2006/06/186x140xFirstElection_1200x480-186x140.jpg.pagespeed.ic.tOpk0eEm4i.jpg" class="attachment-related wp-post-image" alt="Washington&#039;s inauguration at Philadelphia: George Washington arriving at Congress Hall in Philadelphia, March 4, 1793."/></li>
+<b>American History: The First Real Two-Party U.S. Presidential Election in 1796</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/how-long-must-we-wait.htm?utm_source=historynet&amp;utm_medium=related" title="&#8216;How Long Must We Wait?&#8217;"><img width="186" height="140" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2015/09/186x140xwait1200-186x140.jpg.pagespeed.ic.sAUpyk4z-t.jpg" class="attachment-related wp-post-image" alt="Suffragettes picket the White House. Washington, DC. 1917."/></li>
+<b>&#8216;How Long Must We Wait?&#8217;</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/1965-voting-rights-act-gallery.htm?utm_source=historynet&amp;utm_medium=related" title="1965 Voting Rights Act Gallery"><img width="186" height="140" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2015/08/186x140xAmerican_History_Mag_Voting_Rights_1965_01-e1446768700209-186x140.jpg.pagespeed.ic.uSgJxCqGzM.jpg" class="attachment-related wp-post-image" alt="President Lyndon B. Johnson shakes hands with Dr. Martin Luther King after signing the Voting Rights Act. (LBJ Library photo by Yoichi Okamoto)"/></li>
+<b>1965 Voting Rights Act Gallery</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/table-of-contents-august-2015-american-history-magazine.htm?utm_source=historynet&amp;utm_medium=related" title="August 2015"><img width="186" height="99" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2015/01/186x99xAmerican-History-201508.jpg.pagespeed.ic.ll8YW5JTCL.jpg" class="attachment-related wp-post-image" alt="American History-201508"/></li>
+<b>August 2015</b></a>
+</div>
+<div class="rel_posts">
+<li>
+<a href="/web/20160330145927/http://www.historynet.com/the-only-way-to-win-world-war-iii-is-to-prevent-it.htm?utm_source=historynet&amp;utm_medium=related" title="&#8216;The only way to win World War III is to prevent it&#8217;"><img width="186" height="140" src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2015/06/186x140xwwIII1200-186x140.jpg.pagespeed.ic.khfRFji0bx.jpg" class="attachment-related wp-post-image" alt=""/></li>
+<b>&#8216;The only way to win World War III is to prevent it&#8217;</b></a>
+</div>
+</ul>
+<div class="clearfix"></div>
+<p class="meta">Also featuring</p>
+<a href="/web/20160330145927/http://www.militarytimes.com/" target="_blank"><img src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2016/03/xmilitaryTimes-LOGO.png.pagespeed.ic.FBZS9cwte-.png"/></a>
+<div class="clearfix"></div>
+<!-- /7211001/300x250-HN-Default -->
+<div id='div-gpt-ad-1447448043579-0' style="height:250px; width:300px;">
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1447448043579-0');});</script>
+</div>
+</div>
+<div class="adspace">
+</div>
+<div class="social-share">
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top" style="display:block;">
+<!-- buttons start here -->
+<ul class="rrssb-buttons rrssb-top">
+<li class="facebook ks-byline-fb">
+<a href="/web/20160330145927/http://www.facebook.com/sharer.php?u=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="facebook" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-facebook-square"></i>
+<span class="text">facebook</span>
+</a>
+</li>
+<li class="twitter ks-byline-tweet">
+<a href="/web/20160330145927/http://twitter.com/share?url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="twitter" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-twitter"></i>
+<span class="text">twitter</span>
+</a>
+</li>
+<li class="linkedin ks-byline-linkedin">
+<a href="/web/20160330145927/http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="linkedin" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-linkedin"></i>
+<span class="text">linkedin</span>
+</a>
+</li>
+<li class="pinterest button-pinterest ks-byline-pinterest">
+<a href="/web/20160330145927/http://pinterest.com/pin/create/link/?url=http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm&amp;t=President%20William%20McKinley:%20Assassinated%20by%20an%20Anarchist" title="pinterest" onclick="window.open(this.href,'window','width=600,height=480,resizable,toolbar,menubar') ;return false;">
+<i class="fa fa-pinterest"></i>
+<span class="text">pinterest</span>
+</a>
+</li>
+<li class="printbtn ks-byline-print">
+<a href="javascript:window.print()" title="print">
+<i class="fa fa-print"></i>
+<span class="text">print</span>
+</a>
+</li>
+</ul>
+<!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+</div>
+</div>
+<div class="clearfix"></div>
+<!-- Here we load disqus comments -->
+<div class="dcl-disqus-thread" id="comments">
+<div id="disqus_thread">
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+var disqus_url='/web/20160330145927/http://www.historynet.com/president-william-mckinley-assassinated-by-an-anarchist.htm';var disqus_identifier='3032096 ';var disqus_container_id='disqus_thread';var disqus_domain='disqus.com';var disqus_shortname='historynet';var disqus_title="President William McKinley: Assassinated by an Anarchist";var disqus_config=function(){var config=this;config.language='';config.callbacks.preData.push(function(){document.getElementById(disqus_container_id).innerHTML='';});config.callbacks.onReady.push(function(){var script=document.createElement('script');script.async=true;script.src='?cf_action=sync_comments&post_id=3032096';var firstScript=document.getElementsByTagName("script")[0];firstScript.parentNode.insertBefore(script,firstScript);});};
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var DsqLocal={'trackbacks':[],'trackback_url':"/web/20160330145927/http://www.historynet.com\/president-william-mckinley-assassinated-by-an-anarchist.htm\/trackback"};
+//]]></script>
+</div><!-- #homecontent -->
+</div>
+</div><!-- #core -->
+<!--script for MediaBong -->
+<script>var $=jQuery;var aB="<div style='margin: 30px;'><div id='mb_video_syncad' class='floating_banner no_video'></div></div><div id='mb_container'></div><div id='mb_video_sponso'><span></span></div>";var cats='<a href="/web/20160330145927/http://www.historynet.com/magazines/american_history" rel="category tag">American History</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/wild-west/outlaws/james-gang" rel="category tag">James Gang</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents/theodore-roosevelt" rel="category tag">Theodore Roosevelt</a>, <a href="/web/20160330145927/http://www.historynet.com/magazines/z-themes/historical-figures/us-presidents" rel="category tag">US Presidents</a>';var gallery=($.inArray("Galleries",cats.replace(/<\/?[^>]+(>|$)/g,"").split(','))>-1);if(gallery){var pL=$('.entry').find('.imagecaptioneasy');var b=Math.floor(pL.length/3)-1;$(pL[b]).after(aB);}else{var pL=$('.entry').find('p');for(var i=1;i<=pL.length-1;i++){if(pL[i]&&pL[i+1]){if($(pL[i]).html().length>200&&$(pL[i+1]).html().length>200){$(pL[i]).after("<h1>"+aB+"</h1>");break;}}else{console.log('failed -- find big p');pL.sort(function(a,b){return $(b).html().length-$(a).html().length;});var sent=$(pL[0]).html().split('. ');$(pL[0]).html('');for(var s=0;s<=sent.length-1;s++){var e=(s==sent.length-1?'':'. ');var half=Math.floor(sent.length/2);var ad=(s==half?'</p>'+aB+'</p>':'');$(pL[0]).append(sent[s]+e+ad);}break;}}}</script>
+<script type="text/javascript">(function(){var sc=document.createElement('script');sc.src='/web/20160330145927/http://player.mediabong.net/se/575.js?url='+encodeURIComponent(document.location.href);sc.type='text/javascript';sc.async=true;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sc,s);})();</script>
+<!--END script for MediaBong -->
+</div><div class="clerfix"></div>
+<div id="footer" class="body2 ">
+<div class="row">
+<div class="medium-5 columns">
+<div class="textwidget"><img src="/web/20160330145927im_/http://cdn.historynet.com/wp-content/uploads/2015/03/xhn-260x70b.png.pagespeed.ic.RSj4a6GZM4.png">
+<br>
+<p>HistoryNet.com is brought to you by World History Group, the world's largest publisher of history magazines. HistoryNet.com contains daily features, photo galleries and over 5,000 articles originally published in our various magazines.
+</p></div>
+</div>
+<div class="medium-3 columns">
+<h2 class="widget">From Our Magazines</h2>	<div class="textwidget"><ul>
+<li><a href="/web/20160330145927/http://www.historynet.com/american-history">American History</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/americas-civil-war">America's Civil War</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/aviation-history">Aviation History</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/civil-war-times">Civil War Times</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/military-history">Military History</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/mhq">MHQ</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/vietnam">Vietnam</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/wild-west">Wild West</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/worldwar2">World War II</a></li>
+</ul></div>
+</div>
+<div class="medium-3 columns">
+<h2 class="widget">About Us</h2>	<div class="textwidget"><ul>
+<li><a href="/web/20160330145927/http://www.historynet.com/contact-historynet-and-world-history-group">Contact Us</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/work-for-historynet">Work For HistoryNet</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/about-historynet">What is HistoryNet.com?</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/advertise-with-historynet-and-world-history-group">Advertising Inquries</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/heritage-travel-directory">Heritage Travel Directory</a></li>
+<li><a href="/web/20160330145927/http://www.historynet.com/historynet-privacy-policy">Privacy Policy</a></li>
+</ul></div>
+</div>
+<div id="copyright">
+<div>
+<p>&copy; 2016 HistoryNet</p>
+</div>
+<div class="fr">
+</div>
+</div> <!-- end #copyright  -->
+</div><!--  end .cotainer  -->
+</div><!-- end #footer  -->
+<div class="scrollTo_top" style="display: block">
+<a title="Scroll to top" href="#">
+<i class="fa fa-arrow-circle-o-up"></i>
+</a>
+</div>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-1768379-1','auto');ga('send','pageview');</script>
+<script type='text/javascript'>//<![CDATA[
+jQuery(function($){if(jQuery('.shortcode-tabs').length){jQuery('.shortcode-tabs').each(function(){var tabCount=1;jQuery(this).children('.tab').each(function(index,element){var idValue=jQuery(this).parents('.shortcode-tabs').attr('id');var newId=idValue+'-tab-'+tabCount;jQuery(this).attr('id',newId);jQuery(this).parents('.shortcode-tabs').find('ul.tab_titles').children('li').eq(index).find('a').attr('href','#'+newId);tabCount++;});var thisID=jQuery(this).attr('id');jQuery(this).tabs({fx:{opacity:'toggle',duration:200}});});}if(jQuery('.shortcode-toggle').length){jQuery('.shortcode-toggle').each(function(){var toggleObj=jQuery(this);toggleObj.closedText=toggleObj.find('input[name="title_closed"]').attr('value');toggleObj.openText=toggleObj.find('input[name="title_open"]').attr('value');if(toggleObj.find('a.more-link.read-more').length){toggleObj.readMoreText=toggleObj.find('a.more-link.read-more').text();toggleObj.readLessText=toggleObj.find('a.more-link.read-more').attr('readless');toggleObj.find('a.more-link.read-more').removeAttr('readless');toggleObj.find('a.more-link').click(function(){var moreTextObj=jQuery(this).next('.more-text');moreTextObj.animate({opacity:'toggle',height:'toggle'},300).css('display','block');moreTextObj.toggleClass('open').toggleClass('closed');if(moreTextObj.hasClass('open')){jQuery(this).text(toggleObj.readLessText);}if(moreTextObj.hasClass('closed')){jQuery(this).text(toggleObj.readMoreText);}return false;});}toggleObj.find('input[name="title_closed"]').remove();toggleObj.find('input[name="title_open"]').remove();toggleObj.find('h4.toggle-trigger a').click(function(){toggleObj.find('.toggle-content').animate({opacity:'toggle',height:'toggle'},300);toggleObj.toggleClass('open').toggleClass('closed');if(toggleObj.hasClass('open')){jQuery(this).text(toggleObj.openText);}if(toggleObj.hasClass('closed')){jQuery(this).text(toggleObj.closedText);}return false;});});}});
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var pollsL10n={"ajax_url":"/web/20160330145927/http://www.historynet.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+//]]></script>
+<script src="/web/20160330145927js_/http://cdn.historynet.com/wp-content,_plugins,_wp-polls,_polls-js.js,qver==2.72+wp-content,_themes,_superblog,_js,_superfish.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.hoverIntent.minified.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.prettyPhoto.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_ownScript.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_mobile.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider-min.js,qver==4.2.2+wp-content,_themes,_superblog,_js,_jquery.flexslider.start.single.js,qver==4.2.2+wp-includes,_js,_comment-reply.min.js,qver==4.2.2+wp-content,_plugins,_classic-facebook-feed,_js,_FeedEk.js,qver==1.0.0.pagespeed.jc.2iDbTNey0g.js"></script><script>eval(mod_pagespeed_3T_iBnaLzL);</script>
+<script>eval(mod_pagespeed_oO0y8pm9Bd);</script>
+<script>eval(mod_pagespeed_RQIgcGkRcG);</script>
+<script>eval(mod_pagespeed_tvnFSZ4G7E);</script>
+<script>eval(mod_pagespeed_lMCQI6PBMA);</script>
+<script>eval(mod_pagespeed_TkkTvnLpXP);</script>
+<script>eval(mod_pagespeed_YoVNVRVl0V);</script>
+<script>eval(mod_pagespeed_Lt_LjrXBWI);</script>
+<script>eval(mod_pagespeed_O883pN9VWD);</script>
+<script>eval(mod_pagespeed_2uqUj3WKVU);</script>
+<script type='text/javascript'>//<![CDATA[
+var cointent_tracking_data={"articleId":"3032096","publisherId":"1293","gated":""};
+//]]></script>
+<script type='text/javascript' src='/web/20160330145927js_/http://connect.cointent.com/cointent-tracker.0.2.js?ver=4.2.2'></script>
+<script type="text/javascript">var disqus_shortname="historynet";if(typeof ds_loaded=="undefined"){var ds_loaded=false;}function loadDisqus(){var disqus_div=document.getElementById("disqus_thread");var top=disqus_div.offsetTop;var disqus_data=disqus_div.dataset;if(!ds_loaded&&(window.scrollY||window.pageYOffset)+window.innerHeight>top){ds_loaded=true;for(var key in disqus_data){if(key.substr(0,6)=="disqus"){window["disqus_"+key.replace("disqus","").toLowerCase()]=disqus_data[key];}}var dsq=document.createElement("script");dsq.type="text/javascript";dsq.async=true;dsq.src="http://"+window.disqus_shortname+".disqus.com/embed.js";if(document.getElementById("dcl-hidden-div")){document.getElementById("dcl-hidden-div").innerHTML="Loading...";}(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(dsq);}}var disqus_div_new=document.getElementById("disqus_thread");var divExists=disqus_div_new!=null;if(document.body.scrollHeight<window.innerHeight){loadDisqus();}else if(divExists){window.onscroll=function(){loadDisqus();}}</script><script type='text/javascript'>//<![CDATA[
+var hash=window.location.hash;if(hash!==''){var ds_loaded=true;var dcl_loaded=1;(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.'+'disqus.com'+'/'+'embed'+'.js'+'?pname=wordpress&pver=2.84';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();}
+//]]></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8e5c801d03","applicationID":"8778079","transactionName":"YVMDYEJTWUcDU00LX1gZNEZZHV5aBlVBTEBeRg==","queueTime":0,"applicationTime":3,"atts":"TRQAFgpJSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: /web/20160330145927/http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Database Caching 10/22 queries in 0.021 seconds using memcached
+Object Caching 2129/2173 objects using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: cdn.historynet.com
+
+ Served from: www.historynet.com @ 2016-03-30 08:52:22 by W3 Total Cache -->

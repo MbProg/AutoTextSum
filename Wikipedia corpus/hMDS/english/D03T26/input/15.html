@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app10.us.archive.org";archive_analytics.values.server_ms=233;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><base href="/web/20160422083521/http://www.goucher.edu/"></base><title>Jena Six : Goucher College</title><meta name="description" content="" /><meta name="keywords" content="" /><link rel="stylesheet" type="text/css" href="prebuilt/css/goucher-v3.css" /><link type="text/css" rel="stylesheet" href="/web/20160422083521cs_/http://fast.fonts.com/cssapi/70413ca1-3956-4064-9c23-7cbf5cc13281.css" /><link rel="stylesheet" type="text/css" href="prebuilt/css/jqueryslidemenu.css" /><script type="text/javascript" src="prebuilt/js/jquery-1.7.2.min.js"></script><script type="text/javascript" src="prebuilt/js/goucher-v3.js"></script><script type="text/javascript">
+                      $(document).ready(function(){
+                      	  var randombanner = ['top_default.jpg', 'top_default_1.jpg', 'top_default_2.jpg', 'top_default_3.jpg', 'top_default_4.jpg', 'top_default_5.jpg', 'top_default_6.jpg', 'top_default_7.jpg', 'top_default_8.jpg'];
+                      	  $('<img src="images/webparts/default_banners/' + randombanner[Math.floor(Math.random() * randombanner.length)] + '" />').appendTo('#randombanner');
+                      });
+                    </script><script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              
+                ga('create', 'UA-742835-1', 'auto');
+                ga('send', 'pageview');
+                
+              </script><script src="/web/20160422083521js_/http://assets.adobedtm.com/c876840ac68fc41c08a580a3fb1869c51ca83380/satelliteLib-b882e77ccad2e29b33adc7652de7581440910e09.js"></script></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.goucher.edu/news-and-events/jena-six";
+
+var firstYear = 1996;
+var displayDay = "22";
+var displayMonth = "Apr";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.goucher.edu/news-and-events/jena-six" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160422083521" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Mar
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:35:21 Apr 22, 2016">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    May
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:35:21 Apr 22, 2016">22</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:35:21 Apr 22, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160422083521*/http://www.goucher.edu/news-and-events/jena-six" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">22 Apr 16 - 22 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:3:000100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="banner" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns=""><div id="header"><a href="/web/20160422083521/http://www.goucher.edu/"><img src="images/webparts/gc_logo.gif" alt="Goucher College" width="257" height="54" class="logo" /></a><form method="get" action="/web/20160422083521/http://www.goucher.edu/search.html" class="searchbox"><input type="text" name="q" class="searchfield" placeholder="Search" /><input type="image" name="btnG" src="images/webparts/go.gif" alt="Go" width="14" height="16" class="searchbtn" /></form><ul><li class="first"><a href="/web/20160422083521/http://www.goucher.edu/about">About</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/admissions">Admissions</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/academics">Academics</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/the-library">Library</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/student-life">Student Life</a></li><li><a href="/web/20160422083521/http://blogs.goucher.edu/intheloop">News &amp; Events</a></li><li><a href="/web/20160422083521/http://meyerhoff.goucher.edu/directory/">Directory</a></li></ul></div></div><div id="wrapper"><div id="content"><div id="randombanner"></div><div id="bctrail"><a href="/web/20160422083521/http://www.goucher.edu/" xmlns="">Home</a><span class="gt" xmlns=""> &gt;</span><link href="prebuilt/css/" rel="stylesheet" type="text/css" xmlns="" />
+				 <a href="news-and-events" xmlns="">News &amp; Events</a> <span class="gt" xmlns="">&gt;</span><link href="prebuilt/css/" rel="stylesheet" type="text/css" xmlns="" />
+				News Story
+			</div><div id="main-content-big"><h1 xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="">Jena Six: Waiting for Justice</h1><p>Release date: <span id="oct" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xalan="http://xml.apache.org/xalan" xmlns="">October </span>29,
+                     			2007</p><table cellpadding="0" cellspacing="0" class="body-img"><tr><td align="center"><img src="images/News_Images/jenasix.jpg" usemap="#" alt="" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="" /></td></tr></table><p>Issues of injustice, racism, and inequality relating to the Jena Six and other such polarizing incidents will be addressed at a panel discussion on Monday, October 29, from 6 to 8 p.m. in Goucher College&#8217;s Haebler Memorial Chapel.</p>
+
+<p>This event is free and open to the public, and refreshments will be served.</p>
+
+<p>This gathering is not meant to serve as an information session on what happened to the students of Jena, rather it will be an opportunity for students, faculty, staff, and the greater community to ask questions about the political and social injustices surrounding the incident and how a peaceable outcome might be reached.</p>
+
+<p>Panelists will be:<br>
+&#8226; Dr. Nsenga Burton &#8211; Multi-media producer and professor of communications at Goucher College<br>
+&#8226; Dr. Kelly Brown Douglas &#8211; Chair and professor of religion and philosophy at Goucher College<br>
+&#8226;&nbsp; Russell Neverdon &#8211; Attorney<br>
+&#8226; Sanford J. Ungar &#8211; President of Goucher College and former director of Voice of America<br>
+&#8226; Romaine Williams &#8211; Minister and attorney</p>
+
+<p>The Jena Six refers to a group of six black teenagers who have been charged with the beating of Justin Barker, a white teenager at Jena High School in Jena, LA, on December 4, 2006. The beating followed a number of racially charged incidents in the town. The case has sparked protests &#8212; in Jena and elsewhere &#8212; by those who believe the arrests and the subsequent charges were excessive and racially discriminatory.</p></div></div><div id="featurednav" xmlns=""><ul><li><a href="news-and-events/media-inquiries">Media Inquiries</a></li><li><a href="x50417.xml">Office of Communications</a></li><li><a href="/web/20160422083521/http://events.goucher.edu/">Calendar of Events</a></li><li><a href="/web/20160422083521/http://blogs.goucher.edu/intheloop/category/in-the-news/">Goucher in the Media</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/x47926.xml">Goucher President's Office Speaker Series</a></li><li><a href="news-and-events/podcasts">Podcasts</a></li><li><a href="news-and-events/publications">Publications</a></li><li><a href="news-and-events/news-archive">News Archive</a></li><li><a href="x50357.xml">Events, Conferences, &amp; Summer Programs</a></li><li><a href="news-and-events/expert-listing">Expert Listing</a></li><li><a href="news-and-events/request-events-calendar">Request Events Calendar</a></li></ul></div><br xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="" /><br xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="" /><div class="addthis" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns=""><div class="addthis_toolbox"><div class="custom_images"><div class="addthisspace"><a class="addthis_button_print"><img src="images/webparts/icons/icon-print.png" width="16" height="16" border="0" alt="Print" /> Print</a><a class="addthis_button_email"><img src="images/webparts/icons/icon-email.png" width="16" height="16" border="0" alt="Email" /> Email</a><a href="/web/20160422083521/http://www.addthis.com/bookmark.php" class="addthis_button" style="text-decoration:none;"><img src="images/webparts/icons/icon-plus.png" width="16" height="16" border="0" alt="Share" /> Share</a></div></div></div><script type="text/javascript" src="/web/20160422083521js_/http://s7.addthis.com/js/250/addthis_widget.js#pubid=gouchercollege"></script><script type="text/javascript">
+				 var addthis_config = addthis_config||{};
+				 addthis_config.services_exclude = 'email,print';
+				 </script></div><div id="footer" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:igxlib="urn:igxlibns" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns=""><div class="quicklinks"><div id="myslidemenu" class="jqueryslidemenu"><ul><li><a href="#">Quick Links</a><ul><li><a href="/web/20160422083521/http://athletics.goucher.edu/landing/index">Athletics</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/bookstore">Bookstore</a></li><li><a href="/web/20160422083521/http://meyerhoff.goucher.edu/campushandbook/">Campus Handbook</a></li><li><a href="/web/20160422083521/http://www.goucher.edu/contact-and-directions#campusmap">Campus Map</a></li><li><a href="contact-and-directions">Contact &amp; Directions</a></li><li><a href="information-technology/communications/e-mail">Email</a></li><li><a href="financial-aid">Financial Aid</a></li><li><a href="advancement">Give to Goucher</a></li><li><a href="/web/20160422083521/http://learn.goucher.edu/">GoucherLearn</a></li><li><a href="information-technology">GoucherTech</a></li><li><a href="student-life/new-student-information">Information for New Students</a></li><li><a href="/web/20160422083521/http://inside.goucher.edu/">InsideGoucher</a></li><li><a href="information-technology/accounts-and-access/mygoucher">myGoucher</a></li><li><a href="student-life/student-services/office-of-public-safety">Public Safety</a></li><li><a href="report-a-concern">Report a Concern</a></li><li><a href="admissions/contact-admissions">Request Info</a></li><li><a href="/web/20160422083521/https://goucher.starfishsolutions.com/starfish-ops/support/login.html">Starfish</a></li><li><a href="admissions/visit-campus">Visit Campus</a></li></ul></li></ul><br style="clear: left" /></div></div><div class="clear"></div><div class="footerlinks"><a href="student-life/student-services/office-of-public-safety">Emergency Information</a>     
+                <a href="about/consumer-information">Consumer Information</a>     
+                <a href="/web/20160422083521/http://goucher.interviewexchange.com/">Jobs</a>     
+                <a href="about-this-web-site/website-privacy-statement">Privacy Policy</a>     
+                <a href="about-this-web-site">About This Site</a>     
+                </div><div id="social"><div class="title"><a href="/web/20160422083521/http://www.goucher.edu/social-media">Follow Us</a></div>
+	 <ul>
+              <li><a href="/web/20160422083521/http://www.facebook.com/gouchercollege"><img src="images/icons/16px/facebook.png" alt="Facebook" width="16" height="16" /></a></li> 
+              <li><a href="/web/20160422083521/http://www.twitter.com/gouchercollege"><img src="images/icons/16px/twitter-2.png" alt="Twitter" width="16" height="16" /></a></li> 
+              <!--<li><a href="/web/20160422083521/http://gouchercollege.tumblr.com/"><img src="images/icons/16px/tumblr.png" alt="Tumblr" width="16" height="16" /></a></li>-->
+              <li><a href="/web/20160422083521/http://www.youtube.com/user/gouchercollege"><img src="images/icons/16px/youtube.png" alt="YouTube" width="16" height="16" /></a></li> 
+              <li><a href="/web/20160422083521/https://www.instagram.com/gouchercollege/"><img src="images/icons/16px/instagram.png" alt="Instagram" width="16" height="16" /></a></li> 
+              <li><a href="/web/20160422083521/http://www.flickr.com/photos/goucher/"><img src="images/icons/16px/flickr.png" alt="Flickr" width="16" height="16" /></a></li>
+              <li><a href="/web/20160422083521/http://www.goucher.edu/linkedin"><img src="images/icons/16px/linkedin.png" alt="LinkedIn" width="16" height="16" /></a></li> 
+              <li><a href="/web/20160422083521/http://www.goucher.edu/social-media"><img src="images/icons/16px/addthis.png" alt="Goucher Social Media Hub" width="16" height="16" /></a></li>  
+         </ul></div><div class="clear"></div><div class="address">Goucher College ∙ 1021 Dulaney Valley Road ∙ Baltimore, Maryland 21204 ∙ USA ∙ telephone 410.337.6000</div><div class="copyright"><a href="/web/20160422083521/http://www.goucher.edu/legal-counsel/all-policies-and-procedures-a-z/copyright-policy">Copyright © 2016 Goucher College</a>
+<!--Pixel media tracking code to track digital ad campaign.-->
+<script type="text/javascript">_satellite.pageBottom();</script></div></div></div></body></html>

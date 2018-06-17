@@ -1,0 +1,139 @@
+BACKGROUNDER ON THE COURT JUDGEMENT OF THE REGENTS OF THE UNIVERSITY OF CALIFORNIA V. BAKKE CASE
+Following passage of the 1964 and 1965 Civil Rights acts, President Johnson came to believe that it was not enough just to remove legal barriers confronting minorities; some form of affirmative action would be needed to help minorities overcome decades of prior discrimination.
+On September 24, 1965, Johnson issued an executive order requiring federal contractors to take affirmative action to recruit, hire and promote more racial minorities; two years later, in another executive order, Johnson added women to the groups covered by previous antidiscrimination orders.
+Affirmative action became one of the most divisive issues of the 1970s and 1980s, and yet the debate over affirmative action can also be seen as part of the process of democracy.
+Put in starkest terms, proponents of affirmative action argue that because of prior discrimination in education and employment, women and minorities are handicapped when they apply to good schools, seek decent jobs or look for promotions.
+Therefore, to overcome the results of this past discrimination, colleges and employers ought to give some sort of preferred treatment to minorities, either by actively seeking minority applicants or by setting up a quota of jobs or school spaces reserved for women and minorities.
+Only by making this effort to bring minorities into the mainstream, goes the argument, can the effects of decades of discrimination finally be erased.
+Opponents do not deny that there has been discrimination in the past, but argue that the white male who must lose his chance at entrance to a particular college or job is being penalized unfairly.
+He had nothing to do with slavery one or two centuries ago, and may not have anything to do with discriminatory practices today.
+Why should an individual be penalized for what the society has done; conversely, why should the individual minority member benefit today for what was done to his or her ancestors decades ago?
+The question came to the Supreme Court, and in the initial decision, the Court split, with four members asserting that affirmative action plans involving racial classification were permissible under the Fourteenth Amendment, and four others claiming that any racial considerations violated the 1964 Civil Rights Act.
+Justice Lewis Powell believed that some affirmative action plans, if carefully crafted, could pass both constitutional and statutory scrutiny, and he shaped a classic transitional decision.
+Race could be a factor, but only one of many, used to seek a balance.
+The decision did not really answer the questions raised by affirmative action, but paved the way for the Court and the society to adopt some affirmative action plans, and to begin the debate over just how far to go in this difficult area.
+For further reading: Boris I. Bittker, The Case for Black Reparations (1973); Allen P. Sindler, Bakke, DeFunis and Minority Admissions: The Quest for Equal Opportunity (1978); Melvin I. Urofsky, A Conflict of Rights: The Supreme Court and Affirmative Action (1991).
+REGENTS OF THE UNIVERSITY OF CALIFORNIA V. BAKKE (1978)
+Justice Powell announced the judgement of the Court.
+This case presents a challenge to the special admissions program of the petitioner, the Medical School of the University of California at Davis, which is designed to assure the admission of a specified number of students from certain minority groups.
+The Supreme Court of California held the special admissions program unlawful, enjoined petitioner from considering the race of any applicant, and ordered Bakke's admission.
+For the reasons stated in the following opinion, I believe that so much of the judgement of the California court as holds petitioner's special admissions program unlawful and directs that respondent be admitted to the Medical School must be affirmed.
+For reasons expressed in a separate opinion, my Brother The Chief Justice, Mr. Justice Stewart, Mr. Justice Rehnquist, and Mr. Justice Stevens concur in this judgment.
+I also conclude for the reasons stated in the following opinion that the portion of the court's judgement enjoining petitioner from according any consideration to race in its admissions process must be reversed.
+For reasons expressed in separate opinions, my Brothers Mr. Justice Brennan, Mr. Justice White, Mr. Justice Marshall, and Mr. Justice Blackmun concur in this judgement.
+Affirmed in part and reversed in part...
+Because the special admissions program involved in a racial classification, the supreme court [of California] held itself bound to apply strict scrutiny.
+It then turned to the goals the University presented as justifying the special program.
+Although the court agreed that the goals of integrating the medical profession and increasing the number of physicians willing to serve members of minority groups were compelling state interests, it concluded that the special admissions program was not the least intrusive means of achieving those goals.
+Without passing on the state constitutional or the federal statutory grounds cited in the trial court's judgement, the California court held that the Equal Protection Clause required that "no applicant may be rejected because of his race, in favor of another who is less qualified, as measured by standards applied without regard to race."
+...
+III.
+A.
+The parties disagree as to the level of judicial scrutiny to be applied to the special admissions program.
+En route to this crucial battle over the scope of judicial review, the parties fight a sharp preliminary action over the proper characterization of the special admissions program.
+Petitioner prefers to view it as establishing a "goal" of minority representation in the medical school.
+Respondent, echoing the courts below, labels it a racial quota.
+This semantic distinction is beside the point: the special admissions program is undeniably a classification based on race and ethnic background.
+To the extent that there existed a pool of at least minimally qualified minority applicants to fill the 16 special admissions seats white applicants could compete only for 84 seats in the entering class, rather than the 100 open to minority applicants.
+Whether this limitation is described as a quota or a goal, it is a line drawn on the basis of race and ethnic status.
+The guarantees of the 14th Amendment extend to all persons.
+Its language is explicit.
+The guarantee of equal protection cannot mean one thing when applied to one individual and something else when applied to a person of another color.
+If both are not accorded the same protection, then it is not equal.
+Nevertheless, petitioner argues that the court below erred in applying strict scrutiny because white males are not a "discrete and insular minority" requiring extraordinary protection from the majoritarian political process.
+This rationale, however, has never been invoked in our decisions as a prerequisite to subjecting racial or ethnic distinctions to strict scrutiny.
+Nor has this Court held that discreteness and insularity constitute necessary preconditions to holding that a particular classification is invidious... Racial and ethnic classifications, however, are subject to stringent examinations without regard to these additional characteristics.
+We declared as much in the first cases explicitly to recognize racial distinctions as suspect and thus call for the most exacting judicial examination.
+B..
+.
+Over the past 30 years, this Court has embarked upon the crucial mission of interpreting the Equal Protection Clause with the view of assuring to all persons "the protection of equal laws," in a Nation confronting a legacy of slavery and racial discrimination.
+Because the landmark decisions in this area arose in response to the continued exclusion of Negroes from the mainstream of American society, they could be characterized as involving discrimination by the "majority" white race against the Negro minority.
+But they need not be read as depending upon that characterization for their results.
+It suffices to say that "over the years, this Court consistently repudiated 'distinctions between citizens solely because of their ancestry' as being 'odious to a free people whose institutions are founded upon the doctrine of equality.'"
+Petitioner urges us to adopt for the first time a more restrictive view of the Equal Protection Clause and hold that discrimination against members of the white "majority" cannot be suspect if its purpose can be characterized as "benign."
+The clock of our liberties, however, cannot be turned back to 1868.
+It is far too late to argue that the guarantee of equal protection to all persons permits the recognition of special wards entitled to a degree of protection greater than that accorded others.
+"The 14th Amendment is not directed solely against discrimination due to a 'two-class theory' -- that is, based upon differences between 'white' and Negro."
+Once the artificial line of a "two-class theory" of the 14th Amendment is put aside, the difficulties entailed in varying the level of judicial review according to a perceived "preferred" status of a particular racial or ethnic minority are intractable.
+The concepts of "majority" and "minority" necessarily reflect temporary arrangements and political judgments.
+As observed above, the white "majority" itself is composed of various minority groups, most of which can lay claim to a history of prior discrimination at the hands of the State and private individuals.
+Not all of these groups can receive preferential treatment and corresponding judicial tolerance of distinctions drawn in terms of race and nationality, for then the only "majority" left would be a new minority of white Anglo-Saxon Protestants.
+There is no principled basis for deciding which groups would merit "heightened judicial solicitude" and which would not.
+Courts would be asked to evaluate the extent of the prejudice and consequent harm suffered by various minority groups.
+Those whose societal injury is thought to exceed some arbitrary level of tolerability then would be entitled to preferential classifications at the expense of individuals belonging to other groups.
+Those classifications would be free from exacting judicial scrutiny.
+As these preferences began to have their desired effect, and the consequences of past discrimination were undone, new judicial rankings would be necessary.
+The kind of variable sociological and political analysis necessary to produce such rankings simply does not lie within the judicial competence -- even if they otherwise were politically feasible and socially desirable.
+Moreover, there are serious problems of justice connected with the idea of preference itself.
+First, it may not always be clear that a so-called preference is in fact benign.
+Courts may be asked to validate burdens imposed upon individual members of particular groups in order to advance the group's general interest.
+Nothing in the Constitution supports the notion that individuals may be asked to suffer otherwise impermissible burdens in order to enhance the societal standing of their ethnic groups.
+Second, preferential programs may only reinforce common stereotypes holding that certain groups are unable to achieve success without special protection based on a factor having no relationship to individual worth.
+Third, there is a measure of inequity in forcing innocent persons in respondent's position to bear the burdens of redressing grievances not of their making.
+By hitching the meaning of the Equal Protection Clause to these transitory considerations, we would be holding, as a constitutional principle, that judicial scrutiny of classifications touching on racial and ethnic background may vary with the ebb and flow of political forces.
+Disparate constitutional tolerance of such classifications well may serve to exacerbate racial and ethnic antagonism rather than alleviate them.
+Also, the mutability of a constitutional principle, based upon shifting political and social judgments, undermines the chances for consistent application of the Constitution from one generation to the next, a critical feature of its coherent interpretation...
+If it is the individual who is entitled to judicial protection against classifications based upon his racial or ethnic background because such distinctions impinge upon personal rights, rather than the individual only because of his membership in a particular group, then constitutional standards may be applied consistently.
+Political judgments regarding the necessity for the particular classification may be weighed in the constitutional balance, but the standard of justification will remain constant.
+This is as it should be, since those political judgments are the product of rough compromise struck by contending groups within the democratic process.
+When they touch upon an individual's race or ethnic background, he is entitled to a judicial determination that the burden he is asked to bear on that basis is precisely tailored to serve a compelling governmental interest...
+IV.
+We have held that in "order to justify the use of a suspect classification, a State must show that its purpose or interest is both constitutionally permissible and substantial, and that its use of the classification is 'necessary to the accomplishment' of its purpose or the safeguarding of its interest."
+The special admissions program purports to serve the purposes of : (i) "reducing the historic deficit of traditionally disfavored minorities in medical schools and the medical profession;" (ii) countering the effects of societal discrimination; (iii) increasing the number of physicians who will practice in communities currently undeserved; and (iv) obtaining the educational benefits that flow from an ethnically diverse student body.
+It is necessary to decide which, if any, of these purposes is substantial enough to support the use of a suspect classification.
+A.
+If petitioner's purpose is to assure within its student body some specified percentage of a particular group merely because of its race or ethnic origin, such a preferential purpose must be rejected not as insubstantial but as facially invalid.
+Preferring members of any one group for no reason other than race or ethnic origin is discrimination for its own sake.
+This the Constitution forbids.
+B.
+The State certainly has a legitimate and substantial interest in ameliorating, or eliminating where feasible, the disabling effects of identified discrimination.
+The school desegregation cases attest to the importance of this state goal, which is far more focused than the remedying of the effects of "societal discrimination," an amorphous concept of injury that may be ageless in its reach into the past.
+We have never approved a classification that aids persons perceived as members of relatively victimized groups at the expense of other innocent individuals in the absence of judicial, legislative, or administrative findings of constitutional or statutory violations... Without such findings of constitutional or statutory violations, it cannot be said that the government has any greater interest in helping one individual than in refraining from harming another.
+Thus, the government has no compelling justification for inflicting such harm.
+Petitioner does not purport to have made, and is in no position to make, such findings.
+Its broad mission is education, not the formulation of any legislative policy or the adjudication of particular claims of illegality...
+C. Petitioner identifies, as another purpose of its program, improving the delivery of health care services to communities currently underserved.
+It may be assumed that in some situations a State's interest in facilitating the health care of its citizens is sufficiently compelling to support the use of suspect classification.
+But there is virtually no evidence in the record indicating that petitioner's special admissions program is either needed or geared to promote that goal.
+Petitioner simply has not carried its burden of demonstrating that it must prefer members of particular ethnic groups over all other individuals in order to promote better health care delivery to deprived citizens.
+Indeed, petitioner has not shown that its preferential classification is likely to have any significant effect on the problem.
+D.
+The fourth goal asserted by petitioner is the attainment of a diverse student body.
+This clearly is a constitutionally permissible goal for an institution of higher education.
+Academic freedom, though not a specifically enumerated constitutional right, long has been viewed as a special concern of the First Amendment.
+The freedom of a university to make its own judgments as to education includes the selection of its student body.
+Thus, in arguing that its university must be accorded the right to select those students who will contribute the most to the "robust exchange of ideas," petitioner invokes a countervailing constitutional interest, that of the First Amendment.
+In this light, petitioner must be viewed as seeking to achieve a goal that is of paramount importance in the fulfillment of its mission.
+It may be argued that there is greater force to these views at the undergraduate level than in a medical school where the training is centered primarily on professional competency.
+But even at the graduate level, our tradition and experience lend support to the view that the contribution of diversity is substantial.
+Physicians serve a heterogeneous population.
+An otherwise qualified medical student with a particular background -- whether it be ethnic, geographic, culturally advantaged or disadvantaged -- may bring to a professional school of medicine experiences, outlooks and ideas that enrich the training of its student body and better equip its graduates to render with understanding their vital service to humanity.
+Ethnic diversity, however, is only one element in a range of factors a university properly may consider in attaining the goal of a heterogeneous student body.
+Although a university must have a wide discretion in making the sensitive judgements as to who should be admitted, constitutional limitations protecting individual rights may not be disregarded.
+Respondent urges -- and the courts below have held -- that petitioner's dual admissions program is a racial classification that impermissibly infringes his right under the 14th Amendment.
+As the interest of diversity is compelling in the context of a university's admissions program, the question remains whether the program's racial classification is necessary to promote this interest.
+V. A.
+It may be assumed that the reservation of a specified number of seats in each class for individuals from the preferred ethnic groups would contribute to the attainment of considerable ethnic diversity in the student body.
+But petitioner's argument that this is the only effective means of serving the interest of diversity is seriously flawed...
+The experience of other university admissions programs, which take race into account in achieving the educational diversity valued by the First Amendment, demonstrates that the assignment of a fixed number of places to a minority group is not a necessary means toward that end... In such an admissions program, race or ethnic background may be deemed a "plus" in a particular applicant's file, yet it does not insulate the individual from comparison with all other candidates for the available seats.
+The file of a particular black applicant may be examined for his potential contribution to diversity without the factor of race being decisive when compared, for example, with that of an applicant identified as an Italian-American if the latter is thought to exhibit qualities more likely to promote beneficial educational pluralism.
+Such qualities could include exceptional personal talents, unique work or service experience, leadership potential, maturity, demonstrated compassion, a history of overcoming disadvantage, ability to communicate with the poor, or other qualifications deemed important.
+In short, an admissions program operated in this way is flexible enough to consider all pertinent elements of diversity in light of the particular qualifications of each applicant, and to place them on the same footing for consideration, although not necessarily according them the same weight.
+Indeed, the weight attributed to a particular quality may vary from year to year depending upon the "mix" both of the student body and the applicants for the incoming class.
+B.
+In summary, it is evident that the Davis special admissions program involves the use of an explicit racial classification never before countenanced by the Court.
+It tells applicants who are not Negro, Asian, or "Chicano" that they are totally excluded from a specific percentage of the seats in an entering class.
+No matter how strong their qualifications, quantitative and extracurricular, including their own potential for contribution to educational diversity, they are never afforded the chance to compete with applicants from the preferred groups for the special admissions seats.
+At the same time, the preferred applicants have the opportunity to compete for every seat in the class.
+The fatal flaw in petitioner's program is its disregard of individual rights as guaranteed by the 14th Amendment.
+Such rights are not absolute.
+But when a State's distribution of benefits or imposition of burdens hinges on the color of a person's skin or ancestry, that individual is entitled to a demonstration that the challenged classification is necessary to promote a substantial state interest.
+Petitioner has failed to carry this burden.
+For this reason, that portion of the California court's judgment holding petitioner's special admissions program invalid under the 14th Amendment must be affirmed.
+C.
+In enjoining petitioner from ever considering the race of any applicant, however, the courts below failed to recognize that the State has a substantial interest that legitimately may be served by a properly devised admissions program involving the competitive consideration of race and ethnic origin.
+For this reason, so much of the California court's judgment as enjoins petitioner from any consideration of the race of any applicant must be reversed.
+VI.
+With respect to respondent's entitlement to an injunction directing his admission to the Medical School, petitioner has conceded that it could not carry its burden of proving that, but for the existence of its unlawful special admissions program, respondent still would not have been admitted.
+Hence, respondent is entitled to the injunction, and that portion of the judgment must be affirmed.
+Source: 438 U.S. 265 (1978).

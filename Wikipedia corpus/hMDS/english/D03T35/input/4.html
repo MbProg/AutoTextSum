@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app1.us.archive.org";archive_analytics.values.server_ms=1247;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <base href="/web/20160508122459/http://media.visitbritain.com/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <title>10 spooky experiences to freak you out in Britain</title>
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" type="text/css" media="screen" href="?service=stylesheet&amp;action=get_style&amp;layout_style&amp;main_style&amp;fader_box_style" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" media="screen" href="?service=stylesheet&amp;action=get_filters_style"/>
+<![endif]-->
+    <script type="text/javascript" src="?service=javascript&amp;language=en&amp;action=get_script&amp;jquery_library&amp;scriptaculous_library&amp;fader_box_library&amp;swf_object_library&amp;mm_library&amp;basket_script&amp;basket_event_script&amp;lightbox_script&amp;lightbox_event_script&amp;user_script&amp;user_event_script&amp;asset_script&amp;asset_event_script&amp;search_script&amp;category_event_script&amp;set_event_script&amp;grid_script&amp;feature_script"></script>
+    <script type="text/javascript">
+//<!--
+
+	window.onresize = function()
+	{
+		if (Lightbox) {
+		  
+			visible = false;
+			if ($('lightbox-minimize')) {
+				var visible = $('lightbox-minimize').style.display != 'none';
+			}
+				if (visible) {
+					Lightbox.enableSlider(100);
+				}
+            Lightbox.enableSlider();
+		}
+
+		if (Basket) {
+			visible = false;
+			if ($('basket-minimize')) {
+				visible = $('basket-minimize').style.display != 'none';
+			}
+				if (visible) {
+					Basket.enableSlider(100);
+				}
+            Basket.enableSlider();
+		}
+        
+        if(Similars) {
+            visible = false;
+			if ($('similars-minimize')) {
+				visible = $('similars-minimize').style.display != 'none';
+			}
+				if (visible) {
+					Similars.enableSlider(100);
+				}
+            Similars.enableSlider();
+        }
+	}
+	var noclear = 0;
+	var pageLoaded = false;
+document.observe("dom:loaded", function() {
+  captureStartup();
+});
+
+	function captureStartup()
+	{
+		// User
+		User.setLanguage('en');
+		User.startCheckStatus('false');
+		//
+
+		// Basket
+		Basket = new Basket();
+		Basket.setLanguage('en');
+		Basket.init();
+		//
+
+		// Lightbox
+		Lightbox = new Lightbox('');
+		Lightbox.setLanguage('en');
+		Lightbox.init();
+		//
+
+		// Search
+		Search.setLanguage('en');
+		//
+
+
+		Lightbox.initPreviewPanel('',
+			function()
+			{
+				
+
+					Lightbox.enableSlider();
+					Lightbox.show();
+				
+				
+            		Lightbox.minimize();					
+				
+				
+				ajaxAssetImages();
+			}
+		);
+		
+
+
+		MM_preloadImages();
+		pageLoaded = true;
+		
+
+		MM_preloadImages();
+	}
+
+	
+//--></script>
+  </head>
+  <body id="sets-page" class="feature-page" style="background-color: #FFFFFF;">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://media.visitbritain.com/?service=feature&amp;action=show_content_page&amp;language=en&amp;feature=1010";
+
+var firstYear = 1996;
+var displayDay = "8";
+var displayMonth = "May";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://media.visitbritain.com/?service=feature&amp;action=show_content_page&amp;language=en&amp;feature=1010" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160508122459" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Apr
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 12:24:59 May 8, 2016">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jun
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 12:24:59 May 8, 2016">8</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 12:24:59 May 8, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160508122459*/http://media.visitbritain.com/?service=feature&amp;action=show_content_page&amp;language=en&amp;feature=1010" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">8 May 16 - 8 May 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:4:000010000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="logoutWarningWindow" class="msgPopupNew" style="display: none"></div><div id="messageWarningWindow" class="msgPopupNew" style="display: none"></div><div id="assetZoomWindow" class="zoomPopup" style="display: none"></div><div id="assetAutoZoomWindow" class="autozoomPopup" style="display: none"></div><div id="lightboxCreateWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxRenameWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxDeleteWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxEmptyWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxDuplicateWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxAddToBasketWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxNotesWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxCopyMoveWindow" class="msgPopupNew" style="display: none"></div><div id="lightboxPrintOptionsWindow" class="msgPopupNew" style="display: none"></div><div id="basketCreateWindow" class="msgPopupNew" style="display: none"></div><div id="basketRenameWindow" class="msgPopupNew" style="display: none"></div><div id="basketDeleteWindow" class="msgPopupNew" style="display: none"></div><div id="basketEmptyWindow" class="msgPopupNew" style="display: none"></div><div id="basketDuplicateWindow" class="msgPopupNew" style="display: none"></div><div id="basketPrintOptionsWindow" class="msgPopupNew" style="display: none"></div><div id="assetSubscriptionDownloadNAWindow" class="msgPopupNew" style="display: none"></div><div id="loginWindow" class="msgPopupNew" style="display: none"></div><div id="registerInterestWindow" class="msgPopupNew" style="display: none"></div><div id="featureEmailWindow" class="msgPopupNew" style="display: none"></div><style>.container_16{margin:0 auto;width:1002px;}</style><style>#PreHeader label {
+  width: auto;
+}
+
+.container_16 {
+width:960px;
+}
+
+#PreHeader{
+/*background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/bg_headerfooter.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);*/
+  background-image: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/bg_headerfooter.png");
+   background-repeat: no-repeat;
+    background-position:center bottom;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}</style><div id="PreHeader" class="container_16 clearfix"><style>.top_menu_-_language {min-height: 10px;} HTML a {
+text-decoration:none;
+}
+.top_menu_-_language {
+margin-top:7px;
+text-align:right;
+}
+
+.top_menu_-_language form {
+padding-right:10px;
+}
+
+
+.top_menu_-_language form a {
+text-decoration:none;
+color:#000;
+}
+
+.top_menu_-_language form select {
+/*font-size:9px;*/
+line-height:11px;
+/*height:13px;
+width:96px;*/
+margin-right:6px;
+margin-top:3px;
+}
+
+.top_menu_-_language form select option{
+margin:0;
+padding:0;
+}
+
+.top_menu_-_language form a.loginlinks{
+margin-right:10px;
+color:#000;
+}</style><div class="top_menu_-_language grid_16"><form id="langselect" action="{currenturl}" method="post" name="loginform">
+
+ <a href="?service=user&amp;action=do_login&amp;language=en&amp;pp=" class='loginlinks'>Login </a> 
+
+  <a href="en/user/show_registration_page.html" class='loginlinks'>Register</a> 
+<select name='langdropdown' id='langdropdown'>
+
+<option value='en'  selected >UK</option>
+
+<option value='ar' >الشرق الأوسط</option>
+
+<option value='au' >Australia</option>
+
+<option value='bd' >België – Nederlands</option>
+
+<option value='bf' >Belgique - Français</option>
+
+<option value='br' >Brasil - Português</option>
+
+<option value='ca' >Canada</option>
+
+<option value='zh' >中国</option>
+
+<option value='da' >Danmark</option>
+
+<option value='de' >Deutschland</option>
+
+<option value='es' >España</option>
+
+<option value='fr' >France</option>
+
+<option value='hk' >Hong Kong</option>
+
+<option value='in' >India</option>
+
+<option value='it' >Italia</option>
+
+<option value='ja' >日本</option>
+
+<option value='ae' >Middle East</option>
+
+<option value='nl' >Nederlands</option>
+
+<option value='no' >Norge</option>
+
+<option value='pl' >Polska</option>
+
+<option value='ru' >Россия</option>
+
+<option value='sv' >Svenska</option>
+
+<option value='us' >USA</option>
+
+</select>
+<a href='javascript:changelang();'><img src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/arrow_small_right_blue.png" id="ctl00_pageHeader_imgSwitchLocale"></a>
+<input type='hidden' name='cur_lang'  id='cur_lang'  value='en'>
+</form>
+
+<script>
+
+function changelang(){
+
+
+var cur_lang = document.getElementById("cur_lang").value;
+var e = document.getElementById("langdropdown");
+var selvalue = e.options[e.selectedIndex].value;
+
+var cur_url = location.href;
+var cur_url = cur_url.replace("/"+cur_lang+"/", "/"+selvalue+"/");
+var new_url= cur_url.replace("language="+cur_lang, "language="+selvalue);
+
+ location.href = new_url ;
+//document.getElementById('langselect').submit(););
+
+}
+
+</script></div><style>.Page_Logo {min-height: 76px;} .Page_Logo {
+ 
+  float: left;
+height: 130px;
+/*    height: 42px;
+    margin-left: 49px;*/
+margin-top:-10px;
+    overflow: hidden;
+    width: 182px;
+}
+.Page_Logo img {
+  display:block;
+}
+.Page_Logo a {
+display:block;
+margin-left:22px;
+margin-top:-3px;
+text-decoration:none;
+}
+
+
+.Page_Logo a:focus,
+.Page_Logo img:focus{
+border:0;
+outline:0;
+}</style><div class="Page_Logo grid_7"><a href='/web/20160508122459/http://media.visitbritain.com/en/page/show_home_page.html'><img src='/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/header-logo-v1.png'></a>
+
+</div><style>.Blank_Spacer {min-height: 50px;} .Blank_Spacer {
+  background: none;
+}</style><div class="Blank_Spacer grid_1"></div><style>.Blank_Spacer {min-height: 50px;} .Blank_Spacer {
+  background: none;
+}</style><div class="Blank_Spacer grid_1"></div><style>.Quick_Search {min-height: 76px;} .Quick_Search {
+  font-size: 11px;
+  line-height: 1.2em;
+  text-align: left;
+margin-right:0;
+margin-bottom:10px;
+width:36.5% !important;
+margin-left:1%;
+background-color: rgba(0, 0, 0, 0);
+background-image: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/bg_search.png");
+background-position: center 7px;
+background-repeat: no-repeat;
+  float: right;
+    height: 38px;
+    position: inherit;
+    width: 310px;
+}
+
+.Quick_Search #headSearchBtn {
+background-color: transparent;
+background-image: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/search_button.png");
+background-position: center top;
+background-repeat: no-repeat;
+    height: 38px;
+    outline: medium none;
+    position: absolute;
+    text-indent: -9999px;
+    width: 36px;
+border: none;
+}
+
+.Quick_Search .quickSearch {
+width:auto;
+padding:0;
+ -moz-border-radius: 8px;
+ -khtml-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+margin-right:0px;
+margin-top:8px;
+padding:9px 0px 7px 0px;
+}
+
+
+.Quick_Search .quickSearchColumn1{
+margin-left : -20px;
+}
+
+.Quick_Search .quickSearchColumn1 .quickSearchBox {
+ position:relative;
+/*left:-20px;*/
+}
+
+
+.Quick_Search .quickSearchColumn1 .quickSearchBox label{
+float:left !important;
+}
+
+
+.Quick_Search input.text {
+font-size: 14px; 
+padding: 0px 4px; 
+height: auto ! important; 
+letter-spacing: 0px;
+border:1px solid #fff;
+margin-left: 6px;
+    border-width: 0;
+    margin-left: 0;
+    /*margin-top: -2px;*/
+width:257px;
+font-family: Arial Narrow, Arial, sans-serif;
+}
+
+.Quick_Search input.submit {
+line-height: 1em; 
+padding: 0px 0 2px 0; 
+font-size: 10px; 
+width: 60px;
+height: 20px;
+margin-top:-10px;
+margin-left:4px;
+}
+
+.Quick_Search #headSearchBtn {
+margin-left:0 !important;
+}
+
+.Quick_Search .susbnews{
+color:#fff;
+text-align:center;
+float:right;
+font-weight:bold;
+/*background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/subscribeLinks-small-v4.png") no-repeat scroll center 0px rgba(0, 0, 0, 0);*/
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/subscribeLinks-small-v4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+height:30px;
+margin-top:-10px;
+font-size:12px;
+width:250px;
+margin-right:10px;
+}
+
+.Quick_Search .susbnews .substext{
+padding:6px;
+font-size:12px;
+font-weight:bold;
+margin-right:7px;
+}</style><div class="Quick_Search grid_6"><div class="quickSearch">
+<form action="/web/20160508122459/http://media.visitbritain.com/en/pages/searchresults.html?q=" method="get" class="searchForm" name="search_form" onsubmit="if(document.getElementById('q').value=='Search Media Centre...'){document.getElementById('q').value='';}return true;">
+    <div class="quickSearchColumn1">
+        <div class="quickSearchBox">
+           <input type="text" name="q" id="q" class="text align_middle" onfocus="if(this.value=='Search Media Centre...') this.value='';" value="Search Media Centre...">
+ <input type="submit" class="submit" id="headSearchBtn" value="Search">
+<label >Search </label>
+      </div>
+    </div>
+</form>
+<br/>
+<a href='/web/20160508122459/http://media.visitbritain.com/en/user/show_registration_page.html'><div class='susbnews'><div class='substext'>Subscribe to our Newsletters</div> </div></a>
+</div></div><style>.Header_Links {min-height: 20px;} .Header_Links {
+  font-size: 13px;
+  color: #666666;
+  text-align: left;
+margin-top:-40px;
+}
+
+#main_nav {
+   padding:0;
+margin-top:6px;
+border: 1px dotted;
+ border-left-width: 0px; border-right-width: 0px; padding-left: 0px; margin-left: 20px; margin-right: 20px; min-width: 925px;
+width:97%;
+     justify-content: space-between;
+}
+
+
+
+.Header_Links  a {
+  color: #666666 !important;
+font-family: 12px Arial, Georgia,"Times New Roman",Times,serif;
+
+}
+#main_nav li a.active{
+color:#666666 !important;
+text-decoration:underline;
+}
+
+#main_nav li {
+    background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/dottedline_vertical.png") repeat-y scroll right center rgba(0, 0, 0, 0);
+text-align:center;
+min-width:8%;
+}
+
+#main_nav li a{
+    
+    color: #666;
+    display: inline-block;
+    font: 12px Arial, Georgia,"Times New Roman",Times,serif;
+    margin-bottom: 2px;
+    margin-left: 0;
+/*    margin-top: 3px;
+    padding: 7px 5px 6px 5px;*/
+    padding: 7px 8px;
+}
+#main_nav li:last-child{
+background:none;
+}
+#main_nav {
+    list-style:none;
+    display:inline;
+    float:left;
+}
+#main_nav li {
+    display:inline;
+    position: relative;
+    float:left;
+}
+
+#main_nav li .sub_menu {
+position:absolute;
+left:-20px;
+display:none;
+top:20px;
+z-index:10003;
+}
+.sub_menu ul {
+   min-height:25px;
+   padding-left:10px;
+   padding-top:5px;
+}
+
+#main_nav li ul li {
+display:none;
+min-width:120px;
+margin-top: -8px;
+background-color:#fff !important; 
+background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/dottedline.png") repeat-x scroll center top  rgba(0, 0, 0, 0);
+}
+
+#main_nav li ul li:last-child{
+background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/dottedline.png") repeat-x scroll center top  rgba(0, 0, 0, 0);
+}
+
+#main_nav li ul li a{
+    background: none;
+}
+
+#main_nav li ul {
+display:none;
+margin-top: 10px;
+}
+#main_nav li.hover ul,
+#main_nav li:hover ul {
+display:block;
+left:-48px;
+position:absolute;
+z-index:9000;
+margin-top:5px;
+}
+#main_nav li.hover ul li,
+#main_nav li:hover ul li {
+display:block;
+padding:5px;
+background-color:#8f8f8f;
+
+}
+#main_nav li ul li:hover{
+display:block;
+background-color:#6f6f6f;
+}</style><div class="Header_Links grid_16"><ul id="main_nav">
+<li><a href="/web/20160508122459/http://media.visitbritain.com/en/page/show_home_page.html" alt="Go to Home Page" >Home</a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/about_britain.html" alt="About Britain" >About Britain</a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/story_ideas.html" alt="Story Ideas" >Story Ideas</a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/Newsreleases.html" alt="Corporate News Releases " >Corporate News Releases </a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/?service=category&amp;action=show_content_page&amp;language=en&amp;category=13" alt="Images" >Images</a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/?service=search&amp;action=do_quick_search&amp;language=en&amp;mime_type=b-roll" alt="B-Roll " >B-Roll </a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/?service=search&amp;action=do_quick_search&amp;language=en&amp;mime_type=A-roll" alt="Short Films " >Short Films </a></li>  <li><a href="javascript:void(0)" alt="Media Resources " >Media Resources </a><ul><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/Itineraries.html" alt="Itineraries">Itineraries</a></li><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/accupdate.html" alt="Accommodation Updates">Accommodation Updates</a></li><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/tastenews.html" alt="Taste Newsletters">Taste Newsletters</a></li><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/contentguides.html" alt="Content Guides">Content Guides</a></li><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/broadguide.html" alt="Broadcaster Guide">Broadcaster Guide</a></li><li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/Events.html" alt="Events Calendar">Events Calendar</a></li><li><a href="/web/20160508122459/http://www.visitbritain.org/insightsandstatistics/" target="_blank" alt="Insights and Statistics">Insights and Statistics</a></li></ul></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/contactlist.html" alt="Contacts " >Contacts </a></li>  <li><a href="/web/20160508122459/http://media.visitbritain.com/en/pages/WorkingWithUs.html" alt="Working With Us" >Working With Us</a></li>
+</ul>
+<script type="text/javascript">
+function setActive() {
+  aObj = document.getElementById('main_nav').getElementsByTagName('a');
+  for(i=0;i<aObj.length;i++) {
+
+    if(document.location.href.indexOf(aObj[i].href)>=0) {
+      aObj[i].className='active';
+    }
+  }
+}
+setActive();
+/*
+function addLastSearch() {
+  var lastSearchHref =unescape( '');
+  if (lastSearchHref != '') {
+    var subitem = document.getElementById('sub_item_17');
+    if(subitem!=null){
+       var newli = document.createElement('li');
+       newli.innerHTML = '<a href="'+lastSearchHref+'">Last Search</a>';
+       subitem.insertBefore(newli, subitem.childNodes[0]);
+     }
+  } 
+}
+addLastSearch();
+*/
+</script></div><style>.Header_content_en {min-height: 140px;} .Header_content_en{
+text-align:left;
+}
+.Header_content_en .header_content {
+margin-top:-5px;
+}
+
+.Header_content_en .header_content h2 {
+margin-left:12px;
+}
+.Header_content_en .header_content > img{
+margin-top:16px;
+margin-right:40px;
+}
+.Header_content_en .header_content .page_ttl {
+    /*float: left;*/
+    font-size: 30px;
+   /* line-height: normal;
+    margin-bottom: 0;
+    font-weight: normal;*/
+    margin-right: 5px;
+   padding-left:10px;
+margin-left:10px;
+color:#000;
+
+}
+
+.Header_content_en form a{
+color:#FFF;
+background-color:#DA0071;
+padding-right:5px;
+padding-left:5px;
+padding-bottom:5px;
+text-decoration:none;
+font-size:13px;
+}
+
+.Header_content_en .header_content .page_ttl small {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Header_content_en .logged, .Header_content_en .hiddenregister {
+    display:none;
+}
+
+.Header_content_en .header_content  #ctl00_pageHeader_dvHomepageSubTitle{
+ position: relative;
+   left: 30px;
+/*     top: 20px; */
+width:50%;
+}
+/*
+.Header_content_en h1, h2, h3 {
+    color: #000;
+    font-weight: normal;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-style: normal;
+    margin-bottom: 0.5em;
+}*/
+.Header_content_en .header_content .right_content{
+    float: right;
+}
+
+.Header_content_en .header_content .right_content .imgicon{
+display:inline;
+  margin-right:10px;
+float:left;
+}
+
+.Header_content_en .header_content .right_content .idform {
+    float: right;
+    margin-right:10px;
+padding-right:10px;
+padding-left:10px;
+padding-top:10px;
+color:#000;
+  /*background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/login-background.png") no-repeat scroll center top rgba(0, 0, 0, 0);*/
+}
+
+.Header_content_en .header_content .right_content .idformhidden {
+  display:none;
+}
+
+.Header_content_en #loginbutton{
+float:right;
+}
+
+#loginbtn , logoutbtn{
+maring-top: 5px;
+/*font-size: 13px;*/
+color:#fff;
+   background-color: #e20078;
+   /*height: 30px;*/
+  width:60px;
+   margin: 0 1px;
+   overflow: hidden;
+   border:  #e20078;
+  /* border-radius: 10px;*/
+}</style><div class="Header_content_en grid_16"><div class="header_content">
+<div class="right_content">
+<div class='imgicon'>
+<img src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/breaker3v5.png">
+</div><div class='idform'>
+<form id="loginForm2" action="?service=user&amp;action=do_login&amp;language=en" method="post" name="loginform2">
+<input type='hidden' name='pp' value='/en/page/show_home_page.html'>
+Email Address<br/>
+<input id="email" name="email" style="width: 180px;" type="text"><br>
+Password<br/>
+<input id="password" name="password" style="width: 180px;" type="password"><br/>
+<!--<a href='#' onClick="document.getElementById('loginForm').submit();">Login</a>-->
+<input  value="Login" type="submit"  style="width: 80px;background-color:#DA0071;color:#fff;border:0px;" >
+</form></div>
+</div>
+<div class="page_ttl">
+Welcome to our media centre
+</div>
+<div id="ctl00_pageHeader_dvHomepageSubTitle" class="overview">
+
+<div>
+<p style="margin-bottom: 3px;"> Access
+<a alt="images" href="/web/20160508122459/http://media.visitbritain.com/?service=search&amp;action=do_quick_search&amp;language=en&amp;mime_type=image">Images, </a>
+<a alt="video" href="/web/20160508122459/http://media.visitbritain.com/?service=search&amp;action=do_quick_search&amp;language=en&amp;mime_type=b-roll"> B-roll</a>
+and
+<a alt="news releases" href="/web/20160508122459/http://media.visitbritain.com/en/pages/newsreleases.html"> News releases. </a></p>
+</div>
+<div class="register">
+<p style="margin-top:0px;">
+Keep updated by
+<a alt="register" href="/web/20160508122459/http://media.visitbritain.com/?service=user&amp;action=show_registration_page&amp;language=en"> registering </a>
+</p>
+</div>
+<div class="logged">
+<p>
+Welcome <a href='/web/20160508122459/http://media.visitbritain.com/en/user/show_my_details_page.html'>{username}</a>, <a  href="/web/20160508122459/http://media.visitbritain.com/?service=user&amp;action=do_logout&amp;language=en">Logout</a>
+</p>
+</div>
+
+<div class="clr"></div>
+</div>
+</div></div></div><style></style><div id="PostHeader" class="container_16 clearfix"><style>.Spacer_shaddow {min-height: 10px;} .Spacer_shaddow {
+  background: none;
+}</style><div class="Spacer_shaddow grid_1"></div></div><div id="wrapper" class="container_16"><div id="mainContent"><div class="secondaryContent"><div class="secondaryContent_Left33" style="width:720px;padding-left:20px;"><br /><div class="clear"></div></div><div class="secondaryContent_Left33 centered" style="width:274px"><p></p></div><div id="gotopage"><div id="overlayzoom_1"><div class="clear"></div></div></div><div class="clear"></div><div id="feature-left"><div class="scroll"><p><h2>10 spooky experiences to freak you out in Britain</h2><br />Thursday 25 Sep, 2014<br /><br /><img alt="preview" style="" src="/web/20160508122459im_/http://media.visitbritain.com/?service=asset&amp;action=show_preview&amp;asset=4727" id="4727" /><br /><br /><div id="featureStoryContent"><div id="featureInnerStoryContent"><p><b>1. Dungeons, various locations</b></p><p style="margin-bottom: 10pt; line-height: 115%;">Dungeons hold some of the nastiest secret histories in the whole of Britain and tours of their candlelit depths are not for the fainthearted. Most famous is the London Dungeon, which is now based on South Bank, close to the London Eye, and is more terrifying than ever before. Be chased through a maze by Jack the Ripper and take a ride into the depths of the dungeon. There are similarly ghoulish experiences on offer in York, Edinburgh, Blackpool and at Warwick Castle. Tales of witches and warlocks, gruesome murders and terrible crimes await (not suitable for children under ten).</p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.thedungeons.com/">www.thedungeons.com</a><i></i></p><p><b>2. Ghost Walk of Tenby, south-west Wales</b></p><p style="margin-bottom: 10pt; line-height: 115%;">A mix of history, myth and humour combine to make this a light-hearted, 90-minute walk around the seaside town of Tenby in south-west Wales. Local guide Marion Davies tells tales of haunted pubs and ghostly goings-on in the backstreets of town, while the walk also takes in the stunning coastline around Tenby with beautiful sea views.</p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.guidedtourswales.co.uk/">www.guidedtourswales.co.uk</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Tenby is around two hours’ drive west of Cardiff, while trains from Cardiff take around two-and-a-half hours with a change at Swansea.</i></p><p><b>3. Glamis Castle, Angus, Scotland </b></p><p style="margin-bottom: 10pt; line-height: 115%;">One of the most haunted castles in Scotland, Glamis was the childhood home of the Queen Mother. According to legend, the castle is cursed because an ancestral chalice was once removed from the house, where it was supposed to stay forever. The ghost of a servant boy lurks by the Queen’s bedroom, while the grounds are haunted by a mutilated woman and, somewhere in a secret room, the ghost of Earl Crawford gambles with the devil.</p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.glamis-castle.co.uk/">www.glamis-castle.co.uk</a><u></u></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Glamis is around 90 minutes’ drive north of Edinburgh and Glasgow, and a half-hour taxi ride from Dundee station, which itself is an hour’s train journey from Glasgow station.</i></p><p><b>4. Crumlin Road Gaol, Belfast, Northern Ireland</b></p><p style="margin-bottom: 10pt; line-height: 115%;">The Crumlin Road Gaol only closed its doors as recently as 1996, after 151 years in operation as a prison where it punished people for a range of crimes, from petty theft to political imprisonment. The gaol was recently fully refurbished as a visitor attraction, and provides a glimpse through prison life from Victorian times to the late 20th century. Visit the condemned man’s cell, walk the tunnel connecting the gaol to the courthouse and feel the unearthly presence of those dissatisfied with their sentences, or take a dedicated Paranormal Gaol Tour and use equipment used by experts in the field. </p><p><a href="/web/20160508122459/http://www.crumlinroadgaol.com/">www.crumlinroadgaol.com</a> </p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there:</i><b> </b><i>Crumlin Road Gaol is in central Belfast.</i></p><p><b>5. Pendle Hill Witch Hunt, Lancashire, north England</b></p><p style="margin-bottom: 10pt; line-height: 115%;">Pendle Hill, which rises up above the Lancashire countryside, an hour north of Manchester, is so haunted that many locals refuse to walk on the hill after dark. The trials of the Pendle Witches, which took place in 1612, are the most famous witch trials in English history, where ten people were hung for crimes including murder by witchcraft. This chilling tour combines the area’s terrifying history with its beautiful landscape and views. <a href="/web/20160508122459/http://www.pendlewitchexperience.com/">www.pendlewitchexperience.com</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Pendle Hill is around one hour’s drive north of Manchester, but is difficult to reach via public transport.</i><b><u></u></b></p><p><b>6. Whitby Ghost Walk, Whitby, Yorkshire, north England </b></p><p style="margin-bottom: 10pt; line-height: 115%;">Whitby is famous to all horror-lovers for its links to Count Dracula; the author, Bram Stoker, wrote the book while living in the town. This evening tour winds through the alleyways and backstreets, with the Man in Black (the tour guide) sharing spine-chilling tales and ghostly stories. For real Dracula fans, there is a separate vampire-focused tour. </p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.whitbywalks.co.uk/">www.whitbywalks.co.uk</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there:</i><i> Whitby is around one hour and 20 minutes’ drive east of York, or there are regular bus services from York taking around 90 minutes.</i></p><p><b>7. Hope Street Shivers, Liverpool, north-west England</b></p><p style="margin-bottom: 10pt; line-height: 115%;">Tales of the Black Plague, the house where Hitler’s brother hid and even John Lennon’s house all feature on this 75-minute walking tour along Hope Street in central Liverpool. The tour ends at the cemetery of the Gothic Anglican cathedral, a place to chill the bones of even the most committed ghost-buster.</p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.shiverpool.co.uk/our-tours/hope-st-shivers.aspx">www.shiverpool.co.uk/our-tours/hope-st-shivers.aspx</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Liverpool is around four hours’ drive north of London, while trains from London Euston take two hours.</i></p><p><b>8. Ghost Walk York, Yorkshire, north England</b></p><p style="margin-bottom: 10pt; line-height: 115%;">A ghost tour that’s suitable for families, this 75-minute tour relates some of York’s spookiest tales, including the Headless Earl and the Grey Lady (a nun who was walled up alive). York has a maze of ancient alleyways and passages and this tour explores them all, encouraging audience participation in the tour and even some surprise re-enactments. </p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.ghostwalkyork.co.uk/">www.ghostwalkyork.co.uk</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: York is just under a four-hour drive north of London, while trains from London Kings Cross take just over two hours.</i></p><p><b>9. The Falstaff Experience, Stratford-upon-Avon, west England</b></p><p style="margin-bottom: 10pt; line-height: 115%;">Stratford-upon-Avon is best known as the birthplace of William Shakespeare, and the Falstaff Experience is a 14th century house (and former home of William Rogers, on whom the Shakespearian character of Falstaff was based) that aims to reveal the truth about Tudor life. The house boasts at least 40 ghosts and runs lantern-lit ghost tours by day and super-spooky paranormal sessions at night.  <a href="/web/20160508122459/http://www.falstaffexperience.co.uk/">www.falstaffexperience.co.uk</a></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Stratford-upon-Avon is around two hours’ drive west of London; trains from London Marylebone take two hours.</i></p><p><b>10. Steel City Ghost Tour, Sheffield, north England</b></p><p style="margin-bottom: 10pt; line-height: 115%;">Discover Sheffield’s darkest secrets on this two-hour tour that takes place on Monday, Wednesday and Thursday evenings at 19:30. Each night has a different theme, Mondays  are classic ghost stories, Wednesday’s are more ghoulish (avoid if you’re squeamish) and Thursdays mix ghoulish stories with traditional ghostly tales, while walking round the atmospheric Campo Lane area of the city.</p><p style="margin-bottom: 10pt; line-height: 115%;"><a href="/web/20160508122459/http://www.steelcityghosttours.co.uk/">www.steelcityghosttours.co.uk</a><b></b></p><p style="margin-bottom: 10pt; line-height: 115%;"><i>Getting there: Sheffield is around three-and-a-half hours north of London, trains from London St Pancras take just over two hours.</i></p></div></div><br /><div class="divider"><br /></div><div class="contact"><h4>For more information contact:</h4><ul class="contact"><li><strong>VisitBritain Media Team</strong></li></ul><ul><li></li><li></li><li><a href="mailto:pressandpr@visitbritain.com">pressandpr@visitbritain.com</a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li></li><li><a href="mailto:"></a></li></ul><ul><li></li><li><a href="mailto:"></a></li><li></li><li></li></ul><ul><li></li><li><a href="mailto:"></a></li><li></li></ul></div><script>
+	
+	document.getElementById('featureInnerStoryContent').onmouseup=function(event){
+		
+		if (document.selection){
+			document.selection.empty() ;
+		}else{
+            window.getSelection().removeAllRanges();
+        }
+	}
+</script></p><br /><br /><p><strong style="font-size: 10pt;"></strong></p><br /></div></div><div id="feature-right"><div class="secondaryContent_downloadicon"><a href="javascript:void(0);" onclick="Feature.directDownload_onClick('1010','1');"><img src="coo/user/gpimages/rosette_dowload_sml.png" alt="" /></a></div><div class="scheme_pink"><br /></div><div class="relatedimg">Related Images</div><script language="javascript" type="text/javascript">
+	if (ItemPrice) {
+		var ItemPrice = new ItemPrice('', '');
+	}
+	
+	
+	grid_login_text = '';
+	accessZoomScreen = '1';
+	
+	
+	grid_item_list = ['4727','5979','12089','12090'];
+	grid_item_list_text = '4727,5979,12089,12090';
+	
+
+	if (document.getElementById('wrapper')) {
+		document.getElementById('wrapper').onclick = function(e){
+		    var target = e ? e.target : window.event.srcElement;
+		    if (target.nodeName.toLowerCase() !== 'a') {
+			if (target.nodeName.toLowerCase() !== 'img') {
+			if (target.nodeName.toLowerCase() !== 'span') {
+                var hasSimilars = false;
+				$$('.clicked2').each(function(el,index){
+					el.removeClassName('clicked');
+					el.removeClassName('clicked2');
+                    try{noAccessZoomScreen
+                        if(el.up(".pictureBox").down(".vvc-control")) hasSimilars = true;
+                    }catch(e){}
+				});	
+                if(hasSimilars)
+                {
+                    // reset similars panel
+                    Similars.initPreviewPanel('0', false);
+                }
+		    }
+		    }
+		    }
+		};
+	}
+
+</script><div class="pictureBox" id="pictureBox_1" style="max-height:406px;min-height:256px;width:276px;"><div class="pictureBox_img" style="height:262px;min-width:256px;"><a class="imageLink" id="assetLink_A_4727" style="width:256px;" assetid="4727" assettype="A" rel=""><img style="max-width:256px;max-height:256px;" class="mainThumbImage imageDraggable" alt="" title="London Dungeon Last Supper" rel="" offset="" onmousedown="&#10;noclear = 1; noclear=0;&#10;" id="grid-item_A_4727" assetid="4727" src="/web/20160508122459im_/http://media.visitbritain.com//assets/thumbnails/16/1/2a3295623abde1535a7851f4497729fe.jpg" /></a><div class="picturepopmenuback" style="display:none;" id="picturepopmenuback_4727"><a href="javascript:void(0);" class="close" id="picturepopmenubackclose_4727" onclick="
+				chunks = this.id.split('_');itemNumber = chunks[chunks.length - 1];$('picturepopmenuback_'+itemNumber).style.display = 'none'; return false;">X</a><ul><li><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('', 'grid', 'grid-item_A_',grid_item_list_text);noclear=0;">Preview</a></li></ul></div><div style="position:absolute;z-index:9999"><div class="autozoom" style="display:none;" id="assetLink_A_4727div"><div style=""><div><img alt="?service=asset&amp;az=1&amp;action=show_preview&amp;asset=4727" class="previewrel" style="" title="" id="4727" /></div></div><div class="icos" rel="0"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('4727', 'grid', 'grid-item_A_4727',grid_item_list_text);noclear=0;"><img id="autozoom_zoom4727" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><p class="autoZoomText"> - London Dungeon Last Supper</p><div style="clear:both;"></div></div></div></div><div class="picturePanel" style="width:260px;"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('4727', 'grid', 'grid-item_A_4727',grid_item_list_text);noclear=0;"><img id="zoom4727" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><div class="descContainer"><div class="pictureBox_desc" id="divvvc4727" style="
+				width:256px;
+				height:3em;">London Dungeon Last Supper</div><div class="pictureBox_desc2" id="divvvc24727" style="
+				width:256px;
+				height:3em;"></div></div></div><div class="pictureBox" id="pictureBox_2" style="max-height:406px;min-height:256px;width:276px;"><div class="pictureBox_img" style="height:262px;min-width:256px;"><a class="imageLink" id="assetLink_A_5979" style="width:256px;" assetid="5979" assettype="A" rel=""><img style="max-width:256px;max-height:256px;" class="mainThumbImage imageDraggable" alt="" title="Pendle Hill witch tour" rel="" offset="" onmousedown="&#10;noclear = 1; noclear=0;&#10;" id="grid-item_A_5979" assetid="5979" src="/web/20160508122459im_/http://media.visitbritain.com//assets/thumbnails/20/1/240313c7d59378e22f6cc905197f82c5.jpg" /></a><div class="picturepopmenuback" style="display:none;" id="picturepopmenuback_5979"><a href="javascript:void(0);" class="close" id="picturepopmenubackclose_5979" onclick="
+				chunks = this.id.split('_');itemNumber = chunks[chunks.length - 1];$('picturepopmenuback_'+itemNumber).style.display = 'none'; return false;">X</a><ul><li><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('', 'grid', 'grid-item_A_',grid_item_list_text);noclear=0;">Preview</a></li></ul></div><div style="position:absolute;z-index:9999"><div class="autozoom" style="display:none;" id="assetLink_A_5979div"><div style=""><div><img alt="?service=asset&amp;az=1&amp;action=show_preview&amp;asset=5979" class="previewrel" style="" title="" id="5979" /></div></div><div class="icos" rel="0"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('5979', 'grid', 'grid-item_A_5979',grid_item_list_text);noclear=0;"><img id="autozoom_zoom5979" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><p class="autoZoomText"> - Pendle Hill witch tour</p><div style="clear:both;"></div></div></div></div><div class="picturePanel" style="width:260px;"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('5979', 'grid', 'grid-item_A_5979',grid_item_list_text);noclear=0;"><img id="zoom5979" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><div class="descContainer"><div class="pictureBox_desc" id="divvvc5979" style="
+				width:256px;
+				height:3em;">Pendle Hill witch tour</div><div class="pictureBox_desc2" id="divvvc25979" style="
+				width:256px;
+				height:3em;"></div></div></div><div class="pictureBox" id="pictureBox_3" style="max-height:406px;min-height:256px;width:276px;"><div class="pictureBox_img" style="height:262px;min-width:256px;"><a class="imageLink" id="assetLink_A_12089" style="width:256px;" assetid="12089" assettype="A" rel=""><img style="max-width:256px;max-height:256px;" class="mainThumbImage imageDraggable" alt="" title="Whitby Ghost Walks" rel="" offset="" onmousedown="&#10;noclear = 1; noclear=0;&#10;" id="grid-item_A_12089" assetid="12089" src="/web/20160508122459im_/http://media.visitbritain.com//assets/thumbnails/41/1/4ba26e184e27f76dac9091aac07c85b9.jpg" /></a><div class="picturepopmenuback" style="display:none;" id="picturepopmenuback_12089"><a href="javascript:void(0);" class="close" id="picturepopmenubackclose_12089" onclick="
+				chunks = this.id.split('_');itemNumber = chunks[chunks.length - 1];$('picturepopmenuback_'+itemNumber).style.display = 'none'; return false;">X</a><ul><li><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('', 'grid', 'grid-item_A_',grid_item_list_text);noclear=0;">Preview</a></li></ul></div><div style="position:absolute;z-index:9999"><div class="autozoom" style="display:none;" id="assetLink_A_12089div"><div style=""><div><img alt="?service=asset&amp;az=1&amp;action=show_preview&amp;asset=12089" class="previewrel" style="" title="" id="12089" /></div></div><div class="icos" rel="0"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('12089', 'grid', 'grid-item_A_12089',grid_item_list_text);noclear=0;"><img id="autozoom_zoom12089" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><p class="autoZoomText"> - Whitby Ghost Walks</p><div style="clear:both;"></div></div></div></div><div class="picturePanel" style="width:260px;"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('12089', 'grid', 'grid-item_A_12089',grid_item_list_text);noclear=0;"><img id="zoom12089" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><div class="descContainer"><div class="pictureBox_desc" id="divvvc12089" style="
+				width:256px;
+				height:3em;">Whitby Ghost Walks</div><div class="pictureBox_desc2" id="divvvc212089" style="
+				width:256px;
+				height:3em;"></div></div></div><div class="pictureBox" id="pictureBox_4" style="max-height:406px;min-height:256px;width:276px;"><div class="pictureBox_img" style="height:262px;min-width:256px;"><a class="imageLink" id="assetLink_A_12090" style="width:256px;" assetid="12090" assettype="A" rel=""><img style="max-width:256px;max-height:256px;" class="mainThumbImage imageDraggable" alt="" title="Whitby Ghost Walks - Whitby Ghost Walks" rel="" offset="" onmousedown="&#10;noclear = 1; noclear=0;&#10;" id="grid-item_A_12090" assetid="12090" src="/web/20160508122459im_/http://media.visitbritain.com//assets/thumbnails/41/1/503501a21a2028350d7718b760947e7a.jpg" /></a><div class="picturepopmenuback" style="display:none;" id="picturepopmenuback_12090"><a href="javascript:void(0);" class="close" id="picturepopmenubackclose_12090" onclick="
+				chunks = this.id.split('_');itemNumber = chunks[chunks.length - 1];$('picturepopmenuback_'+itemNumber).style.display = 'none'; return false;">X</a><ul><li><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('', 'grid', 'grid-item_A_',grid_item_list_text);noclear=0;">Preview</a></li></ul></div><div style="position:absolute;z-index:9999"><div class="autozoom" style="display:none;" id="assetLink_A_12090div"><div style=""><div><img alt="?service=asset&amp;az=1&amp;action=show_preview&amp;asset=12090" class="previewrel" style="" title="" id="12090" /></div></div><div class="icos" rel="0"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('12090', 'grid', 'grid-item_A_12090',grid_item_list_text);noclear=0;"><img id="autozoom_zoom12090" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><p class="autoZoomText">Whitby Ghost Walks - Whitby Ghost Walks</p><div style="clear:both;"></div></div></div></div><div class="picturePanel" style="width:260px;"><a href="javascript:void(0);" onclick="noclear=1;Asset.zoomPopup('12090', 'grid', 'grid-item_A_12090',grid_item_list_text);noclear=0;"><img id="zoom12090" src="images/icons/zoom2.gif" width="19" height="19" alt="Zoom" title="Zoom" onmouseover="MM_swapImage(this.id, '', 'images/icons/zoom_hover.gif', 1);" onmouseout="MM_swapImgRestore();" /></a></div><div class="descContainer"><div class="pictureBox_desc" id="divvvc12090" style="
+				width:256px;
+				height:3em;">Whitby Ghost Walks&#160;-&#160;Whitby Ghost Walks</div><div class="pictureBox_desc2" id="divvvc212090" style="
+				width:256px;
+				height:3em;"></div></div></div><div id="vvc-preload" style="display:none;"><h2>VCC - Preloaded Images</h2></div><script>
+
+if($$(".isSet"))
+{
+    var countset = 0;
+    $$(".isSet").each(function(el,i){
+    countset++;   
+    });
+   var newhtml = $('pictureBox_'+countset).outerHTML;   
+   var imagebox = $('pictureBox_'+countset).down('a.imageLink');
+   var topheight = imagebox.getStyle('padding-top');
+   
+   var Pagetitle = $('categorytitle').innerHTML ;
+   var Pagetext = $('categoryassetstitle').innerHTML ;
+   
+   if(countset){
+        var newhtmltop = $('pictureBox_1').outerHTML;
+       $('pictureBox_1').outerHTML = '<div class="line"></div><div>'+Pagetitle+'</div>' + newhtmltop ;        	
+ 
+   } 
+   
+    $('pictureBox_'+countset).outerHTML = newhtml + '<div class="line"></div><div style="border-top: 8px solid #7c107b;"><br />'+Pagetext+'</div>';        	
+   
+}
+    
+</script><script language="javascript" type="text/javascript">
+if (typeof(loadCookieToggle) == 'function')
+	{
+		loadCookieToggle();
+		loadCookieToggleCap();
+	}
+
+init_grid();
+
+/* Code */
+</script></div><br /><div class="line"></div><div class="secondaryContent_Left33"><img src="images/pix.gif" alt="" /></div><div class="secondaryContent_Left33 centered"></div><div id="gotopage"></div><div class="clear hh"></div></div></div></div><div class="clear"></div><style>#Footer:before {
+content:".";
+  visibility:hidden;
+min-height:55px;
+
+}
+#Footer {
+padding:10px;
+/*background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/bg_headerfooter.png") no-repeat scroll center top rgba(0, 0, 0, 0);*/
+  background-image: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/bg_headerfooter.png");
+   background-repeat: no-repeat;
+   background-position:center top;
+
+}
+
+#Footer > br[style] {
+display:none;
+}
+#Footer{padding-bottom:5px;}</style><div id="Footer" class="container_16 clearfix"><style>.footer_content {min-height: 178px;} .footer_content #partners{
+float:left;
+}
+.footer_content a img {
+height:58px;
+}
+.footer_content h3 {
+font-size: 16px;
+    font-weight: normal;
+    margin-left: 4px;
+    margin-top: 7px;
+    text-align: left;
+
+}
+
+.footer_content #follow .pull_top {
+    margin-top: -40px;
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+img {
+    border: medium none;
+}
+
+.footer_content #follow{
+float:right;
+/*width:400px;*/
+}
+
+.footer_content #follow a{
+text-decoration:none;
+color: #666;
+}
+
+.footer_content #follow ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 120px;
+   text-align:left;
+margin-top:-15px;
+}
+
+.footer_content #follow ul  li{
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 3px;
+}
+
+.footer_content #follow h4 a{
+color: #0077d8;
+    text-decoration: none;
+}
+
+.footer_content #follow .more_icon {
+/*background: url("/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/more_button.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+    padding-right: 40px;*/
+text-align:right;
+  height:20px;
+}
+
+.footer_content #follow ul  li img{
+   margin-bottom: -2px;
+    margin-right: 4px;
+}</style><div class="footer_content grid_16"><div id="partners">
+<h3>Our Partners</h3>
+<a target="_blank" href="/web/20160508122459/http://www.visitengland.com/presscentre">
+<img  alt="Visit England logo" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/partner_visitengland.gif">
+</a>
+<a target="_blank" href="/web/20160508122459/http://www.visitscotland.com/">
+<img   alt="Visit Scotland logo" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/partner_visitscotland.gif">
+</a>
+<a target="_blank" href="/web/20160508122459/http://www.visitwales.co.uk/">
+<img   alt="Visit Wales logos" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/partner_visitwales.gif">
+</a>
+<a target="_blank" href="/web/20160508122459/http://www.londonandpartners.com/media-centre">
+<img  alt="Visit London logo" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/partner_visitlondonV2.gif">
+</a>
+<a target="_blank" href="/web/20160508122459/http://nitb.com/NewsMedia/MediaCentre.aspx">
+<img alt="Visit Northern Ireland logo" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/NITB%20logo.png">
+</a>
+</div>
+<div id="follow">
+<img style="margin-left:-5px;margin-top:-33px; margin-right: -95px;" class="pull_top" width="114" height="200" alt="" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/breaker_postbox.png">
+<h4 class="more_icon" style="margin-top:9px">
+<span>
+<a href="/web/20160508122459/http://media.visitbritain.com/en/user/show_registration_page.html" style="font-weight:bold">Get the latest news via email</a>
+</span>
+</h4>
+<ul id="ctl00_pageFooter_ul_social_list" class="social_list">
+<li>
+<img width="12" height="12" alt="Facebook icon" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/social_facebook.png">
+<a href="/web/20160508122459/https://www.facebook.com/LoveUK#!/LoveGreatBritain?fref=ts">Join the Facebook group</a>
+</li>
+<li>
+<img width="12" height="12" alt="RSS feed icon" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/social_rss.png">
+<a href="/web/20160508122459/http://media.visitbritain.com/en/pages/rssfeed.html" target=_blank>Latest News RSS Feed</a>
+</li>
+<li>
+<img width="12" height="12" alt="Twitter icon" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/social_twitter.png">
+<a href="/web/20160508122459/http://www.twitter.com/visitbritain">Follow @VisitBritain</a>
+</li>
+<li>
+<img width="12" height="12" alt="Flick icon" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/social_flickr.png">
+<a href="/web/20160508122459/http://www.flickr.com/groups/loveuk/">VisitBritain Flickr photos</a>
+</li>
+<li>
+<img width="12" height="12" alt="YouTube icon" src="/web/20160508122459im_/http://media.visitbritain.com/coo/user/gpimages/social_youtube.png">
+<a href="/web/20160508122459/http://www.youtube.com/user/VisitBritainTV">Latest on Youtube</a>
+</li>
+</ul>
+</div>
+</div><style>.Footer_Links {min-height: 10px;} .Footer_Links {
+ text-align: center;
+margin-bottom: -25px;
+font-size:12px;
+}
+.Footer_Links ul {
+margin:0;
+padding-left:183px;
+}
+.Footer_Links ul li {
+display: inline;
+margin-left: 1.4em;
+}
+
+.Footer_Links ul li  a{
+display: inline;
+text-decoration:none;
+}
+
+.Footer_Links .poweredbycapture{
+ text-align: right;
+}</style><div class="Footer_Links grid_13"><!--{_item}<a href="{url}" alt="{alt_text}">{label}</a>{_item}-->
+
+<ul>
+<li>
+<a href="#top">Top</a>
+</li>
+<li>©Visit Britain 2009-2016</li>
+<li>
+<a href="/web/20160508122459/http://media.visitbritain.com/en/user/show_registration_page.html">Register</a>
+</li>
+<li>
+<a href="/web/20160508122459/http://media.visitbritain.com/en/user/show_login_page.html">Login</a>
+</li>
+<li>
+<a href="/web/20160508122459/http://media.visitbritain.com/en/pages/rssfeed.html" target='_blank'>RSS</a>
+</li>
+<li>
+<a title="Terms And Conditions" href="/web/20160508122459/http://media.visitbritain.com/en/pages/terms-page.html">Terms And Conditions</a>
+</li>
+<li>
+<a title="Corporate" href="/web/20160508122459/http://www.visitbritain.org/" target=_blank>Corporate</a>
+</li>
+</ul>
+
+</div><style>.Powered_By_Capture {min-height: 10px;} .Powered_By_Capture .poweredbycapture{
+text-align:right;
+}
+.Powered_By_Capture {float:right;}
+
+.Powered_By_Capture .poweredbycapture a{
+color:#666666;
+text-decoration:none;
+}</style><div class="Powered_By_Capture grid_3"><div class='poweredbycapture'>©powered by <a href='/web/20160508122459/http://capture.co.uk/' target='_blank'>Capture</a></div>
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="/web/20160508122459if_/http://www.googletagmanager.com/ns.html?id=GTM-NTZ2G6"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-NTZ2G6');</script>
+
+<!-- End Google Tag Manager --></div></div><div id="pull-track" class="pulltrack"><div id="pull-tab" class="pulltab"></div></div><div id="lightbox-preview-panel" class="previewPanel" style="display: none"></div><div id="similars-preview-panel" class="previewPanel" style="display: none"></div></body>
+</html>

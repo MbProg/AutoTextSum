@@ -3,6 +3,11 @@ from nltk import word_tokenize
 from nltk import sent_tokenize
 from pprint import pprint
 import numpy as np
+from nltk.tokenize.moses import MosesDetokenizer
+detokenize = MosesDetokenizer().detokenize
+
+import tensorflow as tf
+import tensorflow_hub as hub
 
 class SimpleFeatureBuilder:
 
@@ -11,6 +16,11 @@ class SimpleFeatureBuilder:
         self.corpus_reader = corpus_reader
         self.embedding_dim = embedding_dim
         self.batch_size = batch_size
+        module_url = 'https://tfhub.dev/google/universal-sentence-encoder/2'
+        # Import the Universal Sentence Encoder's TF Hub module
+        self.universal_sentence_encoder = hub.Module(module_url)
+        #init later if needed
+        self.embedding_session = None
 
     def get_word2vec(self, word):
         try:
@@ -95,6 +105,7 @@ class SimpleFeatureBuilder:
     # Approach 2
     # TODO paragraphwise input == biased optimization? shuffle all?
     # TODO fix extreme class imbalance, maybe take 20% true nuggets and 80% brute force, currently more like 95:5%
+    # TODO sentence embeddigns (with yield)
     def __get_potential_nuggets__(self, paragraph, max_len=None, fixed_len = None):
         '''
         Helper for Task2. either max_len for all possible combinations of nuggets in the paragraph or fixed_len to only get those
@@ -116,40 +127,94 @@ class SimpleFeatureBuilder:
             if max_len:
                 for i0, word in enumerate(words):
                     max_i = min(max_len + i0, len(words))
-                    for i1 in range(i0, max_i):
+                    for i1 in range(i0 + 1, max_i):
                         nugget_candidates.append(words[i0: i1])
         # pprint(nugget_candidates[:5])
         # return pd.DataFrame(nugget_candidates, columns=['nugget_candidate'])
         return nugget_candidates
 
-    def generate_sequence_word_embeddings(self, max_len=8, shuffle = False, seed = np.random.randint(1, 50)):
+    def generate_sentence_embeddings(self, sentences, tokenized = True, batch_size ='all'):
+        '''
+        generate Sentence Embeddings from a list of sentences using Google's Universal Sentence Encoder
+            see https://www.tensorflow.org/hub/modules/google/universal-sentence-encoder/1
+        '''
+
+        # tf.logging.set_verbosity(tf.logging.ERROR)
+        #
+        # if batch_size == 'all':
+        #     batch_size = len(sentences)
+        # with tf.Session() as session:
+        #     session.run([tf.global_variables_initializer()])
+        #     i=0
+        #     while True:
+        #         print(i)
+        #         if i*batch_size >= len(sentences):
+        #             raise StopIteration
+        #         session.run(tf.tables_initializer())
+        #         batch_sentences = sentences[i*batch_size : (i+1)*batch_size]
+        #         if tokenized:
+        #             batch_sentences = [detokenize(sent, return_str=True) for sent in batch_sentences]
+        #         embeddings = session.run(embed(batch_sentences))
+        #         yield embeddings
+        #         i += 1
+
+        if self.embedding_session is None:
+            self.embedding_session = tf.Session()
+            self.embedding_session.run([tf.global_variables_initializer(), tf.tables_initializer()])
+        if tokenized:
+            sentences = [detokenize(sent, return_str=True) for sent in sentences]
+        embeddings = np.array(self.embedding_session.run(self.universal_sentence_encoder(sentences)))
+        return embeddings
+
+
+
+    def generate_sequence_word_embeddings(self, max_len=8, min_class_percentage = 0.1, seed = np.random.randint(1, 50)):
         '''
         Using Bucketing, i.e. having the same sequence length for each batch (curr_bucket) to make LSTM implementation
         easier.
+        TODO get all possible sequences? if approach actually works well
         :param max_len: max length of potential nuggets
+            min_class_percentage: percentage of samples with a label > 0. (Oversampling) Use None or 0 for no sampling.
         :return: yield a batch of X shaped (batch_size, embedding_dim, curr_bucket)
             and y labels of the number of workers marking the nugget as relevant.
         '''
         # Initialize the features and labels
-        X_batch,y_batch = ([], [])
+        X_batch,y_batch, word_sequence = ([], [], [])
         np.random.seed(seed)
         while True:
             for i in range(len(self.corpus_reader.topics)):
                 text_id, topic = self.corpus_reader.topics.ix[i].text_id, self.corpus_reader.topics.ix[i].topic
-                # TODO query as additional input?
-                # topic_words = word_tokenize(self.corpus_reader.topics.ix[topic_index].topic)
-                # topic_word_embeddings = np.average([self.get_word2vec(word) for word in topic_words],0)
                 if topic not in self.corpus_reader.devset_topics:
                     for paragraph, paragraph_nuggets in self.corpus_reader.get_paragraph_nugget_pairs(str(text_id), tokenize_before_hash= True ):
                         curr_bucket = np.random.randint(1, max_len)
                         nugget_candidates = self.__get_potential_nuggets__(paragraph, fixed_len = curr_bucket)
+                        # fix class imbalance (fixed class percentage)... much more hacky than i thought it would be
+                        if min_class_percentage:
+                            num_true_nuggets = len(paragraph_nuggets)
+                            max_random_nuggets = int(num_true_nuggets / min_class_percentage - num_true_nuggets)
+                            np.random.shuffle(nugget_candidates)
+                            nugget_candidates = nugget_candidates[:max_random_nuggets]
+                            #get true nuggets
+                            nugget_candidates_repr = [repr(candidate) for candidate in nugget_candidates]
+                            true_nuggets = []
+                            for true_nugget in list(paragraph_nuggets.keys()):
+                                if true_nugget in nugget_candidates_repr:
+                                    true_nugget = nugget_candidates[nugget_candidates_repr.index(true_nugget)]
+                                    true_nuggets.append(true_nugget)
+                            #balance again
+                            max_random_nuggets = int(len(true_nuggets) / min_class_percentage - len(true_nuggets))
+                            nugget_candidates = nugget_candidates[:max_random_nuggets]
+                            #merge both
+                            nugget_candidates += true_nuggets
+                            np.random.shuffle(nugget_candidates)
                         for candidate in nugget_candidates:
                             worker_count = 0
                             if repr(candidate) in paragraph_nuggets:
                                 worker_count = paragraph_nuggets[repr(candidate)]
+                            word_sequence.append(candidate)
                             X_batch.append([self.get_word2vec(word) for word in candidate])
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield np.array(X_batch), np.array(y_batch)
-                                X_batch, y_batch = ([], [])
+                                yield np.array(X_batch), np.array(y_batch), word_sequence
+                                X_batch, y_batch, word_sequence = ([], [], [])
                                 break

@@ -1,0 +1,889 @@
+<html>
+
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app8.us.archive.org";archive_analytics.values.server_ms=297;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SO482A--Remaining Ships</title>
+<script>
+     NewImg = new Array (
+     "ge1.png",
+      "ge2.png",
+      "ge3.png"
+      );
+      /* as many or few images and the path to them */
+      var ImgNum = 0;
+      var ImgLength = NewImg.length - 1;
+      var delay = 1500; /* Time delay between Slides in milliseconds */
+      var lock = true;
+      var run;
+
+      function chgImg(direction) {
+      if (document.images) {
+      ImgNum = ImgNum + direction;
+      if (ImgNum > ImgLength) { ImgNum = 0; }
+      if (ImgNum < 0) { ImgNum = ImgLength; }
+      document.slideshow.src = NewImg[ImgNum];
+      }
+      }
+     function auto() {
+     if (lock == true) {
+      lock = false;
+      window.clearInterval(run);
+      }
+      else if (lock == false) {
+     lock = true;
+      run = setInterval("chgImg(1)", delay);
+      }
+      }
+     
+</script>
+
+<style>
+<!--
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+span.MsoEndnoteReference
+	{vertical-align:super}
+-->
+</style>
+</head>
+
+<body background="/web/20160315121837im_/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/common_images/washed-out-ship.jpg">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm";
+
+var firstYear = 1996;
+var displayDay = "15";
+var displayMonth = "Mar";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160315121837" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20151226113458/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" title="26 Dec 2015">DEC</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 12:18:37 Mar 15, 2016">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Apr
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20151226113458/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" title="11:34:58 Dec 26, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 12:18:37 Mar 15, 2016">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160405122040/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" title="12:20:40 Apr 5, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150103155552/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" title="3 Jan 2015"><strong>2015</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 12:18:37 Mar 15, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160315121837*/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/remaining_ships/remaining_ships.htm" title="See a list of every capture for this URL">12 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 Jun 10 - 5 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000001000100_2011:-1:000000001000_2012:-1:000000000000_2013:-1:000000121000_2014:-1:000000000000_2015:-1:100000001001_2016:2:001100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<h2><font face="Verdana">SO482A.&nbsp; <b><span style="color: blue;"><font size="5">
+<a href="/web/20160315121837/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/historic_shipwrecks.htm">Historic 
+shipwrecks: Science, History, and Engineering</a></font></span></b></font></h2>
+<h2><font face="Verdana">Remaining Ships from the Age of Sail</font></h2>
+<hr>
+<p>
+<b>
+<font size="4" color="#000099" face="Verdana">About the Presenter:</font></b></p>
+<table border="1" width="100%" id="table11">
+	<tr>
+		<td>
+		<img src="/web/20160315121837im_/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/common_images/Photo_guth_USNA_2009.JPG" width="116" height="164"></td>
+		<td>
+		<p class="MsoNormal"><span style="color:black">
+		<font size="4" face="Verdana">
+		<a href="/web/20160315121837/http://www.usna.edu/Users/oceano/pguth/website/plghome.htm">Professor 
+		Peter Guth</a> (PhD, MIT) teaches oceanography, including geology and GIS, 
+		at the United States Naval Academy in Annapolis.&nbsp; Dr. Guth’s 
+		publications include over 30 peer-reviewed journal papers and book 
+		chapters.&nbsp; His research interests include geomorphometry from digital 
+		elevation models, algorithms using digital elevation models, and 
+		innovative uses of GIS in archaeology including the Battle of Big Hole 
+		(1877), 3D artefact distributions on the Swedish warship <i>Vasa,</i> 
+		and the search for the <i>Bonhomme Richard</i>.</font></span></p></td>
+	</tr>
+</table>
+
+&nbsp;<p><b>
+<font size="5" color="#000099" face="Verdana">Lesson Objectives:</font></b></p>
+
+<ul>
+	<li><font face="Verdana" size="4">Articulate the issues in the debate about 
+	the commercialization of nautical archaeology.</font></li>
+	<li><font face="Verdana" size="4">Understand the history of the great ships 
+	from the Age of Sail that have been raised and preserved in museums.</font></li>
+	<li><font face="Verdana" size="4">Discuss the challenges in interpreting a 
+	ship that has been afloat for over 200 years, and understanding what is 
+	original and what has been added over the centuries.</font></li>
+</ul>
+<p><b>
+<font size="5" color="#000099" face="Verdana">Introduction</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		The operating costs for a marine survey ship can approach $50,000 per 
+day, whether in transit to the operations area or while conducting survey work.&nbsp; 
+ROVs, AUVs, magnetometers, and side scan sonars all represent substantial 
+investments, and even with careful operating procedures some of this expensive 
+equipment will inevitably be lost.&nbsp; Underwater archaeology developed in the 
+last 60 years, and has always seen tensions between different groups--divers and 
+non-divers, professionals and amateurs. The first major discoveries in 
+underwater archaeology were the Swedish warship Vasa (see discussion below) and 
+a Bronze Age ship excavated near Bodrum, Turkey.&nbsp; As the same time as these 
+scientific projects, &quot;treasure hunting&quot; also began to get more technical, and to 
+employ the same tools and techniques.</font></span></p>
+<table border="1" width="100%" id="table24">
+	<tr>
+		<td><i><font face="Verdana">This lesson has a number of links, some of 
+		which are very large documents.&nbsp; Except for the two papers on 
+		for-profit marine archaeology, you do not have to read the links and 
+		they will not be covered on the quiz.</font></i></td>
+	</tr>
+</table>
+<p><font face="Verdana" size="4"><a href="/web/20160315121837/http://www.shipwreck.net/">Odyssey 
+Marine Exploration</a> typifies a commercial shipwreck exploration company.&nbsp; 
+Traded on the American Stock Exchange, the main business of the company is to 
+make money for its investors.&nbsp; Thus they will concentrate on wrecks with 
+valuable gold cargoes, like the HMS Victory we discussed in the last lesson.&nbsp; 
+While they have produced movies of their work for television, and have a
+<a href="/web/20160315121837/http://shipwreck.net/featuresarchpapers.php">number of publications on 
+the web</a> which showcase the technology they use and what they find, they do 
+not have the commitment to scientific publication and artefact conservation and 
+preservation.&nbsp; To the degree that they will see the artefacts to finance 
+operations and provide a profit to their investors, nothing may ultimately 
+remain in a museum, in marked contrast with the Vasa and Mary Rose to be 
+discussed below.&nbsp; Odyssey Marine is also embroiled in litigation with the 
+Spanish government over the &quot;Black Swan&quot; wreck (<a href="/web/20160315121837/http://www.shipwreck.net/blackswan.php">Odyssey's 
+version</a>,</font><b><font face="Verdana"> </font>
+<font face="Verdana" color="#000099">
+<a href="/web/20160315121837/http://en.wikipedia.org/wiki/Black_Swan_Project">
+wikipedia</a>)</font><font face="Verdana">--warships cannot be considered 
+abandoned and freely salvaged, and the difference between crown and commercial 
+shipping was not always clear several hundred years ago.&nbsp; </font></b>
+<font face="Verdana" size="4">Odyssey Marine has agreements with the U.K. 
+government for its work on HMS Victory and <i>
+<a href="/web/20160315121837/http://www.shipwreck.net/hmssussex.php">HMS Sussex</a>,</i></font><i><font face="Verdana">
+</font></i><font face="Verdana"><b>but the Spanish government has prevented work 
+on the Sussex.</b></font></p>
+<p><b><font face="Verdana"><font size="4">Read the following two discussions</font> to get 
+a sense of how commercial, scientific, technical, legal, diplomatic, and ethical issues 
+intersect.</font></b></p>
+<ul>
+	<li>
+<img border="0" src="/web/20160315121837im_/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/common_images/graded_link.gif" width="107" height="33"><b><font face="Verdana">
+	<a href="/web/20160315121837/http://www.archaeology.org/0707/etc/insider.html">Pringle, H., 2007, 
+Profiteers on the High Seas:&nbsp; Archaeology.</a>&nbsp; This is a magazine 
+	published by the
+	<a title="Archaeological Institute of America" href="/web/20160315121837/http://en.wikipedia.org/wiki/Archaeological_Institute_of_America">
+	Archaeological Institute of America</a> to promote the science of 
+	archaeology to the interested layperson.</font></b></li>
+	<li>
+<img border="0" src="/web/20160315121837im_/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/common_images/graded_link.gif" width="107" height="33"><b><font face="Verdana"><a href="/web/20160315121837/http://www.shipwreck.net/pdf/CWA-Kingsley-March2009.pdf">Kingslye, 
+	S., 2009, Into the Abyss: Deep-sea shipwrecks, science &amp; scandal: Current 
+	Word Archaeology, Issue 33</a>.&nbsp; This is a commercial magazine from a 
+	publisher whose aim is to sell subscriptions.</font></b></li>
+</ul>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		If you wanted to get a sense of what a ship like the <i>Bonhomme Richard</i> 
+was like in the summer and fall of 1779, you could visit one of the ships from 
+the Age of Sail that has survived until the present day.&nbsp; You can go to a 
+ship that sank, and was later excavated, raised, and exhibited in a museum.&nbsp; 
+This ship might have tens of thousands of artefacts recovered, and faithfully 
+preserves a snapshot of what the ship looked like on the day it sank.&nbsp; 
+Two ships--the <i>Mary Rose</i> and the <i>Vasa </i>fall into this category, and 
+both actually significantly predate the <i>Bonhomme Richard</i>.&nbsp; But their 
+ability to give a sense of an actual sailing ship, complete with a snapshot of 
+life afloat, make them important vessels for anyone trying to understand what </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+		the <i>Bonhomme Richard</i> would have been like.</font></span><span style="color:black"><font size="4" face="Verdana">&nbsp; 
+Alternatively, you could find a ship that has remained in service for over two 
+centuries.&nbsp; In this case, you have to worry about what changes have been 
+made to the ship during that time interval, since navies tended to be practical and 
+reuse ships in old age, and it may not be clear that the current usage of the 
+ship's spaces actually reflects their original plans, and it might also not be 
+clear how much of the timbers and other equipment is original.&nbsp;As an 
+example of wishful thinking illustrating the difficulty in interpreting a 200 
+year old ship, the <i>USS Constellation</i> in Baltimore has been claimed to be 
+a 1797 frigate 
+rather than an 1854 sloop.&nbsp; Two near 
+contemporaries of the </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+<i>Bonhomme Richard </i>remain, <i>HMS Victory</i> (not the <i>Victory</i> in 
+the <a href="/web/20160315121837/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/eng_tech_3/eng_tech_3.htm">Engineering 3 lesson</a>) and the <i>USS Constitution</i>.</font></span><span style="color:black"><font size="4" face="Verdana">
+		</font></span></p>
+<p>&nbsp;</p>
+<p><font face="Verdana"><b>Table 1.&nbsp; Comparison of the remaining ships to 
+the <i>Bonhomme Richard</i> and <i>Serapis</i></b></font></p>
+<table border="1" id="table12">
+	<tr>
+		<td><b><font face="Verdana">Ship</font></b></td>
+		<td><b><font face="Verdana">Built</font></b></td>
+		<td><b><font face="Verdana">Length</font></b></td>
+		<td><b><font face="Verdana">Breadth</font></b></td>
+		<td><b><font face="Verdana">Height</font></b></td>
+		<td><b><font face="Verdana">Height</font></b><p><b><font face="Verdana">
+		(mast)</font></b></td>
+		<td><b><font face="Verdana">Guns</font></b></td>
+		<td><b><font face="Verdana">Tons</font></b></td>
+	</tr>
+	<tr>
+		<td><i><b><font face="Verdana">Mary Rose</font></b></i></td>
+		<td><b><font face="Verdana">Built 1510, Refits 1527-28, 1536</font></b></td>
+		<td><b><font face="Verdana">32 m keel, 38.5 m waterline</font></b></td>
+		<td><b><font face="Verdana">11.66 m</font></b></td>
+		<td><b><font face="Verdana">13 m</font></b></td>
+		<td>&nbsp;</td>
+		<td><b><font face="Verdana">78-91</font></b></td>
+		<td><b><font face="Verdana">500 initially, 700 after refit</font></b></td>
+	</tr>
+	<tr>
+		<td><i><b><font face="Verdana">Vasa</font></b></i></td>
+		<td><b><font face="Verdana">Launched 1628</font></b></td>
+		<td><b><font face="Verdana">47 m at waterline, 61 m</font></b></td>
+		<td><b><font face="Verdana">11.7 m</font></b></td>
+		<td><b><font face="Verdana">20 m</font></b></td>
+		<td>&nbsp;</td>
+		<td><b><font face="Verdana">64</font></b></td>
+		<td><b><font face="Verdana">1200</font></b></td>
+	</tr>
+	<tr>
+		<td><i><b><font face="Verdana">HMS Victory</font></b></i></td>
+		<td><b><font face="Verdana">Launched 1765</font></b></td>
+		<td><b><font face="Verdana">57 m gundeck, 69.34 m overall</font></b></td>
+		<td><b><font face="Verdana">15.8 m</font></b></td>
+		<td>&nbsp;</td>
+		<td><b><font face="Verdana">62.5 m</font></b></td>
+		<td><b><font face="Verdana">100</font></b></td>
+		<td><b><font face="Verdana">3500</font></b></td>
+	</tr>
+	<tr>
+		<td><i><b><font face="Verdana">USS Constitution</font></b></i></td>
+		<td><b><font face="Verdana">Launched 1797</font></b></td>
+		<td><b><font face="Verdana">53 m at waterline, 62 m overall</font></b></td>
+		<td><b><font face="Verdana">13.26 m</font></b></td>
+		<td>&nbsp;</td>
+		<td><b><font face="Verdana">67 m</font></b></td>
+		<td><b><font face="Verdana">44-52</font></b></td>
+		<td><b><font face="Verdana">1576</font></b></td>
+	</tr>
+	<tr>
+		<td><i><font face="Verdana"><b>Bohommme Richard</b></font></i></td>
+		<td><font face="Verdana"><b>Built 1765, Refit 1779</b></font></td>
+		<td><font face="Verdana"><b>47 m</b></font></td>
+		<td><font face="Verdana"><b>12 m</b></font></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><font face="Verdana"><b>40</b></font></td>
+		<td><font face="Verdana"><b>900</b></font></td>
+	</tr>
+	<tr>
+		<td><i><font face="Verdana"><b>Serapis</b></font></i></td>
+		<td><font face="Verdana"><b>Launched 1779</b></font></td>
+		<td><b><font face="Verdana">47 m</font></b></td>
+		<td><b><font face="Verdana">13 m</font></b></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><font face="Verdana"><b>44-50</b></font></td>
+		<td><b><font face="Verdana">879</font></b></td>
+	</tr>
+</table>
+<p><b>
+<font size="5" color="#000099" face="Verdana">Mary Rose</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		The <i>Mary Rose</i> was built for King Henry VIII of England in 1510 as 
+a carrack-type warship.&nbsp; This was a Portuguese design with a high rounded 
+stern with an aftcastle, and a forecastle as the stem.&nbsp; In 1545, the French 
+assembled a large fleet to invade England, and the <i>Mary Rose</i> was the flagship of 
+the English defending fleet.&nbsp; On July 19 the <i>Mary Rose</i> led an attack 
+on French galleys in the Solent, but heeled over and sank almost instantly.&nbsp; 
+Fewer than 35 men escaped from the 400 man crew.&nbsp; </font></span></p>
+<p><font face="Verdana" size="4">Efforts to raise the ship failed, but some guns 
+and rigging were recovered in the 16th century.&nbsp; The ship came to rest on 
+its starboard side.&nbsp; The port side was mostly destroyed, and a hard layer 
+of sediment covered the starboard side.&nbsp; The site was rediscovered in 1836 
+and several cannons raised, but the divers apparently did not get into the 
+actual ship area.</font></p>
+<p><font face="Verdana" size="4">The ship was rediscovered in the mid 1960s, and 
+identified as the <i>Mary Rose</i> in 1971.&nbsp; Underwater excavation using 
+divers conducted 27,831 dives from 1979 to 1982.&nbsp; They recovered 20,571 artefacts.&nbsp; Upon the completion of excavation, the wreck was lifted to the 
+surface in 1982 and taken to Portsmouth for conservation.&nbsp; The ship is not 
+currently on display while a new museum is being built.</font></p>
+<p><font face="Verdana" size="4">The excellent preservation of the ship and its 
+contents provide an unparalleled look at navy life in Tudor England.&nbsp; The
+online 
+database has over 14,000 artefacts, a large proportion of which include 
+textiles, leather, and other objects not commonly preserved.&nbsp; Part of the 
+value of the collection was that every artefact was on the ship and in use on 
+July 19, 1545.</font></p>
+<p>&nbsp;</p>
+<table border="1" id="table13">
+	<tr>
+		<td><b><font face="Verdana"><img border="0" src="columbus_ships.jpg" width="486" height="325"></font></b><p>&nbsp;</td>
+		<td><b><font face="Verdana">Columbus's ships.&nbsp; The <i>Santa Maria</i> was a carrack.</font></b><p>&nbsp;</p>
+		<p><b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:Gustav_Adolf_Closs_-_Die_Schiffe_des_Columbus_-_1892.jpg">
+		Wikipedia</a>.</font></b></td>
+	</tr>
+</table>
+<table border="1" id="table16">
+	<tr>
+		<td>
+		<b><font face="Verdana">
+		<img border="0" src="800px-AnthonyRoll-2_Mary_Rose.jpg" width="800" height="550"></font></b></td>
+		<td><b><font face="Verdana">The <i>Mary Rose</i> as seen in the 1540's 
+		Anthony Roll which inventoried 58 naval vessels.</font></b><p><b>
+		<font face="Verdana">Compare the high, &quot;off-balance&quot; lines of the ship 
+		with those of the Victory and Constitution below.&nbsp; The <i>Vasa</i> 
+		shared similar design elements, and the instability of both <i>Vasa</i> 
+		and <i>Mary Rose</i> was a learning experience for naval architects, as 
+		well as a treasure trove for archaeologists.</font></b></p>
+		<p><b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:AnthonyRoll-2_Mary_Rose.jpg">wikipedia</a>
+		</font></b></td>
+	</tr>
+</table>
+<table border="1" id="table15">
+	<tr>
+		<td>
+		<b><font face="Verdana">
+		<img border="0" src="Cowdray_engraving-full-lowres.jpg" width="750" height="250"></font></b></td>
+		<td><b><font face="Verdana">Battle of the Solent, with the French fleet 
+		on the left and the English on the right.&nbsp; The sunken <i>Mary Rose</i> 
+		is in the center of the image.</font></b><p><b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:Cowdray_engraving-full-lowres.jpg">wikipedia</a>
+		</font></b></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table border="1" id="table14">
+	<tr>
+		<td>
+		<b><font face="Verdana">
+		<img border="0" src="800px-MaryRose-salvage1982-above_water_edited.jpg" width="800" height="507"></font></b></td>
+		<td><b><font face="Verdana">Raising the <i>Mary Rose</i>.</font></b><p>
+		<b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:MaryRose-salvage1982-above_water_edited.jpg">wikipedia</a>
+		</font></b></td>
+	</tr>
+	<tr>
+		<td>
+		<img border="0" src="MaryRose-conservation1.jpg" width="800" height="600"></td>
+		<td><b><font face="Verdana">The <i>Mary Rose</i> undergoing conservation.&nbsp; 
+		The misting operation to preserve the ship obscured details and led to 
+		an almost ghostly viewing experience which will be gone when the new 
+		museum opens.</font></b><p>&nbsp;</p>
+		<p><b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:MaryRose-conservation1.jpg">
+		Wikipedia</a>.</font></b></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center">
+		<img border="0" src="600px-MaryRose-ship_hall.jpg" width="600" height="600"></td>
+		<td><b><font face="Verdana">The <i>Mary Rose</i> in Portsmouth.&nbsp; 
+		Because only one side of the ship is preserved, it presents a very 
+		different impression than the complete <i>Vasa</i>.</font></b><p>&nbsp;</p>
+		<p><b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:MaryRose-ship_hall.jpg">
+		Wikipedia</a>.</font></b></p>
+		<p>&nbsp;</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>
+<font size="5" color="#000099" face="Verdana">Vasa</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		The Swedish warship <i>Vasa</i> sank in 1628 on its maiden voyage, so it is 
+about a century younger than the Mary Rose.&nbsp; Salvage of the </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>Vasa</i></font></span><span style="color:black"><font size="4" face="Verdana">
+		in 1961 
+predated the rediscovery of the Mary Rose, and lessons learned from the </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>Vasa</i></font></span><span style="color:black"><font size="4" face="Verdana">
+		helped the archaeological and recovery teams for the Mary Rose.</font></span></p>
+<p><font face="Verdana" size="4">The </font><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>Vasa</i></font></span><font face="Verdana" size="4"> was to be the flagship for the Baltic 
+fleet of King Gustavus Adlofus, and as a result was highly decorated with 
+brightly painted sculptures.</font></p>
+<table border="1" id="table19">
+	<tr>
+		<td>
+		<img border="0" src="800px-The_Vasa_from_the_Bow.jpg" width="800" height="533"></td>
+		<td><b><font face="Verdana">The Vasa in its Stockholm museum.&nbsp; The 
+		ship's boat is at the lower right.</font></b><p><b><font face="Verdana">Source:</font></b>
+		<b><font face="Verdana">
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:The_Vasa_from_the_Bow.jpg">
+		wikipedia</a></font></b></td>
+	</tr>
+</table>
+<table border="1" width="100%" id="table20">
+	<tr>
+		<td><b><font face="Verdana">
+		<img border="0" src="450px-Vasa_from_port1.jpg" width="450" height="600"></font></b></td>
+		<td><b><font face="Verdana">The side view of Vasa.&nbsp; Visitors can 
+		walk around the ship, and look into the gunports and the deck from 
+		balconies on several levels.</font></b><p>&nbsp;</p>
+		<p><b><font face="Verdana">Source:&nbsp;
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:Vasa_from_port1.jpg">
+		wikipedia</a> </font></b></td>
+	</tr>
+</table>
+<table border="1" width="100%" id="table21">
+	<tr>
+		<td><b><font face="Verdana">
+		<img border="0" src="800px-Vasa-lower_gun_deck-2.jpg" width="800" height="600"></font></b></td>
+		<td><b><font face="Verdana">The lower gundeck.&nbsp; An interesting 
+		aspect of the <i>Vasa</i> is the very small number of interior spaces 
+		compared to other more recent ships; as an example, the Captain shared a single 
+		cabin with the other officers.</font></b><p><b><font face="Verdana">This 
+		view provides a very unrealistic and uncluttered view of how this space 
+		would have looked during the ship's life.&nbsp; The inside of the ship 
+		is not open to visitors, and the artefacts have been removed for 
+		preservation, and to lower the weight which the ship's timbers must 
+		support.</font></b></p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p><b><font face="Verdana">Source:&nbsp;
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:Vasa-lower_gun_deck-2.jpg">
+		wikipedia</a> </font></b></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" width="100%" id="table22">
+	<tr>
+		<td><img border="0" src="vasa/DSCF2751.JPG" width="576" height="432"></td>
+		<td><font face="Verdana"><b>The <i>Vasa</i> artefacts include some of 
+		the cannons, which are among the most durable and commonly preserved 
+		artefacts.&nbsp; The large size means cannons are rarely overlooked, 
+		even when underwater visibility is poor.&nbsp; Their size and value 
+		often meant that early salvage attempts concentrate on them.</b></font><p></p>
+		<p></p>
+		<p></p>
+		<p><font face="Verdana"><b>Photo from Professor Guth</b></font></td>
+	</tr>
+	<tr>
+		<td><img border="0" src="vasa/DSCF2733.JPG" width="576" height="432"></td>
+		<td><font face="Verdana"><b>Most of the over 30,000 <i>Vasa</i> 
+		artefacts are in museum storage, such as these barrels.</b></font><p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p><font face="Verdana"><b>Photo from Professor Guth</b></font></p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img border="0" src="vasa/DSCF2739.JPG" width="432" height="576"></td>
+		<td><font face="Verdana"><b><i>Vasa</i> artefacts include leather shoes, 
+		and the wooden shoe lasts a sailor would own so that additional shoes 
+		could be created with the proper size.</b></font><p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p><font face="Verdana"><b>Photo from Professor Guth</b></font></p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img border="0" src="vasa/DSCF2740.JPG" width="576" height="432"></td>
+		<td><font face="Verdana"><b><i>Vasa</i> preserved fabric.</b></font><p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p><font face="Verdana"><b>Photo from Professor Guth</b></font></p>
+		<p>&nbsp;</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" id="table23">
+	<tr>
+		<td><img border="0" src="vasa/DSCF2720.JPG" width="461" height="346"></td>
+		<td><font face="Verdana"><b><i>Vasa</i> sculpture as preserved today.</b></font><p>
+		&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p><font face="Verdana"><b>Photo from Professor Guth</b></font></p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img border="0" src="vasa/DSCF2730.JPG" width="461" height="346"></td>
+		<td><font face="Verdana"><b><i>Vasa</i> sculpture reconstruction, based 
+		on analysis of how it was originally painted.&nbsp; This sculpture 
+		represents <i>Vasa</i> and the Swedish crown, and shows the symbolism 
+		that the ship was intended to portray.</b></font><p><font face="Verdana"><b>Photo from Professor Guth</b></font></p>
+		<p>&nbsp;</td>
+	</tr>
+</table>
+<p><b>
+<font size="5" color="#000099" face="Verdana">HMS Victory</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		The <i>HMS Victory</i> that currently sits in drydock in Portsmouth was the 6th ship 
+of the Royal Navy with the name.&nbsp; This was a 100 gun ship of the line, and&nbsp; significantly larger than any of the sailing ships ever owned by the U.S. 
+Navy (see Table 1 with a comparison to &quot;Old Ironsides&quot;, the <i>USS Constitution</i>).&nbsp; 
+This </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>Victory</i></font></span><span style="color:black"><font size="4" face="Verdana">
+		is most famous as Nelson's flagship at Trafalgar.</font></span></p>
+<p>&nbsp;</p>
+<table border="1" id="table18">
+	<tr>
+		<td><img border="0" src="victory/DSCF3315.JPG" width="600" height="450"></td>
+		<td><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>HMS Victory</i> in Portsmouth<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</font></span><p><font face="Verdana">
+		<b>Photo from Professor Guth</b></font></td>
+	</tr>
+	<tr>
+		<td><img border="0" src="victory/DSCF3321.JPG" width="600" height="800"></td>
+		<td><span style="color:black">
+		<font size="4" face="Verdana">
+		<i>HMS Victory</i> in </font></span><font face="Verdana" size="4">
+		drydock is no longer afloat.&nbsp; The importance of this distinction 
+		will be apparent when we look at <i>USS Constitution</i>.<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</font>
+		<p><font face="Verdana"><b>
+		Photo from Professor Guth</b></font></td>
+	</tr>
+	<tr>
+		<td><img border="0" src="victory/DSCF3322.JPG" width="600" height="800"></td>
+		<td><font face="Verdana"><b>Photo from Professor Guth</b></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><font face="Verdana" size="5" color="#000099">USS Constitution</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		The <i>USS Constitution</i> was a frigate, comparable in many respects 
+with <i>Serapis</i>.&nbsp; It is the oldest commissioned warship afloat in the 
+world, but from an archaeological perspective, the ship is the sum of its 200+ 
+year history, and is thus very different from the <i>Vasa</i> and <i>Mary Rose</i>.&nbsp; 
+But like the <i>Victory</i> in Portsmouth, if you visit the
+<a href="/web/20160315121837/http://www.ussconstitutionmuseum.org/">Charlestown Navy Yard, 
+Massachusetts</a>, you can tour the ship and get a sense of what we think a 
+frigate from the Age of Sail looked like.</font></span></p>
+<p>&nbsp;</p>
+<table border="1" id="table17">
+	<tr>
+		<td><img border="0" src="h85542k.jpg" width="600" height="450"></td>
+		<td><font face="Verdana"><b>July 1812 encounter between USS <i>Constitution</i> and a British 
+		squadron.&nbsp; This is a photograph of a painting.<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</b></font><p>
+		<font face="Verdana" style="font-weight: 700">
+		Source: Naval Historical Center </font> </td>
+	</tr>
+	<tr>
+		<td><img border="0" src="h52488.jpg" width="600" height="450"></td>
+		<td><font face="Verdana"><b>July 1812 encounter between USS <i>Constitution</i> and a British 
+		squadron.&nbsp; This is a photograph of a painting.<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</b></font><p>
+		<b><font face="Verdana">
+		Source: Naval Historical Center </font></b> </p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+		<img border="0" src="USS_Constitution_ready_for_launch.jpg" width="600" height="333"></td>
+		<td><b><font face="Verdana"><i>Constitution</i> undergoing repairs at the Navy yard, Portsmouth, 
+		N.H. 1858.&nbsp; Note that the ship has been substantially rebuilt.<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</font></b><p>
+		<b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:USS_Constitution_ready_for_launch.jpg">
+		wikipedia</a> </font></b>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<img border="0" src="Constitutionasbarracksship.jpg" width="528" height="420"></td>
+		<td><b><font face="Verdana"><i>Constitution</i> in Boston c. 1905.&nbsp; 
+		Note that the ship has been turned into a floating barracks.</font></b><p>
+		&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>
+		<b><font face="Verdana">Source:
+		<a href="/web/20160315121837/http://en.wikipedia.org/wiki/File:Constitutionasbarracksship.jpg">
+		wikipedia</a> </font></b>
+		</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><b>
+<font size="5" color="#000099" face="Verdana">Conclusion</font></b></p>
+<p><span style="color:black">
+		<font size="4" face="Verdana">
+		There are several ways to experience what life would have been like on 
+the <i>Bonhomme Richard</i> and the <i>Serapis</i>.&nbsp; Several ships from 
+that era survive, and only require us to see through the changes that have been 
+made over the centuries as their missions changed, our ideas of historic 
+preservation evolved, and the ships were modified for safety and tourist 
+comfort.&nbsp; For a snapshot view of a ship and its contents, we can look to 
+the </font></span><span style="color:black">
+		<font size="4" face="Verdana">
+<i>Mary Rose</i> and the <i>Vasa.&nbsp; </i>Those ships were recovered with the 
+single purpose of understanding and preserving their history, and making the 
+knowledge freely available.</font></span></p>
+<hr>
+<p>
+<img border="0" src="/web/20160315121837im_/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/common_images/graded_link.gif" width="107" height="33"><b><font face="Verdana" size="4">
+</font></b><font face="Verdana"><b><font size="4">USNA Blackboard</font>,&nbsp; 
+Read one of the two web pages below, and discuss what you think could be learned 
+by raising this ship, and whether that plan should be pursued.</b></font></p>
+<ul>
+				<li>
+				<p style="font-family: Verdana">
+				<a href="/web/20160315121837/http://www.deepsea.se/?id=current&amp;productionid=29&amp;image=151#divmainimage">
+				http://www.deepsea.se/?id=current&amp;productionid=29&amp;image=151#divmainimage</a>
+				</p>
+				</li>
+				<li>
+				<p style="font-family: Verdana">
+				<a href="/web/20160315121837/http://www.hydro-international.com/issues/articles/id1236-The_Ghost_Ship_Expedition.html">
+				http://www.hydro-international.com/issues/articles/id1236-The_Ghost_Ship_Expedition.html</a></p>
+				</li>
+</ul>
+<p>
+<b>
+<font face="Verdana" size="4" color="#000099">
+<a href="/web/20160315121837/http://www.usna.edu/Users/oceano/pguth/website/shipwrecks/published_syllabus.htm">Return 
+to course syllabus</a></font></b></p>
+<hr>
+<p align="right"><font face="Verdana"><i>Last revision 3/5/2011</i></font></p>
+<p><font face="Verdana">
+
+	</div>
+	</font></p>
+
+</body>
+
+</html>

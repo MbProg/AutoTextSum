@@ -1,0 +1,792 @@
+French, Justice Robert --- "Dialogue across difference - freedom of speech and the media in India and Australia: Some constitutional comparisons" (FCA) [2007] FedJSchol 16
+Speeches
+Supreme Court of India, New Delhi
+8 - 12 October 2007
+Dialogue Across Difference - Freedom of Speech and the Media in India and Australia
+Some Constitutional Comparisons
+This is true Liberty when free born men
+Having to advise the public may speak free,
+Which he who can, and will, deserve's high praise,
+Who neither can nor will, may hold his peace;
+What can be juster in a State then this?
+From Euripides - the Suppliants, quoted on the title page of John Milton's Areopagitica published in 1644 as a tract against the Licensing Order of 1643.
+Introduction
+1                     There are many differences between India and Australia.
+India is the world's largest constitutional democracy.
+Its population is approximately 1.13 billion people occupying a land area of nearly 3 million square kilometres.
+Australians number about 21.05 million people, occupying a land area of about 7.7 million square kilometres (including offshore islands).
+Significant aspects of the history, culture, demography and geography of each  mark two very different societies.
+There are however many things our two countries have in common.
+The differences are a challenge to those who would engage in dialogue about comparisons between their constitutions and legal systems and particularly in relation to freedom of expression and the media.
+The things we have in common provide a framework for a fruitful exchange of views.
+2                     Approaches to freedom of expression of individuals and of the media may be affected by cultural traditions and sensitivities.
+They may also be affected by religious and ethnic perspectives which differ in their range, nature and intensity between societies.
+But the challenge posed by these differences is not insurmountable at the level of general principle.
+India has an express constitutional guarantee of freedom of speech.
+Australia has no such guarantee.
+However, the High Court has implied in Australia's Constitution a freedom of communication on political matters.
+Importantly both of our countries share, as part of their constitutional foundations, the heritage of the common law derived from England although altered and adapted to local conditions over the years.
+That heritage imported principles of a constitutional character relating to the rule of law and, in Australia, affects the interpretation of statutes in a way that is relevant to the preservation of a variety of freedoms, including freedom of expression.
+3                     Whether the scope and limits of freedom of expression are raised in a constitutional or statutory context or at common law balancing exercises are called for.
+The protection of freedom of expression in many constitutional democracies raises similar issues which require judges to make normative assessments of the boundaries between that freedom and reasonable limits in a free and democratic society.
+The assessments may differ from country to country and within countries from time to time according to changing circumstances including the composition of constitutional courts.
+4                     It is a great honour on the occasion of the 60th anniversary of India's independence to  have the opportunity to engage in a dialogue about freedom of speech and the media with its leading constitutional judges.
+It is a freedom of great importance to both our countries and recognised globally, since the Universal Declaration of Human Rights in 1948, as a fundamental human freedom.
+Like many of the freedoms so described, it found its way into Pt III of the Indian Constitution which was being drafted at the time that the Universal Declaration was made.
+Before proceeding to the core of the topic it would be helpful to look at a little of Australia's constitutional history and the content and nature of its Constitution .
+A brief overview of Australian constitutional history
+5                     One Australian constitutional historian has written that European Australia began as a jail which covered half the continent.
+[1] When Britain lost its American colonies, New South Wales was designated, in 1786, as a place to which British convicts might be transported.
+[2] On 26 January 1788, Arthur Phillip took possession of the new colony in the name of the British Crown.
+This was the same year in which the American colonies were writing their Constitution .
+6                     New South Wales initially covered all of Australia east of the 135th meridian together with the adjacent islands.
+In 1825 Tasmania was carved out of it as a distinct colony.
+In January 1851 the colony of Victoria was created from its southern portion.
+In 1859 the northern portion became the colony of Queensland .
+South Australia came into existence as a province in 1834 by direct Imperial enactment.
+Western Australia, which was never part of New South Wales, was established as a colony by direct Imperial enactment in 1829.
+By the end of the 19th century each of the colonies was self-governing.
+The legal legitimacy of their constitutions depended directly or indirectly upon acts of the British Parliament.
+They did not have legal personalities capable of recognition at international law.
+A leading Australian constitutional law academic, Professor Leslie Zines, summarised the operation of colonial rule in Australia in the late 19th century thus:
+The colonial Parliaments and ministers were to be left to manage matters of purely local concern without interference from the Imperial authorities.
+Generally speaking in all such matters the governor was to act on the advice of his local ministers who in turn were responsible to the colonial Parliament.
+In all matters affecting foreign nations or other parts of the Empire the Imperial government and Parliament were alone responsible.
+[3]
+7                     A successful movement towards the formation of an Australian federation began in the last decade of the 19th century.
+It came from the colonists.
+It was driven by their concerns about foreign affairs, immigration, defence, trade and commerce and industrial relations.
+There was also anxiety about the colonising activities of France and Germany in the area.
+These concerns could not be addressed by a system comprising six separate colonial governments.
+Importantly the movement did not seek to rid Australia of British hegemony.
+There was no desire to assert against government generally, or the British Government in particular, rights and freedoms for colonists.
+The rights most intensely debated were those of the individual colonies as proposed States against the proposed Federal Parliament.
+8                     Colonial representatives met on several occasions in the 1890s to discuss and formulate an Australian Constitution .
+They adopted a draft in March 1898.
+Referendums were held and ultimately a majority of people in a majority of the colonies approved it.
+A Constitution Bill was submitted to the United Kingdom Parliament.
+The Bill was passed and on 9 July 1900 received the Royal Assent.
+A proclamation establishing the Commonwealth of Australia was signed by Queen Victoria on 17 September 1900 to take effect from 1 January 1901.
+9                     The Australian Constitution came into existence as a section of an Act of the United Kingdom Parliament.
+The Preamble to that Act reflected the fact that the historic agreement which preceded it was an agreement of "the people":
+WHEREAS the people of New South Wales , Victoria , South Australia, Queensland and Tasmania , humbly relying on the blessing of Almighty God, have agreed to unite in one indissoluble Federal Commonwealth under the Crown of the United Kingdom of Great Britain and Ireland and under the Constitution hereby established …
+Western Australia was not mentioned in the Preamble as it was a late and somewhat reluctant joiner.
+However it did join before the Constitution came into effect.
+The agreement of the people recorded in the Preamble was recited as an historical fact which preceded  enactment of the Constitution by the British parliament.
+That enactment was the source of its legal authority at the time.
+In this respect the Australian Constitution differs from those of India and the United States which from the outset expressly drew their legal authority directly from the people.
+The Constitution of India recites that "… the people of India …, do hereby adopt, enact and give to ourselves, this Constitution ".
+The United States Constitution opens similarly:
+We the people of the United States … do ordain and establish this Constitution for the United States of America .
+The origin of the Australian Constitution as an Act of the Imperial Parliament raises questions about its legal nature.
+Is it to be regarded as a statute which forever draws its legal effect from its enactment by the legislature of the United Kingdom ?
+Or is it to be regarded today as drawing its legal effect from the agreement and ongoing acquiescence of the people?
+These questions played a part in the reasoning of the High Court when it found an implied freedom of political communication in the Constitution and they are therefore relevant to our topic.
+It is helpful in this connection to reflect for a moment upon Australian debates about the legal nature of the Constitution .
+The legal nature of the Australian Constitution
+10                  An Australian constitutional scholar, Professor Harrison-Moore, writing at the end of the first decade of federation, saw the Constitution as "first and foremost a law declared by the Imperial Parliament to be 'binding on the Courts, Judges and people of every State and of every part of the Commonwealth'.
+[4] Another prominent jurist of the day who had been closely involved with its drafting, Andrew Inglis Clark, offered a more evolutionary perspective based upon changing popular perceptions.
+He quoted the American jurist, Judge Cooley:
+… as the people change, so does their written constitution change also.
+Many see it in new lights and with different eyes; events may have given unexpected illumination to some of its provisions, and what they read one way before, they read in a very different way now.
+[5]
+11                   The proposition that the Australian Constitution is a statute deriving its authority from the United Kingdom parliament has retained support for much of its existence and continues to attract support today.
+In a frequently quoted observation made in 1935, one of Australia's great jurists of the 20th century, a former Chief Justice of the High Court, Sir Owen Dixon, described it thus:
+It is not a supreme law purporting to obtain its force from the direct expression of a people's inherent authority to constitute a government.
+It is a statute of the British Parliament enacted in the exercise of its legal sovereignty over the law everywhere in the King's dominion.
+[6]
+Dixon 's characterisation had consequences for constitutional interpretation.
+He regarded the organs of government as institutions established by law.
+This contrasted with the position in the United States where they were agents of the people who were the source of the power conferred by that Constitution .
+12                  In the last quarter of the 20th century and subsequently, there has been an ongoing debate about the contemporary basis of the legal authority of the Constitution .
+Is it still to be regarded as simply a statute deriving its legality from its British ancestry or does it now derive its authority from popular assent?
+A challenge to its characterisation as a British statute was made in the High Court by Murphy J in 1976 when he bluntly stated:
+The United Kingdom parliament ceased to be an Imperial Parliament in relation to Australia on the inauguration of the Commonwealth…
+He declared that even if the original authority of the Constitution had been the Imperial parliament, its existing authority "… is its continuing acceptance by the Australian people".
+At the time he made that statement Murphy J was a lone voice on the High Court.
+[7] He was also, at the time, a lone voice in asserting the existence of implied rights and freedoms under the Constitution .
+Fifteen years before the High Court recognised an implied constitutional freedom of political communication [8] Murphy J implied such a freedom from the system of representative government created by the Constitution .
+In 1977 he said:
+Elections of federal parliament provided for in the Constitution require freedom of movement, speech and other communication, not only between the States, but in and between every part of the Commonwealth.
+The proper operation of the system of representative government requires the same freedoms between elections.
+They are also necessary for the proper operation of the Constitutions of the States.
+… From these provisions and from the concept of the Commonwealth arises an implication of a constitutional guarantee of such freedoms, freedoms so elementary that it is not necessary to mention them in the Constitution .
+[9]
+13                  The debate about the legal nature of the Australian Constitution must also be seen against the history of Australia's evolution to independent nationhood.
+It is widely accepted that Australia did not become an independent nation in the full sense of that term upon the creation of the Commonwealth on 1 January 1901.
+Rather it came into existence and entered the 20th century as a self-governing colony of the United Kingdom.
+Indeed the United Kingdom parliament had continued competence to legislate for Australia.
+Australia remained subject to paramount British legislation, if for no other reason, than the specific provisions of the Colonial Laws Validity Act 1865.
+Paradoxically the Imperial statute had been enacted to support the validity of colonial statutes which were being struck down by the Supreme Court of South Australia as inconsistent with English law.
+The paramountcy of statutes extending to the colonies was a saving provision.
+[10]
+14                  Australia lacked executive independence in the conduct of its foreign relations at the time of federation.
+These were carried on through the British government.
+Eventually executive independence in the conduct of foreign relations was recognised for all Dominions at an Imperial conference held in 1926.
+The resolutions passed at that conference were sufficient "… to secure the independence of Dominion executives, in the conduct of both domestic and foreign affairs".
+[11]
+15                  Legislative independence from Great Britain did not come to pass until the adoption by the Australian Parliament in 1942, retrospective to 1939, of the Statute of Westminster 1931 (UK).
+That was a British statute which gave effect to the wishes of Dominions to lift the fetters on their legislative powers imposed by the Colonial Laws Validity Act 1865 ( UK ).
+The statute also affirmed the powers of Dominion parliaments to make laws having extraterritorial effect.
+It repealed the Colonial Laws Validity Act in relation to Dominion laws.
+Interestingly, that Act continued to apply to the States of Australia until 1986.
+16                  Even after the Statute of Westminster it remained theoretically possible for the United Kingdom parliament to make laws affecting Australia.
+The final severance of the legislative umbilical cord between Australia and the United Kingdom did not occur until 1986 with the passage of the Australia Act 1986 (UK) by the United Kingdom parliament and the corresponding Australia Acts of the Commonwealth and the State parliaments.
+It was then also that the last vestige of judicial dependence disappeared.
+For until 1986 a litigant in a State Supreme Court could seek leave of that Court to appeal to the Privy Council in England.
+Although such appeals were not permitted where they involved matters arising under the Constitution or involving its interpretation, there were, for many years, effectively two final appellate courts for Australia, the High Court and the Privy Council.
+17                  The passage of the Australia Acts became important in the decision of the High Court in 1992 which first found an implied freedom of political communication in the Australian Constitution .
+In Australian Capital Television [12] , Mason CJ said that the Australia Act "marked the end of the legal sovereignty of the Imperial parliament and recognised that ultimate sovereignty resided in the Australian people".
+[13] On the other hand Dawson J, in dissent, refused to find the implication and did so on the basis that the legal foundation of the Australian Constitution was the exercise of sovereign power by the Imperial parliament.
+On that view of the legal character of the Constitution he required that implications appear from its terms and not from extrinsic circumstances.
+[14] He accepted that, as a proposition of political theory, the Constitution ultimately depended for its continuing validity upon the acceptance of the people.
+But the same might be said of any form of non-arbitrary government.
+That proposition of political theory, in his view, did not affect the legal basis of the Constitution .
+18                  The series of cases which enunciated and qualified the existence of an implied freedom of political communication are considered later in this paper.
+It is sufficient for the moment to observe that fundamental considerations about the nature of the Australian Constitution had some very practical consequences for the protection of freedom of speech.
+Its characterisation as a statute has implications for the extent to which norms of international law and, in particular, fundamental human rights and freedoms recognised at international law may affect constitutional interpretation.
+In Australia, as in India, international treaties and conventions to which Australia is a party do not have effect in domestic law unless given effect by statute.
+They may be taken into account in the interpretation of statutes postdating them where constructional choices compatible with international legal obligations are open.
+[15]
+19                  The battle lines on the effect of international law on constitutional interpretation in Australia were drawn sharply in the decision of the High Court in Al-Kateb v Godwin.
+[16] That case concerned the lawfulness of the indefinite detention of persons unlawfully in Australia pending their removal to another country.
+In dissent, Kirby J asserted that national courts and national constitutional courts have a duty, so far as possible, to interpret their constitutional texts in a way generally harmonious with basic principles of international law including human rights and fundamental freedoms stated in it.
+He cited in support of that proposition the Bangalore Principles on the Domestic Application of International Human Rights Norms (1988).
+He said:
+Now the Constitution speaks not only "to the people of Australia who made it and accept it for their governance".
+It also speaks to the international community as the basic law of the Australian nation which is a member of that community.
+[17]
+20                  McHugh J joined issue with Kirby J saying that if Australian courts were to interpret the Constitution by reference to the rules of international law now in force, they would be amending it in disregard of the direction in s 128 which declares that the Constitution is to be amended only by legislation approved by a majority of the States and a majority of all the electors voting.
+Relevantly for present discussion he said:
+It is an enduring - and many would say a just - criticism of Australia that it is now one of the few countries in the Western world that does not have a Bill of Rights.
+But, desirable as a Bill of Rights may be, it is not to be inserted into our Constitution by judicial decisions drawing on international instruments that are not even part of the law of this country.
+Against that background it is helpful to look briefly at the content of Australia's Constitution .
+The shape of the Australian Constitution
+21                  Section 3 of the Commonwealth of Australia Constitution Act 1900 (UK) authorised the Queen to declare by proclamation that the 'people' of the Australian colonies:
+… shall be united in a Federal Commonwealth under the name of the Commonwealth of Australia.
+Section 4 provided that the Commonwealth would be established and the Constitution of the Commonwealth take effect on a day appointed by the proclamation.
+That day was 1 January 1901.
+Section 5 provided that the Act and all laws made by the Parliament of the Commonwealth under the Constitution "… shall be binding on the courts, judges and people of every State and of every part of the Commonwealth, …".
+The former colonies became and were designated  the "Original States of the Commonwealth" (s 6).
+22                  Section 9 of the Act sets out the text of the Constitution .
+It has eight chapters which deal with the following topics:
+Chapter 1 - The Parliament
+Chapter 7 - Miscellaneous
+Chapter 8 - Alteration of the Constitution
+23                  The law-making power of the Commonwealth is vested in the Commonwealth Parliament which consists of "… the Queen, a Senate, and a House of Representatives,".
+The Queen is represented by a Governor-General appointed by her.
+As a matter of convention the Governor-General is appointed only upon the advice of the Prime Minister.
+The Governor-General is effectively Australia's ceremonial Head of State, although in a formal sense he or she represents the Queen of Australia.
+The Queen, through her Governor-General, gives formal assent to legislation passed by the Houses of Parliament.
+24 Section 51 of the Constitution sets out the subjects upon which the Parliament of the Commonwealth is authorised to make laws.
+There are 39 heads of power in that section.
+By one of them the Commonwealth is authorised to make laws with respect to external affairs.
+In reliance upon that power, the Commonwealth Parliament has passed domestic statutes giving effect to various obligations under treaties and conventions.
+These statutes include the Racial Discrimination Act 1975 (Cth) giving effect to Australia's obligations under the Convention for the Elimination of all Forms of Racial Discrimination.
+Relevantly to this paper, that Act includes a prohibition against racial vilification.
+25                  There are few guaranteed rights and freedoms in Australia's Constitution .
+Section 41 guarantees the right of electors of the State parliaments to vote in Commonwealth elections.
+The Commonwealth cannot acquire property from States or person other than on just terms (s 51(xxxi)).
+The trial on indictment of offences against a law of the Commonwealth shall be by jury (s 80).
+Trade commerce and intercourse among the States shall be absolutely free (s 92).
+The Commonwealth cannot by law establish any religion or prohibit the free exercise of any religion (s 116).
+Discrimination by States against the residents of other States is prohibited.
+There is a power to legislate for social and health services which is expressly limited so as not to authorise any form of civil conscription (s 51(xxxiiiA)).
+26                  Chapter 2 of the Constitution deals with the Executive Government.
+The key provision of that chapter is cl 61 which provides:
+The executive power of the Commonwealth is vested in the Queen and is exercisable by the Governor-General as the Queen's representative, and extends to the execution and maintenance of this Constitution and of the laws of the Commonwealth.
+By convention the Governor-General acts upon the advice of the Australian Ministers of the Crown through the Federal Executive Council which is established under s 62 of the Constitution .
+The section locates the effective executive power in the Ministers of the Crown.
+27                  Chapter 3 of the Constitution deals with the federal judicature.
+Each colony which became a State already had in place a court system.
+Those court systems continued after federation and continue today.
+The judicial power of the Commonwealth is vested in the High Court of Australia, such other Federal Courts as are created by the Parliament and such other courts (eg Courts of the States) as it invests with Federal jurisdiction.
+The High Court is the final appellate court for all Australian jurisdictions.
+The Constitution directly confers upon the High Court original jurisdiction in a number of matters.
+That original jurisdiction extends to all matters in which a writ of mandamus or prohibition or an injunction is sought against an officer of the Commonwealth (s 75(v)).
+That provision allows any person affected by unlawful action on the part of an officer of the Commonwealth, including Ministers of the Crown and Commonwealth authorities, to seek a remedy in the High Court.
+It is a jurisdiction which cannot be removed by statute.
+It is an important element of the rule of law in Australia.
+It has some similarity to Article 32 of the Indian Constitution which guarantees the right to move the Supreme Court for enforcement of the rights conferred by Pt III.
+It is a jurisdiction which is also conferred by statute upon the Federal Court so that the High Court is not overburdened with cases in its original jurisdiction and thereby distracted from its important appellate work.
+28                  In speaking of the Australian Constitution it is also necessary to have regard to the Constitutions of each of the Australian States.
+These trace their legal ancestry back to the pre-federation constitutions of the self-governing colonies.
+Those Constitutions derived their legal force from Imperial Statutes which either authorised their enactment or directly enacted them.
+Those Constitutions were continued in force by s 106 of the Australian Constitution .
+They provide, as it does, for legislature, executive and judicial arms of government although they are considerably easier to amend than the Australian Constitution .
+29                  The Constitution took its place in a society operating upon certain assumptions about the rule of law and basic freedoms reflected in the common law inherited from England.
+That common law which has over the years evolved and been modified still provides the setting in which the Commonwealth and State Constitutions, and constitutional institutions, operate and in which statutes are interpreted.
+It is part of the constitution of Australia and of its States in a small "c" constitutional sense.
+Absent express guarantees of personal human rights and freedoms in the Constitution it is necessary to consider the constitutional dimension of the common law and its role in the protection of fundamental rights and freedoms and, in particular, freedom of speech.
+However, first, for comparative purposes some brief reference to the Constitution of India is necessary.
+This is by way of broad description and offered with some hesitation having regard to the deep knowledge of Indian Judges and lawyers concerning that topic.
+The shape of the Constitution of India
+30                  The Preamble of the Constitution of India contains an important statement about the source of the legal authority of the Constitution and its objectives:
+WE THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:
+JUSTICE, social, economic and political;
+LIBERTY of thought, expression, belief, faith and worship;
+EQUALITY of status and of opportunity; and to promote among them all;
+FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;
+IN OUR CONSTITUENT ASSEMBLY this 26th day of November 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION .
+31                  The Constitution is divided into Parts which are subdivided into Articles.
+These are  followed by a number of Schedules.
+Parts I and II deal with the Union and its territory and with citizenship respectively.
+Part III is entitled "FUNDAMENTAL RIGHTS" and comprises Articles 12 to 35.
+Articles 14 to 18 deal with the right to equality.
+Articles 19 to 22 deal with "rights to freedom".
+Article 19 provides:
+(1)       All citizens shall have the right-
+(a)        to freedom of speech and expression;
+…
+(2)       Nothing in sub-clause (a) of Clause (1) shall affect the operation of any existing law, or prevent the State from making any law, in so far as such law imposes reasonable restrictions on the exercise of the right conferred by the said sub-clause in the interests of the sovereignty and integrity of India, the security of the State, friendly relations with foreign State, public order, decency or morality, or in relation to contempt of court, defamation or incitement to an offence.
+32                  There are two immediate comments to make about Article 19.
+The first is that it applies only to citizens.
+As the Supreme Court of India said in 1959:
+A non-citizen running a newspaper is not entitled to the fundamental right to freedom of speech and expression and, therefore cannot claim, as his fundamental right, the benefit of the liberty of the Press.
+[18]
+The second point is that the Article makes no separate provision for freedom of the press.
+In this respect it stands in contrast with the First Amendment of the Constitution of the United States which makes a distinct provision for press freedom.
+When the question was debated in the Constituent Assembly, which ultimately adopted the proposed Indian Constitution , the Chairman of the Drafting Committee, Dr Ambedkar, equated "the press" with the individuals or citizens behind it.
+He said:
+The press has no special rights which are not to be given or which are not to be exercised by the citizen in his individual capacity.
+The editor of a press or the manager are all citizens and therefore when they choose to write in newspapers, they are merely exercising their right of expression and in my judgment therefore no special mention is necessary of the freedom of the press at all.
+[19]
+33                  Articles 23 to 28 of the Constitution relate to rights against exploitation.
+Articles 29 and 30 deal with cultural and educational rights.
+Article 32 relates to remedies for the enforcement of rights conferred by Pt III.
+Articles 31A to 31D deal with the saving of certain laws including laws giving effect to certain "directive principles".
+These are "directive principles of State policy" found in Pt IV.
+These include, in Article 50, the separation of the judiciary from the executive.
+34                  Article 31C in Pt III provides, inter alia, that "no law giving effect to the policy of the State towards securing [all or any of the principles laid down in Pt IV] [20] shall be deemed to be void upon the ground that it is inconsistent with, or takes away or abridges any of the rights conferred by Article 14 or Article 19; and no law containing a declaration that it is for giving effect to such a policy shall be called in question in any court on the ground that it does not give effect to such policy."
+[21]
+35                  Article 32 provides for remedies for enforcement of the guarantees made by Pt III.
+It provides, inter alia:
+(1)       The right to move the Supreme Court by appropriate proceedings for enforcement of the rights conferred by this Part is guaranteed.
+(2)       The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part.
+Article 32(4) provides that the rights guaranteed by that Article shall not be suspended except as otherwise provided for by the Constitution .
+36                  Parliament is empowered by Article 35 to modify the rights conferred by Pt III in relation to members of the armed forces or the forces charged with the maintenance of public order and persons employed in any bureau or other organisation established by the State for the purposes of intelligence or counter-intelligence.
+They may also be modified in their application to persons employed in connection with telecommunication systems set up for the purposes of such forces, bureaus or organisations.
+37 Part IV sets out what are called "Directive Principles of State Policy" in the nature of social and economic objectives.
+The provisions of that Part are said, in Article 37, not to be enforceable by any court.
+The principles are nevertheless "fundamental in the governance of the country and it shall be the duty of the State to apply these principles in making laws".
+One of the Articles in Pt X , Article 50, provides:
+The State shall take steps to separate the judiciary from the executive in the public services of the State.
+38                  The fundamental duties of every citizen are set out in Pt IVA and in particular in Article 51A.
+They include:
+(a)        to abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;
+…
+(e)        to promote harmony and the spirit of common brotherhood amongst all the people of India transcending religious, linguistic and regional or sectional diversities; to renounce practices derogatory to the dignity of women;
+(f)        to value and preserve the rich heritage of our composite culture.
+…
+(h)        to develop the scientific  temper, humanism and the spirit of inquiry and reform;
+(i)         to safeguard public property and to abjure violence.
+The particular duties referred to here, from an outsider's perspective, may give rise to circumstances in which there is a tension between a citizen's freedom of expression guaranteed under Article 19 and those duties.
+Human rights in the Indian and Australian Constitutions
+39                  There are many differences between the Constitution of India and that of Australia.
+One clear difference is found in Pt III of the Indian Constitution which sets out fundamental guarantees of human rights for the people.
+There is no such set of guarantees in Australia's Constitution .
+This has something to do with their very different histories.
+The Australian Constitution was not born out of a struggle for freedom from the British.
+All of the colonies were self-governing.
+The colonists saw themselves as essentially British.
+A consciousness of white nationalism was central to federation.
+The invocation of that consciousness has been described as related to a "cultural strategy in the processes of nation building".
+[22]
+40                  Professor George Williams has pointed out that the motivations behind the drafting of the Australian Constitution were complex and varied:
+The process was driven by factors such as the need for a greater defence preparedness, a desire for free trade, and a sentimental attachment to nationhood.
+Despite being drafted by popularly elected representatives, the Australian Constitution was not written primarily as a people's constitution.
+Instead, it was a compact between the Australian colonies that was designed to meet, amongst other things, the needs of trade and commerce.
+[23]
+As Professor Williams observed, the Australian Constitution has little to say about the relationship between Australians and their government and does not "expressly embody the fundamental rights or aspirations of the Australian people".
+He suggested that many of the drafters of the constitution were influenced by the 19th century English constitutional commentators, Bryce and Dicey.
+[24] Neither of those writers saw a need to expressly guarantee rights in written constitutions.
+41                  The historian, Helen Irving, referred to colonial liberals and conservatives among the drafters of the Constitution .
+The conservatives for the most part were primarily concerned with States' rights.
+The liberals represented liberal utilitarianism associated with the ideas of John Stuart Mill.
+Irving wrote:
+In the area of human rights, the majority, including most conservatives, took the Millsian approach, seeking the restriction of belief and action only in so far as their free expression harmed others.
+[25]
+The tendency, as she described it, was to respect rights and freedoms, to protect them negatively from interference but not to declare them positively.
+42                  Sir Owen Dixon attributed the omission of a Bill of Rights to a readiness on the part of the framers of the Constitution to leave the protection of rights to the legislature and the processes of responsible government.
+He said:
+The framers of the Australian constitution were not prepared to place fetters upon legislative action, except in so far as it might be necessary for the purpose of distributing between the States and the central government the full content of legislative power.
+The history of their country had not taught them the need of provisions directed to the control of the legislature itself.
+[26]
+Sir Anthony Mason in the Australian Capital Television case considered that there was no basis in the Constitution for implying general guarantees of fundamental rights and freedoms.
+He said:
+To make such an implication would run counter to the prevailing sentiment of the framers that there was no need to incorporate a comprehensive Bill of Rights in order to protect the rights and freedoms of citizens.
+That sentiment was one of the unexpressed assumptions on which the Constitution was drafted.
+[27]
+That reasoning was disputed by Professor Williams.
+In his view the framers, in not adopting any express Bill of Rights, were driven by a desire to maintain race based distinctions which already existed under colonial law.
+A Bill of Rights was thought to be undesirable because it might protect as citizens various people of other races in the context of areas such as employment.
+By today's standards, the customs of the time were racist and discriminatory.
+It is sufficient to say that there was probably a variety of reasons behind the absence in Australia's Constitution of a Bill of Rights.
+Hypotheses, however plausible, more than 100 years after the event, are unlikely to yield a single reliable explanation.
+Australian debates about constitutional and statutory protection of human rights
+43                  Debate about the desirability of both constitutional and statutory Bills of Rights has been going on in Australia for at least 35 years.
+Attempts to introduce statutory Bills of Rights as Commonwealth law were made in 1973 and 1985.
+The 1973 Bill which included protection for "freedom of expression" was strongly opposed and was not enacted.
+It lapsed in 1974 when parliament was prorogued.
+The 1985 Bill was passed by the Lower House but did not find a majority in the Senate.
+44                  In 1985 the Attorney-General, Lionel Bowen, established a Constitutional Commission.
+That Commission recommended the inclusion in the Constitution of a new Chapter VIA guaranteeing specified rights and freedoms against legislative executive or judicial action.
+A proposed new section 124E specified a number of rights including "(c) freedom of expression".
+[28] The Commission observed that the Australian Constitution does not place any direct limitation on parliamentary powers to make laws which limit freedom of expression.
+Laws restricting freedom of expression cover a wide range of subjects.
+They include defamation, sedition, blasphemy, obscenity, indecency and offensive behaviour, contempt of court and of parliaments, legislation restricting reporting of certain court proceedings, laws regulating advertising, laws governing the importation of books, films, videos and so forth, laws regulating the exhibition of films and the sale of certain types of publications, laws regulating broadcasting and use of postal services and official secrets legislation.
+[29]
+45                  The Constitutional Commission emphasised the long standing recognition of the importance of freedom of expression to the maintenance of a democratic system of government and the exercise of democratic rights.
+A constitutional guarantee of freedom of expression would provide a safeguard against the use, by temporary majorities, of powers of government to eliminate competition from political rivals or place temporary minorities at a disadvantage in the market place of political ideas.
+It would ensure that channels for communication of information and ideas were not impeded and to remind governments that their policies and performances are never immune from criticism.
+46                  A constitutional alteration referendum was conducted in September 1988.
+It had the character of a cautious pilot program.
+It was not comprehensive.
+It proposed extensions of existing rights relating to religious freedom, compensation for the acquisition of property and trial by jury.
+It also proposed a one vote, one value, principle.
+It was overwhelmingly defeated.
+The reasons for its defeat had to do with an associated proposal for four year parliamentary terms and a perception that somehow the changes were going to enhance the powers of the Commonwealth Parliament to the disadvantage of the States.
+No further attempt has been made to incorporate guaranteed rights and freedoms into the Australian Constitution .
+47                  There have been initiatives at State and Territory level in Australia to provide statutory protection for human rights, including freedom of expression.
+In 2004 the Australian Capital Territory , a self-governing Territory in which the national capital is located, enacted the Human Rights Act 2004 (ACT).
+The Act was broadly modelled on similar legislation in the United Kingdom.
+It declares a number of rights, including freedom of expression, which is stated briefly, thus:
+16(2)   Everyone has the right to freedom of expression.
+This right includes the freedom to seek, receive and impart information and ideas of all kinds, regardless of borders, whether orally, in writing or in print, by way of art, or in another way chosen by him or her.
+48                  All of the rights declared in the Australian Capital Territory Act are said, in s 28, to be "subject only to reasonable limits set by Territory laws, that can be demonstrably justified in a free and democratic society".
+Relevantly to freedom of the press, the Act declares in s 6 that "Only individuals have human rights".
+So a corporation carrying on a media business does not have a right of freedom of expression.
+Of course individuals expressing opinions through the media have such rights and no doubt laws adversely affecting the ability of corporate media to carry such expressions of opinion could be seen as interfering with those rights.
+49                  The Australian Capital Territory legislation cannot affect the validity of any subsequent, inconsistent laws of the Territory.
+Nor can it affect Commonwealth laws which apply in the Territory.
+When a law of the Territory is held by the Supreme Court of the Territory to be inconsistent with a human right protected by the Act, the Court may make a Declaration of Incompatibility.
+[30] Such a declaration does not affect the validity, operation or enforcement of the law or the right or obligations of anyone.
+When such a declaration is made the Attorney-General must put a copy of it to the Legislative Assembly of the Territory within six sitting days after the Attorney-General receives the copy.
+The Attorney-General must also prepare a written response to the Declaration of Incompatibility and present it to the Legislative Assembly not later than six months after the day the copy of the Declaration was presented.
+50                  The State of Victoria last year enacted a Charter of Human Rights and Responsibilities 2006.
+The Charter is similar in its impact on legislation to the Human Rights Act 2004 (ACT).
+The rights which it protects apply only to "persons".
+[31] Freedom of expression is dealt with in subs (2) and (3) of s 15 in a more elaborate way than under the Australian Capital Territory Act:
+15(2)   Every person has the right to freedom of expression which includes the freedom to seek, receive and impart information and ideas of all kinds, whether within or outside Victoria and whether -
+(a)        orally; or
+(d)       by way of art; or
+(e)        in another medium chosen by him or her.
+15(3)   Special duties and responsibilities are attached to the right of freedom of expression and the right may be subject to lawful restrictions reasonably necessary-
+(a)        to respect the rights and reputation of other persons; or
+(b)       for the protection of national security, public order, public health or public morality.
+51                  The Western Australian Government is presently considering the introduction into its Parliament of a Human Rights Act .
+A draft Bill has been circulated for discussion and public consultations are presently underway.
+The proposed provision relating to freedom of expression is modelled on the Victorian Charter.
+There has been vigorous debate about it so far.
+52                  The topic of constitutional and statutory protection of human rights in Australia, including freedom of expression, has frequently been a matter of controversy.
+A prominent element of the arguments advanced against the introduction of such rights protection in Australia is that it shifts power on important matters of social policy from elected politicians to unelected judges.
+There is no doubt that human rights and freedoms guaranteed in constitutions and statutes around the world are broadly expressed.
+The definition of their limits in particular cases by reference to public interest considerations necessarily requires normative judgments which may be seen to have a legislative character.
+53                  The phenomenon of judges interpreting broad legal language and making normative decisions in that interpretation is not new.
+Such concepts as "reasonableness", "good faith" and "unconscionable conduct" found in the common law and in many statutes involve that kind of decision-making.
+The particular sensitivity of judgments about the scope of human rights guarantees is their impact on legislation.
+If a right is constitutionally guaranteed, then legislation held by a court to be incompatible may be invalid.
+If the human right is guaranteed by a statute, then a subsequent inconsistent statute will not thereby be invalid.
+But the Declaration of Incompatibility mechanism for which the Australian Capital Territory and Victorian legislation provides, is intended to impact on the parliamentary process by requiring the Attorney-General to present the Declaration to the parliament and respond to it.
+54                  Professor George Williams has conveniently summarised in point form the arguments for and against the Bill of Rights in Australia.
+His list is as follows:
+The main arguments for a Bill of Rights
+.
+Australian law affords inadequate protection to fundamental freedoms.
+.
+It would give recognition to certain universal rights.
+.
+It would give power of action to Australians who are otherwise powerless.
+.
+It would bring Australia into line with the rest of the world.
+.
+It would meet Australia's international obligations.
+.
+It would enhance Australian democracy by protecting the rights of minorities.
+.
+It would put rights above politics.
+.
+It would improvement government policy-making and administrative decision-making.
+.
+It would serve an important educative function.
+.
+It would promote tolerance and understanding in the community.
+The main arguments against a Bill of Rights
+.
+Rights are already well protected in Australia .
+.
+The political system itself is the best protection of rights in Australia .
+.
+It would be undemocratic to give unelected judges the power to override the judgment of a parliament.
+.
+It would politicise the Australian judiciary.
+.
+It would be very expensive given the amount of litigation it would be likely to generate.
+.
+It would be alien to the Westminster tradition of parliamentary sovereignty.
+.
+It would actually restrict rights because to define a right is to limit it.
+.
+It would ignore legitimate differences between different regions of Australia .
+.
+Rights listed in constitutions or statutes actually make little or no difference to the protection of fundamental freedoms.
+.
+It would be unnecessary, as the High Court is already protecting rights through its interpretation of the Constitution and its development of the common law.
+.
+It would be unable to take account of changing conceptions of rights and would protect some rights (for example, the right to bear arms) that might not be so important to future generations.
+[32]
+55                  Significant controversy or lack of bipartisan political support will generally defeat any attempt to change the Constitution in Australia.
+It may be that experience with State and Territory statutes guaranteeing human rights such as those of Victoria and the Australian Capital Territory and that proposed for Western Australia will lower the threshold of concern about such a change.
+For the foreseeable future however, there is unlikely to be any express provision in the Australian Constitution which protects or guarantees fundamental human rights and freedoms including freedom of expression.
+Freedom of expression finds its place in the Australian Constitution only by way of implication.
+Moreover, the implication is limited to freedom of communication on political matters.
+56                  Australia is, of course, a party to the International Covenant on Civil and Political Rights and many other treaties and conventions which are designed to protect and advance fundamental human rights and freedoms.
+The Commonwealth Parliament by virtue of its power to make laws with respect to "external affairs" [33] can legislate to give domestic legal effect to those rights and freedoms.
+Such laws, being laws passed by the Commonwealth, would override inconsistent State laws and thus provide a quasi-constitutional guarantee of human rights and freedoms against State law.
+However, at the Commonwealth level human rights statutes would not affect the validity of a subsequent inconsistent Commonwealth law.
+57                  There are significant human rights laws in Australia conferring substantive protection against discrimination according to race, sex or disability.
+The Racial Discrimination Act 1975 (Cth) also prohibits racial vilification and in so doing casts a net somewhat wider than that cast by so-called "hate speech" prohibitions.
+[34]
+58                  In summary, unlike the Constitution of India, Australia's Constitution contains no express protection for freedom of speech or expression.
+Nor is there any federal law giving substantive domestic legal effect to that freedom.
+State and Territory statutes guaranteeing freedom of expression as part of a human rights package are vulnerable to repeal or amendment by simple parliamentary majority and cannot bind their successor parliaments from passing inconsistent law.
+59                  Consideration of the Constitution and statutes made under it does not cover the whole field of discourse relevant to protection of freedom of expression and the media in Australia.
+The common law of Australia has a constitutional dimension and an impact on the protection of that freedom.
+The common law tradition is also something that India and Australia have in common, although much of it was codified in India.
+David and Brieley in their well known comparative law text, Major Legal Systems in the World Today [35] put it thus (at 508):
+Indian law is attached to the Common law tradition … because of its techniques and its concept of the legal rule.
+Codification may very well have been the method used, but Indian codes are nonetheless Common law codes and they are used by Indian jurists in the same way that legislative materials are used in common law countries.
+It is useful then to consider aspects of that common law heritage relevant to freedom of speech and the media.
+The common law - a common constitutional heritage
+60                  The common law of England migrated to its many colonies and in many remained a part of their legal tradition after they became independent nations.
+That continuing legal tradition was constitutional in character, not least because of the institutional arrangements which came with it.
+As Sir Frederick Pollock said in 1904, the essential concepts of the common law are that:
+Courts of Justice are public; they judge between parties, and do not undertake an official inquiry not even in criminal cases or affairs of State; the court itself is the only authorised interpreter of the law which it administers; and there is no personal or official privilege against its jurisdiction.
+[36]
+Professor Goodhart made the same point in another way when he said that the most striking function of the common law is its public law, it being "… primarily a method of administering justice".
+[37]
+61                  The constitutional dimension of the common law in Australia was referred to by a former Chief Justice, Sir John Latham, when he wrote in 1960 that:
+… in the interpretation of the Constitution as of all statutes, common law rules are applied.
+Sir John Latham was writing in a special edition of the Law Quarterly Review published in 1960 on the topic of the migration of the common law.
+In the same edition, Justice Vivian Bose formerly of the Supreme Court of India, described the historical application of the common law to India.
+He pointed out that it was not possible to say precisely when and how England acquired sovereignty over India.
+All that could be said was that it was done by imperceptible stages and that sovereignty was acquired some time before 1873.
+[38] There was support for the view, not least in a Privy Council decision in 1863 that the common law of England was introduced into India by a Charter of George I in 1726 which established the First Courts of Judicature.
+[39]
+62                  The common law was, for a time, applied in India in parallel with Islamic and Hindu laws and customs and in parallel court systems some courts deriving authority from the Crown and others from the East India Company.
+The parallel court system was integrated with the creation of High Courts in the 1860s.
+Most of the common and customary law, excluding personal law, was codified.
+[40] But the bulk of the codified laws set out principles of the common law with some modifications.
+Importantly Justice Bose said in the last paragraph of his paper:
+… one of the greatest boons that the English conferred on India was to introduce the Rule of Law into the land and to embed it so firmly into the lives of the people that its displacement seems unlikely in any foreseeable future; and, aside from personal laws, the basis of this structure is the common law of England.
+[41]
+63                  The common law has been referred to in the High Court of Australia as "… the ultimate constitutional foundation in Australia ".
+Gummow J who used that term to describe it did so in the context of observations about the change in Australian common law effected by the decision of the High Court in Mabo v Queensland (No 2) [42] which, as he put it, held that the long understood refusal in Australia to accommodate within the common law concepts of native title rested upon assumptions of historical facts shown to have been false.
+Those assumptions had to do with the status of pre-federation colonies as "practically unoccupied without settled inhabitants or settled law".
+[43]
+64                  The constitutional character of the common law however is not limited to what it has to say about the recognition of traditional rights and interests of indigenous people post colonisation.
+The common law in both of our countries has a pervasive influence upon constitutional and statutory interpretation.
+As McHugh J observed in Theophanous, a case which applied the implied freedom of political communication to the common law of defamation:
+The true meaning of a legal text almost always depends on a background of concepts, principles, practices, facts, rights and duties, which the authors of the text took for granted or understood, without conscious advertence, by reason of their common language or culture.
+[44]
+65                  The exercise of legislative power in Australia, as in the United Kingdom and in India, takes place in the constitutional setting of a "liberal democracy founded on the traditions and principles of the common law".
+[45] The importance of those traditions and principles in Australia is reflected in the long established proposition that statute law is to be interpreted  consistently with the common law where the words of the statute permit.
+Historically this proposition derived from judicial resistance to legislative incursions on judge-made law.
+In a passage, which is still frequently cited, O'Connor J in the 1908 decision Potter v Minahan [46] cited the 4th edition of Maxwell on The Interpretation of Statutes:
+It is in the last degree improbable that the legislature would overthrow fundamental principles, infringe rights, or depart from the general system of law, without expressing its intention with irresistible clearness; and to give any such effect general words, simply because they have that meaning in their widest, or usual, or natural sense, would be to give them a meaning in  which they were not really used.
+This principle of interpretation has evolved over the years into a protective presumption against the modification or abolition of fundamental rights.
+66                  The Courts of the United Kingdom have enunciated a "principle of legality" which appears to be a strong presumption that broadly expressed official discretions are to be subject to fundamental human rights recognised by the common law.
+Lord Hoffman's explanation of that principle was:
+The principle of legality means that parliament must squarely confront what it is doing and accept the political cost.
+Fundamental rights cannot be overridden by general or ambiguous words.
+This is because there is too greater risk that the full implications of their unqualified meaning may have passed unnoticed in the democratic process.
+In the absence of express language or necessary implication to the contrary, the courts therefore presume that even the most general words were intended to be subject to the basic rights of the individual.
+In this way the courts of the United Kingdom , though acknowledging the sovereignty of parliament, applied principles of constitutionality little different from those which existed in countries where the power of the legislature is expressly limited by a constitutional document.
+[47]
+67                  The principle of legality was said by Laws LJ in 2003 to protect what he called "rights of a constitutional character recognised by the common law".
+He said that the abrogation of a "constitutional" common law right by statute would require a demonstration that the actual intention of the legislature as distinct from its imputed constructive or presumed intention was to effect the abrogation.
+This test could only be satisfied by express words or words so specific that the inference of an actual determination to effect the result contended for was irresistible.
+He suggested that this development of the common law which applied not only to constitutional rights but to what he called "constitutional statutes", gave "most of the benefit of a written constitution in which fundamental rights are accorded special respect" but preserved the sovereignty of the legislature and the flexibility of the uncodified British Constitution .
+[48] Although Commonwealth statutes in Australia are made under a written constitution, that constitution does not guarantee common law rights and freedoms against legislative incursion.
+While the observations of Lord Justice Laws were strongly stated, they seemed to go no further than a strongly stated interpretive rule.
+That rule may be less strongly stated in Australia, but can properly be regarded as "constitutional" in character even if the rights and freedoms which it protects are not.
+68                  The application of this principle in support of freedom of expression was seen at the level of constitutional characterisation of powers, in the 1988 decision of the High Court in Davis v Commonwealth.
+[49] 1988 was the bicentenary of European settlement of Australia.
+A company was established called the Australian Bicentennial Authority to plan and implement celebrations of the bicentenary.
+The Australian Bicentennial Authority Act 1980 (Cth) was enacted to, among other things, reserve to the Authority the right to use or licence the use of words such as "bicentenary", "bicentennial", "200 years", "Australia", "Sydney", "Melbourne", "Founding", "First Settlement" and others in conjunction with the figures 1788, 1988 or 88.
+Articles or goods bearing any of these combinations without the consent of the Authority would be forfeited to the Commonwealth.
+In their joint judgment striking down some aspects of these protections, Mason CJ, Deane J and Gaudron J (Wilson, Dawson and Toohey JJ agreeing) said:
+Here the framework of regulation … reaches far beyond the legitimate objects sought to be achieved and impinges on freedom of expression by enabling the Authority to regulate the use of common expressions and by making unauthorized use a criminal offence.
+Although the statutory regime may be related to a constitutionally legitimate end, the provisions in question reach too far.
+This extraordinary intrusion into freedom of expression is not reasonably and appropriately adapted to achieve the ends that lie within the limits of constitutional power.
+[50]
+In the same case, Brennan J in a separate judgment observed:
+Freedom of speech may sometimes be a casualty of a law of the Commonwealth made under a specific head of legislative power - eg, wartime censorship - or of a law designed to protect the nation - eg, a law against seditious utterances - but freedom of speech can hardly be an incidental casualty of an activity undertaken by the Executive Government to advance a nation which boasts of its freedom.
+[51]
+69                  The common law can of course only go so far.
+It does not provide the support for freedom of expression that would accord it the status of a "right".
+It cannot withstand plainly inconsistent statute law.
+Great controversy erupted when, a few days after the High Court first recognised the implied constitutional freedom of political communication one of its members, Toohey J, appeared to some to raise the possibility of court imposed limits on legislative power by reference to liberal democratic values.
+He observed that parliaments had increasingly become seen as de facto agents or facilitators of executive power rather than bulwarks against it.
+He asked whether a court could imply limits on legislative power "so as to protect core liberal-democratic values".
+He said, inter alia:
+If such an approach to constitutional adjudication were adopted, the courts would over time articulate the content of the limits on power arising from fundamental common law liberties.
+It would then be a matter for the Australian people whether they wished to amend their Constitution to modify those limits.
+In that sense, an implied 'bill of rights' might be constructed.
+[52]
+70                  The common law has always adhered to the proposition that "… everybody is free to do anything, subject only to the provisions of the law".
+[53] That may suggest that freedom is what is left over when the law is exhausted.
+But the principle of legality in England and the interpretive principle in Australia suggests it is more than that.
+TRS Allan wrote in 1996:
+… the English Courts no longer view individual liberty (if indeed strictly speaking they ever had) as solely residual.
+Liberty is not merely what remains when the meaning of statutes and the scope of executive powers have been settled by the court.
+The traditional, civil and political liberties, like liberty of the person and freedom of speech have independent and intrinsic weight; their importance justifies an interpretation of both common law and statute which serves to protect them from unwise and ill-considered interference or restriction.
+The common law, then, has its own set of constitutional rights, even if these are not formally entrenched against legislative repeal.
+[54]
+71                  There has long been a particular recognition at common law that freedom of speech and the press serves the public interest.
+Blackstone said that freedom of the press is "essential to the nature of a free State ".
+[55] Lord Coleridge in 1891 said that:
+The right of free speech is one which it is for the public interest that individuals should possess, and, indeed that they should exercise without impediment, so long as no wrongful act is done.
+[56]
+The freedom recognised by Blackstone did not extend to "freedom from censure for criminal matter when published".
+And that recognised by Lord Coleridge did not extend to "wrongful acts".
+Those limitations begged the question of what could be treated as "criminal" or "wrongful" in the hands of a legislature unconfined by constitutional limits on the power of the parliament.
+This was taken up in trenchant criticism of the Blackstone doctrine in the United States in the context of discussion about the First Amendment.
+[57]
+72                  Despite its limits and vulnerability to statutory change, the common law gives a high value to freedom of expression particularly the freedom to criticise public bodies.
+[58] Courts applying the common law may be expected to proceed on an assumption of freedom of expression which is not to be limited save by clear words or necessary implication.
+An example of a common law principle expressly protecting freedom of speech is the rule in England that local authorities and other organs of government cannot sue for libel at common law.
+There is no public interest favouring the right to sue and it was said, in the House of Lords in the Derbyshire County Council case in 1993, to be contrary to the public interest "because to admit such action would place an undesirable fetter on freedom of speech".
+[59] That principle was applied by the New South Wales Court of Appeal in 1994.
+[60]
+73                  In the Court of Appeal in the Derbyshire County Council case, Article 10 of the European Convention on Human Rights, which relates to freedom of expression, was referred to.
+The United Kingdom is party to that Convention.
+Balcombe and Butler-Sloss LJJ took the view that where the law is uncertain the courts should approach it in such a way as to ensure that it not involve a breach of Article 10.
+And in the New South Wales Court of Appeal decision in the following year, [61] Kirby P referred to the provisions of Article 19.2 of the International Covenant on Civil and Political Rights, which Australia has ratified.
+The implied freedom of political communication in Australia
+74                  In two decisions delivered on 30 September 1992, the High Court recognised an implied freedom of communication on political matters in Australia.
+The first case, Nationwide News Pty Ltd v Wills [62] involved a prosecution of "The Australian" Newspaper which had published an article highly critical of the Australian Industrial Relations Commission.
+The article said, inter alia:
+The right to work has been taken away from ordinary Australian workers.
+Their work is regulated by a mass of official controls, imposed by a vast bureaucracy in the Ministry of Labour and enforced by a corrupt and compliant "judiciary" in the official Soviet-style Arbitration Commission.
+The newspaper was prosecuted under s 299 of the Industrial Relations Act 1988 (Cth) which provided that:
+A person shall not … by writing or speech use words calculated … to bring a member of the [Industrial Relations] Commission or the Commission into disrepute.
+75                  The High Court held the section invalid.
+A majority of the Court (Brennan, Deane, Toohey and Gaudron JJ) held it was invalid as infringing an implied freedom of political discussion.
+The minority (Mason CJ, Dawson and McHugh JJ) held it invalid on the basis it was not within the scope of a relevant head of power in the Constitution .
+Deane and Toohey JJ in their joint judgment, based the implication upon the system of representative government for which the Constitution provides.
+They said:
+The people of the Commonwealth would be unable responsibly to discharge and exercise the powers of governmental control which the Constitution reserves to them if each person was an island, unable to communicate with any other person.
+The actual discharge of the very function of voting in an election or referendum involves communication.
+They discerned in the doctrine of representative government "… an implication of freedom of communication of information and opinions about matters relating to the government of the Commonwealth".
+The implication operated at the level of communication and discussion between the people of the Commonwealth and their members of parliament and other Commonwealth authorities.
+It also operated at the level of communication between the people of the Commonwealth themselves.
+76                  The other case in which judgment was delivered on 30 September 1992, Australian Capital Television Pty Ltd v Commonwealth [63] involved a challenge to new Commonwealth legislation proposing to impose a blanket prohibition on political advertisements on radio or television during Federal election periods.
+The majority (Mason CJ, Deane, Toohey and Gaudron JJ) held that the new provisions were invalid because they infringed the constitutionally guaranteed freedom of political discussion.
+Mason CJ acknowledged the historical fact that the framers of the Constitution had not adopted the United States model of a Bill of Rights.
+He accepted that it was difficult if not impossible to imply general guarantees of fundamental rights and freedoms in the Australian Constitution .
+He went on to say, however:
+… the existence of that sentiment when the Constitution was adopted and the influence which it had on the shaping of the Constitution are no answer to the case which the plaintiffs now present.
+Their case is that a guarantee of freedom of expression in relation to public and political affairs must necessarily be implied from the provision which the Constitution makes for a system of representative government.
+The plaintiffs say that, because such a freedom is an essential concomitant of representative government, it is necessarily implied in the prescription of that system.
+It is important to note that the implied freedom of political communication did not confer enforceable rights on individuals.
+Rather, it operated to limit the lawmaking power of the parliament to prevent it from encroaching upon that freedom.
+77                  The freedom was further considered in subsequent places in a variety of other contexts.
+Theophanous v Herald & Weekly Times Ltd [64] was a defamation case.
+The plaintiff was a member of parliament.
+He had been the subject of a letter published in the opinion columns of a newspaper attacking his approach to immigration policy and accusing him of bias arising from his own ethnic background.
+He sued the newspaper.
+The newspaper argued that Australian defamation law should be modified to allow a "public figure" defence like that supported by the First Amendment to the United States Constitution in New York Times Co v Sullivan [65] .
+A majority of the High Court found that the implied freedom of political communication in relation to Commonwealth matters operated to limit the scope of the law of defamation whether or not derived from State statutes or the common law.
+The majority adopted a modified public figure test.
+Mason CJ, Toohey and Gaudron JJ said:
+… the defendant should be required to establish that the circumstances were such as to make it reasonable to publish the impugned material without ascertaining whether it was true or false.
+The publisher should be required to show that, in the circumstances which prevailed, it acted reasonably, either by taking some steps to check the accuracy of the impugned material or by establishing that it was otherwise justified in publishing without taking such steps or steps which were adequate.
+To require more of those wishing to participate in political discussion would impose impractical and, sometimes, severe restraint on commentators and others who participate in discussion of public affairs.
+Such a restraint would severely cramp freedom of political discussion which is so essential to the effective and open working of modern government … [66]
+78 Stephens v West Australian Newspapers Ltd [67] was also a defamation case.
+The West Australian newspaper published an article critical of an overseas trip taken by six members of the Legislative Council.
+It said that they had wasted public money and described the trip as "a junket of mammoth proportions".
+The six members of the State Parliament sued for defamation.
+A point of distinction from cases that had gone before was that the impugned publication concerned a State political issue and State politicians.
+The majority (Mason CJ, Deane, Toohey and Gaudron JJ) held the constitutional defence arose under the Western Australian State Constitution .
+An entrenched provision of that Constitution continued to "provide a representative democracy in which the members of the legislature are "directly chosen by the people"."
+On that basis a freedom of communication on political matters was necessarily to be implied in that Constitution just as it was implied in the Commonwealth Constitution in order to protect the working of representative democracy and government.
+[68]
+79                  In 1997 the High Court decided Levy v State of Victoria [69] .
+That concerned the validity of a State law prohibiting persons other than the holders of valid game licences from entering into a permitted hunting area between certain hours of each of two specified dates.
+Mr Levy entered a permitted hunting area without a game licence for the purpose of protesting against Victorian hunting laws.
+He was charged with breaching the regulation.
+He challenged it on the basis that it interfered with the freedom of communication on political matters implied in the Victorian State Constitution .
+It was held the regulation was not invalid as it was reasonably appropriate and adapted to the protection of individual or public safety.
+Lange was applied.
+80 Theophanous and Stephens were reconsidered in Lange v Australian Broadcasting Corporation [70] .
+This was a defamation action, brought by David Lange, former Prime Minister of New Zealand.
+He sued the Australian Broadcasting Corporation in connection with statements made on a current affairs program.
+In this case in a joint unanimous judgment the Court held the ABC's "constitutional defence" was not available to it.
+The constitutional implication could not directly alter private rights and immunities.
+81                  The Court set out in Lange the approach it would take in future to the validity of laws said to offend against the implied freedom of communication.
+Two questions were to be answered before the validity of the law could be determined.
+They were:
+1.
+Does the law effectively burden freedom of communication about government or political matters either in its terms, operation or effect?
+2.
+If the law effectively burdens that freedom, is the law reasonably appropriate and adapted to serve a legitimate end the fulfilment of which is compatible with the maintenance of the constitutionally prescribed system of representative and responsible government and the procedure proscribed by s 128 for submitting a proposed amendment of the Constitution to the informed decision of the people?
+If the first question were answered yes, and the second answered no, the law would be invalid.
+[71]
+82                  In Roberts v Bass [72] , a case involving defamation of a political candidate, the effect of Lange was usefully encapsulated in the joint judgment of Gaudron, McHugh and Gummow JJ.
+Their Honours pointed out that the constitutional freedom does not confer rights on individuals.
+It invalidates any statutory rule inconsistent with the freedom.
+It also requires that the rules of the common law conform with the Constitution .
+In the context of defamation law therefore it had been necessary to determine the extent to which, if at all, common law rules concerning the traditional defence of qualified privilege were consistent with the constitutional freedom of communication.
+Lange held that the law of defamation burdened the constitutional freedom and that the law of qualified privilege, traditionally understood, did not qualify that burden in a way that was consistent with the freedom in respect of government and political matters published to the general public.
+Because the law of qualified privilege had not generally recognised an interest or duty to publish defamatory matter to the general public, the common law imposed an unreasonable restraint upon the constitutional freedom.
+That required the development of the common law as set out in the judgment in Lange.
+In extending the law of qualified privilege to protect publications concerning governmental and political matters to mass audiences, the Court imposed the condition that the publisher's conduct must be reasonable.
+[73]
+83                  In Coleman v Power [74] , the Court considered the validity of s 7(1)(d) of the Vagrants, Gaming and Other Offences Act 1931 (Qld).
+That section provided that any person who, in a public place, or so near to any public place, that any person that might be therein, and whether any person was therein or not, could view or hear used any threatening, abusive or insulting words to any person should be liable to a penalty of $100 or to imprisonment for six months.
+84                  Mr Coleman was convicted in the Magistrates Court of Queensland of using insulting words contrary to the section.
+He was distributing, in a mall, pamphlets alleged corruption against several police officers.
+When approached by a police officer who demanded a copy of the pamphlet he refused and said loudly:
+"This is Constable [BP], a corrupt police officer."
+The High Court held that the conviction for using insulting words to a person in a public place should be set aside.
+Only McHugh J was prepared to do that on the basis that it offended against the implied freedom of political communication.
+Gummow and Hayne JJ (Kirby J agreeing) held that even if s 7(1)(d) was capable of burdening communication about government or political matters it was reasonably appropriate and adapted to serve the legitimate public end of keeping public places free from violence.
+85                  McHugh J who would have invalidated the provision for infringing the implied freedom said:
+Insults are as much a part of communications concerning political and government matters as is irony, humour or acerbic criticism.
+Many of the most biting and offensive political insults are as witty as they are insulting.
+[75]
+Gummow and Hayne JJ construed s 7(1)as proscribing the use of words which were insulting in the sense that they were intended or reasonably likely to provoke unlawful physical retaliation from either the person to whom they were directed or someone who heard the words uttered.
+Construed in that fashion, s 7(1)(d) was reasonably appropriate and adapted to serve the legitimate public end of keeping public places free from violence.
+That was an end the function of which was entirely compatible with the maintenance of the constitutionally prescribed system of representative and responsible government.
+[76] Heydon J came to a similar conclusion.
+86                  There is a question about the range of "political matters" which fall within the implied freedom of communication.
+In Australian Capital Television they were referred to as "a wide range of matters that may fall for, or are relevant to, political action or decision".
+[77] In Theophanous they were said, by Mason CJ, Toohey and Gaudron JJ, to extend to "all speech relevant to the development of public opinion on the whole range of issues which an intelligent citizen should think about".
+[78]
+87                  The freedom does not extend to matters traditionally controlled by the criminal law.
+Deane and Toohey JJ said in Nationwide News [79] that:
+… a law prohibiting conduct that has traditionally been seen as criminal (eg conspiring to commit, or inciting, or procuring the commission of, a serious crime) will readily be seen not to infringe an implication of freedom of political discussion notwithstanding that its effect may be to prohibit a class of communication regardless of whether they do or do not relate to political matters.
+In Brown v Classification Review Board [80] the Full Court of the Federal Court held that publication of an article called "The Art of Shop Lifting" in a student newspaper was not protected.
+It fell within a category of publications, prohibited by statute, which "promote, incite or instruct in matters of crime or violence".
+[81]
+88                  Some general observations may be made about the implied freedom of political communication.
+Unlike the freedom of expression guaranteed in Art 19 of the Indian Constitution it is not limited to citizens or individuals.
+On the other hand it offers no greater protection to the press or the media than it does for individuals.
+As one commentator observed, "the beneficiaries of the freedom are consistently described as "citizens" or "electors" or "the community", without the media being accorded favourable, or indeed unfavourable treatment by virtue of any claimed role as watchdog."
+[82] There is ongoing uncertainty about the scope of the "political communication" protected by the freedom.
+[83]
+89                  The most recent High Court decision to consider the implied freedom of political communication is Apla Ltd v Legal Services Commissioner (NSW) [84] .
+There it was held by majority that the implied freedom did not interfere with regulations restricting the advertisement of legal services.
+The communication prohibited was not political.
+90                  There are potential issues about the impact of the implied freedom on counter-terrorism laws including recently enacted sedition offences in the Criminal Code 1995 (Cth).
+These were considered by the Australian Law Reform Commission in its Discussion Paper and Report on New Sedition Offences introduced into the Criminal Code Act 1995 (Cth) in 2005.
+Five new offences were created in the Criminal Code under the heading "Sedition".
+These offences were broadly designated:
+1.
+Urging the overthrow of the Constitution or Government (ss 80.2(1) and (2))
+2.
+Urging interference in parliamentary elections (s 80.2(3)-(4)).
+3.
+Urging violence within the community (s 80.2(5)-(6)).
+4.
+Urging a person to assist the enemy (s 80.2(7)).
+5.
+Urging a person to assist those engaged in armed hostilities (s 80.2(8)).
+91                  In considering the offences mentioned in s 80.2(1), (3) and (5), the Commission noted that each purported to criminalise the urging of conduct by "force or violence".
+It noted that in Coleman v Power [85] McHugh J had said:
+Regulating political statements for the purpose of preventing breaches of the peace by those provoked by the statements is an end that is compatible with the system of representative government established by the Constitution .
+The Commission took the view that the offences mentioned fitted comfortably within that statement.
+It did, however, feel that a burden on political expression could arise under s 80.2(7) and (8) although it was likely to arise in only a relatively small number of situations.
+92                  Other concerns arising out of anti-terrorism laws include their impact on the ability of journalists to access and gather information.
+The Australian Security Intelligence Organisation Act 1979 (Cth) (ASIO Act) prohibits anyone from disclosing information relating to the issue, content or detention of a person questioned or detained by intelligence agencies for the duration of a warrant under that Act.
+It is also an offence to disclose "operational information" for a period of two years after the expiry of the warrant.
+Like restrictions apply in respect of persons subject to a preventive detention order.
+There is also provision under s 104 of the Criminal Code 1995 (Cth) for persons to be subjected to a control order.
+Such persons can be limited in their communications with the media as one of the conditions of the control order.
+93                  It is said that offences relating to association with directors, promoters or members of proscribed terrorist organisations arguably could prevent journalists from communicating with potential news sources.
+[86] The relevant section of the Criminal Code Act 1995 however states that it does not apply to the extent (if any) that it would infringe any constitutional doctrine of implied freedom of political communication.
+This of course leaves a degree of uncertainty for any journalist faced with a decision about communicating with a possible news source.
+It also appears that there are provisions in the ASIO Act which would authorise the questioning and detention of journalists who have obtained information relating to a terrorism activity or a terrorist group.
+94                  In these and other areas relating to anti-vilification laws, censorship and obscene publications there are unresolved questions about the interaction of restrictions with the implied freedom of political communication.
+Their resolution will depend in part upon the scope which the court gives to the concept of "political communication" in the years ahead and what restrictions it is prepared to accept as reasonably appropriate and adapted to serve legitimate ends compatible with the system of government provided by the Constitution .
+Freedom of the press under Article 19 of the Indian Constitution
+95                  Although the Supreme Court of India in MSM Sharma v Krishna Sinha accorded the press no special status in enjoyment of the right of freedoms guaranteed under Article 19, it has nevertheless recognised the practical significance of freedom of the press.
+This was recognised prior to the Sharma decision by Bhagwati J in Express Newspapers Pty Ltd v Union of India [87] .
+At that time there had only been two decisions of the Court involving the interpretation of Article 19.
+[88] Bhagwati J said of the two decisions:
+… they only lay down that the freedom of speech and expression includes freedom of provocation of ideas which freedom is ensured by the freedom of circulation and that the liberty of the press is an essential part of the right to freedom of speech and expression and that liberty of the press consists in allowing no previous restraint upon publication.
+96                  Article 19 was successfully invoked in Sakal Papers v Union of India [89] against laws purporting to regulate the price of newspapers in relation to their pages and size, the allocation of space to advertisements and the maximum number of pages that might be published by a newspaper according to the price charged.
+The Supreme Court rejected the government's contention that the restrictions were in the public interest.
+It held that the right of freedom of speech could not be taken away with the object of placing restrictions on the business activities of a citizen.
+The Court said:
+Freedom of speech can be restricted only in the interests of the security of the State, friendly relations with foreign States, public order, decency or morality or in relation to contempt of court, defamation, or incite to an offence.
+It cannot, like the freedom to carry on business, be curtailed in the interests of the general public.
+In Bennett Coleman & Co v Union of India [90] the Court struck down a control order purporting to fix a maximum number of pages which a newspaper would be allowed to print.
+The order was a response to a significant reduction in available newsprint.
+97                  Moving forward across the years to 2006 and 2007, it is evident that the Supreme Court is still faced, under Article 19, with difficult policy questions concerning the application of the guaranteed freedom of expression under that Article.
+It is not however limited, as the High Court of Australia would be in the application of the implied freedom, by the concept of political communication.
+98                  The interplay between Article 19 and the action for contempt of court arose in 2005 in Rajendra Sail v Madhya Pradesh High Court Bar Association [91] .
+A newspaper report had made strident criticisms of a High Court decision and of the relevant judge.
+In an earlier case of Arundhati Roy [92] the Court had held that fair criticism of the conduct of a judge, the institution of the judiciary and its functioning might not amount to contempt if "made in good faith and in the public interest".
+Determining whether conduct had been "in good faith and the public interest" the court had to consider all the surrounding circumstances including the person responsible for the comments, his knowledge in the field about which the comments were made and the purpose sought to be achieved.
+The judgment in Rajendra Sail considered the role of the media in society generally and balanced that against the need to maintain confidence in the judiciary:
+The confidence of people in the institute of judiciary is necessary to be preserved at any cost.
+That is its main asset.
+Loss of confidence in institution of judiciary would be end of rule of law.
+Therefore, any act which has such tendency deserves to be firmly curbed.
+For rule of law and orderly society, a free responsible press and independent judiciary are both indispensable.
+Both have to be, therefore, protected.
+[93]
+99                  Social comment which may involve the graphic depiction of social evils was considered in Director-General of Doordarshan v Anand Patwardhan [94] .
+Doordarshan, a national channel, refused to telecast a documentary said to represent a "real picture of crime and violence against women and members of various religious groups perpetrated by politically motivated leaders for political, social and personal gains".
+[95] The case focussed on the guidelines for determining whether a publication was obscene.
+The Court accepted that it was open to the State, in the interest of public decency and morality, to impose reasonable restrictions on the flow of information.
+The Court however held the particular documentary fell within the limits prescribed by the Constitution and was not patently offensive and did not have a tendency to "deprave and corrupt any average Indian citizen's mind".
+The Court held that Doordarshan denial of broadcasting of the relevant documentary was a "blatant violation of the right guaranteed under Article 19(1)(a) of the Constitution ".
+100 Ajay Goswami v Union of India [96] considered the effects of certain journals on vulnerable minors.
+Again, the balance between freedom of expression and the reasonable restrictions on that freedom had to be considered.
+The Court there followed the reasoning of the US Supreme Court in US v Playboy Entertainment Group [97] where that Court held that "in order for the State to justify prohibition of a particular expression of opinion it must be able to show that its action was caused by something more than a mere desire to avoid the discomfort and unpleasantness that always accompany an unpopular viewpoint".
+101               This robust approach was consistent with the jurisprudence of the European Court of Human Rights in relation to Article 19 of the International Covenant on Civil and Political Rights reflected in its well known decision in Handyside v United Kingdom.
+[98] That decision asserted the general principle that freedom of expression is not limited to speech or expression which is polite or inoffensive.
+The Court observed in that case that Article 19 of the International Covenant on Civil and Political Rights applies not only to information or ideas that are favourably received or regarded as inoffensive but, also to:
+… those that offend, shock or disturb the State or any sector of the population.
+Such are the demands of that pluralism, tolerance and broadmindedness without which there is no "democratic society".
+Similar considerations have arisen in Australia in the context of racial vilification legislation.
+There the courts may be required to determine whether conduct done because of race, colour or national or ethnic origin of another person is reasonably likely, in all the circumstances, to offend, insult, humiliate or intimidate that person or group of people.
+[99]
+102               The most recent decision of the Supreme Court of India on Article 19 raises the vexed question of the interface between freedom of speech and religious sensitivity.
+The decision Sri Baragur Ramachandrappa v State of Karnataka [100] concerned forfeiture of a publication containing statements considered objectionable, inflammatory, hurtful and insulting to the Veerashaivas and the followers of Basaveshwara, a Saint of the 12th century.
+The Karanataka High Court dismissed a petition for the setting aside of a Notification issued by the State Government forfeiting all copies of the novel Dharmakaarana under s 95 of the Code of Criminal Procedure.
+The Supreme Court dismissed the appeal and said:
+It is however clear that the freedom of speech and expression is not unfettered and s 95 of the Code exemplifies this principle on the understanding that this freedom must be available to all and no person has a right to impinge on the feeling of others on the premise that his right to freedom of speech remains unrestricted and unfettered.
+It cannot be ignored that India is country [sic] with vast disparities in language, culture and religion and unwarranted and malicious criticism or interference in the faith of others cannot be accepted.
+The case threw up issues which were no doubt of acute difficulty.
+They raised the question whether freedom of expression should protect criticism of the religious doctrines or the organised bodies of adherents to particular religious faiths.
+These are questions which can only be answered by those, like the judges of the Supreme Court of India, who are acutely aware of the conditions of their own society.
+The difficult question to be posed is whether religious faith should be privileged from criticism.
+If such a privilege is accorded because of concerns about possible civil disorder, does that involve yielding to the implied threat of violence?
+Such questions have no ready or easy answers.
+103               In each of our societies the protection of freedom of expression across a variety of circumstances involves difficult balancing exercises.
+The Indian courts have had to face up to and deal with these problems in a way that Australian courts have not.
+That is partly to do with the circumstances of our respective societies.
+It also has to do with the wide and explicit protection for freedom of expression conferred by Article 19 of the Indian Constitution against the much lesser implied freedom of political communication found in the Australian Constitution .
+104               If and when Australia adopts a statutory or constitutional Bill of Rights, and in the meantime, at the level of State and Territory human rights legislation, there is much that we can learn from the Indian experience of dealing with these challenging problems.
+A concluding caution
+105               The role of constitutions and constitutional law is of great importance in the protection of fundamental human rights and freedoms, including freedom of speech and expression.
+Ultimately, however, it will only have the importance that the people who are served by the constitution and those who exercise its powers, attach to those freedoms.
+It is appropriate therefore to conclude with two cautionary observations, one by a great American Judge, and the other by one of the drafters of the Indian Constitution .
+106               In a short but celebrated speech entitled "The Spirit of Liberty", delivered in 1944,  Learned Hand, said:
+Liberty lies in the hearts of men and women; when it dies there, no constitution, no law, no court can save it; no constitution, no law, no court, can even do much to help it.
+While it lies there it needs no constitution, no law, no court to save it.
+On 25 November 1949, the day before the Indian Constitution was accepted the Chairman of the Drafting Committee of the Constituent Assembly, Dr BK Ambedkar said:
+However good a constitution may be it is sure to turn out bad if those who are called to work it happen to be a bad lot.
+However bad a constitution may be it may turn out to be good if those who are called to work it happen to be a good lot.
+The working of a constitution does not depend wholly upon the nature of the constitution.
+*  I acknowledge the assistance of the Research Directorate of the Federal Court in providing helpful research memorandum.
+[1] McMinn, A Constitutional History of Australia, Oxford University Press (1979) at 1.
+[2] Declaration by Order in Council 1786 pursuant to 24 Geo III c 56 (1784).
+[3] Zines L, The Growth of Australian Nationhood and its Effect on the Powers of the Commonwealth, Zines L (ed) Commentaries on the Australian Constitution , Butterworths (1977) at 1.
+[4] Harrison-Moore, The Constitution of the Commonwealth of Australia (2nd ed) (1910) Legal Books (repr) 1977 at 66.
+[5] Inglis Clark A, Studies in Australian Constitutional Law (1901) Legal Books (repr) 1977 at 27 citing Cooly, Michigan-American Commonwealths at 5-347.

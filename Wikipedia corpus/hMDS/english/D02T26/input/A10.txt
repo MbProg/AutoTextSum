@@ -1,0 +1,159 @@
+(27 Kinder)
+Your statistic sucks, because it doesn't tell us anything.
+A few decades ago a Hydroelectric dam broke in China killing up to almost 200.000 People (30k+ on direct impact of the flood (meaning in less than 24 hours), the rest died of desease or starved to death).
+If you add every nuclear accident, every coal fueled power plant or oil spill together, you wouldn't reache those numbers remotely.
+Your statistic doesn't account for that with only 1.4 deaths/year/TWh.
+From what year is that statistic?
+Would it be from 1986 the Nuclear column would surpass every other category.
+Was it from the year the dam broke Hydro would surpass everything else.
+If it was from a year with a devastating coal mine incident, the number would also be higher.
+Which year did these numbers come from?
+Or is it the average of every year since deaths in the workplace were documented?
+I have no clue of statistics, but if you toss out such a chart, please explain it enough for us non-statistic folk can understand it.
+Also, statistics only tell us about the stuff that happened in the past, not about the shit that could happen.
+Just because something didn't happen yet, doesn't mean that it will never happen.
+Okay, everybody listen up.
+Former nuclear engineer here; studied it for 2 years and then switched majors because it was too difficult.
+Here's the truth:
+-You receive more radiation from a passing train than you would living next to a nuclear power plant.
+-The Chicago area receives 90% of it's power from nuclear generation.
+-Fission reactions emit a blue wave of light, not green like in the Simpsons, but I don't know why.
+-The Japanese were very stupid for building a reactor in a tsunami and earthquake zone, it's not nuclear energy's fault.
+-Don't say a damn thing about Chernobyl or Three Mile Island; modern reactors have many more layers of security and basically won't ever meltdown (unless you put the plant in front of a tsunami).
+EDIT: Lighten up everybody, I'm just joking around, OBVIOUSLY!
+Thanks to the real physicists and nuke engrs who provided insightful feedback; take a look at what they have to say below because they know what they're talking about, OBVIOUSLY!!
+(33 Kinder)
+Not to be a dick but calling yourself a nuclear engineer cause you did two years of school is like calling myself an actor cause I took a theatre class.
+Just a couple corrections/additions: The blue glow is from Cherenkov radiation; electrons are moving faster than light under water.
+While I agree that current plants are much safer than Chernobyl,  the fact is there is many currently operating plants with the same design as TMI or very close to it.
+TMI resulted in no radiation releases  and no harm to the public and there's definitely been a lot more focus on safety since then, but to  say that current plants are inherently safer isn't true.
+The power for normal cooling in a plant comes from  AC power; if this power is lost emergency diesel generators provide this power.
+There's numerous diesel generators to ensure that if one or two fails that the plant can still be kept safe.
+After Fukushima there's been a massive initiative in the industry to provide even more redundancy with more DGs as well as analyzing and preparing for more devastating accidents.
+Of course if all these DGs fail, as happened in Fukushima when they got flooded, you're well fucked.
+New reactor designs include passive safety features, namely that the core will be cooled by natural circulation so no DGs are needed.
+Source: Employed Nuclear Engineer
+(1 Kind)
+The blue light from fission reactors occurs from charged particles traveling faster than the speed of light in water.
+In a fission event, electrons and alpha particles are created from radioactive decay in the fission cascade, some with sufficient kinetic energy to travel faster than the speed of light in the water surrounding the reactor (c / 1.33).
+This creates a "shock-wave" (analagous to sonic boom) and light is emitted.
+The light is blue because this effect creates light preferentially with shorter wavelengths.
+The exact physics why this is the case are quite complicated.
+Look up Cerenkov radiation if you find this interesting.
+(48 Kinder)
+So who claims that nuclear power plants are dangerous due to their radiation?
+The problems are: - No space for storage of the atomic waste.
+I believe not one country in the world has as a sufficient solution for this problem.
+-Atomic energy is expensive.
+Look at the examples in England and Finland.
+Almost never are plants build by private investors.
+-Atomic power plants cannot supply energy in times of demand peaks and cannot decrease supply if too much energy is in the market.
+With more and more renewable energy this will become increasingly important because the weather can change the energy production quite quickly.
+- Nuclear plants are not 100 percent save.
+There are always possibilities of a desaster.
+I believe atomic energy is not a cost efficient solution but more used because of political reasons.
+No dependency of certain countries... technological reputation of a country ...
+(2 Kinder)
+The Japanese had no choice but to build in an earthquake zone because that's where they're located.
+They have to use nuclear power because they don't have oil, coal, or natural gas.
+They built the plants close to the water to eliminate the need for giant cooling towers; they used the sea for cooling the plant.
+The problem is that the reactors that blew up used an antiquated design that generated heat for days after a full SCRAM (shutdown).
+(I believe they were boiling water reactors.)
+This means that in order to prevent a meltdown, external energy was required.
+A turning point in the crisis was when the operators turned off a self-cooling system in Reactor 1.
+When the tsunami hit, they were unable to turn it back on.
+The diesel backups were flooded, then they were unable to keep the reactor cool.
+The fuel got hot, melted down, and then the zirconium created hydrogen that led to an explosion.
+Nuclear "disasters" have only a few causes, and most can be avoided.
+There have been meltdowns where there was no release of radiation.
+The plant may need to be rebuilt, but no one dies.
+However, the disasters come from (1) steam explosions (Chernobyl); (2) hydrogen explosions (Fukishima); and (3) criticality incidents.
+(1) Steam Explosions.
+Most reactors need coolant to prevent meltdown.
+If water is used as a coolant, you may face steam explosions.
+Sometimes a void occurs and the energy too much, and then steam builds up and explodes.
+Scientists have been exploring molten salts or other coolants that operate at a higher temperature but work at room pressure.
+Even in an emergency, the coolant cannot explode.
+However, most plants are water cooled.
+Hopefully, newer generations will avoid these flaws.
+(2) Hydrogen Explosions.
+We use zirconium to cover our fuel rods.
+If the zirconium gets too hot, it liberates hydrogen from the water.
+This leads to an explosion if it gets to build up too much.
+Then boom.
+Newer designs should avoid zirconium.
+Basically, we have to avoid water.
+(3) Criticality Incidents.
+Uranium or plutonium may be suspended in liquid for various reasons, such as refining, fuel processing, or the like.
+If neutrons get to build up too much, then radiation will be spontaneously released as the products undergo fission.
+It's weird.
+If a certain amount of liquid is stored in a long pipe, then it may not fission because the neutrons are leaking too fast.
+But poor that into a spherical object, and the neutrons will have to pass through fission material before they can escape, and fission occurs.
+This will not cause an explosion, but the megadose of neutrons will kill everyone nearby.
+You see the picture of the Japanese man who suffered full-body burns; well, that was a criticality incident.
+The problem is that we have put all of our eggs onto water-cooled reactors.
+We need to invest in other solutions.
+I don't know if that will happen.
+we need nuclear power until we are capable of creating fusion reactors but we need to use thorium not uranium... here is an essay I just wrote on it yesterday.
+Thorium vs Uranium
+Thorium, discovered in 1829, is a radioactive actinide metal and one of only three radioactive elements that still occurs in quantity in nature as a primordial element.
+Currently Thorium is considered one of the best nuclear energy sources for the world beating uranium in efficiency but we don’t use it today mostly because uranium had more desirable byproducts during the cold war era like plutonium-239.
+Because of this we never developed thorium reactors but it is still both economically and environmentally beneficial to create thorium reactors and here are just a few reasons why.
+The reason that many people don’t like using uranium reactors is because of the highly radioactive byproducts it creates like isotopes of americium, technetium, iodine and plutonium which all have half lives of thousands of years.
+These byproducts also need to be housed for ten thousand years, which is a waste of money.
+Thorium doesn’t create as harmful byproducts and the ones it does have half lives of only a few hundred years.
+Thorium can also use existing nuclear waste as fuel for it’s initial fissile start up charge, which is an effective way of getting rid of some of our uranium byproducts.
+Thorium is also much safer then uranium.
+Thorium on its own is not fissile; to get it to react you need throw neutrons at it which will make it start splitting and exploding and that’s very beneficial because this means you can shut the entire proses down if there is a threat of a melt down.
+Thorium doesn’t create dangerous byproducts like plutonium-239 either, so this means that it could be a safe power source for countries like North Korea and Iran who may secretly build weapons of mass destruction with a uranium powered nuclear reactor.
+Thorium is approximately three times more abundant in the earths crust then uranium and you need much less of it to produce the same amount of energy (1 ton of thorium = 250 tons of uranium).
+Thorium is also much less expensive to mine then uranium because it’s found in much higher concentrations in the earths crust saving both money and the environment since mines would not need to be as large.
+Because of this Thorium in the long run is a much better economic investment then uranium and could potentially save countries lots of money in both fuel and extraction costs.
+Because Thorium is much safer and cheaper it would be a much better choice then continuing to use uranium for nuclear power; at least until we can create working fusion reactors which still may be another 50-70 years.
+So if we invest in thorium now it would make a lot more sense then continuing to use uranium.
+edit: I wasn't calming to be completely 100% correct on any of this.
+I was given 3 really shitty articles in my gr 11 english class and asked to write an essay on which nuclear power seemed better in the long run for our economy.
+this is the just of what I got from the articles which already had very little information so don't hate, I just thought I would share what I learned.
+also for anyone curious, the names of the articles were: Don't believe the spin on thorium being a greener nuclear option, is thorium the biggest breakthrough since fire?
+possibly and The thing about thorium: why the better nuclear fuel may not get a chance
+(0 Kinder)
+Currently Thorium is considered one of the best nuclear energy sources for the world beating uranium in efficiency
+Efficiency?
+What kind of efficiency and where are you getting this?
+Thorium is much less efficient on neutrons.
+but we don’t use it today mostly because uranium had more desirable byproducts during the cold war era like plutonium-239.
+We don't use thorium today because uranium is still very cheap.
+The reason that many people don’t like using uranium reactors is because of the highly radioactive byproducts it creates like isotopes of americium, technetium, iodine and plutonium which all have half lives of thousands of years.
+Americium and plutonium are produced by neutron captures in uranium.
+Technetium and iodine are fission products.
+U233 fission (i.e. thorium) also produces those fission products.
+These byproducts also need to be housed for ten thousand years, which is a waste of money.
+It's actually hundreds of thousands to millions of years.
+Thorium doesn’t create as harmful byproducts and the ones it does have half lives of only a few hundred years.
+This is completely false.
+Thorium can also use existing nuclear waste as fuel for it’s initial fissile start up charge, which is an effective way of getting rid of some of our uranium byproducts.
+Thorium fuel can use waste as fuel?
+Not sure what you're getting at here.
+Thorium is also much safer then uranium.
+Thorium on its own is not fissile; to get it to react you need throw neutrons at it which will make it start splitting and exploding
+I'm sorry, but you don't know what you're talking about.
+Thorium 232 absorbs a neutron, transmutes to thorium 233, which decays to protactinium 233, which decays to uranium 233.
+The actual fuel in a thorium reactor is still uranium.
+You need to dope thorium fuel with a fissile component because it can't fission by itself.
+Most reactor designs that incorporate thorium start with a large quantity of plutonium or enriched uranium.
+and that’s very beneficial because this means you can shut the entire proses down if there is a threat of a melt down.
+No.
+Thorium doesn’t create dangerous byproducts like plutonium-239 either
+Pu239 isn't dangerous.
+It's a fissile nuclide like U235 and U233.
+You could use any of the three of them for a nuclear bomb.
+So if we invest in thorium now it would make a lot more sense then continuing to use uranium.
+Uranium is currently very cheap.
+A thorium fuel cycle would actually be very expensive to run because we don't have industrial reprocessing infrastructure.
+It also needs an initial fissile component that is expensive to acquire (and has a large number of licensing and proliferation issues.)
+I think you're confusing thorium fuel and the molten salt reactor in many spots.
+Thorium can be used in many types of reactors and molten salt reactors can run on fuel other than thorium.
+They are not synonymous.
+Molten salt reactors are an old technology, but there aren't any large scale designs currently ready for deployment.
+Even if there were, nobody is going to shut down their existing plants that are running perfectly fine to build a new reactor type that they have no experience operating.
+Overall, your enthusiasm is great (and I'm a thorium fuel cycle proponent myself) but you really need to read a bit more about the topic before you can properly advocate it.

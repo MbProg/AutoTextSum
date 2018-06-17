@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-/W3C/DTD HTML 4.01 Transitional/EN">
+<html lang="EN">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app7.us.archive.org";archive_analytics.values.server_ms=396;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Smithsonian Institution Archives</title>
+<meta charset="UTF-8" />
+ 
+<link rel="stylesheet" href="/web/20160517220340cs_/http://siarchives.si.edu/css/sia.css" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style4 {font-weight: none; color: #000000; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+-->
+</style>
+</head>
+<body bgcolor="6A3F14" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../images/nav/sia_black.gif','../images/nav/research_black.gif','../images/nav/records_black.gif','../images/nav/xcollections_black.gif','../images/nav/history_black.gif')">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://siarchives.si.edu/research/videohistory_catalog9531.html";
+
+var firstYear = 1996;
+var displayDay = "17";
+var displayMonth = "May";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://siarchives.si.edu/research/videohistory_catalog9531.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160517220340" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130617171116/http://siarchives.si.edu/research/videohistory_catalog9531.html" title="17 Jun 2013">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 22:03:40 May 17, 2016">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jun
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130617171116/http://siarchives.si.edu/research/videohistory_catalog9531.html" title="17:11:16 Jun 17, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 22:03:40 May 17, 2016">17</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130617171116/http://siarchives.si.edu/research/videohistory_catalog9531.html" title="17 Jun 2013"><strong>2013</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 22:03:40 May 17, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160517220340*/http://siarchives.si.edu/research/videohistory_catalog9531.html" title="See a list of every capture for this URL">34 captures</a>
+           <div class="r" title="Timespan for captures of this URL">1 Sep 06 - 17 May 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000001000_2007:-1:000002000000_2008:-1:000000000000_2009:-1:102944420100_2010:-1:001001000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000001000000_2014:-1:000000000000_2015:-1:000000000000_2016:4:000010000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<DIV ROLE="MAIN">
+<script language="JavaScript1.2">dqm__codebase = "../script/"</script>
+<script language="JavaScript1.2">dqm__rm="../"; dqm_link="../"</script>
+
+<script language="JavaScript1.2" src="/web/20160517220340js_/http://siarchives.si.edu/js/top_data.js"></script>
+<script language="JavaScript1.2" src="/web/20160517220340js_/http://siarchives.si.edu/script/dqm_loader.js"></script>
+
+ <table width="760" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" ROLE="PRESENTATION">
+  <tr>
+	<td width="2" bgcolor="#000000"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/shim.gif"  ALT="" ROLE="PRESENTATION" width="2" height="1"></td>
+    <td valign="top" bgcolor="#EFE2BF">
+      <table width="756" border="0" valign="top" align="center" cellpadding="0" cellspacing="0" ROLE="PRESENTATION">
+  <tr>
+    <td height="62" colspan="3" valign="top" bgcolor="EFE2BF"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/banner.jpg" width="756" height="62" border="0" alt ="Smithsonian Institution Archives: Home" align="top" usemap="#Map" href="../index.html"></td>
+  </tr>
+  <tr>
+          <td height="40" colspan="3" valign="top" bgcolor="EFE2BF">
+      		<img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xsia_red.gif" width="116" height="40" border="0" name="menu0" id="menu0" alt="SIA"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xresearch_black.gif" width="116" height="40" border="0" name="menu1" id="menu1"  " alt="Research and Resources"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xrecords_red.gif" width="116" height="40" border="0" name="menu2" id="menu2"  " alt="Records Managment"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xcollections_red.gif" width="116" height="40" border="0" name="menu3" id="menu3"  " alt="Collections Managment"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xhistory_red.gif" width="116" height="40" border="0" name="menu4" id="menu4"  " alt="History of Smithsonian"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/xred.gif" width="158" height="40" ALT="" ROLE="PRESENTATION">
+		</td>
+    </tr>
+  <tr>
+    <td height="4" colspan="3" valign="top" bgcolor="EFE2BF"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/shim.gif"  ALT="" ROLE="PRESENTATION" width="1" height="4"></td>
+  </tr>
+  <tr>
+    <td width="152" align="right" valign="top" bgcolor="EFE2BF">
+            <table width="148" border="0" cellpadding="3" cellspacing="0" ROLE="PRESENTATION">              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet1" id="bullet1"></td>
+                <td><a href="main_resources.html"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_resources.gif" alt="Resources" width="126" height="24" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td height="41"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_arrow.gif" width="10" height="10" name="bullet2" id="bullet2" ALT="" ROLE="PRESENTATION"></td>
+                <td><a href="main_collectionaid.html"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_aidtocollections.gif" alt="Research" width="126" height="36" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet4" id="bullet4"></td>
+                <td><a href="/web/20160517220340/http://www.siris.si.edu/" target="blank"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_siris.gif" alt="Siris" width="126" height="36" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet5" id="bullet5"></td>
+                <td><a href="main_faq.html"  ><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_faq.gif" alt="Archives Research"  width="126" height="36" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet6" id="bullet6"></td>
+                <td><a href="main.html"  ><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_reference.gif" alt="Reference" width="126" height="36" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet7" id="bullet7"></td>
+                <td><a href="main_educationalmaterial.html"  ><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_educationalmaterial.gif" alt="Research and Educational Material" width="126" height="36" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet8" id="bullet8"></td>
+                <td><a href="main_pubs.html"  ><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_pubs.gif" alt="Publications" width="126" height="24" border="0"></a></td>
+              </tr>
+              <tr bgcolor="B19657">
+                <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/subsection_blacksquare.gif" width="10" height="10" name="bullet9" id="bullet9"></td>
+                <td><a href="main_ref.html"  ><img src="/web/20160517220340im_/http://siarchives.si.edu/images/nav/research_ref.gif" alt="Reference Material" width="126" height="24" border="0"></a></td>
+              </tr>
+            </table></td>
+    <td width="452" valign="top" bgcolor="EFE2BF"><table width="412" border="0" cellpadding="4">
+              <tr>
+                <td valign="top"><p><span class="red"><strong>Smithsonian Videohistory Collection</strong></span></p>
+                    <table width="492" border="0" cellpadding="6">
+                      <tr>
+                        <td><div align="center">
+                            <p class="black"><strong>The Manhattan Project</strong><br>
+                                <strong>(RU 9531) </strong></p>
+                        </div></td>
+                      </tr>
+                    </table>
+                    <P><SPAN class="black"><strong>Background</strong></SPAN></P>
+                    <p><span class="black">The United States government began underwriting investigations of the feasibility of atomic weapons in October 1941. Within a year, promising research at several universities, particularly at the Metallurgical Laboratory of the University of Chicago, showed that it was possible to produce atomic bombs based on the chain-reacting fission of uranium 235 isotope or of plutonium. This led to the reorganization of the Manhattan District, or "Project," of the U.S. Army Corps of Engineers to make these bombs a reality. Brigadier General Leslie R. Groves directed and coordinated the Project from 1942 to 1945, spending 2.3 billion dollars on nuclear reactors and chemical separation plants at Hanford, Washington, and Oak Ridge, Tennessee, and on the weapon research and design laboratory at Los Alamos, New Mexico. The first plutonium bomb was successfully detonated at Alamogordo, New Mexico, on July 16, 1945. The B-29 bomber Enola Gay exploded the first uranium bomb, "Little Boy," over Hiroshima, Japan, on August 6, 1945; the B-29 Bock's Car exploded the second plutonium bomb, "Fat Man," over Nagasaki, Japan, two days later. </span></p>
+                    <p><span class="black">Stanley Goldberg, consulting historian for the Smithsonian's National Museum of American History (NMAH), recorded eighteen video sessions with fifty-five participants involved in the engineering, physics, and culmination of the Manhattan Project. Goldberg examined the research and technologies necessary to realize the uranium and plutonium bombs. He supplemented interviews with visual documentation of the industrial plants that refined and separated the isotopes, and of the machinery that delivered and dropped the bombs. Interviewees explained the other steps of designing, building, testing and detonating an atomic bomb. Discussions with participants also elicited a social history of the Project as recalled by various men and women responsible for different duties in different locales. Between January 1987 and June 1990 the sessions were recorded on-site or in-studio in Hanford, Washington; Boston, Massachusetts; Oak Ridge and Louisville, Tennessee; Alamogordo and Los Alamos, New Mexico; Washington, D.C.; and Suitland, Maryland. The sessions are divided into five collection divisions: Hanford, Oak Ridge, Cambridge, Los Alamos, and Alberta. </span></p>
+                    <p><span class="black"><strong>Video Sessions and Participants</strong></span></p>
+                    <p><span class="black">This collection consists of eighteen interview sessions, separated into five collection divisions, totalling approximately 47:00 hours of recordings, and 1188 pages of transcript. There are three generations of tape for each session: originals, dubbing masters, and reference copies. In total, this collection is comprised of 85 original videotapes (10 U-Matic videotapes, 24 1-inch reels, and 51 Beta videotapes), 54 dubbing master videotapes (54 U-Matic videotapes), and 29 reference copy videotapes (29 VHS videotapes).</span></p>
+                    <p><span class="black"><em>Please note that sessions 14 and 15 in Collection Division Four are comprised of dual sets of tape from two cameras positioned at different angles. </em></span></p>
+                    <p><span class="black"><STRONG>Collection Division 1: Hanford</STRONG></span></p>
+                    <p><span class="black"><strong>Participants</strong></span></p>
+                    <p><span class="black">Interviewees in this collection contributed in various roles to the refinement of plutonium 239 isotope at the Hanford Engineer Works in the state of Washington. In January of 1943, General Groves chose the site for construction of three full-scale plutonium piles for the mass production of plutonium 239--an isotope for the chain reaction in an atomic bomb--as well as water-treatment plants for cooling the reactors. The E.I. Du Pont de Nemours Company also built four remote-controlled "canyons" for the chemical separation of plutonium from uranium 238. Sessions were shot at the Columbia Cable Television studio and on-site at the Hanford Reservation.</span></p>
+                    <p><span class="black">Participants for Session One assisted in operations at the "B" site nuclear reactor as operators or support personnel. <strong>Lawrence Denton</strong> began work at the Hanford construction camp in September 1942 as a receiving and shipping clerk. <strong>Wilson A. Cease</strong> came to Hanford as a Du Pont employee in March 1944, and worked as a security patrolman in the area where uranium slugs were canned and sealed. <strong>Jess R. Brinkerhoff</strong> and <strong>Ralph K. Wahlen</strong> were both employed by the Remington Arms plant in Salt Lake City, Utah, and transferred to Hanford. Brinkerhoff arrived in November 1943, and worked in the fire department before becoming a power operator in a water treatment plant. Wahlen was employed in the fuel piece canning area. <strong>R.M. Buslach</strong> arrived in Hanford after the war and worked in plant maintenance for the General Electric Company.</span></p>
+                    <p><span class="black">Session Two participants worked for the Du Pont Company as chemical engineers at Hanford. <strong>Wakefield A. Wright</strong> and <strong>Vivian Russell Chapman</strong> were first transferred from Alabama Ordnance Works by Du Pont to the Manhattan Project facilities at Oak Ridge, Tennessee, for training before arriving in Hanford in 1944. <strong>William P. McCue</strong> was employed at the Oklahoma Ordnance Works before training at the Argonne National Laboratory in Chicago, Illinois, and relocating to Hanford. The responsibilities of these three men at Hanford included training the crews and supervising the operators in the nuclear reactors and chemical separation plants. </span></p>
+                    <p><span class="black">Session Three brought together a group of Hanford administrators. <strong>Oswald H. Greager</strong> had been a chemist for Du Pont after receiving his Ph.D. in that field from the University of Michigan in 1929. He came to Hanford in October 1944, from the Separations Development Division at the Clinton Engineer Works in Oak Ridge, Tennessee. Greager, on military duty at Hanford, served as Technical Officer and supervised the work of the contractor in the chemical separations area. <strong>Richard F. Foster</strong> joined the project in September 1943, on a contract with the Office of Scientific Research and Development at the University of Washington College of Fisheries. He studied the effects of radiation on the Columbia River and eventually became concerned with evaluating radiological doses received by people from all environs at Hanford. <strong>Leonard F. Perkins</strong>, Sr., came to Hanford in the spring of 1944 as an employee of the United States General Accounting Office to audit the contract of the Du Pont Company. In 1946, he transferred to the Atomic Energy Commission and returned to Hanford in 1951 to direct government-contracted construction there until 1973. During World War II <strong>Frederic W. Albaugh</strong> worked in the Metallurgical Laboratory at the University of Chicago as a group leader in the plutonium chemistry section. He arrived in Hanford to head its plutonium chemistry section in 1947 and continued to work there in various administrative capacities until 1971. Colonel <strong>Franklin T. Matthias</strong>, who had worked under General Groves in construction contracting for the Pentagon, was largely responsible for the site selection of Hanford. Groves appointed Matthias in February of 1943 to be commanding officer of the Hanford facilities.</span></p>
+                    <p><span class="black">The discussions detailed the nature of the workload at Hanford, the living conditions, and the administration of the Project. The sessions were shot on three-quarter-inch U-Matic tape and provided visual documentation of the "B" site nuclear reactor, tools used for the charge/discharge process, and period photographs of the interiors of the chemical separation "canyons."</span></p>
+                    <p><span class="black"><strong>Video Sessions</strong></span></p>
+                    <ul>
+                      <li><span class="black">discussion and demonstration of procedures for making the reactor operational; </span></li>
+                      <li><span class="black">canning of uranium slugs and the charge/discharge process of the reactor;</span></li>
+                      <li><span class="black"> cooling system operations and general reactor maintenance; </span></li>
+                      <li><span class="black">methods for controlling the reactor's power levels and operating the various safety systems.</span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">period photographs of Hanford Reservation under construction; </span></li>
+                      <li><span class="black">"B" reactor face; </span></li>
+                      <li><span class="black">reactor control room and instrument boards; </span></li>
+                      <li><span class="black">specialized tools developed for canning uranium slugs.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 6 U-Matic videotapes<br>
+      Dubbing Masters: 6 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 61 pages<br>
+      2 hours <br>
+                    </span></p>
+                    <p><span class="black"><strong>Session Two (January 13, 1987)</strong>, at the Columbia Cable Television station studio, Kennewick, Washington, featured Chapman, McCue, and Wright on their roles in producing plutonium at Hanford, c. 1942-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">how they came to Hanford; </span></li>
+                      <li><span class="black">conditions and operating procedures in the chemical separation "canyons";</span></li>
+                      <li><span class="black"> charge/discharge procedures for the reactor; </span></li>
+                      <li><span class="black">development of specialized equipment; </span></li>
+                      <li><span class="black">accidents and problems involving radioactive material; </span></li>
+                      <li><span class="black">living conditions during and after construction. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">period photographs of Hanford reactors and canyons under construction. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 U-Matic videotapes<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape <br>
+      Transcript: 56 pages<br>
+      2 hours </span></p>
+                    <p><span class="black"><strong>Session Three (January 14, 1987)</strong>, at the Columbia Cable Television station studio, featured Albaugh, Foster, Greagher, Matthias, and Perkins on administration at Hanford, c. 1942-1945, including:</span></p>
+                    <ul>
+                      <li><span class="black">selection of site; </span></li>
+                      <li><span class="black">staffing and conditions during the construction period; </span></li>
+                      <li><span class="black">Manhattan District accounting and purchasing procedures; </span></li>
+                      <li><span class="black">measures to abate or control potential radioactive hazards; </span></li>
+                      <li><span class="black">efforts to ascertain impact of Hanford operations on the Columbia River and local fisheries.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 U-Matic videotapes<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 39 pages<br>
+      2 hours </span></p>
+                    <p><span class="black"><strong>Collection Division 2: Oak Ridge </strong></span></p>
+                    <p><span class="black"><strong>Participants</strong></span></p>
+                    <p><span class="black">Interviewees in this collection contributed in various roles to the refinement of uranium 235 isotope at the Clinton Engineer Works in Oak Ridge, Tennessee. Built concurrently with the Hanford Reservation, the Clinton complex was designed for continued research and the refinement of the fissionable isotope uranium 235 from uranium 238. The sessions were shot at a studio of Kennedy Maxwell Productions, and on-site at the Y-12 Electromagnetic Separation Plant and the K-25 Gaseous Diffusion Plant. </span></p>
+                    <p><span class="black">Participants for Session Four were instrumental in designing and running the nuclear reactors at Oak Ridge and Hanford. <strong>Dale F. Babcock</strong> received his Ph.D. in physical chemistry at the age of twenty-three from the University of Illinois in 1929. Du Pont employed his services as a research chemist until 1942, when he became a technical specialist on the explosive potential of plutonium. Before the war, Lyle F. Borst stayed at the University of Chicago as a Research Associate after his doctoral studies in physics. In 1943 he was appointed chief physicist of the Clinton Laboratories near Oak Ridge, where he remained until 1946. <strong>Edward C. Creutz</strong> received his Ph.D. from the University of Wisconsin in 1939, taught physics at Princeton University, and joined the Manhattan Project as a group leader between 1942 and 1946. After he received his M.A. from Columbia University in 1939 <strong>Albert Wattenberg</strong> was a spectroscopist for Schenley Products, Incorporated. He spent a year with the Office of Scientific Research and Development at Columbia University before moving to the Metallurgical Laboratory in Chicago as a group leader under Enrico Fermi in January 1942. </span></p>
+                    <p><span class="black"><strong>Alvin M. Weinberg</strong>, born in 1915, earned his three degrees in physics at Chicago by 1939. He stayed there during the war at the Metallurgical Laboratory and moved to Oak Ridge in 1945. <strong>Eugene P. Wigner</strong> was born in Hungary in 1902. He earned his doctorate in physics at the Technical University of Berlin in 1925 and came to the United States at the behest of Princeton five years later. Together with Leo Szilard he played a key role in sparking President Franklin D. Roosevelt's interest in atomic power, and during the war he designed the Hanford reactors. Wigner won the Nobel Prize for physics in 1963.</span></p>
+                    <p><span class="black">The four participants of Session Five helped operate the isotope separation machinery designed by the physicists and engineers. <strong>Colleen Black</strong> was nineteen years old when she arrived in July 1944 and was assigned to find pipe leaks at the K-25 Plant. The other three worked in the Y-12 Plant. <strong>Connie Bolling</strong> was teaching at Coburn High School, Virginia, in 1943 when he gave six weeks' notice to join a government project that, in his understanding, was to end the war. He trained cubicle and vacuum pump operators and remained after 1945 in the effort to maximize calutron output. <strong>Jane W. Larson</strong> arrived in September 1943 as a historian, before switching to technical editor, reporting on the effort to maintain vacuum consistency. She also worked part-time for the Oak Ridge Journal. <strong>Audrey B. Livingston</strong>, born in 1926, started in 1944 as a cubicle operator.</span></p>
+                    <p><span class="black">Participants for Session Six helped design, build and operate the calutrons in the Y-12 Plant. <strong>George M. Banic, Jr.</strong>, worked on high voltage power supplies for the General Electric Company in Schenectady, New York, and came to Oak Ridge in March 1944, to help with the stable isotope program. He stayed after the war to continue isolating isotopes at the pilot plant until it closed in 1975. <strong>Clarence E. Larson</strong> and <strong>Robert S. Livingston</strong> received their Ph.D.'s from the University of California at Berkeley and continued their research at the Radiation Laboratory there until 1943. Larson took charge of the technical staff at the Y-12 plant at Oak Ridge through 1950 when he became director of the Oak Ridge National Laboratories. Livingston oversaw Stone and Webster Engineering Corporation's design of the Y-12 Plant and continued working at Oak Ridge until his retirement in 1981. <strong>John M. Googin</strong> sought out a position in nuclear chemistry while finishing his B.S. at Bates College in Maine. He started work at Oak Ridge as a process chemist in the summer of 1944, assisting in the recycling of uranium waste. <strong>Chris P. Keim</strong> received his Ph.D. in chemistry from the University of Nebraska in 1940. In 1944 he left his fellowship at the Mellon Institute to become a research physicist for the stable isotope program at the pilot plant. Keim continued working at Oak Ridge until his retirement in 1971.</span></p>
+                    <p><span class="black">Session Seven's participants helped design and operate the K-25 Plant for the gaseous diffusion of uranium 235. <strong>Paul R. Vanstrum</strong> and <strong>James A. Parsons</strong> majored in chemical engineering at Columbia University where they participated in the manufacture of part of the diffusion barrier. Vanstrum began working for Union Carbide Corporation, the K-25 operating contractor, after graduation and transferred to Oak Ridge in August 1944. He stayed at the K-25 Plant until it closed in 1964. Parsons continued to work on the manufacture of diffusion barriers in New York until September 1944, when he went to Oak Ridge as a foreman. <strong>Paul Huber</strong> also had a degree in chemical engineering and began work at Oak Ridge in 1944.</span></p>
+                    <p><span class="black">Goldberg focused discussions on the theory and practice of reactor construction; nature of the workload; living conditions; and security measures at Oak Ridge. The sessions were shot on one-inch tape and provided visual documentation of the Y-12 and K-25 plants, and calutron components, as well as period photographs of Oak Ridge. </span></p>
+                    <p><span class="black"><strong>Video Sessions</strong></span></p>
+                    <p><span class="black"><strong>Session Four (March 3, 1987)</strong>, at the Kennedy Maxwell Productions studio, Louisville, Tennessee, featured Babcock, Borst, Creutz, Wattenberg, Weinberg, and Wigner on the conversion of fission theory to the construction of nuclear reactors, c. 1939-1944, including: </span></p>
+                    <ul>
+                      <li><span class="black">pre-war fission research; </span></li>
+                      <li><span class="black">Albert Einstein's letter to President Franklin D. Roosevelt; </span></li>
+                      <li><span class="black">the Chicago pile or reactor (CP-1); </span></li>
+                      <li><span class="black">problems with canning uranium slugs for reactors at Oak Ridge and Hanford;</span></li>
+                      <li><span class="black"> conflicts between university-based physicists and engineers employed by DuPont; xenon poisoning of early reactors; </span></li>
+                      <li><span class="black">impact of security measures on research; </span></li>
+                      <li><span class="black">acquisition of raw materials; </span></li>
+                      <li><span class="black">motivation of physicists by German progress in fission research.</span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included:</em> </span></p>
+                    <ul>
+                      <li><span class="black">painting of first successful testing of Chicago pile; </span></li>
+                      <li><span class="black">period photographs of X-10 reactor at Oak Ridge.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 4 1-inch reels<br>
+      Dubbing Masters: 4 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 138 pages<br>
+      4 hours </span></p>
+                    <p><span class="black"><strong>Session Five (March 3, 1987)</strong>, at the Kennedy Maxwell Productions studio featured Black, Bolling, Larson, and Livingston on the plant operators' lives and work at Oak Ridge, c. 1943-1949, including: </span></p>
+                    <ul>
+                      <li><span class="black">living conditions during and after construction; </span></li>
+                      <li><span class="black">layout of Oak Ridge and Clinton Engineer Works; </span></li>
+                      <li><span class="black">job training at Y-12 and K-25 Plants; racial segregation; </span></li>
+                      <li><span class="black">knowledge of goal of the Manhattan Project; </span></li>
+                      <li><span class="black">security measures; </span></li>
+                      <li><span class="black">reactions to news of Hiroshima bombing. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">period photographs of Oak Ridge and Clinton Engineer Works. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 1-inch reels<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 74 pages<br>
+      2 hours</span></p>
+                    <p><span class="black"><strong>Session Six (March 4, 1987),</strong> at the Kennedy Maxwell Productions studio, featured Banic, Larson, Googin, Keim, and Livingston on the development of calutrons for uranium separation, c. 1943-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">early designs at the University of California at Berkeley; </span></li>
+                      <li><span class="black">improvement of calutron equipment; </span></li>
+                      <li><span class="black">obtaining and returning silver from the U.S. Treasury Department; </span></li>
+                      <li><span class="black">training of operators; </span></li>
+                      <li><span class="black">the magnet short-circuit crisis; </span></li>
+                      <li><span class="black">chemistry of recycling uranium waste; security measures and their effect on research; </span></li>
+                      <li><span class="black">shipping uranium 235 to Los Alamos; </span></li>
+                      <li><span class="black">safety precautions; </span></li>
+                      <li><span class="black">reactions to Hiroshima bombing and the Smyth Report. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">schematic drawings and period photographs of the Y-12 Plant; </span></li>
+                      <li><span class="black">models of calutron components. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 4 1-inch reels<br>
+      Dubbing Masters: 4 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 111 pages<br>
+      4 hours </span></p>
+                    <p><span class="black"><strong>Session Seven (March 5, 1987)</strong>, in the Diffusion Cell and Control Area of the K-25 Gaseous Diffusion Plant, Oak Ridge, Tennessee, featured Huber, Parsons, and Vanstrum on the design and operation of the first gaseous diffusion plant, the K-25, c. 1943-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">principles of the diffusion process; </span></li>
+                      <li><span class="black">manufacture of pumps, diffusers, and seals; design and construction of K-25 building; </span></li>
+                      <li><span class="black">working conditions; </span></li>
+                      <li><span class="black">training of operators; </span></li>
+                      <li><span class="black">operation of K-25 from control room; operation of a diffusion cell; </span></li>
+                      <li><span class="black">safety precautions. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included:</em> </span></p>
+                    <ul>
+                      <li><span class="black">schematic drawing of diffusion process; </span></li>
+                      <li><span class="black">period photographs of K-25 equipment and controls. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 1-inch reels<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 50 pages<br>
+      2 hours </span></p>
+                    <p><span class="black"><strong>Session Eight (March 6, 1987)</strong>, on location at the K-25 Gaseous Diffusion Plant (Control Floor and Pipe Gallery) and the Y-12 Electromagnetic Separation Plant (Cubicle Area and Beta Unit Production Area), Oak Ridge, Tennessee, consisted of approximately thirty minutes of visual documentation of interiors, including: </span></p>
+                    <ul>
+                      <li><span class="black">half-mile length of one wing of the K-25 Plant; </span></li>
+                      <li><span class="black">explanation by Goldberg of construction of K-25; </span></li>
+                      <li><span class="black">K-25 pipe gallery and catwalk; </span></li>
+                      <li><span class="black">exterior and interior views of Y-12 calutron units; </span></li>
+                      <li><span class="black">exterior and interior views of Y-12 control boards during operation. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Note: There is no time code for the VHS tape of this session. </em></span></p>
+                    <p><span class="black">Original Masters: 1 1-inch reel<br>
+      Dubbing Masters: 1 U-Matic videotape<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 1 page<br>
+      1 hour </span></p>
+                    <p><span class="black"><strong> Collection Division 3: Cambridge </strong></span></p>
+                    <p><span class="black"><strong>Participants </strong></span></p>
+                    <p><span class="black">Interviewees in this collection worked on the physics of atomic bomb design at the Los Alamos Scientific Laboratory in New Mexico. The sessions were taped at the studios of Audvid Film and Tape Production, in Boston, Massachusetts.</span></p>
+                    <p><span class="black">Four physicists who played important roles in the "Trinity" atomic bomb test at Alamogordo, New Mexico, were reunited for Session Nine. <strong>Kenneth Bainbridge</strong>, a physicist at Harvard University, designed and built the Harvard cyclotron which was used at Los Alamos. In 1940 he joined the radar research at the Massachusetts Institute of Technology (MIT), and soon after went to Cambridge University in England to work on radar and uranium experiments. He was recruited for the Manhattan Project and moved to Los Alamos in the summer of 1943. In March 1944, he took charge of the Trinity test and administered it from site selection to detonation. <strong>Donald Hornig</strong>, also a physicist at Harvard before he joined the Los Alamos staff, designed the high-voltage capacitors that fired the Fat Man's multiple detonators. <strong>Philip Morrison</strong> received his Ph.D. in theoretical physics from the University of California at Berkeley in 1940, and worked on the Project at the Metallurgical Laboratory of the University of Chicago before arriving at Los Alamos in 1944 to serve as Physicist and Group Leader. <strong>Robert Wilson</strong> had recently completed his Ph.D. at the University of California at Berkeley and taught at Princeton University before he arrived in Los Alamos in April 1943. He headed various subgroups engaged in cyclotron research for the Trinity test. </span></p>
+                    <p><span class="black">Session Ten participants worked at Los Alamos with different levels of responsibility. <strong>Robert Wilson </strong>and <strong>Robert Serber</strong> were Division Leaders. Serber received his Ph.D. from the University of Wisconsin in 1934, and worked with J. Robert Oppenheimer as a Research Associate at the University of Chicago's "Met Lab" before arriving at Los Alamos. Serber's introductory lectures on the physics and chemistry of the Project in April 1943 became the Los Alamos Primer. <strong>Anthony French</strong> received his A.B. in physics from Cambridge University. Before coming to Los Alamos in 1944, he worked at Cambridge's Cavendish Laboratory. <strong>David Frisch</strong> was still a graduate student when he arrived at Los Alamos as a Junior Physicist in 1943. He received his Ph.D. from MIT in 1947. </span></p>
+                    <p><span class="black">Four women from Los Alamos convened to discuss their professional and domestic lives in Session Eleven. <strong>Lillian Hornig</strong> received her M.A. in chemistry from Harvard in 1943 and her Ph.D. in 1950. From 1944 to 1946 she served as Staff Scientist in the plutonium chemistry division at Los Alamos, and as Section Leader for high explosives development. <strong>Rose Frisch</strong> received her Ph.D. in physiological genetics from the University of Wisconsin in 1943. At Los Alamos, she monitored the effects of radiation in the medical laboratory. <strong>Alice Kimball Smith</strong> received her Ph.D. in history from Yale University and taught social studies at Los Alamos High School. After the war she served as historian for the Association of Los Alamos Scientists. Her book, A Peril and a Hope: The Scientists' Movement in America 1945-1947, was published in 1965. <strong>Jane S. Wilson</strong> also taught at the Los Alamos High School. </span></p>
+                    <p><span class="black">Physicists who worked on the implosion program gathered for Session Twelve. <strong>Bernard T. Feld</strong> worked at the Met Lab at the University of Chicago before coming to Los Alamos in 1944. He received his Ph.D. in physics from Columbia University in 1945. <strong>Cyril Smith</strong> received his D.Sc. in metallurgy from MIT in 1926. He served as associate division leader in metallurgy at Los Alamos from 1943 to 1946. <strong>Robert Serber</strong> and <strong>Philip Morrison</strong> appeared again in this interview.</span></p>
+                    <p><span class="black">Goldberg encouraged discussion of the culture and the workload at Los Alamos, and the attitudes towards that work and its consequences.</span></p>
+                    <p><span class="black"><strong>Video Sessions</strong></span></p>
+                    <p><span class="black">Session Nine (December 1, 1987), at the Audvid Film and Tape Productions studio, Boston, Massachusetts, featured Bainbridge, Hornig, Morrison, and Wilson on preparations for and execution of the Trinity test at Alamogordo, c. 1944-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">working groups at Los Alamos; </span></li>
+                      <li><span class="black">instrumentation devised for the Trinity test, the hundred-ton test, the "Jumbo" blast containment canister, and the spontaneous fission of plutonium; </span></li>
+                      <li><span class="black">Los Alamos reorganization and formation of the G division during the summer of 1944; </span></li>
+                      <li><span class="black">measurements of the effects of the bombing of Hiroshima. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included:</em> </span></p>
+                    <ul>
+                      <li><span class="black">copies of Manhattan Project documents; </span></li>
+                      <li><span class="black">Los Alamos personnel graph; </span></li>
+                      <li><span class="black">photographs from Bainbridge's Trinity test report. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 3 1-inch reels<br>
+      Dubbing Masters: 3 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 95 pages<br>
+      3 hours</span></p>
+                    <p><span class="black"><strong>Session Ten (December 1, 1987)</strong>, at the Audvid Film and Tape Productions studio, featured French, Frisch, Serber, and Wilson on the organization of Los Alamos and the scientific activities there, c. 1943-1945, including: </span></p>
+                    <p><span class="black">rationale for forming the Laboratory and considerations for site selection; whether to make Los Alamos a military or civilian camp; background to the Serber lectures of April 1943; performance of Oppenheimer as administrator and colleague; living conditions; changing perceptions of the nature of making an atomic bomb; the spontaneous fission of plutonium and its effect on the organization of the laboratory; the British contingent, and comparisons between the Los Alamos and Cavendish Laboratories; controversies over the use of the bomb; objections to pursuing research for the hydrogen bomb; formation of the Association of Los Alamos Scientists. </span></p>
+                    <p><span class="black"><em>There is no visual documentation in this session.</em> </span></p>
+                    <p><span class="black">Original Masters: 3 1-inch reels<br>
+      Dubbing Masters: 3 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 79 pages<br>
+      3 hours</span></p>
+                    <p><span class="black"><strong>Session Eleven (December 2, 1987)</strong>, at the Audvid Film and Tape Productions studios, featured Hornig, Frisch, Smith, and Wilson on the roles of women in both the domestic and scientific life of Los Alamos, c. 1943-1946, including: </span></p>
+                    <ul>
+                      <li><span class="black">homemaking facilities and child care arrangements; </span></li>
+                      <li><span class="black">social and recreational activities in the area; </span></li>
+                      <li><span class="black">school and library systems; </span></li>
+                      <li><span class="black">Hornig's role as a scientist in the implosion program and high explosives development; </span></li>
+                      <li><span class="black">Frisch on radiation research at the medical laboratory; </span></li>
+                      <li><span class="black">agreement on constraints on women's participation in scientific activities;</span></li>
+                      <li><span class="black"> perceptions of the Trinity test and post-Trinity conflicts between the scientific community and the military. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">period photographs of Los Alamos.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 3 1-inch reels<br>
+      Dubbing Masters: 3 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 93 pages<br>
+      3 hours </span></p>
+                    <p><span class="black"><strong>Session Twelve (December 2, 1987)</strong>, at the Audvid Film and Tape Productions studios, featured Feld, Smith, Serber, and Morrison on the design and fabrication of a viable implosion system for the plutonium bomb, c. 1944-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">metallurgical experiments to determine characteristics of plutonium;</span></li>
+                      <li><span class="black"> technologies for creating plutonium hemispheres; </span></li>
+                      <li><span class="black">strategies to prevent plutonium oxidation; </span></li>
+                      <li><span class="black">design and use of the initiator; preparations at Tinian Island for Nagasaki bombing; </span></li>
+                      <li><span class="black">division of responsibilities for various bomb components; </span></li>
+                      <li><span class="black">early surveys at Hiroshima to determine effects of the bomb. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">copies of Manhattan Project documents; </span></li>
+                      <li><span class="black">gold foil ring for the initiator in the Trinity device; </span></li>
+                      <li><span class="black">uranium 238 sample.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 1-inch reels<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 67 pages<br>
+      2 hours </span></p>
+                    <p><span class="black"><strong>Collection Division 4: Los Alamos </strong></span></p>
+                    <p><span class="black"><strong>Participants </strong></span></p>
+                    <p><span class="black">Interviewees in this collection also contributed to the atomic bomb design and testing program in New Mexico. J. Robert Oppenheimer, the physicist from the University of California at Berkeley charged with supervising this part of the Manhattan Project, picked the Los Alamos location because of its isolation and its beauty. The sessions were shot at the Trinity test site and in a Los Alamos conference room. </span></p>
+                    <p><span class="black">The participants in Session Thirteen worked on the Trinity test at different levels of responsibility. <strong>Kenneth T. Bainbridge</strong> administered the test from site selection to the write-up of the official report. He came to Los Alamos in the summer of 1943, having previously worked on radar at Massachusetts Institute of Technology and in England; he had also designed and built Harvard University's first cyclotron. <strong>Robert Wilson</strong> was not yet thirty when he arrived at Los Alamos in April 1943, where he headed various subgroups using cyclotron research. Wilson had come directly from a Ph.D. at Berkeley and a teaching and cyclotron research post at Princeton. During the Trinity test he helped install the bomb and measured implosion and fission behavior during the explosion. </span></p>
+                    <p><span class="black">Session Fourteen's participants worked at various levels on the theoretical underpinnings of an atomic weapon. <strong>Hans Bethe</strong>, head of the Theoretical Division at Los Alamos, left Germany in 1933 for Cornell University before applying his research to the war effort in 1940. He gave up his work on explosives and radar in July 1942 when he became convinced of the feasibility of an atomic bomb. Bethe returned to Cornell after the war and won the Nobel Prize in Physics in 1967. <strong>Frederick Reines</strong> made his reputation as a doctoral student at New York University when he developed a new equation in applied mathematics. Reines joined the Theoretical staff in late 1943 and remained at Los Alamos as a Group Leader until 1959. Canadian <strong>J. Carson Mark</strong> came to Los Alamos via research at the Metallurgical Laboratory in Chicago and a doctorate under Oppenheimer at Berkeley. Fellow Canadian <strong>Robert Christy </strong>arrived by way of George Placzek's Montreal study group and summer seminars in applied mathematics at Brown University in 1941 and 1942.</span></p>
+                    <p><span class="black">In addition to <strong>Bainbridge</strong>, Session Fifteen included experimentalists <strong>Robert Bacher </strong>and <strong>Norris E. Bradbury</strong>, and administrator <strong>David Hawkins</strong>. Bacher led fission studies at Cornell and worked at MIT's Radiation Laboratory before heading the Experimental and Gadget Divisions at Los Alamos. His opposition to militarized working conditions manifested itself further in his post-war efforts for civilian control of nuclear research. Bradbury put his Berkeley Ph.D. to work at the U.S. Navy's Dahlgren Proving Ground for four years before his assignment to the Ordnance Division at Los Alamos. He replaced Oppenheimer as director of the Los Alamos Laboratory in September 1945. Hawkins grew up in New Mexico and went to Berkeley to earn his Ph.D. in philosophy. He returned as administrative assistant to Oppenheimer in the summer of 1943, becoming the primary liaison between the scientists and the military administration of the Project.</span></p>
+                    <p><span class="black">Goldberg elicited comparisons of the work experience from the theoretical and experimental physicists as well as discussions of social life at Los Alamos. The series was shot on half-inch Betacam tape and provides visual documentation of the Trinity test site, Los Alamos in 1989, and period photographs of Los Alamos and preparations for the Trinity test. </span></p>
+                    <p><span class="black"><strong>Video Sessions </strong></span></p>
+                    <p><span class="black"><strong>Session Thirteen (August 15, 1989)</strong>, at the Trinity test site, Alamogordo, New Mexico, featured Bainbridge and Wilson. Their commentary on the preparations for and detonation of the Trinity bomb, c. 1944-1945, was sparked almost solely by the surviving structures at the site and included: </span></p>
+                    <ul>
+                      <li><span class="black">post-blast sample collection; </span></li>
+                      <li><span class="black">test site selection; </span></li>
+                      <li><span class="black">Jumbo blast containment canister; </span></li>
+                      <li><span class="black">Julian Mack's camera system; </span></li>
+                      <li><span class="black">quality of life at and uses of base camp; </span></li>
+                      <li><span class="black">U.S. Air Force overflights and bombing practices; </span></li>
+                      <li><span class="black">effect of the blast on base camp. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included:</em> </span></p>
+                    <ul>
+                      <li><span class="black">Ground Zero;</span></li>
+                      <li><span class="black"> Jumbo; </span></li>
+                      <li><span class="black">West 800 camera bunker; </span></li>
+                      <li><span class="black">Base Camp; </span></li>
+                      <li><span class="black">McDonald Ranch house; </span></li>
+                      <li><span class="black">West 10,000 observation bunker. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 7 Beta videotapes<br>
+      Dubbing Masters: 3 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 60 pages<br>
+      2 hours, 20 minutes </span></p>
+                    <p><span class="black"><strong>Session Fourteen (August 18, 1989)</strong>, at Fuller Lodge, Los Alamos Scientific Laboratory, featured Bethe, Christy, Reines, and Mark on the theoretical physicist's view of the Laboratory's operation, c. 1943-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">reasons for participation; </span></li>
+                      <li><span class="black">division of labor between and relationship of theoretical and experimental physicists; </span></li>
+                      <li><span class="black">insulation from other Project researchers; </span></li>
+                      <li><span class="black">uranium hydride program; </span></li>
+                      <li><span class="black">theoretical and experimental emphasis on physical power of atomic blast;</span></li>
+                      <li><span class="black"> implosion research; </span></li>
+                      <li><span class="black">reactions to the Trinity test; </span></li>
+                      <li><span class="black">post-blast measurements of yield. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: Camera A: 6 Beta videotapes<br>
+      Camera B: 6 Beta videotapes<br>
+      Dubbing Masters: Camera A: 2 U-Matic videotapes<br>
+      Camera B: 2 U-Matic videotapes<br>
+      Reference Copies: Camera A: 1 VHS videotape<br>
+      Camera B: 1 VHS videotape<br>
+      Transcript: 51 pages<br>
+      2 hours </span></p>
+                    <p><span class="black"><em>Note: Session 14 was taped on two separate recorders, which resulted in two distinct set of images on tapes. The audio, however, is the same. Only one tape is necessary to view the interview. </em></span></p>
+                    <p><span class="black"><strong>Session Fifteen (August 18, 1989)</strong>, at Fuller Lodge, Los Alamos Scientific Laboratory, featured Bacher, Bainbridge, Bradbury, and Hawkins on the experimental physicist's experience at the Laboratory, c. 1943-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">methods of recruitment and reasons for participation; </span></li>
+                      <li><span class="black">debate on civilian or military nature of Lab; </span></li>
+                      <li><span class="black">differences between internal and external exchanges of information;</span></li>
+                      <li><span class="black"> organization of Laboratory; </span></li>
+                      <li><span class="black">gun experiments; </span></li>
+                      <li><span class="black">relationship of Groves and Oppenheimer; </span></li>
+                      <li><span class="black">weekend recreation; </span></li>
+                      <li><span class="black">understanding Klaus Fuchs; </span></li>
+                      <li><span class="black">predicting the Soviet bomb; </span></li>
+                      <li><span class="black">post-blast depression and efforts to regulate nuclear power.</span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: Camera A: 7 Beta videotapes<br>
+      Camera B: 7 Beta videotapes<br>
+      Dubbing Masters: Camera A: 3 U-Matic videotapes<br>
+      Camera B: 3 U-Matic videotapes<br>
+      Reference Copies: Camera A: 2 VHS videotapes<br>
+      Camera B: 2 VHS videotapes<br>
+      Transcript: 62 pages<br>
+      2 hours, 20 minutes </span></p>
+                    <p><span class="black"><em>Note: Session 15 was taped on two separate recorders, which resulted in two distinct set of images on tapes. The audio, however, is the same. Only one tape is necessary to view the interview. </em></span></p>
+                    <p><span class="black"><strong>Session Sixteen (August 19, 1988)</strong>, consisted of visual documentation of the landscape of Los Alamos in 1945 and 1988, including: </span></p>
+                    <ul>
+                      <li><span class="black">nine still photographs of the preparations for Trinity; </span></li>
+                      <li><span class="black">views of Los Alamos Scientific Laboratory and environs. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 2 Beta videotapes<br>
+      Dubbing Masters: 1 U-Matic videotape<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 3 pages<br>
+      60 minutes </span></p>
+                    <p><span class="black"><strong>Collection Division 5: Alberta</strong></span></p>
+                    <p><span class="black"><strong>Participants</strong></span></p>
+                    <p><span class="black">Four participants from "Project Alberta" convened for Sessions Seventeen and Eighteen. This phase of the Manhattan Project dealt with the conversion of the Trinity test device into the practical weapons systems that were used twice on Japan. The interviewees were among those who designed the bombs to fit the B-29, wired them with redundant electronics, rehearsed the mission, established a base on Tinian Island, and released the bombs over Hiroshima and Nagasaki. The sessions were shot at the National Museum of American History in Washington, D.C., and at the National Air and Space Museum's Paul E. Garber Facility in Suitland, Maryland. </span></p>
+                    <p><span class="black"><strong>Norman F. Ramsey, Jr.</strong>, received his Ph.D. in physics from Columbia University in 1940. During World War II, Ramsey consulted with various government groups concerned with military technology. In 1943 he moved from the offices of the Secretary of War to Los Alamos, where he became a group leader for bomb delivery. After the war, he returned to Columbia and won the Nobel Prize for Physics in 1989. <strong>Harold M. Agnew</strong> received his A.B. in chemistry from the University of Denver in 1942. His advisor referred him to Enrico Fermi, under whom his responsibility was for some of the measurements of the atomic explosions over Japan. After the war Agnew earned his Ph.D. in particle physics at the University of Chicago before returning to Los Alamos Scientific Laboratory. He directed the Laboratory there from 1970 to 1979.</span></p>
+                    <p><span class="black"><strong>Frederick L. Ashworth</strong> graduated from the United States Naval Academy and completed the Naval Postgraduate School course in ordnance engineering shortly before the Japanese attack on Pearl Harbor in 1941. After service in the Pacific Theater of Operations, he worked for William S. Parsons and Norman F. Ramsey on the detonation components of the atomic bombs. Ashworth acted as weaponeer on the Nagasaki mission and as General Groves's representative on Tinian Island. His book, The Atomic Bombings of Hiroshima and Nagasaki, was published in 1947. <strong>Charles W. Sweeney</strong> was born in 1920 and grew up in eastern Massachusetts. He enlisted as an air cadet in April 1941, and rose to commander of a bomber squadron in the European Theater of Operations. With nearly three thousand hours of accident-free flight time to recommend him, Sweeney joined Colonel Paul Tibbetts's 509th Composite Group of B-29's in September 1944. He piloted an observation plane at the Hiroshima bombing and dropped the "Fat Man" over Nagasaki from Bock's Car. After he completed his enlistment, he returned to Massachusetts to begin a wholesale leather business and served in the Air National Guard until 1976. </span></p>
+                    <p><span class="black">Goldberg used the Enola Gay site to draw from the participants details of their involvement with the technologies of Project Alberta. Other questions stimulated recollections of experiences on Tinian Island and on the two missions to Japan. The sessions were shot with half-inch Betacam tape and provide visual documentation of the Little Boy and Fat Man bomb models and the B-29 Enola Gay. </span></p>
+                    <p><span class="black"><strong>Video Sessions</strong> </span></p>
+                    <p><span class="black"><strong>Session Seventeen (June 5, 1990)</strong>, at the National Museum of American History, Washington, D.C., featured Agnew, Ashworth, Ramsey, and Sweeney on their assignments in Project Alberta, c. 1944-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">designing the "Fat Man" plutonium bomb, contents and aerodynamics;</span></li>
+                      <li><span class="black"> definition of weaponeer's role and mechanics of bomb; </span></li>
+                      <li><span class="black">William S. Parsons' contributions to Manhattan Project; </span></li>
+                      <li><span class="black">reasons for interviewees' participation in Manhattan Project; </span></li>
+                      <li><span class="black">flight training for the 509th Composite Group; </span></li>
+                      <li><span class="black">preparation of Tinian Island as flight base ("Project Silverplate"); </span></li>
+                      <li><span class="black">life on Tinian with conventional B-29 bomber crews; </span></li>
+                      <li><span class="black">comparison of Hiroshima and Nagasaki missions; </span></li>
+                      <li><span class="black">photography of atomic explosions; </span></li>
+                      <li><span class="black">disposal of facilities at Tinian after Nagasaki explosion; </span></li>
+                      <li><span class="black">reaction to use of the bombs. </span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">the "Fat Man" bomb casing on display at the Museum. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 10 Beta videotapes<br>
+      Dubbing Masters: 4 U-Matic videotapes<br>
+      Reference Copies: 2 VHS videotapes<br>
+      Transcript: 109 pages<br>
+      3 hours, 20 minutes </span></p>
+                    <p><span class="black"><strong>Session Eighteen (June 6, 1990)</strong>, at the Enola Gay restoration project, the National Air and Space Museum's Paul E. Garber Facility, Suitland, Maryland, featured Agnew, Ashworth, Ramsey, and Sweeney on the specific technologies required for Project Alberta, c. 1944-1945, including: </span></p>
+                    <ul>
+                      <li><span class="black">designing the "Little Boy" uranium bomb, contents and aerodynamics;</span></li>
+                      <li><span class="black"> development of bomb release mechanism; </span></li>
+                      <li><span class="black">Bernard O'Keefe's claim to last-minute rewiring of "Little Boy;</span></li>
+                      <li><span class="black">" flight qualities of B-29; </span></li>
+                      <li><span class="black">pilot-bombardier communication; </span></li>
+                      <li><span class="black">the Nagasaki mission; </span></li>
+                      <li><span class="black">operation of Norden bombsight; </span></li>
+                      <li><span class="black">comparison of the two bombs' electronic characteristics; </span></li>
+                      <li><span class="black">mechanics of monitoring devices at Hiroshima.</span></li>
+                    </ul>
+                    <p><span class="black"><em>Visual documentation included: </em></span></p>
+                    <ul>
+                      <li><span class="black">the "Little Boy" bomb casing on display next to the Enola Gay; </span></li>
+                      <li><span class="black">the bomb bay, cockpit, and weaponeer's cabin of the Enola Gay. </span></li>
+                    </ul>
+                    <p><span class="black">Original Masters: 6 Beta videotapes<br>
+      Dubbing Masters: 2 U-Matic videotapes<br>
+      Reference Copies: 1 VHS videotape<br>
+      Transcript: 39 pages<br>
+      2 hours</span></p></td>
+              </tr>
+    </table></td>
+    <td width="152" height="20" valign="top" align="left" bgcolor="EFE2BF"><table width="148" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2" bgcolor="B19657" class="black"><form method=get action="/web/20160517220340/http://search.si.edu/archives/SearchRight.asp" target="_blank">
+  
+    <input type="hidden" name="ct" value="Archives"> 
+            <div align="right"> <br>
+                <br>
+                <input name="q1" type="text" size="20" class="siasearch" title="Search">&nbsp;&nbsp;
+                <br>
+                <input type=Image align=bottom name="Search" alt="Search" src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/search.gif" border=0>&nbsp;&nbsp;<br>
+                <br>
+            </div>
+        </form></td>
+        </tr>
+    </table>
+    <img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/shim.gif"  ALT="" ROLE="PRESENTATION" width="4" height="1"></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="3" bgcolor="EFE2BF"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/tan_line.gif" ALT="" ROLE="PRESENTATION"  width="756" height="4"></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="3" bgcolor="EFE2BF"><table width="756" border="0" cellpadding="4" class="black">
+      <tr>
+        <td><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/shim.gif"  ALT="" ROLE="PRESENTATION" width="8" height="1">&copy; 2004
+          Smithsonian Institution</td>
+        <td align="right"><a href="/web/20160517220340/http://siarchives.si.edu/sia/main_contact.html" class="link_black">Contact Us</a> | <a href="/web/20160517220340/http://siarchives.si.edu/sitemap.html" class="link_black">Site Map</a> | <a href="/web/20160517220340/http://www.si.edu/" class="link_black">SI
+            Home</a> | <a href="/web/20160517220340/http://www.si.edu/privacy/" class="link_black">Privacy Statement</a> | <a href="/web/20160517220340/http://www.si.edu/copyright/" class="link_black">Copyright Policy</a></td>
+      </tr>
+    </table></td>
+    </tr>
+</table>
+	</td>
+	<td width="2" bgcolor="#000000"><img src="/web/20160517220340im_/http://siarchives.si.edu/images/shared/shim.gif"  ALT="" ROLE="PRESENTATION" width="2" height="1"></td>
+  </tr>
+</table>
+<map name="Map">
+ 
+</map>
+
+<!-- google analytics script -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20160517220340/https://ssl." : "/web/20160517220340/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6939439-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- end google analytics script -->
+
+</div></body>
+
+</html>

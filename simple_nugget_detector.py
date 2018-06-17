@@ -5,19 +5,30 @@ import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix
 from functools import reduce
 from nltk import word_tokenize
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 class SimpleNuggetDetector:
 
     def __init__(self, corpus_reader, feature_builder, model='tree', params=None):
         self.feature_builder = feature_builder
-        self.score_threshold = 1
+        self.score_threshold = 2
         if params and model == 'tree':
             self.model = DecisionTreeClassifier(max_depth=params['max_depth'],
                                                 min_samples_split=params['min_samples_split'],
                                                 min_samples_leaf=params['min_samples_leaf'],
                                                 min_weight_fraction_leaf=params['min_weight_fraction_leaf'])
             self.train_mode = 'full_mode'
-        elif not params and model == 'tree':
-            self.model = DecisionTreeClassifier()
+        elif params and model == 'svm':
+            self.model = SVC(C=params['C'], kernel='linear', probability=True)
+            self.train_mode = 'full_mode'
+        elif params and model == 'random_forest':
+            self.model = RandomForestClassifier(max_depth=params['max_depth'],
+                                                n_estimators=params['n_estimators'],
+                                                min_samples_split=params['min_samples_split'],
+                                                min_samples_leaf=params['min_samples_leaf'],
+                                                min_weight_fraction_leaf=params['min_weight_fraction_leaf'],
+                                                n_jobs=-1,
+                                                )
             self.train_mode = 'full_mode'
         else:
             # default logistic regression
@@ -37,10 +48,9 @@ class SimpleNuggetDetector:
                     self.model.partial_fit(X_batch, y_batch, classes=classes)
                     first_fit = False
                 else:
-                    try:
-                        self.model.partial_fit(X_batch, y_batch)
-                    except:
-                        batch_count += 1
+                    self.model.partial_fit(X_batch, y_batch)
+                    batch_count += 1
+                # only to reduce training time for testing, delete this for training the final model
                 if batch_count == 200:
                     break
         else:
@@ -48,22 +58,35 @@ class SimpleNuggetDetector:
             # iterator will yield just one batch of all examples
             self.model.fit(X, y)
 
-    def convert_word_to_nugget_predictions(self, sentences):
+    def convert_word_to_nugget_predictions(self, sentences, decision='binary'):
         nugget_predictions = []
+        if decision=='binary':
+            # if decision is binary just return the binary value
+            include_word = lambda x1, x2: x1
+        else:
+            include_word = lambda x1, x2: x1 >= x2
         for sentence in sentences:
             nugget = []
             current_nugget = False
             for word,score in sentence:
-                if score >= self.score_threshold:
+                if include_word(score, self.score_threshold):
                     nugget.append(word)
                     current_nugget = True
-                elif score < self.score_threshold and current_nugget:
+                elif not include_word(score, self.score_threshold) and current_nugget:
                     nugget_predictions.append(nugget)
                     nugget = []
                     current_nugget = False
                 else:
                     pass
         return nugget_predictions
+
+    def convert_predictions(self, predictions):
+        ''' Convert predictions for all classes to a binary decision by summing probabilities
+        up to the threshold for the negative class and above for the positive class label.
+        '''
+        summed_prob_negative = np.sum(predictions[:,:self.score_threshold],1)
+        summed_prob_positive = np.sum(predictions[:,self.score_threshold:],1)
+        return summed_prob_positive > summed_prob_negative
 
     def predict_dev_set(self):
         ''' Make predictions on the dev set that is stored in the corpus reader
@@ -77,7 +100,8 @@ class SimpleNuggetDetector:
         sentences = []
         sentence = []
         for X_batch, y_batch, word, count, end_sentence in dev_set_iterator:
-            prediction = self.model.predict(X_batch)
+            prediction = self.model.predict_proba(X_batch)
+            prediction = self.convert_predictions(prediction)
             predictions.append(prediction)
             sentence.append((word, prediction))
             words.append(word)
@@ -86,8 +110,6 @@ class SimpleNuggetDetector:
                 sentences.append(sentence)
                 sentence = []
 
-        print("Single word accuracy:{}".format(accuracy_score(labels, predictions)))
-        print(confusion_matrix(labels, predictions))
         dev_set_text_ids =  [self.feature_builder.corpus_reader.topics.ix[x].text_id for x in self.feature_builder.corpus_reader.devset_topics]
         #nugget_gold = [self.feature_builder.corpus_reader.nuggets[str(text_id)] for text_id in dev_set_text_ids]
         # build the predicted nuggets from single word predictions

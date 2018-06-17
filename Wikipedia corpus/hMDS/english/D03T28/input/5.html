@@ -1,0 +1,1213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://www.w3.org/2005/10/profile">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=1733;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"cbcb80b8cd","applicationID":"6642953","applicationTime":0.873487,"transactionName":"bgAAYBFSDUBWURJeDldKJ0wTQQZARFgVGCZ8MU0bPRxLUkJREl4OVx8LRB9fBlVeVQdFDkUWDUALVgFKRE4PWRdYCRdVAV8GGhheCUNOET4DGRlyTmkHH19qGghVHx1LDFkXSx1CHg==","queueTime":0,"ttGuid":"b14d9099bc8bf0","agentToken":null}; (window.NREUM||(NREUM={})).loader_config={xpid:"UgICVVRWGwUGUFNbAgI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+
+    <script src="/web/20160513101655js_/http://cdn.optimizely.com/js/1213030543.js"></script>
+
+
+<script type="text/javascript">
+if(typeof(AZ_UID_SET)=='undefined')
+{
+	var _aaq = window._aaq || (window._aaq = []);
+	if(typeof(AZ_UID)!='undefined')
+	{
+		_aaq.push(['setUser', AZ_UID]);
+	}
+	else
+	{
+		_aaq.push(['setUser', null]);
+	}
+	if(typeof(AZ_EMAIL)!='undefined')
+	{
+		_aaq.push(['setCustomField', 'userEmail', decodeURIComponent(AZ_EMAIL), 'request']);
+	}
+	else
+	{
+		_aaq.push(['setCustomField', 'userEmail', null, 'request']);
+	}
+}
+</script>
+<script type="text/javascript" src="/web/20160513101655js_/http://cdn.evergage.com/beacon/invaluable/auctionzip/scripts/evergage.min.js"></script>
+<meta property="og:image" content="http://www.auctionzip.com/images/smlogo.png"/>
+<link rel="shortcut icon" href="/web/20160513101655im_/http://www.auctionzip.com/favicon_aza.ico" type="image/vnd.microsoft.icon" />
+<META name="keywords" content="auction, auctioneer, auto auction, antique auction, real estate auction, farm sale, public sale, estate sale, antiques, cars, automobile, real estate, collectibles, heavy equipment, farm equipment" />
+<META name="copyright" content="Copyright 2011" />
+<META name="description" content="Large database of live auctions. Auctioneers you may post your Auction listings here! Search by Area - Auctioneer - Category - Keyword. View full listings, photos, Auctioneer links and information."/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/custom-min.js"></script>
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/emailCapture-azv1.05.js"></script>
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/termsOfService.js"></script>
+<link rel="stylesheet" type="text/css" href="/web/20160513101655cs_/http://www.auctionzip.com/includes/css/style-min-azv1.05.css" />
+
+    <title>Bid online now at AuctionZip Live! - The Upcoming Live Auction Locator - Fast, Easy, and Free!</title><link rel="stylesheet" type="text/css" href="/web/20160513101655cs_/http://www.auctionzip.com/includes/auctionZIP.css"><script language="JAVASCRIPT" src="/web/20160513101655js_/http://www.auctionzip.com/includes/common.js" type="text/javascript"></script><script language="JAVASCRIPT" src="/web/20160513101655js_/http://www.auctionzip.com/includes/aflivebid.js" type="text/javascript"></script><link rel="stylesheet" href="/web/20160513101655cs_/http://www.auctionzip.com/includes/css/azlIMG-styles.css" /><link rel="stylesheet" type="text/css" href="/web/20160513101655cs_/http://www.auctionzip.com/includes/css/font-family.css" />
+
+    <link rel="stylesheet" href="/web/20160513101655cs_/http://www.auctionzip.com/bidincl/css/almostAll.css" />
+    <link rel="stylesheet" href="/web/20160513101655cs_/http://www.auctionzip.com/bidincl/dist/css/syndication/oas_default/lot.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/Graphics/AZ_Favicon.ico"/>
+
+  </head>
+  <body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.auctionzip.com/auction-lot/BERYTUS-NUTRIX-LEGUM_B2C4759B12/";
+
+var firstYear = 1996;
+var displayDay = "13";
+var displayMonth = "May";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.auctionzip.com/auction-lot/BERYTUS-NUTRIX-LEGUM_B2C4759B12/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160513101655" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Apr
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:16:55 May 13, 2016">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jun
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:16:55 May 13, 2016">13</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2015
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:16:55 May 13, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160513101655*/http://www.auctionzip.com/auction-lot/BERYTUS-NUTRIX-LEGUM_B2C4759B12/" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">13 May 16 - 13 May 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:4:000010000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="/web/20160513101655if_/http://www.googletagmanager.com/ns.html?id=GTM-P2QNBH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2QNBH');</script>
+    <!-- End Google Tag Manager -->
+
+    
+<!-- BEGIN HTTPS TAGS HERE -->
+<!-- END HTTPS TAGS HERE -->
+
+
+    <div class="fullPageSpinner hidden hide"><img class="spinner" src="/web/20160513101655im_/http://www.auctionzip.com/img/Graphics/g_spinner.gif" /></div>
+    <div id="rfiSuccess" class="hide savedAlert slideIn colorSliderYellow">
+      <a class="closeSlideIn nonlink inline middle"><img src="/web/20160513101655im_/http://www.auctionzip.com/img/Buttons/b_close.png" /></a>
+      Your message has been sent.
+    </div>
+
+    	<div id="body">
+		<div id="bodyInner">
+		<!-- bodyInner // -->
+		
+			<!-- Top // -->
+			<div id="top" class="clearfix">
+				<div class="loginStuff">
+	<script type="text/javascript">
+		var logState = 'Log In';
+	</script>
+	<!-- Links -->
+	<div id="hlogOut">
+		<a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/azlogin.cgi">Log In</a>
+	</div>
+	
+	<div id="hlogIn">
+		<a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/azlogin.cgi">Sign Up</a>
+		|
+		<a href="javascript: showLogin();" id="headingLink">Member Login</a>
+	</div>
+	<!-- //    -->
+	
+	<div id="headingLoginBox">
+		<div class="inner clearfix">
+			
+			<a class="closeICON" href="javascript: showLogin();"><img src="/web/20160513101655im_/http://www.auctionzip.com/images/closeIcon.gif" alt="CLOSE" border="0"></a>
+			
+			<div class="logBox">
+				<form id="signin" method="post" action="/web/20160513101655/https://www.auctionzip.com/cgi-bin/azlogin.cgi" name="signin">
+					<div class="clearfix">
+						<span class="forgotPW">( E-Mail, User ID, or Auctioneer ID )</span>
+					  <label class="formItems" for="email">Login:</label>
+					      <input class="txtIP" id="email" type="text" value="" size="16" name="email" />
+					</div>
+					<div class="clearfix">
+						<label class="formItems" for="pw">Password:</label>
+						  <input class="txtIP" id="pw" type="password" size="16" name="pass" />
+						  <a href="/web/20160513101655/http://www.auctionzip.com/lostpass.html" class="forgotPW">Forgot  your password?</a>
+					</div>
+					
+					<input type="checkbox" checked="checked" value="1" id="remem" name="remember">
+						<label for="remem">Keep me signed in.</label>
+					   
+					<input type="Submit" value="Login" />
+					
+					(Uncheck if using a shared computer)
+					<input type="hidden" value="1" name="screenid" />
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+				<div class="left"><a href="/web/20160513101655/http://www.auctionzip.com/"><img border="0" src="/web/20160513101655im_/http://www.auctionzip.com/images/AZ_Logo.png" class="logo" alt="AuctionZip: Find auctions anywhere!" title="AuctionZip: Find auctions anywhere!" /></a></div>
+				<div class="right" id="headPlacement">
+					
+<div class="theAd"></div>
+
+
+				</div> 
+			</div>
+			<!-- End Top // -->
+			
+				<!-- navBar // -->
+	<div id="navBar" class="clearfix">
+		<ul id="mainNavLinks">
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/">Home</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/online-auctions/">Online Bidding</a></li> 
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/Auctioneer-Directory/">Auctioneer Directory</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/azlogin.cgi">Member Login &amp; Sign Up</a></li> 
+			<li><a style="cursor:pointer; display:none;" id="auctionInfo">Latest Auction Info</a></li>
+		</ul>
+		  
+		
+		<div class="navRight"> 
+			<form method="post" action="javascript: void(0);" onsubmit="javascript: submitAuctioneerSearch('http://www.auctionzip.com'); return false;">
+				<p>
+					AuctionZip Auctioneer ID#
+					<input type="text" id='txtSearchAZID' name='txtSearchAZID' class="txtx" />
+					<input type="button" class="fixGreen submitx" onclick="javascript: submitAuctioneerSearch('/web/20160513101655/http://www.auctionzip.com'); return false;" value="GO" />
+				</p>
+			</form>
+		</div> 
+	</div>
+	
+	<style>
+<!--
+input[type="submit"].azsrchbar:hover {
+	background-color: #FCCC4A;
+}
+input[type="submit"].azsrchbar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	background-color: #F6BC21;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 35px;
+}
+input.azsrchbar, select.azsrchbar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 35px;
+	padding: 0px 5px 0px;
+}
+select.azsrchbar {
+	overflow: hidden;
+	white-space: nowrap;
+	padding-right: 17px;
+	text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, white 50%, black 50%),
+    linear-gradient(135deg, black 50%, white 50%),
+    linear-gradient(to right, #fff, #fff);
+  background-position:
+    calc(100% - 13px) calc(0.5em + 7px),
+    calc(100% - 8px) calc(0.5em + 7px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+select.azsrchbar::-ms-expand {
+	display: none;
+}
+//-->
+</style>
+<div style="width:100%; height:75px; background-color: #FFE9AF; margin-top:0px;">
+<div>
+<form name="hsrchbox" id="hsrchbox" action='/web/20160513101655/http://www.auctionzip.com/cgi-bin/auctionsearch.cgi' method="get">
+<div style="height:75px; padding-top:20px;">
+<div style="float: left; width: 10px;">&nbsp;</div>
+<div style="float: left; width: 100px;">
+				<select name="txtSearchRadius" 
+								id="htxtSearchRadius" 
+								onchange="document.getElementById('hnewsearch').value=1;" 
+								style="width: 100px; border-bottom-right-radius: 0px;   border-top-right-radius: 0px"								class='azsrchbar'>
+                              <OPTION value='30' >
+                                  30 Miles
+                                </OPTION>
+                                <OPTION value='50' >
+                                  50 Miles
+                                </OPTION>
+                                <OPTION value='100' >
+                                  100 Miles
+                                </OPTION>
+                                <OPTION value='150' >
+                                  150 Miles
+                                </OPTION>
+                                <OPTION value='200' >
+                                  200 Miles
+                                </OPTION>
+                                <OPTION value='250' >
+                                  250 Miles
+                                </OPTION>
+                                <OPTION value='500' >
+                                  500 Miles
+                                </OPTION>
+                                <OPTION value='0' >
+                                  Anywhere
+                                </OPTION>
+						</select>
+</div>
+<div style="float:left; width: 100px;">
+				<input type="text" 
+						id="htxtSearchZip" 
+						onchange="srchbarinputChange(this,0);document.getElementById('hnewsearch').value=1;" 
+						name="txtSearchZip" 
+						size="5" 
+						onblur="srchbarinputBlur(this,0,'Zip Code');" 
+						onfocus="srchbarinputFocus(this,0);" 
+						onkeypress="return srchbarinputNoenter(event);" 
+						value="" 
+						style="width: 100px; 	border-bottom-left-radius: 0px; 	border-top-left-radius: 0px;"						class='azsrchbar' >
+</div>
+<div class="hsrch-spacer" style="float:left; width: 25px;">&nbsp;</div>
+<div style="float:left; width: 182px;">
+				<select name="idxSearchCategory" 
+								onchange="document.getElementById('hnewsearch').value=1;" 
+								style="width: 182px;"								class='azsrchbar' >
+                              <OPTION value='0'  SELECTED>
+                                  All Categories
+                                </OPTION>
+                                <OPTION value='1' >
+                                  Antiques-Household-Collectibles
+                                </OPTION>
+                                <OPTION value='2' >
+                                  Agricultural-Farm
+                                </OPTION>
+                                <OPTION value='4' >
+                                  Automobiles
+                                </OPTION>
+                                <OPTION value='8' >
+                                  Commercial-Industrial
+                                </OPTION>
+                                <OPTION value='30736' >
+                                  Real Estate (General)
+                                </OPTION>
+                                <OPTION value='32' >
+                                  Benefit-Charity
+                                </OPTION>
+                                <OPTION value='64' >
+                                  Heavy Equipment
+                                </OPTION>
+                                <OPTION value='128' >
+                                  Online Bidding
+                                </OPTION>
+                                <OPTION value='256' >
+                                  New Merchandise
+                                </OPTION>
+                                <OPTION value='512' >
+                                  Storage Auctions
+                                </OPTION>
+                                <OPTION value='1024' >
+                                  Wholesale Auctions
+                                </OPTION>
+                                <OPTION value='16384' >
+                                  Real Estate (Farm)
+                                </OPTION>
+                                <OPTION value='2048' >
+                                  Real Estate (Land)
+                                </OPTION>
+                                <OPTION value='4096' >
+                                  Real Estate (Commercial)
+                                </OPTION>
+                                <OPTION value='8192' >
+                                  Real Estate (Residential)
+                                </OPTION>
+					</select>
+</div>
+<div class="hsrch-spacer" style="float:left; width: 25px;">&nbsp;</div>
+<div style="float:left; width: 350px">
+				<input type="text" 
+							name="txtSearchKeywords" 
+							id="htxtSearchKeywords" 
+							onchange="srchbarinputChange(this,1); document.getElementById('hnewsearch').value=1;" 
+							onblur="srchbarinputBlur(this,1,'Keywords');" 
+							onfocus="srchbarinputFocus(this,1);" 
+							onkeypress="return srchbarinputNoenter(event);" 
+							value="" 
+							class='azsrchbar' 
+							style="width: 350px;"/>
+					
+					<input type='hidden' id='htxtSearchMonth' name='month' value='' />
+					<input type='hidden' id='htxtSearchYear' name='year' value='' />
+					<input type='hidden' id='searchPath' name='searchPath' value='head' />
+					<INPUT type='hidden' value='0' name='newsearch' id='hnewsearch'>
+</div>
+<div class="hsrch-spacer" style="float:left; width: 25px;">&nbsp;</div>
+<div class="hsrch-btn-container" style="float:left; width: 173px">
+				<input type="submit"								id='hsearchSubmitButton'								value="Search Auctions" 
+								style="width: 173px; font-size: 16px;" 
+								onclick="srchvarinputCheck();if((document.getElementById(&quot;htxtSearchZip&quot;).value == &quot;&quot;)&amp;&amp;(document.getElementById(&quot;htxtSearchRadius&quot;).value != 0)){srchvarinputSet();alert(&quot;Please enter a starting Zip code for your search.&quot;);return(false);};"								class='azsrchbar' >
+</div>
+<div style="clear: both;"></div>
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/web/20160513101655js_/http://www.auctionzip.com/includes/js/menusrch.js"></script>
+
+	
+	<div id="navEmailCapture"> 
+		<div id="alertShadow"></div>
+		<div id="overlayContainerContainer">	
+			<div id="overlayContainer" >
+				<div class="arrow arrow-border" ></div>
+				<div id="overlayToggle">
+					<span class="xbutton">X</span>
+				</div>   
+				<img class="emailEnvelope" src="/web/20160513101655im_/http://www.auctionzip.com/images/envelope.png" />
+				<p class="overlayEmailHeader">Stay in touch with AuctionZip</p>
+				<div class="emailCapSecContainer"><p class="emailCapSec">Be connected to the hottest items and auction trends</p></div>
+				<img class="star" src="/web/20160513101655im_/http://www.auctionzip.com/images/free.png">
+				<fieldset class="sliderEmailForm" style="border:0;float:left">
+					<input id="companyRefSlider" type="hidden" name="companyRef" value="4">
+					<input id="sliderCapture" class="defaultText email_user" name="Email Address"  type="text" title="Enter Email Address" placeholder="Enter Email Address"/>
+					<!-- <input id="sliderSubmit" src="/images/GoButton.jpg" class="submitBtn" type="submit" value="" /> -->
+					<input id="overlaySubmit" class="submitBtn" type="submit" value="Submit">
+				</fieldset>
+				<div class="clear1"></div>
+				<p class="privacy">We value your privacy! <a TARGET="_blank" href="/web/20160513101655/http://www.auctionzip.com/agreements/privacy.html">Click here</a> to read our policies.</p>
+
+			</div>
+		</div>
+	</div> 
+	
+	<div id="overlayWrapper" style="display:none; z-index:2;" >
+		<div id="sliderOverlay"></div>
+	</div>
+	<div id="sliderEmailCapture">
+
+		<div class="closeBtn">
+			<span class="xbutton"></span>
+		</div>  
+		<p class="sliderEmailHeader">Auctions in your inbox!</p>
+		<p class="secondHeader">Get notified about the latest local and online auctions.</p>
+			<fieldset class="sliderEmailForm" style="border:0;float: left;padding: 0 20px;">
+				<input id="companyRefSlider" type="hidden" name="companyRef" value="4">
+				<input id="sliderCapture" class="defaultText email_user" name="Email Address"  type="text" title="Enter Email Address" placeholder="Enter Email Address"/>
+				<input id="sliderSubmit" src="/web/20160513101655im_/http://www.auctionzip.com/images/GoButton.jpg" class="submitBtn" type="submit" value="" />
+			</fieldset>
+		<div class="emailCapSecContainer" style="display:none"><p class="emailCapSec"></p></div>
+		<div class="clear1"></div>
+		<p id="slidePolicy" class="privacy">We value your privacy! <a TARGET="_blank" href="/web/20160513101655/http://www.auctionzip.com/agreements/privacy.html">Click here</a> to read our policies.</p>
+
+	</div>
+	
+	<!--Terms of Service-->
+	<div id="tosOverlayWrap" style="display:none; z-index:2;" >
+		<div id="tosOverlay"></div>
+	</div>
+       <div style="width:100%">
+	<div id="termsOfService">
+	</div>
+</div>
+	<!-- End navBar // -->
+
+			
+			<!-- innerContent // -->
+			<div id="innerContent" class="clearfix">
+				
+				<div id="theContent" class="NoAds">
+					<div id="innersContent" class="clearfix">
+						<!-- CONTENT STARTS HERE // -->
+
+    <div id="appContainer" class="container_16 textStyle">
+
+      <article id="mainContent" class="grid_16 alpha omega" data-locale="en-us">
+        <div>
+
+
+
+
+</div>
+<div class="clear"></div>
+<div>
+
+<div id="google_translate_container" class="highAlert">
+
+  <div id="google_translate_element"></div>
+
+  <img src="/web/20160513101655im_/http://www.auctionzip.com/img/Icons/i_alert_small_red.png">
+  We cannot guarantee the accuracy of translations through Google Translate and disclaims any responsibility for inaccurate translations.
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-1626105-1'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="/web/20160513101655js_/http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div></div>
+<div class="clear"></div>
+
+<div class="catalogDetails">
+  <div class="descGroup">
+    <div>
+      <h2 class="catalogTitle">
+        <span class="trimCatalogTitle">    <a class="link" href="/web/20160513101655/http://www.auctionzip.com/auction-catalog/Antique-Stocks-Bonds_XA2NSDAJI0/" alt="Antique Stocks &amp; Bonds" title="Antique Stocks &amp; Bonds">Antique Stocks & Bonds</a>
+        </span>  </h2>
+    </div>
+    
+        <div class="catalogHouseName">
+          by Boone Shares - The Scripophily Center
+        </div>
+    
+    <div class="lotDateLoc">
+      <span class="dateTime">March 28, 2015, 10:30 AM CET</span>&nbsp;|&nbsp;<span class="catalogLocation">2020 Antwerp, Belgium</span>
+      &nbsp;&nbsp;
+      
+      
+      
+              <img src="/web/20160513101655im_/http://www.auctionzip.com/img/Graphics/g_live_auction.png" class="timedOrLiveImg" /> <span class="timedOrLiveText">Live Auction</span>
+    </div>  </div>
+</div>
+<div class="googleTranslateLink">
+    <div class="width220 floatRight alignRight">
+      <div id="translateToggle" >
+        <a href="javascript:void(0);" id="googleTranslateToggle" class="link">
+          <span id="showTranslation">
+            Show translation options
+          </span>
+          <span id="hideTranslation" class="hide">
+            Hide translation options
+          </span>
+        </a>
+      </div>
+    </div>
+  <div>  <div class="addthis_toolbox addthis_default_style addThis">
+    <a class="addthis_button_facebook addthis_button_preferred_2 at300b" title="Facebook" href="#"></a>
+    <a class="addthis_button_twitter addthis_button_preferred_2 at300b" title="Tweet" href="#"></a>
+    <a class="addthis_button_compact"></a>
+    <div class="atclear"></div>
+  </div>
+</div>
+</div>
+<div class="clear"></div>
+
+<div><h1 id="lotDetails_lotTitle">
+  Lot 122: BERYTUS NUTRIX LEGUM
+    <span class="numViews"> (7 views)</span>
+</h1></div>
+<div class="clear"></div>
+<div class="lotDetCol1">
+  <a href="#fbCarouselContent" id="coverImageLink" class="lotCoverImage fancybox">
+  	<div class="thumbnail">
+  	    <img src="/web/20160513101655im_/http://image.auctionzip.com/housePhotos/Booneshares/86/561486/H5394-L70068268.jpg" class="cov top" id="coverImage" alt="BERYTUS NUTRIX LEGUM" />
+  	</div>
+  </a>  <div id="fbCarouselContent">
+    <div class="photoCarouselImages hide">
+      <div id="carouselWrap">
+        <div id="carousel">
+        </div>
+        <div id="prev" class="nextPrev slick-prev">
+          <img src="/web/20160513101655im_/http://www.auctionzip.com/img/Buttons/b_arrow_prev.png" />
+        </div>
+        <div id="next" class="nextPrev slick-next">
+          <img src="/web/20160513101655im_/http://www.auctionzip.com/img/Buttons/b_arrow_next.png" />
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <img src="/web/20160513101655im_/http://image.auctionzip.com/housePhotos/Booneshares/86/561486/H5394-L70068268.jpg" class="fbCarouselLargeImage hide" />
+    </div>
+  </div>  <div class="lotDetDescBox">
+        <div class="descGroup">
+          <span class="descGroupLabel">Estimate:</span> €70 - €140
+        </div>
+        <div class="descGroup">
+          <span class="descGroupLabel">Description:</span> ? Share. red, blue, black. A modern Thomas de la Rue specimen with next to all text in Arabic, also lots of it on the back. Only 'Berytus Nutrix Legum' written in Latin. This means 'Beirut, Mother of Laws' the motto of the famous Law school of Beirut in the Roman Empire. As a matter of fact, the Beirut Law School was the preeminent center of jurisprudence of the Roman Empire until its destruction in A.D. 551. Photo vignette of the port of Beirut.
+        </div>
+        <div class="descGroup">
+          <ul class="verticalPlain">
+              <li class="descGroup"><span class="descGroupLabel">Condition: </span>UNC</li>
+    
+    
+    
+    
+    
+    
+    
+          </ul>
+        </div>  </div>
+</div>
+
+<div class="lotDetCol2">
+  <aside id="lotStatus" data-isLoggedIn="false">
+    <div> 
+
+
+ 
+
+  <section class="soldLot">
+    <div class="lotRealizedPrice">
+      <span class="lotRealizedPriceLabel">Realized Price:</span>
+      €70
+      <span class="verifiedLink">
+          <a href="javascript:void(0);" class="link triggerFlyout">Verified</a>
+          <div class="flyout flyoutMedium" >
+            <p>The auction house has verified the price result.</p>
+            <a class="nonlink closeFlyout">Close</a>
+          </div>
+      </span>
+    </div>
+    <div class="lotEstimatedPrice">
+      <span class="lotEstimatedPriceLabel">Estimate:</span> €70 - €140
+    </div>
+  </section>
+</div>
+    <div><div class="lotActions">
+  <ul class="lotLinks">
+    <li>
+        <img class="watchLotImg eyeball" src="/web/20160513101655im_/http://www.auctionzip.com/img/Icons/Eyeball.png" />
+        <img class="hide watchingLotImg eyeball" src="/web/20160513101655im_/http://www.auctionzip.com/img/Icons/Eyeball_Watching.png" />
+        <a class="link watchLotLink fpAuth" data-type="action" data-action="window.watchLot" data-formlevel="full" data-public="0" data-update="0" data-lotref="B2C4759B12" data-isLotSold="true" data-isupcoming="false" href="#">Save this lot</a>
+        <span class="watchSuccess hide"><img class="eyeball" src="/web/20160513101655im_/http://www.auctionzip.com/img/Icons/Eyeball_Watching.png" />
+<span>Alert added to <a href="/web/20160513101655/http://www.auctionzip.com/my-account/current-watched-lots" class="LC">Watched Lots</a></span></span>
+    </li>
+
+    <li>
+        <img src="/web/20160513101655im_/http://www.auctionzip.com/img/Icons/Calendar.png"/><a id="openCalendarFlyout" class="link" href="javascript:void(0);">Add auction to calendar</a>
+      <div class="flyout flyoutSmall">
+        <ul class="verticalPlain">
+            <li class="link">
+              <div class="calendarIcon iconListItem Outlook_calendar">
+                <a href="/web/20160513101655/http://www.auctionzip.com/app/catalog/ical/XA2NSDAJI0" rel="nofollow" target="_blank" data-calendarType="Outlook" data-catalogRef="">Outlook calendar</a>
+              </div>
+            </li>
+            <li class="link">
+              <div class="calendarIcon iconListItem Google_calendar">
+                <a href="/web/20160513101655/http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Antique+Stocks+%26+Bonds&amp;dates=20150328T083000Z/20150328T093000Z&amp;details=Antique+Stocks+%26+Bonds.+Visit+%2Fauction-catalog%2FAntique-Stocks-Bonds_XA2NSDAJI0%2F+for+more+details.&amp;location=Crowne+Plaza+Hotel+Antwerp%2C+2020+Antwerp%2C+BE&amp;trp=false&amp;sprop=&amp;sprop=name:" rel="nofollow" target="_blank" data-calendarType="Google" data-catalogRef="">Google calendar</a>
+              </div>
+            </li>
+            <li class="link">
+              <div class="calendarIcon iconListItem Yahoo_calendar">
+                <a href="/web/20160513101655/http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=Antique+Stocks+%26+Bonds&amp;st=20150328T103000&amp;dur=0100&amp;desc=Antique+Stocks+%26+Bonds.+Visit+%2Fauction-catalog%2FAntique-Stocks-Bonds_XA2NSDAJI0%2F+for+more+details.&amp;in_loc=Crowne+Plaza+Hotel+Antwerp%2C+2020+Antwerp%2C+BE" rel="nofollow" target="_blank" data-calendarType="Yahoo" data-catalogRef="">Yahoo calendar</a>
+              </div>
+            </li>
+            <li class="link">
+              <div class="calendarIcon iconListItem iCal_calendar">
+                <a href="/web/20160513101655/http://www.auctionzip.com/app/catalog/ical/XA2NSDAJI0" rel="nofollow" target="_blank" data-calendarType="iCal" data-catalogRef="">iCal calendar</a>
+              </div>
+            </li>
+        </ul>
+        <a class="nonlink" id="closeCalendarFlyout" href="javascript:void(0);">Close</a>
+      </div>    </li>
+
+    <li class="lotLinkNoImg">
+      <a id="openIncrementsFlyout" class="link fancybox" href="#bidIncrementsTable">View bid increments</a>      <div id="bidIncrementsTable">
+        <div class="bidIncrementsTableHeader">Bid Increments Table</div>
+        <table id="auctionBiddingIncrements" class="bidIncrementsTable">
+          <tr class="columnHeadings">
+            <td>From:</td>
+            <td>To:</td>
+            <td>Increment:</td>
+          </tr>
+            <tr>
+              <td>€0</td>
+              <td>€49</td>
+              <td>€5</td>
+            </tr>
+            <tr>
+              <td>€50</td>
+              <td>€199</td>
+              <td>€10</td>
+            </tr>
+            <tr>
+              <td>€200</td>
+              <td>€499</td>
+              <td>€20</td>
+            </tr>
+            <tr>
+              <td>€500</td>
+              <td>€999</td>
+              <td>€50</td>
+            </tr>
+            <tr>
+              <td>€1,000</td>
+              <td>€1,999</td>
+              <td>€100</td>
+            </tr>
+            <tr>
+              <td>€2,000</td>
+              <td>€4,999</td>
+              <td>€200</td>
+            </tr>
+            <tr>
+              <td>€5,000</td>
+              <td>€9,999</td>
+              <td>€500</td>
+            </tr>
+            <tr>
+              <td>€10,000</td>
+              <td>€19,999</td>
+              <td>€1,000</td>
+            </tr>
+            <tr>
+              <td>€20,000+</td>
+              <td></td>
+              <td>€2,000</td>
+            </tr>
+        </table>
+        <div>
+          <button class="buttonPrimary closeIncrements">Close</button>
+        </div>
+      </div>    </li>
+
+
+    <li class="lotLinkNoImg">
+      <a href="" rel="nofollow" data-loggedin="false" id="auctionDetails_registerLink" class="link linkToRFA fpAuth" data-type="action" data-action="" data-formlevel="full" data-public="0" data-update="0" data-lotref="B2C4759B12" data-catalogref="XA2NSDAJI0">Register to bid</a>    </li>
+
+
+
+  </ul>
+</div></div>
+  </aside>
+</div>
+<div class="clear"></div>
+
+<div>  <div id="listingTerms" class="tabs-container">
+    <dl class="tabs">
+      <dd class="active"><a class="tabLink" href="#panel2-1">Payment</a></dd>
+      <dd><a class="tabLink" href="#panel2-2">Terms</a></dd>
+      <dd><a class="tabLink" href="#panel2-3">Shipping</a></dd>
+    </dl>
+    <div class="tabs-content tabsContent">
+      <div class="content active" id="panel2-1">
+          <h3>Accepted Forms of Payment</h3>
+          <p>COD (cash on delivery), MasterCard, Paypal, Visa, Wire Transfer</p>
+      </div>
+      <div class="content" id="panel2-2">
+          <h3>Terms and Conditions</h3>
+          <div>
+            <p class="descGroup">You agree to pay a buyer&#x27;s premium of up to 20.0% and any applicable taxes and shipping</p>
+            <p><a href="#auctionTermsAndConditions" class="link fancybox">View full terms and conditions</a></p>
+          </div>
+
+
+          
+          
+          <div id="auctionTermsAndConditions" class="term-conditions-container" style="display:none;">
+            <div class="clearfix">
+              <h3 class="headlineStyle fancybox-header serif pull-left" style="margin-top: 10px; margin-right: 20px;">
+              	Terms and Conditions for Antique Stocks &amp; Bonds
+              </h3>
+          	<a title="Print this page" class="textLink print link pull-left" style="margin-top: 15px;">
+          		<i class="fa fa-print"></i> Print
+          	</a>
+            </div>
+            <div class="overlayScrollableContent scrollable">
+                <h4 class="termsTitle">
+                  Conditions of Sale
+                </h4>
+                <p class="termsText">
+                  1. The seller guarantees that he is the rightful owner of, or may legitimately dispose of, the goods being offered by auction. He guarantees also that he has no knowledge whatever to the effect that the goods offered by auction have been acquired unlawfully, and also that no third party can claim any rights (pledge, collateral, etc.) over those goods.<br />
+              2. The sale of goods is made by the auction-house as an agent, acting in the name of, and for account of, the seller. The auction-house is authorised to protect all the seller's rights, in accordance with the sales instructions given to him, and, in the event of an effective sale, to act in the name of, and on behalf of, the seller. <br />
+              3. Until the goods sold are paid for in full by the buyer, they remain the seller's property; only after receipt of payment in full do the goods become the property of the buyer. The auction-house will at no time be the owner of the goods.<br />
+              4. The sale takes place by auction, against payment in cash, with a premium of 20.57%. This premium is made up as follows :<br />
+              - 17% commission on the price for which a lot is sold ; <br />
+              - 21% V.A.T. on this commission.<br />
+              5. The authenticity of the goods is guaranteed by the expert. Should any dispute arise, the item has to be returned to the auction-house within eight days of receipt.<br />
+              6. The auctioneer is entitled to group, separate or omit lots.<br />
+              7. In the event of an incorrect or unintentional bid, the lot in question will immediately be offered again for auction.<br />
+              8. The prices in the catalogue are starting-prices, and no lower bid will be accepted.<br />
+              9. Written buying orders will be executed carefully, and without charge. Any charges for postage, packing and insurance will be for the account of the buyer.<br />
+              10. Written bids are to be made in euro.<br />
+              11. Bids which do not correspond with the bidding steps as mentioned in the catalogue, will be rounded down to the nearest bidding step.<br />
+              12. The person bidding for a third party remains responsible in the case of non-payment by his client.<br />
+              13. With immediate effect after the sale of the lot, the goods (which will be kept with the greatest care) are for the account of the buyer and at the buyer's risk. No complaints will be accepted.<br />
+              14. Damage or loss during the process of delivery by third parties (eg mailing companies) is at the risk of the buyer.<br />
+              15. No lot bought can be returned afterwards without written permission of the auctioneer.<br />
+              16. We must receive full payment within 30 days after the auction date. After that period, a monthly surcharge of 2% will be applied with a monthly minmum of 25 EUR.<br />
+              17. Cash payments above 3000 EUR are not accepted according to Belgian Law.<br />
+              18. Antwerp is accepted as the place where all obligations are to be met. In the event of a dispute, both parties agree to comply with the decision of the Antwerp courts. <br />
+              19. The Process-Server acting in the matter will finally settle all disputes in connection with this sale.<br />
+              20. Sellers and buyers subject to V.A.T. must comply with the amended current V.A.T. instructions dated January 2, 1995 (No.E.T. 76, E.T. 10.187, rules laid down in section 58 § 4 of the V.A.T. code).<br />
+              21. In case of ex-aequo bid, the absentee bid has priority over an internet bid. An internet bid has priority over the telephone bid. The telephone bid has priority over a bid in the room.<br />
+              22. The descriptions in the catalogue are made as good as possible. Any errors are no reason to cancel the purchase.<br />
+              23. On other matters all normal current legal terms and conditions will apply. <br />
+              24. The placing of a bid (in written form, in the auction room, by the internet or on the telephone) constitutes full acceptance of these terms and conditions of sale by the bidder.<br />
+              Copyright : Any person wishing to use descriptions, or any other information, from this catalogue must obtain prior permission in writing from Centrum voor Scriptophilie BVBA.
+                </p>
+                <div class="termsTitle" style="text-transform: capitalize;">
+                  Shipping Terms
+                </div>
+                <div class="termsText">
+                  Auction House will help arrange shipment, at buyer's expense.
+                </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="content" id="panel2-3">
+          <h3>Shipping</h3>
+          <p>Auction House will help arrange shipment, at buyer's expense.</p>
+      </div>
+      <!-- The mockups call to eliminate the Auction Details page, but I'm keeping it here in case we change our minds -->
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div id="lotStatusModal" class="hide">
+  <div class="genOverlay">
+    <div class="bidStatusModalHeader">Your bid status</div>
+
+    <div class="bidStatusDetails">
+      <div class="lotImage thumbnail100x100">
+          <img src="/web/20160513101655im_/http://image.auctionzip.com/housePhotos/Booneshares/86/561486/H5394-L70068268_thz.jpg" />
+      </div>
+      <div class="bidStatusLot">
+        <div class="lotTitle">Lot 122: BERYTUS NUTRIX LEGUM</div>
+            <div class="houseName">Boone Shares - The Scripophily Center</div>
+          <div>Antique Stocks &amp; Bonds</div>
+          <div>March 28, 2015, 10:30 AM CET</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+      <div class="status-alert-container">
+        
+        
+        
+        
+        
+      </div>
+
+
+
+
+    <button class="buttonPrimary closeResultModal">Close</button>
+
+  </div>
+</div>
+      </article>
+
+
+      
+
+
+		
+		
+
+
+
+<!-- BEGIN HTTPS TAGS HERE -->
+
+<!-- Conversion Pixel - AuctionZip_Collector - DO NOT MODIFY -->
+<script src='/web/20160513101655js_/https://ib.adnxs.com/px?id=490740&amp;seg=2439369&amp;order_id=0&amp;other=0&amp;t=1' type="text/javascript"></script>
+<!-- End of Conversion Pixel -->
+
+<!-- Start Quantcast tag -->
+<!--
+<script type="text/javascript">
+_qoptions={
+		qacct:"p-a2K6bNml9qRkk"
+};
+</script>
+<script type="text/javascript" src="//secure.quantserve.com/quant.js"></script>
+<noscript>
+				<img src="//secure.quantserve.com/pixel/p-a2K6bNml9qRkk.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+//-->
+<!-- End Quantcast tag -->
+			
+  		
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="/web/20160513101655if_/http://www.googletagmanager.com/ns.html?id=GTM-P2QNBH"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P2QNBH');</script>
+	<!-- End Google Tag Manager -->
+			
+
+<!-- END HTTPS TAGS HERE -->
+
+
+      								<!-- CONTENT ENDS HERE // -->
+							</div>
+						</div>
+					</div>
+					<!-- End subNav // -->
+					
+										<!--<div class="clearfix">
+						<h2 class="twitterTitles"><a href="/web/20160513101655/http://twitter.com/Auctionzip" target="_blank">Follow AuctionZip on Twitter!</a></h2>
+					</div>
+					<div id="twitOuter"><div id="twitter"></div></div>-->
+					<!-- Footer // -->
+<div id="footer" class="clearfix">
+
+	<ul class="footerLink">
+		<li class="headingLink">Auction Search</li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/auctionsearch.cgi?txtSearchRadius=0&amp;txtSearchZip=&amp;txtSearchKeywords=&amp;idxSearchCategory=0&amp;month=&amp;year=">Auction Calendar</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/Auctioneer-Directory/">Auctioneer Directory</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/highlights.cgi">Prices Realized</a></li>
+	</ul>
+	
+	<ul class="footerLink">
+		<li class="headingLink">Online Bidding</li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/online-auctions/">Upcoming Auctions</a></li>
+
+			<!-- Commented out since videos dont match across sites -->
+			<!--<li><a href="http:// #echo var="HTTP_HOST" >/Tutorial.html">Online Bidding Tutorial</a></li>-->
+			
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/azlive.html?method=getHelpInfo">Online Bidding Help</a></li>
+	</ul>
+	
+	<ul class="footerLink">
+		<li class="headingLink">Quick Links</li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/cgi-bin/azlogin.cgi">Create Account</a></li>
+			<li><a href="/web/20160513101655/http://auctionzipontheblock.blogspot.com/">Auction News</a></li>
+			<li><a href="/web/20160513101655/https://www.auctionzip.com/azforum/">Auction Forum</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/about.html">About Us</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/contacts.html">Contact Us</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/linktous.html">Link to Us</a></li>
+			<li><a href="/web/20160513101655/http://www.auctionzip.com/advertise_with_us.html">Advertise with Us</a></li>
+	</ul>
+	
+	<ul class="footerLink">
+		<li class="headingLink">Follow Us</li>
+			<li class="SMIcons">
+				<a href="/web/20160513101655/http://twitter.com/auctionzip" target="_blank"><img border="0" src="/web/20160513101655im_/http://www.auctionzip.com/images/iconTwitter.png" alt="" title="" /></a>
+				<a href="/web/20160513101655/http://twitter.com/auctionzip" target="_blank" class="sm">Follow Us</a>
+			</li>
+			<li class="SMIcons">
+				<a href="/web/20160513101655/http://www.facebook.com/findauctions" target="_blank"><img border="0" src="/web/20160513101655im_/http://www.auctionzip.com/images/iconFacebook.png" alt="" title="" /></a>
+				<a href="/web/20160513101655/http://www.facebook.com/findauctions" target="_blank" class="sm">Like Us</a>
+			</li>
+	</ul>
+	
+	<div class="searchAuctions">
+		<h1>Search Auctions</h1>
+		
+		<form name="fsrchbox" id="fsrchbox" action='/web/20160513101655/http://www.auctionzip.com/cgi-bin/auctionsearch.cgi' method="get">
+				<p>
+					Search for auctions within
+						<select name="txtSearchRadius" id="ftxtSearchRadius" onchange="document.getElementById('fnewsearch').value=1;" style="border: 1px solid #BABABA; background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 11px; height: 17px;">
+                              <OPTION value='30' >
+                                  30
+                                </OPTION>
+                                <OPTION value='50' >
+                                  50
+                                </OPTION>
+                                <OPTION value='100' >
+                                  100
+                                </OPTION>
+                                <OPTION value='150' >
+                                  150
+                                </OPTION>
+                                <OPTION value='200' >
+                                  200
+                                </OPTION>
+                                <OPTION value='250' >
+                                  250
+                                </OPTION>
+                                <OPTION value='500' >
+                                  500
+                                </OPTION>
+                                <OPTION value='0' >
+                                  Any
+                                </OPTION>
+						</select>
+					miles of zip code: <input type="text" id="ftxtSearchZip" onchange="document.getElementById('fnewsearch').value=1;" name="txtSearchZip" size="5" class="txt1" value="" />
+				</p>
+				<p>
+					With the following keyword(s):
+					<input type="text" size="40" name="txtSearchKeywords" onchange="document.getElementById('fnewsearch').value=1;" class="txt2" value="" />
+				</p>
+				<p>
+					In category:
+					<select name="idxSearchCategory" onchange="document.getElementById('fnewsearch').value=1;" style="float: none !important; width: 140px !important; border: 1px solid #BABABA; background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 10px; width:180px;">
+                              <OPTION value='0'  SELECTED>
+                                  All Auction Categories
+                                </OPTION>
+                                <OPTION value='1' >
+                                  Antiques-Household-Collectibles
+                                </OPTION>
+                                <OPTION value='2' >
+                                  Agricultural-Farm
+                                </OPTION>
+                                <OPTION value='4' >
+                                  Automobiles
+                                </OPTION>
+                                <OPTION value='8' >
+                                  Commercial-Industrial
+                                </OPTION>
+                                <OPTION value='30736' >
+                                  Real Estate (General)
+                                </OPTION>
+                                <OPTION value='32' >
+                                  Benefit-Charity
+                                </OPTION>
+                                <OPTION value='64' >
+                                  Heavy Equipment
+                                </OPTION>
+                                <OPTION value='128' >
+                                  Online Bidding
+                                </OPTION>
+                                <OPTION value='256' >
+                                  New Merchandise
+                                </OPTION>
+                                <OPTION value='512' >
+                                  Storage Auctions
+                                </OPTION>
+                                <OPTION value='1024' >
+                                  Wholesale Auctions
+                                </OPTION>
+                                <OPTION value='16384' >
+                                  Real Estate (Farm)
+                                </OPTION>
+                                <OPTION value='2048' >
+                                  Real Estate (Land)
+                                </OPTION>
+                                <OPTION value='4096' >
+                                  Real Estate (Commercial)
+                                </OPTION>
+                                <OPTION value='8192' >
+                                  Real Estate (Residential)
+                                </OPTION>
+					</select>
+					
+					<input type='hidden' id='ftxtSearchMonth' name='month' value='' />
+					<input type='hidden' id='ftxtSearchYear' name='year' value='' />
+					<input type='hidden' id='searchPath' name='searchPath' value='foot' />
+					<INPUT type='hidden' value='0' name='newsearch' id='fnewsearch'>
+					<input type="submit" class="az_button" value="Search" onclick="if((document.getElementById(&quot;ftxtSearchZip&quot;).value == &quot;&quot;)&amp;&amp;(document.getElementById(&quot;ftxtSearchRadius&quot;).value != 0)){alert(&quot;Please enter a starting Zip code for your search.&quot;);return(false);};">
+				</p>
+			</form>
+
+		<!--<a href="/web/20160513101655/http://www.bbb.org/boston/business-reviews/auctioneers/auction-holdings-in-allston-ma-126734"><img src="../../images/bbb.png" style="margin-right:40px;"/></a>//-->
+		<div style="display: table;">
+			<div style="display: table-cell;vertical-align: middle;">
+				<a title="Auction Holdings BBB Business Review" href="/web/20160513101655/http://www.bbb.org/boston/business-reviews/auctioneers/auction-holdings-in-allston-ma-126734/#bbbonlineclick"><img alt="Auction Holdings BBB Business Review" style="border: 0;" src="/web/20160513101655im_/https://seal-boston.bbb.org/seals/blue-seal-63-134-auction-holdings-126734.png" /></a>
+			</div>
+			<div style="display: table-cell;vertical-align: middle;padding-left: 40px;">
+				<a href="/web/20160513101655/http://www.auctioneers.org/"><img src="/web/20160513101655im_/http://www.auctionzip.com/images/naa.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div id="subFoot">
+	<ul class="clearfix">
+		<li class="copy">&copy; AuctionZip 2003 - 
+			<script type="text/javascript">var d = new Date(); d = d.getFullYear(); document.write(d);</script>
+		</li>
+		<li><a href="/web/20160513101655/http://www.auctionzip.com/agreements/terms.html">Terms of Use</a></li>
+		<li><a href="/web/20160513101655/http://www.auctionzip.com/agreements/privacy.html">Privacy</a></li>
+		<li><a href="/web/20160513101655/http://www.auctionzip.com/agreements/subterms.html">Subscription Agreement</a></li>
+	</ul>
+</div>
+
+<!-- End Footer // -->
+
+				
+				<!-- end bodyInner // -->
+				</div>
+			</div>
+
+    </div>
+
+    <script src="/web/20160513101655js_/http://s7.addthis.com/js/250/addthis_widget.js#pubid=artfact&amp;domready=1"></script>
+    <script src="/web/20160513101655js_/http://www.auctionzip.com/bidincl/dist/js/syndication/auctionzip/lot.js"></script>
+
+  </body>
+</html>

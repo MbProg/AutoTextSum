@@ -1,0 +1,6 @@
+Zablokovat
+Přidejte ke svém tweetům i polohu
+Když pošlete tweet i s polohou, Twitter si ji uloží.
+Polohu můžete před každým tweetem vypnout nebo zapnout a svá polohová data můžete samozřejmě kdykoli zpětně smazat.
+Další informace
+Zapnout sdílení polohy

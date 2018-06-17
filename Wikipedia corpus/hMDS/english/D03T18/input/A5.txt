@@ -1,0 +1,6 @@
+Bloquear
+Añade una ubicación a tus Tweets
+Cuando twitteas desde un lugar, Twitter guarda esa ubicación.
+Puedes cambiar la opción de geo-ubicación antes de mandar un tweet y claro, siempre tienes la opción de borrar el historial de tus ubicaciones.
+Más información
+Activar ubicación
