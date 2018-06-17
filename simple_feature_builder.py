@@ -179,13 +179,15 @@ class SimpleFeatureBuilder:
             and y labels of the number of workers marking the nugget as relevant.
         '''
         # Initialize the features and labels
-        X_batch,y_batch, word_sequence = ([], [], [])
+        X_batch,y_batch, word_sequence, queries, query_embeddings = ([], [], [], [],[])
         np.random.seed(seed)
         while True:
             for i in range(len(self.corpus_reader.topics)):
                 text_id, topic = self.corpus_reader.topics.ix[i].text_id, self.corpus_reader.topics.ix[i].topic
                 if topic not in self.corpus_reader.devset_topics:
                     for paragraph, paragraph_nuggets in self.corpus_reader.get_paragraph_nugget_pairs(str(text_id), tokenize_before_hash= True ):
+                        #clean &#65533;
+                        paragraph = paragraph.replace('&#65533;', '\'')
                         curr_bucket = np.random.randint(1, max_len)
                         nugget_candidates = self.__get_potential_nuggets__(paragraph, fixed_len = curr_bucket)
                         # fix class imbalance (fixed class percentage)... much more hacky than i thought it would be
@@ -212,9 +214,11 @@ class SimpleFeatureBuilder:
                             if repr(candidate) in paragraph_nuggets:
                                 worker_count = paragraph_nuggets[repr(candidate)]
                             word_sequence.append(candidate)
+                            queries.append(topic)
+                            query_embeddings.append(self.generate_sentence_embeddings([topic], tokenized=False))
                             X_batch.append([self.get_word2vec(word) for word in candidate])
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield np.array(X_batch), np.array(y_batch), word_sequence
-                                X_batch, y_batch, word_sequence = ([], [], [])
+                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
+                                X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
                                 break
