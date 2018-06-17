@@ -11,7 +11,7 @@ class SimpleNuggetDetector:
 
     def __init__(self, corpus_reader, feature_builder, model='tree', params=None):
         self.feature_builder = feature_builder
-        self.score_threshold = 2
+        self.score_threshold = 1
         if params and model == 'tree':
             self.model = DecisionTreeClassifier(max_depth=params['max_depth'],
                                                 min_samples_split=params['min_samples_split'],

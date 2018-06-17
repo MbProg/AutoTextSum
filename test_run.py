@@ -2,7 +2,8 @@ from corpus_reader import CorpusReader
 from simple_feature_builder import SimpleFeatureBuilder
 from simple_nugget_detector import SimpleNuggetDetector
 
-from simple_evaluator import evaluate
+from simple_evaluator import Evaluate
+import time
 
 reader = CorpusReader(approach='word')
 fb = SimpleFeatureBuilder(reader, word_vectors_path='../../GoogleNews-vectors-negative300.bin')
@@ -24,10 +25,12 @@ nugget_detector = SimpleNuggetDetector(reader, fb, model='tree', params=params)
 nugget_detector.fit_model()
 nugget_predictions, nugget_gold = nugget_detector.predict_dev_set()
 
-
-objEvaluator = evaluate(nugget_predictions,nugget_gold)
+# nugget_predictions = [['Hello','I','am'],['I','go']]
+# nugget_gold = [(['I','go'],1),(['This','is'],1),(['Hello','go'],0)]
+timeBeforeEval = time.time()
+objEvaluator = Evaluate(nugget_predictions,nugget_gold)
 print('Accuracy :{}'.format(objEvaluator.accuracy()))
 print('Recal:{}'.format(objEvaluator.recall()))
 print('Precision:{}'.format(objEvaluator.precision()))
 print('F1 Score:{}'.format(objEvaluator.F1_score()))
-
+print('Time:',time.time() - timeBeforeEval)
