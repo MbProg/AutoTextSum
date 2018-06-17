@@ -85,7 +85,7 @@ class Nugget_Classifier():
     def preprocess(self, batch_size = 64, num_batches = np.inf):
 
         r = CorpusReader()
-        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=10000)
+        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
         gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
         # preprocess word and sentence embeddings
         i=0
