@@ -89,11 +89,12 @@ class Nugget_Classifier():
         r = CorpusReader()
         # preprocess word and sentence embeddings
         i=0
-        with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, \
-                open('Data/nugget_candidates','wb') as fn,\
-                open('Data/SentEmbeddings', 'wb') as fs, \
-                open('Data/queries', 'wb') as fq, \
-                open('Data/query_sent_embeddings', 'wb') as fqs:
+        mode = 'ab'
+        with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', mode) as fy, \
+                open('Data/nugget_candidates',mode) as fn,\
+                open('Data/SentEmbeddings', mode) as fs, \
+                open('Data/queries', mode) as fq, \
+                open('Data/query_sent_embeddings', mode) as fqs:
             feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
             gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
             while True:
@@ -106,8 +107,9 @@ class Nugget_Classifier():
                 except StopIteration as e:
                     print('Iteration ended')
                     break
-                sess = tf.Session()
+
                 with tf.device("/cpu:0"):
+                    sess = tf.Session()
                     # if self.embedding_session is None:
                     tf.logging.set_verbosity(tf.logging.WARN)
                     sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
@@ -115,15 +117,18 @@ class Nugget_Classifier():
                     nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
                     assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
                                                                        'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
+                    del sess
 
                 # append to each example
                 # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
+                #print(nuggets)
                 pickle.dump(x, fx)
                 pickle.dump(y, fy)
                 pickle.dump(nuggets_sentence_embeddings, fs)
                 pickle.dump(nuggets, fn)
                 pickle.dump(queries, fq)
                 pickle.dump(query_sent_embeddings, fqs)
+
 
                 del x, y, nuggets, queries, query_sent_embeddings
                 i += 1
