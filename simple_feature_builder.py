@@ -133,20 +133,19 @@ class SimpleFeatureBuilder:
         # return pd.DataFrame(nugget_candidates, columns=['nugget_candidate'])
         return nugget_candidates
 
-    def generate_sentence_embeddings(self, sentences, tokenized = True, batch_size ='all'):
+    def generate_sentence_embeddings(self, sentences, session, tokenized = True, batch_size ='all',):
         '''
         generate Sentence Embeddings from a list of sentences using Google's Universal Sentence Encoder
             see https://www.tensorflow.org/hub/modules/google/universal-sentence-encoder/1
         '''
-
+        #using cpu doesnt work?
         with tf.device("/cpu:0"):
             #if self.embedding_session is None:
             tf.logging.set_verbosity(tf.logging.WARN)
-            embedding_session = tf.Session()
-            embedding_session.run([tf.global_variables_initializer(), tf.tables_initializer()])
+            session.run([tf.global_variables_initializer(), tf.tables_initializer()])
             if tokenized:
                 sentences = [detokenize(sent, return_str=True) for sent in sentences]
-            embeddings = np.array(embedding_session.run(self.universal_sentence_encoder(sentences)))
+            embeddings = np.array(session.run(self.universal_sentence_encoder(sentences)))
             return embeddings
 
 
@@ -198,10 +197,9 @@ class SimpleFeatureBuilder:
                                 worker_count = paragraph_nuggets[repr(candidate)]
                             word_sequence.append(candidate)
                             queries.append(topic)
-                            query_embeddings.append(self.generate_sentence_embeddings([topic], tokenized=False))
                             X_batch.append([self.get_word2vec(word) for word in candidate])
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
-                                X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
+                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries
+                                X_batch, y_batch, word_sequence, queries = [], [], [], []
                                 break

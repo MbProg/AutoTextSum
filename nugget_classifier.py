@@ -95,26 +95,28 @@ class Nugget_Classifier():
                 open('Data/queries', 'wb') as fq, \
                 open('Data/query_sent_embeddings', 'wb') as fqs:
             feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
-            gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
+            gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
             while True:
                 print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
                 if i >= num_batches:
                     break
                 # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
                 try:
-                    x, y, nuggets, queries, query_sent_embeddings = next(gen)
+                    x, y, nuggets, queries = next(gen)
                 except StopIteration as e:
                     print('Iteration ended')
                     break
-                sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
-                assert sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-                                                                       'for Embeddings of {}'.format(sentence_embeddings.shape, nuggets)
+                sess = tf.Session()
+                query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
+                nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
+                assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+                                                                       'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
 
                 # append to each example
                 # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
                 pickle.dump(x, fx)
                 pickle.dump(y, fy)
-                pickle.dump(sentence_embeddings, fs)
+                pickle.dump(nuggets_sentence_embeddings, fs)
                 pickle.dump(nuggets, fn)
                 pickle.dump(queries, fq)
                 pickle.dump(query_sent_embeddings, fqs)
