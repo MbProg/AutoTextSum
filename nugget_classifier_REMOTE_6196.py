@@ -10,7 +10,7 @@ import os
 import time
 import pickle
 from itertools import chain
-import time
+
 import keras
 from keras.layers import Input, Dense, GRU, Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
 from keras.models import Model
@@ -98,7 +98,6 @@ class Nugget_Classifier():
             feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
             gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
             while True:
-                timeBeforeEval = time.time()
                 print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
                 if i >= num_batches:
                     break
@@ -133,7 +132,6 @@ class Nugget_Classifier():
 
                 del x, y, nuggets, queries, query_sent_embeddings
                 i += 1
-                print('Time:',time.time() - timeBeforeEval)
 
 if __name__ == '__main__':
     batch_size = 64

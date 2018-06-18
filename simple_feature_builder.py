@@ -133,37 +133,15 @@ class SimpleFeatureBuilder:
         # return pd.DataFrame(nugget_candidates, columns=['nugget_candidate'])
         return nugget_candidates
 
-    def generate_sentence_embeddings(self, sentences, tokenized = True, batch_size ='all'):
+    def generate_sentence_embeddings(self, sentences, session, tokenized = True, batch_size ='all',):
         '''
         generate Sentence Embeddings from a list of sentences using Google's Universal Sentence Encoder
             see https://www.tensorflow.org/hub/modules/google/universal-sentence-encoder/1
         '''
-
-        # tf.logging.set_verbosity(tf.logging.ERROR)
-        #
-        # if batch_size == 'all':
-        #     batch_size = len(sentences)
-        # with tf.Session() as session:
-        #     session.run([tf.global_variables_initializer()])
-        #     i=0
-        #     while True:
-        #         print(i)
-        #         if i*batch_size >= len(sentences):
-        #             raise StopIteration
-        #         session.run(tf.tables_initializer())
-        #         batch_sentences = sentences[i*batch_size : (i+1)*batch_size]
-        #         if tokenized:
-        #             batch_sentences = [detokenize(sent, return_str=True) for sent in batch_sentences]
-        #         embeddings = session.run(embed(batch_sentences))
-        #         yield embeddings
-        #         i += 1
-
-        if self.embedding_session is None:
-            self.embedding_session = tf.Session()
-            self.embedding_session.run([tf.global_variables_initializer(), tf.tables_initializer()])
+        #using cpu doesnt work?
         if tokenized:
             sentences = [detokenize(sent, return_str=True) for sent in sentences]
-        embeddings = np.array(self.embedding_session.run(self.universal_sentence_encoder(sentences)))
+        embeddings = np.array(session.run(self.universal_sentence_encoder(sentences)))
         return embeddings
 
 
@@ -215,10 +193,9 @@ class SimpleFeatureBuilder:
                                 worker_count = paragraph_nuggets[repr(candidate)]
                             word_sequence.append(candidate)
                             queries.append(topic)
-                            query_embeddings.append(self.generate_sentence_embeddings([topic], tokenized=False))
                             X_batch.append([self.get_word2vec(word) for word in candidate])
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
-                                X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
+                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries
+                                X_batch, y_batch, word_sequence, queries = [], [], [], []
                                 break

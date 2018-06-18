@@ -98,8 +98,11 @@ class Nugget_Classifier():
             feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
             gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
             while True:
+<<<<<<< HEAD
                 timeBeforeEval = time.time()
+=======
                 print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
+>>>>>>> 0877802b1bd058ff2f133e061a3bf216f57db562
                 if i >= num_batches:
                     break
                 # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
