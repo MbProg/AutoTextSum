@@ -141,6 +141,7 @@ class SimpleFeatureBuilder:
 
         with tf.device("/cpu:0"):
             #if self.embedding_session is None:
+            tf.logging.set_verbosity(tf.logging.WARN)
             embedding_session = tf.Session()
             embedding_session.run([tf.global_variables_initializer(), tf.tables_initializer()])
             if tokenized:
