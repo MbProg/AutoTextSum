@@ -7,12 +7,14 @@ from nltk import word_tokenize
 from nltk import sent_tokenize
 import numpy as np
 import os
+import time
 import pickle
 from itertools import chain
 
 import keras
 from keras.layers import Input, Dense, GRU, Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
 from keras.models import Model
+import tensorflow as tf
 
 class Nugget_Classifier():
     '''
@@ -85,8 +87,6 @@ class Nugget_Classifier():
     def preprocess(self, batch_size = 64, num_batches = np.inf):
 
         r = CorpusReader()
-        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
-        gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
         # preprocess word and sentence embeddings
         i=0
         with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, \
@@ -94,27 +94,32 @@ class Nugget_Classifier():
                 open('Data/SentEmbeddings', 'wb') as fs, \
                 open('Data/queries', 'wb') as fq, \
                 open('Data/query_sent_embeddings', 'wb') as fqs:
+            feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
+            gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
             while True:
+                print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
                 if i >= num_batches:
                     break
                 # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
                 try:
-                    x, y, nugget_candidates, queries, query_sent_embeddings = next(gen)
+                    x, y, nuggets, queries, query_sent_embeddings = next(gen)
                 except StopIteration as e:
                     print('Iteration ended')
                     break
-                sentence_embeddings = feature_builder.generate_sentence_embeddings(nugget_candidates, tokenized=True)
+                sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
                 assert sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-                                                                       'for Embeddings of {}'.format(sentence_embeddings.shape, nugget_candidates)
+                                                                       'for Embeddings of {}'.format(sentence_embeddings.shape, nuggets)
 
                 # append to each example
                 # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
                 pickle.dump(x, fx)
                 pickle.dump(y, fy)
                 pickle.dump(sentence_embeddings, fs)
-                pickle.dump(nugget_candidates, fn)
+                pickle.dump(nuggets, fn)
                 pickle.dump(queries, fq)
                 pickle.dump(query_sent_embeddings, fqs)
+
+                del x, y, nuggets, queries, query_sent_embeddings
                 i += 1
 
 if __name__ == '__main__':
