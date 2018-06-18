@@ -139,14 +139,10 @@ class SimpleFeatureBuilder:
             see https://www.tensorflow.org/hub/modules/google/universal-sentence-encoder/1
         '''
         #using cpu doesnt work?
-        with tf.device("/cpu:0"):
-            #if self.embedding_session is None:
-            tf.logging.set_verbosity(tf.logging.WARN)
-            session.run([tf.global_variables_initializer(), tf.tables_initializer()])
-            if tokenized:
-                sentences = [detokenize(sent, return_str=True) for sent in sentences]
-            embeddings = np.array(session.run(self.universal_sentence_encoder(sentences)))
-            return embeddings
+        if tokenized:
+            sentences = [detokenize(sent, return_str=True) for sent in sentences]
+        embeddings = np.array(session.run(self.universal_sentence_encoder(sentences)))
+        return embeddings
 
 
 

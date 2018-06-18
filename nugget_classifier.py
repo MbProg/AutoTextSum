@@ -107,9 +107,13 @@ class Nugget_Classifier():
                     print('Iteration ended')
                     break
                 sess = tf.Session()
-                query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
-                nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
-                assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+                with tf.device("/cpu:0"):
+                    # if self.embedding_session is None:
+                    tf.logging.set_verbosity(tf.logging.WARN)
+                    sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
+                    query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
+                    nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
+                    assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
                                                                        'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
 
                 # append to each example
