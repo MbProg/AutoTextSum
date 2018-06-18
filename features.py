@@ -5,8 +5,9 @@ from nltk.corpus import reuters
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import nps_chat
 
-
+background_corpus = [w.lower() for w in reuters.words() + brown.words() if w not in stopwords.words('english')]
 
 
 # String t: term
@@ -36,25 +37,17 @@ def get_domain_relevance(term, paragraphs):
 def get_term_frequency(term, paragraphs):
     fdist = FreqDist()
     for text in paragraphs:
-        tokens = nltk.word_tokenize(text)
+        tokenizer = RegexpTokenizer(r'\w+')
+        tokens = tokenizer.tokenize(text)
         for t in tokens:
             fdist[t.lower()] +=1
     # (# of term t in domain d) / (# of terms in domain d)
     term_frequency = fdist[term]/fdist.N()
-    return term_frequency
+    return term_frequency*100
 
-# TODO: doesn't work
-# we use the Reuters Corpus because it distinguishes between different (90) topics which can be seen as a domain
-# use other corpors as well
-# TODO: don't use distinction between domains
-def get_common_relevance(term):
-    nr_documents_containg_t = 0
-    for fid in reuters.fileids():
-        if term in reuters.words(fileids=[fid]):
-            nr_documents_containg_t += 1
-    # (# of documents containing t)/(# of documents)
-    common_relevance = nr_documents_containg_t/len(reuters.fileids())
-    return common_relevance
+def get_common_frequency(word):
+    fdist = FreqDist(background_corpus)
+    return fdist[word]/fdist.N()*100000
 
 # TODO: position features
 # position of a paragraph is considered as position of the term
@@ -115,4 +108,8 @@ paragraphs = ['Attention deficit hyperactivity disorder (ADHD) is a mental disor
                 'In children, problems paying attention may result in poor school performance.',
                 'Although it causes impairment, particularly in modern society, many children with ADHD have a good attention span for tasks they find interesting.']
 
-print(get_term_frequency('disorder', paragraphs))
+print(get_term_frequency('attention', paragraphs))
+print('Common frequncy(book)', get_common_frequency('book'))
+print('Common frequncy(concentration)', get_common_frequency('concentration'))
+print('Common frequncy(beech)', get_common_frequency('beech'))
+print('Common frequncy(halibut)', get_common_frequency('halibut'))
