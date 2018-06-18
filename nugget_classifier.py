@@ -9,7 +9,7 @@ import numpy as np
 import os
 import pickle
 from itertools import chain
-
+import time
 import keras
 from keras.layers import Input, Dense, GRU, Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
 from keras.models import Model
@@ -95,6 +95,7 @@ class Nugget_Classifier():
                 open('Data/queries', 'wb') as fq, \
                 open('Data/query_sent_embeddings', 'wb') as fqs:
             while True:
+                timeBeforeEval = time.time()
                 if i >= num_batches:
                     break
                 # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
@@ -116,6 +117,7 @@ class Nugget_Classifier():
                 pickle.dump(queries, fq)
                 pickle.dump(query_sent_embeddings, fqs)
                 i += 1
+                print('Time:',time.time() - timeBeforeEval)
 
 if __name__ == '__main__':
     batch_size = 64
