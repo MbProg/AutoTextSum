@@ -19,6 +19,9 @@ for key in reader.nuggets.keys():
                     sentence_nugget_count += 1
                 # tokenize to get word count
                 nugget = word_tokenize(nugget)
+                if (len(nugget)>200):
+                    print("Nugget: ", ' '.join(nugget))
+                    print("Worker: ", worker)
                 nugget_lengths.append(len(nugget))
                 nugget_count += 1
             except:
