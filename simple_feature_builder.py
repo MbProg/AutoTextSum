@@ -171,8 +171,8 @@ class SimpleFeatureBuilder:
                     for paragraph, paragraph_nuggets in self.corpus_reader.get_paragraph_nugget_pairs(str(text_id), tokenize_before_hash= True ):
                         #clean &#65533;
                         paragraph = paragraph.replace('&#65533;', '\'')
-                        curr_bucket = np.random.randint(1, max_len)
-                        nugget_candidates = self.__get_potential_nuggets__(paragraph, fixed_len = curr_bucket)
+                        # curr_bucket = np.clip(np.round(np.random.normal(90, 30)), min_len, max_len)
+                        nugget_candidates = self.__get_potential_nuggets__(paragraph, max_len=max_len)
                         # fix class imbalance (fixed class percentage)... much more hacky than i thought it would be
                         if min_class_percentage:
                             num_true_nuggets = len(paragraph_nuggets)
@@ -202,6 +202,6 @@ class SimpleFeatureBuilder:
                             X_batch.append([self.get_word2vec(word) for word in candidate])
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
+                                yield X_batch, np.array(y_batch), word_sequence, queries, query_embeddings
                                 X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
                                 break
