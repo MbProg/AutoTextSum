@@ -10,6 +10,7 @@ import os
 import time
 import pickle
 from itertools import chain
+import h5py
 
 import keras
 from keras.layers import Input, Dense, GRU, Embedding, LSTM, Dense, Dropout, Flatten, Bidirectional
@@ -89,35 +90,41 @@ class Nugget_Classifier():
         r = CorpusReader()
         # preprocess word and sentence embeddings
         i=0
-        with open('Data/Xtrain', 'wb') as fx, open('Data/Ytrain', 'wb') as fy, \
-                open('Data/nugget_candidates','wb') as fn,\
-                open('Data/SentEmbeddings', 'wb') as fs, \
-                open('Data/queries', 'wb') as fq, \
-                open('Data/query_sent_embeddings', 'wb') as fqs:
-            feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
-            gen = feature_builder.generate_sequence_word_embeddings(max_len=6, seed=1)
+        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
+        gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
+        #append mode!
+        with h5py.File('data.h5', 'w') as h5:
             while True:
+                #todo hdf5 file metadata
+                group_i = h5.create_group('batch{}'.format(i))
                 print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
                 if i >= num_batches:
                     break
-                # with open('Xtrain', mode='a+') as fileX, open('Ytrain', mode='a+') as fileY:
                 try:
-                    x, y, nuggets, queries, query_sent_embeddings = next(gen)
+                    x, y, nuggets, queries = next(gen)
                 except StopIteration as e:
                     print('Iteration ended')
                     break
-                sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
-                assert sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-                                                                       'for Embeddings of {}'.format(sentence_embeddings.shape, nuggets)
+
+                with tf.device("/cpu:0"):
+                    sess = tf.Session()
+                    # if self.embedding_session is None:
+                    tf.logging.set_verbosity(tf.logging.WARN)
+                    sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
+                    query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
+                    nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
+                    assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+                                                                       'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
+                    del sess
 
                 # append to each example
                 # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
-                pickle.dump(x, fx)
-                pickle.dump(y, fy)
-                pickle.dump(sentence_embeddings, fs)
-                pickle.dump(nuggets, fn)
-                pickle.dump(queries, fq)
-                pickle.dump(query_sent_embeddings, fqs)
+                #print(nuggets)
+                group_i.create_dataset('word_embeddings', x)
+                group_i.create_dataset('labels', y)
+                group_i.create_dataset('sent_emb', nuggets_sentence_embeddings)
+                group_i.create_dataset('nuggets', nuggets)
+                group_i.create_dataset('query_sent_embeddings', query_sent_embeddings)
 
                 del x, y, nuggets, queries, query_sent_embeddings
                 i += 1
