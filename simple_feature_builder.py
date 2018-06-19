@@ -151,7 +151,7 @@ class SimpleFeatureBuilder:
 
 
 
-    def generate_sequence_word_embeddings(self, max_len=8, min_class_percentage = 0.1, seed = np.random.randint(1, 50)):
+    def generate_sequence_word_embeddings(self, min_len = 1, max_len=200, min_class_percentage = 0.1, seed = np.random.randint(1, 50)):
         '''
         Using Bucketing, i.e. having the same sequence length for each batch (curr_bucket) to make LSTM implementation
         easier.
