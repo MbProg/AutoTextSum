@@ -67,6 +67,15 @@ class CorpusReader:
             # read the selected nuggets into a pandas dataframe
             df = pd.read_csv(nugget_path + file_name,sep='\t', names=['worker_id', 'nugget'])
             # groupby workers and save all their nuggets in a list
+            print(df.nugget)
+
+            # remove noise
+            # remove records where nuggets are null
+            # remove records which contain several sentences
+            df.dropna(inplace=True)   
+            df['pointCount'] = df.nugget.apply(lambda x: x.count('.')+x.count('!')+x.count('?'))
+            df = df[df['pointCount']<=1]
+
             df2 = df.groupby('worker_id')['nugget'].apply(list)
             nuggets[file_name[:4]] = df2.to_dict()
         self.nuggets = nuggets
