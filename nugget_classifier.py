@@ -87,54 +87,53 @@ class Nugget_Classifier():
 
     def preprocess(self, batch_size = 64, num_batches = np.inf):
 
-        r = CorpusReader()
         # preprocess word and sentence embeddings
         i=0
-        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
+        feature_builder = SimpleFeatureBuilder(self.reader, batch_size=batch_size, limit_embeddings=0)
         gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
         #append mode!
-        with h5py.File('data.h5', 'w') as h5:
-            while True:
-                #todo hdf5 file metadata
-                group_i = h5.create_group('batch{}'.format(i))
-                print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
-                if i >= num_batches:
-                    break
-                try:
-                    x, y, nuggets, queries = next(gen)
-                except StopIteration as e:
-                    print('Iteration ended')
-                    break
+        first_write = True
+        while True:
+            #todo hdf5 file metadata
+            #roup_i = h5.create_group('batch{}'.format(i))
+            print(time.strftime("%H:%M:%S")+': Batch {}'.format(i))
+            if i >= num_batches:
+                break
+            try:
+                x, y, nuggets, queries, query_embeddings = next(gen)
+            except StopIteration as e:
+                print('Iteration ended')
+                break
 
-                with tf.device("/cpu:0"):
-                    sess = tf.Session()
-                    # if self.embedding_session is None:
-                    tf.logging.set_verbosity(tf.logging.WARN)
-                    sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
-                    query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
-                    nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
-                    assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+
+            nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
+            assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
                                                                        'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
-                    del sess
 
-                # append to each example
-                # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
-                #print(nuggets)
-                group_i.create_dataset('word_embeddings', x)
-                group_i.create_dataset('labels', y)
-                group_i.create_dataset('sent_emb', nuggets_sentence_embeddings)
-                group_i.create_dataset('nuggets', nuggets)
-                group_i.create_dataset('query_sent_embeddings', query_sent_embeddings)
+            # append to each example
+            # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
+            #print(nuggets)
+            print(x.shape,x.dtype)
+            print(y.shape,y.dtype)
+            np.save('Data/word_sequence/x_{}'.format(i), x)
+            np.save('Data/labels/y_{}'.format(i), y)
+            np.save('Data/sent_embedding/sent_{}'.format(i), nuggets_sentence_embeddings)
+            f = open('Data/queries/query_{}'.format(i), 'w')
+            f.write(repr(queries))
+            f.close()
+            f = open('Data/nuggets/nuggets_{}'.format(i), 'w')
+            f.write(repr(nuggets))
+            f.close()
+            #del x, y, nuggets, queries, query_sent_embeddings
 
-                del x, y, nuggets, queries, query_sent_embeddings
-                i += 1
+            i += 1
 
 if __name__ == '__main__':
     batch_size = 64
     n = Nugget_Classifier()
     n.preprocess(batch_size,)
     #train
-
+    '''
     batch_generator = n.pickle_generator()
     #batch_words, batch_y, batch_sent, nugget, queries = next(batch_generator)
     #
@@ -185,3 +184,4 @@ if __name__ == '__main__':
     X = [np.array(x_batch), test_query, sentence_embedding]
     n.model.train_on_batch(X, y_batch)
     print(n.model.predict(X))
+    '''
