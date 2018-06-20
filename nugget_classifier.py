@@ -86,12 +86,10 @@ class Nugget_Classifier():
                 raise StopIteration
 
     def preprocess(self, batch_size = 64, num_batches = np.inf):
-
-        r = CorpusReader()
         # preprocess word and sentence embeddings
         i=0
-        feature_builder = SimpleFeatureBuilder(r, batch_size=batch_size, limit_embeddings=0)
-        gen = feature_builder.generate_sequence_word_embeddings(max_len=8, seed=1)
+        feature_builder = SimpleFeatureBuilder(self.corpus_reader, batch_size=batch_size, limit_embeddings=0)
+        gen = feature_builder.generate_sequence_word_embeddings(seed=1)
         #append mode!
         with h5py.File('data.h5', 'w') as h5:
             while True:
@@ -106,27 +104,27 @@ class Nugget_Classifier():
                     print('Iteration ended')
                     break
 
-                with tf.device("/cpu:0"):
-                    sess = tf.Session()
-                    # if self.embedding_session is None:
-                    tf.logging.set_verbosity(tf.logging.WARN)
-                    sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
-                    query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
-                    nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
-                    assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-                                                                       'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
-                    del sess
+                # with tf.device("/cpu:0"):
+                    # sess = tf.Session()
+                    # # if self.embedding_session is None:
+                    # tf.logging.set_verbosity(tf.logging.WARN)
+                    # sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
+                    # query_sent_embeddings = feature_builder.generate_sentence_embeddings(queries, tokenized=False, session=sess)
+                    # nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True, session=sess)
+                    # assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+                    #                                                    'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
+                    # del sess
 
                 # append to each example
                 # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
                 #print(nuggets)
                 group_i.create_dataset('word_embeddings', x)
                 group_i.create_dataset('labels', y)
-                group_i.create_dataset('sent_emb', nuggets_sentence_embeddings)
+                # group_i.create_dataset('sent_emb', nuggets_sentence_embeddings)
                 group_i.create_dataset('nuggets', nuggets)
-                group_i.create_dataset('query_sent_embeddings', query_sent_embeddings)
+                # group_i.create_dataset('query_sent_embeddings', query_sent_embeddings)
 
-                del x, y, nuggets, queries, query_sent_embeddings
+                # del x, y, nuggets, queries, query_sent_embeddings
                 i += 1
 
 if __name__ == '__main__':
