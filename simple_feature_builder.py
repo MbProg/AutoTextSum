@@ -16,9 +16,11 @@ class SimpleFeatureBuilder:
         self.corpus_reader = corpus_reader
         self.embedding_dim = embedding_dim
         self.batch_size = batch_size
+        '''
         module_url = 'https://tfhub.dev/google/universal-sentence-encoder/2'
         # Import the Universal Sentence Encoder's TF Hub module
         self.universal_sentence_encoder = hub.Module(module_url)
+        '''
         #init later if needed
         self.embedding_session = None
 
@@ -140,13 +142,19 @@ class SimpleFeatureBuilder:
         '''
 
         with tf.device("/cpu:0"):
+            module_url = 'https://tfhub.dev/google/universal-sentence-encoder/2'
+            # Import the Universal Sentence Encoder's TF Hub module
+            self.universal_sentence_encoder = hub.Module(module_url)
             #if self.embedding_session is None:
             tf.logging.set_verbosity(tf.logging.WARN)
             embedding_session = tf.Session()
             embedding_session.run([tf.global_variables_initializer(), tf.tables_initializer()])
             if tokenized:
                 sentences = [detokenize(sent, return_str=True) for sent in sentences]
+
             embeddings = np.array(embedding_session.run(self.universal_sentence_encoder(sentences)))
+            embedding_session.close()
+            tf.reset_default_graph()
             return embeddings
 
 
@@ -198,10 +206,10 @@ class SimpleFeatureBuilder:
                                 worker_count = paragraph_nuggets[repr(candidate)]
                             word_sequence.append(candidate)
                             queries.append(topic)
-                            query_embeddings.append(self.generate_sentence_embeddings([topic], tokenized=False))
-                            X_batch.append([self.get_word2vec(word) for word in candidate])
+                            query_embeddings.append([self.get_word2vec(word) for word in word_tokenize(topic)])
+                            X_batch.append(np.array([self.get_word2vec(word) for word in candidate]))
                             y_batch.append(worker_count)
                             if len(X_batch) == self.batch_size:
-                                yield X_batch, np.array(y_batch), word_sequence, queries, query_embeddings
+                                yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
                                 X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
                                 break

@@ -7,6 +7,8 @@ from functools import reduce
 from nltk import word_tokenize
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
+import sys
+import os
 class SimpleNuggetDetector:
 
     def __init__(self, corpus_reader, feature_builder, model='tree', params=None):
@@ -35,7 +37,7 @@ class SimpleNuggetDetector:
             self.model = SGDClassifier(loss='log', n_jobs=2)
             self.train_mode = 'batch_mode'
 
-    def fit_model(self):
+    def fit_model(self, X=None, y=None):
         if self.train_mode == 'batch_mode':
             training_iterator = self.feature_builder.get_word_embedding_features()
             classes = np.array([i for i in range(self.feature_builder.corpus_reader.max_occurrence)])
@@ -53,9 +55,17 @@ class SimpleNuggetDetector:
                 # only to reduce training time for testing, delete this for training the final model
                 if batch_count == 200:
                     break
+        elif not X is None:
+            self.model.fit(X, y)
         else:
             X, y = self.feature_builder.get_complete_word_embedding_features()
-            # iterator will yield just one batch of all examples
+            sys.path.insert(0, os.getcwd() + '/Wikipedia corpus')
+
+            from extract_relevant_sentences import wiki_corpus_to_word_features
+            X2, y2 = wiki_corpus_to_word_features(label=2)
+            # combine both datasources
+            X = np.concatenate([X,X2])
+            y = np.concatenate([y,y2])
             self.model.fit(X, y)
 
     def convert_word_to_nugget_predictions(self, sentences, decision='binary'):
@@ -111,17 +121,21 @@ class SimpleNuggetDetector:
                 sentence = []
 
         dev_set_text_ids =  [self.feature_builder.corpus_reader.topics.ix[x].text_id for x in self.feature_builder.corpus_reader.devset_topics]
-        #nugget_gold = [self.feature_builder.corpus_reader.nuggets[str(text_id)] for text_id in dev_set_text_ids]
         # build the predicted nuggets from single word predictions
         nugget_predictions = self.convert_word_to_nugget_predictions(sentences)
         # get the gold nuggets from the labeled data
         nuggets_gold = []
         for dev_set_id in dev_set_text_ids:
-            #print(self.feature_builder.corpus_reader.get_paragraph_nugget_pairs(dev_set_id), dev_set_id)
             paragraph_nugget_tuples = self.feature_builder.corpus_reader.get_paragraph_nugget_pairs(str(dev_set_id))
             for paragraph, paragraph_nuggets in paragraph_nugget_tuples:
                 all_nuggets = self.feature_builder.__get_potential_nuggets__(paragraph, max_len=10)
                 nugget_gold = [(nugget, paragraph_nuggets.get(' '.join([w for w in nugget]), 0)) for nugget in all_nuggets if nugget]
-                nugget_gold = [(nugget, 1) if score>= self.score_threshold else (nugget, 0) for nugget, score in nugget_gold]
+                nugget_gold = [(nugget, 1) if score>= 1 else (nugget, 0) for nugget, score in nugget_gold]
                 nuggets_gold += nugget_gold
         return nugget_predictions, nuggets_gold
+
+    def fake_predict(self, gold_labels):
+        return [nugget for nugget,label in gold_labels if
+                                                        (label==1 and np.random.uniform(0,1)>0.7)
+                                                        or
+                                                        (label==0 and np.random.uniform(0,1)>0.8)],gold_labels
