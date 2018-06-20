@@ -5,6 +5,7 @@ from collections import Counter
 from functools import reduce
 from nltk import word_tokenize
 from nltk import sent_tokenize
+import xml.etree.ElementTree as ET
 
 class CorpusReader:
     # if not specified the reader assumes that it is placed directly in the unzipped corpus directory
@@ -21,6 +22,7 @@ class CorpusReader:
             self.topics_path_exists = True
         else:
             self.topics_path_exists = False
+        self.tagSentences(paragraph_path)
         self.build_paragraphs(paragraph_path)
         self.build_nuggets(nugget_path)
         self.devset_topics = [x for x in range(len(self.topics))][-2:]
@@ -156,3 +158,40 @@ class CorpusReader:
         self.train_set = train_set
         self.dev_set = dev_set
         self.total_words = total_words
+
+    def tagSentences(self, document_path):
+        '''
+        fills self.sentences_dict which is dictionary
+        key: (QueryID,DocumentIncrementerID started by 1, SentenceID started by 1)
+        value: sentence in the content tag
+        '''
+        source_documents = [f for f in os.listdir(document_path) if '1' in f]
+        # sentences:
+        # key: (QueryID,DocumentIncrementerID started by 1, SentenceID started by 1)
+        self.sentences_dict={}
+        for file_name in source_documents:
+            
+            try:
+                tree = ET.parse(document_path + file_name)
+                QueryID = tree.getroot().attrib['queryID']
+                t_documents = tree.getroot()[0]
+                SentenceID = 0
+                for DocumentID,document in enumerate(t_documents):
+                    if document.tag == 'paragraph':
+                        break
+                    for sentences in document:
+                        for sentence in sentences:
+                            SentenceID+=1
+                            self.sentences_dict[(QueryID,DocumentID+1,SentenceID)] = sentence.find('content').text
+
+                            
+                    
+            except OSError as err:
+                print("OS error: {0}".format(err))
+            
+            
+                
+
+
+
+    
