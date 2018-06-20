@@ -37,7 +37,7 @@ class SimpleNuggetDetector:
             self.model = SGDClassifier(loss='log', n_jobs=2)
             self.train_mode = 'batch_mode'
 
-    def fit_model(self):
+    def fit_model(self, X=None, y=None):
         if self.train_mode == 'batch_mode':
             training_iterator = self.feature_builder.get_word_embedding_features()
             classes = np.array([i for i in range(self.feature_builder.corpus_reader.max_occurrence)])
@@ -55,6 +55,8 @@ class SimpleNuggetDetector:
                 # only to reduce training time for testing, delete this for training the final model
                 if batch_count == 200:
                     break
+        elif not X is None:
+            self.model.fit(X, y)
         else:
             X, y = self.feature_builder.get_complete_word_embedding_features()
             sys.path.insert(0, os.getcwd() + '/Wikipedia corpus')
@@ -64,9 +66,6 @@ class SimpleNuggetDetector:
             # combine both datasources
             X = np.concatenate([X,X2])
             y = np.concatenate([y,y2])
-            indices = np.random.randint(0,len(X),1000)
-            np.save('X_sample', X[indices,:])
-            np.save('y_sample', y[indices])
             self.model.fit(X, y)
 
     def convert_word_to_nugget_predictions(self, sentences, decision='binary'):
@@ -131,13 +130,12 @@ class SimpleNuggetDetector:
             for paragraph, paragraph_nuggets in paragraph_nugget_tuples:
                 all_nuggets = self.feature_builder.__get_potential_nuggets__(paragraph, max_len=10)
                 nugget_gold = [(nugget, paragraph_nuggets.get(' '.join([w for w in nugget]), 0)) for nugget in all_nuggets if nugget]
-                nugget_gold = [(nugget, 1) if score>= 2 else (nugget, 0) for nugget, score in nugget_gold]
+                nugget_gold = [(nugget, 1) if score>= 1 else (nugget, 0) for nugget, score in nugget_gold]
                 nuggets_gold += nugget_gold
         return nugget_predictions, nuggets_gold
 
     def fake_predict(self, gold_labels):
-        return [nugget for nugget,label in nugget_gold if
-                                                        (label==1 np.random.uniform(0,1)>0.7)
+        return [nugget for nugget,label in gold_labels if
+                                                        (label==1 and np.random.uniform(0,1)>0.7)
                                                         or
-                                                        (label==0 np.random.uniform(0,1)>0.8)],
-                gold_labels
+                                                        (label==0 and np.random.uniform(0,1)>0.8)],gold_labels
