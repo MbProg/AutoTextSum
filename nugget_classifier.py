@@ -111,36 +111,16 @@ class Nugget_Classifier():
                 print('Iteration ended')
                 break
 
-
-<<<<<<< HEAD
-            #nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
-            #assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-            #                                                           'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
-=======
-            # nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
-            # assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-            #                                                            'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
->>>>>>> 52bca11394a42bb846b3240e226d204c411640e4
-
-            # append to each example
-            # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
-            #print(nuggets)
             print(x.shape,x.dtype)
             print(y.shape,y.dtype)
             np.save('Data/word_sequence/x_{}'.format(i), x)
             np.save('Data/labels/y_{}'.format(i), y)
-<<<<<<< HEAD
-            #np.save('Data/sent_embedding/sent_{}'.format(i), nuggets_sentence_embeddings)
-=======
-            # np.save('Data/sent_embedding/sent_{}'.format(i), nuggets_sentence_embeddings)
->>>>>>> 52bca11394a42bb846b3240e226d204c411640e4
             f = open('Data/queries/query_{}'.format(i), 'w')
             f.write(repr(queries))
             f.close()
             f = open('Data/nuggets/nuggets_{}'.format(i), 'w')
             f.write(repr(nuggets))
             f.close()
-            #del x, y, nuggets, queries, query_sent_embeddings
 
             i += 1
 
