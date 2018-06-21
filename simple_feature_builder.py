@@ -5,10 +5,9 @@ from pprint import pprint
 import numpy as np
 from nltk.tokenize.moses import MosesDetokenizer
 detokenize = MosesDetokenizer().detokenize
-
 import tensorflow as tf
 import tensorflow_hub as hub
-
+from features import Features
 class SimpleFeatureBuilder:
 
     def __init__(self, corpus_reader, word_vectors_path='GoogleNews-vectors-negative300.bin',train_size=0.8, batch_size=64, embedding_dim=300, limit_embeddings = None):
@@ -60,6 +59,7 @@ class SimpleFeatureBuilder:
                             surrounding_words = [sentence_word_occurrences[i-1][0]] + [word]
 
                         surrounding_word_embeddings = np.average([self.get_word2vec(word) for word in surrounding_words],0)
+
                         X_batch.append(np.average([topic_word_embeddings, surrounding_word_embeddings],0))
                         y_batch.append(count)
                         if data_format == 'batch' and len(X_batch) == self.batch_size:
@@ -84,9 +84,13 @@ class SimpleFeatureBuilder:
             paragraph_word_scores = self.corpus_reader.dev_set
         # Initialize the features and labels
         X_batch,y_batch = ([], [])
+        last_index = 9999999
         for topic_index, paragraph in paragraph_word_scores:
             topic_words = word_tokenize(self.corpus_reader.topics.ix[topic_index].topic)
             topic_word_embeddings = np.average([self.get_word2vec(word) for word in topic_words],0)
+            if last_index != topic_index:
+                f = Features(self.corpus_reader.paragraphs[str(self.corpus_reader.topics.ix[topic_index].text_id)], self.corpus_reader.topics.ix[topic_index].topic)
+            last_index = topic_index
             for sentence_word_occurrences in paragraph:
                 #print(sentence_word_occurrences)
                 if len(sentence_word_occurrences)>1:
@@ -100,7 +104,12 @@ class SimpleFeatureBuilder:
                             surrounding_words = [sentence_word_occurrences[i-1][0]] + [word]
 
                         surrounding_word_embeddings = np.average([self.get_word2vec(word) for word in surrounding_words],0)
-                        X_batch.append(np.average([topic_word_embeddings, surrounding_word_embeddings],0))
+                        tf = f.get_term_frequency(word)
+                        cf = f.get_common_frequency(word)
+                        #sim = f.get_similarity_to_query(word)
+                        feat_combined = np.array([tf, cf])
+                        avg_features = np.average([topic_word_embeddings, surrounding_word_embeddings],0)
+                        X_batch.append(np.concatenate([feat_combined, avg_features],0))
                         y_batch.append(count)
         return np.array(X_batch), np.array(y_batch)
 
@@ -156,8 +165,6 @@ class SimpleFeatureBuilder:
             embedding_session.close()
             tf.reset_default_graph()
             return embeddings
-
-
 
     def generate_sequence_word_embeddings(self, min_len = 1, max_len=200, min_class_percentage = 0.1, seed = np.random.randint(1, 50)):
         '''
