@@ -109,7 +109,7 @@ class SimpleFeatureBuilder:
                         #sim = f.get_similarity_to_query(word)
                         feat_combined = np.array([tf, cf])
                         avg_features = np.average([topic_word_embeddings, surrounding_word_embeddings],0)
-                        X_batch.append(np.concatenate([feat_combined, avg_features],0))
+                        X_batch.append(np.concatenate([feat_combined, avg_features]))
                         y_batch.append(count)
         return np.array(X_batch), np.array(y_batch)
 
@@ -177,7 +177,7 @@ class SimpleFeatureBuilder:
             and y labels of the number of workers marking the nugget as relevant.
         '''
         # Initialize the features and labels
-        X_batch,y_batch, word_sequence, queries, query_embeddings = ([], [], [], [],[])
+        X_batch,y_batch, label_sequence, word_sequence, queries, query_embeddings = ([], [], [], [],[], [])
         np.random.seed(seed)
         while True:
             for i in range(len(self.corpus_reader.topics)):
@@ -207,7 +207,11 @@ class SimpleFeatureBuilder:
                             #merge both
                             nugget_candidates += true_nuggets
                             np.random.shuffle(nugget_candidates)
+
                         for candidate in nugget_candidates:
+                            # generate sequence labels
+                            #for i, word in enumerate(candidate):
+
                             worker_count = 0
                             if repr(candidate) in paragraph_nuggets:
                                 worker_count = paragraph_nuggets[repr(candidate)]
@@ -220,3 +224,19 @@ class SimpleFeatureBuilder:
                                 yield np.array(X_batch), np.array(y_batch), word_sequence, queries, query_embeddings
                                 X_batch, y_batch, word_sequence, queries, query_embeddings = [], [], [], [], []
                                 break
+
+    def generate_sequences_unlabeled(self, ):
+        nuggets, queries = [], []
+        for doc_id, text_id, sent_id in self.corpus_reader.sentences_dict.keys():
+            sent = self.corpus_reader.sentences_dict[(doc_id, text_id, sent_id)]
+            lookup = self.corpus_reader.topics[self.corpus_reader.topics.text_id == int(doc_id)].topic
+            assert len(lookup) == 1
+            query = lookup.iloc[0]
+            all_nuggets = self.__get_potential_nuggets__(sent, max_len=200)
+            for nugget in all_nuggets:
+                if len(nuggets) >= self.batch_size:
+                    #format from the other fucntion: x, y, nugget, queries, sent_emb
+                    yield [], [], nugget, queries, []
+                    nuggets, queries =[], []
+                nugget.append(nugget)
+                queries.append(query)
