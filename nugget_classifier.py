@@ -38,40 +38,41 @@ class Nugget_Classifier():
             self.reader = CorpusReader()
         else:
             self.reader = reader
-        self.model = self.build_network()
         # self.word2vec =  gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
         # self.true_nuggets = reader.nuggets
 
-    def build_network(self, hidden_dim=256, GRU_dim=256):
+    def build_network(self, hidden_dim=256, GRU_dim=256, nb_words=25000, max_sequence_length=30, we_matrix=None):
         word_embedding_dim = 300
-        sentence_embedding_dim = 512
         hidden_dim = hidden_dim
         GRU_dim = GRU_dim
-        words_shape = (None, word_embedding_dim)
-        query_shape = (None, word_embedding_dim)
 
 
-        word_sequence = Input(shape=words_shape,name='inputwords')
-        query = Input(shape=query_shape)
-        sentence_embedding = Input(shape=(sentence_embedding_dim,),name='inputsent')
-        # process the sentence embedding
-        x1 = Dense(hidden_dim, activation='relu')(sentence_embedding)
+        word_sequence = Input(shape=(max_sequence_length,),name='inputwords')
+        query = Input(shape=(max_sequence_length,))
+        wv_layer = Embedding(nb_words,
+                             word_embedding_dim,
+                             mask_zero=False,
+                             weights=[we_matrix],
+                             input_length=max_sequence_length,
+                             trainable=False)
+        word_sequence_embedding = wv_layer(word_sequence)
+        query_embedding = wv_layer(query)
         # weights for query and word sequence are shared
         gru_shared = GRU(GRU_dim, activation='relu')
         # process the word sequence
-        x2 = gru_shared(word_sequence)
+        x2 = gru_shared(word_sequence_embedding)
         # process the query
-        x3 = gru_shared(query)
+        x3 = gru_shared(query_embedding)
 
-        merged_outputs = keras.layers.concatenate([x1, x2, x3], axis=-1)
+        merged_outputs = keras.layers.concatenate([x2, x3], axis=-1)
         x1 = Dense(hidden_dim, activation='relu')(merged_outputs)
         # regression
         output = Dense(1, activation='linear')(x1)
-        model = Model(inputs=[word_sequence, query, sentence_embedding], outputs=output)
+        model = Model(inputs=[word_sequence, query], outputs=output)
         model.compile(optimizer='adam',
                   loss='mean_squared_error',
                   metrics=['mae'])
-        return model
+        self.model = model
 
     def pickle_generator(self, pathx = 'Data\Xtrain', pathy='Data/Ytrain', path_sent='Data/SentEmbeddings'):
         with open('Data/Xtrain', 'rb') as fx, open('Data/Ytrain', 'rb') as fy, \
@@ -106,9 +107,9 @@ class Nugget_Classifier():
                 break
 
 
-            nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
-            assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
-                                                                       'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
+            #nuggets_sentence_embeddings = feature_builder.generate_sentence_embeddings(nuggets, tokenized=True)
+            #assert nuggets_sentence_embeddings.shape == (batch_size, 512), 'sentence embeddings are shape: {} \n ' \
+            #                                                           'for Embeddings of {}'.format(nuggets_sentence_embeddings.shape, nuggets)
 
             # append to each example
             # x = [embedded_seq + sentence_embeddings[i] for i, embedded_seq in enumerate(x)]
@@ -117,7 +118,7 @@ class Nugget_Classifier():
             print(y.shape,y.dtype)
             np.save('Data/word_sequence/x_{}'.format(i), x)
             np.save('Data/labels/y_{}'.format(i), y)
-            np.save('Data/sent_embedding/sent_{}'.format(i), nuggets_sentence_embeddings)
+            #np.save('Data/sent_embedding/sent_{}'.format(i), nuggets_sentence_embeddings)
             f = open('Data/queries/query_{}'.format(i), 'w')
             f.write(repr(queries))
             f.close()
