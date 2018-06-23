@@ -24,9 +24,10 @@ class CorpusReader:
             self.topics_path_exists = False
         self.tagSentences(paragraph_path)
         self.build_paragraphs(paragraph_path)
-        self.build_nuggets(nugget_path)
+        if topics_path:
+            self.build_nuggets(nugget_path)
         self.devset_topics = [x for x in range(len(self.topics))][-2:]
-        if approach=='word':
+        if approach=='word' and topics_path:
             self.build_paragraph_word_scores()
         # Vocabulary takes too long right now and is not necessary yet for only word embedding features
         #self.build_vocabulary()
@@ -73,7 +74,7 @@ class CorpusReader:
             # remove noise
             # remove records where nuggets are null
             # remove records which contain several sentences
-            df.dropna(inplace=True)   
+            df.dropna(inplace=True)
             df['pointCount'] = df.nugget.apply(lambda x: x.count('.')+x.count('!')+x.count('?'))
             df = df[df['pointCount']<=1]
 
@@ -170,7 +171,7 @@ class CorpusReader:
         # key: (QueryID,DocumentIncrementerID started by 1, SentenceID started by 1)
         self.sentences_dict={}
         for file_name in source_documents:
-            
+
             try:
                 tree = ET.parse(document_path + file_name)
                 QueryID = tree.getroot().attrib['queryID']
@@ -184,14 +185,7 @@ class CorpusReader:
                             SentenceID+=1
                             self.sentences_dict[(QueryID,DocumentID+1,SentenceID)] = sentence.find('content').text
 
-                            
-                    
+
+
             except OSError as err:
                 print("OS error: {0}".format(err))
-            
-            
-                
-
-
-
-    
