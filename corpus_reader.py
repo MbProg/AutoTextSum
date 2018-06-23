@@ -6,6 +6,10 @@ from functools import reduce
 from nltk import word_tokenize
 from nltk import sent_tokenize
 import xml.etree.ElementTree as ET
+import re
+import logging
+import io
+import operator
 
 class CorpusReader:
     # if not specified the reader assumes that it is placed directly in the unzipped corpus directory
@@ -22,6 +26,7 @@ class CorpusReader:
             self.topics_path_exists = True
         else:
             self.topics_path_exists = False
+        # self.endResultPrepare(paragraph_path);
         self.tagSentences(paragraph_path)
         self.build_paragraphs(paragraph_path)
         if topics_path:
@@ -189,3 +194,56 @@ class CorpusReader:
 
             except OSError as err:
                 print("OS error: {0}".format(err))
+                
+    def endResultPrepare(self,document_path):
+        source_documents = [f for f in os.listdir(document_path) if '1' in f]
+        # self.SentenceCoveredByNugget is a dict
+        # key = QueryID/DocumentID+1/SentenceID
+        # value = (sentence, set of words in the nuggets)
+        self.SentenceCoveredByNugget={}
+        # 1. Fill self.SentenceCoveredByNugget by all the sentences in all the documents
+        for file_name in source_documents:
+
+            try:
+                tree = ET.parse(document_path + file_name)
+                QueryID = tree.getroot().attrib['queryID']
+                t_documents = tree.getroot()[0]
+                SentenceID = 0
+                for DocumentID,document in enumerate(t_documents):
+                    if document.tag == 'paragraph':
+                        break
+                    for sentences in document:
+                        for sentence in sentences:
+                            SentenceID+=1
+                            self.SentenceCoveredByNugget['{0}/{1}/{2}'.format(QueryID,DocumentID+1,SentenceID)] = (sentence.find('content').text,set(()))
+            except OSError as err:
+                print("OS error: {0}".format(err))
+
+            # 2. Now fill the second part of the tuple in the value in self.SentenceCoveredByNugget
+            # by creating a set of all words for the specific sentence that have been in the nugget
+            with open('nugget_predictions.txt','r') as f:
+                for line in f:
+                    linewords = re.split(r'\t+',line)
+                    if linewords[0].rstrip() in self.SentenceCoveredByNugget:
+                        self.SentenceCoveredByNugget[linewords[0].rstrip()] = (self.SentenceCoveredByNugget[linewords[0].rstrip()][0], \
+                                                                                set(self.SentenceCoveredByNugget[linewords[0].rstrip()][1] | set(linewords[1].split())))
+            # 3. Now we iterate thru self.SentenceCoveredByNugget to extract the sentences
+            #    where the ratio of the words in the sentence detected in the nugget to the whole vocabulary size of the sentence is higher than the THRESHOLD
+            # THRESHOLD = 0.4
+            counter = 0
+            sortedSentences={}
+            for sentence_id in self.SentenceCoveredByNugget:
+                sentenceVocabSize = len(set((self.SentenceCoveredByNugget[sentence_id][0].split())))
+                nuggetVocabSize = len(self.SentenceCoveredByNugget[sentence_id][1])
+                sortedSentences[sentence_id + ' \t ' + self.SentenceCoveredByNugget[sentence_id][0]] = nuggetVocabSize/sentenceVocabSize
+
+            sortedSentencesDesc = sorted(sortedSentences.items(),key=operator.itemgetter(1),reverse=True)
+
+            with io.open('nugget_predictions_final.txt', "a", encoding="utf-8") as f:
+                for sentence,ratio in sortedSentencesDesc:
+                    f.write(sentence + '\n')
+                    counter += 1
+                    if counter >= 30:
+                        break
+            print('Filename:',file_name," - Counter: ",counter)
+            self.SentenceCoveredByNugget={}
