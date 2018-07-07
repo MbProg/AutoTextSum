@@ -1,0 +1,12 @@
+1028	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
+Grammaticality	2	4	5	one giant sentence without good grama
+Non-Redundancy	5	1	5	
+Referential Clarity	1	5	5	
+Focus	1	4	5	
+Structure	1	5	5	
+Coherence	2	5	5	
+Readability	1	5	5	
+Information Content	1	5	5	i can not see the information if i can not understand the text
+Spelling	5	1	5	
+Length	4	1	5	
+Overall Quality	1	5	5	

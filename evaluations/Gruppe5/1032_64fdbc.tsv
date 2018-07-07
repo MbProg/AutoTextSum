@@ -1,0 +1,12 @@
+1032	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	4	5	5	"Problem “also” in Z.4"
+"Focus"	4	5	5	"Inwiefern passen die “Students with test anxiety” zu den Kindern mit Angsttörungen?"
+"Structure"	3	5	5	"Die Sätze am Anfang scheinen an beliebiger Position, aber das Ende ist gut"
+"Coherence"	3	5	5	"Die Verbindung vom ersten zum zweiten Satz ist nicht gut; vom zweiten zum dritten geht so"
+"Readability"	3	5	5	"Der Anfang der Summary lässt sich nicht so flüssig lesen"
+"Information Content"	5	5	5	"Selbst der erste Satz ist ok als Defintion von “sleep problems”"
+"Spelling"	5	1	5	
+"Length"	4	2	2	
+"Overall Quality"	4	5	5	

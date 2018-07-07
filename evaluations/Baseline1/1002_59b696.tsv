@@ -1,0 +1,12 @@
+1002	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Reasons/comments (free text)	
+Grammaticality	4	4	4	single " (4)	
+Non-Redundancy	5	5	4		
+Referential Clarity	2	3	4	who is perry? (1), it (3), Kajeet (4)	
+Focus	2	4	3		
+Structure	3	3	3		
+Coherence	3	4	4		
+Readability	5	3	4		
+Information Content	4	5	5		
+Spelling	5	4	3		
+Length	5	4	2		
+Overall Quality	4	4	5		

@@ -1,0 +1,12 @@
+1024	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Reasons/comments (free text)	
+Grammaticality	5	5	4		
+Non-Redundancy	4	4	3		
+Referential Clarity	3	4	4		
+Focus	2	4	4		
+Structure	3	4	4		
+Coherence	4	3	3		
+Readability	5	4	5		
+Information Content	3	4	5		
+Spelling	5	5	3		
+Length	5	2	1		
+Overall Quality	3	4	5		

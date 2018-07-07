@@ -1,0 +1,12 @@
+1043	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	2	5	"Z.5 unvollständiger Satz, wahrscheinlich eine Überschrift oder so etwas"
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	1	5	5	"Probleme: Z..6 “it”, “him”, Z.7 “this program”, “this site”, Z.8 Wer ist “David”?, Z,9 “they”, “other children”"
+"Focus"	1	5	5	"das Thema wird nicht einmal im Ansatz klar"
+"Structure"	1	5	5	
+"Coherence"	1	5	5	
+"Readability"	1	5	5	
+"Information Content"	2	5	5	"Nur die ersten beiden Sätze enthalten Informationen"
+"Spelling"	5	1	5	
+"Length"	2	2	2	
+"Overall Quality"	1	5	5	

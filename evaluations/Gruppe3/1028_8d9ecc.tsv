@@ -1,0 +1,12 @@
+1028	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
+Grammaticality	5	4	5	
+Non-Redundancy	5	5	4	
+Referential Clarity	5	5	4	
+Focus	4	5	3	On some sentences the focus on “parent’s involvement” is lost
+Structure	5	4	4	
+Coherence	5	4	3	
+Readability	5	4	4	
+Information Content	4	5	3	No gain of information in the 4th sentence
+Spelling	5	4	5	Uppercased words in sentence 4 for no reason. Space before period in the 7th sentence.
+Length	5	5	5	
+Overall Quality	5	5	3	

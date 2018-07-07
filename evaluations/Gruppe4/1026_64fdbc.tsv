@@ -1,0 +1,12 @@
+1026	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	2	5	"Z. 2 : ein “and” oder so fehlt im letzten Teil des Satzes"
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	3	5	5	"Z.2: wo lernen die “kids” all das?, Z.3 welcher “article”?"
+"Focus"	5	5	5	
+"Structure"	5	5	5	"Der Text ist genau in zwei Teile jeweils bestehend aus zwei Sätzen geteilt"
+"Coherence"	4	5	5	"Z.3: Der Satzanfang “Summary:” macht den Textfluss an der Stelle etwas kaputt"
+"Readability"	4	5	5	
+"Information Content"	2	5	5	"Das ist leider  das Problem der Zusammenfassung: der erste Teil enthält fast keine Informationen; immerhin ist der zweite Teil da besser"
+"Spelling"	5	1	5	
+"Length"	5	2	2	
+"Overall Quality"	3	5	5	"die gute Struktur verhilft dann noch zu drei Punkten"

@@ -1,0 +1,12 @@
+1005	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Reasons/comments (free text)	
+Grammaticality	5	4	3		
+Non-Redundancy	4	4	3		
+Referential Clarity	5	4	3		
+Focus	4	4	2		
+Structure	4	3	3		
+Coherence	4	3	3		
+Readability	3	4	4	lots of brackets	
+Information Content	2	3	5		
+Spelling	5	4	2		
+Length	3	3	2	since i dont know what this is about and only 474 chars are beeing used there would be space for another short sentence	
+Overall Quality	3	3	5	because the summary consist of only 2 sentences lots of the point above score very high even tho the information gain is too low, which is the main goal of a summary	

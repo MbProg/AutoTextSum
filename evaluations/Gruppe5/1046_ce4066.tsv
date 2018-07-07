@@ -1,0 +1,12 @@
+1046	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Reasons/comments (free text)
+Grammaticality	2	3	4	part of a list in summary
+Non-Redundancy	2	3	4	2 sentence with exactly the same meaning
+Referential Clarity	4	3	4	
+Focus	4	3	4	all sentences stay on the same topic
+Structure	3	3	3	good starting sentence
+Coherence	4	3	3	
+Readability	4	3	3	
+Information Content	3	4	4	topic slightly míssed
+Spelling	4	3	4	
+Length	3	3	3	
+Overall Quality	3	4	4	

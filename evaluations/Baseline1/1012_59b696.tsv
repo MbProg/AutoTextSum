@@ -1,0 +1,12 @@
+1012	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Reasons/comments (free text)	
+Grammaticality	3	5	4	sentence 3 is missing punctuation +  triple *	
+Non-Redundancy	4	4	3		
+Referential Clarity	2	3	4	one (4), I (2), me (3)	
+Focus	1	3	3		
+Structure	2	5	3		
+Coherence	3	4	4		
+Readability	2	4	4		
+Information Content	2	4	5		
+Spelling	5	5	3		
+Length	3	3	3	since there a lot of non relevant sentences this summary is too long	
+Overall Quality	2	3	5		
