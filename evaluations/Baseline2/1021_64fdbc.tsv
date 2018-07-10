@@ -1,0 +1,12 @@
+1021	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	1	5	"umgangssprachlich, aber ok"
+"Non-Redundancy"	5	1	5	
+"Referential Clarity"	1	2	5	"Z. 4, 7, 8: unaufgelöste Personalpronomen; Z.9: welcher “good point”?"
+"Focus"	2	2	5	"Es ist klar, dass es um Schule geht, aber das war es auch schon."
+"Structure"	1	2	5	
+"Coherence"	1	2	5	
+"Readability"	1	2	5	
+"Information Content"	2	5	5	"Z. 4,6,7,8,9: enthalten wenig bis gar keine Information"
+"Spelling"	5	1	5	
+"Length"	2	1	2	
+"Overall Quality"	1	5	5	

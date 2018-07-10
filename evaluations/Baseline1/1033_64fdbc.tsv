@@ -1,0 +1,12 @@
+1033	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	1	5	5	"Probleme: Z.6: “Or” was?, Z.7: welche “study”?, Z.8: “it”,”also”, Z.10: “They”, Z.11: “I”, “she”, “it”"
+"Focus"	2	5	5	"Es ist klar, dass es um Schule und Verantwortung geht, aber wie genau? Das ist nicht klar erkennbar"
+"Structure"	3	5	5	"Bis Z.9 ist eine Struktur erkennbar, aber danach nicht mehr"
+"Coherence"	2	5	5	"Z. 6: Das “Or” am Satzanfang suggeriert eine Verbindung zum vorherigen Satz, die es nicht gibt; Sprung zwischen Z. 6 und 7"
+"Readability"	3	5	5	"Der Anfang ist ok, aber am Ende wird es verwirrend."
+"Information Content"	2	5	5	"Mehr als die Hälfte der Sätze enthält keine Informationen"
+"Spelling"	5	1	5	
+"Length"	3	2	2	
+"Overall Quality"	2	5	5	"die Satzauswahl und die Reihenfolge ist größtenteils nicht gut"

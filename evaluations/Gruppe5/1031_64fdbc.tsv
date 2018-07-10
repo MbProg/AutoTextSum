@@ -1,0 +1,12 @@
+1031	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	5	5	5	
+"Focus"	3	5	5	"Das Thema scheint “homeschooling” und “discipline” zu sein. Aber im letzten Satz scheint das Thema Homeschooling dann völlig zu fehlen."
+"Structure"	5	5	5	
+"Coherence"	4	5	5	"Der Übergang vom zweiten zum dritten Satz ist nicht gut, das “And” passt auch nicht."
+"Readability"	4	5	5	"der letzte Satz hat mich in dem Kontext etwas verwirrt"
+"Information Content"	4	5	5	"die ersten zwei Sätze beinhalten einen guten Informationsgehalt, der dritte Satz geht so"
+"Spelling"	5	1	5	
+"Length"	4	2	2	
+"Overall Quality"	4	5	5	

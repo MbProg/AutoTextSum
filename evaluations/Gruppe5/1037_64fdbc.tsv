@@ -1,0 +1,12 @@
+1037	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	2	5	5	"Probleme: Z.3 “these”, Z.5 “the following” wird nicht ausgeführt; Z.5 Was ist das “new cutoff date”?"
+"Focus"	4	5	5	"Z. 45 Give children who feel insecure in situations with peers some social training”: Es ist nicht vollständig klar, wie dieser Satz zum Thema passt"
+"Structure"	2	5	5	"nicht klar erkennbar; allerhöchstens letzter Satz als Schluss ok"
+"Coherence"	2	5	5	"zwischen den ersten zwei Sätzen gut, danach nicht mehr"
+"Readability"	2	5	5	
+"Information Content"	3	5	5	"Satz 3 und 4 enthalten leider keine richtigen Informationen und der letzte Satz ist auch nicht ganz verständlich (s.o.)"
+"Spelling"	4	1	5	"In Z.5 fehlt ein Punkt"
+"Length"	3	2	2	
+"Overall Quality"	2	5	5	"Neben der Struktur reichen die Informationen auch nicht gut genug"

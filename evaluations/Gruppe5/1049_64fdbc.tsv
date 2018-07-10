@@ -1,0 +1,12 @@
+1049	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	1	5	"Z. 7 Prädikat fehlt"
+"Non-Redundancy"	5	1	5	
+"Referential Clarity"	4	1	5	"Problem: Z.4, “this [social] development”?"
+"Focus"	1	5	5	"Das Thema wird nicht klar: Schulsystem? Waldorf-Schulen? ADHS???"
+"Structure"	4	1	5	"ist aber auch nicht so schwierig bei nur drei Sätzen"
+"Coherence"	2	1	5	"Problem: Satz mit ADHS am Ende passt nicht rein; großer logischer Sprung"
+"Readability"	3	1	5	"Der Sprung am Ende stört"
+"Information Content"	3	1	5	
+"Spelling"	4	1	5	"Z.4 Anfang: ein Anführungszeichen zu viel"
+"Length"	2	1	2	
+"Overall Quality"	1	5	5	"ohne klarem Thema bringt die Summary nichts"
