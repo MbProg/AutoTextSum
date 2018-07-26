@@ -1,0 +1,12 @@
+1006	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
+Grammaticality	3	1	4	
+Non-Redundancy	4	1	4	
+Referential Clarity	1	5	4	
+Focus	1	5	4	
+Structure	1	5	4	
+Coherence	1	5	4	
+Readability	2	4	4	
+Information Content	1	5	4	
+Spelling	4	1	4	
+Length	3	1	4	
+Overall Quality	1	5	4	doesn't matter if gramaticallity or spelling ar good if it doesn't make the text any clearer

@@ -1,0 +1,12 @@
+1028	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	1	5	"Z. 4 ist ein richtiger Satz, wahrscheinlich weil es eine Überschrift ist"
+"Non-Redundancy"	5	1	5	
+"Referential Clarity"	5	1	5	
+"Focus"	2	1	5	"es ist nicht klar, was das Thema der Zusammenfassung ist. Irgendwie geht es wohl um Kinder, Eltern und Drogenmissbrauch.  Jeder der drei Sätze suggeriert etwas anderes: Satz 1: Erziehung; Satz 2: Alkoholmissbrauch bei Jugendlichen vorbeugen, Satz 3: Drogenmissbrauch und Jugendliche im Allgemeinen"
+"Structure"	3	1	5	"durch den ersten Satz ist nicht klar, dass es danach um Drogenmissbrauch gehen wird"
+"Coherence"	4	1	5	"Z. 1 und 2 hängen gut zusammen und bei 2 und 3 hängen auch ok zusammen"
+"Readability"	3	1	5	"Durch den schwankenden Fokus wird Verwirrung gestiftet"
+"Information Content"	2	5	5	"Z.3 enthält tolle Informationen, aber Z. 2 nicht wirklich und Z.4 gar nciht"
+"Spelling"	5	1	5	
+"Length"	4	1	2	
+"Overall Quality"	2	5	5	"Leider ist der Informationsgehalt sehr niedrig und es ist nicht klar, welches Thema hier denn jetzt zusammengefasst wird"

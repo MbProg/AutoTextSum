@@ -1,0 +1,12 @@
+1033	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
+Grammaticality	4	1	5	If you read this, read the accompanying summary. It's worth it.
+Non-Redundancy	5	1	5	If you read this, read the accompanying summary. It's worth it.
+Referential Clarity	5	1	5	If you read this, read the accompanying summary. It's worth it.
+Focus	1	5	5	If you read this, read the accompanying summary. It's worth it.
+Structure	1	5	5	If you read this, read the accompanying summary. It's worth it.
+Coherence	5	1	5	If you read this, read the accompanying summary. It's worth it.
+Readability	1	3	5	If you read this, read the accompanying summary. It's worth it.
+Information Content	3	5	3	If you read this, read the accompanying summary. It's worth it.
+Spelling	5	1	5	If you read this, read the accompanying summary. It's worth it.
+Length	3	3	5	If you read this, read the accompanying summary. It's worth it.
+Overall Quality	1	5	4	Seriously, though. Picked a subtopic and then missed it.

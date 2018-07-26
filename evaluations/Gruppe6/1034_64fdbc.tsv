@@ -1,0 +1,12 @@
+1034	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	1	5	5	"Probleme: Z.3 “they”, Z.5 “all”, Z.6 wo?, Z.7 wann?"
+"Focus"	3	5	5	"Das genaue Thema geht nicht aus der Zusammenfassung selbst hervor. Ist es, dass Computerspiele generell Kinder süchtig machen? Andererseits könnte man aber auch denken, dass es um “ADHS” und “Großeltern” geht"
+"Structure"	2	5	5	"Einleitung/erster Satz ist gut, danach wird es aber wirr"
+"Coherence"	1	5	5	"Zwischen keinen der Sätze ist ein guter Zusammenhang erkennbar"
+"Readability"	2	5	5	"Dadurch dass die Sätze in einer beliebigen Reihenfolge stehen"
+"Information Content"	2	5	5	"Zeilen 2 und 4 halten die einzigen wertvollen Informationen"
+"Spelling"	5	1	5	
+"Length"	3	2	2	
+"Overall Quality"	2	5	5	

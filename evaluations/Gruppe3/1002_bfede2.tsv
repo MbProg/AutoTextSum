@@ -1,0 +1,12 @@
+1002	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high)	Reasons/comments (free text)	
+Grammaticality	4	3	3		
+Non-Redundancy	4	2	3		
+Referential Clarity	2	3	4	Multiple missing references	
+Focus	3	3	3		
+Structure	3	3	3	Good first sentence, rest is kind of bad	
+Coherence	2	4	4		
+Readability	3	3	3		
+Information Content	3	4	3	to many fluff sentences	
+Spelling	2	3	4	Some bad spelling (there instead of their) and encoding errors	
+Length	3	3	3		
+Overall Quality	3	4	4		

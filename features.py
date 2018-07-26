@@ -3,7 +3,7 @@ class Features:
     import nltk
     from nltk import FreqDist
 
-
+    # feature functions that work: get_domain_frequency, get_common_frequency, get_similarity_to_query
 
     #global variables
     domain_fdist = FreqDist()
@@ -20,28 +20,36 @@ class Features:
     # String t: term
     # List(String) domain_texts: contains all texts for one query
     # TODO: doesn't work!
-    def get_domain_relevance(term, paragraphs):
-        nr_domains_containing_t = 0
-        for text in paragraphs:
-            tokens = nltk.word_tokenize(text)
-            for t in tokens:
-                fdist[t] +=1
-        # (# of term t in domain d) / (# of terms in domain d)
-        term_frequency = fdist[term]/fdist.N()
-        # (# of domains containing t) / (# of domains)
-        # 1 at the beginning because t is at least contained in its own domain
-        nr_domains_containg_t = 1
-        reuter_domains = reuters.categories()
-        for domain in reuter_domains:
-            if term in reuters.words(categories=[domain]):
-                nr_domains_containg_t += 1
-        inverse_domain_frequency = nr_domains_containing_t/len(reuter_domains)
-        domain_relevance = term_frequency*inverse_domain_frequency
-        return domain_relevance
+#    def get_domain_relevance(term, paragraphs):
+#        nr_domains_containing_t = 0
+#        for text in paragraphs:
+#            tokens = nltk.word_tokenize(text)
+#            for t in tokens:
+#                fdist[t] +=1
+#        # (# of term t in domain d) / (# of terms in domain d)
+#        term_frequency = fdist[term]/fdist.N()
+#        # (# of domains containing t) / (# of domains)
+#        # 1 at the beginning because t is at least contained in its own domain
+#        nr_domains_containg_t = 1
+#        reuter_domains = reuters.categories()
+#        for domain in reuter_domains:
+#            if term in reuters.words(categories=[domain]):
+#                nr_domains_containg_t += 1
+#        inverse_domain_frequency = nr_domains_containing_t/len(reuter_domains)
+#        domain_relevance = term_frequency*inverse_domain_frequency
+#        return domain_relevance
+
+    def get_domain_relevance(self, term):
+        common_frequency = self.get_common_frequency(term)
+        domain_frequency = self.get_domain_frequency(term)
+        if common_frequency > 0:
+            return common_frequency/domain_frequency
+        else:
+            return common_frequency/0.00001
 
     # works
     # computes the term frequncy in one domain
-    def get_term_frequency(self, term):
+    def get_domain_frequency(self, term):
         # (# of term t in domain d) / (# of terms in domain d)
         term_frequency = self.domain_fdist[term]/self.domain_fdist.N()
         return term_frequency*100
@@ -54,6 +62,7 @@ class Features:
     def get_position(self, paragraph):
         return paragraphs.index(paragraph)
 
+    # seems to work
     def is_at_beginning(self, paragraph):
         pos = paragraphs.index(paragraph)
         text_length = len(paragraphs)
@@ -141,10 +150,10 @@ paragraphs = ['Attention deficit hyperactivity disorder (ADHD) is a mental disor
 
 f = Features(paragraphs, "action figure")
 
-#print(f.get_term_frequency('attention'))
+print(f.get_domain_relevance('attention'))
 #print('Common frequncy(action)', f.get_common_frequency('wanna'))
 #print('Common frequncy(book)', f.get_common_frequency('action'))
 #print(f.get_similarity_to_query("action"))
 #print('Common frequncy(beech)', get_common_frequency('beech'))
 #print('Common frequncy(halibut)', get_common_frequency('halibut'))
-print(f.is_at_beginning('Although it causes impairment, particularly in modern society, many children with ADHD have a good attention span for tasks they find interesting.'))
+print(f.get_position('Although it causes impairment, particularly in modern society, many children with ADHD have a good attention span for tasks they find interesting.'))

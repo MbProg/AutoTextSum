@@ -1,0 +1,12 @@
+1027	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)	
+Grammaticality	2	4	5	"Summary begins with ""but"", line 3 starts with ""PTA"""	
+Non-Redundancy	5	4	5		
+Referential Clarity	4	5	5		
+Focus	4	4	5		
+Structure	4	4	5		
+Coherence	5	5	5		
+Readability	5	5	5		
+Information Content	4	5	5		
+Spelling	5	3	5		
+Length	4	3	5		
+Overall Quality	4	5	5		

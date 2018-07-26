@@ -1,0 +1,12 @@
+1010	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	2	5	"4. Satz als einziger problematisch"
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	3	5	5	"Wer ist “Chris”, wer ist “I”?"
+"Focus"	5	5	5	
+"Structure"	4	5	5	
+"Coherence"	3	5	5	
+"Readability"	3	5	5	
+"Information Content"	4	5	5	
+"Spelling"	4	1	5	"Satz 4 enthält falsche Groß- und Kleinschreibung"
+"Length"	4	2	2	
+"Overall Quality"	4	5	5	

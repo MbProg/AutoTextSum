@@ -1,0 +1,12 @@
+1016	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	1	5	
+"Non-Redundancy"	5	1	5	
+"Referential Clarity"	5	1	5	
+"Focus"	5	1	5	
+"Structure"	4	1	5	
+"Coherence"	4	1	5	
+"Readability"	2	1	5	"Der 2. Satz ist eine sehr lange, unübersichtliche Aufzählung"
+"Information Content"	1	5	5	"Eigentlich enthält nur der letzte Satz eine Information und diese ist auch noch sehr allgemein. Der lange Fragesatz enthält ja schon per se keine wirklichen Informationen."
+"Spelling"	4	1	5	"Ein Punkt fehlt (Z.1)"
+"Length"	2	1	2	"Es werden fast nur Fargen aufgeworfen, deren Beantwortung fehlt."
+"Overall Quality"	1	5	5	"Da eine Summary dazu dient zu informieren und hier keine Informationen vermittelt werden, ist diese Summary wertlos"

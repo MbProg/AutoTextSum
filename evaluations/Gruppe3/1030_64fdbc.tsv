@@ -1,0 +1,12 @@
+1030	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	2	5	
+"Non-Redundancy"	5	3	5	
+"Referential Clarity"	3	5	5	"Z. 5, Z.7: für welche Schulen gilt das?"
+"Focus"	3	5	5	"Laut Überschrift ud einigen Sätzen nach soll es allgemein um “school punishment” gehen; In der Hälfte des Textes geht es aber um Corporal punishment im Speziellen (davon die ersten zwei Sätze)"
+"Structure"	2	5	5	"die Sätze scheinen größtenteils an beliebiger Stelle zu stehen; man könnte Z. 3 und 4 für eine bessere Einleitung vertauschen"
+"Coherence"	2	5	5	"die ersten beiden Sätze hängen zusammen; danach ist ein guter Zusammenhang zwischen den Sätzen nicht mehr erkennbar"
+"Readability"	4	5	5	
+"Information Content"	4	5	5	"hoher Informationsgehalt; aber Sätze nicht in guter Reihenfolge"
+"Spelling"	5	1	5	
+"Length"	4	2	2	
+"Overall Quality"	3	5	5	"Die doch ganz gute Auswahl der Sätze gleicht die fehlende Struktur und Kohärenz aus"
