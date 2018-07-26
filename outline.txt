@@ -1,0 +1,56 @@
+(
+-Abstract
+-Introduction
+1 Seite)
+Abstract und Conclusion sollte derselbe machen
+Stephane,
+(
+-Related Work
+	- Automatische Zusammenfassung
+	- Metaphor Features?
+	- Word Embedding
+	- Sentence Embedding
+0.5 - 1 Seite)
+Stephane,
+(
+-Daten
+	-Aiphes Datensatz
+	-Wikipedia Corpus
+	0.5 Seiten)
+Hannah
+(
+-Implementation
+
+	-First approach:
+
+	-Second approach:
+
+	-Nugget to Summary erklären
+3 Seiten)
+Jannis, Tim
+(
+-Evaluation:
+
+	-Recall, Precision, F1 Nugget
+
+	-Mögliche Gründe für schlechten Ergebnisse
+
+	-Manuelle Evaluation beschreiben
+
+	-Automatische Methoden auf manuellen Evaluationen
+
+	-Manuelle Analyse (Baseline beachten)
+		- Was genau war das Problem (schlechtesten Summaries betrachten)
+
+	-Correlations
+3 - Open end)
+Jannis
+Hannah
+Tim
+(
+Conclusion & Further Work
+	-Sequence to Sequence
+
+	-Satzweise
+	1 Seite)
+Stephane, Tim
