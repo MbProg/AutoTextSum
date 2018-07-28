@@ -1,12 +1,12 @@
-1030	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	5	
-Non-Redundancy	5	5	4	
-Referential Clarity	5	5	4	
-Focus	5	5	3	
-Structure	5	4	3	
-Coherence	4	4	3	
-Readability	5	4	4	
-Information Content	5	5	4	
-Spelling	5	4	5	
-Length	4	5	5	There is some place wasted due the ì(6)î in the beginning of the summary for no special reason
-Overall Quality	5	5	4	
+1030	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	5	
+"Non-Redundancy"	5	5	4	
+"Referential Clarity"	5	5	4	
+"Focus"	5	5	3	
+"Structure"	5	4	3	
+"Coherence"	4	4	3	
+"Readability"	5	4	4	
+"Information Content"	5	5	4	
+"Spelling"	5	4	5	
+"Length"	4	5	5	"There is some place wasted due the ‚Äú(6)‚Äù in the beginning of the summary for no special reason"
+"Overall Quality"	5	5	4	

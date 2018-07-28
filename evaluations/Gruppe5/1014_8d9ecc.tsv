@@ -1,12 +1,12 @@
-1014	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	5	
-Non-Redundancy	5	5	4	
-Referential Clarity	5	5	4	
-Focus	4	5	2	I wonder, whether the topic is only about the social aspects of smoking teens on the first place
-Structure	5	4	5	
-Coherence	5	4	4	
-Readability	5	4	5	
-Information Content	5	5	3	
-Spelling	4	3	3	Typo in the first sentence in the word ìcorrelatedî
-Length	4	5	4	There is some place wasted due the three dots in the beginning of the summary for no special reason
-Overall Quality	5	5	5	
+1014	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	5	
+"Non-Redundancy"	5	5	4	
+"Referential Clarity"	5	5	4	
+"Focus"	4	5	2	"I wonder, whether the topic is only about the social aspects of smoking teens on the first place"
+"Structure"	5	4	5	
+"Coherence"	5	4	4	
+"Readability"	5	4	5	
+"Information Content"	5	5	3	
+"Spelling"	4	3	3	"Typo in the first sentence in the word ‚Äúcorrelated‚Äù"
+"Length"	4	5	4	"There is some place wasted due the three dots in the beginning of the summary for no special reason"
+"Overall Quality"	5	5	5	

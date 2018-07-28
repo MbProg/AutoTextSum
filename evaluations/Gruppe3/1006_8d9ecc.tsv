@@ -1,12 +1,12 @@
-1006	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	4	
-Non-Redundancy	5	5	5	
-Referential Clarity	5	3	5	
-Focus	5	5	4	
-Structure	4	4	4	
-Coherence	4	4	4	
-Readability	5	4	5	
-Information Content	4	5	4	The 4th sentence does not deliver any important information because it’s an incitement
-Spelling	4	4	5	Opening double quotes at the last sentence are not closed
-Length	5	5	5	
-Overall Quality	5	5	4	
+1006	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	4	
+"Non-Redundancy"	5	5	5	
+"Referential Clarity"	5	3	5	
+"Focus"	5	5	4	
+"Structure"	4	4	4	
+"Coherence"	4	4	4	
+"Readability"	5	4	5	
+"Information Content"	4	5	4	"The 4th sentence does not deliver any important information because itâ€™s an incitement"
+"Spelling"	4	4	5	"Opening double quotes at the last sentence are not closed"
+"Length"	5	5	5	
+"Overall Quality"	5	5	4	

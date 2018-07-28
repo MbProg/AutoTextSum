@@ -1,12 +1,12 @@
-1041	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	4	
-Non-Redundancy	5	5	5	
-Referential Clarity	3	5	5	"""Such policy…"""
-Focus	4	4	4	
-Structure	4	4	4	
-Coherence	3	4	3	
-Readability	3	4	5	"""Such policy…"", ""Sending information…"""
-Information Content	3	3	4	Some sentences are not pushing the topic or are out of context
-Spelling	5	4	4	
-Length	4	4	5	Very short
-Overall Quality	4	5	4	
+1041	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	4	
+"Non-Redundancy"	5	5	5	
+"Referential Clarity"	3	5	5	"""Such policy"""
+"Focus"	4	4	4	
+"Structure"	4	4	4	
+"Coherence"	3	4	3	
+"Readability"	3	4	5	"""Such policy"", ""Sending information"""
+"Information Content"	3	3	4	"Some sentences are not pushing the topic or are out of context"
+"Spelling"	5	4	4	
+"Length"	4	4	5	"Very short"
+"Overall Quality"	4	5	4	
