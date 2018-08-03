@@ -1,12 +1,12 @@
-1050	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	2	I don’t know whether this is the right category for this critique, but there are at least two sentences within the first line (which is a violation of the summary guidelines)
-Non-Redundancy	5	5	5	
-Referential Clarity	3	5	5	Unclear references in the sentences 4 and 8
-Focus	3	5	3	
-Structure	3	4	4	
-Coherence	4	4	3	
-Readability	5	4	4	
-Information Content	2	5	5	No gain of information in most sentences of the summary
-Spelling	5	3	5	The first sentence is not starting with a uppercased word
-Length	5	5	5	
-Overall Quality	3	5	4	
+1050	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	2	"I donâ€™t know whether this is the right category for this critique, but there are at least two sentences within the first line (which is a violation of the summary guidelines)"
+"Non-Redundancy"	5	5	5	
+"Referential Clarity"	3	5	5	"Unclear references in the sentences 4 and 8"
+"Focus"	3	5	3	
+"Structure"	3	4	4	
+"Coherence"	4	4	3	
+"Readability"	5	4	4	
+"Information Content"	2	5	5	"No gain of information in most sentences of the summary"
+"Spelling"	5	3	5	"The first sentence is not starting with a uppercased word"
+"Length"	5	5	5	
+"Overall Quality"	3	5	4	

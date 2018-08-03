@@ -1,12 +1,12 @@
-1022	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	4	5	3	In the last line, I think the last sentence has to be split into two. I don’t know whether this is the right category for this critique, but there are at least two sentences within the last line (which is a violation of the summary guidelines)
-Non-Redundancy	4	5	4	The last three sentences seem redundant
-Referential Clarity	5	5	5	
-Focus	5	5	5	
-Structure	5	4	4	
-Coherence	4	4	4	
-Readability	5	4	3	
-Information Content	4	5	4	The 1st sentence has no real content but is not bad to start the summary with this kind of question. Sentence 3 does not give any information especially in connection with the following sentence
-Spelling	4	4	5	In the first sentence, many words are capitalized for no reason
-Length	4	5	5	Only about 400 characters.
-Overall Quality	4	5	3	
+1022	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	5	3	"In the last line, I think the last sentence has to be split into two. I donâ€™t know whether this is the right category for this critique, but there are at least two sentences within the last line (which is a violation of the summary guidelines)"
+"Non-Redundancy"	4	5	4	"The last three sentences seem redundant"
+"Referential Clarity"	5	5	5	
+"Focus"	5	5	5	
+"Structure"	5	4	4	
+"Coherence"	4	4	4	
+"Readability"	5	4	3	
+"Information Content"	4	5	4	"The 1st sentence has no real content but is not bad to start the summary with this kind of question. Sentence 3 does not give any information especially in connection with the following sentence"
+"Spelling"	4	4	5	"In the first sentence, many words are capitalized for no reason"
+"Length"	4	5	5	"Only about 400 characters."
+"Overall Quality"	4	5	3	

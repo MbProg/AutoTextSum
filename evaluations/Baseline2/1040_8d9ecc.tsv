@@ -1,12 +1,12 @@
-1040	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	4	4	2	I don’t know whether this is the right category for this critique but there are multiple sentences within one line (which is violating the summary guidelines)
-Non-Redundancy	5	4	5	
-Referential Clarity	5	4	3	
-Focus	2	5	3	The summary seems to only consists of one extract of a document. Therefore it can barely cover the common theme of the given documents
-Structure	5	3	5	Good, due to the fact that is one extract of a document
-Coherence	5	3	5	Good, due to the fact that is one extract of a document
-Readability	5	3	5	Good, due to the fact that is one extract of a document
-Information Content	4	5	4	
-Spelling	5	4	5	
-Length	4	4	5	Only about 500 characters
-Overall Quality	4	5	3	
+1040	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	4	4	2	"I donâ€™t know whether this is the right category for this critique but there are multiple sentences within one line (which is violating the summary guidelines)"
+"Non-Redundancy"	5	4	5	
+"Referential Clarity"	5	4	3	
+"Focus"	2	5	3	"The summary seems to only consists of one extract of a document. Therefore it can barely cover the common theme of the given documents"
+"Structure"	5	3	5	"Good, due to the fact that is one extract of a document"
+"Coherence"	5	3	5	"Good, due to the fact that is one extract of a document"
+"Readability"	5	3	5	"Good, due to the fact that is one extract of a document"
+"Information Content"	4	5	4	
+"Spelling"	5	4	5	
+"Length"	4	4	5	"Only about 500 characters"
+"Overall Quality"	4	5	3	

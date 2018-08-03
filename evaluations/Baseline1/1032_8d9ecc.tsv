@@ -1,12 +1,12 @@
-1032	Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)	Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)	Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) 	Reasons/comments (free text)
-Grammaticality	5	4	4	
-Non-Redundancy	5	5	4	
-Referential Clarity	3	5	3	“This” in the first sentence. “This” in the 3rd sentence is probably not referencing to the content of the sentence before
-Focus	4	5	2	
-Structure	3	4	3	Bad structure because you cannot really catch the common theme
-Coherence	4	4	3	
-Readability	5	4	4	
-Information Content	4	5	4	The first sentence delivers no information since you do not know what “this” refers to.
-Spelling	4	4	5	Some double quotes are missing in sentences 5 and 6
-Length	5	5	5	
-Overall Quality	4	5	3	
+1032	"Score (1=very poor,2=poor,3=barely acceptable,4=good,5=very good)"	"Weight (1=completely unimportant, 2= unimportant, 3= indifferent, 4= important, 5=absolutely important)"	"Confidence  (1=very low, 2= low, 3= half sure, 4= high, 5=very high) "	"Reasons/comments (free text)"
+"Grammaticality"	5	4	4	
+"Non-Redundancy"	5	5	4	
+"Referential Clarity"	3	5	3	"""This"" in the first sentence. ""This"" in the 3rd sentence is probably not referencing to the content of the sentence before"
+"Focus"	4	5	2	
+"Structure"	3	4	3	"Bad structure because you cannot really catch the common theme"
+"Coherence"	4	4	3	
+"Readability"	5	4	4	
+"Information Content"	4	5	4	"The first sentence delivers no information since you do not know what ""this"" refers to."
+"Spelling"	4	4	5	"Some double quotes are missing in sentences 5 and 6"
+"Length"	5	5	5	
+"Overall Quality"	4	5	3	
