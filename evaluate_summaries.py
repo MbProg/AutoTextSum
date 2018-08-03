@@ -4,12 +4,15 @@ import re
 from collections import defaultdict
 from nltk.probability import FreqDist
 
-eval_dir = 'evaluations/Gruppe6'
+eval_dir = 'evaluations/Gruppe1'
 tsv_files = [f for f in os.listdir(eval_dir) if re.search(r'.tsv$', f)]
 
 summary_names = set([s[:4] for s in tsv_files])
 eval_dict = defaultdict(list)
 eval_categories = []
+
+print("----------- Structure ----------------")
+
 
 # fill dictionary for e valuation
 for sn in summary_names:
@@ -24,6 +27,9 @@ for sn in summary_names:
             weight = r[2] if r[2] is not '' else 1
             confidence = r[3] if r[3] is not '' else 1
             summ_dict[r[0]].append((score, weight, confidence))
+            if r[0]=='Structure' and int(score) < 3:
+                print(e)
+                print(r[4])
     eval_dict[sn] = summ_dict
 
 # extract category names
