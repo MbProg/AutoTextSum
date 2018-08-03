@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.6.23)  3 AUG 2018 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.6.23)  3 AUG 2018 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,9 +447,9 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
+ [5]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 402.
- [5]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 419.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
@@ -463,13 +463,13 @@ Package rerunfilecheck Info: File `nips_2018.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 7551 strings out of 492649
- 115166 string characters out of 6135778
+ 7554 strings out of 492649
+ 115193 string characters out of 6135778
  240551 words of memory out of 5000000
  11185 multiletter control sequences out of 15000+600000
- 55000 words of font info for 145 fonts, out of 8000000 for 9000
+ 55130 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,8n,38p,1012b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,8n,38p,1993b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fon
 ts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -481,7 +481,7 @@ ic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on nips_2018.pdf (6 pages, 146799 bytes).
+Output written on nips_2018.pdf (6 pages, 147620 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
