@@ -75,7 +75,7 @@
 \maketitle
 
 \begin{abstract}
-  Today there are many documents, articles, papers and reports available in digital form. These volumes of text are invaluable sources of information and knowledge that need to be effectively summarized to be useful. In Automatic text summarization machine learning techniques are often used to generate summaries. A prior step to the generation of summaries is usually the extraction of nuggets. This paper presents the two approaches we used for the extraction of nuggets, as well as a description of their effectiveness and shortcomings. 
+  Today there are many documents, articles, papers and reports available in digital form. These volumes of text are invaluable sources of information and knowledge that need to be effectively summarized to be useful. In automatic text summarization machine learning techniques are often used to generate summaries. A prior step to the generation of summaries is usually the extraction of nuggets. This paper presents the two approaches we use for the extraction of nuggets, as well as a description of their effectiveness and shortcomings. 
   
 \end{abstract}
 
@@ -85,9 +85,6 @@ With the dramatic growth of the internet, people are overwhelmed by the tremendo
 \textit{Automatic summarization} is the process of shortening a text document with software, in order to create a summary with the major points of the original document.	     
 
 In general, there  are two different approaches for text summarization:\textit{extraction} and \textit{abstraction}
- 
-
-
 
 
 \begin{center}
@@ -147,6 +144,16 @@ and text of the paper with your own.
 The formatting instructions contained in these style files are
 summarized in Sections \ref{gen_inst}, \ref{headings}, and
 \ref{others} below.
+
+\section{Evaluation}
+
+\subsection{Manual evaluation}
+
+The summaries are given to human annotators for evaluation. The annotators are students who attend the same course but are in another work group (?). For evaluation Likert Scales are used. Since refernce summaries don't exist it can't be evaluated by comparing a summary with a gold standard. Furthermore the annotators shouldn't have to read all ... source documents of a summary to judge the summary itself. This process woud be too time-consuming. Instead items are used on the Likert Scale which can be judged by only reading the summary itself. In total there are eleven categories: "Grammaticality", Non-redundancy", Referential clarity", "Focus", "Structure", "Coherence", "Readability", "Information Content", "Spelling", "Length" and "Overall Quality". For each category the annotators should assign a score from 1 (= very poor) to 5 (= very good), a weight and a confidence (both scales also from 1 to 5) of their grading. Each summary is evaluated by four to five different annotators.
+
+Most categories seem like any text evaluation categories like "Spelling" and "Grammaticality". Other categories seem especially summary-related. These are the categories "Information Content" and "Focus". They represent the goal of a summary very well which is to present the most important content of the summarized texts. Since all summarized texts in this corpus are about a certain query the focus should be visible, too.
+
+The resulting evaluations can be used for assessing the quality of the summaries produced by our system. It is important for the evaluation that we only work at the nugget extraction. This input is given to another group which then produced the summaries. In this way we are completely responsible for the results in some evaluation categories while other evaluation results also depend on the steps of  building the hierarchy and actually creating a summary. The output which we after the nugget extraction are whole sentences (more about the output in section ...). The summary is then only built out of these sentences. In this way all categories which just operate on a sentence level are completely our responsibility. Among these categories are only the two categories "Spelling" and "Grammaticality". Other categories are partially dependent on the choice of sentences. These are the categories "Focus", "Information Content" and "Non-Redundancy". 
 
 \section{General formatting instructions}
 \label{gen_inst}
