@@ -1,6 +1,7 @@
 import csv
 import os
 import re
+import scipy
 from collections import defaultdict
 from nltk.probability import FreqDist
 
@@ -27,9 +28,10 @@ for sn in summary_names:
             weight = r[2] if r[2] is not '' else 1
             confidence = r[3] if r[3] is not '' else 1
             summ_dict[r[0]].append((score, weight, confidence))
-            if r[0]=='Structure' and int(score) < 3:
-                print(e)
-                print(r[4])
+            # print comments of a particular evaluation category
+            #if r[0]=='Structure' and int(score) < 3:
+                #print(e)
+                #print(r[4])
     eval_dict[sn] = summ_dict
 
 # extract category names
@@ -44,6 +46,7 @@ for c in eval_categories:
     average_overall_score = sum(overall_scores)/len(overall_scores)
     print(c + ': ' + str(average_overall_score))
 
+
 # compute own score
 summary_scores = []
 for sn in summary_names:
@@ -54,6 +57,32 @@ for sn in summary_names:
             # 5^5^5 = 625
             summary_score += int(t[0])*int(t[1])*int(t[2])
     summary_scores.append((sn, summary_score))
+
+# TODO: correlation between overall score and eval_categories
+# 1st step: create 2 lists: overall score, other score
+# 2nd step: calculate pearson's r
+
+#scipy.stats.stats.pearsonr()
+overall_scores = []
+category_scores = []
+print(eval_categories)
+
+category = 'Structure'
+
+for sn in summary_names:
+    #overall_scores.append(eval_dict[sn]['Overall Quality'][0])
+    print(sn)
+    for t in eval_dict[sn]['Overall Quality']:
+        print(t)
+        overall_scores.append(int(t[0]))
+    for t in eval_dict[sn][category]:
+        category_scores.append(int(t[0]))
+
+print('\n------------ Pearsons r overall quality - ' + category + ' --------------------------------\n')
+pearson_correlation = scipy.stats.stats.pearsonr(overall_scores, category_scores)
+
+print(str(pearson_correlation) + '\n')
+
 
 summary_scores_sorted = sorted(summary_scores, key=lambda x:x[1], reverse=True)
 
