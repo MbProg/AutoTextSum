@@ -1,0 +1,21 @@
+Analyse der manuellen Evaluationen
+
+- Gesamtscore für jede Summary berechnen
+    - mithilfe von weight und confidence
+    - einfache Idee: Summe(Score*Weight*Confidence)
+    - ist Confidence so wirklich gut eingebunden?
+    
+    - beste und schlechteste Summary als Beispiele anführen
+    - durchschnittlicher Score insgesamt
+
+- sehr einfache Statistiken
+    - wie oft kommen die Scores prouzentual jeweils vor?
+    
+- Blick auf die einzelnen Kategorien
+    - welche Kategorien empfinden Annotatoren als wichtig?
+    - wie schneiden wir durchschnittlich je Kategorie ab?
+    
+- Vergleich mit Gruppe 5
+    - einziger Unterschied: andere Nuggetwahl
+    - wie haben sie diese umgesetzt?
+    - im Endeffekt einfach auch Durchschnittscore (einmal gesamt und vielleicht auch pro Kategorie) für ihre Summarys berechnen

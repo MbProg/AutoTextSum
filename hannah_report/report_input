@@ -1,0 +1,122 @@
+    
+Kategorien, die komplett wir beeinflusst haben
+    - Grammaticality
+    - Spelling
+    - Focus?
+    - Information Content?
+    
+Kategorien, die größtenteils von uns abhängen
+    - Information Content
+    - Focus?
+    - Non-redundancy
+    
+Kategorien, bei denen viel von Step 2 and 3 abhängt
+    - Structure
+    - Coherence
+    - Readability
+    - Length
+    
+- gerade Kategorien, die nur von uns abhänegn, werden wir sehr genau analysieren
+
+Grammaticality
+    ":" was used in an apropriate way 2 times (1001)
+    Part of sentence in summary (1003)
+    I don't know whether this is the right category for this critique but there are multiple sentences within one line (which is violating the summary guidelines)
+    Punctuations are not set correctly. (1005)
+    Random quotes (1006)
+    The first two sentences have are not grammatical. Seems as if there are left some words or punctuation out
+    "Get Rid of Fear Naturally Fear of public speaking? (1007)
+    punkctuation is sometimes missed (1016)
+    Some sentences are no real sentence. (1019)
+    line 2 and 3 (1024)
+    missing punctuation (1026)
+    one giant sentence without good grama (1028)
+    First sentence and sentence starting with "or". (1029)
+    not even real sentences (1033)
+    1039: just bad
+    Some sentences are no real sentences. (1041)
+    
+Spelling
+    only one quotation mark in first line, Closing double quotes at the first sentence but not opened, some " (1005)
+    Punctuation and question (1046)
+    Uper/lower case sometimes wrong. There is also a german word: Laender (1039)
+    some words in capital letters (1026)
+    white spaces before commata (1017)
+    Seems to be to long and the last two sentences have no ending punctuation (1034)
+    Uppercased words in for no reason (1007)
+    In the 3rd sentence the word 'student' is uppercased for no reason (1018)
+    (word) instead of ( word ) (1004)
+    too many whitespaces (1035)
+    twice some parentheses too much (1031)
+    
+Focus
+    - no relationship to topic (1026)
+    - no sentence really hits the topic (1050)
+    
+Information Content
+    - no information about the context (1005)
+    - i can not see the information if i can not understand the text (1028)
+    - only about treatment without going into detail(1001)
+    - No real gain of information in the first two sentences (1007)
+    - Doesnt really hit the topic (1003)
+    - almost the same 4 sentences (1034)
+    - Hard repetition of arguments, similar sentences (1034)
+    - do not know "the tool" (1017)
+    
+-----------------
+
+Non-redundancy
+    - gar keine Kommentare, aber sehr viele kritisierte Zusammenfassungen
+    
+------------------
+
+Structure
+    - a good structure if you want it like that (1016)
+    - begins with huge enumeration (1032)
+    - last sentence is ineligible (1050)
+    - There is no structure apparent (1027)
+    - Only two long sentences and there were no new lines for me in the text file (1011)
+    - In the last line a breathing technique is introduced but only a part of it is explained., started a multi-step technique and stopped ad step 1 (1007)
+
+Coherence
+    - ...
+
+------------------------------- Baselines -----------------------------------------------------------------------
+
+Baseline methods
+
+- Baseline 1
+    - MMR, diversity-based reranking for reordering documents and producing summaries
+    - https://dl.acm.org/citation.cfm?id=291025
+- Baseline 2
+    - A class of submodular functions for document summarization
+    - https://dl.acm.org/citation.cfm?id=2002537
+
+Welche Ergebnisse von uns sind schlechter als Baselines?
+    - Grammaticality mit 3.76 (Baseline 2: 3.81)
+    - Non-redundancy mit 3.85 (Baseline 1: 4.18, wie wurden Sätze hier ausgewählt?)
+    - Referential Clarity mit 3.44 (Baseline 2: 3.63)
+    - Focus mit 3.14 (Basline 2 mit 3.29)
+    - Structure mit 2.86 (Baseline 2: 3.27)
+    - Coherence mit 2.88 (Baseline 2: 3.25)
+    - Readability mit 3.26 (Baseline 2: 3.46)
+    - Spelling mit 4.16 (Baseline 2: 4.25)
+    - Length mit 3.29 (Baseline 1 and 2: 3.5 and 3.35)
+    - Overall quality mit 2.75 (Baseline 2: 2.84)
+    
+- Wo sind wir denn immer besser als die Baselines?
+    - Information Content
+    - own score
+    - in fast allen Kategorien besser als Baseline 1
+    
+- Fragestellungen
+    - wo kommt der extrem große Unterschied bei overall und own score bei Baseline 2 her?
+
+    
+---------------------------------- Verbesserungsvorschläge ---------------------------------------------
+- für Annotation: Worker unterschiedlich gewichten (manche bewerten sehr negativ, andere sehr positiv)
+
+--------------------------------- Fragestellung -------------------------------------------------------
+
+- Wie sehr korrelieren die einzelnen Kriterien mit dem Gesamtscore???
+- Vermutung: Readability und Information Content sehr wichtig
