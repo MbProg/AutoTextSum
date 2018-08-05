@@ -29,6 +29,7 @@
 \usepackage{microtype}      % microtypography
 \usepackage[]{algorithm2e}
 \usepackage{graphicx}
+\usepackage{natbib}
 
 \title{Automatic text summarization, 2018}
 
@@ -94,6 +95,12 @@ In general, there  are two different approaches for text summarization:\textit{e
 
 \section{Data}
 \label{sec:data}
+
+The base of our work is the hierarchical summarization corpus by Tauchmann, Arnold, Meyer and Mieskes (2018) \citep{TAUCHMANN18.252}. As an additional training resource we use the hMDS by Zopf, Peyrard and Eckle-Kohler (2016) \citep{tubiblio97941}. In the following we describe both resources and explain how we use them for our system.
+
+\subsection{Hierarchical Summarization Corpus}
+
+\subfile{sections/hierarchical_summarization_corpus}
 
 \subsection{hMDS Corpus}
 
@@ -239,7 +246,7 @@ The final scores on the Test set can be found in table \ref{Nugget_scores}.
 The overall performance of the nugget selection were quite disappointing and can have many different causes. One obvious factor is the relatively unorthodox selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modeling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.
 
 To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as  it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network.
-\subsection{Manual evaluation}
+\subsection{Evaluation of manual evaluations}
 \label{subsec:maneval}
 
 \subfile{sections/manual_evaluations}
