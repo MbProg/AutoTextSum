@@ -103,7 +103,7 @@ For all our Implementations we chose two build flexible models which would not o
 	\label{fig:nuggets}
 \end{figure}
 \ref{fig:nuggets}.
-The results were that only about $49$ percent of the chosen nuggets are actual sentences and most of the nuggets are shorter than $15$ words. We then came up with two main approaches on how to deal with that flexibility. 
+The results were that only about $49$ percent of the chosen nuggets are actual sentences and most of the nuggets are shorter than $15$ words. We then came up with two main approaches on how to deal with that flexibility.
 
 \subsection{First approach}
 
@@ -114,22 +114,22 @@ For the first approach we chose to take a wordwise approach that was also inspir
 		Worker ID & Nugget \\ \hline
 		87b87beadeaabc197b466e265837af98 &  While some experts admit that neurofeedback has promise, they believe that it should be used only in combination with medication. \\ \hline
 		f0a942943de19e11972338c883ad1da2 &  some experts admit that neurofeedback has promise, they believe that it should be used only in combination with medication. \\ \hline
-		
+
 		87954087f1d66c24165db6afc992e136 &  neurofeedback has promise, \\ \hline
-		
+
 		ec7e848297d5f2666f07c0d779ca074d	 &  neurofeedback has promise, they believe that it should be used only in combination with medication. \\
 		\hline
 	\end{tabular}
 \label{tab:nuggets}
 \end{center}
-To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google \footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all word of the query of a specific document into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.  
+To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google \footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all word of the query of a specific document into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.
 
 As labels each word gets assigned a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
 
 \begin{algorithm}
 	\label{alg:features}
 	\SetKwInOut{Input}{input}
-	
+
 	\SetKwInOut{E}{E}
 	\SetKwInOut{Output}{output}
 	\SetKwInOut{QueryEmbedding}{QueryEmbedding}
@@ -141,17 +141,17 @@ As labels each word gets assigned a number which represents the amount of nugget
 	\WindowEmbedding{Averaged word embedding of the word window}
 	\SentenceWords{List of words in the sentence}
 	\QueryWords{List of words in the query}
-	
+
 	\For{$i = 0;\ i < length(Query);\ i = i + 1$}{
 		QueryEmbedding += Querywords[i]
 	}
 	QueryEmbedding /= length(Query)\;
 	WindowEmbedding = E[SentenceWords[j-1]] + E[SentenceWords[j]] + E[SentenceWords[j+1]]\;
 	WindowEmbedding /= 3\;
-	
-	
+
+
 	return (QueryEmbedding+WindowEmbedding) /2 \;
-	
+
 	\caption{Feature building process}
 \end{algorithm}
 
@@ -182,10 +182,23 @@ As labels each word gets assigned a number which represents the amount of nugget
 		}
 	}
 	return Result \;
-	
+
 	\caption{Nugget prediction process}
 \end{algorithm}
 To form nuggets in a sentence we first transform each word into the above described feature representation and then assign a class or score with the trained classifier. Afterwards nuggets are formed by concatenating consecutive words that have scores above a pre-defined threshold $\delta$. The whole process is defined in pseudocode in \ref{alg:the_alg}
+
+ \subsection{Second Approach}
+For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5<=m<=20$. So in the end we would have every possible candidate in any given sentence. \\
+This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with models models \citep{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
+
+We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence.
+
+To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}.
+
+To identify the correct nuggets we could use classification with two classes: nugget or not a nugget. This makes thet task similar to sentence classification, which is a very well researched problem. The difference being that nuggets can be incomplete sentences. As \citep{zhou2015c} and others have shown, RNNs are among the top performing models in sentence classification together with CNNs, if given enough training data. For the target data we used a treshold of two, so any phrase which was annotated as a nugget by two or more workers would be considered a nugget in this binary format. Also possible would be regression of the number of Mechanical Turk workers annotating each word sequence as a nugget. Which would be equivalent to the original format of our target data.\\
+
+We used GRUs as proposed by \citet{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding \cite{cnn_rnn_comparative2017}.
+
 
 \section{Evaluation}
 \subsection{Nugget Evaluation}
@@ -199,7 +212,7 @@ The final scores on the Test set can be found in table \ref{Nugget_scores}.
 	\begin{tabular}{llll}
 		\toprule
 		\multicolumn{4}{c}{}                   \\
-		
+
 		Model     & Recall & Precision & F1 \\
 		\midrule
 		DecisionTree & $0.901$  & $0.1501$ &   $0.257$   \\
@@ -210,12 +223,17 @@ The final scores on the Test set can be found in table \ref{Nugget_scores}.
 \end{table}
 
 \subsubsection{Nugget results discussion}
-The overall performance of the nugget selection were quite dissappointing and can have many different causes. One obvious factor is the relatively unconservative selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modelling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.  
+The overall performance of the nugget selection were quite dissappointing and can have many different causes. One obvious factor is the relatively unconservative selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modelling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.
 
 To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as  it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network.
 \subsection{Manual evaluation}
 
 \subfile{sections/manual_evaluations}
+
+\small
+
+\bibliographystyle{plain}
+\bibliography{nips_2018}
 
 
 \end{document}
