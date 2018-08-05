@@ -84,12 +84,20 @@
 \end{abstract}
 
 \section{Introduction}
+\label{sec:intro}
+
 With the dramatic growth of the web, people are overwhelmed by the tremendous amount of online information and documents. This expansion in availability of data has demanded extensive research in the automatic generation of summaries from a collection of different type of text.\\
 
 \textit{Automatic summarization} is the process of shortening a text document with software, in order to create a summary with the major points of the original document.	     
 
 In general, there  are two different approaches for text summarization:\textit{extraction} and \textit{abstraction}
 
+\section{Data}
+\label{sec:data}
+
+\subsection{hMDS Corpus}
+
+\subfile{sections/wikipedia_corpus.tex}
 
 \section{Implementation}
 \label{headings}
@@ -202,8 +210,10 @@ We used GRUs as proposed by \citet{gru2014}, because we have less training data 
 \subsection{Generating summaries}
 Since the ultimate goal of the project was to generate summaries. As suggested by the advisors we chose to collaborate with group $5$. In order to make their pipeline accessible for our solutions they gave us the requirement of providing 30 sentences per topic sorted by their importance for the summary. As our approaches did not necessarily lead to sentence outputs we had to come up with a workaround to fulfill the necessary requirements.  
 
-We eventually decided to proceed the following way. For every sentence of a topic we calculate the percentage of words that appear in nuggets chosen by our model. Sentences that have a percentage smaller than $40$ percent are excluded. Afterwards we gave group $5$ our top $30$ sentences with regards to words in a nugget in descending order and then received their final model output which is further evaluated in the Evaluation section.   
+We eventually decided to proceed the following way. For every sentence of a topic we calculate the percentage of words that appear in nuggets chosen by our model. Sentences that have a percentage smaller than $40$ percent are excluded. Afterwards we gave group $5$ our top $30$ sentences with regards to words in a nugget in descending order and then received their final model output which is further evaluated in \ref{subsec:maneval}.   
 \section{Evaluation}
+\label{sec:eval}
+
 \subsection{Nugget Evaluation}
 We tried to evaluate both our main approaches on the labeled dataset %add corpus ref%
 .During training of the second approach we noticed that the neural network used was not able to learn anything other than predicting the majority class. We tried several different network parameters, as well as data sub- and oversampling as well as turning it into a regression task however none of those measures seemed to help to alleviate the problem. This is why we abandoned the approach for the final predictions and also don't report performance measures for that approach. For the evaluation we chose $2$ out of the $10$ labeled topics and split them into one development set topic and a test set topic respectively. As for all the machine learning models we use the popular scikit-learn python module. Since our computational resources were limited we only were able to test three different models in a reasonable timeframe such as Decision trees, logistic Regression and Random forests. For the latter training however took significantly longer than for the other two so less hyperparameters were tested.
@@ -230,6 +240,7 @@ The overall performance of the nugget selection were quite disappointing and can
 
 To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as  it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network.
 \subsection{Manual evaluation}
+\label{subsec:maneval}
 
 \subfile{sections/manual_evaluations}
 
