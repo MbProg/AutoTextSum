@@ -155,6 +155,20 @@ Most categories seem like any text evaluation categories like "Spelling" and "Gr
 
 The resulting evaluations can be used for assessing the quality of the summaries produced by our system. It is important for the evaluation that we only work at the nugget extraction. This input is given to another group which then produced the summaries. In this way we are completely responsible for the results in some evaluation categories while other evaluation results also depend on the steps of  building the hierarchy and actually creating a summary. The output which we after the nugget extraction are whole sentences (more about the output in section ...). The summary is then only built out of these sentences. In this way all categories which just operate on a sentence level are completely our responsibility. Among these categories are only the two categories "Spelling" and "Grammaticality". Other categories are partially dependent on the choice of sentences. These are the categories "Focus", "Information Content" and "Non-Redundancy". 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHECK m min max, treshold..
+\section{Implementation}
+ \subsection{Second Approach}
+For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5<=m<=20$. So in the end we would have every possible candidate in any given sentence. \\
+This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with models models \citep{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
+
+We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence. 
+
+To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}.
+
+To identify the correct nuggets we could use classification with two classes: nugget or not a nugget. This makes thet task similar to sentence classification, which is a very well researched problem. The difference being that nuggets can be incomplete sentences. As \citep{zhou2015c} and others have shown, RNNs are among the top performing models in sentence classification together with CNNs, if given enough training data. For the target data we used a treshold of two, so any phrase which was annotated as a nugget by two or more workers would be considered a nugget in this binary format. Also possible would be regression of the number of Mechanical Turk workers annotating each word sequence as a nugget. Which would be equivalent to the original format of our target data.\\
+
+We used GRUs as proposed by \citet{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding \cite{cnn_rnn_comparative2017}.
+
 \section{General formatting instructions}
 \label{gen_inst}
 
@@ -404,18 +418,8 @@ size to \verb+small+ (9 point) when listing the references. {\bf
 
 \small
 
-[1] Alexander, J.A.\ \& Mozer, M.C.\ (1995) Template-based algorithms
-for connectionist rule extraction. In G.\ Tesauro, D.S.\ Touretzky and
-T.K.\ Leen (eds.), {\it Advances in Neural Information Processing
-  Systems 7}, pp.\ 609--616. Cambridge, MA: MIT Press.
+\bibliographystyle{plain}
+\bibliography{nips_2018}
 
-[2] Bower, J.M.\ \& Beeman, D.\ (1995) {\it The Book of GENESIS:
-  Exploring Realistic Neural Models with the GEneral NEural SImulation
-  System.}  New York: TELOS/Springer--Verlag.
-
-[3] Hasselmo, M.E., Schnell, E.\ \& Barkai, E.\ (1995) Dynamics of
-learning and recall at excitatory recurrent synapses and cholinergic
-modulation in rat hippocampal region CA3. {\it Journal of
-  Neuroscience} {\bf 15}(7):5249-5262.
 
 \end{document}
