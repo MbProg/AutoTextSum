@@ -56,7 +56,7 @@ for sn in summary_names:
     summary_score5 = 0
     # exclude 'Overall Quality'
     for c in eval_categories[:-1]:
-        print(eval_dict[sn][c][3])
+        #print(eval_dict[sn][c][3])
         t1 = eval_dict[sn][c][0]
         t2 = eval_dict[sn][c][1]
         t3 = eval_dict[sn][c][2]
@@ -83,12 +83,11 @@ for sn in summary_names:
     if len(eval_dict[sn]['Structure']) > 4:
         summary_scores_for_corr.append(summary_score5)
 
-
     summary_scores.append((sn, summary_score))
 
+print(summary_scores_for_corr)
+print(overall_scores)
 
-
-print(len(summary_scores_for_corr))
 
 # create lists for correlation calculation
 
@@ -136,6 +135,7 @@ for sn in summary_names:
 print('\n------------ Pearsons r overall quality - own score' + category + ' --------------------------------\n')
 pearson_correlation_overall_own = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
 print(str(pearson_correlation_overall_own) + '\n')
+print('funktioniert NICHT, da Listen in unterschiedlicher Summaryreihenfolge!!!')
 
 category_scores_for_ic = [("grammaticality_scores", grammaticality_scores),
 ("non_redundancy_scores", non_redundancy_scores),
@@ -147,8 +147,8 @@ category_scores_for_ic = [("grammaticality_scores", grammaticality_scores),
 ("spelling_scores", spelling_scores),
 ("length_scores", length_scores)]
 
-print("Correlation with information content: ")
-print([(n, str(scipy.stats.stats.pearsonr(l, information_content_scores))) for n, l in category_scores_for_ic])
+#print("Correlation with information content: ")
+#print([(n, str(scipy.stats.stats.pearsonr(l, information_content_scores))) for n, l in category_scores_for_ic])
 
 
 category_scores_for_g = [("grammaticality_scores", grammaticality_scores),
@@ -161,8 +161,8 @@ category_scores_for_g = [("grammaticality_scores", grammaticality_scores),
 ("spelling_scores", spelling_scores),
 ("length_scores", length_scores)]
 
-print("\nCorrelation with readability: ")
-print([(n, str(scipy.stats.stats.pearsonr(l, readability_scores))) for n, l in category_scores_for_g])
+#print("\nCorrelation with readability: ")
+#print([(n, str(scipy.stats.stats.pearsonr(l, readability_scores))) for n, l in category_scores_for_g])
 
 category_scores_for_s = [("grammaticality_scores", grammaticality_scores),
 ("non_redundancy_scores", non_redundancy_scores),
@@ -174,32 +174,32 @@ category_scores_for_s = [("grammaticality_scores", grammaticality_scores),
 ("spelling_scores", spelling_scores),
 ("length_scores", length_scores)]
 
-print("\nCorrelation with structure: ")
-print([(n, str(scipy.stats.stats.pearsonr(l, structure_scores))) for n, l in category_scores_for_s])
+#print("\nCorrelation with structure: ")
+#print([(n, str(scipy.stats.stats.pearsonr(l, structure_scores))) for n, l in category_scores_for_s])
 
 
-print('\n------------ Pearsons r informa - own score' + category + ' --------------------------------\n')
-pearson_correlation_overall_own = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
-print(str(pearson_correlation_overall_own) + '\n')
+#print('\n------------ Pearsons r informa - own score' + category + ' --------------------------------\n')
+#pearson_correlation_overall_own = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
+#print(str(pearson_correlation_overall_own) + '\n')
 
 
 summary_scores_sorted = sorted(summary_scores, key=lambda x:x[1], reverse=True)
 
-print('\naverage weighted score (mapped to [0,5])\n')
+#print('\naverage weighted score (mapped to [0,5])\n')
 avg_own_score = sum([x[1] for x in summary_scores])/625/49
-print(str(avg_own_score) + '\n')
+#print(str(avg_own_score) + '\n')
 
-print('\nSummaries and their weighted scores ordered from best to worst\n')
-print(summary_scores_sorted)
+#print('\nSummaries and their weighted scores ordered from best to worst\n')
+#print(summary_scores_sorted)
 #        print(eval_dict[sn][c])
 #    for c in eval_dict[sn]:
 
-print('\naveraged weights\n')
+#print('\naveraged weights\n')
 
 for c in eval_categories:
     overall_weights = [(int(x[1])) for s in eval_dict.keys() for x in eval_dict[s][c]]
     average_overall_weights = sum(overall_weights)/len(overall_weights)
-    print(c + ': ' + str(average_overall_weights))
+#    print(c + ': ' + str(average_overall_weights))
 
 
 #print('averaged confidences\n')
