@@ -7,6 +7,8 @@
 % ready for submission
 \usepackage{nips_2018}
 
+\usepackage{subfiles}
+
 % to compile a preprint version, e.g., for submission to arXiv, add
 % add the [preprint] option:
 % \usepackage[preprint]{nips_2018}
@@ -25,6 +27,8 @@
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
+\usepackage[]{algorithm2e}
+\usepackage{graphicx}
 
 \title{Automatic text summarization, 2018}
 
@@ -87,81 +91,107 @@ With the dramatic growth of the internet, people are overwhelmed by the tremendo
 In general, there  are two different approaches for text summarization:\textit{extraction} and \textit{abstraction}
 
 
-\begin{center}
-  \url{https://cmt.research.microsoft.com/NIPS2018/}
-\end{center}
-
-Please read the instructions below carefully and follow them faithfully.
-
-\subsection{Style}
-
-
-$\sim$$15\%$ more words in the paper compared to earlier years.
-
-Authors are required to use the NIPS \LaTeX{} style files obtainable
-at the NIPS website as indicated below. Please make sure you use the
-current files and not previous versions. Tweaking the style files may
-be grounds for rejection.
-
-\subsection{Retrieval of style files}
-
-The style files for NIPS and other conference information are
-available on the World Wide Web at
-\begin{center}
-  \url{http://www.nips.cc/}
-\end{center}
-The file \verb+nips_2018.pdf+ contains these instructions and
-illustrates the various formatting requirements your NIPS paper must
-satisfy.
-
-The only supported style file for NIPS 2018 is \verb+nips_2018.sty+,
-rewritten for \LaTeXe{}.  \textbf{Previous style files for \LaTeX{}
-  2.09, Microsoft Word, and RTF are no longer supported!}
-
-The \LaTeX{} style file contains three optional arguments: \verb+final+,
-which creates a camera-ready copy, \verb+preprint+, which creates a
-preprint for submission to, e.g., arXiv, and \verb+nonatbib+, which will
-not load the \verb+natbib+ package for you in case of package clash.
-
-\paragraph{New preprint option for 2018}
-If you wish to post a preprint of your work online, e.g., on arXiv,
-using the NIPS style, please use the \verb+preprint+ option. This will
-create a nonanonymized version of your work with the text
-``Preprint. Work in progress.''  in the footer. This version may be
-distributed as you see fit. Please \textbf{do not} use the
-\verb+final+ option, which should \textbf{only} be used for papers
-accepted to NIPS.
-
-At submission time, please omit the \verb+final+ and \verb+preprint+
-options. This will anonymize your submission and add line numbers to aid
-review. Please do \emph{not} refer to these line numbers in your paper
-as they will be removed during generation of camera-ready copies.
-
-The file \verb+nips_2018.tex+ may be used as a ``shell'' for writing
-your paper. All you have to do is replace the author, title, abstract,
-and text of the paper with your own.
-
-The formatting instructions contained in these style files are
-summarized in Sections \ref{gen_inst}, \ref{headings}, and
-\ref{others} below.
-
-\section{Evaluation}
-
-\subsection{Manual evaluation}
-
-The summaries are given to human annotators for evaluation. The annotators are students who attend the same course but are in another work group (?). For evaluation Likert Scales are used. Since refernce summaries don't exist it can't be evaluated by comparing a summary with a gold standard. Furthermore the annotators shouldn't have to read all ... source documents of a summary to judge the summary itself. This process woud be too time-consuming. Instead items are used on the Likert Scale which can be judged by only reading the summary itself. In total there are eleven categories: "Grammaticality", Non-redundancy", Referential clarity", "Focus", "Structure", "Coherence", "Readability", "Information Content", "Spelling", "Length" and "Overall Quality". For each category the annotators should assign a score from 1 (= very poor) to 5 (= very good), a weight and a confidence (both scales also from 1 to 5) of their grading. Each summary is evaluated by four to five different annotators.
-
-Most categories seem like any text evaluation categories like "Spelling" and "Grammaticality". Other categories seem especially summary-related. These are the categories "Information Content" and "Focus". They represent the goal of a summary very well which is to present the most important content of the summarized texts. Since all summarized texts in this corpus are about a certain query the focus should be visible, too.
-
-The resulting evaluations can be used for assessing the quality of the summaries produced by our system. It is important for the evaluation that we only work at the nugget extraction. This input is given to another group which then produced the summaries. In this way we are completely responsible for the results in some evaluation categories while other evaluation results also depend on the steps of  building the hierarchy and actually creating a summary. The output which we after the nugget extraction are whole sentences (more about the output in section ...). The summary is then only built out of these sentences. In this way all categories which just operate on a sentence level are completely our responsibility. Among these categories are only the two categories "Spelling" and "Grammaticality". Other categories are partially dependent on the choice of sentences. These are the categories "Focus", "Information Content" and "Non-Redundancy". 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHECK m min max, treshold..
 \section{Implementation}
+\label{headings}
+
+
+For all our Implementations we chose two build flexible models which would not only be able to choose whole Sentences as nuggets but also sub parts. Justification for that was drawn from short inspection of the nuggets that workers had chosen. For this we first calculated the percentage of nuggets that were sentences by counting nuggets that start with uppercasing and end on a punctuation mark and dividing it by the total nugget amount. Additionally we also plotted a histogram of nugget lengths that can be seen in figure
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.55\linewidth]{Nugget_size.pdf}
+	\caption{Nugget length distribution}
+	\label{fig:nuggets}
+\end{figure}
+\ref{fig:nuggets}.
+The results were that only about $49$ percent of the chosen nuggets are actual sentences and most of the nuggets are shorter than $15$ words. We then came up with two main approaches on how to deal with that flexibility.
+
+\subsection{First approach}
+
+For the first approach we chose to take a wordwise approach that was also inspired by findings additional to those mentioned above. This finding is that workers may choose different start or endpoints for nuggets leading to problems for approaches that would only consider nuggets important that match exactly for multiple workers. An example in our dataset for this can be found in table \ref{tab:nuggets}.
+\begin{center}
+	\begin{tabular}{ | l | p{7cm} |}
+		\hline
+		Worker ID & Nugget \\ \hline
+		87b87beadeaabc197b466e265837af98 &  While some experts admit that neurofeedback has promise, they believe that it should be used only in combination with medication. \\ \hline
+		f0a942943de19e11972338c883ad1da2 &  some experts admit that neurofeedback has promise, they believe that it should be used only in combination with medication. \\ \hline
+
+		87954087f1d66c24165db6afc992e136 &  neurofeedback has promise, \\ \hline
+
+		ec7e848297d5f2666f07c0d779ca074d	 &  neurofeedback has promise, they believe that it should be used only in combination with medication. \\
+		\hline
+	\end{tabular}
+\label{tab:nuggets}
+\end{center}
+To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google \footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all word of the query of a specific document into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.
+
+As labels each word gets assigned a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
+
+\begin{algorithm}
+	\label{alg:features}
+	\SetKwInOut{Input}{input}
+
+	\SetKwInOut{E}{E}
+	\SetKwInOut{Output}{output}
+	\SetKwInOut{QueryEmbedding}{QueryEmbedding}
+	\SetKwInOut{WindowEmbedding}{WindowEmbedding}
+	\SetKwInOut{SentenceWords}{SentenceWords}
+	\SetKwInOut{QueryWords}{QueryWords}
+	\E{Pre trained word embeddings}
+	\QueryEmbedding{Averaged query embedding}
+	\WindowEmbedding{Averaged word embedding of the word window}
+	\SentenceWords{List of words in the sentence}
+	\QueryWords{List of words in the query}
+
+	\For{$i = 0;\ i < length(Query);\ i = i + 1$}{
+		QueryEmbedding += Querywords[i]
+	}
+	QueryEmbedding /= length(Query)\;
+	WindowEmbedding = E[SentenceWords[j-1]] + E[SentenceWords[j]] + E[SentenceWords[j+1]]\;
+	WindowEmbedding /= 3\;
+
+
+	return (QueryEmbedding+WindowEmbedding) /2 \;
+
+	\caption{Feature building process}
+\end{algorithm}
+
+
+\begin{algorithm}
+	\label{alg:the_alg}
+	\SetKwInOut{Input}{input}
+	\SetKwInOut{WordScore}{wordscore}
+	\SetKwInOut{Classifier}{Classifier}
+	\SetKwInOut{Output}{output}
+	\SetKwInOut{Delta}{delta}
+	\SetKwInOut{TempNugget}{tempNugget}
+	\Input{List of words in a sentence}
+	\Classifier{The trained word classifier}
+	\WordScore{List of tuples containing word and their score}
+	\Delta{The nugget word threshold}
+	\TempNugget{List of words that form a nugget}
+	\KwResult{List of Nuggets}
+	\lForEach{word $w$ of input}{ wordscore.append($w$, Classifier(word)) }
+	\For{(w, score) in wordscore}{
+		\uIf{$score > delta$}{TempNugget.append(w)}
+		\uElseIf{$score < delta$ and tempNugget not empty}{
+			Result.append(TempNugget) \;
+			TempNugget = empty list\;
+		}
+		\Else{
+			skip\;
+		}
+	}
+	return Result \;
+
+	\caption{Nugget prediction process}
+\end{algorithm}
+To form nuggets in a sentence we first transform each word into the above described feature representation and then assign a class or score with the trained classifier. Afterwards nuggets are formed by concatenating consecutive words that have scores above a pre-defined threshold $\delta$. The whole process is defined in pseudocode in \ref{alg:the_alg}
+
  \subsection{Second Approach}
 For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5<=m<=20$. So in the end we would have every possible candidate in any given sentence. \\
 This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with models models \citep{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
 
-We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence. 
+We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence.
 
 To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}.
 
@@ -169,252 +199,36 @@ To identify the correct nuggets we could use classification with two classes: nu
 
 We used GRUs as proposed by \citet{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding \cite{cnn_rnn_comparative2017}.
 
-\section{General formatting instructions}
-\label{gen_inst}
 
-The text must be confined within a rectangle 5.5~inches (33~picas)
-wide and 9~inches (54~picas) long. The left margin is 1.5~inch
-(9~picas).  Use 10~point type with a vertical spacing (leading) of
-11~points.  Times New Roman is the preferred typeface throughout, and
-will be selected for you by default.  Paragraphs are separated by
-\nicefrac{1}{2}~line space (5.5 points), with no indentation.
-
-The paper title should be 17~point, initial caps/lower case, bold,
-centered between two horizontal rules. The top rule should be 4~points
-thick and the bottom rule should be 1~point thick. Allow
-\nicefrac{1}{4}~inch space above and below the title to rules. All
-pages should start at 1~inch (6~picas) from the top of the page.
-
-For the final version, authors' names are set in boldface, and each
-name is centered above the corresponding address. The lead author's
-name is to be listed first (left-most), and the co-authors' names (if
-different address) are set to follow. If there is only one co-author,
-list both author and co-author side by side.
-
-Please pay special attention to the instructions in Section \ref{others}
-regarding figures, tables, acknowledgments, and references.
-
-\section{Headings: first level}
-\label{headings}
-
-All headings should be lower case (except for first word and proper
-nouns), flush left, and bold.
-
-First-level headings should be in 12-point type.
-
-\subsection{Headings: second level}
-
-Second-level headings should be in 10-point type.
-
-\subsubsection{Headings: third level}
-
-Third-level headings should be in 10-point type.
-
-\paragraph{Paragraphs}
-
-There is also a \verb+\paragraph+ command available, which sets the
-heading in bold, flush left, and inline with the text, with the
-heading followed by 1\,em of space.
-
-\section{Citations, figures, tables, references}
-\label{others}
-
-These instructions apply to everyone.
-
-\subsection{Citations within the text}
-
-The \verb+natbib+ package will be loaded for you by default.
-Citations may be author/year or numeric, as long as you maintain
-internal consistency.  As to the format of the references themselves,
-any style is acceptable as long as it is used consistently.
-
-The documentation for \verb+natbib+ may be found at
-\begin{center}
-  \url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
-\end{center}
-Of note is the command \verb+\citet+, which produces citations
-appropriate for use in inline text.  For example,
-\begin{verbatim}
-   \citet{hasselmo} investigated\dots
-\end{verbatim}
-produces
-\begin{quote}
-  Hasselmo, et al.\ (1995) investigated\dots
-\end{quote}
-
-If you wish to load the \verb+natbib+ package with options, you may
-add the following before loading the \verb+nips_2018+ package:
-\begin{verbatim}
-   \PassOptionsToPackage{options}{natbib}
-\end{verbatim}
-
-If \verb+natbib+ clashes with another package you load, you can add
-the optional argument \verb+nonatbib+ when loading the style file:
-\begin{verbatim}
-   \usepackage[nonatbib]{nips_2018}
-\end{verbatim}
-
-As submission is double blind, refer to your own published work in the
-third person. That is, use ``In the previous work of Jones et
-al.\ [4],'' not ``In our previous work [4].'' If you cite your other
-papers that are not widely available (e.g., a journal paper under
-review), use anonymous author names in the citation, e.g., an author
-of the form ``A.\ Anonymous.''
-
-\subsection{Footnotes}
-
-Footnotes should be used sparingly.  If you do require a footnote,
-indicate footnotes with a number\footnote{Sample of the first
-  footnote.} in the text. Place the footnotes at the bottom of the
-page on which they appear.  Precede the footnote with a horizontal
-rule of 2~inches (12~picas).
-
-Note that footnotes are properly typeset \emph{after} punctuation
-marks.\footnote{As in this example.}
-
-\subsection{Figures}
-
-\begin{figure}
-  \centering
-  \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-  \caption{Sample figure caption.}
-\end{figure}
-
-All artwork must be neat, clean, and legible. Lines should be dark
-enough for purposes of reproduction. The figure number and caption
-always appear after the figure. Place one line space before the figure
-caption and one line space after the figure. The figure caption should
-be lower case (except for first word and proper nouns); figures are
-numbered consecutively.
-
-You may use color figures.  However, it is best for the figure
-captions and the paper body to be legible if the paper is printed in
-either black/white or in color.
-
-\subsection{Tables}
-
-All tables must be centered, neat, clean and legible.  The table
-number and title always appear before the table.  See
-Table~\ref{sample-table}.
-
-Place one line space before the table title, one line space after the
-table title, and one line space after the table. The table title must
-be lower case (except for first word and proper nouns); tables are
-numbered consecutively.
-
-Note that publication-quality tables \emph{do not contain vertical
-  rules.} We strongly suggest the use of the \verb+booktabs+ package,
-which allows for typesetting high-quality, professional tables:
-\begin{center}
-  \url{https://www.ctan.org/pkg/booktabs}
-\end{center}
-This package was used to typeset Table~\ref{sample-table}.
-
+\section{Evaluation}
+\subsection{Nugget Evaluation}
+We tried to evaluate both our main approaches on the labeled dataset %add corpus ref%
+.During training of the second approach we noticed that the neural network used was not able to learn anything other than predicting the majority class. We tried several different network parameters, as well as data sub- and oversampling as well as turning it into a regression task however none of those measures seemed to help to alleviate the problem. This is why we abandoned the approach for the final predictions and also don't report performance measures for that approach. For the evaluation we chose $2$ out of the $10$ labeled topics and split them into one development set topic and a test set topic respectively. As for all the machine learning models we use the popular scikit-learn python module. Since our computational ressources were limited we only were able to test three different models in a reasonable timeframe such as Decision trees, logistic Regression and Random forests. For the latter training however took significantly longer than for the other two so less hyperparameters were tested.
+The final scores on the Test set can be found in table \ref{Nugget_scores}.
 \begin{table}
-  \caption{Sample table title}
-  \label{sample-table}
-  \centering
-  \begin{tabular}{lll}
-    \toprule
-    \multicolumn{2}{c}{Part}                   \\
-    \cmidrule(r){1-2}
-    Name     & Description     & Size ($\mu$m) \\
-    \midrule
-    Dendrite & Input terminal  & $\sim$100     \\
-    Axon     & Output terminal & $\sim$10      \\
-    Soma     & Cell body       & up to $10^6$  \\
-    \bottomrule
-  \end{tabular}
+	\caption{Nugget Evaluation Scores}
+	\label{Nugget_scores}
+	\centering
+	\begin{tabular}{llll}
+		\toprule
+		\multicolumn{4}{c}{}                   \\
+
+		Model     & Recall & Precision & F1 \\
+		\midrule
+		DecisionTree & $0.901$  & $0.1501$ &   $0.257$   \\
+		RandomForest     & $0.887$ & $0.137$ &   $0.237$   \\
+		LogisticRegression     &  $0.891$ & $0.09$ & $0.163$  \\
+		\bottomrule
+	\end{tabular}
 \end{table}
 
-\section{Final instructions}
+\subsubsection{Nugget results discussion}
+The overall performance of the nugget selection were quite dissappointing and can have many different causes. One obvious factor is the relatively unconservative selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modelling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.
 
-Do not change any aspects of the formatting parameters in the style
-files.  In particular, do not modify the width or length of the
-rectangle the text should fit into, and do not change font sizes
-(except perhaps in the \textbf{References} section; see below). Please
-note that pages should be numbered.
+To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as  it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network.
+\subsection{Manual evaluation}
 
-\section{Preparing PDF files}
-
-Please prepare submission files with paper size ``US Letter,'' and
-not, for example, ``A4.''
-
-Fonts were the main cause of problems in the past years. Your PDF file
-must only contain Type 1 or Embedded TrueType fonts. Here are a few
-instructions to achieve this.
-
-\begin{itemize}
-
-\item You should directly generate PDF files using \verb+pdflatex+.
-
-\item You can check which fonts a PDF files uses.  In Acrobat Reader,
-  select the menu Files$>$Document Properties$>$Fonts and select Show
-  All Fonts. You can also use the program \verb+pdffonts+ which comes
-  with \verb+xpdf+ and is available out-of-the-box on most Linux
-  machines.
-
-\item The IEEE has recommendations for generating PDF files whose
-  fonts are also acceptable for NIPS. Please see
-  \url{http://www.emfield.org/icuwb2010/downloads/IEEE-PDF-SpecV32.pdf}
-
-\item \verb+xfig+ "patterned" shapes are implemented with bitmap
-  fonts.  Use "solid" shapes instead.
-
-\item The \verb+\bbold+ package almost always uses bitmap fonts.  You
-  should use the equivalent AMS Fonts:
-\begin{verbatim}
-   \usepackage{amsfonts}
-\end{verbatim}
-followed by, e.g., \verb+\mathbb{R}+, \verb+\mathbb{N}+, or
-\verb+\mathbb{C}+ for $\mathbb{R}$, $\mathbb{N}$ or $\mathbb{C}$.  You
-can also use the following workaround for reals, natural and complex:
-\begin{verbatim}
-   \newcommand{\RR}{I\!\!R} %real numbers
-   \newcommand{\Nat}{I\!\!N} %natural numbers
-   \newcommand{\CC}{I\!\!\!\!C} %complex numbers
-\end{verbatim}
-Note that \verb+amsfonts+ is automatically loaded by the
-\verb+amssymb+ package.
-
-\end{itemize}
-
-If your file contains type 3 fonts or non embedded TrueType fonts, we
-will ask you to fix it.
-
-\subsection{Margins in \LaTeX{}}
-
-Most of the margin problems come from figures positioned by hand using
-\verb+\special+ or other commands. We suggest using the command
-\verb+\includegraphics+ from the \verb+graphicx+ package. Always
-specify the figure width as a multiple of the line width as in the
-example below:
-\begin{verbatim}
-   \usepackage[pdftex]{graphicx} ...
-   \includegraphics[width=0.8\linewidth]{myfile.pdf}
-\end{verbatim}
-See Section 4.4 in the graphics bundle documentation
-(\url{http://mirrors.ctan.org/macros/latex/required/graphics/grfguide.pdf})
-
-A number of width problems arise when \LaTeX{} cannot properly
-hyphenate a line. Please give LaTeX hyphenation hints using the
-\verb+\-+ command when necessary.
-
-\subsubsection*{Acknowledgments}
-
-Use unnumbered third level headings for the acknowledgments. All
-acknowledgments go at the end of the paper. Do not include
-acknowledgments in the anonymized submission, only in the final paper.
-
-\section*{References}
-
-References follow the acknowledgments. Use unnumbered first-level
-heading for the references. Any choice of citation style is acceptable
-as long as you are consistent. It is permissible to reduce the font
-size to \verb+small+ (9 point) when listing the references. {\bf
-  Remember that you can use more than eight pages as long as the
-  additional pages contain \emph{only} cited references.}
-\medskip
+\subfile{sections/manual_evaluations}
 
 \small
 

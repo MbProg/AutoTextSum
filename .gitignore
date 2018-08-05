@@ -2,3 +2,7 @@ GoogleNews-vectors-negative300.bin
 *.pyc
 *.xml
 Data/
+Report/nips_2018.aux
+Report/nips_2018.log
+Report/nips_2018.out
+Report/nips_2018.pdf

@@ -1,0 +1,4 @@
+- Angelehnt an Schulder und Hovy:
+    Wir möchten alle Wörter finden, die eine *hohe Domain Relevance* haben 
+    (aber eine niedrige Common Relevance? -> Backgroundcorpus könnte etwas allgemeines wie der Browncorpus sein)
+    (oder reicht es Stopwords hinauszufiltern? -> vielleicht ein bisschen kurz gegriffen)
