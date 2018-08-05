@@ -12,15 +12,12 @@ summary_names = set([s[:4] for s in tsv_files])
 eval_dict = defaultdict(list)
 eval_categories = []
 
-print("----------- Structure ----------------")
-
-
 # fill dictionary for e valuation
 for sn in summary_names:
     summ_dict = defaultdict(list)
     summary_evals = [f for f in tsv_files if sn in f]
     for e in summary_evals:
-        print(e)
+        #print(e)
         reader = csv.reader(open(eval_dir + '/' + e), delimiter='\t')
         rows = [l for l in reader]
         for r in rows[1:]:
@@ -39,24 +36,59 @@ for c in eval_dict['1001']:
     eval_categories.append(c)
 
 # compute average score for each category
-print('\naverage scores for each category \n')
+#print('\naverage scores for each category \n')
 
 for c in eval_categories:
     overall_scores = [(int(x[0])) for s in eval_dict.keys() for x in eval_dict[s][c]]
     average_overall_score = sum(overall_scores)/len(overall_scores)
-    print(c + ': ' + str(average_overall_score))
+    #print(c + ': ' + str(average_overall_score))
 
 
 # compute own score
 summary_scores = []
+summary_scores_for_corr = []
 for sn in summary_names:
     summary_score = 0
+    summary_score1 = 0
+    summary_score2 = 0
+    summary_score3 = 0
+    summary_score4 = 0
+    summary_score5 = 0
     # exclude 'Overall Quality'
     for c in eval_categories[:-1]:
+        print(eval_dict[sn][c][3])
+        t1 = eval_dict[sn][c][0]
+        t2 = eval_dict[sn][c][1]
+        t3 = eval_dict[sn][c][2]
+        t4 = eval_dict[sn][c][3]
+
+        summary_score1 += int(t1[0])* int(t1[1])*int(t1[2])
+        summary_score2 += int(t2[0])* int(t2[1])*int(t2[2])
+        summary_score3 += int(t3[0])* int(t3[1])*int(t3[2])
+        summary_score4 += int(t4[0])* int(t4[1])*int(t4[2])
+
+        if len(eval_dict[sn][c]) > 4:
+            t5 = eval_dict[sn][c][4]
+            summary_score5 += int(t5[0])* int(t5[1])*int(t5[2])
+
+
         for t in eval_dict[sn][c]:
             # 5^5^5 = 625
             summary_score += int(t[0])*int(t[1])*int(t[2])
+
+    summary_scores_for_corr.append(summary_score1)
+    summary_scores_for_corr.append(summary_score2)
+    summary_scores_for_corr.append(summary_score3)
+    summary_scores_for_corr.append(summary_score4)
+    if len(eval_dict[sn]['Structure']) > 4:
+        summary_scores_for_corr.append(summary_score5)
+
+
     summary_scores.append((sn, summary_score))
+
+
+
+print(len(summary_scores_for_corr))
 
 # TODO: correlation between overall score and eval_categories
 # 1st step: create 2 lists: overall score, other score
@@ -65,21 +97,20 @@ for sn in summary_names:
 #scipy.stats.stats.pearsonr()
 overall_scores = []
 category_scores = []
-print(eval_categories)
 
-category = 'Structure'
+category = 'Length'
 
 for sn in summary_names:
     #overall_scores.append(eval_dict[sn]['Overall Quality'][0])
-    print(sn)
+    #print(sn)
     for t in eval_dict[sn]['Overall Quality']:
-        print(t)
+        #print(t)
         overall_scores.append(int(t[0]))
     for t in eval_dict[sn][category]:
         category_scores.append(int(t[0]))
 
-print('\n------------ Pearsons r overall quality - ' + category + ' --------------------------------\n')
-pearson_correlation = scipy.stats.stats.pearsonr(overall_scores, category_scores)
+print('\n------------ Pearsons r overall quality - own score' + category + ' --------------------------------\n')
+pearson_correlation = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
 
 print(str(pearson_correlation) + '\n')
 
