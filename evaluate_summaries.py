@@ -90,13 +90,19 @@ for sn in summary_names:
 
 print(len(summary_scores_for_corr))
 
-# TODO: correlation between overall score and eval_categories
-# 1st step: create 2 lists: overall score, other score
-# 2nd step: calculate pearson's r
+# create lists for correlation calculation
 
-#scipy.stats.stats.pearsonr()
 overall_scores = []
-category_scores = []
+grammaticality_scores = []
+non_redundancy_scores = []
+referential_clarity_scores = []
+focus_scores = []
+structure_scores = []
+coherence_scores = []
+readability_scores = []
+information_content_scores = []
+spelling_scores = []
+length_scores = []
 
 category = 'Length'
 
@@ -106,13 +112,75 @@ for sn in summary_names:
     for t in eval_dict[sn]['Overall Quality']:
         #print(t)
         overall_scores.append(int(t[0]))
-    for t in eval_dict[sn][category]:
-        category_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Grammaticality']:
+        grammaticality_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Non-Redundancy']:
+        non_redundancy_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Referential Clarity']:
+        referential_clarity_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Focus']:
+        focus_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Structure']:
+        structure_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Coherence']:
+        coherence_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Readability']:
+        readability_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Information Content']:
+        information_content_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Spelling']:
+        spelling_scores.append(int(t[0]))
+    for t in eval_dict[sn]['Length']:
+        length_scores.append(int(t[0]))
 
 print('\n------------ Pearsons r overall quality - own score' + category + ' --------------------------------\n')
-pearson_correlation = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
+pearson_correlation_overall_own = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
+print(str(pearson_correlation_overall_own) + '\n')
 
-print(str(pearson_correlation) + '\n')
+category_scores_for_ic = [("grammaticality_scores", grammaticality_scores),
+("non_redundancy_scores", non_redundancy_scores),
+("referential_clarity_scores", referential_clarity_scores),
+("focus_scores", focus_scores),
+("structure_scores", structure_scores),
+("coherence_scores", coherence_scores),
+("readability_scores", readability_scores),
+("spelling_scores", spelling_scores),
+("length_scores", length_scores)]
+
+print("Correlation with information content: ")
+print([(n, str(scipy.stats.stats.pearsonr(l, information_content_scores))) for n, l in category_scores_for_ic])
+
+
+category_scores_for_g = [("grammaticality_scores", grammaticality_scores),
+("non_redundancy_scores", non_redundancy_scores),
+("referential_clarity_scores", referential_clarity_scores),
+("focus_scores", focus_scores),
+("structure_scores", structure_scores),
+("coherence_scores", coherence_scores),
+("information_content_scores", information_content_scores),
+("spelling_scores", spelling_scores),
+("length_scores", length_scores)]
+
+print("\nCorrelation with readability: ")
+print([(n, str(scipy.stats.stats.pearsonr(l, readability_scores))) for n, l in category_scores_for_g])
+
+category_scores_for_s = [("grammaticality_scores", grammaticality_scores),
+("non_redundancy_scores", non_redundancy_scores),
+("referential_clarity_scores", referential_clarity_scores),
+("focus_scores", focus_scores),
+("readability_scores", readability_scores),
+("coherence_scores", coherence_scores),
+("information_content_scores", information_content_scores),
+("spelling_scores", spelling_scores),
+("length_scores", length_scores)]
+
+print("\nCorrelation with structure: ")
+print([(n, str(scipy.stats.stats.pearsonr(l, structure_scores))) for n, l in category_scores_for_s])
+
+
+print('\n------------ Pearsons r informa - own score' + category + ' --------------------------------\n')
+pearson_correlation_overall_own = scipy.stats.stats.pearsonr(overall_scores, summary_scores_for_corr)
+print(str(pearson_correlation_overall_own) + '\n')
 
 
 summary_scores_sorted = sorted(summary_scores, key=lambda x:x[1], reverse=True)
@@ -126,12 +194,12 @@ print(summary_scores_sorted)
 #        print(eval_dict[sn][c])
 #    for c in eval_dict[sn]:
 
-#print('\naveraged weights\n')
+print('\naveraged weights\n')
 
 for c in eval_categories:
     overall_weights = [(int(x[1])) for s in eval_dict.keys() for x in eval_dict[s][c]]
     average_overall_weights = sum(overall_weights)/len(overall_weights)
-    #print(c + ': ' + str(average_overall_weights))
+    print(c + ': ' + str(average_overall_weights))
 
 
 #print('averaged confidences\n')
