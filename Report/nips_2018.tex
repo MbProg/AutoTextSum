@@ -199,7 +199,10 @@ To identify the correct nuggets we could use classification with two classes: nu
 
 We used GRUs as proposed by \citet{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding \cite{cnn_rnn_comparative2017}.
 
+\subsection{Generating summaries}
+Since the ultimate goal of the project was to generate summaries. As suggested by the advisors we chose to collaborate with group $5$. In order to make their pipeline accessible for our solutions they gave us the requirement of providing 30 sentences per topic sorted by their importance for the summary. As our approaches did not necessarily lead to sentence outputs we had to come up with a workaround to fulfill the necessary requirements.  
 
+We eventually decided to proceed the following way. For every sentence of a topic we calculate the percentage of words that appear in nuggets chosen by our model. Sentences that have a percentage smaller than $40$ percent are excluded. Afterwards we gave group $5$ our top $30$ sentences with regards to words in a nugget in descending order and then received their final model output which is further evaluated in the Evaluation section.   
 \section{Evaluation}
 \subsection{Nugget Evaluation}
 We tried to evaluate both our main approaches on the labeled dataset %add corpus ref%
