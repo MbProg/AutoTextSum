@@ -79,7 +79,6 @@
 
 \maketitle
 
-
 \begin{abstract}
   Today there are many documents, articles, papers and reports available in digital form. These volumes of text are invaluable sources of information and knowledge that need to be effectively summarized to be useful. In Automatic text summarization machine learning techniques are often used to generate summaries. A prior step to the generation of summaries is usually the extraction of nuggets. This report presents the two approaches we used for the extraction of nuggets: word embeddings, and sentence embeddings. We equally provide a description of their effectiveness and shortcomings. 
   
@@ -117,7 +116,6 @@ Several methods have been used for automatic text summarization including deep l
 encoder-decoder  model  on  sentence  paraphrasing,  and  then
 tested on a text summarizer. The vectors were fed into a hierarchical encoder, and then the summarized text generated word by word in an RNN decoder. 
 
-
 \section{Data}
 \label{sec:data}
 
@@ -135,7 +133,7 @@ The base of our work is the hierarchical summarization corpus by Tauchmann, Arno
 \label{headings}
 
 
-For all our Implementations we chose two build flexible models which would not only be able to choose whole Sentences as nuggets but also sub parts. Justification for that was drawn from short inspection of the nuggets that workers had chosen. For this we first calculated the percentage of nuggets that were sentences by counting nuggets that start with uppercasing and end on a punctuation mark and dividing it by the total nugget amount. Additionally we also plotted a histogram of nugget lengths that can be seen in figure
+For all our Implementations we chose two build flexible models which would not only be able to choose whole sentences as nuggets but also sub parts. Justification for that was drawn from short inspection of the nuggets that workers had chosen. For this we first calculated the percentage of nuggets that were sentences by counting nuggets that start with uppercasing and end on a punctuation mark and dividing it by the total nugget amount. Additionally we also plotted a histogram of nugget lengths that can be seen in figure
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.55\linewidth]{Nugget_size.pdf}
@@ -228,19 +226,16 @@ As labels each word gets assigned a number which represents the amount of nugget
 To form nuggets in a sentence we first transform each word into the above described feature representation and then assign a class or score with the trained classifier. Afterwards nuggets are formed by concatenating consecutive words that have scores above a pre-defined threshold $\delta$. The whole process is defined in pseudocode in \ref{alg:the_alg}
 
  \subsection{Second Approach}
-For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}=(w_i, w_{i+1}, \dots , w_{i+m})$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5<=m<=20$. In the end we would have every possible candidate in any given sentence. \\
-This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with most models \cite{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
+For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5<=m<=20$. So in the end we would have every possible candidate in any given sentence. \\
+This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set available and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with models models \citep{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
 
 We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence.
 
-To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}. Additionally we used the word embeddings of the query sequence as an additional input.
+To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}.
 
 To identify the correct nuggets we could use classification with two classes: nugget or not a nugget. This makes the task similar to sentence classification, which is a very well researched problem. The difference is that nuggets can be incomplete sentences. As \citep{zhou2015c} and others have shown, RNNs are among the top performing models in sentence classification together with CNNs, if given enough training data. For the target data we used a threshold of two, so any phrase which was annotated as a nugget by two or more workers would be considered a nugget in this binary format. Also possible would be regression of the number of Mechanical Turk workers annotating each word sequence as a nugget. Which would be equivalent to the original format of our target data.\\
 
-
-All put together we used the architecture as shown in %\ref{tikzd_2nd_approach} for regression.
-We used GRUs as proposed by \cite{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding and easier to generalize \cite{cnn_rnn_comparative2017}. We also tried a similar architecture for classification of candidates with more than one worker annotating it. Sadly both architectures did not learn anything beyond always predicting 0, i.e. no nugget. We tried different models in order to find the problem, but we had too little time to find the error. Perhaps the class imbalance was still too high or we made a mistake selecting the nugget candidates and corresponding labels. In the end we sadly had to abandon the approach.
-
+We used GRUs as proposed by \citet{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding \cite{cnn_rnn_comparative2017}.
 
 \subsection{Generating summaries}
 Since the ultimate goal of the project was to generate summaries. As suggested by the advisors we chose to collaborate with group $5$. In order to make their pipeline accessible for our solutions they gave us the requirement of providing 30 sentences per topic sorted by their importance for the summary. As our approaches did not necessarily lead to sentence outputs we had to come up with a workaround to fulfill the necessary requirements.  
@@ -273,13 +268,13 @@ The final scores on the Test set can be found in table \ref{Nugget_scores}.
 \subsubsection{Nugget results discussion}
 The overall performance of the nugget selection were quite disappointing and can have many different causes. One obvious factor is the relatively unorthodox selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modeling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.
 
-To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network. Another possibility is, that the labels were not continous enough between sentences. Two sentences which only differ by one word could have completely different labels, because we annotated only the exact sequence. This may lead to a kind of almost flat error surface where the only positive areas are distributed more by chance than by correlation with the sequence. As an example we think the addition of sequence similarity between wrong nearby true nuggets could help achieve a more stable training signal towards the true sentences.
+To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as  it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network.
 \subsection{Evaluation of manual evaluations}
 \label{subsec:maneval}
 
 \subfile{sections/manual_evaluations}
 
-\subfile{sections/future_work}
+\small
 
 \bibliographystyle{plain}
 \bibliography{nips_2018}
