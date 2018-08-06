@@ -8,10 +8,9 @@ We are provided with summaries created by two different baseline approaches. The
 
 The second baseline approach, \textit{Baseline 2}, is a system proposed by Hui Lin and Jeff Bilmes (2011) \cite{Lin:2011:CSF:2002472.2002537}. They use a class of submodular functions which are optimized to create the best possible summary. The functions are chosen in such a way that they reward diversity, here as the opposite of redundancy, and query relevance. So this approach basically has the same focus as the other baseline's approach.
 
-Baseline 1 performs in almost every category much worse than our system. Non-redundancy is the only category which baseline 1 scores a good result in.
-% was the system designed to do that?
+Baseline 1 performs in almost every category much worse than our system. Non-redundancy is the only category which baseline 1 scores a good result in. That is not surprising since this approach is designed to be good at non-redundancy.
 
-Baseline 2 has similar results except in the categories structure and coherence which it exceeds our system in. On the other hand our system is able to create summaries for every topic while baseline 2 was unsuccessful at creating summaries for 22,45\% of the topics. Remarkably, baseline 2 has a very high standard deviance of 1.05 at the overall quality.
+Baseline 2's results are similar to our system in most categories. It only significantly exceeds our system in structure and coherence. The advantage of our system is though that it was able to create summaries for every topic while baseline 2 was unsuccessful at creating summaries for 22,45\% of the topics. Furthermore the summary quality of baseline 2 is more unpredictable than our system since its standard deviance at the overall quality is higher with 1.05 points to 0.80 points.
 % reference to a figure with overall scores and standard devances
 
 Compared to the other groups our system performs in average 0.245 to 0.67 points worse than the other system in all evaluation  categories, having the biggest difference in information content.  
