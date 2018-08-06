@@ -1,0 +1,8 @@
+ 
+The hierarchical summarization corpus is based on a corpus by Habernal et al. (2016) \citep{Habernal:2016:NCA:2911451.2914682}. They extracted texts for 49 topics from Clueweb12. This resulted in 40 to 100 topics for each texts from which only the most relevant sentences were extracted via crowdsourcing.
+
+Tauchmann, Arnold, Meyer and Mieskes (2018) created hierarchies for 10 of the 49 topics in Habernal et al.'s corpus. In total the corpus contains 786 documents with 38,304 sentences. Their corpus includes relevant sentences, nuggets and several hierarchies for each topic. Thus the corpus can be used for many different steps in a summarization pipeline. Due to its hierarchical structure it can also be used for different kinds of summarization tasks like query-based summarization or abstractive summarization.
+
+The first step was to scan all relevant sentences for nuggets. This task was performed by crowdworkers. The workers should mark all nuggets which should be in a summary in their opinion. The length of the nuggets ranges from three words to a whole sentence.
+
+The second step is creating hierarchies from the nuggets. This step is performed by expert annotators. For each topic three hierarchies are created manually. Then a gold hierarchy is created by maximizing the hierarchy overlap between all three hierarchies.
