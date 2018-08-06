@@ -11,7 +11,7 @@ The second baseline approach, \textit{Baseline 2}, is a system proposed by Hui L
 Baseline 1 performs in almost every category much worse than our system. Non-redundancy is the only category which baseline 1 scores a good result in. That is not surprising since this approach is designed to be good at non-redundancy.
 
 Baseline 2's results are similar to our system in most categories. It only significantly exceeds our system in structure and coherence. The advantage of our system is though that it was able to create summaries for every topic while baseline 2 was unsuccessful at creating summaries for 22,45\% of the topics. Furthermore the summary quality of baseline 2 is more unpredictable than our system since its standard deviance at the overall quality is higher with 1.05 points to 0.80 points.
-% reference to a figure with overall scores and standard devances
+% TODO reference to a figure with overall scores and standard devances
 
 Compared to the other groups our system performs in average 0.245 to 0.67 points worse than the other system in all evaluation  categories, having the biggest difference in information content.  
 
@@ -19,8 +19,33 @@ Compared to the other groups our system performs in average 0.245 to 0.67 points
 
 \subsubsection{Analysis by topics}
 
-Our system has an average overall quality of 2.75 with a standard deviance of 0.80. In figure ... it can be seen that the the overall quality varying and ranges from bad summaries (1.5 points) to excellent summaries (4.75 points).
-% TODO: ref
+Our system has an average overall quality of 2.75 with a standard deviance of 0.80. In figure ... it can be seen that the the overall quality varies a lot and ranges from bad summaries (1.5 points) to excellent summaries (4.75 points). Our best summary according to the overall quality score is about potty training (topic 1048). This summary is indeed very good since it only contains advice about potty training and does not contain redundant information (see \ref{best_summary}). The worst summary concerning overall quality is somehow about school. It contains two almost exactly same sentences which only differ in one word "children"/"kids" (see \ref{worst_summary})
+
+\begin{figure}
+	\caption{Best summary by overall quality}
+	\label{best_summary}
+	\noindent\fbox{%
+		\parbox{\textwidth}{%
+			Begin potty training when you are ready to devote the time and energy to encourage your child on a daily basis for at least three months.
+			When your child is ready, he will signal that his diaper is wet or soiled or will tell you that he would like to go to the potty.
+			Tell your child that the potty chair is his own chair.
+			Stay with your child when he is on the potty chair.
+			Place your child on the potty chair whenever he signals the need to go to the bathroom so he'll associate the potty with the urge to go.
+		}%
+	}	
+\end{figure}
+
+\begin{figure}
+	\caption{Worst summary by overall quality}
+	\label{worst_summary}
+	\noindent\fbox{%
+		\parbox{\textwidth}{%
+			For most children school is where they start to really develop their own personalities away from their families; interacting with others from different backgrounds without parents' interference.
+			For most kids school is where they start to really develop their own personalities away from their families; interacting with others from different backgrounds without parents' interference.
+		}%
+	}	
+\end{figure} 
+
 
 \subsubsection{Analysis by evaluation categories}
 Most categories seem like any text evaluation categories like "Spelling" and "Grammaticality". Other categories seem especially summary-related. These are the categories "Information Content" and "Focus". They represent the goal of a summary very well which is to present the most important content of the summarized texts. Since all summarized texts in this corpus are about a certain query the focus should be visible, too.
