@@ -5,7 +5,7 @@
 % before loading nips_2018
 
 % ready for submission
-\usepackage{nips_2018}
+%\usepackage{nips_2018}
 
 \usepackage{subfiles}
 
@@ -14,7 +14,7 @@
 % \usepackage[preprint]{nips_2018}
 
 % to compile a camera-ready version, add the [final] option, e.g.:
-% \usepackage[final]{nips_2018}
+\usepackage{nips_2018}
 
 % to avoid loading the natbib package, add option nonatbib:
 % \usepackage[nonatbib]{nips_2018}
@@ -31,7 +31,7 @@
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{tikz-cd}
-
+%\usepackage{placeins}
 
 \title{Automatic text summarization, 2018}
 
@@ -46,13 +46,13 @@
 % author name.
 
 \author{
-  David S.~Hippocampus\thanks{Use footnote for providing further
-    information about author (webpage, alternative
-    address)---\emph{not} for acknowledging funding agencies.} \\
-  Department of Computer Science\\
-  Cranberry-Lemon University\\
-  Pittsburgh, PA 15213 \\
-  \texttt{hippo@cs.cranberry-lemon.edu} \\
+  Jannis Hoppe\\
+  \And
+  Hannah Wieland\\
+  \And
+  Stephane Tekam Feudjo\\
+  \And
+  Tim Kronsbein\\
   %% examples of more authors
   %% \And
   %% Coauthor \\
@@ -230,6 +230,7 @@ As labels each word got assigned a number which represents the amount of nuggets
 \end{algorithm}
 To form nuggets in a sentence we first transform each word into the above described feature representation and then assign a class or score with the trained classifier. Afterwards nuggets are formed by concatenating consecutive words that have scores above a pre-defined threshold $\delta$. The whole process is defined in pseudocode in \ref{alg:the_alg}.
 
+%\FloatBarrier
  \subsection{Second Approach}
 For the second approach we used sequence classification to classify each possible subsequence of a sentence as either a nugget or not. More precisely we generated a candidate $s_{i,m}=(w_i, w_{i+1}, \dots , w_{i+m})$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5 \leq m \leq 20$. In the end we would have every possible candidate in any given sentence. \\
 This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with most models \cite{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
