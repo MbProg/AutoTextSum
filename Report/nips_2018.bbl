@@ -1,0 +1,107 @@
+\begin{thebibliography}{10}
+
+\bibitem{Jain.et.al.2017}
+Manish K~Thakur Aditya~Jain, Divij~Bhatia.
+\newblock Extractive text summarization using word vector embedding.
+\newblock {\em IEEE Std.}, 2017.
+
+\bibitem{sif2016}
+Sanjeev Arora, Yingyu Liang, and Tengyu Ma.
+\newblock A simple but tough-to-beat baseline for sentence embeddings.
+\newblock 2016.
+
+\bibitem{Carbonell:1998:UMD:290941.291025}
+Jaime Carbonell and Jade Goldstein.
+\newblock The use of mmr, diversity-based reranking for reordering documents
+  and producing summaries.
+\newblock In {\em Proceedings of the 21st Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '98,
+  pages 335--336, New York, NY, USA, 1998. ACM.
+
+\bibitem{universal2018}
+Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni~St
+  John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, et~al.
+\newblock Universal sentence encoder.
+\newblock {\em arXiv preprint arXiv:1803.11175}, 2018.
+
+\bibitem{gru2014}
+Kyunghyun Cho, Bart Van~Merri{\"e}nboer, Dzmitry Bahdanau, and Yoshua Bengio.
+\newblock On the properties of neural machine translation: Encoder-decoder
+  approaches.
+\newblock {\em arXiv preprint arXiv:1409.1259}, 2014.
+
+\bibitem{Fattah_2014}
+Mohamed~Abdel Fattah.
+\newblock A hybrid machine learning model for multi-document summarization.
+\newblock 2014.
+
+\bibitem{Habernal:2016:NCA:2911451.2914682}
+Ivan Habernal, Maria Sukhareva, Fiana Raiber, Anna Shtok, Oren Kurland, Hadar
+  Ronen, Judit Bar-Ilan, and Iryna Gurevych.
+\newblock New collection announcement: Focused retrieval over the web.
+\newblock In {\em Proceedings of the 39th International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, SIGIR '16, pages
+  701--704, New York, NY, USA, 2016. ACM.
+
+\bibitem{japkowicz2002class}
+Nathalie Japkowicz and Shaju Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Intelligent data analysis}, 6(5):429--449, 2002.
+
+\bibitem{kupiec.et.al.1995}
+Jan~Pedersen Julian~Kupiec and Francine Chen.
+\newblock A trainable document summarizer.
+\newblock 1995.
+
+\bibitem{lin2004rouge}
+Chin-Yew Lin.
+\newblock Rouge: A package for automatic evaluation of summaries.
+\newblock {\em Text Summarization Branches Out}, 2004.
+
+\bibitem{Lin:2011:CSF:2002472.2002537}
+Hui Lin and Jeff Bilmes.
+\newblock A class of submodular functions for document summarization.
+\newblock In {\em Proceedings of the 49th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies - Volume 1}, HLT '11,
+  pages 510--520, Stroudsburg, PA, USA, 2011. Association for Computational
+  Linguistics.
+
+\bibitem{w2v}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{Tauchmann.et.al.2018.LREC}
+Christopher Tauchmann, Thomas Arnold, Andreas Hanselowski, Christian~M. Meyer,
+  and Margot Mieskes.
+\newblock Beyond generic summarization: A multi-faceted hierarchical
+  summarization corpus of large heterogeneous data.
+\newblock In {\em Proceedings of the 11th International Conference on Language
+  Resources and Evaluation (LREC)}, May 2018.
+\newblock (to appear).
+
+\bibitem{cnn_rnn_comparative2017}
+Wenpeng Yin, Katharina Kann, Mo~Yu, and Hinrich Sch{\"u}tze.
+\newblock Comparative study of cnn and rnn for natural language processing.
+\newblock {\em arXiv preprint arXiv:1702.01923}, 2017.
+
+\bibitem{zhang2017semantic}
+Chi Zhang, Shagan Sah, Thang Nguyen, Dheeraj Peri, Alexander Loui, Carl
+  Salvaggio, and Raymond Ptucha.
+\newblock Semantic sentence embeddings for paraphrasing and text summarization.
+\newblock In {\em Signal and Information Processing (GlobalSIP), 2017 IEEE
+  Global Conference on}, pages 705--709. IEEE, 2017.
+
+\bibitem{zhou2015c}
+Chunting Zhou, Chonglin Sun, Zhiyuan Liu, and Francis Lau.
+\newblock A c-lstm neural network for text classification.
+\newblock {\em arXiv preprint arXiv:1511.08630}, 2015.
+
+\bibitem{tubiblio97941}
+Markus Zopf, Maxime Peyrard, and Judith Eckle-Kohler.
+\newblock The next step for multi-document summarization: A heterogeneous
+  multi-genre corpus built with a novel construction approach.
+\newblock In {\em Proceedings of the 26th International Conference on
+  Computational Linguistics}, pages 1535---1545, December 2016.
+
+\end{thebibliography}
