@@ -1,2 +1,8 @@
 \subsection{Conclusion}
-In this report we used two main approaches to handle the problem of automatic text summarization: Wordwise by feeding word embeddings in a classifier,  and a sequence classification approach by classifying all possible sentences as nuggets or not, where sentence embeddings as well as word embeddings were used as features. The former performed better than the later.
+We tried two different approaches to handle the problem of nugget selection, and used the resulting nuggets to generate summaries of the original documents.
+Our first approach worked wordwise by feeding averaged word embeddings of the context in a classifier.\\
+The sequence classification approach on the other hand classifies all possible sequences in any sentence as nuggets or not. Sentence embeddings as well as word embeddings were used as features. 
+The second approach was unable to learn from the data and always predicted no nugget even though we included oversampling of the minority class. We think this might be because in this approach two very similar nuggets, with only a difference of one word, can have completely opposite labels. Meanwhile a completely uninformative nugget candidate has the same label and loss as the almost correct nugget. This makes the task very hard to learn, especially given that we did not have that much training data. Thats why the first approach worked better in the end, even though it relied only on the averaging of word embeddings.
+\\
+
+Afterwards we used the pipeline of another group to generate summaries from our nuggets. Our summaries were better than baseline 1 and on-par with baseline 2. Most groups' summaries performed better than our's. We suspect that incompatibilities between the nugget selection and group 5's pipeline played an important role in the underwhelming overall performance.

@@ -108,7 +108,7 @@ Most recent methods on nugget extraction originate from the machine learning fie
 
 
 \section{Related work}
-Several methods have been used for automatic text summarization including deep learning, and classification.
+Several methods have been used for automatic text summarization including deep learning.
 
 Kupiec et al. (1995)\citep{kupiec.et.al.1995}: Developed an automatic text summarization system based on a Naive Bayes Classifier trained on a set of pairs (article - summary). The following were used as features: sentence length, sentence position in paragraph, presence of words in capital letters, and the presence of thematic terms. The classifier computes the probability that each sentence will be included in the summary.
 
@@ -116,7 +116,7 @@ Fattah (2014)\citep{Fattah_2014} Proposed a model for multidocument automatic su
 
 Jain et al. (2017)\cite{Jain.et.al.2017}: Presented an approach to text summarization using neural networks. The neural network has been trained by extracting ten features including word vector embeddings from the training dataset.
 
-Zang et al. (2017)\cite{zang.2017}: Extracted vector representation of a sentence from an
+Zhang et al. (2017)\cite{zhang2017semantic}: Extracted vector representation of a sentence from an
 encoder-decoder  model  on  sentence  paraphrasing,  and  then
 tested on a text summarizer. The vectors were fed into a hierarchical encoder, and then the summarized text generated word by word in an RNN decoder. 
 
@@ -167,7 +167,7 @@ For the first approach we chose to take a wordwise approach that was also inspir
 \end{center}
 To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google \footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all word of the query of a specific document into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.
 
-As labels each word gets assigned to a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
+As labels each word got assigned a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
 
 \begin{algorithm}
 	\label{alg:features}
@@ -234,13 +234,23 @@ To form nuggets in a sentence we first transform each word into the above descri
 For the second approach we used sequence classification to classify each possible candidate as either a nugget or not. More precisely we generated a candidate $s_{i,m}=(w_i, w_{i+1}, \dots , w_{i+m})$ for each word $w_i$ with $m$ following words. We iterated the candidate length $m=|s_{i,m}|$ between a minimum length of 5 and a maximum of 20, if the length of the sentence allowed it. So $5 \leq m \leq 20$. In the end we would have every possible candidate in any given sentence. \\
 This preprocessing required substantive computational time, so we saved these candidates to the disk to have the whole training set availabe and speed up the training process. We found that only a few percent of possible nugget candidates actually were annotated by at least one worker. This extreme class imbalance can lead to serious issues in the learning process with most models \cite{japkowicz2002class}. To fix this issue we used oversampling of the rare class, i.e. after shuffling all samples we would take 20\% candidates with a label bigger than zero and 80\% random candidates. This makes it much more likely to have at least one positive sample in each batch, so that the model can have a more stable training signal.
 
-We chose this approach because it seems like a intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence.
+We chose this approach because it seems like an intuitive solution to the problem that nuggets can also be incomplete sentences. In many of the target nuggets we were given, the workers annotated only the most important phrases of a sentence.
 
 To represent the nugget candidates we used sequences of pretrained Word2Vec word embeddings \cite{w2v}, as well as sentence embeddings computed by the Universal Sentence Encoder module in tensorflow \cite{universal2018}. Additionally we used the word embeddings of the query sequence as an additional input.
 
 To identify the correct nuggets we could use classification with two classes: nugget or not a nugget. This makes the task similar to sentence classification, which is a very well researched problem. The difference is that nuggets can be incomplete sentences. As \citep{zhou2015c} and others have shown, RNNs are among the top performing models in sentence classification together with CNNs, if given enough training data. For the target data we used a threshold of two, so any phrase which was annotated as a nugget by two or more workers would be considered a nugget in this binary format. Also possible would be regression of the number of Mechanical Turk workers annotating each word sequence as a nugget. Which would be equivalent to the original format of our target data.\\
 
-All put together we used the architecture as shown in %\ref{tikzd_2nd_approach} for regression.
+\begin{figure}
+\begin{tikzcd}
+\label{fig:2nd_regression}
+query \arrow[rd, "embedding"] &  &  &  \\
+ & {GRU(256, relu)} \arrow[r] & {Dense(256,relu)} \arrow[r] & {Dense(1, linear) MSE} \\
+sequence \arrow[ru, "embedding"'] &  &  & \\
+\end{tikzcd}
+\caption{Architecture of the 2nd approach with regression}
+\end{figure}
+
+All put together we used the architecture as shown in Figure \ref{fig:2nd_regression} for regression. Similarily for classification we used different labels,  crossentropy loss.
 We used GRUs as proposed by \cite{gru2014}, because we have less training data than most state of the art research projects. While the performance of LSTMs and GRUs are very similar, the GRU has a bit fewer parameters to train and is thus less computationally demanding and easier to generalize \cite{cnn_rnn_comparative2017}. We also tried a similar architecture for classification of candidates with more than one worker annotating it. Sadly both architectures did not learn anything beyond always predicting 0, i.e. no nugget. We tried different models in order to find the problem, but we had too little time to find the error. Perhaps the class imbalance was still too high or we made a mistake selecting the nugget candidates and corresponding labels. In the end we sadly had to abandon the approach.
 
 
