@@ -286,9 +286,31 @@ The overall performance of the nugget selection were quite disappointing and can
 
 To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network. Another possibility is that the labels were not continous enough between sentences. Two sentences which only differ by one word often have completely different labels, because we annotated only the exact sequence. This may lead to a almost flat error surface where the only positive areas are distributed more by chance than by correlation with the sequence's embeddings. As an example we think the addition of sequence similarity between wrong and nearby true nuggets could help achieve a more stable training signal towards target sequences.
 \subsection{Automatic Evaluation}
+For the automatic evaluation of our generated summaries we use Rouge-2 and Jensen Shannon divergence(JSD). JSD does not require gold standard reference summaries and therefore is easily computed on our output. Rouge Scores however typically depend on reference summaries which required us to provide those references by treating summaries of other groups as such. 
 
 \subfile{sections/rouge}
 
+\subsubsection{Jenson Shannon Divergence}
+The final results for unsmoothed and smoothed JSD can be seen in table \ref{tab:jensen}
+
+\begin{table}
+	\caption{Jensen Shannon divergence scores}
+	\label{tab:jensen}
+	\centering
+	\begin{tabular}{llll}
+		\toprule
+		\multicolumn{3}{c}{}                   \\
+		
+		Model     & Smoothed JSD & Unsmoothed JSD \\
+		\midrule
+		Baseline 1 & $0.292$  & $0.515$ \\
+		Our Output     & $0.290$ & $0.517$    \\
+		Average all groups & $0.275$& $0.495$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The results show that our group performs roughly on par with the baseline provided by the course instructors while being slightly outperformed by the rest of course groups. This also was to be expected as mentioned in \ref{sec:eval} our system had problems where it would frequently mistake irrelevant information as nuggets.
 \subsection{Evaluation of manual evaluations}
 \label{subsec:maneval}
 \subfile{sections/manual_evaluations}
