@@ -88,6 +88,7 @@
 \end{abstract}
 
 \section{Introduction}
+
 \label{sec:intro}
 
 With the dramatic growth of the web, people are overwhelmed by the tremendous amount of online information and documents. This expansion in availability of data has demanded extensive research in the automatic generation of summaries from various different types of text.\\
@@ -96,26 +97,26 @@ With the dramatic growth of the web, people are overwhelmed by the tremendous am
 
 In general, there  are two different approaches for text summarization: \textit{extraction} and \textit{abstraction}. Extractive methods select a subset of existing words , phrases, or sentences in the original document to form the summary. This method either aims at summarizing single documents(single document summarization, SDS) or clusters of related documents(Multi-document summarization, MDS). In contrast, abstractive methods generate new phrases, possibly rephrasing or using words that were not in the original text. Our approach to the problem is an extractive one. From now hence   we use automatic summarization to mean automatic summarization by extraction. 
 
-Most automatic summarizers are built in three main steps: document analysis, where preprocessing is done; extraction, where sentences are selected, and summary generation. To generate the summary, we use the pipeline proposed by \citep{Tauchmann.et.al.2018.LREC} to build the corpus. This pipeline consists of two main steps: \textit{Content selection}, and \textit{Hierarchical ordering}. For the first step(\textit{Content selection}), crowd-sourcing was used to process large document selections. The goal is to select informative nuggets. \textit{Hierarchical ordering} deals with structuring the selected content into hierarchies. This was done by experts, using open source annotation tools. At the end hierarchies of superior quality were choosen as gold standard. Using humans to perform the task is sometimes difficult since generating a summary requires considerable cognitive effort. Also using experts can be costly for large corpora.
+Most automatic summarizers are built in three main steps: document analysis, where preprocessing is done; extraction, where sentences are selected, and summary generation. To generate the summary, we use the pipeline proposed by Tauchmann et al. (2018) \citep{Tauchmann.et.al.2018.LREC} to build the corpus. This pipeline consists of two main steps: \textit{Content selection}, and \textit{Hierarchical ordering}. For the first step(\textit{Content selection}), crowd-sourcing was used to process large document selections. The goal is to select informative nuggets. \textit{Hierarchical ordering} deals with structuring the selected content into hierarchies (detail explanation will be given later). This was done by experts, using open source annotation tools. At the end hierarchies of superior quality were choosen as gold standard. But using humans to perform the task is sometimes difficult since generating a summary requires considerable cognitive effort. Also using experts can be costly for large corpora.
 
-The general pipeline we used to generate summaries consists of the following three steps: Content selection, Hierarchical ordering, and summary generation. In each of this tasks, experts are replaced by machine learning algorithms. The focus of our work is on content selection (information nuggets extraction). We then use the resulting nuggets as input to the rest of the pipeline (implemented by other groups), to generate the summaries.
+The general pipeline we used to generate summaries consists of the following three steps: Content selection, Hierarchical ordering, and summary generation. In each of the tasks, experts are replaced by machine learning algorithms. The focus of our work is on content selection (information nuggets extraction). We then use the resulting nuggets as input to the rest of the pipeline (implemented by other groups), to generate the summaries.
 
-Nuggets provides a concise summary of a document's content. Apart from automatic text summarization, they are used in many applications related to knowledge management and text mining such as document clustering, and document classification. 
+Nuggets provides a concise summary of a document's content. Apart from automatic text summarization, they are used in many applications related to knowledge management and text mining such as document clustering, and document classification.
 
-Most recent methods on nugget extraction originate from the machine learning field. In the following section we describe prior studies on the extraction of nuggets; Then we describe our methodology on nugget extraction and summary generation and finally we present our results. 
+Most recent methods on nugget extraction originate from the machine learning field. In the following section we describe prior studies on the extraction of nuggets; Then we describe our methodology on nugget extraction and summary generation and finally we present our results.
 
 
 
 \section{Related work}
 Several methods have been used for automatic text summarization including deep learning, and classification.
 
-\citep{kupiec.et.al.1995}: Developed an automatic text summarization system based on a Naive Bayes Classifier trained on a set of pairs (article - summary).The following were used as features:sentence length, sentence position in paragraph, presence of words in capital letters, and the presence of thematic terms. The classifier computes the probability that each sentence will be included in the summary.
+Kupiec et al. (1995)\citep{kupiec.et.al.1995}: Developed an automatic text summarization system based on a Naive Bayes Classifier trained on a set of pairs (article - summary). The following were used as features: sentence length, sentence position in paragraph, presence of words in capital letters, and the presence of thematic terms. The classifier computes the probability that each sentence will be included in the summary.
 
-\citep{Fattah_2014} Proposed a model for multidocument automatic summarization. They used the DUC 2002 data corpus to test the algortim. The model took into account several features; the similariy of words among sentences, the similarity of words among paragraphs, the text format, cue phrases, a score related to frequency of terms in the whole document , the title , sentence location and occurence of non essential information. The features are then used to construct a summarizer models based on a maximum entropy model, a naive-bayes, classifier, and a support vector machine. The final summary is produced by combining the three models into a hybrid model that ranks the sentences in order of importance.
+Fattah (2014)\citep{Fattah_2014} Proposed a model for multidocument automatic summarization. They used the DUC 2002 data corpus to test the algortim. The model took into account several features; the similariy of words among sentences, the similarity of words among paragraphs, the text format, cue phrases, a score related to frequency of terms in the whole document , the title , sentence location and occurence of non essential information. The features are then used to construct a summarizer models based on a maximum entropy model, a naive-bayes, classifier, and a support vector machine. The final summary is produced by combining the three models into a hybrid model that ranks the sentences in order of importance. Our approach train some of the mentioned classifiers independently, without combining them.
 
-\cite{Jain.et.al.2017}: Presented an approach to text summarization using neural networks. The neural network has been trained by extracting ten features including word vector embeddings from the training dataset.
+Jain et al. (2017)\cite{Jain.et.al.2017}: Presented an approach to text summarization using neural networks. The neural network has been trained by extracting ten features including word vector embeddings from the training dataset.
 
-(CHi et al): Extracted vector representation of a sentence from an
+Zang et al. (2017)\cite{zang.2017}: Extracted vector representation of a sentence from an
 encoder-decoder  model  on  sentence  paraphrasing,  and  then
 tested on a text summarizer. The vectors were fed into a hierarchical encoder, and then the summarized text generated word by word in an RNN decoder. 
 
@@ -166,7 +167,7 @@ For the first approach we chose to take a wordwise approach that was also inspir
 \end{center}
 To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google \footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all word of the query of a specific document into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.
 
-As labels each word gets assigned a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
+As labels each word gets assigned to a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
 
 \begin{algorithm}
 	\label{alg:features}
@@ -274,7 +275,7 @@ The final scores on the Test set can be found in table \ref{Nugget_scores}.
 \subsubsection{Nugget results discussion}
 The overall performance of the nugget selection were quite disappointing and can have many different causes. One obvious factor is the relatively unorthodox selection of nuggets which is evident in the high recall scores. This happened mainly because we had to set the threshold of nuggets to $1$ as otherwise no nuggets would have been predicted. We tried to sum class probabilities and modeling the task as regression but the heavy imbalance between label values always led to similar problems in the results. A bigger dataset would have allowed us by the means of subsampling to provide a more balanced class distribution and therefore possibly achieve better results. Also the query or topic should be a rather important information about what is might be a nugget in a sentence. The provided labeled dataset only has ten such topics though which might also not be enough data to allow for a generalizable solution in the first place.  However it may also be concluded that the chosen feature representation due to the averaging or relatively narrow view on the sentence does not provide a clear enough boundary between important and unimportant words/nuggets.
 
-To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network. Another possibility is that the labels were not continous enough between sentences. Two sentences which only differ by one word often have completely different labels, because we annotated only the exact sequence. This may lead to a almost flat error surface where the only positive areas are distributed more by chance than by correlation with the sequence's embeddings. As an example we think the addition of sequence similarity between wrong and nearby true nuggets could help achieve a more stable training signal towards target sequences. 
+To address the unclear effect of this feature representation we originally thought about using our second approach which however failed as well. We mainly guess that it was due to a lack of annotated data as it was easy to create vast amount of negative labeled nuggets but the relatively limited amount of queries and annotated nuggets might be problematic for learning a decently sized recurrent neural network. Another possibility is that the labels were not continous enough between sentences. Two sentences which only differ by one word often have completely different labels, because we annotated only the exact sequence. This may lead to a almost flat error surface where the only positive areas are distributed more by chance than by correlation with the sequence's embeddings. As an example we think the addition of sequence similarity between wrong and nearby true nuggets could help achieve a more stable training signal towards target sequences.
 \subsection{Evaluation of manual evaluations}
 \label{subsec:maneval}
 
@@ -282,7 +283,7 @@ To address the unclear effect of this feature representation we originally thoug
 
 
 \subfile{sections/manual_evaluations}
-
+\subfile{sections/conclusion}
 \subfile{sections/future_work}
 
 \bibliographystyle{plain}

@@ -1,14 +1,53 @@
+One evaluation technique for the summaries is manual evaluation by human annotators. In the following the annotation format is explained and the results are analyzed regarding baselines and the other groups' systems and regarding the different evaluation categories.
 
 \subsubsection{Creating manual evaluations}
 All created summaries were given to human annotators for evaluation. Since reference summaries do not exist and annotators could not read all source documents the summaries were not evaluated by comparing them to a gold standard but by Likert Scales which only concentrate on a given summary. In total there are eleven categories which the annotators evaluate the quality of the summary in: grammaticality, non-redundancy, referential clarity, focus, structures, coherence, readability, information content, spelling, length and overall quality. For each category the annotators should assign a score from 1 (= very poor) to 5 (= very good), a weight and a confidence (both scales also from 1 to 5) of their grading. The annotators were also free to give a comment to explain their rating. Each summary was evaluated by four to five different annotators who were students of the same course.
 
-\paragraph{Baselines}
-We are provided with summaries created by two different baseline approaches. These summaries were evaluated as well by the annotators. The first Baseline approach, \textit{Baseline 1}, is a system proposed by Jaime Carbonell and Jade Goldstein (1998) called \textit{diversity-based reranking for reordering documents and producing summaries} \cite{Carbonell:1998:UMD:290941.291025}. The second baseline approach \textit{Baseline 2}, is a system proposed by Hui Lin and Jeff Bilmes (2011) \cite{Lin:2011:CSF:2002472.2002537} which is called \textit{A class of submodular functions for document summarization}.
-% TODO: citations needed
-% and a description of both approaches
-% where do I put this paragraph?
+\subsubsection{Comparing with the baselines and the other groups}
+We are provided with summaries created by two different baseline approaches. These summaries were evaluated as ell by manual evaluation, but only by two to three annotators. The first baseline approach, \textit{Baseline 1}, is a system proposed by Jaime Carbonell and Jade Goldstein (1998) \cite{Carbonell:1998:UMD:290941.291025}. They introduce the \textit{Maximal Marginal Relevance (MMR) criterion} to create non-redundant and query-relevant summaries from single or multiple documents while focusing on non-redundancy.
 
-\subsubsection{Analysis of the evaluation categories}
+The second baseline approach, \textit{Baseline 2}, is a system proposed by Hui Lin and Jeff Bilmes (2011) \cite{Lin:2011:CSF:2002472.2002537}. They use a class of submodular functions which are optimized to create the best possible summary. The functions are chosen in such a way that they reward diversity, here as the opposite of redundancy, and query relevance. So this approach basically has the same focus as the other baseline's approach.
+
+Baseline 1 performs in almost every category much worse than our system. Non-redundancy is the only category which baseline 1 scores a good result in. That is not surprising since this approach is designed to be good at non-redundancy.
+
+Baseline 2's results are similar to our system in most categories. It only significantly exceeds our system in structure and coherence. The advantage of our system is though that it was able to create summaries for every topic while baseline 2 was unsuccessful at creating summaries for 22,45\% of the topics. Furthermore the summary quality of baseline 2 is more unpredictable than our system since its standard deviance at the overall quality is higher with 1.05 points to 0.80 points.
+% TODO reference to a figure with overall scores and standard devances
+
+Compared to the other groups our system performs in average 0.245 to 0.67 points worse than the other system in all evaluation  categories, having the biggest difference in information content.  
+
+%TODO:  figure for comparison with the baselines and the other groups
+
+\subsubsection{Analysis by topics}
+
+Our system has an average overall quality of 2.75 with a standard deviance of 0.80. In figure ... it can be seen that the the overall quality varies a lot and ranges from bad summaries (1.5 points) to excellent summaries (4.75 points). Our best summary according to the overall quality score is about potty training (topic 1048). This summary is indeed very good since it only contains advice about potty training and does not contain redundant information (see \ref{best_summary}). The worst summary concerning overall quality is somehow about school. It contains two almost exactly same sentences which only differ in one word "children"/"kids" (see \ref{worst_summary})
+
+\begin{figure}
+	\caption{Best summary by overall quality}
+	\label{best_summary}
+	\noindent\fbox{%
+		\parbox{\textwidth}{%
+			Begin potty training when you are ready to devote the time and energy to encourage your child on a daily basis for at least three months.
+			When your child is ready, he will signal that his diaper is wet or soiled or will tell you that he would like to go to the potty.
+			Tell your child that the potty chair is his own chair.
+			Stay with your child when he is on the potty chair.
+			Place your child on the potty chair whenever he signals the need to go to the bathroom so he'll associate the potty with the urge to go.
+		}%
+	}	
+\end{figure}
+
+\begin{figure}
+	\caption{Worst summary by overall quality}
+	\label{worst_summary}
+	\noindent\fbox{%
+		\parbox{\textwidth}{%
+			For most children school is where they start to really develop their own personalities away from their families; interacting with others from different backgrounds without parents' interference.
+			For most kids school is where they start to really develop their own personalities away from their families; interacting with others from different backgrounds without parents' interference.
+		}%
+	}	
+\end{figure} 
+
+
+\subsubsection{Analysis by evaluation categories}
 Most categories seem like any text evaluation categories like "Spelling" and "Grammaticality". Other categories seem especially summary-related. These are the categories "Information Content" and "Focus". They represent the goal of a summary very well which is to present the most important content of the summarized texts. Since all summarized texts in this corpus are about a certain query the focus should be visible, too.
 
 The resulting evaluations can be used for assessing the quality of the summaries produced by our system. It is important for the evaluation that we only work at the nugget extraction. This input is given to another group which then produced the summaries. In this way we are completely responsible for the results in some evaluation categories while other evaluation results also depend on the steps of  building the hierarchy and actually creating a summary. The output which we after the nugget extraction are whole sentences (more about the output in section ...). The summary is then only built out of these sentences. In this way all categories which just operate on a sentence level are completely our responsibility. Among these categories are strictly only the two categories "Spelling" and "Grammaticality". We are also highly responsible for the categories "Information Content", "Focus" and "Non-Redundancy". All extracted sentences should ideally contain importannt information related to the query. Furthermore it can be argued that in the step of nugget extraction nuggets with the same meaning as another nugget are ignored. The categories "Referential Clarity", "Structure" and "Coherence" in comparison are very dependent on the ordering of the sentences. It can be argued that "Referential clarity" is also influenced by the nugget extraction. For sentences with a pronoun the system should also extract the reference sentence. Otherwise the sentence is not well usable in the next steps. This is not done in the step of nugget extraction, but in later steps. The category "Length" especially depends on the last step, the summary creation. "Readability" and of course "Information Content" are very general categories which can't be assigned to any particular step. The focus of our analysis will be all steps which can be influenced by our work, the nugget extraction. Thus the categories "Structure", "Length" and "Coherence" will only be shortly discussed.

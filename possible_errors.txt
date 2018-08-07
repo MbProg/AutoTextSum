@@ -1,0 +1,6 @@
+section		line		problem	 		possible alt.  
+ 
+  4.1         131             "gets assigned"		got assigned
+  4.1         131	       "As labels each"		"as labels, each"
+  4.2	      154	   "a intuitive solution"	"an intuitive solution"
+  4.2         169(the first sentence)             
