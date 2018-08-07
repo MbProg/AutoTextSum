@@ -138,7 +138,7 @@ The base of our work is the hierarchical summarization corpus by Tauchmann, Arno
 \label{headings}
 
 
-For all our implementations we chose to build two flexible models which would not only be able to choose whole sentences as nuggets but also subsequences. Justification for that was drawn from short inspection of the nuggets that workers had chosen. For this we first calculated the percentage of nuggets that were sentences by counting nuggets that start with uppercasing and end on a punctuation mark and dividing it by the total nugget amount. Additionally we also plotted a histogram of nugget lengths that can be seen in figure
+For all our implementations we chose to build two flexible models which would not only be able to choose whole sentences as nuggets but also subsequences. Justification for that was drawn from short inspection of the nuggets that workers had chosen. For this we first calculated the percentage of nuggets that were sentences by counting nuggets that start with uppercasing and end on a punctuation mark and dividing it by the total nugget amount. Additionally we also use a histogram of nugget lengths that can be seen in figure
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.55\linewidth]{Nugget_size.pdf}
@@ -146,11 +146,11 @@ For all our implementations we chose to build two flexible models which would no
 	\label{fig:nuggets}
 \end{figure}
 \ref{fig:nuggets}.
-The results were that only about $49$ percent of the chosen nuggets are actual sentences and most of the nuggets are shorter than $15$ words.
+The results are that only about $49$ percent of the chosen nuggets are actual sentences and most of the nuggets are shorter than $15$ words.
 
 \subsection{First approach}
 
-For the first approach we chose to take a wordwise approach that was also inspired by problems additional to those mentioned above. The finding is that workers may choose different start or endpoints for nuggets leading to problems for approaches that would only consider nuggets important that match exactly for multiple workers. An example in our dataset for this can be found in table \ref{tab:nuggets}.
+For the first approach we choose to take a wordwise approach that is also inspired by problems additional to those mentioned above. The finding is that workers may choose different start or endpoints for nuggets leading to problems for approaches that would only consider nuggets important that match exactly for multiple workers. An example in our dataset for this can be found in table \ref{tab:nuggets}.
 \begin{center}
 	\begin{tabular}{ | l | p{7cm} |}
 		\hline
@@ -165,7 +165,8 @@ For the first approach we chose to take a wordwise approach that was also inspir
 	\end{tabular}
 \label{tab:nuggets}
 \end{center}
-To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google\footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all words of the query of a specific topic into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we thought the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches.
+To avoid loss of such parts of sentences that are contained in multiple nuggets we therefore view each word of a sentence as a training / prediction instance. We do this by taking a word window with size $1$ around the particular word of interest which therefore contains the word and its left and right immediate neighbor. All those words are then transformed into word vectors from embeddings pretrained by Google\footnote{https://code.google.com/archive/p/word2vec/} and averaged. Similarily we also transform all words of the query of a specific topic into word embeddings and average them. In a third step both averages are averaged together once again to derive our word feature representation. We chose this final averaging step because we think the arithmetic properties of word embeddings would retain information about the relation between word window and query. This also keeps the feature representation smaller than doing a concatenation for an example and therefore allowed us to still use classifiers that can not train on mini batches. As additional features we use three frequency-based features: Domain frequency, common frequency
+% TODO: and ergänzen
 
 As labels each word got assigned a number which represents the amount of nuggets in the same sentence that contain that specific word. The different amounts of workers that chose a nugget then form the label of a classification task. A summarization of the process from a word of a sentence to feature representation can be found in pseudocode in  \ref{alg:features}. Here it is assumed that a sentence is padded accordingly.
 
