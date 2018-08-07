@@ -6,45 +6,45 @@ Database file #1: nips_2018.bib
 Warning--empty journal in sif2016
 Warning--empty journal in Fattah_2014
 Warning--empty journal in kupiec.et.al.1995
-You've used 17 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            597 strings with 7744 characters,
-and the built_in function-call counts, 6328 in all, are:
-= -- 611
-> -- 368
+            603 strings with 7874 characters,
+and the built_in function-call counts, 6562 in all, are:
+= -- 635
+> -- 381
 < -- 5
-+ -- 153
-- -- 128
-* -- 427
-:= -- 1067
-add.period$ -- 56
-call.type$ -- 17
-change.case$ -- 114
++ -- 159
+- -- 132
+* -- 438
+:= -- 1113
+add.period$ -- 59
+call.type$ -- 18
+change.case$ -- 120
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 242
-empty$ -- 428
-format.name$ -- 128
-if$ -- 1311
+cite$ -- 21
+duplicate$ -- 250
+empty$ -- 443
+format.name$ -- 132
+if$ -- 1357
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 18
 missing$ -- 17
-newline$ -- 89
-num.names$ -- 34
-pop$ -- 127
+newline$ -- 94
+num.names$ -- 36
+pop$ -- 131
 preamble$ -- 1
-purify$ -- 97
+purify$ -- 101
 quote$ -- 0
-skip$ -- 186
+skip$ -- 192
 stack$ -- 0
-substring$ -- 288
+substring$ -- 294
 swap$ -- 64
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
+type$ -- 72
 warning$ -- 3
-while$ -- 51
-width$ -- 19
-write$ -- 187
+while$ -- 53
+width$ -- 20
+write$ -- 198
 (There were 3 warnings)
