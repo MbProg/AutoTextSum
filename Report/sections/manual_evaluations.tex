@@ -10,7 +10,7 @@ Baseline 1 performs in almost every category much worse than our system. Non-red
 
 Baseline 2's results are similar to our system in most categories. It only significantly exceeds our system in structure and coherence. The advantage of our system is though that it was able to create summaries for every topic while baseline 2 was unsuccessful at creating summaries for 22,45\% of the topics. Furthermore the summary quality of baseline 2 is even more unpredictable than our system since its standard deviance at the overall quality is higher with 1.05 points to 0.80 points.
 
-\begin{figure}[!ht]
+\begin{figure}[ht]
 	\centering
 	\label{fig:quality_per_category}
 	\caption{comparison with baselines and other groups per category}
@@ -18,14 +18,14 @@ Baseline 2's results are similar to our system in most categories. It only signi
 \end{figure}  
 
 
-Compared to the other groups our system performs in average 0.245 to 0.67 points worse than the other systems in all evaluation  categories, having the biggest difference in information content. A comparative overview over all categories can be found in figure \ref{fig:quality_per_category}. A detailed analysis of the category scores can be found in the next paragraph \ref{analysis_by_topics}.
+Compared to the other groups our system performs in average 0.245 to 0.67 points worse than the other systems in all evaluation  categories, having the biggest difference in information content. A comparative overview over all categories can be found in figure 3. A detailed analysis of the category scores can be found in the next paragraph \ref{analysis_by_topics}.
 
 \subsubsection{Analysis by topics}
 \label{analysis_by_topics}
 
-Our system has an average overall quality of 2.75 with a standard deviance of 0.80. In figure \ref{fig:quality_per_topic} it can be seen that the the overall quality varies a lot and ranges from bad summaries (1.5 points) to excellent summaries (4.75 points). Our best summary according to the overall quality score is about potty training (topic 1048). This summary is indeed very good since it only contains advice about potty training and does not contain redundant information (see \ref{best_summary}). The worst summary concerning overall quality contains two almost exactly identical sentences which only differ in one word "children"/"kids" (see \ref{worst_summary})
+Our system has an average overall quality of 2.75 with a standard deviance of 0.80. In figure 3 it can be seen that the the overall quality varies a lot and ranges from bad summaries (1.5 points) to excellent summaries (4.75 points). Our best summary according to the overall quality score is about potty training (topic 1048). This summary is indeed very good since it only contains advice about potty training and does not contain redundant information (see \ref{best_summary}). The worst summary concerning overall quality contains two almost exactly identical sentences which only differ in one word "children"/"kids" (see \ref{worst_summary})
 
-\begin{figure}[!ht]
+\begin{figure}[ht]
 	\centering
 	\label{fig:quality_per_topic}
 	\caption{Average overall quality per topic}
@@ -91,13 +91,12 @@ Our system's readability score is worse than the readability scores of the other
 The results in structure and coherence exceed baseline 1 but are worse than baseline 2 and the other groups. Group 5 whose pipeline we partially used performs approximately 0.3 points better at each category only by using different nuggets. It seems like the results of these categories can be already improved through better nugget extraction. Additional improvements have to be done in further steps of the pipeline which is not the focus of our work.
 
 \paragraph{Overall Quality}
-A category which we have not discussed yet is the category overall quality". We see it as a final assessment of the summary which summarizes all other categories. The average overall score of our summary is 2.75. This is 0.39 to 0.74 points worse than the average overall score of the other groups. Comparing with the baselines our system performs much better than baseline 1 but slightly worse than baseline 2. We now take a look at what categories have the greatest impact on the overall quality of a summarization. Supposedly categories which are strongly summary-specific, namely information content and focus have a high correlation with overall quality. As a correlation measure we use Pearson's r and compute the correlation of the overall quality to all other categories (see figure 
-\begin{figure}
+A category which we have not discussed yet is the category overall quality". We see it as a final assessment of the summary which summarizes all other categories. The average overall score of our summary is 2.75. This is 0.39 to 0.74 points worse than the average overall score of the other groups. Comparing with the baselines our system performs much better than baseline 1 but slightly worse than baseline 2. We now take a look at what categories have the greatest impact on the overall quality of a summarization. Supposedly categories which are strongly summary-specific, namely information content and focus have a high correlation with overall quality. As a correlation measure we use Pearson's r and compute the correlation of the overall quality to all other categories (see figure 6).
+\begin{figure}[!ht]
 	\centering
 	\label{fig:corr_overall_quality}
 	\caption{Correlation between overall quality and the other evaluation categories}
 	\includegraphics[width=0.8\linewidth]{figures/correlation_overall_quality.png}
 \end{figure}
-\ref{fig:corr_overall_quality}).
 
 The strongest correlation has indeed "Information Content" with 0.75. The categories which are also very important for the overall quality are "Focus"(0.6), "Structure"(0.57), "Readability"(0.53) and "Coherence"(0.53). The annotators had to assign weights for each category in each evaluation. In this way they could express which categories they think are most important for a summary. The categories which they named in average as most important are "Information Content" (4.14), "Focus" (3.68) and "Readability" (3.47). These values match the calculated correlations. Interestingly, the annotators ranked "Non-Redundancy" in the midfield as an important category for overall quality while the correlation shows that it actually has the second-smallest effect on the overall quality. The least impact on the overall quality has the spelling of a summary. In conclusion especially "Information Content", "Focus" and "Readability" need to be improved to gain a higher overall summary quality.
