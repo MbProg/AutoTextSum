@@ -233,3 +233,77 @@
 232	Many of the alternative treatments are completely safe.	unsubstantiated claims about their products. Are these treatments safer than medications?	Improved nutrition never hurt anyone. EEG Neurotherapy is non-invasive, although somewhat expensive. New technologies,
 233	"Natural '' does not necessarily mean  Safe."""	38 deaths and over 800 adverse reactions. People forget that 	Is a change in diet an effective treatment for ADHD? Research on the results
 234	Most doctors seem to think that nutrition does not cause or control ADHD.	for ADHD? Research on the results of these diets is mixed.	Sometimes people look for treatments for attention-deficit/hyperactivity disorder (ADHD) that they hope will work
+
+
+Sub TransposeMacro()
+'
+' Macro1 Macro
+'
+
+'
+COLUMN_OFFSET = 2
+ROW_OFFSET = 1
+RowCount = ROW_OFFSET
+ColumnCount = COLUMN_OFFSET
+VALUE_COLUMN = 12
+
+DATUM = 2
+VERWENDUNGSZWECK = 3
+EMPFAENGER = 4
+BETRAG = 5
+
+strVerwendungszweck = "Verwendungszweck:"
+strEmfaenger = "Empfänger/Auftraggeber:"
+bVerwendungszweck = False
+bEmfaenger = False
+bBetrag = False
+bDatum = True
+
+ReadNext = False
+WriteNext = False
+Set sh = ActiveSheet
+For Each rw In sh.Rows
+
+    If IsNumeric(sh.Cells(rw.Row, 1).Value) And sh.Cells(rw.Row, 1).Value < 10000 Then
+        sh.Cells(RowCount, BETRAG).Value = sh.Cells(rw.Row, 1).Value
+        ColumnCount = COLUMN_OFFSET
+        RowCount = RowCount + 1
+        bDatum = True
+    Else
+        ' Check if it is a date:
+
+        
+        If bDatum Then
+            sh.Cells(RowCount, ColumnCount).Value = Split(sh.Cells(rw.Row, 1), " ")(0)
+            ColumnCount = ColumnCount + 1
+            bDatum = False
+        ElseIf bVerwendungszweck = True Then
+            sh.Cells(RowCount, VERWENDUNGSZWECK).Value = sh.Cells(rw.Row, 1).Value
+            ColumnCount = ColumnCount + 1
+            bVerwendungszweck = False
+        ElseIf bEmpfaenger = True Then
+            sh.Cells(RowCount, EMPFAENGER).Value = sh.Cells(rw.Row, 1).Value
+            ColumnCount = ColumnCount + 1
+            bEmpfaenger = False
+        Else
+        End If
+        
+        SplittedItems = Split(sh.Cells(rw.Row, 1), " ")
+        ArrayLength = UBound(SplittedItems) - LBound(SplittedItems) + 1
+        
+        If Right(sh.Cells(rw.Row, 1).Value, 1) = ":" Then
+            ColumnName = Split(sh.Cells(rw.Row, 1), " ")(ArrayLength - 1)
+            If ColumnName = strVerwendungszweck Then bVerwendungszweck = True
+            If ColumnName = strEmfaenger Then bEmpfaenger = True
+        End If
+        
+
+    End If
+    
+    
+    If sh.Cells(rw.Row, 1).Value = "" Then
+        Exit For
+    End If
+Next rw
+
+End Sub
